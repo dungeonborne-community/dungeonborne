@@ -29,7 +29,7 @@ and binaries are not here — you rebuild what you need from your own copy of th
 - [Contributing](#contributing)
 - [Secrets and security](#secrets-and-security)
 - [Troubleshooting](#troubleshooting)
-- [Documentation map](#documentation-map)
+- [Documentation map](#documentation-map) · [FAQ](docs/FAQ.md)
 - [Legal and licenses](#legal-and-licenses)
 
 ## What it does
@@ -392,6 +392,7 @@ in your KeePassXC database (`cargo ws secrets init`), the pak key in `config/loc
 
 ## Documentation map
 
+- [`docs/FAQ.md`](docs/FAQ.md) — questions people ask: where the code comes from, legal, the anti-cheat, the pak key.
 - [`docs/README.md`](docs/README.md) — the index of all documents, by role.
 - [`docs/HISTORY.md`](docs/HISTORY.md) — how the project came to be.
 - [`docs/GLOSSARY.md`](docs/GLOSSARY.md) — the words used everywhere.
