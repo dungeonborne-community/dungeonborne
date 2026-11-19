@@ -214,11 +214,23 @@ pub fn run(ws: &Workspace) -> Vec<Finding> {
         }
         if ext == "md" {
             if let Ok(text) = std::fs::read_to_string(&path) {
-                for (line, target) in broken_links(&ws.root, f, &text) {
+                // an edition overlay (export/<edition>/…) lands at the same path without that prefix: its links are
+                // checked from there (19.11: the public README's links all looked broken from export/public/)
+                let at = overlay_target(f);
+                // the overlay folder itself (export/<edition>/): its files land in the edition too
+                let overlay_root = f.strip_suffix(at).filter(|p| !p.is_empty());
+                for (line, target) in broken_links(&ws.root, at, &text) {
                     // the target is in git, only not on disk (a component that is not installed)
-                    if in_git(&all, f, &target) {
+                    if in_git(&all, at, &target) {
                         off_disk_links += 1;
                         continue;
+                    }
+                    if let Some(o) = overlay_root {
+                        let file = target.split('#').next().unwrap_or(&target);
+                        let dir = Path::new(at).parent().unwrap_or(Path::new(""));
+                        if ws.root.join(o).join(dir).join(file).exists() {
+                            continue;
+                        }
                     }
                     out.push(Finding::new(
                         Level::Warn,
@@ -259,6 +271,19 @@ fn in_git(all: &BTreeSet<String>, f: &str, target: &str) -> bool {
             .range(format!("{p}/")..)
             .next()
             .is_some_and(|x| x.starts_with(&format!("{p}/")))
+}
+
+/// Where a file of an edition overlay lands in that edition: `export/<edition>/docs/X.md` -> `docs/X.md`; other paths
+/// stay as they are.
+fn overlay_target(f: &str) -> &str {
+    match f.strip_prefix("export/") {
+        Some(rest) => rest
+            .split_once('/')
+            .map(|(_, p)| p)
+            .filter(|p| !p.is_empty())
+            .unwrap_or(f),
+        None => f,
+    }
 }
 
 /// Relative links `](target)` of markdown file `f` whose target (without `#anchor`) does not exist: (line, target).
@@ -666,6 +691,14 @@ mod tests {
         assert!(re.is_match(&s("SB/notes.md")));
         assert!(!re.is_match(&s("dist/ui-SB/kit.zip")), "another folder");
         assert!(!re.is_match(&s(r#""$SB\$role""#)), "a PowerShell variable");
+    }
+
+    #[test]
+    fn overlay_files_land_without_the_prefix() {
+        assert_eq!(overlay_target("export/public/README.md"), "README.md");
+        assert_eq!(overlay_target("export/public/docs/X.md"), "docs/X.md");
+        assert_eq!(overlay_target("export/README.md"), "export/README.md");
+        assert_eq!(overlay_target("docs/X.md"), "docs/X.md");
     }
 
     #[test]

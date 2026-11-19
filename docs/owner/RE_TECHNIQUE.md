@@ -1,7 +1,8 @@
-# Full client dump: how to get the decrypted game code (owner only)
+# Full client dump: how to get the decrypted game code
 
-Owner document (visibility owner, not included in the team copy). The team only gets the result — the dump via a
-separate link and the analysis procedure (`research/ghidra/README.md`), not the method itself.
+How the decrypted exe image for Ghidra is obtained without touching the exe on disk, the memory of a running game or
+the anti-cheat (the rules: `AGENTS.md`, "The game client — our rules"). The analysis itself:
+`research/ghidra/README.md`. Do it only on your own copy of the game, under its terms.
 
 ## Why
 
@@ -22,7 +23,7 @@ ACCESS_DENIED), so we take **the full crash dump that the engine writes itself**
 4. Then the same as the team: `research/ghidra/scripts/mdmap.py` → `carve.py` (exe image, base 0x140000000) →
    Ghidra without auto-analysis → `DecompTree.java` (`research/ghidra/README.md`). Example analysis — `docs/ghidra_startlocalbattle`.
 
-## Before handing the dump to the team
+## Before sharing a dump
 
 A full dump contains your client's memory: login and session token, Steam/Goldberg ID, server addresses, chat
 fragments, paths on your machine. Therefore:

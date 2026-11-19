@@ -17,8 +17,9 @@ carved from a full process dump** of the game: in memory the code is already dec
   `home\re\ghidra\images\db_image.bin`. Build: TimeDateStamp `0x67598c54`, base `0x140000000`, size `0xaaf5000`,
   sha256 `d6ff66e977de9e803641955d265038065f783f3d00133fefd0d220f8dda6fd2e`; the code (`.text`) is fully decrypted,
   the `.tvm0` section is code virtualized by the protection, Ghidra cannot read it. With the image, steps 1–2 below are not needed: go straight to 3.
-- **Process dump**: only if the owner provides it via a link (9 GB, memory of someone else's machine: do not publish, do not
-  forward, delete after the work). Put it in `home\re\ghidra\dumps\`.
+- **Process dump**: your own, made with the engine's `-fullcrashdump` switch (`docs/owner/RE_TECHNIQUE.md`), or the
+  owner's via a link (9 GB, memory of someone else's machine: do not publish, do not forward, delete after the work).
+  Put it in `home\re\ghidra\dumps\`.
 - Python 3.12 for the scripts below.
 
 Folders (created by `ws bootstrap`): `home\re\ghidra\dumps` — dumps, `images` — carved exe images,

@@ -154,6 +154,22 @@ its own releases replaces `xtask/dist.pub` (`cargo xtask dist keygen`).
   without asking the person.
 - Do not decrypt or unpack the game's paks unless the person explicitly asks; their copy, their decision.
 
+## The game client — our rules
+They hold for you, for the person and for any research in this repository:
+- **The exe and the game's own binaries are not modified** on disk: no patching, no unpacking, no rewriting. What goes
+  into the game folder is only the documented runtime (UE4SS with its `dwmapi.dll` loader, the Goldberg
+  `steam_api64.dll` in place of Steam's), our mods and our paks — the launcher puts them in for a session and takes
+  them out again.
+- **No reading or writing the memory of live game processes**: no ReadProcessMemory, debuggers, SeDebugPrivilege,
+  memory scanners or injected tools beyond UE4SS.
+- **Anti-cheat**: do not bypass, disable or fool it; do not kill game processes without the person's permission
+  (under the anti-cheat they exit only by themselves — `quit`); keep a 30 s pause between client restarts.
+- **The game's cryptography is not touched**: protocol encryption, signatures and integrity checks, the anti-cheat's
+  protection — no cracking, no brute force, no patching them out. The only key used is the public pak key, and only
+  to read the paks of the person's own copy.
+- **Native code research** uses only the decrypted image the game itself writes into a crash dump
+  (`-fullcrashdump`, `docs/owner/RE_TECHNIQUE.md`), analysed offline in Ghidra (`research/ghidra/README.md`).
+
 ## Known limits of this edition
 - "internal notes", "(internal notes)" and paths under `ops/…`, `tools/stand` or `content/…` in comments point to
   the maintainers' material that is not part of this edition (`content/seasons` is where the backend expects your

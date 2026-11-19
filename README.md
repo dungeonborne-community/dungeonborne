@@ -23,6 +23,7 @@ and binaries are not here — you rebuild what you need from your own copy of th
 - [Running a real server](#running-a-real-server)
 - [Discord bot](#discord-bot)
 - [Balance, loot and seasons](#balance-loot-and-seasons)
+- [Research and reverse engineering](#research-and-reverse-engineering)
 - [Command reference](#command-reference)
 - [Working with AI assistants](#working-with-ai-assistants)
 - [Contributing](#contributing)
@@ -293,6 +294,36 @@ roles, channels, forums, permissions and posted texts from `server/server.yaml` 
   one is `content/seasons/active.txt` or the `SEASON` variable. `cargo xtask season new <id>`;
   format: [`docs/SEASONS_FORMAT.md`](docs/SEASONS_FORMAT.md).
 - **Matchmaking rules** (gear rarity limits per map level and the like): `content/match_checks.toml`.
+
+## Research and reverse engineering
+
+How the client was studied, so you can continue where we stopped:
+
+- **Paks: Blueprints, Lua, tables.** Most game rules live in the paks — Blueprints (UAssetGUI, FModel), UnLua
+  bytecode, data tables. `cargo ws dump` exports icons, monsters, heroes and curves from your copy; the whole path is
+  in [`docs/RESEARCH.md`](docs/RESEARCH.md) and [`docs/GAME_DATA.md`](docs/GAME_DATA.md).
+- **Native code: the exe dump and Ghidra.** `Dungeonborne.exe` on disk is packed (its code sections are zeros). The
+  engine's own `-fullcrashdump` switch makes the game write a full memory dump when it crashes, with the code already
+  decrypted; the scripts in `research/ghidra/scripts` carve the exe image out of it, and Ghidra decompiles functions
+  offline. Method: [`docs/owner/RE_TECHNIQUE.md`](docs/owner/RE_TECHNIQUE.md); analysis:
+  [`research/ghidra/README.md`](research/ghidra/README.md); Ghidra 12.2 and JDK 21 without administrator rights:
+  `cargo xtask setup --apply --tool=ghidra-dist,jdk`.
+- **Protocol.** The backend's message types are generated from the game's protobuf descriptors; evidence per area is
+  in `research/`, live probes in `tools/probe` and `tools/sniffer`.
+- **Checking a finding** happens in the game: a UE4SS hook and a log line on your own test stand.
+
+### The game client — our rules
+
+They hold for people, for AI assistants and for every piece of research here (full text: [`AGENTS.md`](AGENTS.md)):
+
+- **The exe and the game's own binaries are not modified** on disk — no patching, no unpacking. The game folder
+  only gets the documented runtime (UE4SS and its loader, the Goldberg Steam emulator), our mods and our paks.
+- **No reading or writing the memory of a running game** — no debuggers, memory scanners or injected tools beyond
+  UE4SS.
+- **The anti-cheat is not bypassed, disabled or fooled.**
+- **The game's cryptography is not touched** — protocol encryption, signatures, integrity checks; no cracking, no
+  brute force. The only key used is the public pak key, only to read your own copy's paks.
+- **Native code** is studied only through the crash dump the game writes itself, offline.
 
 ## Command reference
 
