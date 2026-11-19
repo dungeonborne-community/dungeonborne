@@ -82,7 +82,7 @@ Logs: `logs\ue-client.log`, `logs\ue-server.log`, `server\rpc_dump`.
 - Not analysed separately: how each skill and talent works on content foreign to the career, death, custom PVP.
 
 - 06.11, the settings from `class.json` are built, not checked in the game yet. What to look at:
-  1. Creation window: the name "Страж", description, pros and cons, icon, stats, the model in warrior equipment, talents 1 and 2.
+  1. Creation window: the name "Guardian" (Russian "Strazh"), description, pros and cons, icon, stats, the model in warrior equipment, talents 1 and 2.
   2. Inventory: no cross on fighter equipment, a cross on foreign equipment (e.g. cloth).
   3. A new character got the kit from `kit`. The old character `Mifril` keeps the previous kit.
   4. Raid: the new stats and talents 1 and 2 work.

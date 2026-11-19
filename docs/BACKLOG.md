@@ -175,7 +175,7 @@ Format: `[ ]` open, `[x]` done. Each task says where to look and why. Date — w
     (`connected` in 24 s). What was needed: pushing room events without a client request (`ds::driver::pump_room_events`):
     the reference sends them on its own, without them the client does not go to `battle_room_heartbeat`. The button in normal mode (`-Match local`,
     StartLocalBattle) — works. Clicking a UMG button from UE4SS is impossible (`OnBtnMatchClicked` — UnLua Lua), the mod calls
-    what it ends up calling. Mod `DSTest` (log "Кто-то проверяет IsRoomReady!") is off — enabled.txt removed.
+    what it ends up calling. Mod `DSTest` (log "Someone is checking IsRoomReady!", in Russian) is off — enabled.txt removed.
     Floating crash UE4SS.dll+0xba20e4 on pawn creation/removal (twice a day, server and client) — investigate.
   - 31.10 automated run with T1/T3 and the orchestrator's match changes: login, match, client connection — no regressions.
     The run does NOT check the battle room: the client joins with a console `open`, nobody sends `battle_room_heartbeat`.
@@ -314,7 +314,7 @@ Format: `[ ]` open, `[x]` done. Each task says where to look and why. Date — w
   the host took the loadout of all clients from a single `client-loadout.txt` (the server rewrote it on `player_get_info` /
   `hall_set_role` of any player; it contained the DK of account 10000903). Now the server also writes `client-loadout-<user_id>.txt`,
   LocalDev picks the file by `PlayerState.GetUserId()` (otherwise from `GetOpenId()`: 10 000 000 + last 6 digits), log
-  `equip-debug.log`: `Loadout Char=… <- user N` / `<- общий …`. If the user_id of another PS is empty — the mapping
+  `equip-debug.log`: `Loadout Char=… <- user N` / `<- shared …` (the log is in Russian). If the user_id of another PS is empty — the mapping
   will not work (check). LocalDev does not set class attributes for joined players → `RefillHero` sets the base
   class resource maximum if it is 0 (mage/priest 300 mana, DK/lich 100 souls, druid 120 energy).
   Pak installation — `deploy_paks.ps1` with the game closed.
@@ -342,7 +342,7 @@ Format: `[ ]` open, `[x]` done. Each task says where to look and why. Date — w
   The listen host for its own hero is the server and not standalone → nobody runs the branch. The previous workaround (empty event)
   could not work: `SpawnParam` is not filled. Fix in `DungeonborneRuClient`: after `DealCastCharge` of the own hero on
   listen we call the same branch `ExecuteUbergraph_<class>(entry)`: sword 104, mace 89, dagger `_03` 89 (`_03_6002` — a subclass).
-  Log: `RELIC listen: ExecuteUbergraph_…(104) ok=true -> ProcessProjectile вызван`. Analysis: `scratchpad\re\cfg\*.txt`.
+  Log: `RELIC listen: ExecuteUbergraph_…(104) ok=true -> ProcessProjectile called` (logged in Russian). Analysis: `scratchpad\re\cfg\*.txt`.
 - [ ] **Dual daggers in listen break already on a normal LMB** (not only heavy). F7 in listen right after LMB is needed. (30.10)
 - [ ] **Items without a UE source**: some `…001` variants (e.g. 181112001 "Merchant's Dagger", 181122001) have no entry in
   `UeSource_ItemType`. `upgrade_starter_item_id` iterates suffixes 0/1/2 — exclude ids without UeSource. (30.10)
@@ -541,7 +541,7 @@ Format: `[ ]` open, `[x]` done. Each task says where to look and why. Date — w
   for the duration of the attack. The hook in the mod already exists: start on the `*Attack*` montage, stop by timer, `SpawnSystemAttached` on the hand.
   Own asset — in `ue_jester\Dungeonborne\Content\Mods\Jester`, wiring — `FX_PATHS` + `fx=` in `ru-jester.txt`.
   The game's `FX_common_DaggerTrail` launched but is not visible (default `fx=none`).
-  Details — `<data>\ue_jester\README.md`, section "Эффект атаки" (attack effect).
+  Details — `<data>\ue_jester\README.md`, the section on the attack effect (its heading is in Russian).
 - [ ] **Jester on only one spot + behaviour after "death"** (invulnerability, loot, blue portal). (02.11)
   Right now `JesterSwap` replaces all Reapers. Pak `zz_Jester_P` and the mod — in the client `C:\Games\Dungeonborne`.
   On the local server — the server part (lift by 30 cm).
@@ -563,7 +563,7 @@ Format: `[ ]` open, `[x]` done. Each task says where to look and why. Date — w
 - [x] Established: heavy breaks only in listen (`host_from_lobby` with `?listen`); in localbattle (standalone) it works natively.
 
 ### Proposal from Discord: crafting relics of lower quality (new season, 06.11)
-- [ ] Unlocked the purple sword — you can craft the blue and green ones. **Done 06.11, verified by the user in game on the trial stand:** arrows at the "Изготовить" (Craft) button on the blacksmith panel, quality switch on the panel, crafting a lower quality (server: 210140130 with 210140180 unlocked). Pak `zz_RelicQuality_P` (README in the same place), not installed into the main installs. Flag `relic_lower_quality` in `deadmoney.toml`. Not verified in game: trimming gems to sockets, the flag turned off. The main build and Robot were not updated. For new seasons — see the pak README.
+- [ ] Unlocked the purple sword — you can craft the blue and green ones. **Done 06.11, verified by the user in game on the trial stand:** arrows at the "Craft" button on the blacksmith panel, quality switch on the panel, crafting a lower quality (server: 210140130 with 210140180 unlocked). Pak `zz_RelicQuality_P` (README in the same place), not installed into the main installs. Flag `relic_lower_quality` in `deadmoney.toml`. Not verified in game: trimming gems to sockets, the flag turned off. The main build and Robot were not updated. For new seasons — see the pak README.
   - **Cannot be done with tables.** The qualities of one relic are `gear_heirloom_guide` rows with a shared `group_id` and an `unlock_condition` chain. The craft window takes only the current quality: `WBP_Heirloom_InstantiatePanel` → `group:GetCurHeirloomId()`. Splitting `group_id` by quality is possible, but that means 4 times more cards and breaks upgrading.
   - **Our game build (tables from 11.12.2024) has no such feature.** Nothing can be concluded about other patches from the files.
   - **Along the way 06.11, blacksmith materials showed 0.** The client reads as coins only ids 1000–1030 and 2000–29999, materials 1037–1039, 1052, 1053 are virtual items for it (`DItem` with `position.x < 0`). Fixed in `common::split_virtual_coins` and `player_get_info`, the display was confirmed by the user. Pushes via `hub::push_to` that bypass `push_dirty` are not converted. Not yet rolled out to the main build.

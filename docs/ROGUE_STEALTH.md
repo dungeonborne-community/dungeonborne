@@ -1,7 +1,7 @@
 # Rogue stealth: why the enemy was not visible and how it was fixed
 
 12.11.2026. Complaint: an invisible rogue is "literally not visible", even point-blank. Analysis — this session and the LOCAL session
-(`LOCAL_GAME_MODE_OPENID заполнение`, static BP analysis), verification on the stand with two clients.
+(`LOCAL_GAME_MODE_OPENID` filling, static BP analysis), verification on the stand with two clients.
 
 ## How the game renders stealth
 

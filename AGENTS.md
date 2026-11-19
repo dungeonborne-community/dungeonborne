@@ -1,8 +1,9 @@
 # AGENTS.md — for AI assistants
 
 A person gave you a link to this repository and asked you to check it and set it up. Assume they know nothing about
-Rust, servers or the game's internals; you do the work and explain each step in plain words. Russian is the project's
-working language (many comments and member READMEs are Russian); answer in the person's language.
+Rust, servers or the game's internals; you do the work and explain each step in plain words. The documentation
+is in English; some code comments, player-facing texts and game data are in Russian (the live server's community
+spoke Russian). Answer in the person's language.
 
 ## What this is
 A framework for running a **community server** for Dungeonborne, an online game whose official servers were shut
@@ -21,8 +22,9 @@ down:
 
 Words you will meet are in `docs/GLOSSARY.md`. Each member has a `member.toml` (commands, links) and a `README.md`.
 
-**No game files are in this repository** (`docs/DISCLAIMER.md`). Other notes: `docs/THIRD_PARTY.md` (programs by
-others), `docs/CHANGELOG.md`, `.github/SECURITY.md` (reporting security problems).
+**The game's server tables and protocol descriptors are here; the publisher's client code, assets and paks are not**
+(`docs/DISCLAIMER.md`). Other notes: `docs/THIRD_PARTY.md` (programs by others), `docs/CHANGELOG.md`,
+`.github/SECURITY.md` (reporting security problems).
 
 ## What the person needs
 - Windows 10/11 and internet. The install itself takes ~3.5 GB (~5.5 GB without Visual Studio Build Tools);
@@ -156,9 +158,9 @@ its own releases replaces `xtask/dist.pub` (`cargo xtask dist keygen`).
 - "internal notes", "(internal notes)" and paths under `ops/…`, `tools/stand` or `content/…` in comments point to
   the maintainers' material that is not part of this edition (`content/seasons` is where the backend expects your
   own season data).
-- The backend compiles, but serving a real client needs data built from the person's own game copy
-  (`core/backend/README.md`).
-- The launcher needs `apps/launcher/bundle/client.zip` (built by `apps/launcher/tools/make_client_bundle.py` from a
-  local UE4SS and Steam API emulator) before it compiles.
+- The backend builds and starts with the tables in `core/backend`; matches need the game's own battle server, the mods
+  and the patch paks built from the person's own game copy (`README.md`, "Your copy of the game").
+- The launcher needs `apps/launcher/bundle/client.zip` before it compiles: `cargo xtask setup --apply
+  --tool=goldberg,ue4ss`, then `python apps/launcher/tools/make_client_bundle.py --upstream`.
 - Addresses in the code (`*.example.org`, `203.0.113.x`, `192.0.2.x`) and the zeroed certificate pin in
   `apps/launcher/src-tauri/src/builtin.rs` are placeholders: set your own server there and in `server.toml`.

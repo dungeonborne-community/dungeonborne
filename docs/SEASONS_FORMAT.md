@@ -31,7 +31,7 @@ Folders marked "BUILD" do not go into git (`.gitignore`). What is built for prod
 ## Manifest `season.toml`
 ```toml
 id = "playtest"
-name = "Плейтест"
+name = "Playtest"
 plugin = ""                  # backend module; there are no modules yet, a non-empty value = the season will not be enabled
 state_key = "playtest"       # player progress key p.state[state_key]; the core does not touch it
 
@@ -58,7 +58,7 @@ Value: from the active season's manifest, otherwise from `content/seasons/base.t
 
 A flag that needs a client pak is described in two places, and they must match: the flag in `[features]` and the pak in the catalog with `season = "<id>"`.
 
-On start the backend writes one line: `[Season] active "Плейтест" (playtest, …); auto-sell off, lower relics on, …` or `[Season] no season — base game; …`. If the season was not enabled, the journal has the reason and the line about the base game.
+On start the backend writes one line: `[Season] active "Playtest" (playtest, …); auto-sell off, lower relics on, …` or `[Season] no season — base game; …`. If the season was not enabled, the journal has the reason and the line about the base game.
 
 ## Enabling
 | Layer | How | Without a season |

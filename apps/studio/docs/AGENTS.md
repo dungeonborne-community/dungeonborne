@@ -8,7 +8,7 @@ servers; the only thing they produce is a **patch** file that they send to the s
 |---|---|
 | `BalanceStudio-<version>.exe` | the designer's app: opens the kit zip, edits values, saves the patch. No network, no install |
 | `<season>-balance-<version>.zip` | the balance kit: tables, the Excel workbook, `llm/` and Python tools. **Do not unpack it for Studio** |
-| `README.md` | the app guide for the designer (English, Russian below it) |
+| `README.md` | the app guide for the designer (English) |
 | `CHANGELOG.md` | app versions |
 | `SHA256SUMS`, `SHA256SUMS.minisig`, `signing-key.pub` | checksums of every file and the owner's minisign signature |
 
@@ -33,16 +33,3 @@ servers; the only thing they produce is a **patch** file that they send to the s
 ## What happens next
 The designer sends the patch file to the server owner. The owner checks it and applies it on the server
 (`cargo xtask balance patch`); a new season or balance version comes as a new package.
-
----
-
-# Пакет баланса Dungeonborne — для ИИ-помощника
-
-Коротко то же по-русски.
-- Сначала проверьте пакет:
-  - каждый файл совпадает с `SHA256SUMS`;
-  - подпись `SHA256SUMS.minisig` сходится с ключом `2EEA90212DBCA703`;
-  - доверенный комментарий — `dungeonborne-pack-designer <id>`.
-  Ключ сверьте с владельцем сервера по другому каналу. Не совпало — остановитесь и не запускайте exe.
-- Как править таблицы — `llm/PROMPT.md` внутри zip набора.
-- Результат работы — только файл патча. Дизайнер отправляет его владельцу сервера.

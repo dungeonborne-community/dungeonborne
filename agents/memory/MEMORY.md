@@ -23,8 +23,8 @@
 - [UE4SS null crash](dungeonborne-ue4ss-null-crash.md) — GetFName on null object = native AV 0x18, pcall misses it; IsValid first
 - [Purple portal](dungeonborne-shadow-arena.md) — Shadow from the first floor leads to the throne inside L_Dungeon_Official_02 (120000,0,-80); the second floor has only blue ones
 - [Balance app](dungeonborne-balance-app.md) — Tauri app for external balance designers; spec docs/BALANCE_APP_SPEC.md, it only prepares a patch
-- [Прод: плейтест](dungeonborne-prod-playtest.md) — прод с 08.11; 12.11 16:27 UTC backend 553139a, без hosts включено; 16:12 сброс реликвий прошёл ПОВТОРНО (копии базы не было) — перед выкладкой копия db
-- [Проверка релиза лаунчера](dungeonborne-launcher-release-check.md) — подписывать копию сразу после cargo tauri build и смотреть окно: cargo test подменяет exe
+- [Prod: playtest](dungeonborne-prod-playtest.md) — prod since 08.11; 12.11 16:27 UTC backend 553139a, no-hosts mode enabled; at 16:12 the relic reset ran AGAIN (there was no database copy) — copy the db before deploying
+- [Launcher release check](dungeonborne-launcher-release-check.md) — sign a copy right after cargo tauri build and look at the window: cargo test replaces the exe
 - [Search checks](dungeonborne-match-checks.md) — since 08.11 as in the original: rarity limit EPIC+ on Hard, rooms without mixing; require_guild kept
 - [Seasons](dungeonborne-seasons.md) — since 07.11 SEASON=<id>, flags in seasons/*.toml; prod = playtest; Dead Money removed; what is base, what is season
 - [Launcher lobby](dungeonborne-launcher-lobby.md) — FaceIt-style matchmaking: tabs, voting, hall 3 min and minimum 2 (env since 09.11); entry via the "Start" button; spec in LAUNCHER_SPEC §12
@@ -42,10 +42,10 @@
 - [Rogue stealth](dungeonborne-rogue-stealth.md) — 12.11: StealthVisibleDistance = strength 0..1 (shader); RuClient StealthReveal works on the stand, not deployed
 - [Bash and backslash](dungeonborne-bash-backslash.md) — 12.11: the Bash tool collapses a double backslash even in heredoc; edits with backslashes — via Edit/Write
 - [Druid trees](dungeonborne-druid-trees.md) — 12.11: the tree misses skeletons — on a headless DS the bones do not update (AlwaysTickPose), the skeleton hitbox = mesh bones
-- [Рабочее пространство](dungeonborne-workspace-plan.md) — 14.11 план: всё в X:\DBDev (workspace git + home + vault), идиомы Cargo; docs/WORKSPACE_PLAN.md
-- [Forgejo на VM](dungeonborne-forgejo.md) — 14.11 Forgejo 17.0.1 только на 127.0.0.1 (3000/2222), туннель ssh -L 3300/2222, dump ночью; ops/forgejo
+- [Workspace](dungeonborne-workspace-plan.md) — 14.11 plan: everything in X:\DBDev (workspace git + home + vault), Cargo idioms; docs/WORKSPACE_PLAN.md
+- [Forgejo on the VM](dungeonborne-forgejo.md) — 14.11 Forgejo 17.0.1 only on 127.0.0.1 (3000/2222), tunnel ssh -L 3300/2222, nightly dump; ops/forgejo
 - [Support button](dungeonborne-support-button.md) — 14.11: all buttons call CustomerService:Open; interception — an UnLua wrapper in a pak
-- [Резервные копии](dungeonborne-backup.md) — 14.11 restic в Storage Box uXXXXXX: VM sub1 05:10 UTC, ПК sub2; живая база не копируется; ops/backup
+- [Backups](dungeonborne-backup.md) — 14.11 restic to Storage Box uXXXXXX: VM sub1 05:10 UTC, PC sub2; the live database is not copied; ops/backup
 - [Bug report](dungeonborne-bug-report.md) — 14.11 launcher→backend→Discord bot; contract docs/specs/bug-report-api.md; backend 18ef2c1, launcher f109fc0, button pak — a draft; not deployed
 - [Skill formulas](dungeonborne-skill-formulas.md) — 15.11: skill numbers in GE + CareerSkillDamageCurveTable (own decoder), tooltips in Lua Script/Text; example — priest's Q
 - [Launcher fundraising](dungeonborne-launcher-support.md) — 16.11 server fundraising bar: manifest support.url → bot JSON, project gold; do not run cargo fmt on the launcher

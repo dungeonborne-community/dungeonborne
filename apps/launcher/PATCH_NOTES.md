@@ -1,47 +1,47 @@
-# Заметки к выпускам лаунчера (для Discord)
+# Launcher release notes (for Discord)
 
-Каждый выпуск — отдельный пост; длина поста в Discord до 2000 символов, разметка — обычный Markdown Discord.
-Ещё не опубликовано.
-
----
-
-## Лаунчер 1.3.0
-
-Обновляется сам: в лаунчере 1.2.0 появится плашка «Обновить и перезапустить».
-
-**Новый дизайн в стиле Windows 11**
-• Окно как у приложений Windows 11: навигация слева, страница сервера с большой кнопкой «Играть», настройки — отдельной страницей, как «Параметры» Windows.
-• Под кнопкой «Играть» написано, почему играть пока нельзя: не вошли, exe не совпадает и т.п.
-• Шрифты и значки — системные Windows, ничего не скачивается.
-• Свой дизайн можно предложить: UI Sandbox в ✨・plugin-showcase.
+Each release is a separate post; a Discord post is up to 2000 characters, formatted with ordinary Discord Markdown.
+Not published yet.
 
 ---
 
-## Лаунчер 1.2.0
+## Launcher 1.3.0
 
-**Эту версию нужно скачать один раз вручную** — дальше лаунчер обновляется сам.
+Updates itself: launcher 1.2.0 will show an "Update and restart" bar.
 
-**Моды теперь приходят с сервера**
-• Лаунчер скачивает моды сервера перед игрой и ставит их только на время игры — после выхода папка игры снова чистая.
-• Обновился мод на сервере — лаунчер подтянет новую версию сам, новый лаунчер для этого больше не нужен.
-• Качается только то, что изменилось; прогресс загрузки виден в окне запуска.
-• Файлы прошлых версий лаунчера убираются из игры автоматически. Файлы, которые вы меняли сами, не трогаются.
+**New Windows 11-style design**
+• The window looks like a Windows 11 app: navigation on the left, a server page with a big "Play" button, settings on a page of their own, like Windows "Settings".
+• Under the "Play" button it says why you cannot play yet: not signed in, the exe does not match, and so on.
+• Fonts and icons are the system ones of Windows, nothing is downloaded.
+• You can suggest your own design: UI Sandbox in ✨・plugin-showcase.
 
-**«Играть» в Steam открывает лаунчер**
-• Настройки → «Открывать лаунчер кнопкой «Играть» в Steam». Лаунчер встаёт на место загрузчика игры, оригинал сохраняется рядом и возвращается, если снять галочку.
-• Запуск из Steam — без предупреждений Windows, античит не против.
-• После «Проверить целостность файлов» в Steam лаунчер при следующем запуске встанет на место сам.
-• Повторное «Играть», когда лаунчер уже открыт, просто покажет его окно.
+---
 
-**Обновления лаунчера**
-• Когда выходит новая версия, сверху появляется плашка «Обновить и перезапустить».
-• Лаунчер ставит только обновления с нашей цифровой подписью — подменить их нельзя.
-• Во время игры обновление не начнётся.
+## Launcher 1.2.0
 
-**Мелочи**
-• Мод с нативным кодом (dbnative) спрашивает разрешение один раз, а не перед каждой игрой.
-• Настройки → «Кэш модов»: сколько места занято и кнопка «Очистить».
-• Перед окном Windows «Издатель: неизвестно» (разовая настройка hosts) лаунчер объясняет, что это и зачем.
-• Из клиента убраны отладочные моды и включатель CheatManager.
+**This version has to be downloaded by hand once** — after that the launcher updates itself.
 
-**Если что-то пошло не так** — пишите в канал поддержки и приложите файл `%LOCALAPPDATA%\DungeonborneLauncher\logs\launcher.log`.
+**Mods now come from the server**
+• The launcher downloads the server's mods before you play and installs them only for the game session — after you exit, the game folder is clean again.
+• When a mod is updated on the server, the launcher fetches the new version by itself; a new launcher is no longer needed for that.
+• Only what changed is downloaded; the download progress shows in the launch window.
+• Files of earlier launcher versions are removed from the game automatically. Files you changed yourself are left alone.
+
+**"Play" in Steam opens the launcher**
+• Settings → "Open the launcher with Steam's 'Play' button". The launcher takes the place of the game's bootstrap; the original is kept next to it and put back when you uncheck the box.
+• Starting from Steam gives no Windows warnings, and the anti-cheat does not mind.
+• After Steam's "Verify integrity of game files" the launcher takes its place again on its next start.
+• Pressing "Play" again while the launcher is open just brings its window up.
+
+**Launcher updates**
+• When a new version is out, an "Update and restart" bar appears at the top.
+• The launcher installs only updates with our digital signature — they cannot be swapped.
+• An update never starts while you are in the game.
+
+**Small things**
+• The mod with native code (dbnative) asks for permission once, not before every game.
+• Settings → "Mod cache": how much space it takes, and a "Clear" button.
+• Before the Windows "Publisher: unknown" prompt (the one-time hosts setup) the launcher explains what it is and why.
+• Debug mods and the CheatManager switch are removed from the client.
+
+**If something goes wrong** — write in the support channel and attach the file `%LOCALAPPDATA%\DungeonborneLauncher\logs\launcher.log`.

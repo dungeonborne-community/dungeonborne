@@ -38,7 +38,7 @@ Check on the test stand: the DS log shows `[GAMEID] BattleId=… ok`. On a clien
 ping line (purple, the native color), which means the write replicates. If there is no number, the property is push-based and only item 2 works.
 
 ## 2. RuClient — `ue4ss/Mods/DungeonborneRuClient/Scripts/main.lua`
-Replace the block from the comment `-- 09.11 ID игры в правом верхнем углу` to the end of `function GameId.Show … end`
+Replace the block from the comment `-- 09.11 game ID in the top right corner` (in Russian in the source) to the end of `function GameId.Show … end`
 (lines ~2304–2370) with:
 
 ```lua
@@ -76,10 +76,10 @@ function GameId.Show(Id)
 end
 ```
 
-And in the `ClientMessage` hook below, replace the call:
+And in the `ClientMessage` hook below, replace the call (the "Game ID: " label is in Russian in the source):
 
 ```lua
--                    local OkS, ErrS = pcall(GameId.Show, "ID игры: " .. Id)
+-                    local OkS, ErrS = pcall(GameId.Show, "Game ID: " .. Id)
 +                    local OkS, ErrS = pcall(GameId.Show, Id)
 ```
 

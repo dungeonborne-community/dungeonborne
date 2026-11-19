@@ -190,7 +190,7 @@ On the right: a column of dots (only the 6 sections, no sub-items; from xl). Own
   the text changes while invisible, fades in over 0.25 s; the background and the header backdrop stay. ~0.55 s in total. On load — instantly.
 - "Reduce motion" (Windows: Animation effects off): a still frame of the shader, no theme transitions, no inertia,
   the language changes without dissolving.
-- The "▶ Animations / Анимации" button in the header (14.11) — visible only if animation effects are off in Windows (or it is already
+- The "▶ Animations" button (Russian label on the Russian page) in the header (14.11) — visible only if animation effects are off in Windows (or it is already
   turned on on the site): `<html data-motion="on">` + localStorage `motion`. The Tailwind variants `motion-safe`/`motion-reduce`/
   `animated` are overridden via `@custom-variant` (they respect data-motion), and `window.matchMedia` is wrapped in site.js: queries
   about prefers-reduced-motion answer as if motion were on (atmos.js and every check use it). On click
@@ -245,7 +245,7 @@ On the right: a column of dots (only the 6 sections, no sub-items; from xl). Own
 
 ## 8. SEO and social networks (build_seo.py)
 
-- `<title>`: "Dungeonborne — community server: play again" / Russian "Dungeonborne — сервер сообщества: играть снова".
+- `<title>`: "Dungeonborne — community server: play again" / the same title in Russian.
 - In `<head>` (seo block): og:site_name "Dungeonborne Community", locales en_US/ru_RU, twitter card, canonical, hreflang
   (en / ru via ?lang=ru / x-default), og:url, og:image (img/og.jpg), JSON-LD: WebSite, Organization (sameAs = LINKS),
   SoftwareApplication (launcher, free, Windows 10/11, version, size, downloadUrl), FAQPage (9 questions of "Help").

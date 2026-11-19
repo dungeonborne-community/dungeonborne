@@ -7,7 +7,7 @@ metadata:
   type: reference
 ---
 
-Analysis of the priest's Q "Божественное наставление" (105001), 15.11:
+Analysis of the priest's Q "Divine Guidance" (105001), 15.11:
 - Description `Skill_Description_105001` → `{4|GE}` a number and `{5|GE}` a percentage; the GE ↔ tooltip formula link is in `content/balance/csv/skill_calculate.csv` (`formula_lua_id`) and `skill_num_exchange.csv`.
 - Tooltip formulas — client Lua `research\lua_all\...\Script\Text\<formula_lua_id>.lua` (luac54 -l -l). This is an approximation for the text, the real calculation is native `TgfDamageExecution` / `TgfHealExecution` (the exe is packed).
 - GE: `UAssetGUI tojson <in> <out> VER_UE5_1 dungeonborne` (the mapping name from `%LOCALAPPDATA%\UAssetGUI\Mappings`, NOT the path to the usmap — with a path you get RawExport).

@@ -38,4 +38,4 @@ Related: [[dungeonborne-dedicated-plan]], [[dungeonborne-workflow]].
 - 2026-11-10: at night ds-agent crashed with a panic (task exit code 101, the text went to the console); the DbAgent task was ONLOGON only
   (and with the default 72 h limit) — 3 h without servers. Robot local time = UTC−8. Then Robot stopped returning the SSH banner
   (Win32-OpenSSH spawns a process per connection — it looks like Windows could not create processes). Fix 3627cfb:
-  agent + `core/backend/ds-agent/install_task.ps1`, backend `[Watchdog] ТРЕВОГА` (alarm) / `GET /admin/v1/ds/health`.
+  agent + `core/backend/ds-agent/install_task.ps1`, backend `[Watchdog] ALARM` (the word is Russian in the log) / `GET /admin/v1/ds/health`.

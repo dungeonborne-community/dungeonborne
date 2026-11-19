@@ -59,7 +59,7 @@ if the required tables are in the kit.
   `patch_format`, per table `sha256/rows/values/type/source/original`. The date is part of the version, so a new version
   does not necessarily mean new data.
 - `kit.json`: `notes`, `table[]` (`name/title/about/where/editable/layout/icon`), `fields`, `fields_en`, `attr_units`
-  (`доля` fraction / `очки` points), `attr_ids`.
+  (fraction / points; the stored unit values are the Russian words for these), `attr_ids`.
 - `data/<table>.csv`: long layout `row,key,title,path,value,name`; separator `,`, decimal `.`, UTF-8 with BOM.
 - `data/<table>.orig.csv` — the game original (if present); `data/<table>.en.csv` — English labels (if present).
 - `raw/<table>.json`: the source JSON, it shows the number type; `icons/<key>.png`: 767 files, 11 MB.
@@ -116,10 +116,10 @@ reduced filters), and the workbook and `make_patch.py` do not read it. `check.py
 ```json
 {
   "format": "dbbalance-catalog/1",
-  "items": {"181010000": {"ru": "Ржавый меч", "en": "…", "major": "EQUIPMENT", "minor": "…", "rarity": "NORMAL", "slot": "SWORD", "kind": "EQUIP_WEAPON"}},
-  "classes": {"400002": {"order": 2, "ru": "Боец", "en": "Fighter", "career": "FIGHTER", "race": "HUMAN"},
-              "400000": {"order": 0, "ru": "Боец", "en": "Fighter", "career": "FIGHTER", "race": "HUMAN", "hidden": true}},
-  "rarities": {"UNCOMMON": {"value": 3, "ru": "Редкое", "en": "Uncommon"}},
+  "items": {"181010000": {"ru": "…", "en": "…", "major": "EQUIPMENT", "minor": "…", "rarity": "NORMAL", "slot": "SWORD", "kind": "EQUIP_WEAPON"}},
+  "classes": {"400002": {"order": 2, "ru": "…", "en": "Fighter", "career": "FIGHTER", "race": "HUMAN"},
+              "400000": {"order": 0, "ru": "…", "en": "Fighter", "career": "FIGHTER", "race": "HUMAN", "hidden": true}},
+  "rarities": {"UNCOMMON": {"value": 3, "ru": "…", "en": "Uncommon"}},
   "field_types": {"gear_template": {"durability": "int32"}}
 }
 ```
@@ -189,7 +189,7 @@ Window 1280×800, minimum 1100×680. Navigation on the left, like the launcher.
    differ from the game original.
 3. **Table.**
    - `wide`: a row = a table row; `long`: a row = a value. The layout comes from `layout`, can be switched.
-   - The name and the icon are pinned. Column header: `fields` + unit (`доля` is shown as %, stored as a fraction).
+   - The name and the icon are pinned. Column header: `fields` + unit (the fraction unit is shown as %, stored as a fraction).
    - Editable cells are highlighted, the rest is read-only. Colours as in the workbook: differs from original, own edit, error.
    - Cell tooltip: original, kit value, field description, original range.
    - Search by name, id and field. Filters: "changed by me", "differs from original", category and rarity (from

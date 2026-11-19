@@ -91,7 +91,7 @@ python -I tools/make_mods.py --src C:\Games\Dungeonborne      # -> dist/mods/
   Against the backend: `DBL_MANIFEST=http://127.0.0.1:8090/.well-known/dbserver.json` (the test config
   `tools/probe/auth_test/server.toml` serves `../launcher/dist/mods`).
 - Serving: the backend takes packages from `[mods] dir` (`core/backend/src/auth/mods.rs`), deploy to the VM —
-  `ops/deploy/vm/README.md`, section "Моды клиента" (client mods).
+  `ops/deploy/vm/README.md`, section "Client mods".
 
 ## Launch from Steam: the launcher instead of the game bootstrap (`bootstrap.rs`)
 

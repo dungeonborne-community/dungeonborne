@@ -244,7 +244,7 @@ not update during play. The server does not own the signature — a build cannot
 
 ## 12. Instance lobby in the launcher (spec and implementation 06.11)
 
-Matchmaking as in FaceIt: the player picks an instance and votes in the launcher, and enters the match with the native "Старт" (Start) button in the game. Enabled
+Matchmaking as in FaceIt: the player picks an instance and votes in the launcher, and enters the match with the native "Start" button in the game. Enabled
 by the flag `LAUNCHER_LOBBY=1`; without the flag everything is as now. Built on the open hall (`docs/WAITING_ROOM.md`) and the instance
 orchestrator (`core/backend/ds-agent/README.md`).
 
@@ -256,12 +256,12 @@ orchestrator (`core/backend/ds-agent/README.md`).
    of the right size in the game or move to another tab.
 4. The timer runs out: the IDs of everyone in the tab are recorded, the instance gets a job and opens the waiting hall for 5 minutes.
 5. A tab can be entered while the hall is still open: the ID is recorded if there are slots.
-6. A recorded player presses "Старт" (Start) in the game themselves and gets into the hall. Whoever did not press is simply not in the hall: no penalty, the match goes on without them.
+6. A recorded player presses "Start" in the game themselves and gets into the hall. Whoever did not press is simply not in the hall: no penalty, the match goes on without them.
 7. The hall always waits the full timer (WORKAROUNDS K18), then the match. After the match the tab is free again.
 
 ### 12.2 Maps and slots
 
-Slots are computed by `matchmaking::max_teams`. There can be more recorded players than slots: slots are taken in the order of pressing "Старт" (Start).
+Slots are computed by `matchmaking::max_teams`. There can be more recorded players than slots: slots are taken in the order of pressing "Start".
 
 | level_id | Map | Solo | Duo | Trio |
 |---|---|---|---|---|
@@ -291,7 +291,7 @@ Slots are computed by `matchmaking::max_teams`. There can be more recorded playe
 
 ### 12.3a Player minimum and matchmaking rules (08.11, user's decision)
 - **Gathering (`gather`):** the tab waits for `LOBBY_MIN_PLAYERS` (default 4; 8 → 4 in the evening of 08.11) players and only then
-  starts the group size vote. "Start" in the game during gathering — a window "Набираем игроков: X из N" (Gathering players: X of N).
+  starts the group size vote. "Start" in the game during gathering — a window "Gathering players: X of N".
 - **A started vote is carried through to the end** (08.11 evening, user's decision): if a player left or their launcher disappeared —
   the votes stay, a room opens on the result; from then on the minimum is enforced by the hall. The tab is reset only if everyone
   left. The log records who dropped out of the vote and why (left / launcher silent / maintenance).
@@ -309,10 +309,10 @@ In `lobby_matching_search`, after the existing "Return to match" branch (it take
 
 | Check | If not, an in-game window (`modal_message`, as in `battle_access_denied`) |
 |---|---|
-| The player is recorded in a tab | "Выбери инстанс в лаунчере" (Pick an instance in the launcher) |
-| The tab is in `starting` or `waitroom`, the hall accepts (`hall_open`) | "Голосование ещё идёт" (The vote is still going) or "Зал закрылся, жди следующий раунд" (The hall has closed, wait for the next round) |
-| The group size equals the chosen one, all its members are recorded in this tab | "Нужна группа на N" (A group of N is needed) or "Напарник не в этом инстансе" (Teammate is not in this instance) |
-| There are slots | "Мест нет" (No slots) |
+| The player is recorded in a tab | "Pick an instance in the launcher" |
+| The tab is in `starting` or `waitroom`, the hall accepts (`hall_open`) | "The vote is still going" or "The hall has closed, wait for the next round" |
+| The group size equals the chosen one, all its members are recorded in this tab | "A group of N is needed" or "Teammate is not in this instance" |
+| There are slots | "No slots" |
 
 The map is taken from the vote result, the map choice in the client is ignored. The result is written into `state.level_select` of all group
 members: the server and the raid results take the map from there (`build_level_and_map_params`). The normal queue is not used.

@@ -426,7 +426,7 @@ level.
   (replacement in `export/team.toml`);
 - `local.example.toml` contains the prod IP;
 - `game/catalog` depends on the team-level `game/paks`, `game/bp-patches`;
-- a stray file `core/backend/src/rpc/handlers — копия.rs`.
+- a stray file `core/backend/src/rpc/handlers — Copy.rs` (a Windows copy, the word "Copy" in Russian).
 
 **Item 5 done 15.11** — `cargo xtask pack designer [--sign] [--allow-dirty]`, package contents — `docs/PACKAGES.md`.
 - Studio is built in its own Cargo workspace with tauri-cli from `home\tools`.
@@ -438,14 +438,14 @@ Check: the package was unpacked into a clean folder, hashes were verified with P
 
 Found along the way:
 - Cyrillic in a file name breaks the `SHA256SUMS` check in PowerShell 5.1 → only Latin names in the package
-  (`README.md` instead of `ИНСТРУКЦИЯ.md`).
+  (`README.md` instead of a Cyrillic name, the Russian for `INSTRUCTIONS.md`).
 - In `home\toolchains\cargo\registry\src` the crates lacked nested `target` folders (for example,
   `cc-1.11.0/src/target/`): when moving the cache in step 4 the copy skipped all folders named `target`. The cache
   was set aside in `registry\src.broken-20261115` (2.8 GB, can be deleted), cargo unpacked everything again. When moving caches
   and `home`, do not exclude `target` folders.
 
 **Item 6 done 15.11** — `cargo ws secrets export [--tier=team] [--out=<file>]`, procedure — `docs/SECRETS.md` (for everyone) and
-the owner's document `docs/runbooks/secrets.md` ("Командная база", team database):
+the owner's document `docs/runbooks/secrets.md` ("Team database"):
 - a new database `vault\team.kdbx` with its own password: only entries with `visibility` no higher than `team`; there are no `owner` entries
   in it at all; the source database is not changed, an existing file is not overwritten;
 - after writing, the database is reopened and every value is compared with the source (mismatch — the file is deleted);
@@ -477,7 +477,7 @@ with an interrupted download, `ws doctor`/`check` 0/0; installation straight fro
   exe addresses and "Ghidra" in comments, `dbnative` on addresses from the exe analysis.
 - Along the way: the `ws` and launcher tests assemble a "machine path" from parts / use the disk `X:` — otherwise the export check sees
   them as a leak; the cycle `game/ue4ss` ↔ `game/catalog` is broken, `game/catalog` — team (refers to private paks);
-  the stray `handlers — копия.rs` is deleted.
+  the stray `handlers — Copy.rs` (named in Russian) is deleted.
 
 Verified: in the export copy (367 files) `cargo xtask ci` passes entirely (page, fmt, clippy, tests, `ws check`).
 A third-party AI without our context read the export following `AGENTS.md` and ran `bootstrap.ps1` without `-Apply`:

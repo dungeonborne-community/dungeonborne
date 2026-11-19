@@ -76,7 +76,7 @@ creation/deletion, skill selection, party search, quests, relics/alchemy/craftin
 - **C1 (before). Item guids do not fit in 32 bits — critical.** The server issues `user_id × 10000 + n` (≈1.09·10¹¹), the client
   stores the guid in 32 bits: 109 490 200 139 mod 2³² = 2 116 017 739 — that is what it sends back. Consequences in the session:
   `role_wear`/`role_take_off`/`inventory_item_move` — "item guid=2116017739 not owned by the player", toast
-  «Неверный класс или слот предмета.» ("Invalid item class or slot."); `trade_sales_order_publish` → `-4212 EnErrTradeSaleItemInvaild`. On the official
+  "Invalid item class or slot."; `trade_sales_order_publish` → `-4212 EnErrTradeSaleItemInvaild`. On the official
   server guid ≈ 10⁸ (`106598477`). Fix: a shared guid counter < 2³¹ (in the DB, atomic), migration of all existing
   player items + references (trade orders, mail, relics). Also check `role_guid` (`user_id × 100 + n` ≈ 1.09·10⁹ —
   fits for now, but overflows when `user_id > 21 474 836`).
@@ -240,7 +240,7 @@ creation/deletion, skill selection, party search, quests, relics/alchemy/craftin
   (auto-sale of loot 907 775 → 915 662, deadmoney) pushed only dirty_role, without dirty_coin_data — the menu kept the old
   gold, the stash took the new value from player_get_info. `raid_push_role` now sends gold too.
 - [ ] **I1.** Everything from C1: equip/unequip/move/sell — repeat the scenario after C1.
-- [x] Toast «Неверный класс или слот предмета» ("Invalid item class or slot") — correct (user, 02.11).
+- [x] Toast "Invalid item class or slot" — correct (user, 02.11).
 - [x] **I2 (analysis 02.11).** Crafting sent no RPC because there were no materials: recipes 101–103 — `100060` ×3 (sold,
   merchant tab `MarketTabName_1004`), 10000–10004 — `100066` ×3 (loot/quests only). There are no references for crafting and relics
   (PVE and sniffer). For tests — GM commands from chat (`/item 100066 15`, reply — `SCModalMessageSync`).
@@ -257,7 +257,7 @@ creation/deletion, skill selection, party search, quests, relics/alchemy/craftin
   System, Room), you cannot send from it except to the available channels (team/DM/room). Enabling world chat — only
   with a client mod (table patch: World `bShowInPanel = true`). GM for tests — admin API `127.0.0.1:9092`
   (`core/backend/src/admin_api.rs`, `tools/py/gm.py`), GM from chat — in a party or room.
-- [x] **S1. General chat did not work: «Не удалось отправить сообщение, вы не состоите в команде» ("Failed to send message, you are not in a team").** We sent all
+- [x] **S1. General chat did not work: "Failed to send message, you are not in a team".** We sent all
   `module_unlock_type` modules as unlocked, including `CHAT_SILENCE` (1200002) and `CHAT_ONLY_ENGLISH` (1200016);
   the official server and PVE do not send `user_unlock` — now neither do we. Not verified in game.
 - [ ] **I2 (before).** Crafting, alchemy, relics: the tabs opened (`client_action_log`: Craft_Supply/Collect/Compound,
@@ -312,7 +312,7 @@ Native path (headless listen server, dbnative): raid results come from the serve
 - [ ] **B3a.** XP and results map are taken from the last level selection in the lobby (`raid_finish_exp` → 10101), while the dbtest server
   is up on Classic (10102). In a match via a room the level matches; for dbtest — pass the map from the server.
 - [x] **B4 02.11.** Death (from mobs, 12:25): the record status 3 / reason 2 appears only when the dead player leaves
-  to the lobby (until then they spectate); `applied: death`, 11 items lost, deadmoney set «Склеп» ("Crypt"), +100 XP
+  to the lobby (until then they spectate); `applied: death`, 11 items lost, deadmoney set "Crypt", +100 XP
   (level 2→3), level-up window in the hall.
 - [x] **B4a 02.11.** Host commands for automated runs (DungeonborneRuServer + admin API, `tools/gm.py "host kill …"`):
   `kill <open_id|all>` — native GEs `GE_TGF_Damage_DeathZone_InstantDeath` / `GE_TGF_Kill_Self` (`DamageSelfDestruct`
@@ -344,8 +344,8 @@ Native path (headless listen server, dbnative): raid results come from the serve
   Not verified. Latin-only without a condition in friend search, search in the invitation window and report text (Lua) — the backend cannot remove it.
 - [ ] **S3.** DM chat "same name everywhere" — not a data error (agent, LuaProbe 16:28–16:37): the line always shows the name
   of the OTHER PARTY — your own message "<Chat_Message_SendTo> other party: …", incoming "other party: …". The game's Russian locale
-  translates Chat_Message_SendTo as «Отправить...» ("Send..."), and your own message reads as incoming. Options: a pak with the ru string
-  «Кому» ("To") (GeneralStrings/Chat_Message_SendTo); remove the duplicate "Name(Name)" (nickname = role name, K8). Awaiting decision.
+  translates Chat_Message_SendTo as "Send...", and your own message reads as incoming. Options: a pak with the ru string
+  for "To" (GeneralStrings/Chat_Message_SendTo); remove the duplicate "Name(Name)" (nickname = role name, K8). Awaiting decision.
 - [ ] **M1c (history).** Invitation (13:55, by nickname and from "Add teammate"): `team_send_invitation` goes through, the invitee
   gets `dirty_team_snapshot.pending_invitation`, but sees no invitation window/list → both invited each other
   and became leaders of one-person parties. What the client waits for to show it (WBP_TeamInviteListPage ← event
@@ -377,7 +377,7 @@ Native path (headless listen server, dbnative): raid results come from the serve
   "Reconnect to the match?" right away. DSConfig.json with DSMaxReconnectTimes=1 in the pak apparently did not apply (loading_cnt 1→2,
   no window). A window right after a restart is impossible without writing to memory (at least one auto-attempt) — the user
   chose a button: at login we do not send `user_battle_room`, "To battle" from a player with a running match → `matchmaking::rejoin` into their
-  room; at login a hint window «Бой ещё идёт» ("The match is still on"). Verified by the agent (rjtest 12:49–12:53): the same PC/PS. Not verified:
+  room; at login a hint window "The match is still on". Verified by the agent (rjtest 12:49–12:53): the same PC/PS. Not verified:
   the hint window in game, party (teammate in the match, leader presses "To battle").
 - [ ] **M3c 03.11 — done.** The backend was restarted mid-match: the server is in a match, the backend has no room — the slot was considered
   free and could go to a new room. Now such a slot is "orphan": it gets no rooms, after `DS_ROOM_TTL` — reset.
@@ -487,8 +487,8 @@ Native path (headless listen server, dbnative): raid results come from the serve
   the pass for it (3004 — the stones themselves for real money, 1015). Idea: in deadmoney mode a player kill → N stones by mail
   after the raid; skins — bought in the native shop (remove K11), prices — in balance (market_product_item.cost_price).
   03.11 user decision: 1 kill = 1 stone, no multipliers, prices / 10, nothing for newcomers, DLC — for stones.
-  Done (backend): `POST /ds/kill {killer, victim}` → `state.dm_kills`, on the killer's results a letter «Награда за
-  убийства» ("Kill reward") with 1012 (`raid_native::dm_register_kill`, `deadmoney.toml [kill_reward]`); buying an appearance unlocks it
+  Done (backend): `POST /ds/kill {killer, victim}` → `state.dm_kills`, on the killer's results a letter "Kill reward"
+  with 1012 (`raid_native::dm_register_kill`, `deadmoney.toml [kill_reward]`); buying an appearance unlocks it
   (`facade_own` + dirty_facade_data), "all skins unlocked" off (K11 removed, starter ones — `DEFAULT_FACADES`); balance:
   66 products + 4 special prices for 1012 / 10, +40 appearances (DLC 25, event rewards 15) at 30 stones (790001–790040).
   Test `kills_counted_for_killer`. Waiting for: from the agent — POST /ds/kill from the mod; `balance build --deploy` with the game closed.
@@ -526,7 +526,7 @@ un\dbserver-observer.txt` = `late spec destroy`, mobs in place). In (4) the kill
   does not disconnect from the backend. After player_get_info the client requests only cache EN_ROT_PLAYER and does not subscribe
   ROLE_BASIC of the hall hero (like P2). Differences of the reply from the working exit at 11:58: non-empty user_sold_items_list, bigger stash.
   Suspects: equipped unbought skins (K11 removed), the sold list, clear_matching. Analysis — agent (LuaProbe). (6) the letter with a stone ARRIVED:
-  [KILL] … killer 76561198000000903 (DeathEvent) → /ds/kill → letter «Награда за убийства: 1» ("Kill reward: 1") at 16:12:48.
+  [KILL] … killer 76561198000000903 (DeathEvent) → /ds/kill → letter "Kill reward: 1" at 16:12:48.
 - [x] **Sh4d 03.11 16:27–16:40 — live test 4 (user):** kill stones arrive by mail; stash equipment
   is deleted after the raid; merchant — consumables only; characters are fine after an exit (the reset again does ClientTravel to the
   lobby after 30 s, agent).
@@ -715,7 +715,7 @@ un\dbserver-observer.txt` = `late spec destroy`, mobs in place). In (4) the kill
   start_headless will restart it); (2) backend — do not give a room to a slot in phase=resetting longer than N s / consider the slot
   dead and move the room (like `allocator::failover`). Why the map did not load was not found (the UE log has only errors:
   `TGFNetworkMessageHandler::SendRequest Send msg failed` once a minute — this happened before too).
-- [ ] **B13c 05.11 — not done.** Happened again at 18:02 (DS crash in UE4SS mid-raid on Hard, probably the StatWatch hooks): after login the window «Бой ещё идёт» ("The match is still on"), `room_create` → -4637 EnErrRoomUserInBattle (matchmaking holds Matched + DsReady). Workaround — restart the backend (rooms are in memory). The backend does not see a server crash mid-match: the process is restarted (heartbeat
+- [ ] **B13c 05.11 — not done.** Happened again at 18:02 (DS crash in UE4SS mid-raid on Hard, probably the StatWatch hooks): after login the window "The match is still on", `room_create` → -4637 EnErrRoomUserInBattle (matchmaking holds Matched + DsReady). Workaround — restart the backend (rooms are in memory). The backend does not see a server crash mid-match: the process is restarted (heartbeat
   standby with a new epoch), while for 45 min (DS_ROOM_TTL) the room is listed as "match running", and players are sent to reconnect to an empty
   server (04.11 15:46–16:28, 9 players; ~15 requests/s from their clients). Needed: on a heartbeat ready/standby with an epoch different
   from that of a room in the battle phase — close the room (room_finish_push + clear) and free the slot. Not done.
@@ -839,7 +839,7 @@ un\dbserver-observer.txt` = `late spec destroy`, mobs in place). In (4) the kill
   - 60 s connection timeout in RuClient (LOCAL, ConnTimeout, ru-connect-timeout.txt);
     **06.11 user: the connection timeout does not work.** Conditions and logs not analysed yet;
     **06.11 prod, player B:** the client loses the connection to the DS (UDP without WARP, `Connection TIMED OUT` every ~65 s), the room stays `battle`, no result; in the menu the client looks like it is in a long search,
-    a new search returns to the same room (`возвращается в бой`). It does not let go until the player returns. Not fixed;
+    a new search returns to the same room (`returns to the battle`, logged in Russian). It does not let go until the player returns. Not fixed;
   - R1-stuck backend: closing the room when the DS restarts (stale_battle) and removing those who did not arrive within DS_ARRIVE_SECS=75;
   - PVP result window (battle_settle_sync) — not done;
   - "Leave room" during a match (everyone leaves) — not re-checked after phase=empty;
@@ -862,7 +862,7 @@ un\dbserver-observer.txt` = `late spec destroy`, mobs in place). In (4) the kill
   in `room_suggest.index` (17542, 12718 …), and `room::suggest` paged at index·PAGE; now page = index mod the number of
   pages. (2) arena chests still had Dead Money loot: `[keep_base]` puts rows under 30101…30302, but
   nobody set GameState.MapId on the arena (RuClient `MapRulesByLevelName` knew only dungeons) -> map 0 loot = seasonal.
-  Now RuServer sets MapId on all GameStates at arena start (log `[HOST] арена (...): ... MapId`), RuClient does too
+  Now RuServer sets MapId on all GameStates at arena start (log `[HOST] arena (...): ... MapId`, in Russian), RuClient does too
   (`MapOnly`, without options and MatchType). Awaiting verification.
   - [ ] **R1-loot (20:25, NOT FIXED): arena chests still have Dead Money loot.** MapId is now set (DS log:
     `B_TGF_MatchGameState_C MapId 0 -> 30101`, `-> 30302`), the `[keep_base]` rows under 30101…30302 are in the pak — the loot
@@ -1023,7 +1023,7 @@ Game rule (`Guide_Description_3_6`): a player extracted with a teammate's gear, 
 
 ### The "Change your inventory arrangement" message (analysis 07.11; per the user, it was blocked by the rarity check)
 
-Text of `SelectMap_EquipmentLevel_Tips`: «Недостаточно очков снаряжения» ("Not enough gear score"). The English original asks to check your gear; the Russian translation is wrong. Shown in `WBP_MatchMainButton.CheckEquipScoreIsOk` when `battle_affix_score_require > 0` and the score is too low. The client's `competition_level.bytes` has no such field in any of its 59 rows, and no mod overrides it, so by the files the window should not appear. A screenshot and the map are needed.
+Text of `SelectMap_EquipmentLevel_Tips`: "Not enough gear score" (in the Russian client). The English original asks to check your gear; the Russian translation is wrong. Shown in `WBP_MatchMainButton.CheckEquipScoreIsOk` when `battle_affix_score_require > 0` and the score is too low. The client's `competition_level.bytes` has no such field in any of its 59 rows, and no mod overrides it, so by the files the window should not appear. A screenshot and the map are needed.
 Another candidate: `MatchEnter_RarityNotMatch`, rarity limit `battle_gear_rarity_require` on levels 40003015–40003020. Where the client shows it was not found.
 
 ## Playtest 07.11: inventory stops working after 30–40 minutes
@@ -1125,10 +1125,10 @@ Moved on 17.11 to the owner document `docs/owner/DEPLOY_LOG.md` (not in the team
 ## Stackable items when moved (08.11 evening, reported by the user; fixed, on prod since 13:54 UTC)
 - [x] Items that stack (e.g. potions) "behave strangely" when moved in the inventory/stash.
   Reproduced by the user on prod 08.11 13:14–13:20 UTC (open_id 76561198000000906). Backend log:
-  - `inventory_item_move guid=100000096: клетка для части стопки guid=100000096 занята` (and the same for 100000110) — moving
+  - `inventory_item_move guid=100000096: cell for part of the stack guid=100000096 is occupied` (logged in Russian) (and the same for 100000110) — moving
     part of a stack into an occupied cell is rejected; probably the client adds part of a stack onto an identical stack (should
     merge up to the stack limit), while the backend considers the cell occupied;
-  - then `предмета guid=100000110 нет у игрока` — the client refers to a guid the server does not have: the client's and
+  - then `the player has no item guid=100000110` (logged in Russian) — the client refers to a guid the server does not have: the client's and
     server's views diverged (after the refusal the client apparently had already shown the move locally).
   Needed: in the `inventory_item_move` code (src/rpc/handlers/inventory_handlers.rs) — moving part of a stack onto a stack of the same
   type (merge); on refusal — push the original state so the client rolls back; a recording of the exchange (RPC_DUMP on the stand) with the move
@@ -1171,7 +1171,7 @@ Moved on 17.11 to the owner document `docs/owner/DEPLOY_LOG.md` (not in the team
   the rows of seasons 1001/1002 (only 40003015–18) have no limits. Which row the client takes was not checked — hence the earlier
   entry "limit only on Hard". The new rule is in all rows, so it does not depend on which row is chosen.
 - [x] Tooltip: backend 58e579a — `map_rules` takes its level limits from `[gear_rarity] levels` (`gear: "green"` —
-  grey/green only). Launcher 1.5.1 only knows `epic` — the text «Только серое и зелёное снаряжение.» ("Grey and green gear only.") is in the launcher
+  grey/green only). Launcher 1.5.1 only knows `epic` — the text "Grey and green gear only." is in the launcher
   sources (8ff136b), will appear with the 1.5.2 release (not released).
 - **Prod 08.11 ~17:18 UTC, hard restart on the user's word** (the last player IVO lost connection at 16:49 and did not return, match
   l40003015_151528061 was hanging): the graceful `maintenance.sh restart` was stopped, backend 58e579a (sha256 8b09fc0f…) installed
@@ -1260,7 +1260,7 @@ Moved on 17.11 to the owner document `docs/owner/DEPLOY_LOG.md` (not in the team
 Robot (865a2cba…, the old one — `Kitackup_before_20261109c`), old battle servers 7777/7787 closed normally (`quit`).
 VM backup `backup_20261109c`. Not deployed (not done): empty hall after a cancel, map options per port, duplicate members.
 Ready (in commits, not on prod):
-- [ ] 10.11 ascension potion: XP was granted on death too, and a potion drunk on the 1st floor was lost on exit from the 2nd ("of which potions 0" for the user on prod). Commit (see git log "Зелье восхождения"): backend — potion XP only on exiting alive; RuServer — potion XP carries over through the floor transition. Stand: +3010 (of which potions 3000) after exiting from the 2nd floor. To deploy: backend (VM) + RuServer on Robot.
+- [ ] 10.11 ascension potion: XP was granted on death too, and a potion drunk on the 1st floor was lost on exit from the 2nd ("of which potions 0" for the user on prod). Commit (see the git log entry for the ascension potion; its message is in Russian): backend — potion XP only on exiting alive; RuServer — potion XP carries over through the floor transition. Stand: +3010 (of which potions 3000) after exiting from the 2nd floor. To deploy: backend (VM) + RuServer on Robot.
 - [ ] 10.11 match ID in the native ping widget (commit 7e5092a; our own label 9380833 removed): RuServer writes LyraGameState.BattleId; no client mod or player package needed. Stand: the number in the ping line, also after the 2nd floor.
 - [ ] 10.11 the guaranteed red portal was always in the centre — now anywhere in the current circle (7e5092a, stand: 1007 from the centre with radius 2000).
 - [ ] 10.11 resurrection stones were lost on the transition to the 2nd floor — dbnative gofloor c3 = 1 (272fbc1; stand: stones on the 2nd floor, taken out after leaving the raid — verified by the user). Deploy on Robot: RuServer main.lua from HEAD + `dbnative.dll` (build with build.bat; the DLL is locked by the game — put `dbnative.dll.new`, start_headless installs it at a start without the game running).

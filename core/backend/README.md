@@ -30,9 +30,9 @@ The production server is a Linux build made by the owner; you never need one to 
   secrets (relay TLS key, Discord app secret, bot token) stay with the owner; `config/secrets.toml` lists only what
   your edition has.
 - Server data from the game: tables and protocol descriptors (`ExcelConfig`, `Configure.pb`, `Network.pb`) and the
-  reference packets in `assets/packets`. **Team copy:** they are in this folder. **Public edition:** they are game files
-  and are not published; it ships no tool to extract them and no pak key — getting them from a game you own is up to
-  you, under the game's terms. Without them the server builds and its tests run, but it does not start.
+  reference packets in `assets/packets`. They are in this folder in the team copy and in the public edition (the
+  owner's decision of 19.11); the game's paks and client code are not — the patch paks are built from your own game
+  copy (`cargo ws dump paks`, root `README.md`).
 - For matches: the game's own dedicated server and `ds-agent` on the server machine (locally — the stand,
   `tools/stand/README.md`).
 

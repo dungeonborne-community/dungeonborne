@@ -15,10 +15,3 @@ documents and tools describe how to produce them from your own copy (`docs/STORA
 The software is provided "as is", without warranty of any kind (see `LICENSE-MIT` / `LICENSE-APACHE`). You are
 responsible for how you use it and for complying with the laws and agreements that apply to you. Rights holders:
 contact us through this repository (an issue, or private reporting as in `.github/SECURITY.md`) and we will respond.
-
----
-
-Это некоммерческий фанатский проект игроков. Он **не связан** с разработчиком и издателем Dungeonborne и не одобрен
-ими. Названия и знаки принадлежат их владельцам. Здесь есть таблицы и данные игры, нужные серверу. **Кода и
-ассетов издателя здесь нет**: ни исполняемых файлов, ни расшифрованного образа, ни исходных скриптов клиента, ни
-блюпринтов, ни паков — исследования и инструменты описывают, как получить их из своей копии.

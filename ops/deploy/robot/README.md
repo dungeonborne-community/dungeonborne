@@ -113,9 +113,9 @@ Update: stop all servers → unpack the new kit on top (or into a new folder) �
 |---|---|
 | game closes immediately, ACE log says "virtual machine" | Hyper-V / VBS / HVCI are on — turn them off, reboot |
 | `dbserver.log`: `connect failed 201` repeats | no access to the game login: `hosts`, `BIND_IP`, `core` firewall on 8085/6601–6604, `PUBLIC_GATEWAY_IP` unreachable from Robot; login refused without the launcher — the server IP is missing from `DS_TRUSTED_IPS`/`DS_POOL` |
-| `[SLOT] heartbeat … ошибка 12029/12002` (error 12029/12002) | 9091 unreachable: `DS_AGENT_BIND`, `core` firewall, the address in `native_data.txt` |
+| `[SLOT] heartbeat … error 12029/12002` (logged in Russian) | 9091 unreachable: `DS_AGENT_BIND`, `core` firewall, the address in `native_data.txt` |
 | `[SLOT] … unknown_slot` | `-PublicIp`/port does not match the backend's `DS_POOL` |
-| `hosting: карта не загрузилась за 180 с` (map did not load in 180 s) | the backend was restarted while the server was starting — `-Quit`, start again |
+| `hosting: map did not load in 180 s` (logged in Russian) | the backend was restarted while the server was starting — `-Quit`, start again |
 | second server does not start ("Multiple Game Instances") | `start_headless.ps1` was not run as administrator — mutexes were not removed (`killmutex.log`) |
 | players cannot connect to the server | Hetzner Firewall on Robot: UDP 7777+; the address in `DS_POOL` must be Robot's public IP |
 

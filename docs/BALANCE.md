@@ -82,21 +82,21 @@ One CSV row — one value. Example `content\balance\csv\affix_value_template.lon
 
 ```
 row;key;title;path;value;name
-0;101;Сила;attribute_type;1001;Сила
-0;101;Сила;data.affix_data[0].affix_type;EN_BATTLE_AFFIX_TYPE_MAJOR;
-0;101;Сила;data.affix_data[0].rarity_range[3].min_value;8;Редкое
-0;101;Сила;data.affix_data[0].rarity_range[3].max_value;12;Редкое
+0;101;Strength;attribute_type;1001;Strength
+0;101;Strength;data.affix_data[0].affix_type;EN_BATTLE_AFFIX_TYPE_MAJOR;
+0;101;Strength;data.affix_data[0].rarity_range[3].min_value;8;Uncommon
+0;101;Strength;data.affix_data[0].rarity_range[3].max_value;12;Uncommon
 ```
 
 - `row` — the table row number (from 0). `key` (the first field of the row), `title`, `name` — labels for filtering, not read on import.
-- `path`: fields joined by `.`, `[i]` — a list element, `[key]` — a map element (here `rarity_range[3]` = rarity 3 = UNCOMMON, "Редкое" (Uncommon)).
+- `path`: fields joined by `.`, `[i]` — a list element, `[key]` — a map element (here `rarity_range[3]` = rarity 3 = UNCOMMON, "Uncommon").
 - In Excel: Data → Filter, filter `path` by "contains max_value" etc. Edit only `value`.
 - New value — add a row with `row` and `path`. Delete a value (reset to default) — clear `value`.
 - Keep one layout per table: `csv` deletes `.long.csv` and vice versa; if both are present, `csv-import` refuses.
 - Empty cell = default value (0 / false / "" / field absent).
 - Columns exist only for fields that occur in at least one row. New field — add a column with its path.
 - Format for Russian Excel: separator `;`, decimal `,`, UTF-8 with BOM. `--plain` — `,` and `.` (LibreOffice, VS Code).
-  On import the separator is detected automatically, any decimal mark is accepted; `ИСТИНА`/`ЛОЖЬ` (Russian Excel TRUE/FALSE) too.
+  On import the separator is detected automatically, any decimal mark is accepted; the Russian Excel words for TRUE/FALSE too.
 - Excel corrupts integers longer than 15 digits (turns them into `1,23E+17`) — edit such tables in JSON.
 - `csv-import` replaces `rows` in `balance\<table>.json` entirely. Do not edit one table in JSON and CSV at the same time.
 
@@ -129,17 +129,17 @@ weight = { treasure = 3.0 }     # treasures 3 times more often in mixed pools
 count  = { gold = 2.0 }         # twice as much gold
 
 [groups.g01]
-name = "Бочки, ящики, горшки"   # label, can be renamed
+name = "Barrels, crates, pots"  # label, can be renamed
 sources = ["BP_Barrel_01_C", …] # BP name from loot_source_map or a number
 slots = [
-  { id = 910001, pool = 900001, chance = 35 },   # Золото ×3–12
+  { id = 910001, pool = 900001, chance = 35 },   # Gold ×3–12
   { id = 910002, pool = 900008, chance = 12 },   # potions
 ]
 
 [pools.900001]
-name = "Золото ×3–12"
+name = "Gold ×3–12"
 items = [
-  { id = 100069, cnt = [3, 5, 6, 8, 10, 12], w = 30000 },  # Золото [gold]
+  { id = 100069, cnt = [3, 5, 6, 8, 10, 12], w = 30000 },  # Gold [gold]
 ]
 ```
 
@@ -149,7 +149,7 @@ items = [
 - New pool — `[pools.my_name]` with any name (the id is assigned automatically), in the slot `pool = "my_name"`. New slot — without `id`.
   A slot repeated twice — two rolls. A choice from several pools: `pools = [900001, 900002], pr = [70, 30]`.
 - `w` — relative weight, on build the pool is normalised to a sum of 30000 (as in the game). `cnt = [3, 5]` — one of the values
-  with equal probability. An item can be given by name: `{ id = "Золото" }` (the localised name; if the name is ambiguous, `build` asks for an id).
+  with equal probability. An item can be given by name: `{ id = "Gold" }` (the localised name; if the name is ambiguous, `build` asks for an id).
 - A pool that became empty after `remove`, and the slots with it, simply disappear; `loot show` / `build` report how many.
 - **Drop quality** `quality` (in `[rules]` or a mode): the weight of an item that has a price
   (`item_type.system_repurchase_price`, for treasures — from 10 to 320 000) is multiplied by
@@ -168,7 +168,7 @@ items = [
   neither we nor PVE have loot for them; the full list of maps — `content\loot\maps_report.txt`).
   Without `maps` — map 0 (default loot). `loot_types = [0, 1, …]` — the map's loot variants (in PVE 1–5 ≈ copies of 0,
   3/4 — with altars `BP_Altar_Special_*`). A table row is created for each pair (map, type); one source on
-  one pair — in only one group. On export group names start with the maps: "Склеп Hard: …" (Crypt Hard), "все карты: …" (all maps).
+  one pair — in only one group. On export group names start with the maps: "Crypt Hard: …", "all maps: …" (the labels are in Russian in the export).
   `host_from_lobby` always opens `L_Dungeon_Official_01_Classic` = **10102** (Crypt Classic).
 - 04.11: `content\loot\loot.toml` — the framework base, PVE loot without season rules (`remove = []`, no `[modes]`); Dead Money rules —
   in `seasons\dead-money\loot\loot.toml`. The loot of `core\backend\assets\excel` (18 `loot` rows) was not taken as the base: for players it is overridden by `zz_Loot_P`.
@@ -191,15 +191,15 @@ Next to an id the CSV writes a name — **read-only**, ignored on import (the nu
 
 | Layout | Where the label is | Example |
 |---|---|---|
-| ordinary CSV | the column `<column>#name` to the right of the id | `item_id;item_id#name` → `181010000;Меч новичка` |
-| long CSV | `title` — the row name, `name` — the names of keys/values in the path | `Сила … rarity_range[3].max_value;12;Редкое` |
+| ordinary CSV | the column `<column>#name` to the right of the id | `item_id;item_id#name` → `181010000;Novice Sword` |
+| long CSV | `title` — the row name, `name` — the names of keys/values in the path | `Strength … rarity_range[3].max_value;12;Uncommon` |
 
 What gets labelled (rules by field name — `core\backend\xtask\src\names.rs`, `REF_FIELDS` / `MAP_KEY_FIELDS`):
 
 | Field | Name | Source |
 |---|---|---|
-| `attribute_type`, keys of `attribute_random` | attribute (`first_level_strength` / "Сила" (Strength)) | field number of `DBattleAttributeOffset`; localisation via `battle_attribute_description.name` |
-| keys of `rarity_range`, `rarity`, `tiers_rarity`… | rarity ("Редкое" (Uncommon) = 3 = UNCOMMON) | `GeneralStrings Rarity_N`, otherwise the enum `EnItemRarity` |
+| `attribute_type`, keys of `attribute_random` | attribute (`first_level_strength` / "Strength") | field number of `DBattleAttributeOffset`; localisation via `battle_attribute_description.name` |
+| keys of `rarity_range`, `rarity`, `tiers_rarity`… | rarity ("Uncommon" = 3 = UNCOMMON) | `GeneralStrings Rarity_N`, otherwise the enum `EnItemRarity` |
 | `role_type_id`, `career_type_id` | class (`FIGHTER/HUMAN`) | `role_type` |
 | `type_id`, `item_id`, `ue_source_type_id`… | item (name from localisation, otherwise the type `EQUIPMENT_WEAPON`) | `item_type` |
 | `ability_set_id`, `affix_alias_id`, `legendary_affix_id` | legendary | `battle_ability_set_description` |
@@ -214,7 +214,7 @@ Without a dump items are labelled only by type. To get the real names (in the cl
 3. `cargo xtask balance names-import` → `content\names\strings.tsv`.
 4. `cargo xtask balance csv` / `csv-long …` — the labels will be taken from the localisation.
 
-**English labels for the balance kit** ("Сила / Strength"): the same with the client in English (language in the game
+**English labels for the balance kit** ("Strength" next to the Russian name): the same with the client in English (language in the game
 settings or launch with `-culture=en`), F6 in the lobby, then `cargo xtask balance names-import --lang=en` →
 `content\names\strings_en.tsv` (the Russian `strings.tsv` is not touched) and `cargo xtask balance kit`. The import checks the language
 of the dump: a Russian dump will not be written as `--lang=en`.

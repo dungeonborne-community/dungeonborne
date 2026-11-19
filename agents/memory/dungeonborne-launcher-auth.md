@@ -58,10 +58,10 @@ no server.toml = legacy behaviour. Keep it provider-agnostic (user insisted: "we
 `Lua_OnWebViewResult` → Lua, `TGFSteamWebviewClosedEvent`) is a later option, not v1. See [[dungeonborne-dedicated-plan]].
 
 **Two Discord servers (03.11):** `Discord/setup_server.py` + `Discord/.env` and `bot.toml` target the TEST server
-Sirius.ai (100000000000000107); the production community server "Отряд Котят" (100000000000000101) is in
+Sirius.ai (100000000000000107); the production community server "Otryad Kotyat" ("Kitten Squad", 100000000000000101) is in
 `bot.prod.toml` and the backend auth config (`tools/probe/auth_test/server_discord.toml`, guild_id). Never run
 setup_server.py against prod without the user. Login whitelist: `[auth] login_roles = ["whitelist"]` + Discord role id →
-"whitelist" in `[auth.discord.roles]`; refusal code `not_whitelisted` (web login, /me+refresh, relay). Role "Whitelist": prod "Отряд Котят"
+"whitelist" in `[auth.discord.roles]`; refusal code `not_whitelisted` (web login, /me+refresh, relay). Role "Whitelist": prod "Otryad Kotyat"
 = 100000000000000106 (already existed, mapped in server_discord.toml), test Sirius.ai = 100000000000000108.
 
 **Launcher v1.1 (03.11):** built-in server `https://203.0.113.10/.well-known/dbserver.json` (src/builtin.rs, auto-added,

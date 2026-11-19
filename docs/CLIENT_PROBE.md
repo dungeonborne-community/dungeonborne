@@ -63,7 +63,7 @@ are written by the Lua probe. Windows (`windows=1`) were not checked in the bise
 ## Limits and risks
 - Hooks catch functions called through UE reflection (from BP and Lua); internal C++ without a UFunction is not visible.
 - `FIELD` works if UnLua lets you replace `__index` of a class/struct metatable — the first in-game check:
-  `_lua.log` must have the line `HDR поля: обёрнуто N …` (the probe's literal log text) with N > 0 and `FIELD` lines after a window opens.
+  `_lua.log` must have the line `HDR fields: wrapped N …` (the probe logs this text in Russian) with N > 0 and `FIELD` lines after a window opens.
 - Wrapping already loaded Lua modules: a handler subscribed before the wrap will not be unsubscribed via the wrapper (functions are compared
   by reference). If the UI starts acting strangely — `wrap_loaded = 0` (or `enabled = 0`).
 - `TRACE` is heavy — enable it for the duration of one action.

@@ -60,7 +60,7 @@ cert.pem  key.pem  *_key.pem  *.pfx  server.toml  .env  aes_key.txt
 dump_*.bin  sniffer_log*.txt  data*.md  llm_context_*.md
 ```
 Before the first commit — review the final file list by eye: the `backups` root has many one-off dumps and
-archives, better to weed them out right away than to clean the history later. Separately: `src\rpc\handlers — копия.rs` is junk.
+archives, better to weed them out right away than to clean the history later. Separately: `src\rpc\handlers — Copy.rs` (a Windows copy, named in Russian) is junk.
 
 **Large binaries** (UE4SS, Goldberg, `repak.exe`, generated paks) — not in git, but in the Gitea package registry
 (generic packages) with versions; workflows download them by version.
