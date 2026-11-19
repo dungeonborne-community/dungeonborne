@@ -487,6 +487,9 @@ if ($Step -ne 'all' -and $Apply) {
         $b = $Steps[$k]
         if (-not (Test-Step $b)[0]) { Fail "step '$Step' needs step '$b' first: bootstrap.ps1 -Root $Root$(Get-Extra) -Step $b -Apply" }
     }
+    # the folders of the layout, as the machine step makes them: step by step, machine never runs with -Apply (it is
+    # always "done"), and <root>\vault was missing (19.11, the newcomer test)
+    foreach ($d in $Root, $vault, $dbHome, "$dbHome\toolchains", "$dbHome\tools", $tmp) { New-Item -ItemType Directory -Force -Path $d | Out-Null }
 }
 foreach ($s in $run) {
     $script:Current = $s
@@ -542,14 +545,12 @@ Write-Host ''
 Write-Host 'Bootstrap finished. Next:'
 Write-Host "  1. In a new PowerShell window first:  . '$envScript'"
 Write-Host "     (Rust of this workspace for that window only: RUSTUP_HOME, CARGO_HOME, CARGO_TARGET_DIR, PATH)"
-Write-Host "  2. cargo ws bootstrap --profile=dev --apply   (config\local.toml and the home folders; profiles: dev, designer, agent)"
-Write-Host "     team member: docs\CONTRIBUTING.md, 'Install from scratch' - secrets and data from the artifact store come here"
-Write-Host "  3. cargo ws doctor; cargo ws check   - 0 errors"
+Write-Host "  2. cargo ws doctor --profile=dev   (read-only: what the next command will install)"
+Write-Host "     cargo ws bootstrap --profile=dev   (installs: config\local.toml, home folders, ~1 GB of tools; profiles: dev, designer, agent)"
+Write-Host "     team member: docs\CONTRIBUTING.md, 'Setup from scratch' - secrets and data from the artifact store come here"
+Write-Host "  3. cargo ws check   - 0 errors; cargo ws doctor - one expected error, [game] reference, until your copy of the game is set up (README)"
 Write-Host "  4. DevKit: $(Get-DevkitExe)"
 Write-Host "  5. AI (Claude Code): open it in $ws - not in the folder above it; DevKit 'Start' does that for you"
 if (Test-Partial) {
     Write-Host "  Components on disk: cargo ws components list; more: cargo ws components add <name> --apply (docs\COMPONENTS_PLAN.md)"
-}
-if (Test-Path -LiteralPath (Join-Path $ws 'ops\machine\set-user-env.ps1')) {
-    Write-Host "  (owner machine: ops\machine\set-user-env.ps1 -Apply sets the variables for your user)"
 }

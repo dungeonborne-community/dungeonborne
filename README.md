@@ -104,8 +104,9 @@ Each member folder has a `member.toml` (commands, links) and a `README.md`.
 
 - **Windows 10/11 (64-bit)** and an internet connection. Everything installs under one folder; no administrator
   rights for the install, the user PATH and profile are not changed.
-- **Disk:** the base install is ~3.5 GB (~5.5 GB without Visual Studio Build Tools); building the backend,
-  launcher and Studio adds several GB of build cache. The installer warns below 20 GB free.
+- **Disk:** ~4 GB for the install with the `dev` profile (~5 GB without Visual Studio Build Tools); building the
+  backend, launcher and Studio adds several GB of build cache. The installer warns below 20 GB free.
+- **Time:** about 10 minutes on a fast connection; 45 minutes or more when the link to `static.rust-lang.org` is slow.
 - **Optional:** Visual Studio Build Tools with C++ (otherwise the Microsoft CRT/SDK is fetched by `cargo-xwin` and
   LLVM is used), KeePassXC for secrets.
 - **For anything that touches the game** (patch paks, the test stand, a real server): **your own copy of
@@ -120,8 +121,8 @@ Each member folder has a `member.toml` (commands, links) and a `README.md`.
 
 Give this repository's link to an AI assistant that can run commands (Claude Code, Codex and the like) and ask it
 to "check and set it up". It follows [`AGENTS.md`](AGENTS.md): audits `bootstrap.ps1` against the pinned hashes,
-shows you the plan, installs step by step after your "yes" and handles failures. About 5 minutes and ~0.3 GB of
-downloads with Visual Studio Build Tools present.
+shows you the plan, installs step by step after your "yes" and handles failures (checked 19.11 by an assistant
+that had never seen the project).
 
 ### By hand
 
@@ -152,20 +153,27 @@ workspace's Rust and tools for that window, then finish the setup:
 
 ```powershell
 . 'C:\DBDev\home\env.ps1'                      # this window only: Rust, cargo, the build tools, Python
-cargo ws bootstrap --profile=dev --apply       # config/local.toml, home folders, the rest of the tools
-cargo ws doctor                                # what is wrong on this PC
+cargo ws doctor --profile=dev                  # read-only: what is missing on this PC
+cargo ws bootstrap --profile=dev               # installs it: config/local.toml, home folders, ~1 GB of tools
 cargo ws check                                 # repository layout and leak rules — 0 errors expected
 ```
 
+`ws bootstrap` has no plan mode — it always installs; `ws doctor` is the preview. It adds ~1 GB of pinned tools to
+`home\tools` (PortableGit, gh, Python, Lua, the pak and asset tools, Goldberg, UE4SS), writes the AI assistant's
+environment (`.claude\settings.local.json`) and `<root>\CLAUDE.md`, and looks for the game in your Steam libraries.
 Profiles: `dev` (developer: everything to build and test), `designer` (Balance Studio and the kit), `agent`
-(an AI assistant's minimum). DevKit (`<root>\home\tools\devkit\DevKit.exe`) shows the same checks in a window.
+(an AI assistant's minimum); without `--profile` it is `owner` (everything). DevKit
+(`<root>\home\tools\devkit\DevKit.exe`) shows the same checks in a window.
+
+**Expected after the install:** `ws check` — 0 errors; `ws doctor` — one error, `[game] reference`, until you set up
+your copy of the game (next section).
 
 All machine-specific settings go into `config/local.toml` (created from `config/local.example.toml`, not in git).
 
 ## Your copy of the game
 
 Everything game-specific is rebuilt from the copy you own. The order below is what a fresh workspace needs; each
-command without `--apply` only shows what it would do.
+command below without `--apply` only shows what it would do (`ws bootstrap` is the one exception).
 
 1. **Game reference** — a clean copy of the game files the tools build from (`home\game\original\<build>`):
    ```powershell
@@ -332,7 +340,7 @@ They hold for people, for AI assistants and for every piece of research here (fu
 | Command | What it does |
 |---|---|
 | `ws check` | layout, machine paths, binaries, secrets, member links — before every commit |
-| `ws doctor` / `ws bootstrap --apply` | what is missing on this PC / install it |
+| `ws doctor` / `ws bootstrap` | what is missing on this PC (read-only) / install it (always installs) |
 | `ws game …` | the game reference: state, adopt a Steam download or install, clone working copies, diff |
 | `ws dump [--set=…]`, `ws dump paks` | research dumps / patch paks from your game copy |
 | `ws stand [--apply]` | the local test stand |
@@ -362,10 +370,11 @@ The repository is set up for AI-assisted work:
 
 ## Contributing
 
-Branch from `main` (`fix/<short>` or `feat/<short>`), keep the change small, run `cargo xtask ci` (fmt, clippy,
-tests, `ws check` with 0 errors), open a pull request that says what changed and how you checked it. Where new
-things go: [`docs/EXTENDING.md`](docs/EXTENDING.md); setup and the workflow in detail:
-[`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md). Open problems and plans: [`docs/FIX_LIST.md`](docs/FIX_LIST.md),
+Fork the repository, branch from `main` (`fix/<short>` or `feat/<short>`), keep the change small, run
+`cargo xtask ci` (fmt, clippy, tests, `ws check` with 0 errors), open a pull request that says what changed and how
+you checked it. Where new things go: [`docs/EXTENDING.md`](docs/EXTENDING.md). The original team's internal
+workflow (its exports, secrets database and artifact storage) is described in
+[`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md); you do not need those parts. Open problems and plans: [`docs/FIX_LIST.md`](docs/FIX_LIST.md),
 [`docs/BACKLOG.md`](docs/BACKLOG.md); deliberate simplifications: [`docs/WORKAROUNDS.md`](docs/WORKAROUNDS.md).
 
 ## Secrets and security

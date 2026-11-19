@@ -1,4 +1,5 @@
-# Rust version for the whole workspace (plan section 13.1): rustup installs it by itself on the first build.
+# Rust version for the whole workspace (plan section 13.1). rustup does not install it by itself (rust-lang/rustup#4836):
+# bootstrap.ps1 (step toolchain) installs it explicitly.
 # The backend build for prod (ops/deploy/scripts/wsl_build_clean.sh) takes only core/backend and content — this file
 # does not get there.
 [toolchain]

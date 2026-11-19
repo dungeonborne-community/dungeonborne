@@ -154,7 +154,7 @@ install = "built into Windows 10+"
 # for asset analysis, ready paks come from the artifact store.
 [[tool]]
 name = "repak"
-visibility = "team"   # the public edition is without it (export/public.toml filter)
+visibility = "team"   # tier of the team edition; the public edition (tier owner) has it too since 19.11
 kind = "download"     # github.com/trumank/repak, release v0.2.3
 url = "https://github.com/trumank/repak/releases/download/v0.2.3/repak_cli-x86_64-pc-windows-msvc.zip"
 archive_sha256 = "6720d602144d75df477a99d5bedb6ea780997546afc335901d4937cafeaa73fa"
@@ -167,7 +167,7 @@ components = ["server", "mods", "research"]
 
 [[tool]]
 name = "retoc"
-visibility = "team"   # the public edition is without it (export/public.toml filter)
+visibility = "team"   # tier of the team edition; the public edition (tier owner) has it too since 19.11
 kind = "download"     # github.com/trumank/retoc, release v0.1.5 (retoc fetches Oodle itself on first run)
 url = "https://github.com/trumank/retoc/releases/download/v0.1.5/retoc_cli-x86_64-pc-windows-msvc.zip"
 archive_sha256 = "cc036b06ad3bdcf7003690b00d82719980c374e48a95bf0654f9959148d263aa"
@@ -181,7 +181,7 @@ required = false
 
 [[tool]]
 name = "kismet-analyzer"
-visibility = "team"   # the public edition is without it (export/public.toml filter)
+visibility = "team"   # tier of the team edition; the public edition (tier owner) has it too since 19.11
 kind = "download"     # github.com/trumank/kismet-analyzer, release latest (build e8982e9)
 url = "https://github.com/trumank/kismet-analyzer/releases/download/latest/kismet-analyzer-e8982e9-win-x64.zip"
 archive_sha256 = "12df3d6eb9d19e7de7aab1eaf0d43fee6955457671af38b9f1d0ad28fe57cc88"
@@ -196,7 +196,7 @@ required = false
 
 [[tool]]
 name = "oodle"
-visibility = "team"   # the public edition is without it (export/public.toml filter)
+visibility = "team"   # tier of the team edition; the public edition (tier owner) has it too since 19.11
 kind = "download"     # Oodle 2.9.10 decompressor for the paks (ws dump, tools/dumper); the same file retoc downloads and checks
 url = "https://github.com/WorkingRobot/OodleUE/raw/5e38cb6c99c588b51cde0cae4a6420d6bc865605/Engine/Source/Programs/Shared/EpicGames.Oodle/Sdk/2.9.10/win/redist/oo2core_9_win64.dll"
 to = "home:tools/oodle"
@@ -208,7 +208,7 @@ required = false
 
 [[tool]]
 name = "uassetgui"
-visibility = "team"   # the public edition is without it (export/public.toml filter)
+visibility = "team"   # tier of the team edition; the public edition (tier owner) has it too since 19.11
 kind = "download"     # github.com/atenfyr/UAssetGUI, release v1.1.0 (the exe itself, no archive)
 url = "https://github.com/atenfyr/UAssetGUI/releases/download/v1.1.0/UAssetGUI.exe"
 to = "home:tools/uassetgui"
@@ -220,7 +220,7 @@ required = false
 
 [[tool]]
 name = "fmodel"
-visibility = "team"   # the public edition is without it (export/public.toml filter)
+visibility = "team"   # tier of the team edition; the public edition (tier owner) has it too since 19.11
 kind = "download"     # github.com/4sval/FModel, release nov-2026 (4.4.4.0+e952f6c)
 url = "https://github.com/4sval/FModel/releases/download/nov-2026/FModel.zip"
 archive_sha256 = "209bef15402dd58010cdb6bad03a799471f2100d671f8d5a52c1e613549b7de1"
@@ -275,7 +275,7 @@ components = ["mods"]
 
 [[tool]]
 name = "unreal-engine"
-visibility = "team"   # game/unreal projects — only in the team edition
+visibility = "team"   # game/unreal projects (the public edition has them too since 19.11)
 kind = "external"
 for = "game/unreal projects (Jester, new class): cook and paks, editor scripts"
 local = "unreal.editor_cmd"
@@ -285,7 +285,7 @@ components = ["unreal"]
 
 [[tool]]
 name = "ghidra"
-visibility = "team"   # client analysis — not in the public edition
+visibility = "team"   # client analysis (the public edition has it too since 19.11)
 kind = "external"
 for = "analysing the client's native code from the exe image taken from a process dump (research/ghidra/README.md; the exe on disk is packed); the dump — via the owner's link"
 path = "home:tools/ghidra/ghidraRun.bat"
@@ -343,7 +343,7 @@ required = false
 # --- backups (ops/backup)
 [[tool]]
 name = "restic"
-visibility = "owner"   # the public edition is without it (export/public.toml filter)
+visibility = "owner"   # owner tier; the public edition (tier owner) has it too since 19.11
 kind = "download"
 url = "https://github.com/restic/restic/releases/download/v0.18.1/restic_0.18.1_windows_amd64.zip"
 archive_sha256 = "0c1a713440578cb400d2e76208feb24f1b339426b075a21f73b6b2132692515d"

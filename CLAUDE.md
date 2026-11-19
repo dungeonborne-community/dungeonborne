@@ -2,7 +2,7 @@
 
 Server emulator for Dungeonborne (the game was shut down by its publisher) and everything around it: launcher,
 Balance Studio, site, mods, releases.
-Answer the user **in the user's language** (the owner writes Russian), briefly and to the point; who the user is —
+Answer the user **in the user's language**, briefly and to the point; who the user is —
 `config/local.toml [me]`, see "Talking to the human".
 
 ## Finding your way
@@ -193,5 +193,4 @@ merge request) — `docs/CONTRIBUTING.md`.
   that does not need it.
   Path to UE — `config/local.toml [unreal] editor_cmd`, to Ghidra — `[tools] ghidra` or `GHIDRA_INSTALL_DIR`.
 - The balance pak `.pak` is not byte-for-byte reproducible (repak): compare contents (`repak unpack`), not the file hash.
-- git: `-c core.autocrlf=false` when committing. Commit only when the task is done and verified; commit messages in the
-  user's language (the owner writes Russian).
+- git: `-c core.autocrlf=false` when committing. Commit only when the task is done and verified; commit messages in English.

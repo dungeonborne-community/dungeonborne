@@ -27,11 +27,14 @@ Words you will meet are in `docs/GLOSSARY.md`. Each member has a `member.toml` (
 `.github/SECURITY.md` (reporting security problems).
 
 ## What the person needs
-- Windows 10/11 and internet. The install itself takes ~3.5 GB (~5.5 GB without Visual Studio Build Tools);
-  building the backend, launcher and Studio later adds several GB of build cache — the script warns below 20 GB free.
-- For the developer tools: nothing else — `bootstrap.ps1` installs Rust and, if missing, git.
-- Optional, installed by the person when needed: Python 3.12 + uv (helper scripts), Lua 5.4 (mod checks),
-  KeePassXC (secrets), Visual Studio Build Tools (otherwise the Microsoft CRT/SDK is fetched by cargo-xwin).
+- Windows 10/11 and internet. `bootstrap.ps1` takes ~3 GB (~5 GB without Visual Studio Build Tools) and
+  `cargo ws bootstrap --profile=dev` adds ~1 GB of tools, so ~4 GB in all; building the backend, launcher and Studio
+  later adds several GB of build cache — the script warns below 20 GB free.
+- For the developer tools: nothing else — `bootstrap.ps1` installs Rust and, if missing, git; `cargo ws bootstrap`
+  installs the rest (PortableGit, gh, uv + Python 3.12, Lua 5.4, the pak and asset tools, the Goldberg Steam
+  emulator and UE4SS), all pinned in `config/tools.lock`.
+- Optional, installed by the person when needed: KeePassXC (secrets), Visual Studio Build Tools (otherwise the
+  Microsoft CRT/SDK is fetched by cargo-xwin and LLVM is used).
 - To run a real server: their **own copy of the game** (Steam), a machine for the backend, their own TLS key,
   launcher signing key and (optionally) a Discord app. See `core/backend/README.md` for what is not automated yet.
 
@@ -69,10 +72,12 @@ crates.io, build cache in `home\cache\target`).
 | `linker` | Visual Studio Build Tools if present, otherwise cargo-xwin | 0, or ~1 GB Microsoft CRT/SDK |
 | `tools` | trunk, tauri-cli, tailwindcss from `config/tools.lock` (pinned); LLVM too without Visual Studio | ~130 MB (+~860 MB LLVM) |
 | `devkit` | ws and DevKit: a signed release if there is one, otherwise built here | ~2 min build, ~2 GB build cache |
+| `components` | a partial checkout when `-Components` was given; `done` for a full clone | — |
 
-With Visual Studio Build Tools and a normal connection the whole install takes about 5 minutes, downloads
-~0.3 GB and takes ~3.4 GB on disk (2.1 GB of it is the build cache `home\cache\target`, safe to delete: ws and
-DevKit are copied to `home\tools`).
+With Visual Studio Build Tools and a fast connection `bootstrap.ps1` takes about 5 minutes, downloads ~0.3 GB and
+takes ~3 GB on disk (2.1 GB of it is the build cache `home\cache\target`, safe to delete: ws and DevKit are copied to
+`home\tools`). On a slow link to `static.rust-lang.org` (100–500 KB/s) the `toolchain` step alone takes 10+ minutes
+and the whole install 45 minutes or more — tell the person up front.
 
 Network access besides the pinned files: crates from crates.io while building (each checked against `Cargo.lock`
 checksums) and trunk's own update check (it prints "Found an update" — ignore it; versions come only from
@@ -102,10 +107,13 @@ Tell the person in one line what each step did. Running all of them at once is t
 | `curl … exit code Some(-1)` (or another negative code) | curl was killed: often antivirus checking a new `.exe` while it is written, or someone stopped it | Repeat with `-Tool <name>`. If it keeps happening, tell the person; do not touch antivirus settings. |
 | linker errors (`link.exe` not found) in `devkit` | Visual Studio found but its C++ tools are broken (without Visual Studio the `linker` step picks cargo-xwin by itself) | `-Step linker -Linker xwin -Apply`, then `-Step devkit -Apply`. |
 | `WARN … GB free` | disk | Tell the person how much is needed; do not delete their files. |
+| rustup `component download failed … (os error 10013)` / `tcp connect error` in `toolchain` | the connection dropped during a long download | Repeat the step: rustup resumes the `.partial` file. |
 
 Messages to ignore (they are not errors): rustup's `no default toolchain set` / `run 'rustup default stable'` (do not
 run it: the `toolchain` step installs the pinned version), trunk's `Found an update` and `no rust project found`,
-`STATIC_VCRUNTIME is deprecated`.
+`STATIC_VCRUNTIME is deprecated`; in Windows PowerShell 5.1, red `NativeCommandError` blocks around cargo or curl
+progress lines (`Downloading crates …`) when you capture output with `2>&1` — that is stderr, not a failure; judge
+by the exit code and the step's last lines.
 
 Never run the script as administrator, never turn off antivirus, never change the user PATH or profile, never
 delete anything outside `<root>` — and inside it only `home\cache` without asking.
@@ -115,12 +123,20 @@ with these variables (set them for your commands only, not for the user):
 `RUSTUP_HOME=<root>\home\toolchains\rustup`, `CARGO_HOME=<root>\home\toolchains\cargo`,
 `CARGO_TARGET_DIR=<root>\home\cache\target` and `<root>\home\toolchains\cargo\bin` first on PATH. Without
 `CARGO_TARGET_DIR` cargo builds into `workspace\target` and `ws check` reports it as a layout error.
-1. `cargo ws bootstrap --profile=dev --apply` — creates `config/local.toml` from `config/local.example.toml`, the folders in `home`
-   and `.claude\settings.local.json` (environment for agents inside the workspace; tell the person). Profiles:
-   `dev` (developer), `designer` (Balance Studio only), `agent`.
-2. `cargo ws doctor` and `cargo ws check` — 0 errors. The warning `[games] no game installs listed` stays until the
-   person adds their own game copy to `config/local.toml [games]`.
-3. DevKit (`<root>\home\tools\devkit\DevKit.exe`) shows the same in a window.
+1. `cargo ws doctor --profile=dev` first: it is read-only and lists what the next command will do. `ws bootstrap` has
+   no plan mode — it always installs (`--apply` is accepted and changes nothing). Without `--profile` the profile is
+   `owner` (everything); pick `dev` (developer), `designer` (Balance Studio only) or `agent`.
+2. `cargo ws bootstrap --profile=dev` — creates `config/local.toml` from `config/local.example.toml` and the folders in
+   `home`, downloads ~1 GB of pinned tools into `home\tools` (PortableGit, gh, uv + Python 3.12, Lua, repak, retoc,
+   kismet-analyzer, Oodle, UAssetGUI, FModel, Goldberg, UE4SS), writes `.claude\settings.local.json` (the agent's
+   environment and a SessionStart hook that puts `gh` on PATH) and `<root>\CLAUDE.md` (sends an assistant opened in
+   the root to `workspace`), and looks for the game in the person's Steam libraries (read only). Tell the person all of
+   this before running it.
+3. `cargo ws check` — 0 errors; the one warning is `[preview] apps/discord-bot/member.toml`. `cargo ws doctor` — one
+   **expected error**, `[game] reference`, until the person has a clean copy of the game: `cargo ws game` prints the
+   ways (copy a clean Steam install, or the exact Steam `download_depot` command). Getting it is the person's
+   decision; `ws bootstrap` exits with code 1 for the same reason.
+4. DevKit (`<root>\home\tools\devkit\DevKit.exe`) shows the same in a window.
 
 **7. Tell the person** what is installed, where, how much space it takes, and that removing it is deleting
 `<root>` (nothing was installed outside it; a GitHub sign-in, if there was one, stays in Windows' credential store).

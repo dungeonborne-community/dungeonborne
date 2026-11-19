@@ -71,7 +71,7 @@ without bans, but there is no guarantee — use your own copy at your own risk.
 ## Using the repository
 
 **What do I need?**
-Windows 10/11, ~3.5–5.5 GB for the base install, and for anything game-related your own copy of Dungeonborne on Steam.
+Windows 10/11, ~4–5 GB for the install, and for anything game-related your own copy of Dungeonborne on Steam.
 A real server additionally needs a Linux VM and a physical Windows machine for the battle servers (the anti-cheat
 refuses virtual machines). Details: [`README.md`](../README.md#requirements).
 
