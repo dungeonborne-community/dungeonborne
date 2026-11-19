@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeonborne DevKit</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- sandbox: stands in for the app in a plain browser, does nothing inside it -->
+  <script src="dev/mock-tauri.js"></script>
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
+  <link data-trunk rel="copy-file" href="styles.css">
+  <link data-trunk rel="copy-file" href="dev/mock-tauri.js" data-target-path="dev">
+  <link data-trunk rel="copy-file" href="i18n.js">
+  <link data-trunk rel="copy-file" href="app.js">
+</head>
+<!-- Windows 11 style like Balance Studio and the launcher: markup here, app.js fills data and data-* states. -->
+<body class="h-screen overflow-hidden bg-mica font-sans text-sm text-fg antialiased select-none">
+<div class="flex h-full">
+
+  <!-- navigation -->
+  <nav class="flex w-56 shrink-0 flex-col gap-1 p-3">
+    <div class="mb-3 flex items-center gap-3 px-2 pt-1">
+      <span class="grid size-8 place-items-center rounded-ctl bg-accent/15"><span class="ico text-accent">&#xE90F;</span></span>
+      <div>
+        <div class="font-display text-[15px] font-semibold">DevKit</div>
+        <div class="text-xs text-fg-3">Dungeonborne</div>
+      </div>
+    </div>
+    <button class="nav-item" data-page="start"><span class="ico">&#xE80F;</span><span data-t="nav.start">Start</span></button>
+    <button class="nav-item" data-page="work"><span class="ico">&#xE7B8;</span><span data-t="nav.work">Work</span></button>
+    <button class="nav-item" data-page="overview"><span class="ico">&#xE9D9;</span><span data-t="nav.overview">Overview</span></button>
+    <button class="nav-item" data-page="components"><span class="ico">&#xE74C;</span><span data-t="nav.components">Components</span></button>
+    <button class="nav-item" data-page="game"><span class="ico">&#xE7FC;</span><span data-t="nav.game">Game data</span></button>
+    <button class="nav-item" data-page="layout"><span class="ico">&#xE8FD;</span><span data-t="nav.layout">Structure</span></button>
+    <button class="nav-item" data-page="secrets"><span class="ico">&#xE72E;</span><span data-t="nav.secrets">Secrets</span></button>
+    <button class="nav-item" data-page="backup"><span class="ico">&#xE753;</span><span data-t="nav.backup">Backups</span></button>
+    <button class="nav-item" data-page="launch"><span class="ico">&#xE7C4;</span><span data-t="nav.launch">Launch</span></button>
+    <button id="lang" class="nav-item mt-auto"><span class="ico">&#xF2B7;</span><span data-t="lang">Русский</span></button>
+    <div class="px-2 text-xs leading-5 text-fg-4">
+      <div id="ws-root" class="truncate"></div>
+      <div id="ws-head" class="truncate"></div>
+    </div>
+  </nav>
+
+  <!-- content layer -->
+  <main class="m-2 ml-0 flex min-w-0 flex-1 flex-col overflow-hidden rounded-ovl border border-white/[0.05] bg-layer">
+
+    <!-- no workspace -->
+    <section id="page-none" class="hidden flex-1 p-8">
+      <h1 class="font-display text-2xl font-semibold" data-t="none.title">Workspace not found</h1>
+      <p class="mt-2 max-w-xl text-fg-2"><span data-t-html="none.text">DevKit looks for <code>config/workspace.toml</code> next to
+        itself and above. Choose the workspace folder by hand</span> (<span data-t="none.example">for example</span> <code>X:\DBDev\workspace</code>).</p>
+      <button id="pick-root" class="btn-accent mt-6" data-t="none.pick">Choose folder</button>
+    </section>
+
+    <!-- start: who you are + what you want to do -> a Claude Code session with a task file -->
+    <section id="page-start" data-page-body class="hidden min-h-0 flex-1 flex-col">
+      <header class="border-b border-white/[0.05] px-6 py-4">
+        <h1 class="font-display text-xl font-semibold" data-t="st.title">Start</h1>
+        <p class="text-xs text-fg-3" data-t="st.sub">Who you are, and what you want to do: DevKit starts the AI agent with it</p>
+      </header>
+      <div class="grid min-h-0 flex-1 grid-cols-1 gap-4 overflow-auto p-6 xl:grid-cols-[22rem_1fr]">
+        <div class="card p-4">
+          <h2 class="mb-1 font-display text-base font-semibold" data-t="me.title">Who you are</h2>
+          <p class="mb-3 text-xs text-fg-3" data-t="me.sub">The AI explains, asks and reports to this (config/local.toml [me])</p>
+          <label class="mb-1 block text-xs text-fg-3" for="me-level" data-t="me.level">Level</label>
+          <select id="me-level" class="combo mb-3">
+            <option value="newcomer" data-t="me.l.newcomer">Not a programmer</option>
+            <option value="designer" data-t="me.l.designer">Designer: balance, texts, site</option>
+            <option value="dev" data-t="me.l.dev">Developer</option>
+            <option value="owner" data-t="me.l.owner">Owner</option>
+          </select>
+          <label class="mb-1 block text-xs text-fg-3" for="me-lang" data-t="me.lang">Language of answers</label>
+          <select id="me-lang" class="combo mb-3"><option value="ru">Русский</option><option value="en">English</option></select>
+          <label class="mb-1 block text-xs text-fg-3" for="me-detail" data-t="me.detail">How much to explain</label>
+          <select id="me-detail" class="combo mb-4">
+            <option value="short" data-t="me.d.short">Short: the result and the decision</option>
+            <option value="normal" data-t="me.d.normal">Normal</option>
+            <option value="full" data-t="me.d.full">Full: also how it works inside</option>
+          </select>
+          <button id="me-save" class="btn-std w-full"><span class="ico">&#xE74E;</span><span data-t="me.save">Save</span></button>
+          <p id="me-machine" class="mt-3 text-xs text-fg-4"></p>
+        </div>
+        <div class="card p-4">
+          <h2 class="mb-1 font-display text-base font-semibold" data-t="ag.title">What do you want to do</h2>
+          <p class="mb-3 text-xs text-fg-3" data-t="ag.sub">Opens a terminal with Claude Code in the workspace; the task goes to a file it reads first</p>
+          <div id="ag-nocli" class="mb-3 hidden rounded-md border border-caution/30 bg-caution/10 p-3 text-xs text-fg-2 select-text"></div>
+          <div id="ag-form">
+          <div class="mb-3 flex flex-wrap gap-2" id="ag-modes">
+            <button class="btn-std" data-mode="quick"><span data-t="ag.m.quick">Quick edit</span></button>
+            <button class="btn-std" data-mode="task"><span data-t="ag.m.task">Task</span></button>
+            <button class="btn-std" data-mode="project"><span data-t="ag.m.project">Project</span></button>
+          </div>
+          <p id="ag-mode-hint" class="mb-3 text-xs text-fg-3"></p>
+          <label class="mb-1 block text-xs text-fg-3" for="ag-role" data-t="ag.role">Area (role)</label>
+          <select id="ag-role" class="combo mb-3">
+            <option value="" data-t="ag.r.auto">Let the AI choose</option>
+            <option value="web" data-t="ag.r.web">Site (web)</option>
+            <option value="balance" data-t="ag.r.balance">Balance, seasons, loot (balance)</option>
+            <option value="mods" data-t="ag.r.mods">Game mods (mods)</option>
+            <option value="backend" data-t="ag.r.backend">Server (backend)</option>
+            <option value="launcher" data-t="ag.r.launcher">Launcher and Studio (launcher)</option>
+            <option value="re" data-t="ag.r.re">Client research (re)</option>
+            <option value="design" data-t="ag.r.design">Plan and design (design)</option>
+            <option value="kit" data-t="ag.r.kit">This kit (kit)</option>
+            <option value="stand" data-t="ag.r.stand">Checks in the game (stand)</option>
+          </select>
+          <label class="mb-1 block text-xs text-fg-3" for="ag-task" data-t="ag.task">The task, in your words</label>
+          <textarea id="ag-task" class="field mb-3 h-36 resize-y py-2 select-text" data-t-placeholder="ag.ph"></textarea>
+          <button id="ag-start" class="btn-accent"><span class="ico">&#xE756;</span><span data-t="ag.start">Start the agent</span></button>
+          <p id="ag-result" class="mt-3 text-xs text-fg-3 select-text"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- work: branch, changes, branches, agents' reports (home/runs/agents) -->
+    <section id="page-work" data-page-body class="hidden min-h-0 flex-1 flex-col">
+      <header class="flex items-center gap-3 border-b border-white/[0.05] px-6 py-4">
+        <div>
+          <h1 class="font-display text-xl font-semibold" data-t="wk.title">Work</h1>
+          <p class="text-xs text-fg-3" data-t="wk.sub">What the agents did: reports, the branch, uncommitted changes</p>
+        </div>
+        <button id="wk-refresh" class="btn-std ml-auto"><span class="ico">&#xE72C;</span><span data-t="wk.refresh">Refresh</span></button>
+      </header>
+      <div class="grid min-h-0 flex-1 grid-cols-1 gap-4 overflow-auto p-6 xl:grid-cols-[1fr_22rem]">
+        <div>
+          <h2 class="mb-2 font-display text-base font-semibold" data-t="wk.reports">Agents' reports</h2>
+          <div id="wk-reports" class="card mb-4"></div>
+          <pre id="wk-report" class="card hidden p-4 font-mono text-xs leading-5 whitespace-pre-wrap text-fg-2 select-text"></pre>
+        </div>
+        <div>
+          <h2 class="mb-2 font-display text-base font-semibold" data-t="wk.see">See the result</h2>
+          <p class="mb-2 text-xs text-fg-3" data-t="wk.see_sub">Opens a terminal with the server and the browser; it shows the branch below. Ctrl+C or closing the terminal stops it</p>
+          <div id="wk-previews" class="card mb-4"></div>
+          <h2 class="mb-2 font-display text-base font-semibold" data-t="wk.branch">Branch</h2>
+          <div id="wk-branch" class="card mb-4 p-4 text-sm"></div>
+          <h2 class="mb-2 font-display text-base font-semibold" data-t="wk.branches">Recent branches</h2>
+          <div id="wk-branches" class="card"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- overview: doctor / bootstrap -->
+    <section id="page-overview" data-page-body class="flex min-h-0 flex-1 flex-col">
+      <header class="flex items-center gap-3 border-b border-white/[0.05] px-6 py-4">
+        <div>
+          <h1 class="font-display text-xl font-semibold" data-t="ov.title">Machine state</h1>
+          <p class="text-xs text-fg-3" data-t="ov.sub">local.toml, home folders, programs from tools.lock, data from artifacts.toml, game installations, agent environment</p>
+        </div>
+        <div class="ml-auto flex items-center gap-2">
+          <label class="text-xs text-fg-3" for="profile" data-t="ov.profile">Profile</label>
+          <select id="profile" class="combo w-36">
+            <option value="owner">owner</option>
+            <option value="dev">dev</option>
+            <option value="designer">designer</option>
+            <option value="agent">agent</option>
+          </select>
+          <button id="doctor" class="btn-std"><span class="ico">&#xE72C;</span><span data-t="ov.doctor">Check</span></button>
+          <button id="bootstrap" class="btn-accent"><span class="ico">&#xE90F;</span><span data-t="ov.bootstrap">Fix</span></button>
+        </div>
+      </header>
+      <div id="overview-summary" class="flex gap-3 px-6 pt-4"></div>
+      <div class="min-h-0 flex-1 overflow-auto p-6 pt-3"><div id="overview-list" class="card"></div></div>
+    </section>
+
+    <!-- components: what is on this machine (ws components, docs/COMPONENTS_PLAN.md) -->
+    <section id="page-components" data-page-body class="hidden min-h-0 flex-1 flex-col">
+      <header class="flex items-center gap-3 border-b border-white/[0.05] px-6 py-4">
+        <div>
+          <h1 class="font-display text-xl font-semibold" data-t="cmp.title">Components</h1>
+          <p class="text-xs text-fg-3" data-t="cmp.sub">Only the parts you work on are on disk: their folders, programs and data</p>
+        </div>
+        <div class="ml-auto flex items-center gap-2">
+          <button id="cmp-plan" class="btn-std"><span class="ico">&#xE7C3;</span><span data-t="cmp.plan">Show plan</span></button>
+          <button id="cmp-apply" class="btn-accent"><span class="ico">&#xE73E;</span><span data-t="cmp.apply">Apply</span></button>
+        </div>
+      </header>
+      <div class="min-h-0 flex-1 overflow-auto p-6">
+        <div id="cmp-state" class="mb-3 text-xs text-fg-3"></div>
+        <div id="cmp-presets" class="mb-4 flex flex-wrap items-center gap-2"></div>
+        <div id="cmp-list" class="card mb-6"></div>
+        <div id="cmp-result" class="card hidden"></div>
+      </div>
+    </section>
+
+    <!-- game data: the reference (ws game), dumps (ws dump), the vault unlocked for a while -->
+    <section id="page-game" data-page-body class="hidden min-h-0 flex-1 flex-col">
+      <header class="flex items-center gap-3 border-b border-white/[0.05] px-6 py-4">
+        <div>
+          <h1 class="font-display text-xl font-semibold" data-t="gm.title">Game data</h1>
+          <p class="text-xs text-fg-3" data-t="gm.sub">Your copy of the game and what is exported from it — the steps only a person may do</p>
+        </div>
+        <button id="gm-refresh" class="btn-std ml-auto"><span class="ico">&#xE72C;</span><span data-t="wk.refresh">Refresh</span></button>
+      </header>
+      <div class="grid min-h-0 flex-1 grid-cols-1 gap-4 overflow-auto p-6 xl:grid-cols-2">
+        <div class="card p-4">
+          <h2 class="mb-2 font-display text-base font-semibold" data-t="gm.ref">Game reference</h2>
+          <div id="gm-ref" class="text-sm"></div>
+        </div>
+        <div class="card p-4">
+          <h2 class="mb-2 font-display text-base font-semibold" data-t="gm.vault">Vault session</h2>
+          <p class="mb-3 text-xs text-fg-3" data-t="gm.vault_sub">The database password once for the working session: the pak key and the store password stay in memory, only for ws dump and ws bootstrap (also from the console and from agents), every use is logged in home/runs/vault. Prod keys always ask for the password.</p>
+          <div id="gm-vault-state" class="mb-3 text-sm"></div>
+          <div class="flex flex-wrap items-center gap-2">
+            <input id="gm-pass" type="password" class="field w-56" data-t-placeholder="sec.master" autocomplete="off">
+            <select id="gm-min" class="combo w-28"><option value="60">1 h</option><option value="240" selected>4 h</option><option value="480">8 h</option><option value="720">12 h</option></select>
+            <button id="gm-unlock" class="btn-std"><span class="ico">&#xE785;</span><span data-t="gm.unlock">Unlock</span></button>
+            <button id="gm-lock" class="btn-flat"><span class="ico">&#xE72E;</span><span data-t="gm.lock">Lock</span></button>
+          </div>
+        </div>
+        <div class="card p-4 xl:col-span-2">
+          <div class="mb-2 flex items-center gap-2">
+            <h2 class="font-display text-base font-semibold" data-t="gm.dump">Export (ws dump)</h2>
+            <div class="ml-auto flex gap-2">
+              <button id="gm-plan" class="btn-std"><span class="ico">&#xE7C3;</span><span data-t="cmp.plan">Show plan</span></button>
+              <button id="gm-dump" class="btn-accent"><span class="ico">&#xE896;</span><span data-t="gm.run">Export</span></button>
+            </div>
+          </div>
+          <p class="mb-3 text-xs text-fg-3" data-t="gm.dump_sub">Icons, monsters, heroes, curves from the reference into home/dumps (docs/GAME_DATA.md). Decrypting the paks — your press of the button is the word.</p>
+          <div id="gm-dump-state" class="mb-3 text-sm"></div>
+          <div id="gm-sets" class="card mb-3"></div>
+          <div id="gm-result" class="card hidden"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- layout: ws check + members -->
+    <section id="page-layout" data-page-body class="hidden min-h-0 flex-1 flex-col">
+      <header class="flex items-center gap-3 border-b border-white/[0.05] px-6 py-4">
+        <div>
+          <h1 class="font-display text-xl font-semibold" data-t="lay.title">Workspace structure</h1>
+          <p class="text-xs text-fg-3" data-t="lay.sub">ws check — before every commit: root, members, links, machine paths, binaries, secrets</p>
+        </div>
+        <button id="check" class="btn-accent ml-auto"><span class="ico">&#xE72C;</span>ws check</button>
+      </header>
+      <div class="min-h-0 flex-1 overflow-auto p-6">
+        <div id="check-list" class="card mb-6"></div>
+        <h2 class="mb-2 font-display text-base font-semibold" data-t="lay.members">Members</h2>
+        <div id="members" class="card"></div>
+      </div>
+    </section>
+
+    <!-- secrets -->
+    <section id="page-secrets" data-page-body class="hidden min-h-0 flex-1 flex-col">
+      <header class="flex items-center gap-3 border-b border-white/[0.05] px-6 py-4">
+        <div>
+          <h1 class="font-display text-xl font-semibold" data-t="sec.title">Secrets</h1>
+          <p class="text-xs text-fg-3" data-t="sec.sub">secrets.toml spec; values live only in the KeePassXC database, DevKit does not show them</p>
+        </div>
+        <div class="ml-auto flex items-center gap-2">
+          <input id="master" type="password" class="field w-64" placeholder="Database master password" data-t-placeholder="sec.master" autocomplete="off">
+          <button id="secrets-check" class="btn-accent"><span class="ico">&#xE72E;</span><span data-t="sec.check">Check database</span></button>
+        </div>
+      </header>
+      <div class="min-h-0 flex-1 overflow-auto p-6">
+        <div id="secrets-db" class="mb-3 text-xs text-fg-3"></div>
+        <div id="secrets-result" class="card mb-6 hidden"></div>
+        <div id="secrets-list" class="card"></div>
+      </div>
+    </section>
+
+    <!-- backup -->
+    <section id="page-backup" data-page-body class="hidden min-h-0 flex-1 flex-col">
+      <header class="flex items-center gap-3 border-b border-white/[0.05] px-6 py-4">
+        <div>
+          <h1 class="font-display text-xl font-semibold" data-t="bk.title">Backups of this PC</h1>
+          <p class="text-xs text-fg-3" data-t="bk.sub">restic → Storage Box: home\re, artifacts, unreal, KeePassXC database, local.toml (ops/backup)</p>
+        </div>
+        <div class="ml-auto flex items-center gap-2">
+          <button id="snapshots" class="btn-std"><span class="ico">&#xE81C;</span><span data-t="bk.snapshots">Snapshots</span></button>
+          <button id="backup-run" class="btn-accent"><span class="ico">&#xE898;</span><span data-t="bk.run">Back up now</span></button>
+        </div>
+      </header>
+      <div class="min-h-0 flex-1 overflow-auto p-6">
+        <pre id="backup-out" class="card min-h-24 p-4 font-mono text-xs leading-5 whitespace-pre-wrap text-fg-2 select-text" data-t="bk.hint">Press "Snapshots" to see the backups.</pre>
+      </div>
+    </section>
+
+    <!-- launch -->
+    <section id="page-launch" data-page-body class="hidden min-h-0 flex-1 flex-col">
+      <header class="border-b border-white/[0.05] px-6 py-4">
+        <h1 class="font-display text-xl font-semibold" data-t="ln.title">Launch</h1>
+        <p class="text-xs text-fg-3" data-t="ln.sub">folders, apps and the agent of this workspace</p>
+      </header>
+      <div class="grid grid-cols-2 gap-3 p-6 xl:grid-cols-3">
+        <button class="card flex items-center gap-3 p-4 text-left hover:bg-card-hi" data-open="workspace"><span class="ico text-accent">&#xE8B7;</span><div><div class="font-semibold" data-t="ln.workspace">Workspace folder</div><div class="text-xs text-fg-3" data-t="ln.workspace_sub">repository</div></div></button>
+        <button class="card flex items-center gap-3 p-4 text-left hover:bg-card-hi" data-open="home"><span class="ico text-accent">&#xE8B7;</span><div><div class="font-semibold" data-t="ln.home">Home folder</div><div class="text-xs text-fg-3" data-t="ln.home_sub">programs, game, dumps, logs</div></div></button>
+        <button class="card flex items-center gap-3 p-4 text-left hover:bg-card-hi" data-open="vault"><span class="ico text-accent">&#xE72E;</span><div><div class="font-semibold" data-t="ln.vault">Vault folder</div><div class="text-xs text-fg-3" data-t="ln.vault_sub">KeePassXC database</div></div></button>
+        <button class="card flex items-center gap-3 p-4 text-left hover:bg-card-hi" data-open="studio"><span class="ico text-accent">&#xE9D2;</span><div><div class="font-semibold">Balance Studio</div><div class="text-xs text-fg-3" data-t="ln.studio_sub">balance editor</div></div></button>
+        <button class="card flex items-center gap-3 p-4 text-left hover:bg-card-hi" data-open="keepass"><span class="ico text-accent">&#xE8D7;</span><div><div class="font-semibold">KeePassXC</div><div class="text-xs text-fg-3" data-t="ln.keepass_sub">open the secrets database</div></div></button>
+        <button class="card flex items-center gap-3 p-4 text-left hover:bg-card-hi" data-open="forgejo"><span class="ico text-accent">&#xE774;</span><div><div class="font-semibold">Forgejo</div><div class="text-xs text-fg-3" data-t="ln.forgejo_sub">localhost:3300 — needs the SSH tunnel</div></div></button>
+        <button class="card flex items-center gap-3 p-4 text-left hover:bg-card-hi" data-open="agent"><span class="ico text-accent">&#xE756;</span><div><div class="font-semibold" data-t="ln.agent">Agent</div><div class="text-xs text-fg-3" data-t="ln.agent_sub">terminal with Claude Code in the workspace</div></div></button>
+      </div>
+    </section>
+
+    <!-- status line -->
+    <footer id="status" class="flex h-8 shrink-0 items-center gap-2 border-t border-white/[0.05] px-4 text-xs text-fg-3"></footer>
+  </main>
+</div>
+</body>
+</html>

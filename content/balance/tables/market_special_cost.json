@@ -1,0 +1,160 @@
+{
+  "type": "tgf.config.ExcelMarketSpecialCost",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 8,
+    "hash_code": "sha256:7c29d2c0ff76694b664db1d9cd2d225fb548bd5fa94856eda3365dec730f6258",
+    "data_source": [
+      {
+        "file": "c74cd0413aa390a7bfc87007efc0c938c7ce5f650efeaec6c15d071b760d7c85",
+        "sheet": "2a768bae36163babdf67aba45e31f539d8d7d24c25846493900645488e95ed89",
+        "count": 8
+      }
+    ]
+  },
+  "rows": [
+    {
+      "product_id": 704014,
+      "sort_idx": 1,
+      "data": {
+        "stock": 3,
+        "cost_options": [
+          {
+            "cost_items": [
+              {
+                "cost_type": 1001
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "product_id": 720001,
+      "sort_idx": 1,
+      "data": {
+        "stock": 1,
+        "cost_options": [
+          {
+            "cost_items": [
+              {
+                "cost_type": 1001,
+                "cost_price": 5000,
+                "origin_price": 5000
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "product_id": 720001,
+      "sort_idx": 2,
+      "data": {
+        "stock": 1,
+        "cost_options": [
+          {
+            "cost_items": [
+              {
+                "cost_type": 1001,
+                "cost_price": 10000,
+                "origin_price": 10000
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "product_id": 720001,
+      "sort_idx": 3,
+      "data": {
+        "stock": 1,
+        "cost_options": [
+          {
+            "cost_items": [
+              {
+                "cost_type": 1001,
+                "cost_price": 25000,
+                "origin_price": 25000
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "product_id": 720001,
+      "sort_idx": 4,
+      "data": {
+        "stock": 1,
+        "cost_options": [
+          {
+            "cost_items": [
+              {
+                "cost_type": 1012,
+                "cost_price": 100,
+                "origin_price": 100
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "product_id": 720001,
+      "sort_idx": 5,
+      "data": {
+        "stock": 1,
+        "cost_options": [
+          {
+            "cost_items": [
+              {
+                "cost_type": 1012,
+                "cost_price": 150,
+                "origin_price": 150
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "product_id": 720001,
+      "sort_idx": 6,
+      "data": {
+        "stock": 1,
+        "cost_options": [
+          {
+            "cost_items": [
+              {
+                "cost_type": 1012,
+                "cost_price": 250,
+                "origin_price": 250
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "product_id": 720001,
+      "sort_idx": 7,
+      "data": {
+        "stock": 1,
+        "cost_options": [
+          {
+            "cost_items": [
+              {
+                "cost_type": 1012,
+                "cost_price": 400,
+                "origin_price": 400
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1082 @@
+[
+  {
+    "name": "valid",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "power.fixed_value",
+        "old": "5",
+        "new": "6",
+        "key": "100"
+      }
+    ]
+  },
+  {
+    "name": "valid_number_forms",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": 0.5,
+        "new": "0,6",
+        "key": 100
+      }
+    ]
+  },
+  {
+    "name": "no_changes",
+    "changes": []
+  },
+  {
+    "name": "bad_format",
+    "header": {
+      "format": "other/1"
+    },
+    "changes": [],
+    "errors": [
+      [
+        "format",
+        null
+      ]
+    ]
+  },
+  {
+    "name": "base_differs",
+    "header": {
+      "base": "old"
+    },
+    "changes": [],
+    "warnings": [
+      [
+        "base_differs",
+        null
+      ]
+    ]
+  },
+  {
+    "name": "season_mismatch",
+    "header": {
+      "season": "dead-money"
+    },
+    "changes": [],
+    "errors": [
+      [
+        "season_mismatch",
+        null
+      ]
+    ]
+  },
+  {
+    "name": "season_missing",
+    "drop": [
+      "season"
+    ],
+    "changes": [],
+    "warnings": [
+      [
+        "season_missing",
+        null
+      ]
+    ]
+  },
+  {
+    "name": "author_missing",
+    "drop": [
+      "author"
+    ],
+    "changes": [],
+    "warnings": [
+      [
+        "author_missing",
+        null
+      ]
+    ]
+  },
+  {
+    "name": "table_unknown",
+    "changes": [
+      {
+        "table": "nope",
+        "row": 0,
+        "path": "x",
+        "old": "1",
+        "new": "2"
+      }
+    ],
+    "errors": [
+      [
+        "table_unknown",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "field_locked",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "name",
+        "old": "Sword",
+        "new": "X"
+      }
+    ],
+    "errors": [
+      [
+        "field_locked",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "reference_table_locked",
+    "changes": [
+      {
+        "table": "info",
+        "row": 0,
+        "path": "count",
+        "old": "99",
+        "new": "1"
+      }
+    ],
+    "errors": [
+      [
+        "field_locked",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "row_missing",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 9,
+        "path": "rate",
+        "old": "0.5",
+        "new": "1"
+      }
+    ],
+    "errors": [
+      [
+        "row_missing",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "row_absent",
+    "changes": [
+      {
+        "table": "gear",
+        "path": "rate",
+        "old": "0.5",
+        "new": "1"
+      }
+    ],
+    "errors": [
+      [
+        "row_missing",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "key_mismatch",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": "0.6",
+        "key": "999"
+      }
+    ],
+    "errors": [
+      [
+        "key_mismatch",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "old_mismatch",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.9",
+        "new": "0.6"
+      }
+    ],
+    "errors": [
+      [
+        "old_mismatch",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "new_empty",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": " "
+      }
+    ],
+    "errors": [
+      [
+        "new_empty",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "new_null",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": null
+      }
+    ],
+    "errors": [
+      [
+        "new_empty",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "new_text",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": "abc"
+      }
+    ],
+    "errors": [
+      [
+        "new_not_number",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "new_nan",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": "NaN"
+      }
+    ],
+    "errors": [
+      [
+        "new_not_number",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "new_inf",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": "inf"
+      }
+    ],
+    "errors": [
+      [
+        "new_not_number",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "new_underscore",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": "1_0"
+      }
+    ],
+    "errors": [
+      [
+        "new_not_number",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "new_fraction_in_int",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "power.fixed_value",
+        "old": "5",
+        "new": "5.5"
+      }
+    ],
+    "errors": [
+      [
+        "new_not_integer",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "new_negative_unsigned",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "count",
+        "old": "3",
+        "new": "-1"
+      }
+    ],
+    "errors": [
+      [
+        "new_out_of_range",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "new_too_big_int32",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "power.fixed_value",
+        "old": "5",
+        "new": "3000000000"
+      }
+    ],
+    "errors": [
+      [
+        "new_out_of_range",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "empty_field_typed_by_catalog",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 1,
+        "path": "power.fixed_value",
+        "old": "",
+        "new": "1.5"
+      }
+    ],
+    "errors": [
+      [
+        "new_not_integer",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "empty_field_float_ok",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 2,
+        "path": "free",
+        "old": "",
+        "new": "1.5"
+      }
+    ]
+  },
+  {
+    "name": "enum_is_not_a_number",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "mode",
+        "old": "EN_MODE_A",
+        "new": "EN_MODE_B"
+      }
+    ]
+  },
+  {
+    "name": "duplicate_change",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": "0.6"
+      },
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": "0.7"
+      }
+    ],
+    "errors": [
+      [
+        "duplicate_change",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "min_gt_max_alone",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "attack.offset.min_value",
+        "old": "10",
+        "new": "30"
+      }
+    ],
+    "errors": [
+      [
+        "min_gt_max",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "max_lt_min_alone",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "attack.offset.max_value",
+        "old": "20",
+        "new": "8"
+      }
+    ],
+    "errors": [
+      [
+        "min_gt_max",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "min_gt_max_ok_with_pair",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "attack.offset.min_value",
+        "old": "10",
+        "new": "30"
+      },
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "attack.offset.max_value",
+        "old": "20",
+        "new": "40"
+      }
+    ]
+  },
+  {
+    "name": "both_changed_still_bad",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "attack.offset.min_value",
+        "old": "10",
+        "new": "20"
+      },
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "attack.offset.max_value",
+        "old": "20",
+        "new": "18"
+      }
+    ],
+    "errors": [
+      [
+        "min_gt_max",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "unit_not_multiple",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "attack.offset.max_value",
+        "old": "20",
+        "new": "21"
+      }
+    ],
+    "warnings": [
+      [
+        "unit_not_multiple",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "unit_multiple_ok",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "attack.offset.max_value",
+        "old": "20",
+        "new": "22"
+      }
+    ]
+  },
+  {
+    "name": "unit_zero",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 1,
+        "path": "attack.offset.max_value",
+        "old": "3",
+        "new": "4"
+      }
+    ],
+    "warnings": [
+      [
+        "unit_invalid",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "unit_from_parent",
+    "changes": [
+      {
+        "table": "affix",
+        "row": 0,
+        "path": "data.affix_data[0].rarity_range[1].max_value",
+        "old": "15",
+        "new": "17",
+        "key": "101"
+      }
+    ],
+    "warnings": [
+      [
+        "unit_not_multiple",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "no_unit_no_warning",
+    "changes": [
+      {
+        "table": "affix",
+        "row": 1,
+        "path": "data.affix_data[0].rarity_range[1].max_value",
+        "old": "8",
+        "new": "9",
+        "key": "101"
+      }
+    ]
+  },
+  {
+    "name": "ratio_big",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "power.fixed_value",
+        "old": "5",
+        "new": "20"
+      }
+    ],
+    "warnings": [
+      [
+        "ratio_big",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "ratio_small",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "power.fixed_value",
+        "old": "5",
+        "new": "1"
+      }
+    ],
+    "warnings": [
+      [
+        "ratio_big",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "sign_flip",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "negative",
+        "old": "-4",
+        "new": "4"
+      }
+    ],
+    "warnings": [
+      [
+        "sign_flip",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "range_far",
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "power.fixed_value",
+        "old": "5",
+        "new": "31"
+      }
+    ],
+    "warnings": [
+      [
+        "range_far",
+        0
+      ],
+      [
+        "ratio_big",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "nocat_int_from_raw",
+    "kit": "kit_nocat",
+    "header": {
+      "season": "dead-money",
+      "base": "20260101-bbbbbbbb"
+    },
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "count",
+        "old": "3",
+        "new": "3.5"
+      }
+    ],
+    "errors": [
+      [
+        "new_not_integer",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "nocat_float_from_raw",
+    "kit": "kit_nocat",
+    "header": {
+      "season": "dead-money",
+      "base": "20260101-bbbbbbbb"
+    },
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "rate",
+        "old": "0.5",
+        "new": "0.75"
+      }
+    ]
+  },
+  {
+    "name": "nocat_empty_field_has_no_type",
+    "kit": "kit_nocat",
+    "header": {
+      "season": "dead-money",
+      "base": "20260101-bbbbbbbb"
+    },
+    "changes": [
+      {
+        "table": "gear",
+        "row": 0,
+        "path": "free",
+        "old": "",
+        "new": "1.5"
+      }
+    ]
+  },
+  {
+    "name": "loot_chance_ok",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_slots",
+        "row": 0,
+        "path": "chance",
+        "old": "50",
+        "new": "100"
+      }
+    ]
+  },
+  {
+    "name": "loot_chance_over_100",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_slots",
+        "row": 0,
+        "path": "chance",
+        "old": "50",
+        "new": "101"
+      }
+    ],
+    "errors": [
+      [
+        "new_out_of_limits",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_chance_negative",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_slots",
+        "row": 0,
+        "path": "chance",
+        "old": "50",
+        "new": "-1"
+      }
+    ],
+    "errors": [
+      [
+        "new_out_of_limits",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_weight_negative",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_items",
+        "row": 1,
+        "path": "w",
+        "old": "10000",
+        "new": "-1"
+      }
+    ],
+    "errors": [
+      [
+        "new_out_of_limits",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_count_zero",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_items",
+        "row": 0,
+        "path": "cnt[0]",
+        "old": "2",
+        "new": "0"
+      }
+    ],
+    "errors": [
+      [
+        "new_out_of_limits",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_count_fraction",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_items",
+        "row": 0,
+        "path": "cnt[0]",
+        "old": "2",
+        "new": "2.5"
+      }
+    ],
+    "errors": [
+      [
+        "new_not_integer",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_rule_from_empty",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_rules",
+        "row": 0,
+        "path": "chance.gold",
+        "old": "",
+        "new": "1.5"
+      }
+    ]
+  },
+  {
+    "name": "loot_rule_negative",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_rules",
+        "row": 0,
+        "path": "chance.gold",
+        "old": "",
+        "new": "-1"
+      }
+    ],
+    "errors": [
+      [
+        "new_out_of_limits",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_quality_too_big",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_rules",
+        "row": 0,
+        "path": "quality",
+        "old": "",
+        "new": "1000"
+      }
+    ],
+    "errors": [
+      [
+        "new_out_of_limits",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_field_locked",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_items",
+        "row": 0,
+        "path": "item_id",
+        "old": "1",
+        "new": "2"
+      }
+    ],
+    "errors": [
+      [
+        "field_locked",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_pool_keeps_one_item",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_items",
+        "row": 1,
+        "path": "w",
+        "old": "10000",
+        "new": "0"
+      }
+    ],
+    "warnings": [
+      [
+        "ratio_big",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_pool_all_zero",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_items",
+        "row": 1,
+        "path": "w",
+        "old": "10000",
+        "new": "0"
+      },
+      {
+        "table": "lt_items",
+        "row": 2,
+        "path": "w",
+        "old": "20000",
+        "new": "0"
+      }
+    ],
+    "errors": [
+      [
+        "key_all_zero",
+        0
+      ]
+    ],
+    "warnings": [
+      [
+        "ratio_big",
+        0
+      ],
+      [
+        "ratio_big",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "loot_single_item_pool_zero",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_items",
+        "row": 0,
+        "path": "w",
+        "old": "30000",
+        "new": "0"
+      }
+    ],
+    "errors": [
+      [
+        "key_all_zero",
+        0
+      ]
+    ],
+    "warnings": [
+      [
+        "ratio_big",
+        0
+      ]
+    ]
+  },
+  {
+    "name": "loot_zero_item_comes_back",
+    "kit": "kit_loot",
+    "header": {
+      "base": "20260101-cccccccc"
+    },
+    "changes": [
+      {
+        "table": "lt_items",
+        "row": 1,
+        "path": "w",
+        "old": "10000",
+        "new": "0"
+      },
+      {
+        "table": "lt_items",
+        "row": 2,
+        "path": "w",
+        "old": "20000",
+        "new": "0"
+      },
+      {
+        "table": "lt_items",
+        "row": 3,
+        "path": "w",
+        "old": "0",
+        "new": "5"
+      }
+    ],
+    "warnings": [
+      [
+        "ratio_big",
+        0
+      ],
+      [
+        "ratio_big",
+        1
+      ]
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+[member]
+name = "stand"
+kind = "tool"
+visibility = "public"
+lang = "powershell"
+version = "0"
+depends_on = ["core/backend"]
+description = "Test stand (formerly dbtest): launching the backend, clients, scenarios. Paths — paths.ps1 from local.toml"

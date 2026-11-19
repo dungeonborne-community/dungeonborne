@@ -1,0 +1,29 @@
+# ds-agent — game server supervisor (ds-agent/README.md in the backend sources). Lives next to ds-agent.exe.
+# Run as administrator in the RDP session: C:\DungeonbornServer\Kit\ds-agent.exe
+# Check without doing anything: ds-agent.exe --check
+
+kit = 'C:\DungeonbornServer\Kit'
+# backend HTTP for the servers (the same one the mod uses: DS_AGENT_BIND:DS_AGENT_PORT)
+backend = "http://10.0.0.2:9091"
+# slot address in DS_POOL; empty = PublicIp from server.json
+public_ip = ""
+ports = [7777, 7787, 7797, 7807]
+# idle map: waiting room
+map = "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01"
+check_secs = 15
+# one process per match (mod -dbstandby): the server waits for an assignment in the lobby without a map (GameMode does not start
+# the game by itself), exits after the match, and the agent starts a new one. How many servers to keep is decided by the backend
+# (DS_AUTOSCALE=1, field want in /ds/slots)
+standby = true
+# a surplus server idle in standby longer than this is shut down
+idle_secs = 600
+
+# how long to wait for a heartbeat after start; heartbeat silent longer = hung; phase hosting/resetting/entering longer = hung
+start_grace_secs = 240
+silent_secs = 90
+stuck_secs = 300
+# wait for exit after quit; if it did not exit = alarm, a human is needed (a process under ACE cannot be killed)
+quit_wait_secs = 120
+# no more than max_starts starts within window_secs, otherwise stop with an alarm
+max_starts = 4
+window_secs = 1800

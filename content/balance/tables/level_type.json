@@ -1,0 +1,45 @@
+{
+  "type": "tgf.config.ExcelLevelType",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 9,
+    "hash_code": "sha256:007e02e3eb5f198dc6153d02882cdad26cf8ce7b8f0cea62bc86167ef66ea349",
+    "data_source": [
+      {
+        "file": "98bd22480cb9b76536f2a396210256134ecdb3c7b2c6eeb1ade943a7c0cc6136",
+        "sheet": "e030209a1713b2395c31bcc6f994e8f4593576b0231391884a4b4e7fbd43d037",
+        "count": 9
+      }
+    ]
+  },
+  "rows": [
+    {
+      "level_type": 1001
+    },
+    {
+      "level_type": 1002
+    },
+    {
+      "level_type": 1003
+    },
+    {
+      "level_type": 1004
+    },
+    {
+      "level_type": 1005
+    },
+    {
+      "level_type": 1006
+    },
+    {
+      "level_type": 2001
+    },
+    {
+      "level_type": 2002
+    },
+    {
+      "level_type": 3001
+    }
+  ]
+}

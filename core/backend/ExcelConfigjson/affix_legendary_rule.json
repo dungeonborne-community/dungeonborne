@@ -1,0 +1,218 @@
+[
+  {
+    "affix_alias_id": 181055003,
+    "offset": {
+      "ability_set_id": 181055003,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181055001,
+    "offset": {
+      "ability_set_id": 181055001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181056003,
+    "offset": {
+      "ability_set_id": 181056003,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181045000,
+    "offset": {
+      "ability_set_id": 181045000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181046000,
+    "offset": {
+      "ability_set_id": 181046000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181025001,
+    "offset": {
+      "ability_set_id": 181025001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181026001,
+    "offset": {
+      "ability_set_id": 181026001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181025000,
+    "offset": {
+      "ability_set_id": 181025000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181015000,
+    "offset": {
+      "ability_set_id": 181015000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181015001,
+    "offset": {
+      "ability_set_id": 181015001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181016000,
+    "offset": {
+      "ability_set_id": 181016000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181115001,
+    "offset": {
+      "ability_set_id": 181115001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181116001,
+    "offset": {
+      "ability_set_id": 181116001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181125000,
+    "offset": {
+      "ability_set_id": 181125000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181125001,
+    "offset": {
+      "ability_set_id": 181125001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181126001,
+    "offset": {
+      "ability_set_id": 181126001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181035001,
+    "offset": {
+      "ability_set_id": 181035001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181036001,
+    "offset": {
+      "ability_set_id": 181036001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 185016000,
+    "offset": {
+      "ability_set_id": 185016000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 185015002,
+    "offset": {
+      "ability_set_id": 185015002,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 185015001,
+    "offset": {
+      "ability_set_id": 185015001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 185015000,
+    "offset": {
+      "ability_set_id": 185015000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 185016001,
+    "offset": {
+      "ability_set_id": 185016001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 185016002,
+    "offset": {
+      "ability_set_id": 185016002,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 181085000,
+    "offset": {
+      "ability_set_id": 181085000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 189010001,
+    "offset": {
+      "ability_set_id": 189010001,
+      "max_value": 1,
+      "min_value": 1
+    }
+  },
+  {
+    "affix_alias_id": 189010000,
+    "offset": {
+      "ability_set_id": 189010000,
+      "max_value": 1,
+      "min_value": 1
+    }
+  }
+]

@@ -1,0 +1,7 @@
+﻿row,key,title,path,value,name
+0,100,Меч,type_id,100,Меч
+0,100,Меч,system_repurchase_price,40,
+1,200,Щит,type_id,200,Щит
+2,300,Зелье,type_id,300,Зелье
+2,300,Зелье,system_repurchase_price,5,
+3,999,,type_id,999,

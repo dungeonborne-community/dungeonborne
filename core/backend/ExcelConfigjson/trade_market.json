@@ -1,0 +1,35 @@
+[
+  {
+    "bid_price_percentage": 5,
+    "calculate_pool_id": 1,
+    "currency_type": 1001,
+    "id": 1,
+    "market_type": "EN_TRADE_MARKET_TYPE_HOMOGENEOUS",
+    "po_amount_limit": 30,
+    "random_item": true,
+    "recommend_id": 1,
+    "return_price_difference": true,
+    "so_amount_limit": 30,
+    "ticket_type": [
+      "EN_TRADE_TICKET_TYPE_PURCHASE",
+      "EN_TRADE_TICKET_TYPE_FIXED"
+    ],
+    "valid_lower_limit": "1",
+    "valid_price": 1
+  },
+  {
+    "bid_price_percentage": 5,
+    "calculate_pool_id": 1,
+    "currency_type": 1001,
+    "id": 2,
+    "market_type": "EN_TRADE_MARKET_TYPE_AUCTION",
+    "po_amount_limit": 50,
+    "recommend_id": 1,
+    "return_price_difference": true,
+    "so_amount_limit": 30,
+    "ticket_type": [
+      "EN_TRADE_TICKET_TYPE_AUCTION"
+    ],
+    "valid_lower_limit": "1"
+  }
+]

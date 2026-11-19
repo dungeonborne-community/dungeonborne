@@ -1,0 +1,128 @@
+[
+  {
+    "gear_set_type": 11001,
+    "level": 1,
+    "text": "affix_gear_set_fleet_foot_work_Lv1",
+    "unlock_level": 10
+  },
+  {
+    "gear_set_type": 11001,
+    "level": 2,
+    "text": "affix_gear_set_fleet_foot_work_Lv2",
+    "unlock_level": 15
+  },
+  {
+    "gear_set_type": 11001,
+    "level": 3,
+    "text": "affix_gear_set_fleet_foot_work_Lv3",
+    "unlock_level": 30
+  },
+  {
+    "gear_set_type": 11002,
+    "level": 1,
+    "text": "affix_gear_set_kleptomancy_Lv1",
+    "unlock_level": 8
+  },
+  {
+    "gear_set_type": 11003,
+    "level": 1,
+    "text": "affix_gear_set_undying_grasp_Lv1",
+    "unlock_level": 10
+  },
+  {
+    "gear_set_type": 11003,
+    "level": 2,
+    "text": "affix_gear_set_undying_grasp_Lv2",
+    "unlock_level": 15
+  },
+  {
+    "gear_set_type": 11003,
+    "level": 3,
+    "text": "affix_gear_set_undying_grasp_Lv3",
+    "unlock_level": 30
+  },
+  {
+    "gear_set_type": 11004,
+    "level": 1,
+    "text": "affix_gear_set_thunder_law_Lv1",
+    "unlock_level": 10
+  },
+  {
+    "gear_set_type": 11004,
+    "level": 2,
+    "text": "affix_gear_set_thunder_law_Lv2",
+    "unlock_level": 20
+  },
+  {
+    "gear_set_type": 11004,
+    "level": 3,
+    "text": "affix_gear_set_thunder_law_Lv3",
+    "unlock_level": 30
+  },
+  {
+    "gear_set_type": 11005,
+    "level": 1,
+    "text": "affix_gear_set_bone_plating_Lv1",
+    "unlock_level": 10
+  },
+  {
+    "gear_set_type": 11005,
+    "level": 2,
+    "text": "affix_gear_set_bone_plating_Lv2",
+    "unlock_level": 20
+  },
+  {
+    "gear_set_type": 11006,
+    "level": 1,
+    "text": "affix_gear_set_avoid_death_Lv1",
+    "unlock_level": 6
+  },
+  {
+    "gear_set_type": 11006,
+    "level": 2,
+    "text": "affix_gear_set_avoid_death_Lv2",
+    "unlock_level": 12
+  },
+  {
+    "gear_set_type": 11007,
+    "level": 1,
+    "text": "affix_gear_set_scorching_touch_Lv1",
+    "unlock_level": 6
+  },
+  {
+    "gear_set_type": 11008,
+    "level": 1,
+    "text": "affix_gear_set_summoning_aery_Lv1",
+    "unlock_level": 10
+  },
+  {
+    "gear_set_type": 11008,
+    "level": 2,
+    "text": "affix_gear_set_summoning_aery_Lv2",
+    "unlock_level": 20
+  },
+  {
+    "gear_set_type": 11008,
+    "level": 3,
+    "text": "affix_gear_set_summoning_aery_Lv3",
+    "unlock_level": 30
+  },
+  {
+    "gear_set_type": 11009,
+    "level": 1,
+    "text": "gear_set_coin_master_aery_Lv1",
+    "unlock_level": 3
+  },
+  {
+    "gear_set_type": 11009,
+    "level": 2,
+    "text": "gear_set_coin_master_aery_Lv2",
+    "unlock_level": 6
+  },
+  {
+    "gear_set_type": 11009,
+    "level": 3,
+    "text": "gear_set_coin_master_aery_Lv3",
+    "unlock_level": 9
+  }
+]

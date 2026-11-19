@@ -1,0 +1,22 @@
+[
+  {
+    "data": {
+      "begin_time": "2024-07-31T08:30:00Z",
+      "end_time": "2024-08-15T08:29:59Z",
+      "market_id": 102,
+      "popup_video_id": 1,
+      "videopath": "/Game/TGF/Movies/store/FMS_Store_DeadBones.FMS_Store_DeadBones"
+    },
+    "popup_video_id": 1
+  },
+  {
+    "data": {
+      "begin_time": "2024-08-15T08:30:30Z",
+      "end_time": "2024-09-15T08:30:30Z",
+      "market_id": 102,
+      "popup_video_id": 2,
+      "videopath": "/Game/TGF/Movies/Store/FMS_Store_DeadBones_Armor.FMS_Store_DeadBones_Armor"
+    },
+    "popup_video_id": 2
+  }
+]

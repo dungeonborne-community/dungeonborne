@@ -1,0 +1,338 @@
+{
+  "type": "tgf.config.UESourceAbilitySet",
+  "header": {},
+  "rows": [
+    {
+      "ue_source_id": 1103002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/MithrilPriest/GameAbility/AbilitySet_MithrilPriest_E.AbilitySet_MithrilPriest_E'"
+    },
+    {
+      "ue_source_id": 1103003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/MithrilPriest/GameAbility/AbilitySet_MithrilPriest_NecklaceAttr.AbilitySet_MithrilPriest_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 1103001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/MithrilPriest/GameAbility/AbilitySet_MithrilPriest_Q.AbilitySet_MithrilPriest_Q'"
+    },
+    {
+      "ue_source_id": 1102002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/MithrilRogue/GameAbility/AbilitySet_MithrilRogue_E.AbilitySet_MithrilRogue_E'"
+    },
+    {
+      "ue_source_id": 1102003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/MithrilRogue/GameAbility/AbilitySet_MithrilRogue_NecklaceAttr.AbilitySet_MithrilRogue_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 1102001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/MithrilRogue/GameAbility/AbilitySet_MithrilRogue_Q.AbilitySet_MithrilRogue_Q'"
+    },
+    {
+      "ue_source_id": 1101002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/MithrilFighter/GameAbility/AbilitySet_MithrilFighter_E.AbilitySet_MithrilFighter_E'"
+    },
+    {
+      "ue_source_id": 1101003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/MithrilFighter/GameAbility/AbilitySet_MithrilFighter_NecklaceAttr.AbilitySet_MithrilFighter_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 1101001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/MithrilFighter/GameAbility/AbilitySet_MithrilFighter_Q.AbilitySet_MithrilFighter_Q'"
+    },
+    {
+      "ue_source_id": 110005,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Lich/GameAbility/AbilitySet_Lich_E_IceArmor.AbilitySet_Lich_E_IceArmor'"
+    },
+    {
+      "ue_source_id": 110003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Lich/GameAbility/AbilitySet_Lich_NecklaceAttr.AbilitySet_Lich_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 110004,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Lich/GameAbility/AbilitySet_Lich_Q_DOT.AbilitySet_Lich_Q_DOT'"
+    },
+    {
+      "ue_source_id": 110002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Lich/GameAbility/AbilitySet_Lich_E.AbilitySet_Lich_E'"
+    },
+    {
+      "ue_source_id": 109002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Wizard/GameAbility/AbilitySet_Wizard_E.AbilitySet_Wizard_E'"
+    },
+    {
+      "ue_source_id": 109003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Wizard/GameAbility/AbilitySet_Wizard_NecklaceAttr.AbilitySet_Wizard_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 109001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Wizard/GameAbility/AbilitySet_Wizard_Q.AbilitySet_Wizard_Q'"
+    },
+    {
+      "ue_source_id": 108002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DeathKnight/GameAbility/AbilitySet_DeathKnight_E.AbilitySet_DeathKnight_E'"
+    },
+    {
+      "ue_source_id": 108003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DeathKnight/GameAbility/AbilitySet_DeathKnight_NecklaceAttr.AbilitySet_DeathKnight_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 108005,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DeathKnight/GameAbility/AbilitySet_DeathKnight_Q_2.AbilitySet_DeathKnight_Q_2'"
+    },
+    {
+      "ue_source_id": 108001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DeathKnight/GameAbility/AbilitySet_DeathKnight_Q.AbilitySet_DeathKnight_Q'"
+    },
+    {
+      "ue_source_id": 107005,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Fighter/GameAbility/AbilitySet_Fighter_E_Inspire.AbilitySet_Fighter_E_Inspire'"
+    },
+    {
+      "ue_source_id": 107003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Fighter/GameAbility/AbilitySet_Fighter_NecklaceAttr.AbilitySet_Fighter_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 107004,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Fighter/GameAbility/AbilitySet_Fighter_Q_BattleCry.AbilitySet_Fighter_Q_BattleCry'"
+    },
+    {
+      "ue_source_id": 107002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Fighter/GameAbility/AbilitySet_Fighter_E.AbilitySet_Fighter_E'"
+    },
+    {
+      "ue_source_id": 107001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Fighter/GameAbility/AbilitySet_Fighter_Q.AbilitySet_Fighter_Q'"
+    },
+    {
+      "ue_source_id": 106002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DruidPanther/GameAbility/AbilitySet_DruidPanther_Elf_E.AbilitySet_DruidPanther_Elf_E'"
+    },
+    {
+      "ue_source_id": 106001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DruidPanther/GameAbility/AbilitySet_DruidPanther_Elf_Q.AbilitySet_DruidPanther_Elf_Q'"
+    },
+    {
+      "ue_source_id": 106005,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DruidPanther/GameAbility/AbilitySet_DruidPanther_NecklaceAttr.AbilitySet_DruidPanther_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 106004,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DruidPanther/GameAbility/AbilitySet_DruidPanther_Panther_E.AbilitySet_DruidPanther_Panther_E'"
+    },
+    {
+      "ue_source_id": 106003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DruidPanther/GameAbility/AbilitySet_DruidPanther_Panther_Q.AbilitySet_DruidPanther_Panther_Q'"
+    },
+    {
+      "ue_source_id": 105005,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Priest/GameAbility/AbilitySet_Priest_E_ShieldAOE.AbilitySet_Priest_E_ShieldAOE'"
+    },
+    {
+      "ue_source_id": 105003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Priest/GameAbility/AbilitySet_Priest_NecklaceAttr.AbilitySet_Priest_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 105004,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Priest/GameAbility/AbilitySet_Priest_Q_HealSingle.AbilitySet_Priest_Q_HealSingle'"
+    },
+    {
+      "ue_source_id": 105002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Priest/GameAbility/AbilitySet_Priest_E_Invincible.AbilitySet_Priest_E_Invincible'"
+    },
+    {
+      "ue_source_id": 105001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Priest/GameAbility/AbilitySet_Priest_Q_AOE.AbilitySet_Priest_Q_AOE'"
+    },
+    {
+      "ue_source_id": 103099,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Rogue/GameAbility/AbilitySet_Rogue_NecklaceAttr.AbilitySet_Rogue_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 103001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Rogue/GameAbility/AbilitySet_Rogue_Q.AbilitySet_Rogue_Q'"
+    },
+    {
+      "ue_source_id": 103004,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Rogue/GameAbility/Rogue_E2_Vanish/AbilitySet_Rogue_E2_Vanish.AbilitySet_Rogue_E2_Vanish'"
+    },
+    {
+      "ue_source_id": 101002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/SwordMaster/GameAbility/AbilitySet_SwordMaster_E.AbilitySet_SwordMaster_E'"
+    },
+    {
+      "ue_source_id": 101003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/SwordMaster/GameAbility/AbilitySet_SwordMaster_NecklaceAttr.AbilitySet_SwordMaster_NecklaceAttr'"
+    },
+    {
+      "ue_source_id": 101001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/SwordMaster/GameAbility/AbilitySet_SwordMaster_Q.AbilitySet_SwordMaster_Q'"
+    },
+    {
+      "ue_source_id": 181016000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Sword/GameAbility/WP_Sword_6001/AbilitySet_Affix_BattleKing.AbilitySet_Affix_BattleKing'"
+    },
+    {
+      "ue_source_id": 181015001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Sword/GameAbility/WP_Sword_5002/AbilitySet_Affix_LifeStealWhileHit.AbilitySet_Affix_LifeStealWhileHit'"
+    },
+    {
+      "ue_source_id": 181015000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Sword/GameAbility/WP_Sword_5001/AbilitySet_Affix_SpeedUpOnHit.AbilitySet_Affix_SpeedUpOnHit'"
+    },
+    {
+      "ue_source_id": 181014000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Sword/GameAbility/WP_Sword_4001/AbilitySet_IceAwake.AbilitySet_IceAwake'"
+    },
+    {
+      "ue_source_id": 181056003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Staff/GameAbility/WP_Staff_6003/AbilitySet_Staff_Thunder_181056003.AbilitySet_Staff_Thunder_181056003'"
+    },
+    {
+      "ue_source_id": 181055003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Staff/GameAbility/WP_Staff_5003/AbilitySet_Staff_Thunder_181055003.AbilitySet_Staff_Thunder_181055003'"
+    },
+    {
+      "ue_source_id": 181055001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Staff/GameAbility/WP_Staff_5001/AbilitySet_Staff_Fire_181055001.AbilitySet_Staff_Fire_181055001'"
+    },
+    {
+      "ue_source_id": 181036001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Shield/GameAbility/WP_Shield_6002/AbilitySet_Affix_ShieldProjectile.AbilitySet_Affix_ShieldProjectile'"
+    },
+    {
+      "ue_source_id": 181035001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Shield/GameAbility/WP_Shield_5002/AbilitySet_Affix_BounceSpeedDown.AbilitySet_Affix_BounceSpeedDown'"
+    },
+    {
+      "ue_source_id": 181085000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Relic/GameAbility/WP_Relic_5001/AbilitySet_Affix_SucceedGuardRecoverAmmo.AbilitySet_Affix_SucceedGuardRecoverAmmo'"
+    },
+    {
+      "ue_source_id": 181126001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Mace/GameAbility/WP_Mace_6002/AbilitySet_LegendaryAffix_181126001.AbilitySet_LegendaryAffix_181126001'"
+    },
+    {
+      "ue_source_id": 181125001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Mace/GameAbility/WP_Mace_5002/AbilitySet_Mace_MoveSpeedBurstWhenGuardSucceed.AbilitySet_Mace_MoveSpeedBurstWhenGuardSucceed'"
+    },
+    {
+      "ue_source_id": 181125000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Mace/GameAbility/WP_Mace_5001/AbilitySet_Affix_MaceHighDPH.AbilitySet_Affix_MaceHighDPH'"
+    },
+    {
+      "ue_source_id": 3,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Mace/GameAbility/WP_Mace_5001/AbilitySet_Affix_DmgReduction.AbilitySet_Affix_DmgReduction'"
+    },
+    {
+      "ue_source_id": 181026001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/LongSword/GameAbility/WP_LongSword_6002/AbilitySet_Affix_LongSword_6002.AbilitySet_Affix_LongSword_6002'"
+    },
+    {
+      "ue_source_id": 181025001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/LongSword/GameAbility/WP_LongSword_5002/AbilitySet_LegendaryAffix_181025001.AbilitySet_LegendaryAffix_181025001'"
+    },
+    {
+      "ue_source_id": 181025000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/LongSword/GameAbility/WP_LongSword_5001/AbilitySet_LegendaryAffix_181025000.AbilitySet_LegendaryAffix_181025000'"
+    },
+    {
+      "ue_source_id": 189010001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/LongSword/GameAbility/WP_Ex_LongSword_189010001/AbilitySet_Affix_LongSword_189010001_KillRecoverFullHP.AbilitySet_Affix_LongSword_189010001_KillRecoverFullHP'"
+    },
+    {
+      "ue_source_id": 181046000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/HeavyCrossbow/GameAbility/WP_HeavyCrossbow_6001/AbilitySet_HeavyCrossbow_181046000.AbilitySet_HeavyCrossbow_181046000'"
+    },
+    {
+      "ue_source_id": 181045000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/HeavyCrossbow/GameAbility/WP_HeavyCrossbow_5001/AbilitySet_HeavyCrossbow_181045000.AbilitySet_HeavyCrossbow_181045000'"
+    },
+    {
+      "ue_source_id": 181116001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Dagger/GameAbility/WP_Dagger_6002/AbilitySet_LegendaryAffix_181116001.AbilitySet_LegendaryAffix_181116001'"
+    },
+    {
+      "ue_source_id": 181115001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Weapon/Dagger/GameAbility/WP_Dagger_5002/AbilitySet_Affix_ManaBreak.AbilitySet_Affix_ManaBreak'"
+    },
+    {
+      "ue_source_id": 185016002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Armor/Ring/GameAbility/ACC_Ring_006003/AbilitySet_Affix_AeryEnhanced.AbilitySet_Affix_AeryEnhanced'"
+    },
+    {
+      "ue_source_id": 185016001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Armor/Ring/GameAbility/ACC_Ring_006002/AbilitySet_Affix_FleetFootworkEx.AbilitySet_Affix_FleetFootworkEx'"
+    },
+    {
+      "ue_source_id": 185016000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Armor/Ring/GameAbility/ACC_Ring_006001/AbilitySet_Affix_UndyingGraspEnhanced.AbilitySet_Affix_UndyingGraspEnhanced'"
+    },
+    {
+      "ue_source_id": 185015002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Armor/Ring/GameAbility/ACC_Ring_005003/AbilitySet_Affix_BonePlatingEnhanced.AbilitySet_Affix_BonePlatingEnhanced'"
+    },
+    {
+      "ue_source_id": 185015001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Armor/Ring/GameAbility/ACC_Ring_005002/AbilitySet_Affix_Ring005002_HealWhenGettingShield.AbilitySet_Affix_Ring005002_HealWhenGettingShield'"
+    },
+    {
+      "ue_source_id": 185015000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Armor/Ring/GameAbility/ACC_Ring_005001/AbilitySet_Affix_Ring005001_AvoidDeathEnhanced.AbilitySet_Affix_Ring005001_AvoidDeathEnhanced'"
+    },
+    {
+      "ue_source_id": 189010000,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Equipment/Armor/Helmet/GameAbility/Ex_Helmet_189010000/AbilitySet_Ex_Helmet_189010000.AbilitySet_Ex_Helmet_189010000'"
+    },
+    {
+      "ue_source_id": 103002,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Rogue/GameAbility/AbilitySet_Rogue_E.AbilitySet_Rogue_E'"
+    },
+    {
+      "ue_source_id": 103003,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Rogue/GameAbility/Rogue_Q2_Knife/AbilitySet_Rogue_Q2_Knife.AbilitySet_Rogue_Q2_Knife'"
+    },
+    {
+      "ue_source_id": 103005,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Rogue/GameAbility/Rogue_E3_ShadowShroud/AbilitySet_Rogue_E3_ShadowShroud.AbilitySet_Rogue_E3_ShadowShroud'"
+    },
+    {
+      "ue_source_id": 110001,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Lich/GameAbility/AbilitySet_Lich_Q.AbilitySet_Lich_Q'"
+    },
+    {
+      "ue_source_id": 107006,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/Fighter/GameAbility/AbilitySet_Fighter_Q_Rupture.AbilitySet_Fighter_Q_Rupture'"
+    },
+    {
+      "ue_source_id": 106006,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Character/Hero/DruidPanther/GameAbility/AbilitySet_DruidPanther_Elf_E_Heal.AbilitySet_DruidPanther_Elf_E_Heal'"
+    },
+    {
+      "ue_source_id": 104,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Ability/GameAbility/Element/AbilitySet_LegendaryAffix_Awake_Thunder.AbilitySet_LegendaryAffix_Awake_Thunder'"
+    },
+    {
+      "ue_source_id": 101,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Ability/GameAbility/Element/AbilitySet_LegendaryAffix_Awake_None.AbilitySet_LegendaryAffix_Awake_None'"
+    },
+    {
+      "ue_source_id": 105,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Ability/GameAbility/Element/AbilitySet_LegendaryAffix_Awake_Light.AbilitySet_LegendaryAffix_Awake_Light'"
+    },
+    {
+      "ue_source_id": 102,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Ability/GameAbility/Element/AbilitySet_LegendaryAffix_Awake_Ice.AbilitySet_LegendaryAffix_Awake_Ice'"
+    },
+    {
+      "ue_source_id": 103,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Ability/GameAbility/Element/AbilitySet_LegendaryAffix_Awake_Fire.AbilitySet_LegendaryAffix_Awake_Fire'"
+    },
+    {
+      "ue_source_id": 106,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Ability/GameAbility/Element/AbilitySet_LegendaryAffix_Awake_Dark.AbilitySet_LegendaryAffix_Awake_Dark'"
+    },
+    {
+      "ue_source_id": 1,
+      "ue_path": "/Script/LyraGame.LyraAbilitySet'/Game/TGF/Ability/AbilitySet/AbilitySet_TestSet.AbilitySet_TestSet'"
+    }
+  ]
+}

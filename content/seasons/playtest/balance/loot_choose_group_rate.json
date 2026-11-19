@@ -1,0 +1,6479 @@
+{
+  "type": "tgf.config.ExcelLootChooseGroupRate",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 16,
+    "hash_code": "sha256:6bc06f829591d7978e0078c5f03753495aefa3c94172770223dd64d598cab4e4",
+    "data_source": [
+      {
+        "file": "6c342a0a102f7d955128ef7992dcfd0a99b340e9e0f99177a2f6bde64a480577",
+        "sheet": "498cf6b8ed02f30ea65286c6e1c1ccfe46bf1548b4e8f588c7c8e9e6021ad6d6",
+        "count": 16
+      }
+    ]
+  },
+  "rows": [
+    {
+      "loot_id": 100001,
+      "random_ids": [
+        100001
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100002,
+      "random_ids": [
+        100002
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100003,
+      "random_ids": [
+        100003
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100004,
+      "random_ids": [
+        100004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4000,
+      "max_rate": 4000
+    },
+    {
+      "loot_id": 100005,
+      "random_ids": [
+        100005
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100006,
+      "random_ids": [
+        100006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100007,
+      "random_ids": [
+        100007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100008,
+      "random_ids": [
+        100008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100009,
+      "random_ids": [
+        100009
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100010,
+      "random_ids": [
+        100010
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 100011,
+      "random_ids": [
+        100011
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100012,
+      "random_ids": [
+        100012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100013,
+      "random_ids": [
+        100013
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100014,
+      "random_ids": [
+        100014
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100015,
+      "random_ids": [
+        100015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 100016,
+      "random_ids": [
+        100016
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910002,
+      "random_ids": [
+        900004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1200,
+      "max_rate": 1200
+    },
+    {
+      "loot_id": 910007,
+      "random_ids": [
+        900002
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910010,
+      "random_ids": [
+        900004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910143,
+      "random_ids": [
+        900039
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910144,
+      "random_ids": [
+        900040
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910145,
+      "random_ids": [
+        900041
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910146,
+      "random_ids": [
+        900042
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910147,
+      "random_ids": [
+        900043
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910148,
+      "random_ids": [
+        900044
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910149,
+      "random_ids": [
+        900045
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910150,
+      "random_ids": [
+        900046
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910151,
+      "random_ids": [
+        900047
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910152,
+      "random_ids": [
+        900048
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910153,
+      "random_ids": [
+        900049
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910154,
+      "random_ids": [
+        900050
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910155,
+      "random_ids": [
+        900051
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910156,
+      "random_ids": [
+        900052
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910157,
+      "random_ids": [
+        900053
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910158,
+      "random_ids": [
+        900054
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910159,
+      "random_ids": [
+        900055
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910160,
+      "random_ids": [
+        900056
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910161,
+      "random_ids": [
+        900057
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910162,
+      "random_ids": [
+        900058
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910163,
+      "random_ids": [
+        900059
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910164,
+      "random_ids": [
+        900060
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910165,
+      "random_ids": [
+        900061
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910166,
+      "random_ids": [
+        900062
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910167,
+      "random_ids": [
+        900063
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910168,
+      "random_ids": [
+        900064
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910169,
+      "random_ids": [
+        900065
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910170,
+      "random_ids": [
+        900066
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910171,
+      "random_ids": [
+        900067
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910172,
+      "random_ids": [
+        900068
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910173,
+      "random_ids": [
+        900069
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910174,
+      "random_ids": [
+        900070
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910175,
+      "random_ids": [
+        900071
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910018,
+      "random_ids": [
+        900003
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910019,
+      "random_ids": [
+        900022
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910013,
+      "random_ids": [
+        900021
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910015,
+      "random_ids": [
+        900004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6000,
+      "max_rate": 6000
+    },
+    {
+      "loot_id": 910034,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6000,
+      "max_rate": 6000
+    },
+    {
+      "loot_id": 910040,
+      "random_ids": [
+        900008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3000,
+      "max_rate": 3000
+    },
+    {
+      "loot_id": 910464,
+      "random_ids": [
+        900003
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910083,
+      "random_ids": [
+        900010
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910657,
+      "random_ids": [
+        900030
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910658,
+      "random_ids": [
+        900029
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910510,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910017,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1000,
+      "max_rate": 1000
+    },
+    {
+      "loot_id": 910454,
+      "random_ids": [
+        900004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1250,
+      "max_rate": 1250
+    },
+    {
+      "loot_id": 910036,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2000,
+      "max_rate": 2000
+    },
+    {
+      "loot_id": 910030,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910470,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3250,
+      "max_rate": 3250
+    },
+    {
+      "loot_id": 910176,
+      "random_ids": [
+        900072
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910014,
+      "random_ids": [
+        900020
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7500,
+      "max_rate": 7500
+    },
+    {
+      "loot_id": 910016,
+      "random_ids": [
+        900005
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6000,
+      "max_rate": 6000
+    },
+    {
+      "loot_id": 910039,
+      "random_ids": [
+        900008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1200,
+      "max_rate": 1200
+    },
+    {
+      "loot_id": 910029,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910044,
+      "random_ids": [
+        900008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910058,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4000,
+      "max_rate": 4000
+    },
+    {
+      "loot_id": 910571,
+      "random_ids": [
+        900118
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910118,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3000,
+      "max_rate": 3000
+    },
+    {
+      "loot_id": 910116,
+      "random_ids": [
+        900010
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2000,
+      "max_rate": 2000
+    },
+    {
+      "loot_id": 910093,
+      "random_ids": [
+        900029
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910098,
+      "random_ids": [
+        900028
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6000,
+      "max_rate": 6000
+    },
+    {
+      "loot_id": 910028,
+      "random_ids": [
+        900004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4000,
+      "max_rate": 4000
+    },
+    {
+      "loot_id": 910117,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7000,
+      "max_rate": 7000
+    },
+    {
+      "loot_id": 910101,
+      "random_ids": [
+        900001
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4500,
+      "max_rate": 4500
+    },
+    {
+      "loot_id": 910099,
+      "random_ids": [
+        900004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1400,
+      "max_rate": 1400
+    },
+    {
+      "loot_id": 910102,
+      "random_ids": [
+        900027
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1400,
+      "max_rate": 1400
+    },
+    {
+      "loot_id": 910111,
+      "random_ids": [
+        900002
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8500,
+      "max_rate": 8500
+    },
+    {
+      "loot_id": 910112,
+      "random_ids": [
+        900028
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4000,
+      "max_rate": 4000
+    },
+    {
+      "loot_id": 910113,
+      "random_ids": [
+        900004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3000,
+      "max_rate": 3000
+    },
+    {
+      "loot_id": 910114,
+      "random_ids": [
+        900005
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910115,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 500,
+      "max_rate": 500
+    },
+    {
+      "loot_id": 910520,
+      "random_ids": [
+        900111
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7000,
+      "max_rate": 7000
+    },
+    {
+      "loot_id": 910105,
+      "random_ids": [
+        900028
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8000,
+      "max_rate": 8000
+    },
+    {
+      "loot_id": 910106,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1500,
+      "max_rate": 1500
+    },
+    {
+      "loot_id": 910027,
+      "random_ids": [
+        900020
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6000,
+      "max_rate": 6000
+    },
+    {
+      "loot_id": 910031,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1200,
+      "max_rate": 1200
+    },
+    {
+      "loot_id": 910041,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4500,
+      "max_rate": 4500
+    },
+    {
+      "loot_id": 910042,
+      "random_ids": [
+        900008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1500,
+      "max_rate": 1500
+    },
+    {
+      "loot_id": 910005,
+      "random_ids": [
+        900001
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4000,
+      "max_rate": 4000
+    },
+    {
+      "loot_id": 910006,
+      "random_ids": [
+        900019
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1200,
+      "max_rate": 1200
+    },
+    {
+      "loot_id": 910023,
+      "random_ids": [
+        900001
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8000,
+      "max_rate": 8000
+    },
+    {
+      "loot_id": 910024,
+      "random_ids": [
+        900020
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5200,
+      "max_rate": 5200
+    },
+    {
+      "loot_id": 910025,
+      "random_ids": [
+        900004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910026,
+      "random_ids": [
+        900005
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1500,
+      "max_rate": 1500
+    },
+    {
+      "loot_id": 910032,
+      "random_ids": [
+        900009
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910033,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910043,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5500,
+      "max_rate": 5500
+    },
+    {
+      "loot_id": 910192,
+      "random_ids": [
+        900009
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910652,
+      "random_ids": [
+        900022
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910653,
+      "random_ids": [
+        900021
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910329,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1500,
+      "max_rate": 1500
+    },
+    {
+      "loot_id": 910238,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1375,
+      "max_rate": 1375
+    },
+    {
+      "loot_id": 910239,
+      "random_ids": [
+        900008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1250,
+      "max_rate": 1250
+    },
+    {
+      "loot_id": 910048,
+      "random_ids": [
+        900009
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910057,
+      "random_ids": [
+        900010
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910095,
+      "random_ids": [
+        900030
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 910120,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8000,
+      "max_rate": 8000
+    },
+    {
+      "loot_id": 910184,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1100,
+      "max_rate": 1100
+    },
+    {
+      "loot_id": 910289,
+      "random_ids": [
+        900085
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 500,
+      "max_rate": 500
+    },
+    {
+      "loot_id": 910215,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1350,
+      "max_rate": 1350
+    },
+    {
+      "loot_id": 910216,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910217,
+      "random_ids": [
+        900008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 600,
+      "max_rate": 600
+    },
+    {
+      "loot_id": 910290,
+      "random_ids": [
+        900085
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910291,
+      "random_ids": [
+        900086
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 500,
+      "max_rate": 500
+    },
+    {
+      "loot_id": 910263,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1650,
+      "max_rate": 1650
+    },
+    {
+      "loot_id": 910292,
+      "random_ids": [
+        900086
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 910049,
+      "random_ids": [
+        900022
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910050,
+      "random_ids": [
+        900021
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910056,
+      "random_ids": [
+        900008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6000,
+      "max_rate": 6000
+    },
+    {
+      "loot_id": 910067,
+      "random_ids": [
+        900024
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5200,
+      "max_rate": 5200
+    },
+    {
+      "loot_id": 910068,
+      "random_ids": [
+        900024
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6000,
+      "max_rate": 6000
+    },
+    {
+      "loot_id": 910084,
+      "random_ids": [
+        900026
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910085,
+      "random_ids": [
+        900025
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910087,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 71,
+      "max_rate": 71
+    },
+    {
+      "loot_id": 910089,
+      "random_ids": [
+        900027
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1000,
+      "max_rate": 1000
+    },
+    {
+      "loot_id": 910092,
+      "random_ids": [
+        900028
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5500,
+      "max_rate": 5500
+    },
+    {
+      "loot_id": 910094,
+      "random_ids": [
+        900028
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7500,
+      "max_rate": 7500
+    },
+    {
+      "loot_id": 910096,
+      "random_ids": [
+        900029
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6500,
+      "max_rate": 6500
+    },
+    {
+      "loot_id": 910097,
+      "random_ids": [
+        900028
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5200,
+      "max_rate": 5200
+    },
+    {
+      "loot_id": 910124,
+      "random_ids": [
+        900030
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910125,
+      "random_ids": [
+        900029
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910126,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1000,
+      "max_rate": 1000
+    },
+    {
+      "loot_id": 910128,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 132,
+      "max_rate": 132
+    },
+    {
+      "loot_id": 910193,
+      "random_ids": [
+        900073
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910194,
+      "random_ids": [
+        900074
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910195,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 45,
+      "max_rate": 45
+    },
+    {
+      "loot_id": 910234,
+      "random_ids": [
+        900077
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910235,
+      "random_ids": [
+        900078
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910236,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 630,
+      "max_rate": 630
+    },
+    {
+      "loot_id": 910237,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3500,
+      "max_rate": 3500
+    },
+    {
+      "loot_id": 910240,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 102,
+      "max_rate": 102
+    },
+    {
+      "loot_id": 910278,
+      "random_ids": [
+        900081
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910279,
+      "random_ids": [
+        900082
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910280,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1380,
+      "max_rate": 1380
+    },
+    {
+      "loot_id": 910281,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 163,
+      "max_rate": 163
+    },
+    {
+      "loot_id": 910282,
+      "random_ids": [
+        900016
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 30,
+      "max_rate": 30
+    },
+    {
+      "loot_id": 910310,
+      "random_ids": [
+        900087
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910311,
+      "random_ids": [
+        900088
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910314,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 190,
+      "max_rate": 190
+    },
+    {
+      "loot_id": 910351,
+      "random_ids": [
+        900010
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4375,
+      "max_rate": 4375
+    },
+    {
+      "loot_id": 910352,
+      "random_ids": [
+        900091
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910353,
+      "random_ids": [
+        900092
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910354,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 810,
+      "max_rate": 810
+    },
+    {
+      "loot_id": 910358,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 117,
+      "max_rate": 117
+    },
+    {
+      "loot_id": 910359,
+      "random_ids": [
+        900016
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 20,
+      "max_rate": 20
+    },
+    {
+      "loot_id": 910394,
+      "random_ids": [
+        900010
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6875,
+      "max_rate": 6875
+    },
+    {
+      "loot_id": 910395,
+      "random_ids": [
+        900095
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910396,
+      "random_ids": [
+        900096
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910397,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1560,
+      "max_rate": 1560
+    },
+    {
+      "loot_id": 910398,
+      "random_ids": [
+        900006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3500,
+      "max_rate": 3500
+    },
+    {
+      "loot_id": 910399,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4750,
+      "max_rate": 4750
+    },
+    {
+      "loot_id": 910400,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 178,
+      "max_rate": 178
+    },
+    {
+      "loot_id": 910401,
+      "random_ids": [
+        900016
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 34,
+      "max_rate": 34
+    },
+    {
+      "loot_id": 910423,
+      "random_ids": [
+        900009
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3750,
+      "max_rate": 3750
+    },
+    {
+      "loot_id": 910424,
+      "random_ids": [
+        900099
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910425,
+      "random_ids": [
+        900100
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910426,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 32,
+      "max_rate": 32
+    },
+    {
+      "loot_id": 910428,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 60,
+      "max_rate": 60
+    },
+    {
+      "loot_id": 910467,
+      "random_ids": [
+        900103
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910468,
+      "random_ids": [
+        900104
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910469,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 440,
+      "max_rate": 440
+    },
+    {
+      "loot_id": 910471,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2063,
+      "max_rate": 2063
+    },
+    {
+      "loot_id": 910472,
+      "random_ids": [
+        900008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1875,
+      "max_rate": 1875
+    },
+    {
+      "loot_id": 910473,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 86,
+      "max_rate": 86
+    },
+    {
+      "loot_id": 910506,
+      "random_ids": [
+        900010
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5625,
+      "max_rate": 5625
+    },
+    {
+      "loot_id": 910507,
+      "random_ids": [
+        900107
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910508,
+      "random_ids": [
+        900108
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 910509,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1190,
+      "max_rate": 1190
+    },
+    {
+      "loot_id": 910511,
+      "random_ids": [
+        900007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4250,
+      "max_rate": 4250
+    },
+    {
+      "loot_id": 910512,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 147,
+      "max_rate": 147
+    },
+    {
+      "loot_id": 910522,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5,
+      "max_rate": 5
+    },
+    {
+      "loot_id": 910527,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 33,
+      "max_rate": 33
+    },
+    {
+      "loot_id": 910538,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 41,
+      "max_rate": 41
+    },
+    {
+      "loot_id": 910549,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 37,
+      "max_rate": 37
+    },
+    {
+      "loot_id": 910577,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 79,
+      "max_rate": 79
+    },
+    {
+      "loot_id": 910579,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 27,
+      "max_rate": 27
+    },
+    {
+      "loot_id": 910582,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 61,
+      "max_rate": 61
+    },
+    {
+      "loot_id": 910585,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 98,
+      "max_rate": 98
+    },
+    {
+      "loot_id": 910588,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 70,
+      "max_rate": 70
+    },
+    {
+      "loot_id": 910592,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 107,
+      "max_rate": 107
+    },
+    {
+      "loot_id": 910594,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 52,
+      "max_rate": 52
+    },
+    {
+      "loot_id": 910597,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 88,
+      "max_rate": 88
+    },
+    {
+      "loot_id": 919001,
+      "random_ids": [
+        990100
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3500,
+      "max_rate": 3500
+    },
+    {
+      "loot_id": 919002,
+      "random_ids": [
+        900004,
+        900005,
+        900007
+      ],
+      "pr": [
+        4000,
+        3333,
+        2667
+      ],
+      "default_rate": 3000,
+      "max_rate": 3000
+    },
+    {
+      "loot_id": 919003,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2400,
+      "max_rate": 2400
+    },
+    {
+      "loot_id": 919004,
+      "random_ids": [
+        990099
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 236,
+      "max_rate": 236
+    },
+    {
+      "loot_id": 919005,
+      "random_ids": [
+        990101
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919006,
+      "random_ids": [
+        990037,
+        990090,
+        990091,
+        990092,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        117,
+        1298,
+        1298,
+        2595,
+        1700,
+        1360,
+        102,
+        1360,
+        170
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919007,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6800,
+      "max_rate": 6800
+    },
+    {
+      "loot_id": 919008,
+      "random_ids": [
+        990099
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 946,
+      "max_rate": 946
+    },
+    {
+      "loot_id": 919009,
+      "random_ids": [
+        900016,
+        900015,
+        900012,
+        990102
+      ],
+      "pr": [
+        10,
+        50,
+        500,
+        440
+      ],
+      "default_rate": 1,
+      "max_rate": 1
+    },
+    {
+      "loot_id": 919010,
+      "random_ids": [
+        990102
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919011,
+      "random_ids": [
+        990041,
+        990039,
+        990090,
+        990091,
+        990092,
+        900006,
+        900005,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        229,
+        200,
+        1088,
+        1088,
+        2175,
+        870,
+        1740,
+        1044,
+        1044,
+        522
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919012,
+      "random_ids": [
+        990041,
+        990039,
+        990090,
+        990091,
+        990092,
+        900006,
+        900005,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        229,
+        200,
+        1088,
+        1088,
+        2175,
+        870,
+        1740,
+        1044,
+        1044,
+        522
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919013,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1,
+      "max_rate": 1
+    },
+    {
+      "loot_id": 919014,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10,
+      "max_rate": 10
+    },
+    {
+      "loot_id": 919015,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7309,
+      "max_rate": 7309
+    },
+    {
+      "loot_id": 919016,
+      "random_ids": [
+        990099
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1891,
+      "max_rate": 1891
+    },
+    {
+      "loot_id": 919017,
+      "random_ids": [
+        990102
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 919018,
+      "random_ids": [
+        900010,
+        990057,
+        990055,
+        990096,
+        990097,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        3333,
+        401,
+        233,
+        594,
+        198,
+        767,
+        320,
+        3771,
+        384
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919019,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 50,
+      "max_rate": 50
+    },
+    {
+      "loot_id": 919020,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 500,
+      "max_rate": 500
+    },
+    {
+      "loot_id": 919021,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1918,
+      "max_rate": 1918
+    },
+    {
+      "loot_id": 919022,
+      "random_ids": [
+        990099
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1576,
+      "max_rate": 1576
+    },
+    {
+      "loot_id": 919023,
+      "random_ids": [
+        900016,
+        900015,
+        900012,
+        900003
+      ],
+      "pr": [
+        10,
+        50,
+        500,
+        440
+      ],
+      "default_rate": 1,
+      "max_rate": 1
+    },
+    {
+      "loot_id": 919024,
+      "random_ids": [
+        990039,
+        990090,
+        990091,
+        990092
+      ],
+      "pr": [
+        788,
+        2303,
+        2303,
+        4606
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919025,
+      "random_ids": [
+        990037,
+        990090,
+        990091,
+        990092
+      ],
+      "pr": [
+        487,
+        2378,
+        2378,
+        4756
+      ],
+      "default_rate": 7500,
+      "max_rate": 7500
+    },
+    {
+      "loot_id": 919026,
+      "random_ids": [
+        900119,
+        900118
+      ],
+      "pr": [
+        50,
+        50
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919027,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2,
+      "max_rate": 2
+    },
+    {
+      "loot_id": 919028,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 20,
+      "max_rate": 20
+    },
+    {
+      "loot_id": 919029,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10,
+      "max_rate": 10
+    },
+    {
+      "loot_id": 919030,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919031,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 30,
+      "max_rate": 30
+    },
+    {
+      "loot_id": 919032,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 300,
+      "max_rate": 300
+    },
+    {
+      "loot_id": 919033,
+      "random_ids": [
+        990063,
+        990082,
+        990083,
+        990084,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        114,
+        1296,
+        1296,
+        2592,
+        1697,
+        1358,
+        119,
+        1358,
+        170
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919034,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6789,
+      "max_rate": 6789
+    },
+    {
+      "loot_id": 919035,
+      "random_ids": [
+        990061,
+        990063,
+        990082,
+        990083,
+        990084,
+        900004,
+        900007,
+        900006,
+        900008
+      ],
+      "pr": [
+        135,
+        35,
+        640,
+        640,
+        1279,
+        1077,
+        5388,
+        404,
+        404
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919036,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5479,
+      "max_rate": 5479
+    },
+    {
+      "loot_id": 919037,
+      "random_ids": [
+        990100
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4000,
+      "max_rate": 4000
+    },
+    {
+      "loot_id": 919038,
+      "random_ids": [
+        990065,
+        900004,
+        990082,
+        990083,
+        990084
+      ],
+      "pr": [
+        19,
+        5010,
+        1243,
+        1243,
+        2485
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919039,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5010,
+      "max_rate": 5010
+    },
+    {
+      "loot_id": 919040,
+      "random_ids": [
+        990099
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 210,
+      "max_rate": 210
+    },
+    {
+      "loot_id": 919041,
+      "random_ids": [
+        990100
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8000,
+      "max_rate": 8000
+    },
+    {
+      "loot_id": 919042,
+      "random_ids": [
+        990063,
+        990082,
+        990083,
+        990084,
+        900004,
+        900005,
+        900007
+      ],
+      "pr": [
+        143,
+        1123,
+        1123,
+        2247,
+        2256,
+        1405,
+        1703
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919043,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2256,
+      "max_rate": 2256
+    },
+    {
+      "loot_id": 919044,
+      "random_ids": [
+        990065,
+        990082,
+        990083,
+        990084,
+        900111
+      ],
+      "pr": [
+        19,
+        363,
+        363,
+        725,
+        8530
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919045,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5118,
+      "max_rate": 5118
+    },
+    {
+      "loot_id": 919046,
+      "random_ids": [
+        990061,
+        990063,
+        990082,
+        990083,
+        990084,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        127,
+        55,
+        1154,
+        1154,
+        2309,
+        1617,
+        1617,
+        296,
+        1347,
+        323
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919047,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6467,
+      "max_rate": 6467
+    },
+    {
+      "loot_id": 919048,
+      "random_ids": [
+        990061,
+        990063,
+        990082,
+        990083,
+        990084,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        140,
+        61,
+        1147,
+        1147,
+        2295,
+        1620,
+        1620,
+        297,
+        1350,
+        324
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919049,
+      "random_ids": [
+        990061,
+        990063,
+        990082,
+        990083,
+        990084,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        140,
+        61,
+        1147,
+        1147,
+        2295,
+        1620,
+        1620,
+        297,
+        1350,
+        324
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919050,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8099,
+      "max_rate": 8099
+    },
+    {
+      "loot_id": 919051,
+      "random_ids": [
+        990059,
+        990061,
+        990082,
+        990083,
+        990084,
+        900006,
+        900005,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        249,
+        180,
+        1083,
+        1083,
+        2165,
+        910,
+        1732,
+        1039,
+        1039,
+        520
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919052,
+      "random_ids": [
+        990059,
+        990061,
+        990082,
+        990083,
+        990084,
+        900006,
+        900005,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        249,
+        180,
+        1083,
+        1083,
+        2165,
+        910,
+        1732,
+        1039,
+        1039,
+        520
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919053,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7276,
+      "max_rate": 7276
+    },
+    {
+      "loot_id": 919054,
+      "random_ids": [
+        990059,
+        990061,
+        900010,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        588,
+        258,
+        1500,
+        2430,
+        1215,
+        2794,
+        1215
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919055,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5,
+      "max_rate": 5
+    },
+    {
+      "loot_id": 919056,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3300,
+      "max_rate": 3300
+    },
+    {
+      "loot_id": 919057,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919058,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2150,
+      "max_rate": 2150
+    },
+    {
+      "loot_id": 919059,
+      "random_ids": [
+        990099
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4203,
+      "max_rate": 4203
+    },
+    {
+      "loot_id": 919060,
+      "random_ids": [
+        990059,
+        990061,
+        900010,
+        990082,
+        990083,
+        990084,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        245,
+        107,
+        625,
+        518,
+        518,
+        1036,
+        804,
+        402,
+        5063,
+        683
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919061,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 100,
+      "max_rate": 100
+    },
+    {
+      "loot_id": 919062,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2411,
+      "max_rate": 2411
+    },
+    {
+      "loot_id": 919063,
+      "random_ids": [
+        990059,
+        990061,
+        900010,
+        990082,
+        990083,
+        990084,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        245,
+        107,
+        625,
+        781,
+        781,
+        1561,
+        682,
+        341,
+        4297,
+        580
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919064,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2047,
+      "max_rate": 2047
+    },
+    {
+      "loot_id": 919065,
+      "random_ids": [
+        990059,
+        990061,
+        900010,
+        990082,
+        990083,
+        990084,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        245,
+        108,
+        2292,
+        422,
+        422,
+        844,
+        655,
+        328,
+        4128,
+        557
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919066,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1966,
+      "max_rate": 1966
+    },
+    {
+      "loot_id": 919067,
+      "random_ids": [
+        990061,
+        990082,
+        990083,
+        990084
+      ],
+      "pr": [
+        1290,
+        2178,
+        2178,
+        4355
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919068,
+      "random_ids": [
+        990063,
+        990082,
+        990083,
+        990084
+      ],
+      "pr": [
+        745,
+        2314,
+        2314,
+        4627
+      ],
+      "default_rate": 7500,
+      "max_rate": 7500
+    },
+    {
+      "loot_id": 919069,
+      "random_ids": [
+        990100
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3750,
+      "max_rate": 3750
+    },
+    {
+      "loot_id": 919070,
+      "random_ids": [
+        900004,
+        900005,
+        900007
+      ],
+      "pr": [
+        4643,
+        3929,
+        1429
+      ],
+      "default_rate": 3000,
+      "max_rate": 3000
+    },
+    {
+      "loot_id": 919071,
+      "random_ids": [
+        900116
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 500,
+      "max_rate": 500
+    },
+    {
+      "loot_id": 919072,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2786,
+      "max_rate": 2786
+    },
+    {
+      "loot_id": 919073,
+      "random_ids": [
+        990071,
+        990085,
+        990086,
+        990087,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        233,
+        2736,
+        1368,
+        1368,
+        1790,
+        1521,
+        179,
+        716,
+        90
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919074,
+      "random_ids": [
+        900115
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1500,
+      "max_rate": 1500
+    },
+    {
+      "loot_id": 919075,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7160,
+      "max_rate": 7160
+    },
+    {
+      "loot_id": 919076,
+      "random_ids": [
+        990101
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919077,
+      "random_ids": [
+        990069,
+        990071,
+        900010,
+        990085,
+        990086,
+        990087,
+        900004,
+        900007,
+        900006,
+        900008
+      ],
+      "pr": [
+        244,
+        67,
+        34,
+        846,
+        423,
+        423,
+        1229,
+        5765,
+        739,
+        230
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919078,
+      "random_ids": [
+        990102
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919079,
+      "random_ids": [
+        900117
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 919080,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5096,
+      "max_rate": 5096
+    },
+    {
+      "loot_id": 919081,
+      "random_ids": [
+        990100
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4250,
+      "max_rate": 4250
+    },
+    {
+      "loot_id": 919082,
+      "random_ids": [
+        990073,
+        900004,
+        990085,
+        990086,
+        990087
+      ],
+      "pr": [
+        76,
+        5036,
+        2444,
+        1222,
+        1222
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919083,
+      "random_ids": [
+        900116
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 300,
+      "max_rate": 300
+    },
+    {
+      "loot_id": 919084,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5036,
+      "max_rate": 5036
+    },
+    {
+      "loot_id": 919085,
+      "random_ids": [
+        990071,
+        990085,
+        990086,
+        990087,
+        900004,
+        900005,
+        900007,
+        900006
+      ],
+      "pr": [
+        266,
+        2058,
+        1029,
+        1029,
+        2586,
+        1917,
+        892,
+        223
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919086,
+      "random_ids": [
+        990101
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4250,
+      "max_rate": 4250
+    },
+    {
+      "loot_id": 919087,
+      "random_ids": [
+        900116
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1000,
+      "max_rate": 1000
+    },
+    {
+      "loot_id": 919088,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2586,
+      "max_rate": 2586
+    },
+    {
+      "loot_id": 919089,
+      "random_ids": [
+        990073,
+        990085,
+        990086,
+        990087,
+        900111
+      ],
+      "pr": [
+        76,
+        758,
+        379,
+        379,
+        8408
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919090,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5045,
+      "max_rate": 5045
+    },
+    {
+      "loot_id": 919091,
+      "random_ids": [
+        990069,
+        990071,
+        990085,
+        990086,
+        990087,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        244,
+        115,
+        2452,
+        1226,
+        1226,
+        1728,
+        1728,
+        389,
+        720,
+        173
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919092,
+      "random_ids": [
+        900115
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2500,
+      "max_rate": 2500
+    },
+    {
+      "loot_id": 919093,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6911,
+      "max_rate": 6911
+    },
+    {
+      "loot_id": 919094,
+      "random_ids": [
+        990069,
+        990071,
+        990085,
+        990086,
+        990087,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        272,
+        128,
+        2422,
+        1211,
+        1211,
+        1735,
+        1735,
+        390,
+        723,
+        173
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919095,
+      "random_ids": [
+        990069,
+        990071,
+        990085,
+        990086,
+        990087,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        272,
+        128,
+        2422,
+        1211,
+        1211,
+        1735,
+        1735,
+        390,
+        723,
+        173
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919096,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8675,
+      "max_rate": 8675
+    },
+    {
+      "loot_id": 919097,
+      "random_ids": [
+        990067,
+        990069,
+        990085,
+        990086,
+        990087,
+        900006,
+        900005,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        568,
+        289,
+        2147,
+        1074,
+        1074,
+        1062,
+        1847,
+        1108,
+        554,
+        277
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919098,
+      "random_ids": [
+        990067,
+        990069,
+        990085,
+        990086,
+        990087,
+        900006,
+        900005,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        568,
+        289,
+        2147,
+        1074,
+        1074,
+        1062,
+        1847,
+        1108,
+        554,
+        277
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919099,
+      "random_ids": [
+        900114
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919100,
+      "random_ids": [
+        900112
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2000,
+      "max_rate": 2000
+    },
+    {
+      "loot_id": 919101,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7757,
+      "max_rate": 7757
+    },
+    {
+      "loot_id": 919102,
+      "random_ids": [
+        900010,
+        990067,
+        990069,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        3500,
+        917,
+        459,
+        2102,
+        876,
+        1708,
+        438
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919103,
+      "random_ids": [
+        900113
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 200,
+      "max_rate": 200
+    },
+    {
+      "loot_id": 919104,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8759,
+      "max_rate": 8759
+    },
+    {
+      "loot_id": 919105,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 250,
+      "max_rate": 250
+    },
+    {
+      "loot_id": 919106,
+      "random_ids": [
+        900016
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 50,
+      "max_rate": 50
+    },
+    {
+      "loot_id": 919107,
+      "random_ids": [
+        900010,
+        990067,
+        990069,
+        990085,
+        990086,
+        990087,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        1458,
+        382,
+        191,
+        537,
+        268,
+        268,
+        900,
+        409,
+        4992,
+        593
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919108,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2455,
+      "max_rate": 2455
+    },
+    {
+      "loot_id": 919109,
+      "random_ids": [
+        900010,
+        990067,
+        990069,
+        990085,
+        990086,
+        990087,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        1458,
+        382,
+        191,
+        1124,
+        562,
+        562,
+        747,
+        339,
+        4141,
+        492
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919110,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2036,
+      "max_rate": 2036
+    },
+    {
+      "loot_id": 919111,
+      "random_ids": [
+        900010,
+        990067,
+        990069,
+        990085,
+        990086,
+        990087,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        3125,
+        382,
+        191,
+        424,
+        212,
+        212,
+        712,
+        324,
+        3948,
+        469
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919112,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1942,
+      "max_rate": 1942
+    },
+    {
+      "loot_id": 919113,
+      "random_ids": [
+        990069,
+        990085,
+        990086,
+        990087
+      ],
+      "pr": [
+        2293,
+        3853,
+        1927,
+        1927
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919114,
+      "random_ids": [
+        990071,
+        990085,
+        990086,
+        990087
+      ],
+      "pr": [
+        1390,
+        4305,
+        2152,
+        2152
+      ],
+      "default_rate": 7750,
+      "max_rate": 7750
+    },
+    {
+      "loot_id": 919115,
+      "random_ids": [
+        900004,
+        900005
+      ],
+      "pr": [
+        5357,
+        4643
+      ],
+      "default_rate": 3000,
+      "max_rate": 3000
+    },
+    {
+      "loot_id": 919116,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3214,
+      "max_rate": 3214
+    },
+    {
+      "loot_id": 919117,
+      "random_ids": [
+        990079,
+        990088,
+        990089,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        398,
+        4296,
+        1432,
+        1853,
+        1761,
+        260
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919118,
+      "random_ids": [
+        900115
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3000,
+      "max_rate": 3000
+    },
+    {
+      "loot_id": 919119,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7414,
+      "max_rate": 7414
+    },
+    {
+      "loot_id": 919120,
+      "random_ids": [
+        990077,
+        990079,
+        900010,
+        990088,
+        990089,
+        900004,
+        900007,
+        900006
+      ],
+      "pr": [
+        275,
+        131,
+        122,
+        1635,
+        545,
+        1162,
+        5085,
+        1046
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919121,
+      "random_ids": [
+        900117
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919122,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4,
+      "max_rate": 4
+    },
+    {
+      "loot_id": 919123,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 40,
+      "max_rate": 40
+    },
+    {
+      "loot_id": 919124,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4172,
+      "max_rate": 4172
+    },
+    {
+      "loot_id": 919125,
+      "random_ids": [
+        990100
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4750,
+      "max_rate": 4750
+    },
+    {
+      "loot_id": 919126,
+      "random_ids": [
+        990081,
+        900004,
+        990088,
+        990089
+      ],
+      "pr": [
+        204,
+        5070,
+        3544,
+        1182
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919127,
+      "random_ids": [
+        900116
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 600,
+      "max_rate": 600
+    },
+    {
+      "loot_id": 919128,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5070,
+      "max_rate": 5070
+    },
+    {
+      "loot_id": 919129,
+      "random_ids": [
+        990079,
+        990088,
+        990089,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        351,
+        2276,
+        759,
+        3060,
+        2813,
+        740
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919130,
+      "random_ids": [
+        900116
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2000,
+      "max_rate": 2000
+    },
+    {
+      "loot_id": 919131,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3060,
+      "max_rate": 3060
+    },
+    {
+      "loot_id": 919132,
+      "random_ids": [
+        990081,
+        990088,
+        990089,
+        900111
+      ],
+      "pr": [
+        204,
+        1223,
+        408,
+        8165
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919133,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4899,
+      "max_rate": 4899
+    },
+    {
+      "loot_id": 919134,
+      "random_ids": [
+        990077,
+        990079,
+        990088,
+        990089,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        387,
+        202,
+        3922,
+        1307,
+        1838,
+        1838,
+        505
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919135,
+      "random_ids": [
+        900115
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919136,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7352,
+      "max_rate": 7352
+    },
+    {
+      "loot_id": 919137,
+      "random_ids": [
+        990077,
+        990079,
+        990088,
+        990089,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        394,
+        206,
+        3884,
+        1295,
+        1855,
+        1855,
+        510
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919138,
+      "random_ids": [
+        990077,
+        990079,
+        990088,
+        990089,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        394,
+        206,
+        3884,
+        1295,
+        1855,
+        1855,
+        510
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919139,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3,
+      "max_rate": 3
+    },
+    {
+      "loot_id": 919140,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 30,
+      "max_rate": 30
+    },
+    {
+      "loot_id": 919141,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 9276,
+      "max_rate": 9276
+    },
+    {
+      "loot_id": 919142,
+      "random_ids": [
+        990075,
+        990077,
+        990088,
+        990089,
+        900006,
+        900005,
+        900004
+      ],
+      "pr": [
+        855,
+        288,
+        3515,
+        1172,
+        1172,
+        1874,
+        1125
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919143,
+      "random_ids": [
+        990075,
+        990077,
+        990088,
+        990089,
+        900006,
+        900005,
+        900004
+      ],
+      "pr": [
+        855,
+        288,
+        3515,
+        1172,
+        1172,
+        1874,
+        1125
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919144,
+      "random_ids": [
+        900114
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919145,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7873,
+      "max_rate": 7873
+    },
+    {
+      "loot_id": 919146,
+      "random_ids": [
+        900010,
+        990075,
+        990077,
+        900006,
+        900004,
+        900007
+      ],
+      "pr": [
+        4000,
+        991,
+        634,
+        2333,
+        729,
+        1313
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919147,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 20,
+      "max_rate": 20
+    },
+    {
+      "loot_id": 919148,
+      "random_ids": [
+        900012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919149,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7292,
+      "max_rate": 7292
+    },
+    {
+      "loot_id": 919150,
+      "random_ids": [
+        900015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 500,
+      "max_rate": 500
+    },
+    {
+      "loot_id": 919151,
+      "random_ids": [
+        900016
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 100,
+      "max_rate": 100
+    },
+    {
+      "loot_id": 919152,
+      "random_ids": [
+        900010,
+        990075,
+        990077,
+        990088,
+        990089,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        1875,
+        413,
+        264,
+        685,
+        228,
+        999,
+        384,
+        4690,
+        461
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919153,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2306,
+      "max_rate": 2306
+    },
+    {
+      "loot_id": 919154,
+      "random_ids": [
+        900010,
+        990075,
+        990077,
+        990088,
+        990089,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        1875,
+        413,
+        264,
+        1524,
+        508,
+        828,
+        319,
+        3887,
+        382
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919155,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1912,
+      "max_rate": 1912
+    },
+    {
+      "loot_id": 919156,
+      "random_ids": [
+        900010,
+        990075,
+        990077,
+        990088,
+        990089,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        3542,
+        413,
+        264,
+        532,
+        177,
+        776,
+        298,
+        3640,
+        358
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919157,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1790,
+      "max_rate": 1790
+    },
+    {
+      "loot_id": 919158,
+      "random_ids": [
+        990077,
+        990088,
+        990089
+      ],
+      "pr": [
+        3168,
+        5124,
+        1708
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919159,
+      "random_ids": [
+        990079,
+        990088,
+        990089
+      ],
+      "pr": [
+        2007,
+        5995,
+        1998
+      ],
+      "default_rate": 8250,
+      "max_rate": 8250
+    },
+    {
+      "loot_id": 919160,
+      "random_ids": [
+        990039,
+        990037,
+        990090,
+        990091,
+        990092,
+        900004,
+        900007,
+        900006,
+        900008
+      ],
+      "pr": [
+        124,
+        46,
+        727,
+        727,
+        1453,
+        1057,
+        5153,
+        317,
+        396
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919161,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5377,
+      "max_rate": 5377
+    },
+    {
+      "loot_id": 919162,
+      "random_ids": [
+        990035,
+        900004,
+        990090,
+        990091,
+        990092
+      ],
+      "pr": [
+        13,
+        5007,
+        1245,
+        1245,
+        2490
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919163,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5007,
+      "max_rate": 5007
+    },
+    {
+      "loot_id": 919164,
+      "random_ids": [
+        990037,
+        990090,
+        990091,
+        990092,
+        900004,
+        900005,
+        900007
+      ],
+      "pr": [
+        147,
+        1135,
+        1135,
+        2270,
+        2214,
+        1328,
+        1771
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919165,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2214,
+      "max_rate": 2214
+    },
+    {
+      "loot_id": 919166,
+      "random_ids": [
+        990035,
+        990090,
+        990091,
+        990092,
+        900111
+      ],
+      "pr": [
+        13,
+        364,
+        364,
+        727,
+        8532
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919167,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5119,
+      "max_rate": 5119
+    },
+    {
+      "loot_id": 919168,
+      "random_ids": [
+        990039,
+        990037,
+        990090,
+        990091,
+        990092,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        122,
+        57,
+        1158,
+        1158,
+        2316,
+        1621,
+        1621,
+        270,
+        1351,
+        324
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919169,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6486,
+      "max_rate": 6486
+    },
+    {
+      "loot_id": 919170,
+      "random_ids": [
+        990039,
+        990037,
+        990090,
+        990091,
+        990092,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        137,
+        63,
+        1150,
+        1150,
+        2301,
+        1624,
+        1624,
+        271,
+        1354,
+        325
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919171,
+      "random_ids": [
+        990039,
+        990037,
+        990090,
+        990091,
+        990092,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        137,
+        63,
+        1150,
+        1150,
+        2301,
+        1624,
+        1624,
+        271,
+        1354,
+        325
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919172,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8121,
+      "max_rate": 8121
+    },
+    {
+      "loot_id": 919173,
+      "random_ids": [
+        990041,
+        990039,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        298,
+        158,
+        3030,
+        1515,
+        3484,
+        1515
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919174,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5150,
+      "max_rate": 5150
+    },
+    {
+      "loot_id": 919175,
+      "random_ids": [
+        990041,
+        990039,
+        990090,
+        990091,
+        990092,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        124,
+        66,
+        745,
+        745,
+        1490,
+        790,
+        395,
+        4975,
+        671
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919176,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2369,
+      "max_rate": 2369
+    },
+    {
+      "loot_id": 919177,
+      "random_ids": [
+        990041,
+        990039,
+        990090,
+        990091,
+        990092,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        124,
+        66,
+        982,
+        982,
+        1963,
+        680,
+        340,
+        4285,
+        578
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919178,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2041,
+      "max_rate": 2041
+    },
+    {
+      "loot_id": 919179,
+      "random_ids": [
+        990041,
+        990039,
+        900010,
+        990090,
+        990091,
+        990092,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        124,
+        66,
+        1667,
+        618,
+        618,
+        1236,
+        656,
+        328,
+        4130,
+        557
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919180,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1967,
+      "max_rate": 1967
+    },
+    {
+      "loot_id": 919181,
+      "random_ids": [
+        990045,
+        990093,
+        990094,
+        990095,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        222,
+        2542,
+        1271,
+        1271,
+        1688,
+        1351,
+        135,
+        1351,
+        169
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919182,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6754,
+      "max_rate": 6754
+    },
+    {
+      "loot_id": 919183,
+      "random_ids": [
+        990047,
+        990045,
+        990093,
+        990094,
+        990095,
+        900004,
+        900007,
+        900006,
+        900008
+      ],
+      "pr": [
+        296,
+        49,
+        471,
+        235,
+        235,
+        1254,
+        6425,
+        565,
+        471
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919184,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5195,
+      "max_rate": 5195
+    },
+    {
+      "loot_id": 919185,
+      "random_ids": [
+        990043,
+        900004,
+        990093,
+        990094,
+        990095
+      ],
+      "pr": [
+        43,
+        5023,
+        2467,
+        1233,
+        1233
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919186,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5023,
+      "max_rate": 5023
+    },
+    {
+      "loot_id": 919187,
+      "random_ids": [
+        990045,
+        990093,
+        990094,
+        990095,
+        900004,
+        900005,
+        900007
+      ],
+      "pr": [
+        284,
+        2177,
+        1088,
+        1088,
+        2275,
+        1462,
+        1625
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919188,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2275,
+      "max_rate": 2275
+    },
+    {
+      "loot_id": 919189,
+      "random_ids": [
+        990043,
+        990093,
+        990094,
+        990095,
+        900111
+      ],
+      "pr": [
+        43,
+        717,
+        359,
+        359,
+        8522
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919190,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5113,
+      "max_rate": 5113
+    },
+    {
+      "loot_id": 919191,
+      "random_ids": [
+        990047,
+        990045,
+        990093,
+        990094,
+        990095,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        260,
+        108,
+        2233,
+        1116,
+        1116,
+        1598,
+        1598,
+        320,
+        1332,
+        320
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919192,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 6392,
+      "max_rate": 6392
+    },
+    {
+      "loot_id": 919193,
+      "random_ids": [
+        990047,
+        990045,
+        990093,
+        990094,
+        990095,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        283,
+        117,
+        2206,
+        1103,
+        1103,
+        1604,
+        1604,
+        321,
+        1337,
+        321
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919194,
+      "random_ids": [
+        990047,
+        990045,
+        990093,
+        990094,
+        990095,
+        900004,
+        900005,
+        900006,
+        900007,
+        900008
+      ],
+      "pr": [
+        283,
+        117,
+        2206,
+        1103,
+        1103,
+        1604,
+        1604,
+        321,
+        1337,
+        321
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919195,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8022,
+      "max_rate": 8022
+    },
+    {
+      "loot_id": 919196,
+      "random_ids": [
+        990049,
+        990047,
+        990093,
+        990094,
+        990095,
+        900006,
+        900005,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        512,
+        345,
+        1989,
+        995,
+        995,
+        931,
+        1693,
+        1016,
+        1016,
+        508
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919197,
+      "random_ids": [
+        990049,
+        990047,
+        990093,
+        990094,
+        990095,
+        900006,
+        900005,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        512,
+        345,
+        1989,
+        995,
+        995,
+        931,
+        1693,
+        1016,
+        1016,
+        508
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919198,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7111,
+      "max_rate": 7111
+    },
+    {
+      "loot_id": 919199,
+      "random_ids": [
+        900010,
+        990049,
+        990047,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        3000,
+        877,
+        358,
+        1830,
+        915,
+        2104,
+        915
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919200,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 9150,
+      "max_rate": 9150
+    },
+    {
+      "loot_id": 919201,
+      "random_ids": [
+        900010,
+        990049,
+        990047,
+        990093,
+        990094,
+        990095,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        1250,
+        366,
+        149,
+        567,
+        284,
+        284,
+        821,
+        410,
+        5172,
+        698
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919202,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2462,
+      "max_rate": 2462
+    },
+    {
+      "loot_id": 919203,
+      "random_ids": [
+        900010,
+        990049,
+        990047,
+        990093,
+        990094,
+        990095,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        1250,
+        366,
+        149,
+        1157,
+        579,
+        579,
+        684,
+        342,
+        4312,
+        582
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919204,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2053,
+      "max_rate": 2053
+    },
+    {
+      "loot_id": 919205,
+      "random_ids": [
+        900010,
+        990049,
+        990047,
+        990093,
+        990094,
+        990095,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        2917,
+        365,
+        149,
+        452,
+        226,
+        226,
+        655,
+        327,
+        4125,
+        556
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919206,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 1964,
+      "max_rate": 1964
+    },
+    {
+      "loot_id": 919207,
+      "random_ids": [
+        990047,
+        990093,
+        990094,
+        990095
+      ],
+      "pr": [
+        1792,
+        4104,
+        2052,
+        2052
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919208,
+      "random_ids": [
+        990045,
+        990093,
+        990094,
+        990095
+      ],
+      "pr": [
+        989,
+        4505,
+        2253,
+        2253
+      ],
+      "default_rate": 7500,
+      "max_rate": 7500
+    },
+    {
+      "loot_id": 919209,
+      "random_ids": [
+        900004,
+        900005
+      ],
+      "pr": [
+        5385,
+        4615
+      ],
+      "default_rate": 3000,
+      "max_rate": 3000
+    },
+    {
+      "loot_id": 919210,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 3231,
+      "max_rate": 3231
+    },
+    {
+      "loot_id": 919211,
+      "random_ids": [
+        990053,
+        990096,
+        990097,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        399,
+        4326,
+        1442,
+        1897,
+        1708,
+        228
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919212,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7589,
+      "max_rate": 7589
+    },
+    {
+      "loot_id": 919213,
+      "random_ids": [
+        900010,
+        990055,
+        990053,
+        990096,
+        990097,
+        900004,
+        900007,
+        900006
+      ],
+      "pr": [
+        81,
+        322,
+        124,
+        1225,
+        408,
+        1307,
+        5553,
+        980
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919214,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4690,
+      "max_rate": 4690
+    },
+    {
+      "loot_id": 919215,
+      "random_ids": [
+        990100
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4500,
+      "max_rate": 4500
+    },
+    {
+      "loot_id": 919216,
+      "random_ids": [
+        990051,
+        900004,
+        990096,
+        990097
+      ],
+      "pr": [
+        160,
+        5065,
+        3581,
+        1194
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919217,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 5065,
+      "max_rate": 5065
+    },
+    {
+      "loot_id": 919218,
+      "random_ids": [
+        990101
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8500,
+      "max_rate": 8500
+    },
+    {
+      "loot_id": 919219,
+      "random_ids": [
+        990053,
+        990096,
+        990097,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        374,
+        2805,
+        935,
+        2943,
+        2452,
+        490
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919220,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2943,
+      "max_rate": 2943
+    },
+    {
+      "loot_id": 919221,
+      "random_ids": [
+        990051,
+        990096,
+        990097,
+        900111
+      ],
+      "pr": [
+        160,
+        1171,
+        390,
+        8279
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919222,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 4967,
+      "max_rate": 4967
+    },
+    {
+      "loot_id": 919223,
+      "random_ids": [
+        990055,
+        990053,
+        990096,
+        990097,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        389,
+        200,
+        3916,
+        1305,
+        1862,
+        1862,
+        466
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919224,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 7449,
+      "max_rate": 7449
+    },
+    {
+      "loot_id": 919225,
+      "random_ids": [
+        990055,
+        990053,
+        990096,
+        990097,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        397,
+        204,
+        3877,
+        1292,
+        1880,
+        1880,
+        470
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919226,
+      "random_ids": [
+        990055,
+        990053,
+        990096,
+        990097,
+        900004,
+        900005,
+        900006
+      ],
+      "pr": [
+        397,
+        204,
+        3877,
+        1292,
+        1880,
+        1880,
+        470
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919227,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 9400,
+      "max_rate": 9400
+    },
+    {
+      "loot_id": 919228,
+      "random_ids": [
+        990057,
+        990055,
+        990096,
+        990097,
+        900006,
+        900005,
+        900004
+      ],
+      "pr": [
+        838,
+        305,
+        3321,
+        1107,
+        1208,
+        2013,
+        1208
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919229,
+      "random_ids": [
+        990057,
+        990055,
+        990096,
+        990097,
+        900006,
+        900005,
+        900004
+      ],
+      "pr": [
+        838,
+        305,
+        3321,
+        1107,
+        1208,
+        2013,
+        1208
+      ],
+      "default_rate": 5000,
+      "max_rate": 5000
+    },
+    {
+      "loot_id": 919230,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8455,
+      "max_rate": 8455
+    },
+    {
+      "loot_id": 919231,
+      "random_ids": [
+        900010,
+        990057,
+        990055,
+        900006,
+        900004,
+        900007
+      ],
+      "pr": [
+        4000,
+        962,
+        559,
+        2323,
+        830,
+        1327
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919232,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 8295,
+      "max_rate": 8295
+    },
+    {
+      "loot_id": 919233,
+      "random_ids": [
+        900010,
+        990057,
+        990055,
+        990096,
+        990097,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        1667,
+        401,
+        233,
+        758,
+        253,
+        979,
+        408,
+        4813,
+        489
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919234,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2447,
+      "max_rate": 2447
+    },
+    {
+      "loot_id": 919235,
+      "random_ids": [
+        900010,
+        990057,
+        990055,
+        990096,
+        990097,
+        900006,
+        900004,
+        900007,
+        900008
+      ],
+      "pr": [
+        1667,
+        401,
+        233,
+        1635,
+        545,
+        808,
+        337,
+        3971,
+        404
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919236,
+      "random_ids": [
+        990098
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 2019,
+      "max_rate": 2019
+    },
+    {
+      "loot_id": 919237,
+      "random_ids": [
+        990055,
+        990096,
+        990097
+      ],
+      "pr": [
+        2795,
+        5404,
+        1801
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919238,
+      "random_ids": [
+        990053,
+        990096,
+        990097
+      ],
+      "pr": [
+        1792,
+        6156,
+        2052
+      ],
+      "default_rate": 8000,
+      "max_rate": 8000
+    },
+    {
+      "loot_id": 919239,
+      "random_ids": [
+        990001
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919240,
+      "random_ids": [
+        990002
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919241,
+      "random_ids": [
+        990003
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919242,
+      "random_ids": [
+        990004
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919243,
+      "random_ids": [
+        990005
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919244,
+      "random_ids": [
+        990006
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919245,
+      "random_ids": [
+        990007
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919246,
+      "random_ids": [
+        990008
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919247,
+      "random_ids": [
+        990009
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919248,
+      "random_ids": [
+        990010
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919249,
+      "random_ids": [
+        990011
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919250,
+      "random_ids": [
+        990012
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919251,
+      "random_ids": [
+        990013
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919252,
+      "random_ids": [
+        990014
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919253,
+      "random_ids": [
+        990015
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919254,
+      "random_ids": [
+        990016
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919255,
+      "random_ids": [
+        990017
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919256,
+      "random_ids": [
+        990018
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919257,
+      "random_ids": [
+        990021
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919258,
+      "random_ids": [
+        990022
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919259,
+      "random_ids": [
+        990023
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919260,
+      "random_ids": [
+        990020
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919261,
+      "random_ids": [
+        990024
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919262,
+      "random_ids": [
+        990026
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919263,
+      "random_ids": [
+        990027
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919264,
+      "random_ids": [
+        990028
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919265,
+      "random_ids": [
+        990029
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919266,
+      "random_ids": [
+        990030
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919267,
+      "random_ids": [
+        990025
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919268,
+      "random_ids": [
+        990031
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919269,
+      "random_ids": [
+        990032
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    },
+    {
+      "loot_id": 919270,
+      "random_ids": [
+        990033
+      ],
+      "pr": [
+        100
+      ],
+      "default_rate": 10000,
+      "max_rate": 10000
+    }
+  ]
+}

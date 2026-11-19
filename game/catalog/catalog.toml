@@ -1,0 +1,147 @@
+# Catalog of mods and paks (stage 2, docs/MODS_REFACTOR_PLAN.md; rules — docs/MODS_DESIGN.md §4).
+# Answers the question "what is it, where is it built from and who gets it". `cargo xtask mods build` builds from it.
+# Paths — from the backups root; a path with a drive letter is a source outside the repository (the build takes the ready file, check warns).
+#
+# kind:     ue4ss — a UE4SS mod folder (in Mods/<name>); pak — a game pak (Content/Paks/<name>.pak and .ucas/.utoc next to it)
+# build:    copy — take as is (default); repak — build from the source folder (Dungeonborne/... inside)
+# profiles: client — players (launcher packages), server — Robot, dev-client / dev-server — local installs
+# side:     both (default) | server — server only, not allowed in client
+# dev:      true — dev profiles only
+# overrides: paks whose files this pak overrides deliberately (load order — by name)
+# package:  the launcher package (launcher/tools/mods.json) this part belongs to
+# requires: what it does not work without
+# season:   part of a season (docs/SEASONS_FORMAT.md) — installed only when the season is active (seasons/active.txt or
+#           --season=<id>); without the field — the base game. User's decision 07.11: lower relics — the playtest season;
+#           the Jester instead of the Reaper — neither base nor playtest (no season assigned, dev for now)
+
+# --- game tables and fixes --------------------------------------------------------------------------------------
+
+[[item]]
+id = "pak.li-patch"
+kind = "pak"
+name = "zz_LIPatch_P"
+source = "game/bp-patches/build/pak/zz_LIPatch_P.pak"   # cargo ws dump paks --apply (patch_lipatch.py on your copy)
+profiles = ["client", "server", "dev-client", "dev-server"]
+package = "ru.li-patch"
+
+[[item]]
+id = "pak.rebuild-private"
+kind = "pak"
+name = "zzzzz_RebuildPrivate_P"
+build = "repak"
+source = "game/paks/legacy/zzzzz_RebuildPrivate_P"                     # DebugConfig.json (+ affix_pool, overridden by balance)
+profiles = ["client", "server", "dev-client", "dev-server"]
+overrides = ["zz_LIPatch_P"]
+package = "ru.rebuild-private"
+
+[[item]]
+id = "pak.balance"
+kind = "pak"
+name = "zzzzzz_Balance_P"
+source = "game/paks/balance/zzzzzz_Balance_P.pak"              # cargo xtask balance build (season — the same pak from seasons\<id>\pak)
+profiles = ["client", "server", "dev-client", "dev-server"]
+overrides = ["zzzzz_RebuildPrivate_P"]
+package = "ru.balance"
+
+[[item]]
+id = "pak.relic-quality"
+kind = "pak"
+name = "zz_RelicQuality_P"
+build = "repak"
+source = "game/paks/legacy/zz_RelicQuality_P"                          # UnLua blacksmith panel; pair to the season's relic_lower_quality
+profiles = ["client", "dev-client"]
+package = "ru.relic-quality"
+season = "playtest"
+
+[[item]]
+id = "pak.bpfix"
+kind = "pak"
+name = "zzzzzzz_BPFix_P"
+# IoStore. 07.11: in installs and on Robot — the pak from research\bpfix_pak_hero (hero UCS patch, R14); bp_patches\pak — the old one of 30.10
+source = "game/bp-patches/build/pak/zzzzzzz_BPFix_P.pak"   # cargo ws dump paks --apply
+profiles = ["client", "server", "dev-client", "dev-server"]
+package = "ru.r14-fix"
+
+[[item]]
+id = "pak.chat-fix"
+kind = "pak"
+name = "zzzzzzz_ChatFix_P"
+source = "game/bp-patches/build/pak/zzzzzzz_ChatFix_P.pak"          # IoStore
+profiles = ["client", "server", "dev-client", "dev-server"]
+package = "ru.chat-fix"
+
+[[item]]
+id = "pak.servernet"
+kind = "pak"
+name = "zzzzzzz_ServerNet_P"
+source = "game/bp-patches/build/pak_server/zzzzzzz_ServerNet_P.pak" # IsDedicatedServer -> IsServer: breaks standalone for the client
+profiles = ["server", "dev-server"]
+side = "server"
+
+# --- UE4SS mods -------------------------------------------------------------------------------------------------
+
+[[item]]
+id = "ue4ss.client-hooks"
+kind = "ue4ss"
+name = "DungeonborneRuClient"
+source = "game/ue4ss/Mods/DungeonborneRuClient"               # + dbnative.dll (source ue4ss/native/dbnative); works on the server too
+profiles = ["client", "server", "dev-client", "dev-server"]
+package = "ru.client-hooks"
+
+[[item]]
+id = "ue4ss.server-hooks"
+kind = "ue4ss"
+name = "DungeonborneRuServer"
+source = "game/ue4ss/Mods/DungeonborneRuServer"               # server (-dbserver) and the autotest client (-dbclient)
+profiles = ["server", "dev-server", "dev-client"]
+requires = ["ue4ss.client-hooks"]                        # dbnative.dll and native_data.txt live in the RuClient folder
+
+[[item]]
+id = "ue4ss.r14"
+kind = "ue4ss"
+name = "DungeonborneR14"
+source = "game/ue4ss/Mods/DungeonborneR14"                    # pair to pak.bpfix
+profiles = ["client", "dev-client"]
+package = "ru.r14-fix"
+
+[[item]]
+id = "ue4ss.server-toast"
+kind = "ue4ss"
+name = "DungeonborneToast"
+source = "game/ue4ss/Mods/DungeonborneToast"                  # server toasts at the top of the screen (item 2, 18.11; not checked in game)
+profiles = ["client", "dev-client"]
+package = "ru.server-toast"                              # the launcher's apps/launcher/tools/mods.json does not list it yet
+
+[[item]]
+id = "ue4ss.client-probe"
+kind = "ue4ss"
+name = "ClientProbe"
+source = "game/ue4ss/Mods/ClientProbe"                        # diagnostics, an optional package for players
+profiles = ["client", "dev-client"]
+package = "ru.client-probe"
+
+# --- development only ------------------------------------------------------------------------------------------
+
+[[item]]
+id = "dev.crash-tracer"
+kind = "ue4ss"
+name = "CrashTracer"
+source = "game/ue4ss/Mods/CrashTracer"                        # sets NotifyOnNewObject(Pawn) — a source of crashes (07.11)
+profiles = ["dev-client"]
+dev = true
+
+[[item]]
+id = "dev.name-dump"
+kind = "ue4ss"
+name = "NameDump"
+source = "game/ue4ss/Mods/NameDump"
+profiles = ["dev-client"]
+dev = true
+
+[[item]]
+id = "dev.stat-watch"
+kind = "ue4ss"
+name = "DungeonborneStatWatch"
+source = "game/ue4ss/Mods/DungeonborneStatWatch"
+profiles = ["dev-server"]
+dev = true

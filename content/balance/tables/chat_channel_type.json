@@ -1,0 +1,69 @@
+{
+  "type": "tgf.config.ExcelChatChannelType",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 7,
+    "hash_code": "sha256:dffae31708a46fe6ef7375a5e93630553851c8bf5932de2643d5c317b1d5d505",
+    "data_source": [
+      {
+        "file": "6d213cb908550c6bae414dda90f04d205745c8c38d007b9f9a1fe06d229f17a7",
+        "sheet": "04c5113ed85484dfa7f70b3366c1be2a5bdde7451557d42f89f1b609aa047a93",
+        "count": 7
+      }
+    ]
+  },
+  "rows": [
+    {
+      "chat_channel_type": 1,
+      "max_log_count": 300,
+      "gc_log_count": 300,
+      "gc_expire_duration": "3d",
+      "memory_only": true
+    },
+    {
+      "chat_channel_type": 2,
+      "max_log_count": 300,
+      "gc_log_count": 300,
+      "gc_expire_duration": "1d",
+      "memory_only": true,
+      "words_limit": 200
+    },
+    {
+      "chat_channel_type": 3,
+      "max_log_count": 150,
+      "gc_log_count": 150,
+      "gc_expire_duration": "1d",
+      "memory_only": true,
+      "words_limit": 200
+    },
+    {
+      "chat_channel_type": 4,
+      "max_log_count": 300,
+      "gc_log_count": 300,
+      "gc_expire_duration": "12w",
+      "memory_only": true,
+      "words_limit": 200
+    },
+    {
+      "chat_channel_type": 5,
+      "max_log_count": 100,
+      "gc_log_count": 100,
+      "gc_expire_duration": "1d"
+    },
+    {
+      "chat_channel_type": 6,
+      "max_log_count": 100,
+      "gc_log_count": 100,
+      "gc_expire_duration": "4w"
+    },
+    {
+      "chat_channel_type": 7,
+      "max_log_count": 150,
+      "gc_log_count": 150,
+      "gc_expire_duration": "1d",
+      "memory_only": true,
+      "words_limit": 200
+    }
+  ]
+}

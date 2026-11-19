@@ -1,0 +1,234 @@
+{
+  "type": "tgf.config.ExcelAffixLegendaryRule",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 27,
+    "hash_code": "sha256:7582155541d4b05a1753cf74c564995130ac92a8796e2e6ca92252bebe0f7006",
+    "data_source": [
+      {
+        "file": "3cfda9ac749c13ada0f24b3d340c5c2d8da7231862106ff6c1a59423427cba28",
+        "sheet": "ef78b87c40493e7da91f2299ca036fb3a09cbf6be0f4b11c9f82b1ed1433163d",
+        "count": 27
+      }
+    ]
+  },
+  "rows": [
+    {
+      "affix_alias_id": 181055003,
+      "offset": {
+        "ability_set_id": 181055003,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181055001,
+      "offset": {
+        "ability_set_id": 181055001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181056003,
+      "offset": {
+        "ability_set_id": 181056003,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181045000,
+      "offset": {
+        "ability_set_id": 181045000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181046000,
+      "offset": {
+        "ability_set_id": 181046000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181025001,
+      "offset": {
+        "ability_set_id": 181025001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181026001,
+      "offset": {
+        "ability_set_id": 181026001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181025000,
+      "offset": {
+        "ability_set_id": 181025000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181015000,
+      "offset": {
+        "ability_set_id": 181015000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181015001,
+      "offset": {
+        "ability_set_id": 181015001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181016000,
+      "offset": {
+        "ability_set_id": 181016000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181115001,
+      "offset": {
+        "ability_set_id": 181115001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181116001,
+      "offset": {
+        "ability_set_id": 181116001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181125000,
+      "offset": {
+        "ability_set_id": 181125000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181125001,
+      "offset": {
+        "ability_set_id": 181125001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181126001,
+      "offset": {
+        "ability_set_id": 181126001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181035001,
+      "offset": {
+        "ability_set_id": 181035001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181036001,
+      "offset": {
+        "ability_set_id": 181036001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 185016000,
+      "offset": {
+        "ability_set_id": 185016000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 185015002,
+      "offset": {
+        "ability_set_id": 185015002,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 185015001,
+      "offset": {
+        "ability_set_id": 185015001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 185015000,
+      "offset": {
+        "ability_set_id": 185015000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 185016001,
+      "offset": {
+        "ability_set_id": 185016001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 185016002,
+      "offset": {
+        "ability_set_id": 185016002,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 181085000,
+      "offset": {
+        "ability_set_id": 181085000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 189010001,
+      "offset": {
+        "ability_set_id": 189010001,
+        "min_value": 1,
+        "max_value": 1
+      }
+    },
+    {
+      "affix_alias_id": 189010000,
+      "offset": {
+        "ability_set_id": 189010000,
+        "min_value": 1,
+        "max_value": 1
+      }
+    }
+  ]
+}

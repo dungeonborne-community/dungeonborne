@@ -1,0 +1,3 @@
+﻿id;start_time;end_time;circular_queue
+1;2024-07-22T00:00:00Z;2034-09-30T00:00:00Z;"[{""module_id"":1200036,""duration"":1440},{""module_id"":1200037,""duration"":1440}]"
+2;2024-08-12T00:00:00Z;2024-09-08T23:59:59Z;"[{""module_id"":1200024,""duration"":5760},{""duration"":4320}]"

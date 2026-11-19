@@ -1,0 +1,33 @@
+{
+ "format": "dbbalance-kit/1",
+ "version": "20260101-aaaaaaaa",
+ "title": "Тестовый набор",
+ "season": null,
+ "patch_format": "dbbalance-patch/1",
+ "tables": {
+  "gear": {
+   "sha256": "",
+   "rows": 0,
+   "values": 0,
+   "type": "t",
+   "source": "base",
+   "original": true
+  },
+  "affix": {
+   "sha256": "",
+   "rows": 0,
+   "values": 0,
+   "type": "t",
+   "source": "base",
+   "original": false
+  },
+  "info": {
+   "sha256": "",
+   "rows": 0,
+   "values": 0,
+   "type": "t",
+   "source": "base",
+   "original": false
+  }
+ }
+}

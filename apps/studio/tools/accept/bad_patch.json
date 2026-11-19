@@ -1,0 +1,6 @@
+{"format":"dbbalance-patch/1","base":"20260101-old","season":null,"author":"LLM","comment":"рыцарь <b>слабый</b>","changes":[
+{"table":"gear_template","row":0,"key":"181010000","title":"<img src=x onerror=alert(1)>","path":"durability","old":"100","new":"120"},
+{"table":"gear_template","row":1,"key":"181011000","path":"durability","old":"999","new":"120"},
+{"table":"gear_template","row":0,"key":"181010000","path":"item_id","old":"181010000","new":"1"},
+{"table":"gear_template","row":2,"key":"181012000","path":"durability","old":"100","new":"abc"}
+]}

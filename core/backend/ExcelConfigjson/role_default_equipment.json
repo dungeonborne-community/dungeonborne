@@ -1,0 +1,2929 @@
+[
+  {
+    "config_id": 1,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 2,
+    "count": 1,
+    "item_id": 181030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 3,
+    "count": 1,
+    "item_id": 182010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 4,
+    "count": 1,
+    "item_id": 182020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 5,
+    "count": 1,
+    "item_id": 182030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 6,
+    "count": 1,
+    "item_id": 182040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 7,
+    "count": 1,
+    "item_id": 182050000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 8,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 9,
+    "count": 1,
+    "item_id": 181021000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 1001,
+    "count": 1,
+    "item_id": 181022000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 1002,
+    "count": 1,
+    "item_id": 183022000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 1003,
+    "count": 1,
+    "item_id": 183032000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 1004,
+    "count": 1,
+    "item_id": 183012000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 1005,
+    "count": 1,
+    "item_id": 183042000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 1006,
+    "count": 1,
+    "item_id": 183052000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 1007,
+    "count": 1,
+    "item_id": 181012000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 1008,
+    "count": 1,
+    "item_id": 181032000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 1101,
+    "count": 1,
+    "item_id": 186030001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1102,
+    "count": 1,
+    "item_id": 186030007,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1103,
+    "count": 1,
+    "item_id": 186030005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1104,
+    "count": 1,
+    "item_id": 186030003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1105,
+    "count": 1,
+    "item_id": 186030009,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1106,
+    "count": 1,
+    "item_id": 186030008,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1107,
+    "count": 1,
+    "item_id": 186030010,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1108,
+    "count": 1,
+    "item_id": 186030006,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1109,
+    "count": 1,
+    "item_id": 186030011,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1110,
+    "count": 1,
+    "item_id": 186030012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1111,
+    "count": 1,
+    "item_id": 186030013,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 1112,
+    "count": 1,
+    "item_id": 186030108,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 100001,
+    "count": 1,
+    "item_id": 100013,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 100002,
+    "count": 1,
+    "item_id": 100016,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE2"
+  },
+  {
+    "config_id": 100003,
+    "count": 1,
+    "item_id": 100013,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE1"
+  },
+  {
+    "config_id": 100004,
+    "count": 1,
+    "item_id": 181011000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 100005,
+    "count": 1,
+    "item_id": 100001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 101001,
+    "count": 1,
+    "item_id": 181020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 101002,
+    "count": 1,
+    "item_id": 183010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 101003,
+    "count": 1,
+    "item_id": 183020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 101004,
+    "count": 1,
+    "item_id": 183030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 101005,
+    "count": 1,
+    "item_id": 183040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 101006,
+    "count": 1,
+    "item_id": 183050000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 101007,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 101008,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 101009,
+    "count": 1,
+    "item_id": 181030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2LEFTWEAPON"
+  },
+  {
+    "config_id": 101010,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_ADDITIONAL_WEAPON1"
+  },
+  {
+    "config_id": 101011,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_ADDITIONAL_WEAPON2"
+  },
+  {
+    "config_id": 101012,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_ADDITIONAL_WEAPON3"
+  },
+  {
+    "config_id": 101013,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_ADDITIONAL_WEAPON4"
+  },
+  {
+    "config_id": 101014,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 101015,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 101016,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 101017,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 101018,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 101019,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 101020,
+    "count": 1,
+    "item_id": 181040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 101021,
+    "count": 15,
+    "item_id": 100045,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 103001,
+    "count": 1,
+    "item_id": 181110000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 103002,
+    "count": 1,
+    "item_id": 181110000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 103003,
+    "count": 1,
+    "item_id": 183010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 103004,
+    "count": 1,
+    "item_id": 183020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 103005,
+    "count": 1,
+    "item_id": 183030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 103006,
+    "count": 1,
+    "item_id": 183040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 103007,
+    "count": 1,
+    "item_id": 183050000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 103008,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 103009,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 103010,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 103011,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 103012,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2LEFTWEAPON"
+  },
+  {
+    "config_id": 103013,
+    "count": 1,
+    "item_id": 181040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 103014,
+    "count": 15,
+    "item_id": 100045,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 105001,
+    "count": 1,
+    "item_id": 181120000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 105002,
+    "count": 1,
+    "item_id": 181080000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 105003,
+    "count": 1,
+    "item_id": 182010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 105004,
+    "count": 1,
+    "item_id": 182020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 105005,
+    "count": 1,
+    "item_id": 182030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 105006,
+    "count": 1,
+    "item_id": 182040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 105007,
+    "count": 1,
+    "item_id": 182050000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 105008,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 105009,
+    "count": 1,
+    "item_id": 181050001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 105010,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 105011,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 106001,
+    "count": 1,
+    "item_id": 181050003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 106002,
+    "count": 1,
+    "item_id": 181120000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 106003,
+    "count": 1,
+    "item_id": 181080000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2LEFTWEAPON"
+  },
+  {
+    "config_id": 106004,
+    "count": 1,
+    "item_id": 183010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 106005,
+    "count": 1,
+    "item_id": 183020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 106006,
+    "count": 1,
+    "item_id": 183030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 106007,
+    "count": 1,
+    "item_id": 183040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 106008,
+    "count": 1,
+    "item_id": 183050000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 106009,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 106010,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 106011,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 107001,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 107002,
+    "count": 1,
+    "item_id": 181030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 107003,
+    "count": 1,
+    "item_id": 184010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 107004,
+    "count": 1,
+    "item_id": 184020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 107005,
+    "count": 1,
+    "item_id": 184030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 107006,
+    "count": 1,
+    "item_id": 184040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 107007,
+    "count": 1,
+    "item_id": 184050000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 107008,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 107009,
+    "count": 1,
+    "item_id": 181020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 107010,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 107011,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 107012,
+    "count": 1,
+    "item_id": 181040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 107013,
+    "count": 15,
+    "item_id": 100045,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 108001,
+    "count": 1,
+    "item_id": 181020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 108002,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 108003,
+    "count": 1,
+    "item_id": 181030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2LEFTWEAPON"
+  },
+  {
+    "config_id": 108004,
+    "count": 1,
+    "item_id": 184010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 108005,
+    "count": 1,
+    "item_id": 184020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 108006,
+    "count": 1,
+    "item_id": 184030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 108007,
+    "count": 1,
+    "item_id": 184040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 108008,
+    "count": 1,
+    "item_id": 184050000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 108009,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 108010,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 108011,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 108012,
+    "count": 1,
+    "item_id": 181040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 108013,
+    "count": 15,
+    "item_id": 100045,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 109001,
+    "count": 1,
+    "item_id": 181050001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 109002,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 109003,
+    "count": 1,
+    "item_id": 182010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 109004,
+    "count": 1,
+    "item_id": 182020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 109005,
+    "count": 1,
+    "item_id": 182030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 109006,
+    "count": 1,
+    "item_id": 182040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 109007,
+    "count": 1,
+    "item_id": 182050000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 109008,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 109009,
+    "count": 1,
+    "item_id": 181050003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 109010,
+    "count": 1,
+    "item_id": 181080000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2LEFTWEAPON"
+  },
+  {
+    "config_id": 109011,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 109012,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 110001,
+    "count": 1,
+    "item_id": 181050003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 110002,
+    "count": 1,
+    "item_id": 181010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 110003,
+    "count": 1,
+    "item_id": 182010000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 110004,
+    "count": 1,
+    "item_id": 182020000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 110005,
+    "count": 1,
+    "item_id": 182030000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 110006,
+    "count": 1,
+    "item_id": 182040000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 110007,
+    "count": 1,
+    "item_id": 182050000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 110008,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 110009,
+    "count": 1,
+    "item_id": 181050001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 110010,
+    "count": 1,
+    "item_id": 181080000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2LEFTWEAPON"
+  },
+  {
+    "config_id": 110011,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 110012,
+    "count": 1,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 201001,
+    "count": 1,
+    "item_id": 181014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 201002,
+    "count": 1,
+    "item_id": 183013000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 201003,
+    "count": 1,
+    "item_id": 183023000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 201004,
+    "count": 1,
+    "item_id": 183033000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 201005,
+    "count": 1,
+    "item_id": 183043000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 201006,
+    "count": 1,
+    "item_id": 183053000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 201007,
+    "count": 1,
+    "item_id": 181014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 203001,
+    "count": 1,
+    "item_id": 181113000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 203002,
+    "count": 1,
+    "item_id": 181112000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 203003,
+    "count": 1,
+    "item_id": 183012000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 203004,
+    "count": 1,
+    "item_id": 183022000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 203005,
+    "count": 1,
+    "item_id": 183032000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 203006,
+    "count": 1,
+    "item_id": 183042000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 203007,
+    "count": 1,
+    "item_id": 183052000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 205001,
+    "count": 1,
+    "item_id": 181123000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 205002,
+    "count": 1,
+    "item_id": 181083000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 205003,
+    "count": 1,
+    "item_id": 182013000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 205004,
+    "count": 1,
+    "item_id": 182023000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 205005,
+    "count": 1,
+    "item_id": 182033000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 205006,
+    "count": 1,
+    "item_id": 182043000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 205007,
+    "count": 1,
+    "item_id": 182053000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 206001,
+    "count": 1,
+    "item_id": 181055003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 206002,
+    "count": 1,
+    "item_id": 183013000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 206003,
+    "count": 1,
+    "item_id": 183023000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 206004,
+    "count": 1,
+    "item_id": 183033000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 206005,
+    "count": 1,
+    "item_id": 183043000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 206006,
+    "count": 1,
+    "item_id": 183053000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 207001,
+    "count": 1,
+    "item_id": 181014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 207002,
+    "count": 1,
+    "item_id": 181034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 207003,
+    "count": 1,
+    "item_id": 184013000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 207004,
+    "count": 1,
+    "item_id": 184023000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 207005,
+    "count": 1,
+    "item_id": 184033000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 207006,
+    "count": 1,
+    "item_id": 184043000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 207007,
+    "count": 1,
+    "item_id": 184053000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 208001,
+    "count": 1,
+    "item_id": 181024001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 208002,
+    "count": 1,
+    "item_id": 184013000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 208003,
+    "count": 1,
+    "item_id": 184023000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 208004,
+    "count": 1,
+    "item_id": 184033000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 208005,
+    "count": 1,
+    "item_id": 184043000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 208006,
+    "count": 1,
+    "item_id": 184053000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 209001,
+    "count": 1,
+    "item_id": 181055001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 209002,
+    "count": 1,
+    "item_id": 182014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 209003,
+    "count": 1,
+    "item_id": 182024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 209004,
+    "count": 1,
+    "item_id": 182034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 209005,
+    "count": 1,
+    "item_id": 182044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 209006,
+    "count": 1,
+    "item_id": 182054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 210001,
+    "count": 1,
+    "item_id": 181055003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 210002,
+    "count": 1,
+    "item_id": 182014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 210003,
+    "count": 1,
+    "item_id": 182024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 210004,
+    "count": 1,
+    "item_id": 182034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 210005,
+    "count": 1,
+    "item_id": 182044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 210006,
+    "count": 1,
+    "item_id": 182054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 210007,
+    "count": 1,
+    "item_id": 181114001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 210008,
+    "count": 1,
+    "item_id": 181084000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 301001,
+    "count": 1,
+    "item_id": 191011000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 301002,
+    "count": 1,
+    "item_id": 191031000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 301003,
+    "count": 1,
+    "item_id": 194011000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 301004,
+    "count": 1,
+    "item_id": 194021000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 301005,
+    "count": 1,
+    "item_id": 194031000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 301006,
+    "count": 1,
+    "item_id": 194041000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 301007,
+    "count": 1,
+    "item_id": 194051000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 301008,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 301009,
+    "count": 1,
+    "item_id": 191021000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 301010,
+    "count": 1,
+    "item_id": 195011000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LEFTRING"
+  },
+  {
+    "config_id": 301011,
+    "count": 1,
+    "item_id": 195011000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_RIGHTRING"
+  },
+  {
+    "config_id": 301012,
+    "count": 1,
+    "item_id": 195021002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_NECKLACE"
+  },
+  {
+    "config_id": 301013,
+    "count": 3,
+    "item_id": 100013,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE1"
+  },
+  {
+    "config_id": 301014,
+    "count": 3,
+    "item_id": 100016,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE2"
+  },
+  {
+    "config_id": 301015,
+    "count": 1,
+    "item_id": 100071,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE3"
+  },
+  {
+    "config_id": 301016,
+    "count": 15,
+    "item_id": 100045,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 302001,
+    "count": 1,
+    "item_id": 191121000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 302002,
+    "count": 1,
+    "item_id": 191081000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 302003,
+    "count": 1,
+    "item_id": 192011000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 302004,
+    "count": 1,
+    "item_id": 192021000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 302005,
+    "count": 1,
+    "item_id": 192031000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 302006,
+    "count": 1,
+    "item_id": 192041000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 302007,
+    "count": 1,
+    "item_id": 192051000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 302008,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 302009,
+    "count": 1,
+    "item_id": 191051000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 302010,
+    "count": 1,
+    "item_id": 195011005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LEFTRING"
+  },
+  {
+    "config_id": 302011,
+    "count": 1,
+    "item_id": 195011005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_RIGHTRING"
+  },
+  {
+    "config_id": 302012,
+    "count": 1,
+    "item_id": 195021005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_NECKLACE"
+  },
+  {
+    "config_id": 302013,
+    "count": 3,
+    "item_id": 100013,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE1"
+  },
+  {
+    "config_id": 302014,
+    "count": 3,
+    "item_id": 100016,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE2"
+  },
+  {
+    "config_id": 302015,
+    "count": 1,
+    "item_id": 100071,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE3"
+  },
+  {
+    "config_id": 303001,
+    "count": 1,
+    "item_id": 191111000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "config_id": 303002,
+    "count": 1,
+    "item_id": 191111000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "config_id": 303003,
+    "count": 1,
+    "item_id": 193011000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "config_id": 303004,
+    "count": 1,
+    "item_id": 193021000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "config_id": 303005,
+    "count": 1,
+    "item_id": 193031000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "config_id": 303006,
+    "count": 1,
+    "item_id": 193041000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "config_id": 303007,
+    "count": 1,
+    "item_id": 193051000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "config_id": 303008,
+    "count": 3,
+    "item_id": 100012,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_THROWABLE"
+  },
+  {
+    "config_id": 303009,
+    "count": 1,
+    "item_id": 191011000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2RIGHTWEAPON"
+  },
+  {
+    "config_id": 303010,
+    "count": 1,
+    "item_id": 191011000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR2LEFTWEAPON"
+  },
+  {
+    "config_id": 303011,
+    "count": 1,
+    "item_id": 195011001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LEFTRING"
+  },
+  {
+    "config_id": 303012,
+    "count": 1,
+    "item_id": 195011001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_RIGHTRING"
+  },
+  {
+    "config_id": 303013,
+    "count": 1,
+    "item_id": 195021000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_NECKLACE"
+  },
+  {
+    "config_id": 303014,
+    "count": 3,
+    "item_id": 100013,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE1"
+  },
+  {
+    "config_id": 303015,
+    "count": 3,
+    "item_id": 100016,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE2"
+  },
+  {
+    "config_id": 303016,
+    "count": 1,
+    "item_id": 100071,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_ROLE_WEARING",
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_CONSUMABLE3"
+  },
+  {
+    "config_id": 303017,
+    "count": 15,
+    "item_id": 100045,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401001,
+    "count": 1,
+    "item_id": 183014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401002,
+    "count": 1,
+    "item_id": 183024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401003,
+    "count": 1,
+    "item_id": 183034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401004,
+    "count": 1,
+    "item_id": 183044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401005,
+    "count": 1,
+    "item_id": 183054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401006,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401007,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401008,
+    "count": 1,
+    "item_id": 181024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401009,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401010,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401011,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401012,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401013,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401014,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401015,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401016,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401017,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401018,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401019,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401020,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401021,
+    "count": 1,
+    "item_id": 185024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401022,
+    "count": 1,
+    "item_id": 185024001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401023,
+    "count": 1,
+    "item_id": 185024002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401024,
+    "count": 1,
+    "item_id": 185024003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401025,
+    "count": 1,
+    "item_id": 185024004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 401026,
+    "count": 1,
+    "item_id": 185024005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407001,
+    "count": 1,
+    "item_id": 184014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407002,
+    "count": 1,
+    "item_id": 184024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407003,
+    "count": 1,
+    "item_id": 184034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407004,
+    "count": 1,
+    "item_id": 184044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407005,
+    "count": 1,
+    "item_id": 184054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407006,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407007,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407008,
+    "count": 1,
+    "item_id": 181024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407009,
+    "count": 1,
+    "item_id": 181034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407010,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407011,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407012,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407013,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407014,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407015,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407016,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407017,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407018,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407019,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407020,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407021,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407022,
+    "count": 1,
+    "item_id": 185024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407023,
+    "count": 1,
+    "item_id": 185024001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407024,
+    "count": 1,
+    "item_id": 185024002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407025,
+    "count": 1,
+    "item_id": 185024003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407026,
+    "count": 1,
+    "item_id": 185024004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 407027,
+    "count": 1,
+    "item_id": 185024005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405001,
+    "count": 1,
+    "item_id": 182014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405002,
+    "count": 1,
+    "item_id": 182024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405003,
+    "count": 1,
+    "item_id": 182034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405004,
+    "count": 1,
+    "item_id": 182044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405005,
+    "count": 1,
+    "item_id": 182054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405006,
+    "count": 1,
+    "item_id": 181124001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405007,
+    "count": 1,
+    "item_id": 181054003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405008,
+    "count": 1,
+    "item_id": 181084000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405009,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405010,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405011,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405012,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405013,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405014,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405015,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405016,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405017,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405018,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405019,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405020,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405021,
+    "count": 1,
+    "item_id": 185024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405022,
+    "count": 1,
+    "item_id": 185024001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405023,
+    "count": 1,
+    "item_id": 185024002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405024,
+    "count": 1,
+    "item_id": 185024003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405025,
+    "count": 1,
+    "item_id": 185024004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 405026,
+    "count": 1,
+    "item_id": 185024005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403001,
+    "count": 1,
+    "item_id": 183014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403002,
+    "count": 1,
+    "item_id": 183024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403003,
+    "count": 1,
+    "item_id": 183034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403004,
+    "count": 1,
+    "item_id": 183044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403005,
+    "count": 1,
+    "item_id": 183054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403006,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403007,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403008,
+    "count": 1,
+    "item_id": 181114000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403009,
+    "count": 1,
+    "item_id": 181114000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403010,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403011,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403012,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403013,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403014,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403015,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403016,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403017,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403018,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403019,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403020,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403021,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403022,
+    "count": 1,
+    "item_id": 185024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403023,
+    "count": 1,
+    "item_id": 185024001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403024,
+    "count": 1,
+    "item_id": 185024002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403025,
+    "count": 1,
+    "item_id": 185024003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403026,
+    "count": 1,
+    "item_id": 185024004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 403027,
+    "count": 1,
+    "item_id": 185024005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409001,
+    "count": 1,
+    "item_id": 182014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409002,
+    "count": 1,
+    "item_id": 182024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409003,
+    "count": 1,
+    "item_id": 182034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409004,
+    "count": 1,
+    "item_id": 182044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409005,
+    "count": 1,
+    "item_id": 182054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409006,
+    "count": 1,
+    "item_id": 181084000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409007,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409008,
+    "count": 1,
+    "item_id": 181054003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409009,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409010,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409011,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409012,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409013,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409014,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409015,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409016,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409017,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409018,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409019,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409020,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409021,
+    "count": 1,
+    "item_id": 185024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409022,
+    "count": 1,
+    "item_id": 185024001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409023,
+    "count": 1,
+    "item_id": 185024002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409024,
+    "count": 1,
+    "item_id": 185024003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409025,
+    "count": 1,
+    "item_id": 185024004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 409026,
+    "count": 1,
+    "item_id": 185024005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410001,
+    "count": 1,
+    "item_id": 182014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410002,
+    "count": 1,
+    "item_id": 182024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410003,
+    "count": 1,
+    "item_id": 182034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410004,
+    "count": 1,
+    "item_id": 182044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410005,
+    "count": 1,
+    "item_id": 182054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410006,
+    "count": 1,
+    "item_id": 181084000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410007,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410008,
+    "count": 1,
+    "item_id": 181054003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410009,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410010,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410011,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410012,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410013,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410014,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410015,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410016,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410017,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410018,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410019,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410020,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410021,
+    "count": 1,
+    "item_id": 185024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410022,
+    "count": 1,
+    "item_id": 185024001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410023,
+    "count": 1,
+    "item_id": 185024002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410024,
+    "count": 1,
+    "item_id": 185024003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410025,
+    "count": 1,
+    "item_id": 185024004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 410026,
+    "count": 1,
+    "item_id": 185024005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408001,
+    "count": 1,
+    "item_id": 184014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408002,
+    "count": 1,
+    "item_id": 184024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408003,
+    "count": 1,
+    "item_id": 184034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408004,
+    "count": 1,
+    "item_id": 184044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408005,
+    "count": 1,
+    "item_id": 184054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408006,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408007,
+    "count": 1,
+    "item_id": 181014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408008,
+    "count": 1,
+    "item_id": 181124001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408009,
+    "count": 1,
+    "item_id": 181034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408010,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408011,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408012,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408013,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408014,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408015,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408016,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408017,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408018,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408019,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408020,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408021,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408022,
+    "count": 1,
+    "item_id": 185024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408023,
+    "count": 1,
+    "item_id": 185024001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408024,
+    "count": 1,
+    "item_id": 185024002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408025,
+    "count": 1,
+    "item_id": 185024003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408026,
+    "count": 1,
+    "item_id": 185024004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 408027,
+    "count": 1,
+    "item_id": 185024005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406001,
+    "count": 1,
+    "item_id": 183014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406002,
+    "count": 1,
+    "item_id": 183024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406003,
+    "count": 1,
+    "item_id": 183034000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406004,
+    "count": 1,
+    "item_id": 183044000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406005,
+    "count": 1,
+    "item_id": 183054000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406006,
+    "count": 1,
+    "item_id": 181124001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406007,
+    "count": 1,
+    "item_id": 181054003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406008,
+    "count": 1,
+    "item_id": 181114000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406009,
+    "count": 1,
+    "item_id": 181084000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406010,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406011,
+    "count": 1,
+    "item_id": 185014000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406012,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406013,
+    "count": 1,
+    "item_id": 185014001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406014,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406015,
+    "count": 1,
+    "item_id": 185014002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406016,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406017,
+    "count": 1,
+    "item_id": 185014003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406018,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406019,
+    "count": 1,
+    "item_id": 185014004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406020,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406021,
+    "count": 1,
+    "item_id": 185014005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406022,
+    "count": 1,
+    "item_id": 185024000,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406023,
+    "count": 1,
+    "item_id": 185024001,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406024,
+    "count": 1,
+    "item_id": 185024002,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406025,
+    "count": 1,
+    "item_id": 185024003,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406026,
+    "count": 1,
+    "item_id": 185024004,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  },
+  {
+    "config_id": 406027,
+    "count": 1,
+    "item_id": 185024005,
+    "storage_type": "EN_ITEM_STORAGE_TYPE_BACKPACK_WITHOUT_XY"
+  }
+]

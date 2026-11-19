@@ -1,0 +1,51 @@
+﻿- [Dungeonborne workflow](dungeonborne-workflow.md) — two game installs for mods, BACKLOG.md, listen vs standalone
+- [BP reverse tooling](dungeonborne-bp-reverse.md) — retoc + kismet-analyzer, BP patch tools, crash stacks in ue-*.log, no live-memory reads
+- [Dedicated plan](dungeonborne-dedicated-plan.md) — Hetzner only since 03.11 (no GCloud/k8s): Cloud = backend, Robot = headless DS; native match flow
+- [Handlers tooling](dungeonborne-handlers-tooling.md) — domain handler files, rpc_evidence.py, sniff_decode, agent brief
+- [Item guid 32-bit](dungeonborne-item-guid-32bit.md) — client truncates item guids to 32 bits; always use crate::guid::next_item()
+- [Client probe](dungeonborne-client-probe.md) — ClientProbe (UE4SS) + LuaProbe (pak) logs, probe_timeline.py merge with rpc_dump/OUR.jsonl
+- [Lyra analysis](dungeonborne-lyra-analysis.md) — game is Lyra-based; read public Lyra C++ for native init/net flow, hook points (OnRep_PawnData, NET_TRACE)
+- [Listen native data](dungeonborne-listen-native-data.md) — 01.11 working combo: dbnative per-player data + hero UCS R14 patch; ruled-out causes
+- [Native game over](dungeonborne-native-gameover.md) — server builds player_game_over itself; gate = dedicated + DS SDK; addresses
+- [Launcher + Discord auth](dungeonborne-launcher-auth.md) — Tauri launcher + TLS relay, Discord login; backend in src/auth/, launcher v1 in <data>\launcher (trunk+JS); spec docs/LAUNCHER_SPEC.md
+- [Workarounds doc](dungeonborne-workarounds.md) — accepted simplifications (workarounds) go to backups/docs/WORKAROUNDS.md, bugs to FIX_LIST
+- [Robot server](dungeonborne-robot-server.md) — Robot paths/SSH/IPs, kit, consoles off; 10.11 ds-agent panic → install_task.ps1 + backend watchdog
+- [RU ISP freeze](dungeonborne-ru-isp-freeze.md) — CURL 28 login = ISP freezes relay conns to Hetzner after ~2 KB; WARP fixes; read relay.log
+- [Native match only](dungeonborne-native-match-only.md) — 04.11: custom match button + local-match UnLua removed; zz_MatchLocal_P = vanilla button
+- [Matching CANCEL](dungeonborne-matching-cancel.md) — client closes search only on numbered CANCEL event (ref: 4 CANCEL -5012 after FINISHED); FIX M9
+- [Launcher UI style](dungeonborne-launcher-ui-style.md) — UI = plain HTML+Tailwind+JS, no frameworks; "Fluent" = Win11 look; example experiments/ui-fluent
+- [Client room lifecycle](dungeonborne-client-room-lifecycle.md) — room forgotten only by dirty_clear_battle_room/CANCEL; lobby toast/reconnect cause
+- [Mithril classes idea](dungeonborne-mithril-classes.md) — new "classes" = mithril costumes (career is hard-coded in the exe); postponed, plan in research/mithril_classes
+- [Local dev](dungeonborne-local-dev.md) — since 05.11 local: run_local.ps1 backend, Steam install = game server (Robot kit), client C:\Games\Dungeonborne; prod VM off
+- [CRITICAL TGCP seq](dungeonborne-tgcp-seq.md) — S2C seq u32 BE at [9..13]; LE bug dropped ALL pushes after frame 256 (~130 s) — many "client ignores push" bugs were this
+- [ACE restart](dungeonborne-ace-restart.md) — ACE 'works error 13-131084-2' = relaunch seconds after exit; keep a 30 s gap (user 06.11); launcher not guilty
+- [StatWatch](dungeonborne-stat-watch.md) — DS mod + tools/stat_watch.py; affix roll formula is discrete (floor(lvl*n/10000)); hero ASC on PlayerState
+- [UE4SS null crash](dungeonborne-ue4ss-null-crash.md) — GetFName on null object = native AV 0x18, pcall misses it; IsValid first
+- [Purple portal](dungeonborne-shadow-arena.md) — Shadow from the first floor leads to the throne inside L_Dungeon_Official_02 (120000,0,-80); the second floor has only blue ones
+- [Balance app](dungeonborne-balance-app.md) — Tauri app for external balance designers; spec docs/BALANCE_APP_SPEC.md, it only prepares a patch
+- [Прод: плейтест](dungeonborne-prod-playtest.md) — прод с 08.11; 12.11 16:27 UTC backend 553139a, без hosts включено; 16:12 сброс реликвий прошёл ПОВТОРНО (копии базы не было) — перед выкладкой копия db
+- [Проверка релиза лаунчера](dungeonborne-launcher-release-check.md) — подписывать копию сразу после cargo tauri build и смотреть окно: cargo test подменяет exe
+- [Search checks](dungeonborne-match-checks.md) — since 08.11 as in the original: rarity limit EPIC+ on Hard, rooms without mixing; require_guild kept
+- [Seasons](dungeonborne-seasons.md) — since 07.11 SEASON=<id>, flags in seasons/*.toml; prod = playtest; Dead Money removed; what is base, what is season
+- [Launcher lobby](dungeonborne-launcher-lobby.md) — FaceIt-style matchmaking: tabs, voting, hall 3 min and minimum 2 (env since 09.11); entry via the "Start" button; spec in LAUNCHER_SPEC §12
+- [Virtual items](dungeonborne-virtual-items.md) — client coins only 1000-1030, 2000-29999; materials 1037-1039, 1052, 1053 = DItem with position.x < 0
+- [Item flag](dungeonborne-item-flag.md) — the icon only in a raid; the backend sends faction_id 1 to everyone, so it is not per team; analysis docs/ITEM_FLAG.md
+- [Lua thread crashes](dungeonborne-lua-thread-crash.md) — 07.11: long-play crashes = LoopAsync + ExecuteInGameThread; stress test confirmed, fix not done
+- [Mod design](dungeonborne-mods-design.md) — 07.11: docs/MODS_DESIGN + MODS_REFACTOR_PLAN; packages are built from F: (players have an old dbnative); local git since 07.11
+- [Game thread timers](dungeonborne-ue4ss-gamethread-timers.md) — LoopInGameThreadWithDelay: return true does not stop it; register only via ExecuteInGameThread (otherwise a hang while loading)
+- [Floor transition](dungeonborne-floor-items.md) — DumpUserDataToCache c3=1 keeps "allowed to the floor" items (resurrection stones); game ID = LyraGameState.BattleId
+- [Native loot and affixes](dungeonborne-native-loot-rules.md) — slot formula, guarantees/caps, merging of affix pools ≠ affix.rs; research\loot\GAME_CODE_ANSWERS.md
+- [Site](dungeonborne-site.md) — Dungeonborne Community, site/web; EVERYTHING is in site/DESIGNBOOK.md (read it first), checks in site/tools
+- [RocksDB](dungeonborne-rocksdb.md) — since 11.11 the database is on RocksDB: build without sccache + libclang, blob/cache defaults, WSL script touch
+- [Without hosts](dungeonborne-hosts-alternative.md) — 12.11 verified on the stand: login, directory, lobby without hosts; enabled by [relay] no_hosts; the stand's battle server will not log in without hosts
+- [Own map](dungeonborne-new-map.md) — 11.11: the level has only geometry and spawn markers (TgfModularActor); plan: umap from UE + the server mod places the markers
+- [Rogue stealth](dungeonborne-rogue-stealth.md) — 12.11: StealthVisibleDistance = strength 0..1 (shader); RuClient StealthReveal works on the stand, not deployed
+- [Bash and backslash](dungeonborne-bash-backslash.md) — 12.11: the Bash tool collapses a double backslash even in heredoc; edits with backslashes — via Edit/Write
+- [Druid trees](dungeonborne-druid-trees.md) — 12.11: the tree misses skeletons — on a headless DS the bones do not update (AlwaysTickPose), the skeleton hitbox = mesh bones
+- [Рабочее пространство](dungeonborne-workspace-plan.md) — 14.11 план: всё в X:\DBDev (workspace git + home + vault), идиомы Cargo; docs/WORKSPACE_PLAN.md
+- [Forgejo на VM](dungeonborne-forgejo.md) — 14.11 Forgejo 17.0.1 только на 127.0.0.1 (3000/2222), туннель ssh -L 3300/2222, dump ночью; ops/forgejo
+- [Support button](dungeonborne-support-button.md) — 14.11: all buttons call CustomerService:Open; interception — an UnLua wrapper in a pak
+- [Резервные копии](dungeonborne-backup.md) — 14.11 restic в Storage Box uXXXXXX: VM sub1 05:10 UTC, ПК sub2; живая база не копируется; ops/backup
+- [Bug report](dungeonborne-bug-report.md) — 14.11 launcher→backend→Discord bot; contract docs/specs/bug-report-api.md; backend 18ef2c1, launcher f109fc0, button pak — a draft; not deployed
+- [Skill formulas](dungeonborne-skill-formulas.md) — 15.11: skill numbers in GE + CareerSkillDamageCurveTable (own decoder), tooltips in Lua Script/Text; example — priest's Q
+- [Launcher fundraising](dungeonborne-launcher-support.md) — 16.11 server fundraising bar: manifest support.url → bot JSON, project gold; do not run cargo fmt on the launcher

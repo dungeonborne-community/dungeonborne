@@ -1,0 +1,12 @@
+[member]
+name = "debug"
+kind = "tool"
+visibility = "team"
+lang = "lua"
+version = "0"
+depends_on = []
+description = "Debug probes (luaprobe)"
+
+[known-absolute-paths]
+# Lua probe log (the game does not read local.toml): the default path is in the script itself
+files = ["luaprobe/zzzzzzzz_LuaProbe_P/Dungeonborne/Content/Script/Game/System/Match/LuaProbe.lua"]

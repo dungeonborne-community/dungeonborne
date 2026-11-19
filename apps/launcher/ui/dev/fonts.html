@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru" data-theme="torch">
+<head>
+  <meta charset="utf-8">
+  <title>Launcher fonts: comparison</title>
+  <!-- Sandbox: the same launcher piece in three font choices. The styles are the real ones (../styles.css). The sample text is deliberately Russian + English: Cyrillic rendering is part of the comparison. -->
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="scene min-h-screen p-8 font-sans text-[15px] text-fg">
+  <div id="root" class="mx-auto max-w-[1100px] space-y-10"></div>
+  <template id="sample">
+    <section class="space-y-3">
+      <h2 class="title-rule" data-ref="label"></h2>
+      <p class="text-xs text-fg-3" data-ref="note"></p>
+      <div class="card framed overflow-hidden">
+        <div class="hero-art flex items-end gap-8 px-8 pt-10 pb-7">
+          <div class="min-w-0 flex-1">
+            <h1 class="font-display text-[30px] leading-9 font-bold tracking-wide">Dungeonborne — сообщество «Отряд Котят»</h1>
+            <div class="mt-2 flex gap-1.5"><span class="pill">онлайн 14/64 · 38 мс</span><span class="pill">eu-central</span></div>
+            <p class="mt-3 max-w-xl text-fg-2">Плейтест, бои на выделенном сервере. Вход через Discord, моды ставятся сами. Online 14/64 · Dungeon Hard</p>
+          </div>
+          <button class="btn-play h-14 w-64 text-xl">Играть</button>
+        </div>
+      </div>
+      <div class="flex items-center gap-7 border-b border-line px-1">
+        <span class="tab" data-active>Сервер</span><span class="tab">Список изменений</span><span class="tab">Patch notes</span>
+      </div>
+      <div class="card px-6 py-5">
+        <h3 class="font-display text-2xl font-semibold">Обновление 11 ноября</h3>
+        <ul class="mt-2 list-disc space-y-1 pl-6 text-fg-2 marker:text-accent-strong">
+          <li>Сезон начат заново: прогресс сброшен, новый персонаж — 1 уровня, 10 000 золота.</li>
+          <li>Лобби лаунчера: для голосования достаточно 2 игроков во вкладке, зал ждёт 3 минуты.</li>
+          <li>Rooms are no longer strictly solo, duo or trio: 1 to 3 players per group.</li>
+        </ul>
+      </div>
+    </section>
+  </template>
+  <script src="fonts.js"></script>
+</body>
+</html>

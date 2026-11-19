@@ -1,0 +1,13 @@
+[package]
+name = "ws"
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "ws"
+path = "src/main.rs"
+
+[dependencies]
+# stand-tls: ws stand makes the stand's TLS certificate (ws-core feature; xtask builds ws-core without it)
+ws-core = { workspace = true, features = ["stand-tls"] }

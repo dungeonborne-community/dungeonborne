@@ -1,0 +1,12 @@
+[member]
+name = "py-tools"
+kind = "tool"
+visibility = "team"
+lang = "python"
+version = "0"
+depends_on = ["core/backend"]
+description = "Development tools: stat_watch, rpc_evidence, loot_audit, probe_timeline, gm, etc."
+
+[visibility]
+# prints the launcher session token from Credential Manager, prod by default: owner only (17.11)
+owner = ["show_launcher_token.ps1"]

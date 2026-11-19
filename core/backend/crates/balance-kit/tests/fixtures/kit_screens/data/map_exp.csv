@@ -1,0 +1,7 @@
+﻿row,key,title,path,value,name
+0,10101,,map_id,10101,
+0,10101,,alive_time,60,
+0,10101,,exp,5,
+1,10101,,map_id,10101,
+1,10101,,alive_time,120,
+1,10101,,exp,10,

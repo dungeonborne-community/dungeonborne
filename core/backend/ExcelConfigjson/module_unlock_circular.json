@@ -1,0 +1,31 @@
+[
+  {
+    "circular_queue": [
+      {
+        "duration": "1440",
+        "module_id": 1200036
+      },
+      {
+        "duration": "1440",
+        "module_id": 1200037
+      }
+    ],
+    "end_time": "2034-09-30T00:00:00Z",
+    "id": 1,
+    "start_time": "2024-07-22T00:00:00Z"
+  },
+  {
+    "circular_queue": [
+      {
+        "duration": "5760",
+        "module_id": 1200024
+      },
+      {
+        "duration": "4320"
+      }
+    ],
+    "end_time": "2024-09-08T23:59:59Z",
+    "id": 2,
+    "start_time": "2024-08-12T00:00:00Z"
+  }
+]

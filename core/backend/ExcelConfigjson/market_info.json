@@ -1,0 +1,53 @@
+[
+  {
+    "data": {
+      "display_order": 2,
+      "is_on_sale": true,
+      "market_id": 101,
+      "market_tab_ids": [
+        1009,
+        1010,
+        1011,
+        1014,
+        1015,
+        1016,
+        1017,
+        1019,
+        4444
+      ],
+      "name": "商人",
+      "type": 1
+    },
+    "market_id": 101
+  },
+  {
+    "data": {
+      "display_order": 1,
+      "is_on_sale": true,
+      "market_id": 102,
+      "market_tab_ids": [
+        3001,
+        3002,
+        3005,
+        3004
+      ],
+      "name": "商城",
+      "type": 2
+    },
+    "market_id": 102
+  },
+  {
+    "data": {
+      "is_on_sale": true,
+      "market_id": 103,
+      "market_tab_ids": [
+        1005,
+        1006,
+        2000
+      ],
+      "name": "特殊",
+      "type": 4
+    },
+    "market_id": 103
+  }
+]

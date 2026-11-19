@@ -1,0 +1,284 @@
+{
+  "type": "tgf.config.ExcelRankPeriodRewardPool",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 22,
+    "hash_code": "sha256:831c94fa3e7f7c93b3a5f25b469da53fffa2b08381c1ecf10b4955b8b611890f",
+    "data_source": [
+      {
+        "file": "4a402272b34f705685a5a7640e143127cc2831661a379d4d92b3ed20b83ab5ea",
+        "sheet": "05afe9c73c2290f16a038989a93e9158de05fd2dfec5c89e4269abb3e3963732",
+        "count": 22
+      }
+    ]
+  },
+  "rows": [
+    {
+      "rank_reward_pool_id": 20101
+    },
+    {
+      "rank_reward_pool_id": 20101,
+      "rank_or_score": 1101
+    },
+    {
+      "rank_reward_pool_id": 20101,
+      "rank_or_score": 1301
+    },
+    {
+      "rank_reward_pool_id": 20101,
+      "rank_or_score": 1501
+    },
+    {
+      "rank_reward_pool_id": 20101,
+      "rank_or_score": 1701
+    },
+    {
+      "rank_reward_pool_id": 20101,
+      "rank_or_score": 1801
+    },
+    {
+      "rank_reward_pool_id": 20101,
+      "rank_or_score": 1901
+    },
+    {
+      "rank_reward_pool_id": 30101,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1001,
+            "count": 100
+          }
+        ]
+      }
+    },
+    {
+      "rank_reward_pool_id": 30101,
+      "rank_or_score": 1101,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1001,
+            "count": 200
+          }
+        ]
+      }
+    },
+    {
+      "rank_reward_pool_id": 30101,
+      "rank_or_score": 1301,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1001,
+            "count": 300
+          }
+        ]
+      }
+    },
+    {
+      "rank_reward_pool_id": 30101,
+      "rank_or_score": 1501,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1001,
+            "count": 400
+          }
+        ]
+      }
+    },
+    {
+      "rank_reward_pool_id": 30101,
+      "rank_or_score": 1701,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1001,
+            "count": 500
+          }
+        ]
+      }
+    },
+    {
+      "rank_reward_pool_id": 30101,
+      "rank_or_score": 1801,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1001,
+            "count": 600
+          }
+        ]
+      }
+    },
+    {
+      "rank_reward_pool_id": 30101,
+      "rank_or_score": 1901,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1001,
+            "count": 700
+          }
+        ]
+      }
+    },
+    {
+      "rank_reward_pool_id": 20201,
+      "rank_or_score": 1,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1330001,
+            "count": 1
+          },
+          {
+            "type_id": 1001,
+            "count": 5000000
+          }
+        ],
+        "mail_template_id": 501032
+      },
+      "show_items": [
+        {
+          "type_id": 1330001,
+          "count": 1
+        },
+        {
+          "type_id": 1001,
+          "count": 5000000
+        }
+      ]
+    },
+    {
+      "rank_reward_pool_id": 20201,
+      "rank_or_score": 2,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1330001,
+            "count": 1
+          },
+          {
+            "type_id": 1001,
+            "count": 2000000
+          }
+        ],
+        "mail_template_id": 501032
+      },
+      "show_items": [
+        {
+          "type_id": 1330001,
+          "count": 1
+        },
+        {
+          "type_id": 1001,
+          "count": 2000000
+        }
+      ]
+    },
+    {
+      "rank_reward_pool_id": 20201,
+      "rank_or_score": 3,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1330001,
+            "count": 1
+          },
+          {
+            "type_id": 1001,
+            "count": 1000000
+          }
+        ],
+        "mail_template_id": 501032
+      },
+      "show_items": [
+        {
+          "type_id": 1330001,
+          "count": 1
+        },
+        {
+          "type_id": 1001,
+          "count": 1000000
+        }
+      ]
+    },
+    {
+      "rank_reward_pool_id": 20201,
+      "rank_or_score": 4,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1330001,
+            "count": 1
+          },
+          {
+            "type_id": 1001,
+            "count": 500000
+          }
+        ],
+        "mail_template_id": 501032
+      },
+      "show_items": [
+        {
+          "type_id": 1330001,
+          "count": 1
+        },
+        {
+          "type_id": 1001,
+          "count": 500000
+        }
+      ]
+    },
+    {
+      "rank_reward_pool_id": 20201,
+      "rank_or_score": 11,
+      "content": {
+        "reward": [
+          {
+            "type_id": 1330001,
+            "count": 1
+          },
+          {
+            "type_id": 1001,
+            "count": 100000
+          }
+        ],
+        "mail_template_id": 501032
+      },
+      "show_items": [
+        {
+          "type_id": 1330001,
+          "count": 1
+        },
+        {
+          "type_id": 1001,
+          "count": 100000
+        }
+      ]
+    },
+    {
+      "rank_reward_pool_id": 20201,
+      "rank_or_score": 51,
+      "content": {
+        "mail_template_id": 501032
+      }
+    },
+    {
+      "rank_reward_pool_id": 99999,
+      "rank_or_score": 1,
+      "content": {
+        "score_change_type": "EN_RANK_SCORE_SETTLE_RECENT_BATTLE_COUNT"
+      }
+    },
+    {
+      "rank_reward_pool_id": 99999,
+      "rank_or_score": 2001,
+      "content": {
+        "score_change_type": "EN_RANK_SCORE_SETTLE_RECENT_BATTLE_COUNT"
+      }
+    }
+  ]
+}

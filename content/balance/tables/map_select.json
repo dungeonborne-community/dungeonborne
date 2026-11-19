@@ -1,0 +1,178 @@
+{
+  "type": "tgf.config.ExcelMapSelect",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 10,
+    "hash_code": "sha256:46abcf1e692d943b81a24847d7d281c5ce83790dfb0f142cffad1356d1b91e1f",
+    "data_source": [
+      {
+        "file": "8600798137ac04bf75498f7ea2ae8402f9bcabbaa362f29082ad74c5c2c33f14",
+        "sheet": "f65390d5831a8c7c4fab9b3f340d377b6c166713f502f8bdd646e09eef5d350d",
+        "count": 10
+      }
+    ]
+  },
+  "rows": [
+    {
+      "map_name_id": "Map_1_1",
+      "map_id": 1,
+      "difficulty": 1,
+      "level_id": 40003015,
+      "level_type": 2001,
+      "map_name": "MapName_2",
+      "join_members": 3,
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_2.T_LobbyMap_2",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map2.T_SelectMap_Map2",
+      "model_feature_ids": [
+        7
+      ],
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_2_Grey.T_LobbyMap_2_Grey",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map2_Grey.T_SelectMap_Map2_Grey"
+    },
+    {
+      "map_name_id": "Map_1_2",
+      "map_id": 1,
+      "difficulty": 2,
+      "level_id": 40003017,
+      "level_type": 2001,
+      "map_name": "MapName_2",
+      "join_members": 3,
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_2.T_LobbyMap_2",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map2.T_SelectMap_Map2",
+      "model_feature_ids": [
+        1,
+        7
+      ],
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_2_Grey.T_LobbyMap_2_Grey",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map2_Grey.T_SelectMap_Map2_Grey"
+    },
+    {
+      "map_name_id": "Map_1_3",
+      "map_id": 1,
+      "difficulty": 7,
+      "level_id": 40003019,
+      "level_type": 2001,
+      "map_name": "MapName_2",
+      "join_members": 3,
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_2.T_LobbyMap_2",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map2.T_SelectMap_Map2",
+      "model_feature_ids": [
+        1,
+        7
+      ],
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_2_Grey.T_LobbyMap_2_Grey",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map2_Grey.T_SelectMap_Map2_Grey"
+    },
+    {
+      "map_name_id": "Map_2_1",
+      "map_id": 2,
+      "difficulty": 1,
+      "level_id": 40003016,
+      "level_type": 2001,
+      "map_name": "MapName_1",
+      "join_members": 1,
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_1.T_LobbyMap_1",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map1.T_SelectMap_Map1",
+      "model_feature_ids": [
+        7
+      ],
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_1_Grey.T_LobbyMap_1_Grey",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map1_Grey.T_SelectMap_Map1_Grey"
+    },
+    {
+      "map_name_id": "Map_2_2",
+      "map_id": 2,
+      "difficulty": 2,
+      "level_id": 40003018,
+      "level_type": 2001,
+      "map_name": "MapName_1",
+      "join_members": 1,
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_1.T_LobbyMap_1",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map1.T_SelectMap_Map1",
+      "model_feature_ids": [
+        1,
+        7
+      ],
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_1_Grey.T_LobbyMap_1_Grey",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map1_Grey.T_SelectMap_Map1_Grey"
+    },
+    {
+      "map_name_id": "Map_2_3",
+      "map_id": 2,
+      "difficulty": 7,
+      "level_id": 40003020,
+      "level_type": 2001,
+      "map_name": "MapName_1",
+      "join_members": 1,
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_1.T_LobbyMap_1",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map1.T_SelectMap_Map1",
+      "model_feature_ids": [
+        1,
+        7
+      ],
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_1_Grey.T_LobbyMap_1_Grey",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map1_Grey.T_SelectMap_Map1_Grey"
+    },
+    {
+      "map_name_id": "Map_3_1",
+      "map_id": 3,
+      "difficulty": 3,
+      "level_id": 50000003,
+      "level_type": 2002,
+      "map_name": "MapName_3",
+      "join_members": 3,
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_3.T_LobbyMap_3",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map3.T_SelectMap_Map3",
+      "model_feature_ids": [
+        3,
+        6
+      ],
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_3.T_LobbyMap_3",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map3.T_SelectMap_Map3"
+    },
+    {
+      "map_name_id": "Map_3_2",
+      "map_id": 3,
+      "difficulty": 5,
+      "level_id": 50000007,
+      "level_type": 2002,
+      "map_name": "MapName_7",
+      "join_members": 3,
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_3.T_LobbyMap_3",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map8.T_SelectMap_Map8",
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_3.T_LobbyMap_3",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map8.T_SelectMap_Map8"
+    },
+    {
+      "map_name_id": "Map_4_1",
+      "map_id": 4,
+      "difficulty": 6,
+      "level_id": 20005004,
+      "level_type": 2001,
+      "map_name": "MapName_4",
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_4.T_LobbyMap_4",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map4.T_SelectMap_Map4",
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_4.T_LobbyMap_4",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map4.T_SelectMap_Map4"
+    },
+    {
+      "map_name_id": "Map_6_1",
+      "map_id": 5,
+      "difficulty": 4,
+      "level_id": 50000006,
+      "level_type": 2002,
+      "map_name": "MapName_6",
+      "join_members": 3,
+      "map_res": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_6.T_LobbyMap_6",
+      "map_select_bg_res": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map9.T_SelectMap_Map9",
+      "model_feature_ids": [
+        1,
+        3,
+        6
+      ],
+      "map_res_grey": "/Game/TGF/UI/Textures/Lobby/Map/T_LobbyMap_6.T_LobbyMap_6",
+      "map_select_bg_res_grey": "/Game/TGF/UI/Textures/SelectMap/T_SelectMap_Map9.T_SelectMap_Map9"
+    }
+  ]
+}

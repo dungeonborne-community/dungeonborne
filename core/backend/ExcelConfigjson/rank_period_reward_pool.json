@@ -1,0 +1,268 @@
+[
+  {
+    "rank_reward_pool_id": 20101
+  },
+  {
+    "rank_or_score": 1101,
+    "rank_reward_pool_id": 20101
+  },
+  {
+    "rank_or_score": 1301,
+    "rank_reward_pool_id": 20101
+  },
+  {
+    "rank_or_score": 1501,
+    "rank_reward_pool_id": 20101
+  },
+  {
+    "rank_or_score": 1701,
+    "rank_reward_pool_id": 20101
+  },
+  {
+    "rank_or_score": 1801,
+    "rank_reward_pool_id": 20101
+  },
+  {
+    "rank_or_score": 1901,
+    "rank_reward_pool_id": 20101
+  },
+  {
+    "content": {
+      "reward": [
+        {
+          "count": 100,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_reward_pool_id": 30101
+  },
+  {
+    "content": {
+      "reward": [
+        {
+          "count": 200,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 1101,
+    "rank_reward_pool_id": 30101
+  },
+  {
+    "content": {
+      "reward": [
+        {
+          "count": 300,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 1301,
+    "rank_reward_pool_id": 30101
+  },
+  {
+    "content": {
+      "reward": [
+        {
+          "count": 400,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 1501,
+    "rank_reward_pool_id": 30101
+  },
+  {
+    "content": {
+      "reward": [
+        {
+          "count": 500,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 1701,
+    "rank_reward_pool_id": 30101
+  },
+  {
+    "content": {
+      "reward": [
+        {
+          "count": 600,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 1801,
+    "rank_reward_pool_id": 30101
+  },
+  {
+    "content": {
+      "reward": [
+        {
+          "count": 700,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 1901,
+    "rank_reward_pool_id": 30101
+  },
+  {
+    "content": {
+      "mail_template_id": 501032,
+      "reward": [
+        {
+          "count": 1,
+          "type_id": 1330001
+        },
+        {
+          "count": 5000000,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 1,
+    "rank_reward_pool_id": 20201,
+    "show_items": [
+      {
+        "count": 1,
+        "type_id": 1330001
+      },
+      {
+        "count": 5000000,
+        "type_id": 1001
+      }
+    ]
+  },
+  {
+    "content": {
+      "mail_template_id": 501032,
+      "reward": [
+        {
+          "count": 1,
+          "type_id": 1330001
+        },
+        {
+          "count": 2000000,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 2,
+    "rank_reward_pool_id": 20201,
+    "show_items": [
+      {
+        "count": 1,
+        "type_id": 1330001
+      },
+      {
+        "count": 2000000,
+        "type_id": 1001
+      }
+    ]
+  },
+  {
+    "content": {
+      "mail_template_id": 501032,
+      "reward": [
+        {
+          "count": 1,
+          "type_id": 1330001
+        },
+        {
+          "count": 1000000,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 3,
+    "rank_reward_pool_id": 20201,
+    "show_items": [
+      {
+        "count": 1,
+        "type_id": 1330001
+      },
+      {
+        "count": 1000000,
+        "type_id": 1001
+      }
+    ]
+  },
+  {
+    "content": {
+      "mail_template_id": 501032,
+      "reward": [
+        {
+          "count": 1,
+          "type_id": 1330001
+        },
+        {
+          "count": 500000,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 4,
+    "rank_reward_pool_id": 20201,
+    "show_items": [
+      {
+        "count": 1,
+        "type_id": 1330001
+      },
+      {
+        "count": 500000,
+        "type_id": 1001
+      }
+    ]
+  },
+  {
+    "content": {
+      "mail_template_id": 501032,
+      "reward": [
+        {
+          "count": 1,
+          "type_id": 1330001
+        },
+        {
+          "count": 100000,
+          "type_id": 1001
+        }
+      ]
+    },
+    "rank_or_score": 11,
+    "rank_reward_pool_id": 20201,
+    "show_items": [
+      {
+        "count": 1,
+        "type_id": 1330001
+      },
+      {
+        "count": 100000,
+        "type_id": 1001
+      }
+    ]
+  },
+  {
+    "content": {
+      "mail_template_id": 501032
+    },
+    "rank_or_score": 51,
+    "rank_reward_pool_id": 20201
+  },
+  {
+    "content": {
+      "score_change_type": "EN_RANK_SCORE_SETTLE_RECENT_BATTLE_COUNT"
+    },
+    "rank_or_score": 1,
+    "rank_reward_pool_id": 99999
+  },
+  {
+    "content": {
+      "score_change_type": "EN_RANK_SCORE_SETTLE_RECENT_BATTLE_COUNT"
+    },
+    "rank_or_score": 2001,
+    "rank_reward_pool_id": 99999
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "group_id": 1,
+    "name": "Tiers_Battle_Summary_1",
+    "type_id": 1
+  },
+  {
+    "group_id": 2,
+    "name": "Tiers_Battle_Summary_2",
+    "type_id": 2
+  },
+  {
+    "group_id": 3,
+    "name": "Tiers_Battle_Summary_3",
+    "type_id": 3
+  },
+  {
+    "group_id": 4,
+    "name": "Tiers_Battle_Summary_4",
+    "type_id": 4
+  },
+  {
+    "group_id": 5,
+    "name": "Tiers_Battle_Summary_8",
+    "type_id": 5
+  },
+  {
+    "group_id": 6,
+    "name": "Tiers_Battle_Summary_5",
+    "type_id": 6
+  },
+  {
+    "group_id": 7,
+    "name": "Tiers_Battle_Summary_6",
+    "type_id": 7
+  },
+  {
+    "group_id": 8,
+    "name": "Tiers_Battle_Summary_7",
+    "type_id": 14
+  },
+  {
+    "group_id": 9,
+    "name": "Tiers_Battle_Summary_9",
+    "type_id": 8
+  },
+  {
+    "group_id": 10,
+    "name": "Tiers_Battle_Summary_10",
+    "type_id": 9
+  },
+  {
+    "group_id": 8,
+    "name": "Tiers_Battle_Summary_7",
+    "type_id": 15
+  }
+]

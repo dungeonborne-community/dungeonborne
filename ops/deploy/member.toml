@@ -1,0 +1,11 @@
+[member]
+name = "deploy"
+kind = "ops"
+visibility = "owner"
+lang = "bash+powershell"
+version = "0"
+depends_on = ["core/backend"]
+description = "Production deploy (VM 203.0.113.10, Robot). scripts/ — deploy scripts from 14.11 as examples; robot/ — Robot files"
+
+[rules]
+# Deploying and restarting production only after the owner's explicit "yes", "softly" (maintenance), database backup before the deploy.

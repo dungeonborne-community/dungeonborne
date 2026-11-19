@@ -1,0 +1,17 @@
+{
+ "title": "Без каталога",
+ "notes": [],
+ "table": [
+  {
+   "name": "gear",
+   "title": "Предметы",
+   "layout": "wide",
+   "icon": "",
+   "editable": [
+    "count",
+    "rate",
+    "free"
+   ]
+  }
+ ]
+}

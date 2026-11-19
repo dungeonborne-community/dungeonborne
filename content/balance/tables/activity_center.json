@@ -1,0 +1,311 @@
+{
+  "type": "tgf.config.ExcelActivityCenter",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 20,
+    "hash_code": "sha256:b0591cfd82e9fbbd396cc9ed77106b24c5ac7e2b61f1ef89719498bd56af0e46",
+    "data_source": [
+      {
+        "file": "cd2e5d8e251bdd9eec25427669583af808771fa90f2625090bcfe7a3f9bdbdad",
+        "sheet": "fade5afa7138f1349d72eb1dae163f72c34bcee21d21357be5b81ac70a645029",
+        "count": 20
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 16500,
+      "priority": 1,
+      "start_time": "2024-02-02T17:30:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_loginRewards_T",
+      "red_dot_refresh": 1,
+      "expired_type": 1,
+      "type": "EN_ACTIVITY_CENTER_CUMULATIVE_LOGIN",
+      "rule_desc": "Act_loginRewards_R",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_NewerDailyLogin.T_ActCenter_Page_NewerDailyLogin"
+      ],
+      "description": "Act_loginRewards_D",
+      "popup_level": 3
+    },
+    {
+      "id": 16501,
+      "priority": 2,
+      "start_time": "2024-02-02T17:30:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_DailyEvents_T",
+      "red_dot_refresh": 1,
+      "type": "EN_ACTIVITY_CENTER_COMMON_DAILY",
+      "rule_desc": "Act_DailyEvents_R",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_ActivityDailyTask.T_ActCenter_Page_ActivityDailyTask"
+      ],
+      "description": "Act_DailyEvents_D",
+      "max_progress_quest_id": 1650116
+    },
+    {
+      "id": 16502,
+      "priority": 3,
+      "start_time": "2024-02-05T00:00:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_randomEvent_T",
+      "red_dot_refresh": 1,
+      "type": "EN_ACTIVITY_CENTER_RANDOM_ITEM",
+      "rule_desc": "Act_randomEvent_R",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_ActivityRandomReward.T_ActCenter_Page_ActivityRandomReward"
+      ],
+      "description": "Act_randomEvent_D",
+      "daily_limit": 1,
+      "reward_mail_template_id": 501002
+    },
+    {
+      "id": 16503,
+      "priority": 4,
+      "start_time": "2024-02-02T17:30:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_BountyHunter_T",
+      "red_dot_refresh": 1,
+      "type": "EN_ACTIVITY_CENTER_ADD_UP_X",
+      "rule_desc": "Act_BountyHunter_R",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_ActivityHunt.T_ActCenter_Page_ActivityHunt"
+      ],
+      "description": "Act_BountyHunter_D",
+      "max_progress_quest_id": 1650306,
+      "entitys": [
+        {
+          "k": 2,
+          "v": 106001
+        }
+      ]
+    },
+    {
+      "id": 16504,
+      "priority": 9,
+      "start_time": "2024-01-31T00:00:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_TeamUpChallenge_T",
+      "type": "EN_ACTIVITY_CENTER_PIC_TEMPLATE",
+      "rule_desc": "Act_TeamUpChallenge_R",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_ActivityRedirect_RLR.T_ActCenter_Page_ActivityRedirect_RLR"
+      ],
+      "description": "Act_TeamUpChallenge_D",
+      "main_pic": "/Game/TGF/UI/Textures/Dynamic/ActivityRedirect/T_ActivityRedirect_RLR.T_ActivityRedirect_RLR"
+    },
+    {
+      "id": 16505,
+      "priority": 6,
+      "start_time": "2024-02-08T00:00:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_DropBonus_T",
+      "red_dot_refresh": 1,
+      "type": "EN_ACTIVITY_CENTER_LEVEL_REFRESH_CONFIG",
+      "rule_desc": "Act_DropBonus_R",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_ActivityRateUp.T_ActCenter_Page_ActivityRateUp"
+      ],
+      "description": "Act_DropBonus_D,Act_DropBonus_A",
+      "client_custom_text": "40003015:Act_DropBonus_sign,40003016:Act_DropBonus_sign,40003017:Act_DropBonus_sign,40003018:Act_DropBonus_sign"
+    },
+    {
+      "id": 16506,
+      "priority": 7,
+      "start_time": "2024-02-02T17:30:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_pictures_T",
+      "type": "EN_ACTIVITY_CENTER_ONLY_SHOW",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_ActivitySchedule.T_ActCenter_Page_ActivitySchedule"
+      ]
+    },
+    {
+      "id": 16507,
+      "priority": 8,
+      "start_time": "2024-02-02T17:30:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_StreamerChallenge_T",
+      "type": "EN_ACTIVITY_CENTER_PIC_TEMPLATE",
+      "rule_desc": "Act_StreamerChallenge_R",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_ActivityRedirect_QMTZS.T_ActCenter_Page_ActivityRedirect_QMTZS"
+      ],
+      "description": "Act_StreamerChallenge_D",
+      "main_pic": "/Game/TGF/UI/Textures/Dynamic/ActivityRedirect/T_ActivityRedirect_QMTZS.T_ActivityRedirect_QMTZS"
+    },
+    {
+      "id": 16508,
+      "priority": 10,
+      "start_time": "2024-01-31T00:00:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_UGC_T",
+      "type": "EN_ACTIVITY_CENTER_PIC_TEMPLATE",
+      "rule_desc": "Act_UGC_R",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_ActivityRedirect_UGCZJ.T_ActCenter_Page_ActivityRedirect_UGCZJ"
+      ],
+      "description": "Act_UGC_D",
+      "main_pic": "/Game/TGF/UI/Textures/Dynamic/ActivityRedirect/T_ActivityRedirect_UGCZJ.T_ActivityRedirect_UGCZJ"
+    },
+    {
+      "id": 16509,
+      "priority": 11,
+      "start_time": "2024-01-31T00:00:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_Subscribe_T",
+      "type": "EN_ACTIVITY_CENTER_PIC_TEMPLATE",
+      "rule_desc": "Act_Subscribe_R",
+      "minor_pics": [
+        "/Game/TGF/UI/Textures/ActCenter/ActCenterPageImage/T_ActCenter_Page_ActivityRedirect_YJDY.T_ActCenter_Page_ActivityRedirect_YJDY"
+      ],
+      "description": "Act_Subscribe_D",
+      "main_pic": "/Game/TGF/UI/Textures/Dynamic/ActivityRedirect/T_ActivityRedirect_YJDY.T_ActivityRedirect_YJDY"
+    },
+    {
+      "id": 16510,
+      "start_time": "2024-07-18T00:00:00Z",
+      "end_time": "2032-01-01T00:00:00Z",
+      "expired_time": "2032-01-01T00:00:00Z",
+      "type": "EN_ACTIVITY_CENTER_STEAM_ACHIEVEMENT",
+      "on": true,
+      "client_hidden": true
+    },
+    {
+      "id": 16511,
+      "type": "EN_ACTIVITY_CENTER_STEAM_ACHIEVEMENT"
+    },
+    {
+      "id": 16512,
+      "type": "EN_ACTIVITY_CENTER_STEAM_ACHIEVEMENT"
+    },
+    {
+      "id": 16513,
+      "type": "EN_ACTIVITY_CENTER_STEAM_ACHIEVEMENT"
+    },
+    {
+      "id": 16514,
+      "type": "EN_ACTIVITY_CENTER_STEAM_ACHIEVEMENT"
+    },
+    {
+      "id": 16515,
+      "start_time": "2024-01-01T00:00:00Z",
+      "end_time": "2024-02-12T18:00:00Z",
+      "expired_time": "2024-02-12T18:00:00Z",
+      "name": "Act_BattlePass_T16515",
+      "type": "EN_ACTIVITY_CENTER_PASSPORT",
+      "minor_pics": [
+        "/Script/UMGEditor.WidgetBlueprint'/Game/TGF/UI/WBP/BattlePass/Entrance/WBP_BattlePass_HallEntrance.WBP_BattlePass_HallEntrance_C'",
+        "/Script/UMGEditor.WidgetBlueprint'/Game/TGF/UI/WBP/BattlePass/Badge/WBP_BattlePass_Badge.WBP_BattlePass_Badge_C'"
+      ],
+      "description": "Act_BattlePass_D16515",
+      "daily_limit": 1,
+      "main_pic": "/Game/TGF/UI/Textures/Dynamic/BattlePass/T_BattlePass_BG_01.T_BattlePass_BG_01",
+      "exp_item_type": 1500001,
+      "exp_cost": {
+        "k": 1001,
+        "v": 1
+      },
+      "daily_quest_cfg": {
+        "pool_id": 16515,
+        "init_cnt": 3,
+        "add_cnt": 1,
+        "max_cnt": 3
+      },
+      "grade_max_exp": {
+        "level_id": 59,
+        "max_exp": 5400,
+        "cycle_exp": 90
+      },
+      "custom_period_days": 7
+    },
+    {
+      "id": 16516,
+      "start_time": "2024-05-27T00:00:00Z",
+      "end_time": "2024-12-01T00:00:00Z",
+      "expired_time": "2024-12-01T00:00:00Z",
+      "name": "Act_BattlePass_T16515",
+      "type": "EN_ACTIVITY_CENTER_PASSPORT",
+      "minor_pics": [
+        "/Script/UMGEditor.WidgetBlueprint'/Game/TGF/UI/WBP/BattlePass/Entrance/WBP_BattlePass_HallEntrance.WBP_BattlePass_HallEntrance_C'",
+        "/Script/UMGEditor.WidgetBlueprint'/Game/TGF/UI/WBP/BattlePass/Badge/WBP_BattlePass_Badge.WBP_BattlePass_Badge_C'"
+      ],
+      "description": "Act_BattlePass_D16515",
+      "daily_limit": 1,
+      "main_pic": "/Game/TGF/UI/Textures/Dynamic/BattlePass/T_BattlePass_BG_01.T_BattlePass_BG_01",
+      "daily_quest_cfg": {
+        "pool_id": 16516,
+        "init_cnt": 3,
+        "add_cnt": 1,
+        "max_cnt": 3
+      },
+      "custom_period_days": 7
+    },
+    {
+      "id": 16517,
+      "priority": 1,
+      "start_time": "2024-08-08T08:30:00Z",
+      "end_time": "2024-08-31T23:59:59Z",
+      "expired_time": "2024-08-31T23:59:59Z",
+      "name": "Act_NewloginRewards_T",
+      "red_dot_refresh": 1,
+      "expired_type": 1,
+      "type": "EN_ACTIVITY_CENTER_CUMULATIVE_LOGIN",
+      "rule_desc": "Act_NewloginRewards_D",
+      "description": "Act_NewloginRewards_D",
+      "popup_level": 1,
+      "reward_mail_template_id": 501002,
+      "on": true
+    },
+    {
+      "id": 16600,
+      "start_time": "2024-08-16T00:00:00Z",
+      "end_time": "2036-12-01T00:00:00Z",
+      "expired_time": "2036-12-01T00:00:00Z",
+      "name": "Act_Bo5_T",
+      "type": "EN_ACTIVITY_CENTER_IMMACULATE_TRIAL",
+      "rule_desc": "Act_Bo5_R",
+      "on": true,
+      "activity_rule": 1,
+      "bind_levels": [
+        50000006
+      ],
+      "period": 1
+    },
+    {
+      "id": 16518,
+      "start_time": "2024-12-02T00:00:00Z",
+      "end_time": "2036-12-01T00:00:00Z",
+      "expired_time": "2036-12-01T00:00:00Z",
+      "name": "Act_BattlePass_T16515",
+      "type": "EN_ACTIVITY_CENTER_PASSPORT",
+      "minor_pics": [
+        "/Script/UMGEditor.WidgetBlueprint'/Game/TGF/UI/WBP/BattlePass/Entrance/WBP_BattlePass_HallEntrance.WBP_BattlePass_HallEntrance_C'",
+        "/Script/UMGEditor.WidgetBlueprint'/Game/TGF/UI/WBP/BattlePass/Badge/WBP_BattlePass_Badge.WBP_BattlePass_Badge_C'"
+      ],
+      "description": "Act_BattlePass_D16515",
+      "daily_limit": 1,
+      "main_pic": "/Game/TGF/UI/Textures/Dynamic/BattlePass/T_BattlePass_BG_01.T_BattlePass_BG_01",
+      "on": true,
+      "daily_quest_cfg": {
+        "pool_id": 16518,
+        "init_cnt": 3,
+        "add_cnt": 1,
+        "max_cnt": 3
+      },
+      "custom_period_days": 7
+    }
+  ]
+}

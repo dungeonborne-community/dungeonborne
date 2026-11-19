@@ -1,0 +1,78 @@
+[
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  },
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_NECKLACE"
+  },
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LEFTRING"
+  },
+  {
+    "group_id": 1,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_RIGHTRING"
+  },
+  {
+    "group_id": 2,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+  },
+  {
+    "group_id": 3,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+  },
+  {
+    "group_id": 4,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+  },
+  {
+    "group_id": 5,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+  },
+  {
+    "group_id": 6,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+  },
+  {
+    "group_id": 7,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+  },
+  {
+    "group_id": 8,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_NECKLACE"
+  },
+  {
+    "group_id": 9,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_LEFTRING"
+  },
+  {
+    "group_id": 10,
+    "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+  }
+]

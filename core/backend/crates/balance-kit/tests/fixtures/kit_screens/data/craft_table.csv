@@ -1,0 +1,5 @@
+﻿row,key,title,path,value,name
+0,101,,product[0].type_id,300,Зелье
+0,101,,product[0].count,1,
+0,101,,item_cost[0].type_id,7,Трава
+0,101,,item_cost[0].count,3,

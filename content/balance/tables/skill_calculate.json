@@ -1,0 +1,173 @@
+{
+  "type": "tgf.config.ExcelSkillCalculate",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 31,
+    "hash_code": "sha256:93f6e5e54f1d363b34e1ebb3db79bfada939f78a3a0236721105b015aec13af1",
+    "data_source": [
+      {
+        "file": "29b3370d55a5d6a583628b33a878c0dbbe69402001fa26d319c20fde00a67815",
+        "sheet": "f2daaa79b8eb789d33c117033ed202d5438188717feb9a0b142efb50cf6b9ebe",
+        "count": 31
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "GE_TGF_Damage_Instant_Fighter_QWhirlWind",
+      "formula_lua_id": "CareerSkillDamageNumberTextPhy",
+      "ge_key": "GE_TGF_Damage_Instant_Fighter_QWhirlWind.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_SwordMasterQ_Sub",
+      "formula_lua_id": "CareerSkillDamageNumberTextPhy",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_SwordMasterQ_Sub.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Heal_Basic_SwordMaster_PsycSwordAttackHeal",
+      "formula_lua_id": "HealBaseNumberText",
+      "ge_key": "GE_TGF_Heal_Basic_SwordMaster_PsycSwordAttackHeal.Heal.Base"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_SwordMasterE",
+      "formula_lua_id": "CareerSkillDamageNumberTextPhy",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_SwordMasterE.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Priest_Q_AOE",
+      "formula_lua_id": "CareerSkillDamageNumberTextLight",
+      "ge_key": "GE_TGF_Damage_Instant_Priest_Q_AOE.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_InstantDruidPanther_E_Human",
+      "formula_lua_id": "CareerSkillDamageNumberTextPhy",
+      "ge_key": "GE_TGF_Damage_InstantDruidPanther_E_Human.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_DruidPanther_E_Panther",
+      "formula_lua_id": "CareerSkillDamageNumberTextDark",
+      "ge_key": "GE_TGF_Damage_Instant_DruidPanther_E_Panther.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_DeathKnightQ",
+      "formula_lua_id": "CareerSkillDamageNumberDeathKnightQOnly",
+      "ge_key": "GE_TGF_Damage_Instant_DeathKnightQ.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_DeathKnightE",
+      "formula_lua_id": "CareerSkillDamageNumberTextDark",
+      "ge_key": "GE_TGF_Damage_Instant_DeathKnightE.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_WizardQ2_New",
+      "formula_lua_id": "CareerSkillDamageNumberTextFire",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_WizardQ2_New.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_WizardQ3",
+      "formula_lua_id": "CareerSkillDamageNumberTextFire",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_WizardQ3.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Wizard_E3_AddDamage",
+      "formula_lua_id": "CareerSkillDamageNumberTextFireBase",
+      "ge_key": "GE_TGF_Damage_Wizard_E3_AddDamage.Damage.Base"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Lich_Q_Ice",
+      "formula_lua_id": "CareerSkillDamageNumberTextIce",
+      "ge_key": "GE_TGF_Damage_Instant_Lich_Q_Ice.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Lich_Q_Ice_Stage2",
+      "formula_lua_id": "CareerSkillDamageNumberTextIce",
+      "ge_key": "GE_TGF_Damage_Instant_Lich_Q_Ice_Stage2.MoveFactorRate"
+    },
+    {
+      "id": "GE_Lich_FridgeHeal",
+      "formula_lua_id": "HealMaxHPRateNumberText",
+      "ge_key": "GE_Lich_FridgeHeal.Heal.MaxHPRate"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_MithrilRogue_Q",
+      "formula_lua_id": "CareerSkillDamageNumberTextPhy",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_MithrilRogue_Q.MoveFactor"
+    },
+    {
+      "id": "GE_TGF_Heal_Basic_MithrilPriest_Q",
+      "formula_lua_id": "HealBaseNumberText",
+      "ge_key": "GE_TGF_Heal_Basic_MithrilPriest_Q.Heal.Base"
+    },
+    {
+      "id": "GE_TGF_Buff_MithrilPriest_E_AddShield_1",
+      "formula_lua_id": "AddShieldBaseNumberText",
+      "ge_key": "GE_TGF_Buff_MithrilPriest_E_AddShield_1.AddShield.Base"
+    },
+    {
+      "id": "GE_TGF_Buff_MithrilPriest_E_MoveSpeed_Up",
+      "formula_lua_id": "MoveSpeedBaseNumberText",
+      "ge_key": "GE_TGF_Buff_MithrilPriest_E_MoveSpeed_Up.MoveSpeedBase"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_DeathKnightQ_Type2",
+      "formula_lua_id": "CareerSkillDamageNumberDeathKnightQOnly",
+      "ge_key": "GE_TGF_Damage_Instant_DeathKnightQ.MoveFactorRate2"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Lich_Q_DOT",
+      "formula_lua_id": "CareerSkillDamageNumberTextIceBase",
+      "ge_key": "GE_TGF_Damage_Instant_Lich_Q_DOT_Ice.Base"
+    },
+    {
+      "id": "GE_TGF_Damage_DOT_Lich_Q_DOT",
+      "formula_lua_id": "CareerSkillDamageNumberTextIceBase",
+      "ge_key": "GE_TGF_Damage_OverTime_Lich_Q_DOT_Ice.Base"
+    },
+    {
+      "id": "GE_Lich_DOT_Heal",
+      "formula_lua_id": "HealBaseNumberLichHealOnlyText",
+      "ge_key": "GE_TGF_Heal_Lich_Q_DOT.MoveFactor"
+    },
+    {
+      "id": "GE_TGF_Heal_Priest_Q_AOE_Lv1",
+      "formula_lua_id": "HealBaseNumberPriestHealOnlyText",
+      "ge_key": "GE_TGF_Heal_Priest_Q_AOE_Lv1.Heal.MoveFactor"
+    },
+    {
+      "id": "GE_TGF_Heal_Priest_Q_Single_Base",
+      "formula_lua_id": "HealBaseNumberPriestHealOnlyText",
+      "ge_key": "GE_TGF_Heal_Priest_Q_Single_Lv1.Heal.MoveFactor"
+    },
+    {
+      "id": "GE_TGF_Heal_Priest_Q1_Single_Base",
+      "formula_lua_id": "HealBaseNumberPriestHealOnlyText",
+      "ge_key": "GE_TGF_Heal_Priest_Q_Single_Lv2.Heal.MoveFactor"
+    },
+    {
+      "id": "GE_TGF_Shield_Lich_E_IceArmor",
+      "formula_lua_id": "AddShieldDPHNumberText",
+      "ge_key": "GE_TGF_Buff_Lich_E_IceArmor_AddShield_1.MoveFactor"
+    },
+    {
+      "id": "GE_TGF_Buff_Priest_E_AddAoeShield_1",
+      "formula_lua_id": "AddShieldDPHNumberText",
+      "ge_key": "GE_TGF_Buff_Priest_E_ShieldAOE_AddShield_1.MoveFactor"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Lich_Q_Dot",
+      "formula_lua_id": "CareerSkillDamageNumberTextIce",
+      "ge_key": "GE_TGF_Damage_Instant_Lich_Q_Dot.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_Damage_OverTime_Lich_Q_Dot",
+      "formula_lua_id": "CareerSkillDamageNumberTextIce",
+      "ge_key": "GE_TGF_Damage_OverTime_Lich_Q_Dot.MoveFactorRate"
+    },
+    {
+      "id": "GE_TGF_DruidPanther_E_Heal",
+      "formula_lua_id": "HealBaseNumberDruidPantherHealOnlyText",
+      "ge_key": "GE_TGF_DruidPanther_E_Heal.MoveFactorRate"
+    }
+  ]
+}

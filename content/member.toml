@@ -1,0 +1,16 @@
+[member]
+name = "content"
+kind = "content"
+visibility = "team"
+lang = "toml+json+csv"
+version = "0"
+depends_on = []
+description = "Data edited by people and Balance Studio: seasons/, balance/{tables,csv,kit}, loot/, names/, match_checks.toml"
+
+[commands]
+build = "cargo xtask balance build   # from core/backend; tables -> core/backend/ExcelConfig + pak game/paks/balance"
+check = "cargo xtask balance verify"
+
+[notes]
+# On prod the server reads ./seasons and ./match_checks.toml from its own folder (/opt/dungeonborne); locally — SEASONS_DIR and
+# MATCH_CHECKS_FILE (tools/stand/paths.ps1, Enter-Backend). Season builds (seasons/<id>/{kit,pak,server}) are not in git.

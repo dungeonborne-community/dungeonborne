@@ -1,0 +1,153 @@
+{
+  "type": "tgf.config.ExcelBattleAbilitySetDescription",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 27,
+    "hash_code": "sha256:274b4fe82dd7e43b1851bc5b99a4ca89cc573b84707f7fb711e196b39a3cc041",
+    "data_source": [
+      {
+        "file": "3cfda9ac749c13ada0f24b3d340c5c2d8da7231862106ff6c1a59423427cba28",
+        "sheet": "69ed5fabac3d291666cf5b25f68719a90686aad33bd081cf67ad70ef50dddbaa",
+        "count": 27
+      }
+    ]
+  },
+  "rows": [
+    {
+      "ability_set_id": 181055003,
+      "level": 1,
+      "description": "affix_legendary_181055003"
+    },
+    {
+      "ability_set_id": 181055001,
+      "level": 1,
+      "description": "affix_legendary_181055001"
+    },
+    {
+      "ability_set_id": 181056003,
+      "level": 1,
+      "description": "affix_legendary_181056003"
+    },
+    {
+      "ability_set_id": 181045000,
+      "level": 1,
+      "description": "affix_legendary_181045000"
+    },
+    {
+      "ability_set_id": 181046000,
+      "level": 1,
+      "description": "affix_legendary_181046000"
+    },
+    {
+      "ability_set_id": 181025001,
+      "level": 1,
+      "description": "affix_legendary_181025001"
+    },
+    {
+      "ability_set_id": 181026001,
+      "level": 1,
+      "description": "affix_legendary_181026001"
+    },
+    {
+      "ability_set_id": 181025000,
+      "level": 1,
+      "description": "affix_legendary_181025000"
+    },
+    {
+      "ability_set_id": 181015000,
+      "level": 1,
+      "description": "affix_legendary_181015000"
+    },
+    {
+      "ability_set_id": 181015001,
+      "level": 1,
+      "description": "affix_legendary_181015001"
+    },
+    {
+      "ability_set_id": 181016000,
+      "level": 1,
+      "description": "affix_legendary_181016000"
+    },
+    {
+      "ability_set_id": 181115001,
+      "level": 1,
+      "description": "affix_legendary_181115001"
+    },
+    {
+      "ability_set_id": 181116001,
+      "level": 1,
+      "description": "affix_legendary_181116001"
+    },
+    {
+      "ability_set_id": 181125000,
+      "level": 1,
+      "description": "affix_legendary_181125000"
+    },
+    {
+      "ability_set_id": 181125001,
+      "level": 1,
+      "description": "affix_legendary_181125001"
+    },
+    {
+      "ability_set_id": 181126001,
+      "level": 1,
+      "description": "affix_legendary_181126001"
+    },
+    {
+      "ability_set_id": 181035001,
+      "level": 1,
+      "description": "affix_legendary_181035001"
+    },
+    {
+      "ability_set_id": 181036001,
+      "level": 1,
+      "description": "affix_legendary_181036001"
+    },
+    {
+      "ability_set_id": 185016000,
+      "level": 1,
+      "description": "affix_legendary_185016000"
+    },
+    {
+      "ability_set_id": 185015002,
+      "level": 1,
+      "description": "affix_legendary_181035000"
+    },
+    {
+      "ability_set_id": 185015001,
+      "level": 1,
+      "description": "affix_legendary_185015001"
+    },
+    {
+      "ability_set_id": 185015000,
+      "level": 1,
+      "description": "affix_legendary_185015000"
+    },
+    {
+      "ability_set_id": 185016001,
+      "level": 1,
+      "description": "affix_legendary_181115000"
+    },
+    {
+      "ability_set_id": 185016002,
+      "level": 1,
+      "description": "affix_legendary_185016002"
+    },
+    {
+      "ability_set_id": 181085000,
+      "level": 1,
+      "description": "affix_legendary_181085000"
+    },
+    {
+      "ability_set_id": 189010001,
+      "level": 1,
+      "description": "affix_legendary_189010001"
+    },
+    {
+      "ability_set_id": 189010000,
+      "level": 1,
+      "description": "affix_legendary_189010000"
+    }
+  ]
+}

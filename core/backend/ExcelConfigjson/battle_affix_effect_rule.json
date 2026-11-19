@@ -1,0 +1,6734 @@
+[
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 101,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 5.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 2.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 2.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 2.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 102,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 103,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 7.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 5.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 104,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 105,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 106,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 107,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 108,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 109,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 110,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 111,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 112,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_SINGLE",
+    "id": 113,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_SINGLE",
+    "id": 114,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 202,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 7.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 4.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 204,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 7.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 5.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 206,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 7.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 4.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 3.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 208,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 7.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 5.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 210,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 212,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 214,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 216,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_1"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 1.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 218,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4004,
+    "effect": {
+      "offset": 1.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 1.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4002,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 1.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5004,
+    "effect": {
+      "offset": 1.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5005,
+    "effect": {
+      "offset": 1.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 220,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 0.5
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 222,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 0.75
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 224,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_2"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 2.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 2.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_ENHANCED_BOTH",
+    "id": 226,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1106,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1107,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1108,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1110,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1109,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1111,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1112,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1114,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1115,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1116,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1117,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1118,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1119,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1103,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1104,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 1105,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2007,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2008,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2009,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2010,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2011,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2012,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 2013,
+    "effect": {
+      "percentage": 10000
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 4003,
+    "effect": {
+      "offset": 2.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  },
+  {
+    "attribute_type": 5003,
+    "effect": {
+      "offset": 2.0
+    },
+    "group_id": "EN_AFFIX_CORRUPTION_GROUP_EPIC_BOTH",
+    "id": 228,
+    "random_condition_id": "EN_AFFIX_CORRUPTION_TYPE_3"
+  }
+]

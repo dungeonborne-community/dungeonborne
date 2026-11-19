@@ -1,0 +1,844 @@
+{
+  "type": "tgf.config.ExcelActivityCenterPassprotsReards",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 59,
+    "hash_code": "sha256:6af64b57549758428ac5eca87972a7baf58faffae29c609c12a7cde4e0add446",
+    "data_source": [
+      {
+        "file": "cd2e5d8e251bdd9eec25427669583af808771fa90f2625090bcfe7a3f9bdbdad",
+        "sheet": "4a357b4460694577d6c0550775b2f544c01b354fc9f427ee4b15faa0e93576cb",
+        "count": 59
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 1,
+      "activity_id": 16515,
+      "level": 1,
+      "exp_begin": 90,
+      "exp_end": 180,
+      "high_rewards_id": 20001,
+      "high_rewards": [
+        {
+          "type_id": 100016,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "activity_id": 16515,
+      "level": 2,
+      "exp_begin": 180,
+      "exp_end": 270,
+      "high_rewards_id": 20002,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "activity_id": 16515,
+      "level": 3,
+      "exp_begin": 270,
+      "exp_end": 360,
+      "high_rewards_id": 20003,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "activity_id": 16515,
+      "level": 4,
+      "exp_begin": 360,
+      "exp_end": 450,
+      "high_rewards_id": 20004,
+      "high_rewards": [
+        {
+          "type_id": 100013,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "activity_id": 16515,
+      "level": 5,
+      "exp_begin": 450,
+      "exp_end": 540,
+      "high_rewards_id": 20005,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "activity_id": 16515,
+      "level": 6,
+      "exp_begin": 540,
+      "exp_end": 630,
+      "high_rewards_id": 20006,
+      "high_rewards": [
+        {
+          "type_id": 100024,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "activity_id": 16515,
+      "level": 7,
+      "exp_begin": 630,
+      "exp_end": 720,
+      "high_rewards_id": 20007,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "activity_id": 16515,
+      "level": 8,
+      "exp_begin": 720,
+      "exp_end": 810,
+      "high_rewards_id": 20008,
+      "high_rewards": [
+        {
+          "type_id": 100017,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "activity_id": 16515,
+      "level": 9,
+      "exp_begin": 810,
+      "exp_end": 900,
+      "high_rewards_id": 20009,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "activity_id": 16515,
+      "level": 10,
+      "exp_begin": 900,
+      "exp_end": 990,
+      "high_rewards_id": 20010,
+      "high_rewards": [
+        {
+          "type_id": 100050,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "activity_id": 16515,
+      "level": 11,
+      "exp_begin": 990,
+      "exp_end": 1080,
+      "high_rewards_id": 20011,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "activity_id": 16515,
+      "level": 12,
+      "exp_begin": 1080,
+      "exp_end": 1170,
+      "high_rewards_id": 20012,
+      "high_rewards": [
+        {
+          "type_id": 100039,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "activity_id": 16515,
+      "level": 13,
+      "exp_begin": 1170,
+      "exp_end": 1260,
+      "high_rewards_id": 20013,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "activity_id": 16515,
+      "level": 14,
+      "exp_begin": 1260,
+      "exp_end": 1350,
+      "high_rewards_id": 20014,
+      "high_rewards": [
+        {
+          "type_id": 100016,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "activity_id": 16515,
+      "level": 15,
+      "exp_begin": 1350,
+      "exp_end": 1440,
+      "high_rewards_id": 20015,
+      "high_rewards": [
+        {
+          "type_id": 1037,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "activity_id": 16515,
+      "level": 16,
+      "exp_begin": 1440,
+      "exp_end": 1530,
+      "high_rewards_id": 20016,
+      "high_rewards": [
+        {
+          "type_id": 100013,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "activity_id": 16515,
+      "level": 17,
+      "exp_begin": 1530,
+      "exp_end": 1620,
+      "high_rewards_id": 20017,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "activity_id": 16515,
+      "level": 18,
+      "exp_begin": 1620,
+      "exp_end": 1710,
+      "high_rewards_id": 20018,
+      "high_rewards": [
+        {
+          "type_id": 100024,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "activity_id": 16515,
+      "level": 19,
+      "exp_begin": 1710,
+      "exp_end": 1800,
+      "high_rewards_id": 20019,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "activity_id": 16515,
+      "level": 20,
+      "exp_begin": 1800,
+      "exp_end": 1890,
+      "high_rewards_id": 20020,
+      "high_rewards": [
+        {
+          "type_id": 100017,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "activity_id": 16515,
+      "level": 21,
+      "exp_begin": 1890,
+      "exp_end": 1980,
+      "high_rewards_id": 20021,
+      "high_rewards": [
+        {
+          "type_id": 1037,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "activity_id": 16515,
+      "level": 22,
+      "exp_begin": 1980,
+      "exp_end": 2070,
+      "high_rewards_id": 20022,
+      "high_rewards": [
+        {
+          "type_id": 100013,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "activity_id": 16515,
+      "level": 23,
+      "exp_begin": 2070,
+      "exp_end": 2160,
+      "high_rewards_id": 20023,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "activity_id": 16515,
+      "level": 24,
+      "exp_begin": 2160,
+      "exp_end": 2250,
+      "high_rewards_id": 20024,
+      "high_rewards": [
+        {
+          "type_id": 1320001,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "activity_id": 16515,
+      "level": 25,
+      "exp_begin": 2250,
+      "exp_end": 2340,
+      "high_rewards_id": 20025,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "activity_id": 16515,
+      "level": 26,
+      "exp_begin": 2340,
+      "exp_end": 2430,
+      "high_rewards_id": 20026,
+      "high_rewards": [
+        {
+          "type_id": 100016,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "activity_id": 16515,
+      "level": 27,
+      "exp_begin": 2430,
+      "exp_end": 2520,
+      "high_rewards_id": 20027,
+      "high_rewards": [
+        {
+          "type_id": 1037,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "activity_id": 16515,
+      "level": 28,
+      "exp_begin": 2520,
+      "exp_end": 2610,
+      "high_rewards_id": 20028,
+      "high_rewards": [
+        {
+          "type_id": 100013,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "activity_id": 16515,
+      "level": 29,
+      "exp_begin": 2610,
+      "exp_end": 2700,
+      "high_rewards_id": 20029,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "activity_id": 16515,
+      "level": 30,
+      "exp_begin": 2700,
+      "exp_end": 2790,
+      "high_rewards_id": 20030,
+      "high_rewards": [
+        {
+          "type_id": 100024,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "activity_id": 16515,
+      "level": 31,
+      "exp_begin": 2790,
+      "exp_end": 2880,
+      "high_rewards_id": 20031,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "activity_id": 16515,
+      "level": 32,
+      "exp_begin": 2880,
+      "exp_end": 2970,
+      "high_rewards_id": 20032,
+      "high_rewards": [
+        {
+          "type_id": 100049,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "activity_id": 16515,
+      "level": 33,
+      "exp_begin": 2970,
+      "exp_end": 3060,
+      "high_rewards_id": 20033,
+      "high_rewards": [
+        {
+          "type_id": 1038,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "activity_id": 16515,
+      "level": 34,
+      "exp_begin": 3060,
+      "exp_end": 3150,
+      "high_rewards_id": 20034,
+      "high_rewards": [
+        {
+          "type_id": 100047,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "activity_id": 16515,
+      "level": 35,
+      "exp_begin": 3150,
+      "exp_end": 3240,
+      "high_rewards_id": 20035,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "activity_id": 16515,
+      "level": 36,
+      "exp_begin": 3240,
+      "exp_end": 3330,
+      "high_rewards_id": 20036,
+      "high_rewards": [
+        {
+          "type_id": 100040,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "activity_id": 16515,
+      "level": 37,
+      "exp_begin": 3330,
+      "exp_end": 3420,
+      "high_rewards_id": 20037,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "activity_id": 16515,
+      "level": 38,
+      "exp_begin": 3420,
+      "exp_end": 3510,
+      "high_rewards_id": 20038,
+      "high_rewards": [
+        {
+          "type_id": 100048,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "activity_id": 16515,
+      "level": 39,
+      "exp_begin": 3510,
+      "exp_end": 3600,
+      "high_rewards_id": 20039,
+      "high_rewards": [
+        {
+          "type_id": 1037,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "activity_id": 16515,
+      "level": 40,
+      "exp_begin": 3600,
+      "exp_end": 3690,
+      "high_rewards_id": 20040,
+      "high_rewards": [
+        {
+          "type_id": 100050,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "activity_id": 16515,
+      "level": 41,
+      "exp_begin": 3690,
+      "exp_end": 3780,
+      "high_rewards_id": 20041,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "activity_id": 16515,
+      "level": 42,
+      "exp_begin": 3780,
+      "exp_end": 3870,
+      "high_rewards_id": 20042,
+      "high_rewards": [
+        {
+          "type_id": 1035,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "activity_id": 16515,
+      "level": 43,
+      "exp_begin": 3870,
+      "exp_end": 3960,
+      "high_rewards_id": 20043,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "activity_id": 16515,
+      "level": 44,
+      "exp_begin": 3960,
+      "exp_end": 4050,
+      "high_rewards_id": 20044,
+      "high_rewards": [
+        {
+          "type_id": 100016,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "activity_id": 16515,
+      "level": 45,
+      "exp_begin": 4050,
+      "exp_end": 4140,
+      "high_rewards_id": 20045,
+      "high_rewards": [
+        {
+          "type_id": 1038,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "activity_id": 16515,
+      "level": 46,
+      "exp_begin": 4140,
+      "exp_end": 4230,
+      "high_rewards_id": 20046,
+      "high_rewards": [
+        {
+          "type_id": 100013,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "activity_id": 16515,
+      "level": 47,
+      "exp_begin": 4230,
+      "exp_end": 4320,
+      "high_rewards_id": 20047,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "activity_id": 16515,
+      "level": 48,
+      "exp_begin": 4320,
+      "exp_end": 4410,
+      "high_rewards_id": 20048,
+      "high_rewards": [
+        {
+          "type_id": 100038,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "activity_id": 16515,
+      "level": 49,
+      "exp_begin": 4410,
+      "exp_end": 4500,
+      "high_rewards_id": 20049,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "activity_id": 16515,
+      "level": 50,
+      "exp_begin": 4500,
+      "exp_end": 4590,
+      "high_rewards_id": 20050,
+      "high_rewards": [
+        {
+          "type_id": 1038,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "activity_id": 16515,
+      "level": 51,
+      "exp_begin": 4590,
+      "exp_end": 4680,
+      "high_rewards_id": 20051,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "activity_id": 16515,
+      "level": 52,
+      "exp_begin": 4680,
+      "exp_end": 4770,
+      "high_rewards_id": 20052,
+      "high_rewards": [
+        {
+          "type_id": 100017,
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "activity_id": 16515,
+      "level": 53,
+      "exp_begin": 4770,
+      "exp_end": 4860,
+      "high_rewards_id": 20053,
+      "high_rewards": [
+        {
+          "type_id": 1035,
+          "count": 3
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "activity_id": 16515,
+      "level": 54,
+      "exp_begin": 4860,
+      "exp_end": 4950,
+      "high_rewards_id": 20054,
+      "high_rewards": [
+        {
+          "type_id": 100016,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "activity_id": 16515,
+      "level": 55,
+      "exp_begin": 4950,
+      "exp_end": 5040,
+      "high_rewards_id": 20055,
+      "high_rewards": [
+        {
+          "type_id": 1038,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "activity_id": 16515,
+      "level": 56,
+      "exp_begin": 5040,
+      "exp_end": 5130,
+      "high_rewards_id": 20056,
+      "high_rewards": [
+        {
+          "type_id": 100013,
+          "count": 5
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "activity_id": 16515,
+      "level": 57,
+      "exp_begin": 5130,
+      "exp_end": 5220,
+      "high_rewards_id": 20057,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "activity_id": 16515,
+      "level": 58,
+      "exp_begin": 5220,
+      "exp_end": 5310,
+      "high_rewards_id": 20058,
+      "high_rewards": [
+        {
+          "type_id": 1301003,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "activity_id": 16515,
+      "level": 59,
+      "exp_begin": 5310,
+      "exp_end": 5400,
+      "high_rewards_id": 20059,
+      "high_rewards": [
+        {
+          "type_id": 1001,
+          "count": 500
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "type": "tgf.config.ExcelImmaculateTrialGrade",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 10,
+    "hash_code": "sha256:3c097688088f6c8dd25ae9ba41e5b877c0cdb5e8a9e46eadf25657bb475e897d",
+    "data_source": [
+      {
+        "file": "ba654e0208ee5aa2afca1c7a15438e10e297d89fc559878974e7339c2f89ac76",
+        "sheet": "da8303e39ee8d7e1f674a96fa4f42b02046058bb961ce69d0105bebd628356e0",
+        "count": 10
+      }
+    ]
+  },
+  "rows": [
+    {
+      "grade_id": 101,
+      "activity_rule_id": 1,
+      "reached_cond": {
+        "win_range": {
+          "min_count": 7,
+          "max_count": 7
+        },
+        "failed_range": {}
+      },
+      "first_rewards": [
+        {
+          "type_id": 100098,
+          "count": 1
+        },
+        {
+          "type_id": 631103,
+          "count": 1
+        }
+      ],
+      "random_reward_id": 100008,
+      "icon": "Icon_EquipmentChest4",
+      "str_desc": "ImmaculateTrial_t_1",
+      "display_cond": {
+        "win_count": 7
+      },
+      "display_quantity": 2,
+      "show_items": [
+        {
+          "type_id": 100097,
+          "count": 1
+        },
+        {
+          "type_id": 631308,
+          "count": 1
+        }
+      ],
+      "first_show_rewards": [
+        {
+          "type_id": 100098,
+          "count": 1
+        },
+        {
+          "type_id": 631311,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "grade_id": 102,
+      "activity_rule_id": 1,
+      "reached_cond": {
+        "win_range": {
+          "min_count": 7,
+          "max_count": 7
+        },
+        "failed_range": {
+          "min_count": 1,
+          "max_count": 1
+        }
+      },
+      "random_reward_id": 100009,
+      "icon": "Icon_EquipmentChest4",
+      "str_desc": "ImmaculateTrial_t_2",
+      "display_cond": {
+        "win_count": 7,
+        "failed_count": 1
+      },
+      "display_quantity": 2,
+      "show_items": [
+        {
+          "type_id": 1001,
+          "count": 100000
+        },
+        {
+          "type_id": 631309,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "grade_id": 103,
+      "activity_rule_id": 1,
+      "reached_cond": {
+        "win_range": {
+          "min_count": 7,
+          "max_count": 7
+        },
+        "failed_range": {
+          "min_count": 2,
+          "max_count": 2
+        }
+      },
+      "random_reward_id": 100010,
+      "icon": "Icon_EquipmentChest4",
+      "str_desc": "ImmaculateTrial_t_3",
+      "display_cond": {
+        "win_count": 7,
+        "failed_count": 2
+      },
+      "display_quantity": 3,
+      "show_items": [
+        {
+          "type_id": 1001,
+          "count": 80000
+        },
+        {
+          "type_id": 631310,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "grade_id": 104,
+      "activity_rule_id": 1,
+      "reached_cond": {
+        "win_range": {
+          "min_count": 6,
+          "max_count": 6
+        },
+        "failed_range": {
+          "max_count": 3
+        }
+      },
+      "random_reward_id": 100007,
+      "icon": "Icon_EquipmentChest4",
+      "str_desc": "ImmaculateTrial_t_4",
+      "display_cond": {
+        "win_count": 6,
+        "failed_count": -1
+      },
+      "display_quantity": 4,
+      "show_items": [
+        {
+          "type_id": 1001,
+          "count": 80000
+        },
+        {
+          "type_id": 631307,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "grade_id": 105,
+      "activity_rule_id": 1,
+      "reached_cond": {
+        "win_range": {
+          "min_count": 5,
+          "max_count": 5
+        },
+        "failed_range": {
+          "max_count": 3
+        }
+      },
+      "random_reward_id": 100006,
+      "icon": "Icon_EquipmentChest4",
+      "str_desc": "ImmaculateTrial_t_5",
+      "display_cond": {
+        "win_count": 5,
+        "failed_count": -1
+      },
+      "display_quantity": 5,
+      "show_items": [
+        {
+          "type_id": 1001,
+          "count": 50000
+        },
+        {
+          "type_id": 631306,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "grade_id": 106,
+      "activity_rule_id": 1,
+      "reached_cond": {
+        "win_range": {
+          "min_count": 4,
+          "max_count": 4
+        },
+        "failed_range": {
+          "max_count": 3
+        }
+      },
+      "random_reward_id": 100005,
+      "icon": "Icon_EquipmentChest3",
+      "str_desc": "ImmaculateTrial_t_6",
+      "display_cond": {
+        "win_count": 4,
+        "failed_count": -1
+      },
+      "display_quantity": 6,
+      "show_items": [
+        {
+          "type_id": 1001,
+          "count": 50000
+        },
+        {
+          "type_id": 631305,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "grade_id": 107,
+      "activity_rule_id": 1,
+      "reached_cond": {
+        "win_range": {
+          "min_count": 3,
+          "max_count": 3
+        },
+        "failed_range": {
+          "max_count": 3
+        }
+      },
+      "random_reward_id": 100004,
+      "icon": "Icon_EquipmentChest3",
+      "str_desc": "ImmaculateTrial_t_7",
+      "display_cond": {
+        "win_count": 3,
+        "failed_count": -1
+      },
+      "display_quantity": 6,
+      "show_items": [
+        {
+          "type_id": 1001,
+          "count": 30000
+        },
+        {
+          "type_id": 631304,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "grade_id": 108,
+      "activity_rule_id": 1,
+      "reached_cond": {
+        "win_range": {
+          "min_count": 2,
+          "max_count": 2
+        },
+        "failed_range": {
+          "max_count": 3
+        }
+      },
+      "random_reward_id": 100003,
+      "icon": "Icon_EquipmentChest3",
+      "str_desc": "ImmaculateTrial_t_8",
+      "display_cond": {
+        "win_count": 2,
+        "failed_count": -1
+      },
+      "display_quantity": 7,
+      "show_items": [
+        {
+          "type_id": 1001,
+          "count": 25000
+        },
+        {
+          "type_id": 631303,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "grade_id": 109,
+      "activity_rule_id": 1,
+      "reached_cond": {
+        "win_range": {
+          "min_count": 1,
+          "max_count": 1
+        },
+        "failed_range": {
+          "max_count": 3
+        }
+      },
+      "random_reward_id": 100002,
+      "icon": "Icon_EquipmentChest3",
+      "str_desc": "ImmaculateTrial_t_9",
+      "display_cond": {
+        "win_count": 1,
+        "failed_count": -1
+      },
+      "display_quantity": 7,
+      "show_items": [
+        {
+          "type_id": 1001,
+          "count": 20000
+        },
+        {
+          "type_id": 631302,
+          "count": 1
+        }
+      ]
+    },
+    {
+      "grade_id": 110,
+      "activity_rule_id": 1,
+      "random_reward_id": 100001,
+      "icon": "Icon_EquipmentChest3",
+      "str_desc": "ImmaculateTrial_t_10",
+      "display_cond": {
+        "win_count": -1,
+        "failed_count": -1
+      },
+      "display_quantity": 8,
+      "show_items": [
+        {
+          "type_id": 1001,
+          "count": 15000
+        },
+        {
+          "type_id": 631301,
+          "count": 1
+        }
+      ],
+      "reached_cond": {
+        "failed_range": {
+          "max_count": 3
+        },
+        "win_range": {}
+      }
+    }
+  ]
+}

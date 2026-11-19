@@ -1,0 +1,170 @@
+[
+  {
+    "count_limt": 99,
+    "count_max_lmit": 99,
+    "great_success_multiple": 2,
+    "id": 101,
+    "item_cost": [
+      {
+        "count": 3,
+        "type_id": 100060
+      }
+    ],
+    "item_type": 2,
+    "product": [
+      {
+        "count": 1,
+        "type_id": 100016
+      }
+    ],
+    "tag": 1,
+    "time_cost": 1
+  },
+  {
+    "count_limt": 99,
+    "count_max_lmit": 99,
+    "great_success_multiple": 2,
+    "id": 102,
+    "item_cost": [
+      {
+        "count": 3,
+        "type_id": 100060
+      }
+    ],
+    "item_type": 1,
+    "product": [
+      {
+        "count": 1,
+        "type_id": 100013
+      }
+    ],
+    "tag": 1,
+    "time_cost": 1
+  },
+  {
+    "count_limt": 99,
+    "count_max_lmit": 99,
+    "great_success_multiple": 2,
+    "id": 103,
+    "item_cost": [
+      {
+        "count": 3,
+        "type_id": 100060
+      }
+    ],
+    "item_type": 1,
+    "product": [
+      {
+        "count": 1,
+        "type_id": 100018
+      }
+    ],
+    "tag": 1,
+    "time_cost": 1
+  },
+  {
+    "count_limt": 99,
+    "count_max_lmit": 99,
+    "great_success_multiple": 2,
+    "id": 10000,
+    "item_cost": [
+      {
+        "count": 3,
+        "type_id": 100066
+      }
+    ],
+    "item_type": 1,
+    "product": [
+      {
+        "count": 1,
+        "type_id": 100047
+      }
+    ],
+    "tag": 3,
+    "time_cost": 1
+  },
+  {
+    "count_limt": 99,
+    "count_max_lmit": 99,
+    "great_success_multiple": 2,
+    "id": 10001,
+    "item_cost": [
+      {
+        "count": 3,
+        "type_id": 100066
+      }
+    ],
+    "item_type": 1,
+    "product": [
+      {
+        "count": 1,
+        "type_id": 100048
+      }
+    ],
+    "tag": 3,
+    "time_cost": 1
+  },
+  {
+    "count_limt": 99,
+    "count_max_lmit": 99,
+    "great_success_multiple": 2,
+    "id": 10002,
+    "item_cost": [
+      {
+        "count": 3,
+        "type_id": 100066
+      }
+    ],
+    "item_type": 1,
+    "product": [
+      {
+        "count": 1,
+        "type_id": 100049
+      }
+    ],
+    "tag": 3,
+    "time_cost": 1
+  },
+  {
+    "count_limt": 99,
+    "count_max_lmit": 99,
+    "great_success_multiple": 2,
+    "id": 10003,
+    "item_cost": [
+      {
+        "count": 3,
+        "type_id": 100066
+      }
+    ],
+    "item_type": 1,
+    "product": [
+      {
+        "count": 1,
+        "type_id": 100050
+      }
+    ],
+    "tag": 3,
+    "time_cost": 1
+  },
+  {
+    "count_limt": 99,
+    "count_max_lmit": 99,
+    "great_success_multiple": 2,
+    "id": 10004,
+    "item_cost": [
+      {
+        "count": 3,
+        "type_id": 100066
+      }
+    ],
+    "item_type": 2,
+    "product": [
+      {
+        "count": 1,
+        "type_id": 100017
+      }
+    ],
+    "tag": 3,
+    "time_cost": 1
+  }
+]

@@ -1,0 +1,9 @@
+﻿row,key,title,path,value,name
+0,1,Меч,item_id,100,Меч
+0,1,Меч,market_id,2,
+0,1,Меч,price_def,900,
+0,1,Меч,tax_percentage,25,
+1,2,Меч,item_id,100,Меч
+1,2,Меч,market_id,1,
+1,2,Меч,price_def,800,
+1,2,Меч,tax_percentage,25,

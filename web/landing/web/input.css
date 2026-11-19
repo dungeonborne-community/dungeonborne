@@ -1,0 +1,1359 @@
+@import "tailwindcss" source(none);
+@import "./fonts.css";
+@source "./index.html";
+@source "./site.js";
+
+/* Components — as in the launcher (launcher/ui/input.css), the palette is our own (see @theme): the game font, buttons, panels, tabs, sparks.
+   When they change there — carry them over here. Page differences: font-display swap, icons are our own SVG (phones have no Segoe
+   Fluent Icons), the page scrolls instead of the window. Images — only our own SVG in img/ (portals, maps), class crests —
+   in the index.html sprite; no borrowed art.
+
+   How it is built: everything that repeats (text sizes, letter spacing, shadows, portal colours, animations) is a token in @theme,
+   and the markup uses ordinary Tailwind classes (text-copy, tracking-caps, shadow-glow, animate-float, aspect-art…).
+   Compound parts used many times on the page are @utility (card, btn-*, reveal, lift…). No bare CSS outside utilities. */
+
+@theme {
+  /* the game font everywhere, as in launcher 1.6.1: Libre Baskerville + Noto Serif for Cyrillic (fonts.css) */
+  --font-sans: "Dungeonborne Serif", Georgia, serif;
+  --font-display: "Dungeonborne Serif", Georgia, serif;
+  --font-mono: "Cascadia Mono", Consolas, ui-monospace, monospace;
+
+  /* Palette — the launcher themes (launcher/ui/input.css): "Torch" (here, default), "Crypt" and "Blood" (below, [data-theme]).
+     site.js sets the theme on <html> by the section currently on screen (data-zone), the old theme dissolves into the new one (View Transitions).
+     The names are the old ones, so the markup and the utilities do not change. */
+  /* stone: from the background to the button */
+  --color-mica: #0b0907;
+  --color-layer: #14110d;
+  --color-card: #1c1813;
+  --color-card-hi: #27211a;
+  --color-stone: #322a21;
+  --color-line: #3b3127;
+  --color-line-hi: #6b5638;
+  /* text: parchment; the second to fourth are lighter than in the launcher (on the site they are read for long, the user's decision of 13.11) */
+  --color-fg: #efe6d6;
+  --color-fg-2: #d4c9b6;
+  --color-fg-3: #afa392;
+  --color-fg-4: #7c7264;
+  /* theme accent: torch gold */
+  --color-accent: #e0a84a;
+  --color-accent-strong: #9b6624;
+  --color-accent-text: #f6cd7a;
+  --color-accent-ink: #1d1206;
+  /* the theme's second colour (undead, "New", the circle on the first screen) */
+  --color-arcane: #72b8cc;
+  --color-arcane-strong: #3f7f96;
+  /* states: do not coincide with the accents */
+  --color-ok: #86b66b;
+  --color-ok-bg: #1d2615;
+  --color-caution: #e7793f;
+  --color-critical: #e0645a;
+
+  --radius-ctl: 4px;
+  --radius-ovl: 6px;
+
+  /* ---- page ---- */
+  /* portal colours: blue — the way out, red — deeper, purple — the throne room (the same as in img/*.svg) */
+  --color-portal-blue: #5aa8ff;
+  --color-portal-red: #ff7a4c;
+  --color-portal-violet: #b07cff;
+
+  /* text: labels in the launcher window, tags, descriptions in cards, the first screen heading */
+  --text-3xs: 0.625rem;
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1.4;
+  --text-label: 0.8125rem;
+  --text-label--line-height: 1.45;
+  --text-copy: 0.9375rem;
+  --text-copy--line-height: 1.65;
+  --text-hero: clamp(2.4rem, 7.5vw, 4rem);
+  --text-hero--line-height: 1.05;
+  /* small-caps letter spacing: tags and labels; the project name */
+  --tracking-caps: 0.15em;
+  --tracking-brand: 0.2em;
+
+  /* gold glow, header shadow, card lift, shadow under the text on the "art" */
+  --shadow-glow: 0 0 12px -4px color-mix(in srgb, var(--glow-c) 80%, transparent);
+  --shadow-header: 0 10px 30px -12px rgb(0 0 0 / 0.9);
+  --shadow-lift: inset 0 1px 0 rgb(255 255 255 / 0.05), 0 18px 40px -18px rgb(0 0 0 / 0.9),
+    0 0 36px -16px color-mix(in srgb, var(--glow-c) 55%, transparent);
+  --shadow-underline: inset 0 -2px 0 var(--color-accent);
+  --drop-shadow-ink: 0 2px 12px rgb(0 0 0 / 0.8);
+
+  /* image slots (img/README.md): "About the game" chapters 16:10; maps and classes — the built-in aspect-video */
+  --aspect-art: 16 / 10;
+  --ease-glide: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* the raid circle behind the launcher window, window floating, sparks above "Play", the scrollbar */
+  --animate-float: float 9s ease-in-out infinite;
+  --animate-ember: ember-rise 5s linear infinite;
+  --animate-progress: progress linear both;
+  --animate-rail: rail linear both;
+  --animate-panel-in: panel-in 0.5s var(--ease-glide) both;
+  /* splash screen: tile pulse and running bar; image skeleton — shimmer */
+  --animate-boot-pulse: boot-pulse 1.4s ease-in-out infinite;
+  --animate-boot-bar: boot-bar 1.1s ease-in-out infinite;
+  --animate-shimmer: shimmer 1.6s linear infinite;
+
+  @keyframes boot-pulse {
+    50% {
+      box-shadow: 0 0 34px -2px var(--glow-c);
+      scale: 1.04;
+    }
+  }
+  @keyframes boot-bar {
+    from {
+      translate: -100% 0;
+    }
+    to {
+      translate: 300% 0;
+    }
+  }
+  @keyframes boot-out {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  @keyframes shimmer {
+    from {
+      translate: -100% 0;
+    }
+    to {
+      translate: 100% 0;
+    }
+  }
+
+  @keyframes float {
+    50% {
+      translate: 0 -8px;
+    }
+  }
+  @keyframes ember-rise {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    12% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translate(var(--dx, 10px), -170px);
+      opacity: 0;
+    }
+  }
+  @keyframes progress {
+    from {
+      scale: 0 1;
+    }
+  }
+  @keyframes panel-in {
+    from {
+      opacity: 0;
+      translate: 16px 0;
+    }
+  }
+  @keyframes rail {
+    from {
+      scale: 1 0;
+    }
+  }
+}
+
+/* Motion: the motion-safe / motion-reduce / animated variants respect the "Animations" button in the header (site.js): <html
+   data-motion="on"> turns motion on even if animation effects are off in Windows (prefers-reduced-motion: reduce).
+   animated — reveal on scroll: only with the script and when motion is allowed, otherwise everything is visible at once. */
+@custom-variant motion-safe {
+  @media (prefers-reduced-motion: no-preference) {
+    @slot;
+  }
+  [data-motion="on"] & {
+    @slot;
+  }
+}
+@custom-variant motion-reduce {
+  @media (prefers-reduced-motion: reduce) {
+    :root:not([data-motion="on"]) & {
+      @slot;
+    }
+  }
+}
+@custom-variant animated {
+  @media (scripting: enabled) and (prefers-reduced-motion: no-preference) {
+    @slot;
+  }
+  [data-motion="on"] & {
+    @slot;
+  }
+}
+
+:root {
+  /* accent glow for shadows and rays: rgb without alpha; the background "art" (light spot and base); sparks and dust */
+  --glow: 224 168 74;
+  --glow-c: rgb(224 168 74); /* the same glow as a colour: for shadows and highlights in CSS */
+  --art-a: #3a2412;
+  --art-b: #120c08;
+  --ember: #ff9a3c;
+  --noise: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+
+/* ----------------------------------------------------------------------------------------------- launcher themes */
+/* Themes — values from launcher/ui/input.css. "Torch" is the default (@theme and :root above) and once more as a block here: so that
+   an element with data-theme="torch" inside another theme (the chapter I diamond on the thread while the thread is in "Blood") is in "Torch".
+   Outside the layers, hence stronger than :root. data-theme is set in the markup on the sections and on the shared parts (site.js). */
+[data-theme="torch"] {
+  --color-mica: #0b0907;
+  --color-layer: #14110d;
+  --color-card: #1c1813;
+  --color-card-hi: #27211a;
+  --color-stone: #322a21;
+  --color-line: #3b3127;
+  --color-line-hi: #6b5638;
+  --color-fg: #efe6d6;
+  --color-fg-2: #d4c9b6;
+  --color-fg-3: #afa392;
+  --color-fg-4: #7c7264;
+  --color-accent: #e0a84a;
+  --color-accent-strong: #9b6624;
+  --color-accent-text: #f6cd7a;
+  --color-accent-ink: #1d1206;
+  --color-arcane: #72b8cc;
+  --color-arcane-strong: #3f7f96;
+  --glow: 224 168 74;
+  --glow-c: rgb(224 168 74);
+  --art-a: #3a2412;
+  --art-b: #120c08;
+  --ember: #ff9a3c;
+}
+[data-theme="crypt"] {
+  --color-mica: #07090c;
+  --color-layer: #0d1116;
+  --color-card: #131920;
+  --color-card-hi: #1b232c;
+  --color-stone: #232d38;
+  --color-line: #2a3542;
+  --color-line-hi: #4d6276;
+  --color-fg: #e4ebf2;
+  --color-fg-2: #c1cbd6;
+  --color-fg-3: #9ba7b2;
+  --color-fg-4: #6a7580;
+  --color-accent: #8cc8dc;
+  --color-accent-strong: #3f7f96;
+  --color-accent-text: #c3ebf7;
+  --color-accent-ink: #061218;
+  --color-arcane: #b49ae6;
+  --color-arcane-strong: #6b55a0;
+  --glow: 140 200 220;
+  --glow-c: rgb(140 200 220);
+  --art-a: #10202c;
+  --art-b: #06090c;
+  --ember: #9fd8ff;
+}
+[data-theme="blood"] {
+  --color-mica: #0a0606;
+  --color-layer: #130c0c;
+  --color-card: #1b1111;
+  --color-card-hi: #251717;
+  --color-stone: #301d1d;
+  --color-line: #3d2424;
+  --color-line-hi: #7a3a35;
+  --color-fg: #f1e4dc;
+  --color-fg-2: #d9c5bc;
+  --color-fg-3: #b39f97;
+  --color-fg-4: #7f6e68;
+  --color-accent: #c9413a;
+  --color-accent-strong: #7e211d;
+  --color-accent-text: #ef7466;
+  --color-accent-ink: #fff3ee;
+  --color-arcane: #d6ad5c;
+  --color-arcane-strong: #8a6a2a;
+  --glow: 201 65 58;
+  --glow-c: rgb(201 65 58);
+  --art-a: #3a1010;
+  --art-b: #0d0505;
+  --ember: #ff5a3c;
+}
+/* Theme change without repainting the page. The section theme is written in the markup (data-theme next to data-zone): a section always
+   has its own colours, at the boundary both are visible. While scrolling only the shared parts change theme — header, dots on the right, chapter thread
+   ([data-theme-follow]) — with easing (below, --tp). Background — three ready layers (.atmos-layer), switched by opacity; the shader
+   light blends by itself. */
+
+
+/* Decoration stops when it is not visible: the first screen went off the edge ([data-offscreen] on .hero-pin) or nobody is using the window
+   ([data-calm] on <html>: the window is not focused and the mouse is not over the page — e.g. DevTools or another window is open).
+   CSS animations run at the monitor rate and without this drive the GPU for nothing; the shader (atmos.js) stops too. */
+[data-calm] .embers > i,
+[data-calm] .motion-safe\:animate-float,
+[data-offscreen] .embers > i,
+[data-offscreen] .motion-safe\:animate-float {
+  animation-play-state: paused;
+}
+
+/* Theme change of the shared parts with easing. site.js sets data-from (what it was) and data-to (what it became) and restarts the progress
+   animation --tp 0 → 1: 0.6 s, ease-out — fast start, soft fade-out. --tp is driven by site.js every frame, not by a CSS animation:
+   Chrome does not recompute the colour of visited anchor links during a CSS animation (the text got stuck whitish). Colours and glow are mixed in
+   OKLCH (around the hue circle: light blue → red via purple, without the grey-white middle that RGB has). A new current
+   chapter gets the new theme at once (site.js). Without motion there is no animation: --tp is 1 at once. The values below are assembled from the
+   [data-theme] blocks above — when you change a theme colour there, change it here too. */
+@property --tp {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 1;
+}
+[data-theme-follow][data-from="torch"] {
+  --f-mica: #0b0907;
+  --f-layer: #14110d;
+  --f-card: #1c1813;
+  --f-card-hi: #27211a;
+  --f-stone: #322a21;
+  --f-line: #3b3127;
+  --f-line-hi: #6b5638;
+  --f-fg: #efe6d6;
+  --f-fg-2: #d4c9b6;
+  --f-fg-3: #afa392;
+  --f-fg-4: #7c7264;
+  --f-accent: #e0a84a;
+  --f-accent-strong: #9b6624;
+  --f-accent-text: #f6cd7a;
+  --f-accent-ink: #1d1206;
+  --f-arcane: #72b8cc;
+  --f-arcane-strong: #3f7f96;
+  --f-glowc: rgb(224 168 74);
+}
+[data-theme-follow][data-from="crypt"] {
+  --f-mica: #07090c;
+  --f-layer: #0d1116;
+  --f-card: #131920;
+  --f-card-hi: #1b232c;
+  --f-stone: #232d38;
+  --f-line: #2a3542;
+  --f-line-hi: #4d6276;
+  --f-fg: #e4ebf2;
+  --f-fg-2: #c1cbd6;
+  --f-fg-3: #9ba7b2;
+  --f-fg-4: #6a7580;
+  --f-accent: #8cc8dc;
+  --f-accent-strong: #3f7f96;
+  --f-accent-text: #c3ebf7;
+  --f-accent-ink: #061218;
+  --f-arcane: #b49ae6;
+  --f-arcane-strong: #6b55a0;
+  --f-glowc: rgb(140 200 220);
+}
+[data-theme-follow][data-from="blood"] {
+  --f-mica: #0a0606;
+  --f-layer: #130c0c;
+  --f-card: #1b1111;
+  --f-card-hi: #251717;
+  --f-stone: #301d1d;
+  --f-line: #3d2424;
+  --f-line-hi: #7a3a35;
+  --f-fg: #f1e4dc;
+  --f-fg-2: #d9c5bc;
+  --f-fg-3: #b39f97;
+  --f-fg-4: #7f6e68;
+  --f-accent: #c9413a;
+  --f-accent-strong: #7e211d;
+  --f-accent-text: #ef7466;
+  --f-accent-ink: #fff3ee;
+  --f-arcane: #d6ad5c;
+  --f-arcane-strong: #8a6a2a;
+  --f-glowc: rgb(201 65 58);
+}
+[data-theme-follow][data-to="torch"] {
+  --t-mica: #0b0907;
+  --t-layer: #14110d;
+  --t-card: #1c1813;
+  --t-card-hi: #27211a;
+  --t-stone: #322a21;
+  --t-line: #3b3127;
+  --t-line-hi: #6b5638;
+  --t-fg: #efe6d6;
+  --t-fg-2: #d4c9b6;
+  --t-fg-3: #afa392;
+  --t-fg-4: #7c7264;
+  --t-accent: #e0a84a;
+  --t-accent-strong: #9b6624;
+  --t-accent-text: #f6cd7a;
+  --t-accent-ink: #1d1206;
+  --t-arcane: #72b8cc;
+  --t-arcane-strong: #3f7f96;
+  --t-glowc: rgb(224 168 74);
+}
+[data-theme-follow][data-to="crypt"] {
+  --t-mica: #07090c;
+  --t-layer: #0d1116;
+  --t-card: #131920;
+  --t-card-hi: #1b232c;
+  --t-stone: #232d38;
+  --t-line: #2a3542;
+  --t-line-hi: #4d6276;
+  --t-fg: #e4ebf2;
+  --t-fg-2: #c1cbd6;
+  --t-fg-3: #9ba7b2;
+  --t-fg-4: #6a7580;
+  --t-accent: #8cc8dc;
+  --t-accent-strong: #3f7f96;
+  --t-accent-text: #c3ebf7;
+  --t-accent-ink: #061218;
+  --t-arcane: #b49ae6;
+  --t-arcane-strong: #6b55a0;
+  --t-glowc: rgb(140 200 220);
+}
+[data-theme-follow][data-to="blood"] {
+  --t-mica: #0a0606;
+  --t-layer: #130c0c;
+  --t-card: #1b1111;
+  --t-card-hi: #251717;
+  --t-stone: #301d1d;
+  --t-line: #3d2424;
+  --t-line-hi: #7a3a35;
+  --t-fg: #f1e4dc;
+  --t-fg-2: #d9c5bc;
+  --t-fg-3: #b39f97;
+  --t-fg-4: #7f6e68;
+  --t-accent: #c9413a;
+  --t-accent-strong: #7e211d;
+  --t-accent-text: #ef7466;
+  --t-accent-ink: #fff3ee;
+  --t-arcane: #d6ad5c;
+  --t-arcane-strong: #8a6a2a;
+  --t-glowc: rgb(201 65 58);
+}
+/* during a change the shared parts change only opacity, visibility (chapter scene change) and motion smoothly; their own
+   colour transitions are off — otherwise
+   they restart every frame and the colour "gets stuck", and then jumps (the link in the header) */
+[data-theme-follow][data-switching] *,
+[data-theme-follow][data-switching] *::before,
+[data-theme-follow][data-switching] *::after {
+  transition-property: opacity, visibility, scale, translate, rotate, transform !important;
+}
+[data-theme-follow][data-from][data-to] {
+  --color-mica: color-mix(in oklch, var(--t-mica), var(--f-mica) calc((1 - var(--tp)) * 100%));
+  --color-layer: color-mix(in oklch, var(--t-layer), var(--f-layer) calc((1 - var(--tp)) * 100%));
+  --color-card: color-mix(in oklch, var(--t-card), var(--f-card) calc((1 - var(--tp)) * 100%));
+  --color-card-hi: color-mix(in oklch, var(--t-card-hi), var(--f-card-hi) calc((1 - var(--tp)) * 100%));
+  --color-stone: color-mix(in oklch, var(--t-stone), var(--f-stone) calc((1 - var(--tp)) * 100%));
+  --color-line: color-mix(in oklch, var(--t-line), var(--f-line) calc((1 - var(--tp)) * 100%));
+  --color-line-hi: color-mix(in oklch, var(--t-line-hi), var(--f-line-hi) calc((1 - var(--tp)) * 100%));
+  --color-fg: color-mix(in oklch, var(--t-fg), var(--f-fg) calc((1 - var(--tp)) * 100%));
+  --color-fg-2: color-mix(in oklch, var(--t-fg-2), var(--f-fg-2) calc((1 - var(--tp)) * 100%));
+  --color-fg-3: color-mix(in oklch, var(--t-fg-3), var(--f-fg-3) calc((1 - var(--tp)) * 100%));
+  --color-fg-4: color-mix(in oklch, var(--t-fg-4), var(--f-fg-4) calc((1 - var(--tp)) * 100%));
+  --color-accent: color-mix(in oklch, var(--t-accent), var(--f-accent) calc((1 - var(--tp)) * 100%));
+  --color-accent-strong: color-mix(in oklch, var(--t-accent-strong), var(--f-accent-strong) calc((1 - var(--tp)) * 100%));
+  --color-accent-text: color-mix(in oklch, var(--t-accent-text), var(--f-accent-text) calc((1 - var(--tp)) * 100%));
+  /* the text on the accent button is not mixed but flips in the middle: dark → light in a mix would match the background */
+  --color-accent-ink: color-mix(in oklch, var(--t-accent-ink), var(--f-accent-ink) calc((1 - clamp(0, (var(--tp) - 0.5) * 1000, 1)) * 100%));
+  --color-arcane: color-mix(in oklch, var(--t-arcane), var(--f-arcane) calc((1 - var(--tp)) * 100%));
+  --color-arcane-strong: color-mix(in oklch, var(--t-arcane-strong), var(--f-arcane-strong) calc((1 - var(--tp)) * 100%));
+  --glow-c: color-mix(in oklch, var(--t-glowc), var(--f-glowc) calc((1 - var(--tp)) * 100%));
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+  }
+  body {
+    background: var(--color-mica);
+    /* text is not selectable (the page is scrolled by dragging with the mouse, site.js); code and paths are selectable, people copy them */
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* images and links do not follow the cursor as a "ghost" while dragging */
+  img,
+  a,
+  svg {
+    -webkit-user-drag: none;
+  }
+  /* while the page is dragged with the mouse — the "hand" cursor */
+  html[data-dragging],
+  html[data-dragging] * {
+    cursor: grabbing !important;
+  }
+  /* language change by the button (site.js): the text part fades out in 0.15 s, the text changes, fades in over 0.25 s;
+     the background (.atmos) and the header backdrop stay */
+  main,
+  footer,
+  header > .page,
+  .scroll-rail {
+    transition: opacity 0.25s ease-out;
+  }
+  [data-lang-fade] :is(main, footer, header > .page, .scroll-rail) {
+    opacity: 0;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in;
+  }
+  /* our own slide-out scrollbar (.sbar, site.js) — the system one is hidden only when ours is on */
+  html[data-sbar] {
+    scrollbar-width: none;
+  }
+  html[data-sbar]::-webkit-scrollbar {
+    display: none;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--glow-c) 35%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent-text);
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html:not([data-motion="on"]) {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+/* icon: <svg class="icon"><use href="#i-download"/></svg> */
+@utility icon {
+  width: 1.125em;
+  height: 1.125em;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ----------------------------------------------------------------------------------------------- backgrounds */
+/* launcher window background: light from above, glow from below, noise (launcher windows on the page and the .atmos layer behind the page) */
+@utility scene {
+  background:
+    radial-gradient(1100px 480px at 72% -8%, var(--art-a), transparent 70%),
+    radial-gradient(900px 600px at 0% 105%, color-mix(in srgb, var(--glow-c) 7%, transparent), transparent 70%),
+    var(--noise),
+    linear-gradient(180deg, var(--art-b), var(--color-mica));
+}
+/* Atmosphere behind the page: <div class="atmos" data-theme-follow> first in <body>, inside — three theme backgrounds (.atmos-layer,
+   each with its own data-theme: the launcher window background and the light source halo), fallback CSS rays (.rays) and the shader canvas.
+   A fixed layer: the page moves over it, nothing is repainted on scroll. The visible background — with data-on (set by
+   site.js), switched by opacity over 1 s. Rays and dust / fireflies / fog and pillars are drawn by the WebGPU shader (atmos.js);
+   without WebGPU — static CSS rays. atmos.js sets <html data-atmos="gpu">. */
+@utility atmos {
+  @apply pointer-events-none fixed inset-0 -z-10 overflow-hidden;
+}
+@utility atmos-layer {
+  @apply scene absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out data-on:opacity-100 motion-reduce:transition-none;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(70% 55% at 24% -6%, color-mix(in srgb, var(--glow-c) 13%, transparent), transparent 70%);
+  }
+}
+@utility rays {
+  @apply absolute -inset-x-[20%] -top-[10%] bottom-0 in-data-[atmos=gpu]:hidden;
+  mask-image: radial-gradient(85% 95% at 34% 0%, #000 0%, rgb(0 0 0 / 0.55) 45%, transparent 85%);
+  background: conic-gradient(from 128deg at 34% -4%, transparent 0deg,
+    color-mix(in srgb, var(--glow-c) 8%, transparent) 4deg, transparent 9deg, transparent 15deg,
+    color-mix(in srgb, var(--glow-c) 5%, transparent) 18deg, transparent 24deg,
+    color-mix(in srgb, var(--glow-c) 10%, transparent) 30deg, color-mix(in srgb, var(--glow-c) 4%, transparent) 36deg, transparent 40deg, transparent 49deg,
+    color-mix(in srgb, var(--glow-c) 7%, transparent) 53deg, transparent 60deg, transparent 68deg,
+    color-mix(in srgb, var(--glow-c) 5%, transparent) 72deg, transparent 80deg, transparent 360deg);
+}
+@utility atmos-gpu {
+  @apply absolute inset-0 size-full;
+}
+/* the "community server" label in the header: small caps in the accent colour, with a glow */
+@utility brand-sub {
+  @apply font-display text-2xs font-semibold tracking-caps text-accent-text uppercase;
+  text-shadow: 0 0 12px color-mix(in srgb, var(--glow-c) 55%, transparent);
+}
+/* splash screen: while the font loads (site.js removes <html data-boot>, no later than 1.2 s) — background and the "D" tile with a pulse, a bar;
+   the page under it is already laid out and fades in in its own font, without a text jump. Without a script it leaves by itself after 2.5 s. */
+@utility boot {
+  @apply pointer-events-none fixed inset-0 z-100 grid [&[hidden]]:hidden place-content-center justify-items-center gap-5 bg-mica opacity-0
+    transition-opacity duration-500 ease-out;
+  [data-boot] & {
+    @apply pointer-events-auto opacity-100 transition-none;
+    animation: boot-out 0.5s 2.5s forwards;
+  }
+  @media (scripting: none) {
+    @apply hidden;
+  }
+}
+@utility boot-mark {
+  @apply grid size-14 place-items-center rounded-ovl border border-line-hi bg-card-hi font-display text-3xl font-bold
+    text-accent motion-safe:animate-boot-pulse;
+  box-shadow: 0 0 24px -6px var(--glow-c);
+}
+@utility boot-bar {
+  @apply relative h-px w-28 overflow-hidden bg-line;
+  &::after {
+    content: "";
+    @apply absolute inset-y-0 left-0 w-1/3 bg-linear-to-r from-transparent via-accent to-transparent motion-safe:animate-boot-bar;
+  }
+}
+
+/* "key art" of the server's main block from gradients — as in the launcher: a torch in cold stone */
+@utility hero-art {
+  background:
+    linear-gradient(90deg, var(--color-layer) 0%, rgb(0 0 0 / 0.55) 48%, transparent 78%),
+    linear-gradient(0deg, var(--color-layer) 0%, transparent 50%),
+    radial-gradient(480px 280px at 80% 40%, color-mix(in srgb, var(--glow-c) 30%, transparent), transparent 70%),
+    radial-gradient(260px 360px at 88% 90%, var(--art-a), transparent 70%),
+    repeating-linear-gradient(100deg, rgb(255 255 255 / 0.015) 0 2px, transparent 2px 9px),
+    var(--art-b);
+}
+
+/* ----------------------------------------------------------------------------------------------- buttons */
+@utility btn {
+  @apply inline-flex h-8 items-center justify-center gap-2 rounded-ctl px-3 text-sm whitespace-nowrap no-underline
+    select-none transition-[color,background-color,border-color,filter,box-shadow];
+}
+/* gold button: metal, bevel, glow */
+@utility btn-accent {
+  @apply btn border font-semibold;
+  color: var(--color-accent-ink);
+  background: linear-gradient(180deg, var(--color-accent-text), var(--color-accent) 50%, var(--color-accent-strong));
+  border-color: var(--color-accent-text);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.4), inset 0 -2px 0 rgb(0 0 0 / 0.22), 0 0 0 1px rgb(0 0 0 / 0.5),
+    0 0 16px -6px color-mix(in srgb, var(--glow-c) 60%, transparent);
+  &:hover {
+    filter: brightness(1.08);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.45), inset 0 -2px 0 rgb(0 0 0 / 0.22), 0 0 0 1px rgb(0 0 0 / 0.5),
+      0 0 22px -4px color-mix(in srgb, var(--glow-c) 70%, transparent);
+  }
+  &:active {
+    filter: brightness(0.92);
+  }
+}
+/* the main "Play": the same gold one, larger, small caps, sparks above it (.embers) */
+@utility btn-play {
+  @apply btn-accent font-display font-bold tracking-[0.18em] uppercase;
+  text-shadow: 0 1px 0 rgb(255 255 255 / 0.25);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.45), inset 0 -3px 0 rgb(0 0 0 / 0.25), 0 0 0 1px rgb(0 0 0 / 0.6),
+    0 0 28px -4px color-mix(in srgb, var(--glow-c) 55%, transparent);
+  &:hover {
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5), inset 0 -3px 0 rgb(0 0 0 / 0.25), 0 0 0 1px rgb(0 0 0 / 0.6),
+      0 0 44px 0 color-mix(in srgb, var(--glow-c) 70%, transparent);
+  }
+}
+/* stone button */
+@utility btn-std {
+  @apply btn border text-fg;
+  background: linear-gradient(180deg, var(--color-stone), var(--color-card-hi));
+  border-color: var(--color-line-hi);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06);
+  &:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent-text);
+  }
+}
+/* flat panel button; the current section (aria-current) — in gold */
+@utility btn-flat {
+  @apply btn text-fg-2 hover:bg-white/[0.05] hover:text-accent-text active:bg-white/[0.03];
+  &[aria-current="true"] {
+    color: var(--color-accent-text);
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------- surfaces */
+/* stone panel: thin border, highlight on top, noise, shadow */
+@utility card {
+  @apply rounded-ovl border border-line;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.035), transparent 40%), var(--noise), var(--color-card);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04), 0 10px 30px -14px rgb(0 0 0 / 0.85);
+}
+/* gold frame corners: main block, splash screen, dialogs */
+@utility framed {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+    border-color: var(--color-accent);
+    opacity: 0.85;
+  }
+  &::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-top-left-radius: 6px;
+  }
+  &::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-bottom-right-radius: 6px;
+  }
+}
+/* settings row: icon · heading + description */
+@utility row {
+  @apply flex items-start gap-4 border border-line px-4 py-4 first:rounded-t-ovl last:rounded-b-ovl [&+&]:border-t-0;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.025), transparent 60%), var(--color-card);
+}
+/* banner; tone via data-tone="caution" */
+@utility bar {
+  @apply flex items-start gap-3 rounded-ovl border border-line px-4 py-3 text-sm;
+  background: linear-gradient(90deg, var(--tone, color-mix(in srgb, var(--glow-c) 10%, transparent)), transparent 65%), var(--color-card);
+  &[data-tone="caution"] {
+    --tone: rgb(231 121 63 / 0.16);
+    border-color: rgb(231 121 63 / 0.5);
+  }
+}
+/* tag */
+@utility pill {
+  @apply inline-flex h-6 items-center gap-1.5 rounded-sm border border-line bg-black/35 px-2 text-xs whitespace-nowrap text-fg-2;
+}
+/* section heading: small caps and a gold line on the right */
+@utility title-rule {
+  @apply flex items-center gap-3 font-display text-[13px] font-medium tracking-[0.2em] text-fg-2 uppercase;
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-line-hi), transparent);
+  }
+}
+/* tab with a gold line at the bottom (like "Server / Changelog") */
+@utility tab {
+  @apply relative py-2.5 font-display tracking-[0.12em] text-fg-3 uppercase hover:text-fg-2 data-[active]:text-accent-text
+    data-[active]:after:absolute data-[active]:after:inset-x-0 data-[active]:after:-bottom-px data-[active]:after:h-[2px]
+    data-[active]:after:bg-accent data-[active]:after:shadow-[0_0_10px_color-mix(in_srgb,var(--glow-c)_80%,transparent)];
+}
+/* icon in a row: a stone tile with a gold sign */
+@utility tile {
+  @apply grid size-10 shrink-0 place-items-center rounded-ctl border border-line-hi bg-card-hi text-accent;
+  box-shadow: 0 0 12px -6px color-mix(in srgb, var(--glow-c) 80%, transparent);
+}
+/* step number: a diamond with a digit */
+@utility step-no {
+  @apply relative isolate grid size-10 shrink-0 place-items-center font-display text-base font-bold text-accent-text;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    z-index: -1;
+    transform: rotate(45deg);
+    border: 1px solid var(--color-accent);
+    background: var(--color-card-hi);
+    box-shadow: 0 0 12px -4px color-mix(in srgb, var(--glow-c) 70%, transparent);
+  }
+}
+/* code and paths */
+@utility code {
+  @apply rounded-sm border border-line bg-black/40 px-1.5 py-px font-mono text-[13px] text-accent-text select-text;
+  overflow-wrap: anywhere;
+}
+/* expander on <details>: like the Expander in the launcher */
+@utility expander {
+  @apply border border-line first-of-type:rounded-t-ovl last-of-type:rounded-b-ovl [&+&]:border-t-0;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.025), transparent 60%), var(--color-card);
+  & > summary {
+    @apply flex cursor-pointer list-none items-center gap-3 px-4 py-3.5 text-fg hover:text-accent-text;
+  }
+  & > summary::-webkit-details-marker {
+    display: none;
+  }
+  & > summary .chev {
+    transition: transform 0.15s ease;
+  }
+  &[open] > summary .chev {
+    transform: rotate(180deg);
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------- embers */
+/* sparks above "Play": <div class="embers"><i></i>×8</div>; off with prefers-reduced-motion */
+@utility embers {
+  @apply pointer-events-none absolute inset-0 z-1 motion-reduce:hidden;
+  & > i {
+    @apply absolute bottom-[55%] size-0.75 rounded-full bg-(--ember) opacity-0 shadow-[0_0_6px_1px_var(--ember)] animate-ember;
+  }
+  & > i:nth-child(1) { left: 8%; animation-delay: 0s; --dx: -10px; }
+  & > i:nth-child(2) { left: 19%; animation-delay: 1.6s; --dx: 12px; }
+  & > i:nth-child(3) { left: 31%; animation-delay: 3.1s; --dx: -14px; }
+  & > i:nth-child(4) { left: 44%; animation-delay: 0.8s; --dx: 16px; }
+  & > i:nth-child(5) { left: 56%; animation-delay: 2.4s; --dx: -8px; }
+  & > i:nth-child(6) { left: 68%; animation-delay: 4s; --dx: 18px; }
+  & > i:nth-child(7) { left: 80%; animation-delay: 1.2s; --dx: -16px; }
+  & > i:nth-child(8) { left: 91%; animation-delay: 3.5s; --dx: 10px; }
+}
+
+/* ----------------------------------------------------------------------------------------------- page */
+/* page width and margins */
+@utility page {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6;
+}
+/* two columns: text and image/window (first screen, "About the game") */
+@utility grid-cols-feature {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+}
+/* text and a side panel N×4 px wide: grid-cols-aside-80 = 320 px */
+@utility grid-cols-aside-* {
+  grid-template-columns: minmax(0, 1fr) calc(var(--spacing) * --value(integer));
+}
+/* image slot: <div class="slot aspect-…" data-slot="path · size"><span class="crest">…</span><img src="path" alt=""></div>.
+   Until the file exists, a stone placeholder with a crest is shown (the img has an empty alt — the browser does not draw a broken-image icon);
+   on localhost (site.js sets data-dev) the path and size are also shown at the bottom. When the file exists — the image goes on top, cropped to the centre. */
+@utility slot {
+  @apply relative isolate grid place-items-center overflow-hidden bg-layer;
+  /* skeleton: while the image loads (data-loading) and the slot is near the screen (data-near, site.js) — a soft shimmer */
+  &[data-loading][data-near]::before {
+    content: "";
+    @apply pointer-events-none absolute inset-0 z-1 bg-linear-to-r from-transparent via-white/[0.05] to-transparent
+      motion-safe:animate-shimmer;
+  }
+  background-image: radial-gradient(closest-side, color-mix(in srgb, var(--glow-c) 10%, transparent), transparent), var(--noise);
+  & > img {
+    @apply absolute inset-0 size-full object-cover;
+  }
+  :where([data-dev]) &::after {
+    @apply absolute inset-x-2 bottom-1.5 -z-1 truncate text-center font-mono text-3xs text-fg-4 max-sm:hidden;
+    content: attr(data-slot);
+  }
+}
+/* a light: the colour via text-*, e.g. <span class="led text-ok"> */
+@utility led {
+  @apply size-2 shrink-0 rounded-full bg-current;
+  box-shadow: 0 0 8px currentColor;
+}
+/* menu item on narrow screens */
+@utility mnav-link {
+  @apply flex h-12 items-center gap-3 border-b border-line/60 font-display tracking-[0.12em] text-fg-2 uppercase
+    no-underline last:border-b-0 hover:text-fg aria-[current=true]:text-accent-text;
+}
+/* launcher window on the first screen: built from the same components; on wide screens tilted and slightly following the mouse
+   (--tx/--ty are set by site.js) */
+@utility window-shot {
+  @apply overflow-hidden rounded-ovl border border-line-hi;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.6), 0 40px 80px -30px rgb(0 0 0 / 0.95), 0 0 120px -40px color-mix(in srgb, var(--glow-c) 45%, transparent);
+  @variant lg {
+    @apply transition-transform duration-600 ease-glide motion-reduce:transition-none;
+    transform: perspective(1800px) rotateY(calc(-7deg + var(--tx, 0deg))) rotateX(calc(2deg + var(--ty, 0deg)));
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------- the "About the game" story */
+/* <ol class="story"> with chapters <li class="chapter group">: a diamond number (chapter-no), text and image; on wide screens
+   even chapters have the image on the left. The golden thread on the left fills while the chapter passes through the screen (animation-timeline). */
+@utility story {
+  @apply relative;
+  &::before,
+  &::after {
+    @apply absolute top-5 bottom-0 left-5 w-px;
+    content: "";
+  }
+  &::before {
+    @apply bg-line;
+  }
+  &::after {
+    @apply origin-top bg-linear-to-b from-accent-text via-accent to-transparent shadow-[0_0_10px_color-mix(in_srgb,var(--glow-c)_60%,transparent)];
+  }
+  @supports (animation-timeline: view()) {
+    @variant motion-safe {
+      &::after {
+        animation: var(--animate-rail);
+        animation-timeline: view();
+        animation-range: entry 10% exit 40%;
+      }
+    }
+  }
+}
+@utility chapter {
+  @apply relative grid items-center gap-8 pl-14 sm:pl-16 lg:grid-cols-2 lg:gap-14;
+  @variant lg {
+    &:nth-child(even) > :last-child {
+      order: -1;
+    }
+  }
+}
+@utility chapter-no {
+  @apply absolute top-0 left-0 text-sm;
+}
+@utility chapter-kicker {
+  @apply text-2xs font-semibold tracking-brand text-accent-text uppercase;
+}
+@utility chapter-title {
+  @apply mt-2 font-display text-2xl leading-tight font-bold text-balance sm:text-3xl;
+}
+@utility chapter-text {
+  @apply mt-4 text-lg text-fg-2 text-pretty;
+}
+/* chapter notes: game rules in short lines with a gold diamond */
+@utility notes {
+  @apply mt-5 space-y-2 text-copy text-fg-2;
+  & > li {
+    @apply flex gap-3 before:mt-2.5 before:size-1.5 before:shrink-0 before:rotate-45 before:bg-accent before:content-[''];
+  }
+}
+/* Section pinning: .pin[data-pin] — the section, .pin-stage — the scene that sticks under the header, .pin-spacers —
+   empty per-screen steps (site.js creates them and sets data-pinned when the screen is large enough and the scene fits).
+   Current step: data-at on .pin, data-active on [data-step], data-lit on [data-hl~="key"]. Without data-pinned the section is a plain
+   feed. The scenes .pin-scenes > [data-step] lie on top of each other and take turns by fading in. */
+@utility pin {
+  &[data-pinned] .pin-stage {
+    @apply sticky top-14 h-[calc(100svh-3.5rem)] content-center;
+  }
+  &[data-pinned] .pin-scenes > [data-step] {
+    @apply invisible absolute inset-0 m-0 content-center opacity-0 transition-[opacity,visibility] duration-700 ease-glide;
+  }
+  &[data-pinned] .pin-scenes > [data-step][data-active] {
+    @apply visible opacity-100;
+  }
+  &[data-pinned] .pin-spacers {
+    @apply -mt-[calc(100svh-3.5rem)];
+  }
+  &[data-pinned] .pin-marks {
+    @apply flex;
+  }
+  /* highlighting part of the scene on its step and revealing what is visible only on it */
+  & [data-hl] {
+    @apply transition-[opacity,box-shadow,border-color] duration-500;
+  }
+  &[data-pinned] .pin-dim [data-hl]:not([data-lit]) {
+    @apply opacity-45;
+  }
+  /* the frame — on the highlighted parts of the launcher window; chapter items ([data-sub]) stand out by brightness, swappable images
+     (.pin-swap) — by fading in: they need no frame (and its relative squeezed the image) */
+  &[data-pinned] [data-hl][data-lit]:not([data-sub], .pin-swap) {
+    @apply relative z-10 rounded-ctl shadow-[0_0_0_1px_var(--color-accent),0_0_28px_-6px_color-mix(in_srgb,var(--glow-c)_90%,transparent)];
+  }
+  & .pin-show {
+    @apply hidden;
+  }
+  &[data-pinned] .pin-show[data-lit] {
+    @apply block motion-safe:animate-panel-in;
+  }
+  /* swappable images: in the feed the first one is visible, in the scene — the current step's one */
+  & .pin-swap:not(:first-child) {
+    @apply hidden;
+  }
+  &[data-pinned] .pin-swap {
+    @apply absolute inset-0 grid opacity-0 transition-opacity duration-700;
+  }
+  &[data-pinned] .pin-swap[data-lit] {
+    @apply opacity-100;
+  }
+}
+@utility pin-spacer {
+  @apply h-[calc(100svh-3.5rem)];
+  /* an item step inside a scene (data-sub, chapter items) — half a screen of scrolling */
+  &[data-sub] {
+    @apply h-[50svh];
+  }
+}
+@utility pin-marks {
+  @apply pointer-events-none absolute top-8 bottom-8 left-0 z-10 hidden flex-col justify-between;
+}
+
+/* "About the game" chapters when pinned: the thread on the left fills as you go (--p), chapter numbers are diamonds on the thread */
+@utility story-stage {
+  @apply relative;
+  [data-pinned] & {
+    @apply flex items-center;
+  }
+  [data-pinned] & .story {
+    @apply h-[calc(100%-4rem)] w-full;
+  }
+  [data-pinned] & .chapter-no {
+    @apply hidden;
+  }
+  [data-pinned] & .story::after {
+    animation: none;
+    scale: 1 var(--p, 0);
+  }
+  /* the chapter text rises slightly on appearing, the image fades in from a slight zoom */
+  @variant motion-safe {
+    [data-pinned] & .chapter > :nth-child(2) {
+      @apply translate-y-6 transition-[translate] duration-700 ease-glide;
+    }
+    [data-pinned] & .chapter > :nth-child(3) {
+      @apply scale-[1.03] transition-[scale] duration-1000 ease-glide;
+    }
+    [data-pinned] & .chapter[data-active] > * {
+      @apply translate-y-0 scale-100;
+    }
+  }
+}
+/* chapter items — scroll steps (data-sub, site.js): while the items go, the current one is highlighted, the others are muted */
+@utility chapter-subs {
+  [data-pinned] & [data-sub] {
+    @apply transition-[opacity,color] duration-500;
+  }
+  [data-pinned] & .chapter:has([data-sub][data-lit]) [data-sub]:not([data-lit]) {
+    @apply opacity-35;
+  }
+  [data-pinned] & .notes > li[data-lit] {
+    @apply text-fg;
+  }
+  [data-pinned] & .notes > li[data-lit]::before {
+    box-shadow: 0 0 10px 1px var(--glow-c);
+  }
+}
+
+/* screenshot carousel in the "About the game" prologue (site.js, "carousel"): slides lie on top of each other and switch by dissolving,
+   the current one slowly zooms in; arrows on the sides, diamond dots below; advances by itself, with the mouse, a finger and the arrows */
+@utility shots {
+  @apply relative isolate touch-pan-y overflow-hidden rounded-ovl bg-layer;
+}
+@utility shot {
+  @apply absolute inset-0 m-0 opacity-0 transition-opacity duration-700 ease-in-out data-active:opacity-100;
+  & > .slot {
+    @apply size-full;
+  }
+  & > .slot > img {
+    transition: scale 7s ease-out;
+  }
+  @variant motion-safe {
+    &[data-active] > .slot > img {
+      scale: 1.06;
+    }
+  }
+}
+@utility shot-caption {
+  @apply pointer-events-none absolute inset-x-0 bottom-0 z-10 bg-linear-to-t from-black/85 via-black/45 to-transparent px-5
+    pt-12 pb-4 pr-28 font-display text-label text-fg;
+}
+@utility shots-btn {
+  @apply absolute top-1/2 z-20 grid size-10 -translate-y-1/2 cursor-pointer place-items-center rounded-full border border-line-hi
+    bg-black/55 text-fg opacity-70 transition hover:border-accent hover:text-accent-text hover:opacity-100 focus-visible:opacity-100;
+}
+@utility shots-dots {
+  @apply absolute right-4 bottom-4 z-20 flex gap-2.5;
+}
+@utility shots-dot {
+  @apply size-2.5 cursor-pointer rotate-45 border border-fg-3 bg-black/40 transition hover:border-accent
+    aria-[current=true]:border-accent aria-[current=true]:bg-accent aria-[current=true]:shadow-glow;
+}
+
+/* chapter diamonds on the thread: passed and current ones are gold, the current one is larger; click — go to the chapter */
+@utility story-mark {
+  @apply step-no pointer-events-auto bg-transparent text-xs no-underline opacity-35 transition-[opacity,scale] duration-300
+    hover:opacity-80 data-done:opacity-70 data-now:scale-115 data-now:opacity-100;
+}
+
+/* feature list ("Launcher" section): when pinned only the current one is expanded, the others are headings */
+@utility feature {
+  @apply flex gap-4 border-l-2 border-transparent py-2.5 pl-4 transition-[border-color,opacity] duration-500;
+  [data-pinned] & {
+    @apply cursor-pointer opacity-50 hover:opacity-80;
+  }
+  [data-pinned] &[data-active] {
+    @apply border-accent opacity-100;
+  }
+  & h3 {
+    @apply font-display text-lg font-bold transition-colors duration-500;
+  }
+  [data-pinned] &[data-active] h3 {
+    @apply text-accent-text;
+  }
+}
+/* "Getting started" step when pinned: the current one with a gold frame and description, the others are muted headings */
+@utility step-row {
+  @apply transition-[opacity,box-shadow] duration-500;
+  [data-pinned] & {
+    @apply cursor-pointer py-3 opacity-55 hover:opacity-80;
+  }
+  [data-pinned] &[data-active] {
+    @apply relative z-10 opacity-100 shadow-[0_0_0_1px_var(--color-accent),0_0_28px_-10px_color-mix(in_srgb,var(--glow-c)_90%,transparent)];
+  }
+}
+@utility feature-text {
+  @apply grid transition-[grid-template-rows] duration-500 ease-glide;
+  & > * {
+    @apply overflow-hidden;
+  }
+  [data-pinned] & {
+    @apply grid-rows-[0fr];
+  }
+  [data-pinned] [data-active] & {
+    @apply grid-rows-[1fr];
+  }
+}
+
+/* the way through a portal: a coloured bar on the left, a light and text; bar colour — border-portal-* */
+@utility path {
+  @apply flex items-baseline gap-3 border-l-2 py-1 pl-4 text-copy text-fg-2;
+}
+
+/* ----------------------------------------------------------------------------------------------- page navigation */
+/* Slide-out scrollbar: a narrow zone at the right edge below the header. The thumb (--sh height, --sy offset — site.js) slides out
+   while the page moves or the mouse is near the edge ([data-show]); it always looks the same — thin and muted (the user, 14.11). */
+@utility sbar {
+  @apply fixed top-14 right-0 bottom-0 z-50 w-3.5 cursor-default touch-none opacity-0 transition-opacity duration-300
+    data-show:opacity-100 [&[hidden]]:hidden;
+}
+@utility sbar-thumb {
+  @apply absolute top-0 right-1 w-1 rounded-full transition-[width,background-color,box-shadow,translate] duration-200
+    ease-out;
+  height: var(--sh, 40px);
+  transform: translateY(var(--sy, 0px));
+  translate: 3px 0;
+  background: color-mix(in srgb, var(--color-accent) 55%, transparent);
+  [data-show] > & {
+    translate: 0 0;
+  }
+}
+/* Dots on the right (from xl): sections and "About the game" chapters. The current one is a gold diamond (aria-current is set by site.js); chapters
+   expand under the current section (data-open) or on hover; labels — on hover, on very wide screens — at the current one. */
+@utility scroll-rail {
+  @apply fixed top-1/2 right-5 z-30 hidden -translate-y-1/2 flex-col items-end xl:flex;
+}
+@utility rail-link {
+  @apply flex h-6 items-center gap-3 pr-0.5 no-underline transition-[height,opacity] duration-300 ease-glide;
+}
+@utility rail-sub {
+  @apply h-0 overflow-hidden opacity-0;
+  .scroll-rail:hover &,
+  .scroll-rail:focus-within &,
+  &[data-open] {
+    @apply h-5 opacity-100;
+  }
+}
+@utility rail-label {
+  @apply pointer-events-none translate-x-1 rounded-ctl border border-line bg-mica/90 px-2 py-0.5 text-2xs whitespace-nowrap
+    text-fg-2 opacity-0 transition duration-200;
+  .scroll-rail:hover &,
+  .rail-link:focus-visible & {
+    @apply translate-x-0 opacity-100;
+  }
+  [aria-current="true"] & {
+    @apply text-accent-text 2xl:translate-x-0 2xl:opacity-100;
+  }
+}
+@utility rail-dot {
+  @apply size-2 shrink-0 rotate-45 border border-fg-4 transition duration-300;
+  .rail-sub & {
+    @apply size-1.5;
+  }
+  .rail-link:hover & {
+    @apply border-fg-2;
+  }
+  [data-group-active] & {
+    @apply border-accent;
+  }
+  [aria-current="true"] & {
+    @apply scale-125 border-accent bg-accent shadow-glow;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------- classes: showcase */
+/* Selection by crests (role=tablist, grouped by race) and the scene of the selected class: 16:9 video and text. site.js shows
+   one scene (hidden on the rest) and starts its video; without JS the selection is hidden and the scenes go one after another. */
+@utility class-picker {
+  @apply flex snap-x gap-6 overflow-x-auto border-b border-line pb-px max-lg:mask-r-from-80% lg:justify-between lg:overflow-visible;
+  scrollbar-width: none;
+}
+@utility class-group {
+  @apply shrink-0 snap-start;
+}
+@utility class-group-label {
+  @apply mb-1 px-2 text-2xs font-semibold tracking-brand uppercase;
+}
+@utility class-tab {
+  @apply relative flex w-24 cursor-pointer flex-col items-center gap-1.5 px-1 pt-1 pb-2.5 text-center text-xs whitespace-nowrap text-fg-3
+    transition-colors duration-200 hover:text-fg aria-selected:text-accent-text;
+  &::after {
+    @apply absolute inset-x-3 -bottom-px h-0.5 scale-x-0 bg-accent shadow-glow transition-transform duration-300 ease-glide;
+    content: "";
+  }
+  &[aria-selected="true"]::after {
+    @apply scale-x-100;
+  }
+}
+/* the crest in class selection — smaller than elsewhere */
+@utility class-crest {
+  @apply size-10 text-[22px];
+}
+/* class scenes: site.js puts them into one cell (data-stacked) — the height follows the longest, the selected one is visible */
+@utility class-panels {
+  &[data-stacked] {
+    @apply grid;
+  }
+  &[data-stacked] > .class-panel {
+    @apply col-start-1 row-start-1 m-0 transition-[opacity,visibility] duration-700 ease-glide;
+  }
+  &[data-stacked] > .class-panel:not([data-active]) {
+    @apply invisible opacity-0;
+  }
+  /* hidden scenes after fading are not computed by the browser (data-skip, site.js); the size of each is remembered while it was visible */
+  &[data-stacked] > .class-panel {
+    contain-intrinsic-size: auto none;
+  }
+  &[data-stacked] > .class-panel[data-skip]:not([data-active]) {
+    content-visibility: hidden;
+  }
+  /* class change — like an "About the game" chapter change: the text rises, the video fades in from a slight zoom */
+  @variant motion-safe {
+    &[data-stacked] > .class-panel .class-stage > :last-child {
+      @apply translate-y-6 transition-[translate] duration-700 ease-glide;
+    }
+    &[data-stacked] > .class-panel .class-stage > :first-child {
+      @apply scale-[1.03] transition-[scale] duration-1000 ease-glide;
+    }
+    &[data-stacked] > .class-panel[data-active] .class-stage > * {
+      @apply translate-y-0 scale-100;
+    }
+  }
+}
+/* scene: the class video and text */
+@utility class-stage {
+  @apply grid items-start gap-6 lg:grid-cols-stage lg:gap-10;
+}
+/* caption above a list: "Strengths", "Weapons", Q, E */
+@utility class-sub {
+  @apply text-2xs font-semibold tracking-brand text-fg-3 uppercase;
+}
+/* strengths and weaknesses: a + / − icon before the line; ++ in the game — the main one, highlighted by the text colour */
+@utility pro {
+  @apply flex gap-2 text-copy text-fg-2 lg:text-label before:font-bold before:text-ok before:content-['+'];
+}
+@utility con {
+  @apply flex gap-2 text-copy text-fg-2 lg:text-label before:font-bold before:text-critical before:content-['−'];
+}
+/* skills: Q/E tiles on the left, the selected one's description on the right */
+@utility class-skills {
+  @apply mt-4 flex flex-wrap gap-x-6 gap-y-3;
+}
+@utility skill-tile {
+  @apply flex w-20 cursor-pointer flex-col items-center gap-2 text-center text-2xs leading-tight text-fg-3 transition-colors
+    duration-200 hover:text-fg aria-pressed:text-accent-text;
+}
+@utility skill-icon {
+  @apply size-14 rounded-ctl border border-line-hi transition-[border-color,box-shadow] duration-300;
+  .skill-tile:hover & {
+    @apply border-accent/60;
+  }
+  [aria-pressed="true"] & {
+    @apply border-accent shadow-[0_0_18px_-4px_color-mix(in_srgb,var(--glow-c)_90%,transparent)];
+  }
+}
+@utility skill-key {
+  @apply font-display text-2xl font-bold text-fg-4;
+  [aria-pressed="true"] & {
+    @apply text-accent-text;
+  }
+}
+/* talent: a tag button; the selected one is gold */
+@utility talent-chip {
+  @apply pill h-6.5 cursor-pointer px-2.5 text-xs transition-[color,border-color,box-shadow] duration-200 hover:border-line-hi
+    hover:text-fg aria-pressed:border-accent aria-pressed:text-accent-text aria-pressed:shadow-[0_0_14px_-4px_color-mix(in_srgb,var(--glow-c)_90%,transparent)];
+}
+@utility skill-key-pill {
+  @apply grid size-7 place-items-center rounded-ctl border border-accent bg-card-hi font-display text-sm font-bold text-accent-text;
+}
+@utility skill-detail {
+  @apply motion-safe:animate-panel-in;
+}
+/* skill description: on wide screens — over the bottom of the video on a dimmed band (hover over the clip — it disappears), on narrow ones — under the video */
+@utility skill-details {
+  @apply mt-3 lg:pointer-events-none lg:absolute lg:inset-x-px lg:bottom-px lg:z-10 lg:mt-0 lg:rounded-b-ovl lg:bg-linear-to-t
+    lg:from-black/90 lg:via-black/70 lg:to-transparent lg:px-5 lg:pt-14 lg:pb-4 lg:transition-opacity lg:duration-300
+    lg:group-hover/media:opacity-0;
+}
+/* what is playing now: "Class overview" or the skill name */
+@utility video-caption {
+  @apply absolute top-3 left-3 z-10 rounded-ctl border border-line-hi bg-black/60 px-2.5 py-1 font-display text-label
+    text-fg backdrop-blur-sm;
+}
+@utility grid-cols-stage {
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+}
+/* video over the cover: visible only when it is really playing (data-ready is set by site.js) */
+@utility class-video {
+  @apply absolute inset-0 size-full object-cover opacity-0 transition-opacity duration-500 data-ready:opacity-100;
+}
+@utility video-toggle {
+  @apply btn absolute top-3 right-3 z-20 border border-line-hi bg-black/60 text-fg backdrop-blur-sm hover:text-accent-text;
+}
+
+/* scroll bar under the header: follows the page scroll (animation-timeline); where this is not supported — it is not there */
+@utility scroll-progress {
+  @apply absolute inset-x-0 -bottom-px hidden h-0.5 origin-left bg-linear-to-r from-accent-strong to-accent-text
+    shadow-[0_0_10px_color-mix(in_srgb,var(--glow-c)_60%,transparent)] motion-reduce:hidden!;
+  @supports (animation-timeline: scroll()) {
+    display: block;
+    animation: var(--animate-progress);
+    animation-timeline: scroll(root);
+  }
+}
+
+/* launcher window in the "Launcher" section: as on the first screen, but without the tilt — window parts are highlighted step by step */
+@utility demo-window {
+  @apply overflow-hidden rounded-ovl border border-line-hi;
+  box-shadow: 0 0 0 1px rgb(0 0 0 / 0.6), 0 40px 80px -30px rgb(0 0 0 / 0.95), 0 0 120px -40px color-mix(in srgb, var(--glow-c) 35%, transparent);
+  /* turns after the mouse (site.js, --tx/--ty), like the window on the first screen; at rest — straight */
+  @variant lg {
+    @apply transition-transform duration-600 ease-glide motion-reduce:transition-none;
+    transform: perspective(1800px) rotateY(var(--tx, 0deg)) rotateX(var(--ty, 0deg));
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------- motion */
+/* a card rises and lights up on hover (translate is a separate property, it does not fight with the reveal) */
+@utility lift {
+  @apply transition-[translate,border-color,box-shadow] duration-350 ease-glide hover:-translate-y-0.75
+    hover:border-line-hi hover:shadow-lift;
+}
+/* class crest: a gold diamond with an icon; lights up when a .lift card is hovered */
+@utility crest {
+  @apply relative isolate grid size-12 shrink-0 place-items-center text-[26px] text-accent-text;
+  &::before {
+    @apply absolute inset-[7px] -z-1 rotate-45 rounded-[3px] border border-line-hi bg-card-hi shadow-glow
+      transition-[border-color,box-shadow] duration-350;
+    content: "";
+    background-image: radial-gradient(circle at 50% 35%, color-mix(in srgb, var(--glow-c) 22%, transparent), transparent 70%);
+  }
+  & .icon {
+    stroke-width: 1.5;
+  }
+  .lift:hover &::before,
+  .class-tab:hover &::before,
+  [aria-selected="true"] &::before {
+    @apply border-accent shadow-[0_0_20px_-4px_color-mix(in_srgb,var(--glow-c)_90%,transparent)];
+  }
+}
+
+/* reveal on scroll: reveal — the element itself, reveal-stagger — its children one after another (the --d delay is set by site.js).
+   site.js sets data-in when the block has appeared. The gold line of .title-rule draws itself in. */
+@utility reveal {
+  @variant animated {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.8s var(--ease-glide) var(--d, 0s),
+      transform 0.8s var(--ease-glide) var(--d, 0s);
+    &[data-in] {
+      opacity: 1;
+      transform: none;
+    }
+    &.title-rule::after {
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 1.2s var(--ease-glide) 0.25s;
+    }
+    &.title-rule[data-in]::after {
+      transform: none;
+    }
+  }
+}
+@utility reveal-stagger {
+  @variant animated {
+    & > * {
+      opacity: 0;
+      transform: translateY(18px);
+      transition:
+        opacity 0.8s var(--ease-glide) var(--d, 0s),
+        transform 0.8s var(--ease-glide) var(--d, 0s),
+        translate 0.35s var(--ease-glide),
+        border-color 0.35s,
+        box-shadow 0.35s;
+    }
+    &[data-in] > * {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

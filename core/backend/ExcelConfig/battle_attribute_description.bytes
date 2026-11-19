@@ -1,0 +1,195 @@
+
+ó
+2.19.22.19.2.20241211125607x"Gsha256:bf09e0c0d293fa0f7ef8908b8ecd518282f6631315912269ea23191d41582c09Z†
+@3cfda9ac749c13ada0f24b3d340c5c2d8da7231862106ff6c1a59423427cba28@c6839bc8c3dacc123385b5dae8ff7e4ecbee395ddb94e3047253f7b37084da34x-Í affix_attack_right_weapon_attack(H
+P
+(Ôaffix_defend_def_gear_level(H
+P
+(àaffix_attack_att_gear_level(H
+P
+6Ö'affix_defend_guarded_damage_reduce_rate (H
+P
++Ñaffix_defend_max_health_base(8H
+P
+'‰'affix_magic_max_magic_base(H
+P
+3í'&affix_soul_energy_max_soul_energy_base(H
+P
+9Ñ(,affix_natural_energy_max_natural_energy_base(H
+P
+*¹affix_speed_move_speed_base(8H
+P
+%ýaffix__first_level_all(8H
+P)éaffix_first_level_strength(8H
+P*êaffix_first_level_dexterity(8H
+P(ëaffix_first_level_stamina	(	8H
+P-ìaffix_first_level_intelligence
+(
+8H
+P%íaffix_first_level_will(8H
+P&îaffix_first_level_faith(8H
+P(Îaffix_attack_attack_bonus(8H
+P
+/Ïaffix_attack_attack_boost_rate (8H
+P
++Ðaffix_attack_critical_rate (8H
+P
+.Ñaffix_attack_crit_damage_rate (8H
+P
+5Ò$affix_attack_element_boost_rate_none (8H
+P
+4Ó#affix_attack_element_boost_rate_all (8H
+P
+5Ô$affix_attack_element_boost_rate_fire (8H
+P
+8Ö'affix_attack_element_boost_rate_thunder (8H
+P
+4Õ#affix_attack_element_boost_rate_ice (8H
+P
+6×%affix_attack_element_boost_rate_light (8H
+P
+5Ø$affix_attack_element_boost_rate_dark (8H
+P
+(âaffix_attack_skill_damage (H
+P
+2Ú!affix_attack_physical_penetration (8H
+P
+.Ûaffix_attack_fire_penetration (8H
+P
+.Üaffix_attack_cold_penetration (8H
+P
+3Ý"affix_attack_lightning_penetration (8H
+P
+0Þaffix_attack_divine_penetration (8H
+P
+0ßaffix_attack_shadow_penetration (8H
+P
+0á!affix_attack_extra_att_gear_level(8H
+P+Ùaffix_attack_def_ignore_base ( 8H
+P:×)affix_defend_element_resistance_rate_none! (!8H
+P
+9Ø(affix_defend_element_resistance_rate_all" ("8H
+P
+:Ù)affix_defend_element_resistance_rate_fire# (#8H
+P
+9Ú(affix_defend_element_resistance_rate_ice$ ($8H
+P
+=Û,affix_defend_element_resistance_rate_thunder% (%8H
+P
+;Ü*affix_defend_element_resistance_rate_light& (&8H
+P
+:Ý)affix_defend_element_resistance_rate_dark' ('8H
+P
+0Òaffix_defend_max_health_percent( ((8H
+P
+,Óaffix_defend_max_health_extra)()8H
+P
+.¥!affix_recover_heal_over_time_base*(*H
+P
+.¤affix_recover_heal_on_kill_base+(+8H
+P
+-£affix_recover_heal_on_hit_base,(,8H
+P
+.¡affix_recover_life_leach_rate- (-8H
+P0Õ!affix_defend_extra_def_gear_level.(.8H
+P.¢affix_recover_heal_boost_rate/ (/8H
+P.¦affix_recover_shield_boost_rate0 (0H
+P
+<Þ-affix_defend_extra_guarded_damage_reduce_rate1 (1H
+P
+8¨'affix_recover_skill_cooldown_scale_rate2 (28H
+PBñ.3affix_buff_arg_killing_max_layer_max_health_percent3(38H
+PAò.2affix_buff_arg_killing_max_layer_attack_boost_rate4(48H
+P=ó..affix_buff_arg_killing_max_layer_critical_rate5(58H
+P6º%affix_speed_level_interact_speed_rate6 (68H
+P<Õ/-affix_stat_effect_move_speed_with_hit_running7(78H
+P@Ö/1affix_stat_effect_heal_over_time_with_hit_running8(88H
+PA×/0affix_stat_effect_critical_rate_with_hit_running9 (98H
+PCØ/2affix_stat_effect_life_leach_rate_with_hit_running: (:8H
+PEÙ/4affix_stat_effect_attack_boost_rate_with_full_health; (;8H
+PAÚ/0affix_stat_effect_critical_rate_with_full_health< (<8H
+P4¹0%affix_trigger_effect_heal_on_open_box=(=8H
+P5º0&affix_trigger_effect_magic_on_open_box>(>8H
+P9»0*affix_trigger_effect_gain_gold_on_open_box?(?8H
+P5¼0&affix_trigger_effect_gain_gold_on_kill@(@8H
+P4©%affix_recover_gain_gold_out_of_portalA(A8H
+P:½0+affix_trigger_effect_heal_on_defend_successB(B8H
+P<¾0-affix_trigger_effect_damage_on_defend_successC(C8H
+P<À0-affix_trigger_effect_add_shield_on_cast_skillD(D8H
+P'‹'affix_magic_magic_on_hitE(E8H
+P(Œ'affix_magic_magic_on_killF(F8H
+PQÂ0Baffix_trigger_effect_additional_element_fire_damage_on_causing_hitG(G8H
+PTÃ0Eaffix_trigger_effect_additional_element_thunder_damage_on_causing_hitH(H8H
+PPÄ0Aaffix_trigger_effect_additional_element_ice_damage_on_causing_hitI(I8H
+PRÅ0Caffix_trigger_effect_additional_element_light_damage_on_causing_hitJ(J8H
+PQÆ0Baffix_trigger_effect_additional_element_dark_damage_on_causing_hitK(K8H
+P(Š'affix_magic_magic_over_timeL(LH
+P;ª*affix_recover_exp_boost_rate_out_of_portalM (M8H
+P0Ž'affix_magic_magic_generate_rateN (N8H
+P<ñ'+affix_soul_energy_soul_energy_generate_rateO (O8H
+P&'affix_magic_magic_on_hurtP(PH
+P¬ùUaffix_gear_set_fleet_foot_workß(ß8B{/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_FleetFootwork.T_ItemGearSet_FleetFootwork'H
+P¤úUaffix_gear_set_kleptomancyà(à8Bw/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_Kleptomancy.T_ItemGearSet_Kleptomancy'H
+P¨ûUaffix_gear_set_undying_graspá(á8By/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_UndyingGrasp.T_ItemGearSet_UndyingGrasp'H
+P¢üUaffix_gear_set_thunder_lawâ(â8Bu/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_ThunderLaw.T_ItemGearSet_ThunderLaw'H
+P¥ýUaffix_gear_set_bone_platingã(ã8Bw/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_BonePlating.T_ItemGearSet_BonePlating'H
+P¢þUaffix_gear_set_avoid_deathä(ä8Bu/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_AvoidDeath.T_ItemGearSet_AvoidDeath'H
+P®ÿUaffix_gear_set_scorching_touchå(å8B}/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_ScorchingTouch.T_ItemGearSet_ScorchingTouch'H
+P«€Vaffix_gear_set_summoning_aeryæ(æ8B{/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_SummoningAery.T_ItemGearSet_SummoningAery'H
+PVaffix_set_coin_masterç(ç8Bu/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_CoinMaster.T_ItemGearSet_CoinMaster'H
+P
+(§affix_recover_heal_wound_rate H
+P
+-î'$affix_soul_energy_soul_energy_on_hitH
+P
+.ï'%affix_soul_energy_soul_energy_on_killH
+P
+.ð'%affix_soul_energy_soul_energy_on_hurtH
+P
+6Ò(-affix_natural_energy_natural_energy_over_timeH
+P
+3Ó(*affix_natural_energy_natural_energy_on_hitH
+P
+4Ô(+affix_natural_energy_natural_energy_on_killH
+P
+4Õ(+affix_natural_energy_natural_energy_on_hurtH
+P
+<Ö(1affix_natural_energy_natural_energy_generate_rate H
+P
+D¿0;affix_trigger_effect_additional_fixed_damage_on_causing_hitH
+P
+KÁ0Baffix_trigger_effect_additional_element_none_damage_on_causing_hitH
+P
+‘Naffix_gem_slot_attackH
+P
+’Naffix_gem_slot_defendH
+P
+ “Naffix_gem_slot_functionH
+P
+#”Naffix_gem_slot_first_levelH
+P
+ •Naffix_gem_slot_gear_setH
+P
+ÃNaffix_gem_slot_attackH
+P
+ÄNaffix_gem_slot_defendH
+P
+ ÅNaffix_gem_slot_functionH
+P
+#ÆNaffix_gem_slot_first_levelH
+P
+ ÇNaffix_gem_slot_gear_setH
+P
+H
+P
+H
+P
+H
+P
+H
+P
+H
+P
+H
+P
+*tgf.config.ExcelBattleAttributeDescription

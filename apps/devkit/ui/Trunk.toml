@@ -1,0 +1,17 @@
+[build]
+target = "index.html"
+dist = "dist"
+
+[serve]
+addresses = ["127.0.0.1"]
+port = 1440
+open = false
+
+[watch]
+ignore = ["styles.css"]
+
+# Tailwind standalone CLI from PATH (no npm/node): input.css -> styles.css before every build.
+[[hooks]]
+stage = "pre_build"
+command = "tailwindcss"
+command_arguments = ["-i", "input.css", "-o", "styles.css", "--minify"]

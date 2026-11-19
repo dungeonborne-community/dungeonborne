@@ -1,0 +1,16 @@
+[member]
+name = "machine"
+kind = "ops"
+visibility = "public"
+lang = "powershell"
+version = "0"
+depends_on = ["tools/stand"]
+description = "Developer machine setup (run by a human): Windows variables -> DB_HOME, moving the WSL disk, DbTools task"
+
+[commands]
+env = "powershell -ExecutionPolicy Bypass -File ops/machine/set-user-env.ps1 [-Apply|-Revert]"
+wsl = "powershell -ExecutionPolicy Bypass -File ops/machine/move-wsl.ps1 [-Apply]"
+dbtools = "powershell (admin) -ExecutionPolicy Bypass -File ops/machine/install-dbtools.ps1 [-Apply] [-MoveFrom <old folder>]"
+
+[rules]
+# System settings are changed by the user: the agent writes and shows the scripts, but does not run them with -Apply.

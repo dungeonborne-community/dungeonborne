@@ -1,0 +1,14 @@
+[
+  {
+    "app_id": 2897620,
+    "dlc_icon": "/Game/TGF/UI/WBP/DLCPacket/T_DLCPacket_Entrance.T_DLCPacket_Entrance",
+    "dlc_img": "/Game/TGF/UI/WBP/DLCPacket/T_DLCPacket_Role.T_DLCPacket_Role",
+    "dlc_name": "DLC_2897620_T",
+    "dlc_type": "EN_DLC_TYPE_PACKET"
+  },
+  {
+    "app_id": 3153730,
+    "dlc_name": "DLC_3153730_T",
+    "dlc_type": "EN_DLC_TYPE_PACKET"
+  }
+]

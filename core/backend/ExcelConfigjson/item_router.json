@@ -1,0 +1,82 @@
+[
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_VIRTUAL"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+    "item_router": "EN_ITEM_STORAGE_TYPE_MAIL",
+    "item_type_enum": "EN_ITEM_TYPE_ITEM"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+    "item_router": "EN_ITEM_STORAGE_TYPE_MAIL",
+    "item_type_enum": "EN_ITEM_TYPE_RANDOM_POOL"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_SKIN_WIDGET"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_ACTIVITY_EXP_ITEM"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+    "item_router": "EN_ITEM_STORAGE_TYPE_MAIL",
+    "item_type_enum": "EN_ITEM_TYPE_GEAR_TYPE_ID"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_SKIN_SUIT_ID"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_ACTIVITY_COIN_ITEM"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_DLC",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_VIRTUAL"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_DLC",
+    "item_router": "EN_ITEM_STORAGE_TYPE_MAIL",
+    "item_type_enum": "EN_ITEM_TYPE_ITEM"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_DLC",
+    "item_router": "EN_ITEM_STORAGE_TYPE_MAIL",
+    "item_type_enum": "EN_ITEM_TYPE_RANDOM_POOL"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_DLC",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_SKIN_WIDGET"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_DLC",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_ACTIVITY_EXP_ITEM"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_DLC",
+    "item_router": "EN_ITEM_STORAGE_TYPE_MAIL",
+    "item_type_enum": "EN_ITEM_TYPE_GEAR_TYPE_ID"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_DLC",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_SKIN_SUIT_ID"
+  },
+  {
+    "item_coming_enum": "EN_MARKET_TYPE_DLC",
+    "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY",
+    "item_type_enum": "EN_ITEM_TYPE_ACTIVITY_COIN_ITEM"
+  }
+]

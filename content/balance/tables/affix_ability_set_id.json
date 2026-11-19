@@ -1,0 +1,22 @@
+{
+  "type": "tgf.config.ExcelAffixAbilitySetId",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 1,
+    "hash_code": "sha256:859f8bf17974aea7beeba53c4b8145a4b77840417306c0338705d5151cf8b20e",
+    "data_source": [
+      {
+        "file": "3cfda9ac749c13ada0f24b3d340c5c2d8da7231862106ff6c1a59423427cba28",
+        "sheet": "fcfc39ee25822be58e3f8da415812abe94f6d0f7d48f9b1610bd5a2a0523a462",
+        "count": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "affix_index_id": 1,
+      "ability_set_id": 181025000
+    }
+  ]
+}

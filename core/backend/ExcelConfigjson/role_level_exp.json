@@ -1,0 +1,82 @@
+[
+  {
+    "level": 1,
+    "max_exp": 100
+  },
+  {
+    "level": 2,
+    "max_exp": 120
+  },
+  {
+    "level": 3,
+    "max_exp": 140
+  },
+  {
+    "level": 4,
+    "max_exp": 160
+  },
+  {
+    "level": 5,
+    "max_exp": 180
+  },
+  {
+    "level": 6,
+    "max_exp": 200
+  },
+  {
+    "level": 7,
+    "max_exp": 220
+  },
+  {
+    "level": 8,
+    "max_exp": 240
+  },
+  {
+    "level": 9,
+    "max_exp": 260
+  },
+  {
+    "level": 10,
+    "max_exp": 280
+  },
+  {
+    "level": 11,
+    "max_exp": 300
+  },
+  {
+    "level": 12,
+    "max_exp": 320
+  },
+  {
+    "level": 13,
+    "max_exp": 340
+  },
+  {
+    "level": 14,
+    "max_exp": 360
+  },
+  {
+    "level": 15,
+    "max_exp": 380
+  },
+  {
+    "level": 16,
+    "max_exp": 400
+  },
+  {
+    "level": 17,
+    "max_exp": 420
+  },
+  {
+    "level": 18,
+    "max_exp": 440
+  },
+  {
+    "level": 19,
+    "max_exp": 460
+  },
+  {
+    "level": 20,
+    "max_exp": 999
+  }
+]

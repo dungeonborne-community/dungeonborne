@@ -1,0 +1,16 @@
+[
+  {
+    "access_to_keys": [
+      {
+        "count": 1,
+        "limit": 10,
+        "period": {
+          "period_days": 1,
+          "start_day_reset_timepoint": "2022-10-02T04:00:00Z"
+        },
+        "type": "EN_LOTTERY_ACCESS_TO_KEYS_TYPE_GENERIC_BATTLE"
+      }
+    ],
+    "type_id": 100002
+  }
+]

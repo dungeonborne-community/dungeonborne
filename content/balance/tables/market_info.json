@@ -1,0 +1,69 @@
+{
+  "type": "tgf.config.ExcelMarketInfo",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 3,
+    "hash_code": "sha256:967ffc8f71fe0cbddb7db6d852a2a5d1d43a90ce87b9d6efe8f71219ebee9eb2",
+    "data_source": [
+      {
+        "file": "c74cd0413aa390a7bfc87007efc0c938c7ce5f650efeaec6c15d071b760d7c85",
+        "sheet": "4d15dda26b4fa8c7019f4fd23ffe7f9a7f222eec23e5ece9f0ec1c4a1e6aaaaa",
+        "count": 3
+      }
+    ]
+  },
+  "rows": [
+    {
+      "market_id": 101,
+      "data": {
+        "market_id": 101,
+        "name": "商人",
+        "display_order": 2,
+        "market_tab_ids": [
+          1009,
+          1010,
+          1011,
+          1014,
+          1015,
+          1016,
+          1017,
+          1019,
+          4444
+        ],
+        "is_on_sale": true,
+        "type": 1
+      }
+    },
+    {
+      "market_id": 102,
+      "data": {
+        "market_id": 102,
+        "name": "商城",
+        "display_order": 1,
+        "market_tab_ids": [
+          3001,
+          3002,
+          3005,
+          3004
+        ],
+        "is_on_sale": true,
+        "type": 2
+      }
+    },
+    {
+      "market_id": 103,
+      "data": {
+        "market_id": 103,
+        "name": "特殊",
+        "market_tab_ids": [
+          1005,
+          1006,
+          2000
+        ],
+        "is_on_sale": true,
+        "type": 4
+      }
+    }
+  ]
+}

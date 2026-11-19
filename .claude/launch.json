@@ -1,0 +1,70 @@
+{
+  "configurations": [
+    {
+      "autoPort": false,
+      "cwd": "apps/studio/ui",
+      "env": {
+        "NO_COLOR": "true"
+      },
+      "name": "balance-studio-ui",
+      "port": 1430,
+      "runtimeArgs": [
+        "serve"
+      ],
+      "runtimeExecutable": "trunk"
+    },
+    {
+      "autoPort": false,
+      "cwd": "apps/launcher/ui",
+      "name": "launcher-ui",
+      "port": 8811,
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8811",
+        "--bind",
+        "127.0.0.1"
+      ],
+      "runtimeExecutable": "python"
+    },
+    {
+      "name": "launcher-ui-game",
+      "port": 8813,
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8813",
+        "--bind",
+        "127.0.0.1",
+        "--directory",
+        "apps/launcher/experiments/ui-game"
+      ],
+      "runtimeExecutable": "python"
+    },
+    {
+      "autoPort": false,
+      "cwd": "web/landing",
+      "name": "site",
+      "port": 8821,
+      "runtimeArgs": [
+        "web/dev_server.py",
+        "8821"
+      ],
+      "runtimeExecutable": "python"
+    },
+    {
+      "autoPort": false,
+      "cwd": "apps/devkit/ui",
+      "env": {
+        "NO_COLOR": "true"
+      },
+      "name": "devkit-ui",
+      "port": 1440,
+      "runtimeArgs": [
+        "serve"
+      ],
+      "runtimeExecutable": "trunk"
+    }
+  ],
+  "version": "0.0.1"
+}

@@ -1,0 +1,8 @@
+[member]
+name = "paks"
+kind = "mod"
+visibility = "team"
+lang = "lua"
+version = "0"
+depends_on = []
+description = "Pak sources. legacy/ — old paks (MatchLocal, RelicQuality, RebuildPrivate); balance is built by cargo xtask balance"

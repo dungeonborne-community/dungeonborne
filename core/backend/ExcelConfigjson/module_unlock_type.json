@@ -1,0 +1,149 @@
+[
+  {
+    "ban_tip": "Ban_Login_Default,Ban_Login_Permanent",
+    "module_id": 1200000,
+    "module_name": "EN_UNLOCK_MODULE_ID_LOGIN"
+  },
+  {
+    "ban_tip": "Ban_Chat_Default,Ban_Chat_Permanent",
+    "module_id": 1200001,
+    "module_name": "EN_UNLOCK_MODULE_ID_CHAT"
+  },
+  {
+    "module_id": 1200002,
+    "module_name": "EN_UNLOCK_MODULE_ID_CHAT_SILENCE"
+  },
+  {
+    "ban_tip": "Ban_Friend_Default,Ban_Friend_Permanent",
+    "module_id": 1200003,
+    "module_name": "EN_UNLOCK_MODULE_ID_FRIEND"
+  },
+  {
+    "ban_tip": "Ban_Team_Default,Ban_Team_Permanent",
+    "module_id": 1200004,
+    "module_name": "EN_UNLOCK_MODULE_ID_TEAM"
+  },
+  {
+    "ban_mail": 501006,
+    "custom_ban_mail": 501008,
+    "module_id": 1200005,
+    "module_name": "EN_UNLOCK_MODULE_ID_CHAT_VOICE",
+    "permanently_ban_mail": 501007,
+    "permanently_custom_ban_mail": 501009
+  },
+  {
+    "module_id": 1200012,
+    "module_name": "EN_UNLOCK_MODULE_ID_TRADE_HOMOGENEOUS_SELL"
+  },
+  {
+    "module_id": 1200013,
+    "module_name": "EN_UNLOCK_MODULE_ID_TRADE_HOMOGENEOUS_BUY"
+  },
+  {
+    "module_id": 1200014,
+    "module_name": "EN_UNLOCK_MODULE_ID_TRADE_AUCTION_SELL"
+  },
+  {
+    "module_id": 1200015,
+    "module_name": "EN_UNLOCK_MODULE_ID_TRADE_AUCTION_BUY"
+  },
+  {
+    "module_id": 1200016,
+    "module_name": "EN_UNLOCK_MODULE_ID_CHAT_ONLY_ENGLISH"
+  },
+  {
+    "ban_mail": 501010,
+    "custom_ban_mail": 501012,
+    "module_id": 1200017,
+    "module_name": "EN_UNLOCK_MODULE_ID_RANK",
+    "permanently_ban_mail": 501011,
+    "permanently_custom_ban_mail": 501013
+  },
+  {
+    "global_forbid": true,
+    "module_id": 1200018,
+    "module_name": "EN_UNLOCK_MODULE_ID_FRIEND_SEARCH_BY_CREATE_INDEX"
+  },
+  {
+    "module_id": 1200019,
+    "module_name": "EN_UNLOCK_MODULE_ID_POPUP_NOTICE"
+  },
+  {
+    "module_id": 1200020,
+    "module_name": "EN_UNLOCK_MODULE_ID_CASTLE_NORMAL"
+  },
+  {
+    "module_id": 1200021,
+    "module_name": "EN_UNLOCK_MODULE_ID_CASTLE_HARD"
+  },
+  {
+    "module_id": 1200022,
+    "module_name": "EN_UNLOCK_MODULE_ID_DUNGEON_NORMAL"
+  },
+  {
+    "module_id": 1200023,
+    "module_name": "EN_UNLOCK_MODULE_ID_DUNGEON_HARD"
+  },
+  {
+    "module_id": 1200024,
+    "module_name": "EN_UNLOCK_MODULE_ID_PVP"
+  },
+  {
+    "module_id": 1200025,
+    "module_name": "EN_UNLOCK_MODULE_ID_PRIVATE_ROOM"
+  },
+  {
+    "module_id": 1200026,
+    "module_name": "EN_UNLOCK_MODULE_ID_ACTIVITY"
+  },
+  {
+    "module_id": 1200027,
+    "module_name": "EN_UNLOCK_MODULE_ID_SMITH_REPAIR"
+  },
+  {
+    "module_id": 1200028,
+    "module_name": "EN_UNLOCK_MODULE_ID_SMITH_DISMANTLE"
+  },
+  {
+    "module_id": 1200029,
+    "module_name": "EN_UNLOCK_MODULE_ID_REPORT"
+  },
+  {
+    "forbid_tip": "TradeClosed_Tips",
+    "module_id": 1200030,
+    "module_name": "EN_UNLOCK_MODULE_ID_TRADE_ENTRY"
+  },
+  {
+    "forbid_tip": "Market_Entry_Closed_Tips",
+    "module_id": 1200031,
+    "module_name": "EN_UNLOCK_MODULE_ID_MARKET_ENTRY"
+  },
+  {
+    "global_forbid": true,
+    "module_id": 1200032,
+    "module_name": "EN_UNLOCK_MODULE_ID_PVP_6V6"
+  },
+  {
+    "module_id": 1200033,
+    "module_name": "EN_UNLOCK_MODULE_ID_MITHRIL"
+  },
+  {
+    "module_id": 1200034,
+    "module_name": "EN_UNLOCK_MODULE_ID_SKIN"
+  },
+  {
+    "lock_tip": "Dismantle_Unlock_Tip",
+    "module_id": 1200035,
+    "module_name": "EN_UNLOCK_MODULE_ID_HEIRLOOM"
+  },
+  {
+    "module_id": 1200036,
+    "module_name": "EN_UNLOCK_MODULE_ID_CASTLE_HELL",
+    "unlock_date": "2024-07-21T00:00:00Z"
+  },
+  {
+    "module_id": 1200037,
+    "module_name": "EN_UNLOCK_MODULE_ID_DUNGEON_HELL",
+    "unlock_date": "2024-07-22T00:00:00Z"
+  }
+]

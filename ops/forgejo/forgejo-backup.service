@@ -1,0 +1,8 @@
+[Unit]
+Description=Forgejo nightly dump to /var/backups/forgejo
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/forgejo-backup
+Nice=15
+IOWeight=10

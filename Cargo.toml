@@ -1,0 +1,28 @@
+# Root Cargo workspace of the developer kit (docs/WORKSPACE_PLAN.md, section 13.1; docs/adr/0002-root-cargo.md):
+#   cargo xtask …   — build tasks (xtask/)
+#   cargo ws …      — workspace utility (tools/ws)
+#   DevKit          — window over ws-core (apps/devkit)
+# The backend, the launcher and Studio have their own Cargo workspaces with their own Cargo.lock; they are not part of this one.
+[workspace]
+resolver = "2"
+members = ["xtask", "tools/ws/core", "tools/ws/cli", "apps/devkit/src-tauri"]
+exclude = ["core/backend", "apps/launcher", "apps/studio", "apps/discord-bot", "tools/sniffer"]
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+rust-version = "1.85"
+publish = false
+
+[workspace.dependencies]
+ws-core = { path = "tools/ws/core" }
+toml = "0.8"
+serde_json = "1"
+sha2 = "0.10"
+regex = "1"
+
+[profile.release]
+strip = true
+
+[profile.release.package.devkit]
+opt-level = "s"

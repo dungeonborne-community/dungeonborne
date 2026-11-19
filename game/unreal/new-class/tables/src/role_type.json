@@ -1,0 +1,1399 @@
+{
+  "type": "tgf.config.ExcelRoleType",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 14,
+    "hash_code": "sha256:2909798f6a99280ac9d44fed7221928b6f9905e7c08c1def97a582796698e7fb",
+    "data_source": [
+      {
+        "file": "d85b058636ce4f8f99ca29bceef7bd49a333f893121bd2b2b1e4ece6447fce9a",
+        "sheet": "0e18a2a31bb4490444004112fde0b1b402566e258e46ec0f36f89f44dfdad8ea",
+        "count": 13
+      }
+    ]
+  },
+  "rows": [
+    {
+      "type_id": 400000,
+      "meta": {
+        "race": "EN_ROLE_RACE_HUMAN",
+        "career": "EN_ROLE_CAREER_FIGHTER",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        107001,
+        107002,
+        107008,
+        107009
+      ],
+      "game_failed_default_item_config_ids": [
+        107001,
+        107002,
+        107008,
+        107009
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ONLY_EDIT",
+      "create_show_item_config_ids": [
+        207001,
+        207002
+      ],
+      "revival_default_weapon": 181010000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400002",
+      "str_advantages": "Career_Advantage_400002",
+      "str_disadvantages": "Career_Disadvantage_400002",
+      "str_equipments": "Career_Equipments_Des_400002",
+      "str_name": "CareerName_2",
+      "icon_head": "CareerHead_400002",
+      "icon_career": "CareerIcon_Big_400002",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400001,
+      "meta": {
+        "race": "EN_ROLE_RACE_NIGHT_ELF",
+        "career": "EN_ROLE_CAREER_SWORDMASTER",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        101001,
+        101002,
+        101003,
+        101004,
+        101005,
+        101006,
+        101007,
+        101008,
+        101009,
+        101010,
+        101011,
+        101012,
+        101013,
+        101014,
+        101015,
+        101016,
+        101017,
+        101020,
+        101021
+      ],
+      "game_failed_default_item_config_ids": [
+        101001,
+        101002,
+        101003,
+        101004,
+        101005,
+        101006,
+        101007,
+        101008,
+        101009,
+        101010,
+        101011,
+        101012,
+        101013,
+        101014,
+        101015,
+        101016,
+        101017,
+        101020,
+        101021
+      ],
+      "pvp_default_item_config_ids": [
+        401001,
+        401002,
+        401003,
+        401004,
+        401005,
+        401006,
+        401007,
+        401008,
+        401009,
+        401010,
+        401011,
+        401012,
+        401013,
+        401014,
+        401015,
+        401016,
+        401017,
+        401018,
+        401019,
+        401020,
+        401021,
+        401022,
+        401023,
+        401024,
+        401025,
+        401026
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        201001,
+        201002,
+        201003,
+        201004,
+        201005,
+        201006,
+        201007
+      ],
+      "order": 7,
+      "revival_default_weapon": 181020000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400001",
+      "str_advantages": "Career_Advantage_400001",
+      "str_disadvantages": "Career_Disadvantage_400001",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 101001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 101002
+        }
+      ],
+      "role_skill": [
+        101001,
+        101002
+      ],
+      "str_equipments": "Career_Equipments_Des_400001",
+      "str_name": "CareerName_1",
+      "icon_head": "CareerHead_400001",
+      "icon_career": "CareerIcon_Big_400001",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400002,
+      "meta": {
+        "race": "EN_ROLE_RACE_HUMAN",
+        "career": "EN_ROLE_CAREER_FIGHTER",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        107001,
+        107002,
+        107003,
+        107004,
+        107005,
+        107006,
+        107007,
+        107008,
+        107009,
+        107012,
+        107013
+      ],
+      "game_failed_default_item_config_ids": [
+        107001,
+        107002,
+        107003,
+        107004,
+        107005,
+        107006,
+        107007,
+        107008,
+        107009,
+        107012,
+        107013
+      ],
+      "pvp_default_item_config_ids": [
+        407001,
+        407002,
+        407003,
+        407004,
+        407005,
+        407006,
+        407007,
+        407008,
+        407009,
+        407010,
+        407011,
+        407012,
+        407013,
+        407014,
+        407015,
+        407016,
+        407017,
+        407018,
+        407019,
+        407020,
+        407021,
+        407022,
+        407023,
+        407024,
+        407025,
+        407026,
+        407027
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        207001,
+        207002,
+        207003,
+        207004,
+        207005,
+        207006,
+        207007
+      ],
+      "order": 1,
+      "revival_default_weapon": 181010000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400002",
+      "str_advantages": "Career_Advantage_400002",
+      "str_disadvantages": "Career_Disadvantage_400002",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 107001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 107002
+        }
+      ],
+      "role_skill": [
+        107001,
+        107004,
+        107006,
+        107002,
+        107005
+      ],
+      "str_equipments": "Career_Equipments_Des_400002",
+      "str_name": "CareerName_2",
+      "icon_head": "CareerHead_400002",
+      "icon_career": "CareerIcon_Big_400002",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400003,
+      "meta": {
+        "race": "EN_ROLE_RACE_HUMAN",
+        "career": "EN_ROLE_CAREER_PRIEST",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        105001,
+        105002,
+        105003,
+        105004,
+        105005,
+        105006,
+        105007,
+        105008,
+        105009
+      ],
+      "game_failed_default_item_config_ids": [
+        105001,
+        105002,
+        105003,
+        105004,
+        105005,
+        105006,
+        105007,
+        105008,
+        105009
+      ],
+      "pvp_default_item_config_ids": [
+        405001,
+        405002,
+        405003,
+        405004,
+        405005,
+        405006,
+        405007,
+        405008,
+        405009,
+        405010,
+        405011,
+        405012,
+        405013,
+        405014,
+        405015,
+        405016,
+        405017,
+        405018,
+        405019,
+        405020,
+        405021,
+        405022,
+        405023,
+        405024,
+        405025,
+        405026
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        205001,
+        205002,
+        205003,
+        205004,
+        205005,
+        205006,
+        205007
+      ],
+      "order": 2,
+      "revival_default_weapon": 181120000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400003",
+      "str_advantages": "Career_Advantage_400003",
+      "str_disadvantages": "Career_Disadvantage_400003",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 105001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 105002
+        }
+      ],
+      "role_skill": [
+        105001,
+        105004,
+        105002,
+        105005
+      ],
+      "str_equipments": "Career_Equipments_Des_400003",
+      "str_name": "CareerName_4",
+      "icon_head": "CareerHead_400003",
+      "icon_career": "CareerIcon_Big_400003",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400004,
+      "meta": {
+        "race": "EN_ROLE_RACE_HUMAN",
+        "career": "EN_ROLE_CAREER_ROGUE",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        103001,
+        103002,
+        103003,
+        103004,
+        103005,
+        103006,
+        103007,
+        103008,
+        103009,
+        103012,
+        103013,
+        103014
+      ],
+      "game_failed_default_item_config_ids": [
+        103001,
+        103002,
+        103003,
+        103004,
+        103005,
+        103006,
+        103007,
+        103008,
+        103009,
+        103012,
+        103013,
+        103014
+      ],
+      "pvp_default_item_config_ids": [
+        403001,
+        403002,
+        403003,
+        403004,
+        403005,
+        403006,
+        403007,
+        403008,
+        403009,
+        403010,
+        403011,
+        403012,
+        403013,
+        403014,
+        403015,
+        403016,
+        403017,
+        403018,
+        403019,
+        403020,
+        403021,
+        403022,
+        403023,
+        403024,
+        403025,
+        403026,
+        403027
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        203001,
+        203002,
+        203003,
+        203004,
+        203005,
+        203006,
+        203007
+      ],
+      "order": 3,
+      "revival_default_weapon": 181110000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400004",
+      "str_advantages": "Career_Advantage_400004",
+      "str_disadvantages": "Career_Disadvantage_400004",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 103001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 103002
+        }
+      ],
+      "role_skill": [
+        103001,
+        103003,
+        103002,
+        103004,
+        103005
+      ],
+      "str_equipments": "Career_Equipments_Des_400004",
+      "str_name": "CareerName_3",
+      "icon_head": "CareerHead_400005",
+      "icon_career": "CareerIcon_Big_400004",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400005,
+      "meta": {
+        "race": "EN_ROLE_RACE_HUMAN",
+        "career": "EN_ROLE_CAREER_WIZARD",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        109001,
+        109002,
+        109003,
+        109004,
+        109005,
+        109006,
+        109007,
+        109008,
+        109010
+      ],
+      "game_failed_default_item_config_ids": [
+        109001,
+        109002,
+        109003,
+        109004,
+        109005,
+        109006,
+        109007,
+        109008,
+        109010
+      ],
+      "pvp_default_item_config_ids": [
+        409001,
+        409002,
+        409003,
+        409004,
+        409005,
+        409006,
+        409007,
+        409008,
+        409009,
+        409010,
+        409011,
+        409012,
+        409013,
+        409014,
+        409015,
+        409016,
+        409017,
+        409018,
+        409019,
+        409020,
+        409021,
+        409022,
+        409023,
+        409024,
+        409025,
+        409026
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        209001,
+        209002,
+        209003,
+        209004,
+        209005,
+        209006
+      ],
+      "order": 4,
+      "revival_default_weapon": 181050001,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400005",
+      "str_advantages": "Career_Advantage_400005",
+      "str_disadvantages": "Career_Disadvantage_400005",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 109001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 109002
+        }
+      ],
+      "role_skill": [
+        109001,
+        109002
+      ],
+      "str_equipments": "Career_Equipments_Des_400005",
+      "str_name": "CareerName_5",
+      "icon_head": "CareerHead_400004",
+      "icon_career": "CareerIcon_Big_400005",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400006,
+      "meta": {
+        "race": "EN_ROLE_RACE_UNDEAD",
+        "career": "EN_ROLE_CAREER_DEATHKNIGHT",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        108001,
+        108002,
+        108003,
+        108004,
+        108005,
+        108006,
+        108007,
+        108008,
+        108009,
+        108012,
+        108013
+      ],
+      "game_failed_default_item_config_ids": [
+        108001,
+        108002,
+        108003,
+        108004,
+        108005,
+        108006,
+        108007,
+        108008,
+        108009,
+        108012,
+        108013
+      ],
+      "pvp_default_item_config_ids": [
+        408001,
+        408002,
+        408003,
+        408004,
+        408005,
+        408006,
+        408007,
+        408008,
+        408009,
+        408010,
+        408011,
+        408012,
+        408013,
+        408014,
+        408015,
+        408016,
+        408017,
+        408018,
+        408019,
+        408020,
+        408021,
+        408022,
+        408023,
+        408024,
+        408025,
+        408026,
+        408027
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        208001,
+        208003,
+        208004,
+        208005,
+        208006
+      ],
+      "order": 5,
+      "revival_default_weapon": 181020000,
+      "available_gender": [
+        "EN_ROLE_GENDER_NONE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400006",
+      "str_advantages": "Career_Advantage_400006",
+      "str_disadvantages": "Career_Disadvantage_400006",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 108001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 108002
+        }
+      ],
+      "role_skill": [
+        108001,
+        108005,
+        108002
+      ],
+      "str_equipments": "Career_Equipments_Des_400006",
+      "str_name": "CareerName_6",
+      "icon_head": "CareerHead_400006",
+      "icon_career": "CareerIcon_Big_400006",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400007,
+      "meta": {
+        "race": "EN_ROLE_RACE_UNDEAD",
+        "career": "EN_ROLE_CAREER_LICH",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        110001,
+        110002,
+        110003,
+        110004,
+        110005,
+        110006,
+        110007,
+        110008,
+        110010
+      ],
+      "game_failed_default_item_config_ids": [
+        110001,
+        110002,
+        110003,
+        110004,
+        110005,
+        110006,
+        110007,
+        110008,
+        110010
+      ],
+      "pvp_default_item_config_ids": [
+        410001,
+        410002,
+        410003,
+        410004,
+        410005,
+        410006,
+        410007,
+        410008,
+        410009,
+        410010,
+        410011,
+        410012,
+        410013,
+        410014,
+        410015,
+        410016,
+        410017,
+        410018,
+        410019,
+        410020,
+        410021,
+        410022,
+        410023,
+        410024,
+        410025,
+        410026
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        210007,
+        210008,
+        210002,
+        210003,
+        210004,
+        210005,
+        210006
+      ],
+      "order": 6,
+      "revival_default_weapon": 181050003,
+      "available_gender": [
+        "EN_ROLE_GENDER_NONE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400007",
+      "str_advantages": "Career_Advantage_400007",
+      "str_disadvantages": "Career_Disadvantage_400007",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 110001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 110002
+        }
+      ],
+      "role_skill": [
+        110001,
+        110004,
+        110002,
+        110005
+      ],
+      "str_equipments": "Career_Equipments_Des_400007",
+      "str_name": "CareerName_7",
+      "icon_head": "CareerHead_400007",
+      "icon_career": "CareerIcon_Big_400007",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400008,
+      "meta": {
+        "race": "EN_ROLE_RACE_NIGHT_ELF",
+        "career": "EN_ROLE_CAREER_DRUID_PANTHER",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        106001,
+        106002,
+        106003,
+        106004,
+        106005,
+        106006,
+        106007,
+        106008,
+        106009
+      ],
+      "game_failed_default_item_config_ids": [
+        106001,
+        106002,
+        106003,
+        106004,
+        106005,
+        106006,
+        106007,
+        106008,
+        106009
+      ],
+      "pvp_default_item_config_ids": [
+        406001,
+        406002,
+        406003,
+        406004,
+        406005,
+        406006,
+        406007,
+        406008,
+        406009,
+        406010,
+        406011,
+        406012,
+        406013,
+        406014,
+        406015,
+        406016,
+        406017,
+        406018,
+        406019,
+        406020,
+        406021,
+        406022,
+        406023,
+        406024,
+        406025,
+        406026,
+        406027
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        206001,
+        206002,
+        206003,
+        206004,
+        206005,
+        206006
+      ],
+      "order": 8,
+      "revival_default_weapon": 181120000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400008",
+      "str_advantages": "Career_Advantage_400008",
+      "str_disadvantages": "Career_Disadvantage_400008",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 106001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 106002
+        }
+      ],
+      "role_initial_passive_skill": [
+        106003,
+        106004
+      ],
+      "role_skill": [
+        106001,
+        106003,
+        106002,
+        106004,
+        106006
+      ],
+      "str_equipments": "Career_Equipments_Des_400008",
+      "str_name": "CareerName_8",
+      "icon_head": "CareerHead_400008",
+      "icon_career": "CareerIcon_Big_400008",
+      "rotation": {
+        "Z": -35.0
+      },
+      "unlock_time": "2024-07-04T00:00:00Z",
+      "cumulative_login_day": 10000
+    },
+    {
+      "type_id": 400101,
+      "meta": {
+        "race": "EN_ROLE_RACE_HUMAN",
+        "career": "EN_ROLE_CAREER_MITHRIL_FORCE_FIGHTER",
+        "force": "EN_FORCE_TYPE_MITHRIL_FORCE"
+      },
+      "create_default_item_config_ids": [
+        301001,
+        301002,
+        301003,
+        301004,
+        301005,
+        301006,
+        301007,
+        301008,
+        301009,
+        301010,
+        301011,
+        301012,
+        301013,
+        301014,
+        301015,
+        301016
+      ],
+      "game_failed_default_item_config_ids": [
+        301001,
+        301002,
+        301003,
+        301004,
+        301005,
+        301006,
+        301007,
+        301008,
+        301009,
+        301010,
+        301011,
+        301012,
+        301013,
+        301014,
+        301015,
+        301016
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        301001,
+        301002,
+        301003,
+        301004,
+        301005,
+        301006,
+        301007
+      ],
+      "order": 1,
+      "revival_default_weapon": 181010000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_MITHRIL_FORCE",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400101",
+      "str_advantages": "Career_Advantage_400101",
+      "str_disadvantages": "Career_Disadvantage_400101",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 1101001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 1101002
+        }
+      ],
+      "role_skill": [
+        1101001,
+        1101002
+      ],
+      "str_equipments": "Career_Equipments_Des_400002",
+      "str_name": "CareerName_101",
+      "icon_head": "CareerHead_400002",
+      "icon_career": "CareerIcon_Big_400101",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400102,
+      "meta": {
+        "race": "EN_ROLE_RACE_HUMAN",
+        "career": "EN_ROLE_CAREER_MITHRIL_FORCE_PRIEST",
+        "force": "EN_FORCE_TYPE_MITHRIL_FORCE"
+      },
+      "create_default_item_config_ids": [
+        302001,
+        302002,
+        302003,
+        302004,
+        302005,
+        302006,
+        302007,
+        302008,
+        302009,
+        302010,
+        302011,
+        302012,
+        302013,
+        302014,
+        302015
+      ],
+      "game_failed_default_item_config_ids": [
+        302001,
+        302002,
+        302003,
+        302004,
+        302005,
+        302006,
+        302007,
+        302008,
+        302009,
+        302010,
+        302011,
+        302012,
+        302013,
+        302014,
+        302015
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        302001,
+        302002,
+        302003,
+        302004,
+        302005,
+        302006,
+        302007
+      ],
+      "order": 2,
+      "revival_default_weapon": 181120000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_MITHRIL_FORCE",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400102",
+      "str_advantages": "Career_Advantage_400102",
+      "str_disadvantages": "Career_Disadvantage_400102",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 1103001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 1103002
+        }
+      ],
+      "role_skill": [
+        1103001,
+        1103002
+      ],
+      "str_equipments": "Career_Equipments_Des_400003",
+      "str_name": "CareerName_103",
+      "icon_head": "CareerHead_400003",
+      "icon_career": "CareerIcon_Big_400102",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400103,
+      "meta": {
+        "race": "EN_ROLE_RACE_HUMAN",
+        "career": "EN_ROLE_CAREER_MITHRIL_FORCE_ROGUE",
+        "force": "EN_FORCE_TYPE_MITHRIL_FORCE"
+      },
+      "create_default_item_config_ids": [
+        303001,
+        303002,
+        303003,
+        303004,
+        303005,
+        303006,
+        303007,
+        303008,
+        303009,
+        303010,
+        303011,
+        303012,
+        303013,
+        303014,
+        303015,
+        303016,
+        303017
+      ],
+      "game_failed_default_item_config_ids": [
+        303001,
+        303002,
+        303003,
+        303004,
+        303005,
+        303006,
+        303007,
+        303008,
+        303009,
+        303010,
+        303011,
+        303012,
+        303013,
+        303014,
+        303015,
+        303016,
+        303017
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        303001,
+        303002,
+        303003,
+        303004,
+        303005,
+        303006,
+        303007
+      ],
+      "order": 3,
+      "revival_default_weapon": 181110000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_MITHRIL_FORCE",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400103",
+      "str_advantages": "Career_Advantage_400103",
+      "str_disadvantages": "Career_Disadvantage_400103",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 1102001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 1102002
+        }
+      ],
+      "role_skill": [
+        1102001,
+        1102002
+      ],
+      "str_equipments": "Career_Equipments_Des_400004",
+      "str_name": "CareerName_102",
+      "icon_head": "CareerHead_400005",
+      "icon_career": "CareerIcon_Big_400103",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 400201,
+      "meta": {
+        "race": "EN_ROLE_RACE_HUMAN",
+        "career": "EN_ROLE_CAREER_MITHRIL_FORCE_FIGHTER",
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        420001,
+        420002,
+        420003,
+        420004,
+        420005,
+        420006,
+        420007,
+        420008,
+        420009,
+        420010,
+        420011,
+        420012,
+        420013
+      ],
+      "game_failed_default_item_config_ids": [
+        420001,
+        420002,
+        420003,
+        420004,
+        420005,
+        420006,
+        420007,
+        420008,
+        420009,
+        420010,
+        420011,
+        420012,
+        420013
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ALL_AVAILABLE",
+      "create_show_item_config_ids": [
+        207001,
+        207002,
+        207003,
+        207004,
+        207005,
+        207006,
+        207007
+      ],
+      "order": 9,
+      "revival_default_weapon": 181010000,
+      "available_gender": [
+        "EN_ROLE_GENDER_MALE",
+        "EN_ROLE_GENDER_FEMALE"
+      ],
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_400201",
+      "str_advantages": "Career_Advantage_400201",
+      "str_disadvantages": "Career_Disadvantage_400201",
+      "role_initial_skill": [
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_Q",
+          "skill_id": 109001
+        },
+        {
+          "key_position": "EN_ROLE_SKILL_POSITION_E",
+          "skill_id": 1101002
+        }
+      ],
+      "role_skill": [
+        109001,
+        1101002
+      ],
+      "str_equipments": "Career_Equipments_Des_400201",
+      "str_name": "CareerName_400201",
+      "icon_head": "CareerHead_400002",
+      "icon_career": "CareerIcon_Big_400201",
+      "rotation": {
+        "Z": -35.0
+      }
+    },
+    {
+      "type_id": 499999,
+      "meta": {
+        "force": "EN_FORCE_TYPE_ADVENTURER"
+      },
+      "create_default_item_config_ids": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1101,
+        1102,
+        8,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107,
+        1108,
+        1109,
+        1110,
+        1111,
+        1112
+      ],
+      "game_failed_default_item_config_ids": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1101,
+        1102,
+        8,
+        1103,
+        1104,
+        1105,
+        1106,
+        1107,
+        1108,
+        1109,
+        1110,
+        1111,
+        1112
+      ],
+      "environment": "EN_ENVIRONMENT_TYPE_ONLY_EDIT",
+      "create_show_item_config_ids": [
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1101,
+        1102,
+        8,
+        1103,
+        1104
+      ],
+      "revival_default_weapon": 181010000,
+      "force": "EN_FORCE_TYPE_ADVENTURER",
+      "skin_ids": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "str_desc": "Career_Description_499999",
+      "str_advantages": "Career_Advantage_499999",
+      "str_disadvantages": "Career_Disadvantage_499999",
+      "str_equipments": "Career_Equipments_Des_499999",
+      "str_name": "CareerUnknow",
+      "rotation": {
+        "Z": -35.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,542 @@
+[
+  {
+    "alive_time": "10",
+    "map_id": 1
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 1
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 1
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 1
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 1
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 1
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 1
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 1
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 1
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 1
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 1
+  },
+  {
+    "alive_time": "10",
+    "map_id": 2
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 2
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 2
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 2
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 2
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 2
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 2
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 2
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 2
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 2
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 2
+  },
+  {
+    "alive_time": "10",
+    "map_id": 3
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 3
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 3
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 3
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 3
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 3
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 3
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 3
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 3
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 3
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 3
+  },
+  {
+    "alive_time": "10",
+    "map_id": 4
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 4
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 4
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 4
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 4
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 4
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 4
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 4
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 4
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 4
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 4
+  },
+  {
+    "alive_time": "10",
+    "map_id": 10101
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 10101
+  },
+  {
+    "alive_time": "10",
+    "map_id": 10102
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 10102
+  },
+  {
+    "alive_time": "10",
+    "map_id": 10103
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 10103
+  },
+  {
+    "alive_time": "10",
+    "map_id": 10201
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 10201
+  },
+  {
+    "alive_time": "10",
+    "map_id": 10202
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 10202
+  },
+  {
+    "alive_time": "10",
+    "map_id": 10203
+  },
+  {
+    "alive_time": "60",
+    "exp": 5,
+    "map_id": 10203
+  },
+  {
+    "alive_time": "120",
+    "exp": 10,
+    "map_id": 10203
+  },
+  {
+    "alive_time": "180",
+    "exp": 20,
+    "map_id": 10203
+  },
+  {
+    "alive_time": "240",
+    "exp": 35,
+    "map_id": 10203
+  },
+  {
+    "alive_time": "300",
+    "exp": 50,
+    "map_id": 10203
+  },
+  {
+    "alive_time": "360",
+    "exp": 70,
+    "map_id": 10203
+  },
+  {
+    "alive_time": "420",
+    "exp": 100,
+    "map_id": 10203
+  },
+  {
+    "alive_time": "480",
+    "exp": 130,
+    "map_id": 10203
+  },
+  {
+    "alive_time": "540",
+    "exp": 150,
+    "map_id": 10203
+  },
+  {
+    "alive_time": "600",
+    "exp": 160,
+    "map_id": 10203
+  }
+]

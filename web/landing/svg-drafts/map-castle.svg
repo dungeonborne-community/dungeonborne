@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" role="img" aria-label="Gothic castle">
+  <!-- Our own drawing (not from the game): silhouette of a gothic castle, the windows glow, a blue portal at the gates. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b0907"/><stop offset="1" stop-color="#20160e"/></linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14110d"/><stop offset="1" stop-color="#0b0907"/></linearGradient>
+    <filter id="g" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <style>
+    .w { animation: f 3s ease-in-out infinite; }
+    .w2 { animation-delay: -1.1s; } .w3 { animation-delay: -2.2s; }
+    .p { animation: p 3.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .star { animation: t 4s ease-in-out infinite; }
+    @keyframes f { 50% { opacity: .55; } }
+    @keyframes p { 50% { opacity: .55; transform: scale(.9); } }
+    @keyframes t { 50% { opacity: .2; } }
+    @media (prefers-reduced-motion: reduce) { .w, .p, .star { animation: none; } }
+  </style>
+  <rect width="400" height="170" fill="url(#sky)"/>
+  <circle cx="318" cy="40" r="26" fill="#efe6d6" opacity=".06"/><circle cx="318" cy="40" r="12" fill="#e9dcc4" opacity=".75"/><circle cx="314" cy="37" r="2.5" fill="#c2b5a1" opacity=".6"/><circle cx="322" cy="44" r="1.6" fill="#c2b5a1" opacity=".5"/>
+  <g fill="#efe6d6"><circle class="star" cx="52" cy="24" r="1"/><circle class="star" cx="120" cy="14" r=".8" style="animation-delay:-1s"/><circle class="star" cx="250" cy="22" r="1" style="animation-delay:-2s"/><circle class="star" cx="372" cy="70" r=".8" style="animation-delay:-3s"/></g>
+
+  <!-- castle -->
+  <g fill="#120e0a" stroke="#3b3127" stroke-linejoin="round">
+    <path d="M110 150V92h-6l14-34 14 34h-6v58z"/>
+    <path d="M262 150V86h-6l16-40 16 40h-6v64z"/>
+    <path d="M130 150V104h130v46z"/>
+    <path d="M168 104V64h-6l33-44 33 44h-6v40z"/>
+    <path d="M130 104v-8h10v8m14 0v-8h10v8m60 0v-8h10v8m14 0v-8h10v8"/>
+  </g>
+  <path d="M195 20v-10" stroke="#6b5638"/>
+  <path d="M195 10l9 3-9 3" fill="#9b6624"/>
+  <!-- windows -->
+  <g fill="#f6cd7a">
+    <path class="w" d="M190 82a5 5 0 0 1 10 0v12h-10z"/>
+    <path class="w w2" d="M115 104a3 3 0 0 1 6 0v8h-6z"/>
+    <path class="w w3" d="M269 98a3 3 0 0 1 6 0v8h-6z"/>
+    <path class="w w2" d="M150 118a3 3 0 0 1 6 0v8h-6z"/>
+    <path class="w" d="M234 118a3 3 0 0 1 6 0v8h-6z"/>
+  </g>
+  <g fill="#f6cd7a" opacity=".35" filter="url(#g)"><circle cx="195" cy="88" r="8"/><circle cx="118" cy="108" r="5"/><circle cx="272" cy="102" r="5"/></g>
+  <!-- gates and the blue portal -->
+  <path d="M182 150v-18a13 13 0 0 1 26 0v18z" fill="#07060a" stroke="#6b5638"/>
+  <ellipse cx="195" cy="138" rx="10" ry="12" fill="#3b8cff" filter="url(#g)" class="p"/>
+  <ellipse cx="195" cy="139" rx="6" ry="9" fill="#9cd2ff" stroke="#e6f6ff" stroke-width="1"/>
+  <!-- hill -->
+  <path d="M0 158C80 146 140 148 200 150s130-4 200 6V170H0z" fill="url(#hill)"/>
+  <path d="M0 158C80 146 140 148 200 150s130-4 200 6" fill="none" stroke="#e0a84a" stroke-opacity=".3"/>
+</svg>

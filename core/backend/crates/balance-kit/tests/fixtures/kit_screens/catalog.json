@@ -1,0 +1,117 @@
+{
+ "format": "dbbalance-catalog/1",
+ "items": {
+  "100": {
+   "ru": "Меч",
+   "en": "Sword",
+   "kind": "EQUIP_WEAPON",
+   "rarity": "UNCOMMON"
+  },
+  "200": {
+   "ru": "Щит",
+   "en": "Shield",
+   "kind": "EQUIP_ARMOR",
+   "rarity": "NORMAL"
+  },
+  "1": {
+   "ru": "Золото",
+   "en": "Gold"
+  },
+  "300": {
+   "ru": "Зелье",
+   "en": "Potion",
+   "kind": "ITEM_CONSUMABLE"
+  },
+  "7": {
+   "ru": "Трава",
+   "en": "Herb"
+  }
+ },
+ "classes": {
+  "400001": {
+   "order": 1,
+   "ru": "Боец",
+   "en": "Fighter"
+  },
+  "400002": {
+   "order": 2,
+   "ru": "Жрец",
+   "en": "Priest"
+  },
+  "400000": {
+   "order": 0,
+   "ru": "Служебный",
+   "hidden": true
+  },
+  "400101": {
+   "order": 3,
+   "ru": "Мифрил"
+  }
+ },
+ "rarities": {
+  "NORMAL": {
+   "value": 2,
+   "ru": "Обычное",
+   "en": "Common"
+  },
+  "UNCOMMON": {
+   "value": 3,
+   "ru": "Редкое",
+   "en": "Uncommon"
+  }
+ },
+ "products": {
+  "9001": {
+   "ru": "Набор",
+   "en": "Bundle"
+  }
+ },
+ "field_types": {
+  "affix_template": {
+   "data.fixed_rule[*].attribute.attack.offset.min_value": "int32",
+   "data.fixed_rule[*].attribute.attack.offset.max_value": "int32",
+   "data.fixed_rule[*].attribute.crit.fixed_value": "float"
+  },
+  "gear_template": {
+   "durability": "int32"
+  },
+  "market_product_item": {
+   "product.cost_options[*].cost_items[*].cost_price": "int32",
+   "product.reward_items[*].count": "int32"
+  },
+  "affix_value_template": {
+   "data.affix_data[*].rarity_range[*].min_value": "float",
+   "data.affix_data[*].rarity_range[*].max_value": "float"
+  },
+  "role_level_upgrade": {
+   "role_attribute.strength.fixed_value": "float",
+   "role_attribute.crit.fixed_value": "float"
+  },
+  "item_type": {
+   "system_repurchase_price": "int32"
+  },
+  "trade_commodity": {
+   "price_def": "int32",
+   "tax_percentage": "int32"
+  },
+  "gear_dismantle": {
+   "reward[*].count": "int32"
+  },
+  "craft_table": {
+   "item_cost[*].count": "int32",
+   "product[*].count": "int32"
+  },
+  "gear_insurance_item": {
+   "sp_rate": "int32"
+  },
+  "map_exp": {
+   "exp": "int32"
+  }
+ },
+ "maps": {
+  "10101": {
+   "ru": "Склеп",
+   "en": "Sinner's End"
+  }
+ }
+}

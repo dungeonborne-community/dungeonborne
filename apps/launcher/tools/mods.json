@@ -1,0 +1,13 @@
+{
+  "_comment": "Client mod packages (dbmod/1) built by tools/make_mods.py from a working install. paks: file stems in Content/Paks (.pak/.ucas/.utoc/.sig are taken as present); ue4ss: folder names in Binaries/Win64/ue4ss/Mods. priority keeps the old name order zz_ (10) < zzzzz_ (50) < zzzzzz_ (60) < zzzzzzz_ (70).",
+  "packages": {
+    "ru.li-patch":        { "name": "LI patch (tables)",          "required": true,  "priority": 10, "paks": ["zz_LIPatch_P"] },
+    "ru.relic-quality":   { "name": "Relic craft quality",        "required": true,  "priority": 10, "paks": ["zz_RelicQuality_P"] },
+    "ru.rebuild-private": { "name": "Rebuild private (UnLua)",    "required": true,  "priority": 50, "paks": ["zzzzz_RebuildPrivate_P"] },
+    "ru.balance":         { "name": "Season balance",             "required": true,  "priority": 60, "paks": ["zzzzzz_Balance_P"] },
+    "ru.r14-fix":         { "name": "R14 equipment manager fix",  "required": true,  "priority": 70, "paks": ["zzzzzzz_BPFix_P"], "ue4ss": ["DungeonborneR14"] },
+    "ru.chat-fix":        { "name": "World chat tab",             "required": true,  "priority": 71, "paks": ["zzzzzzz_ChatFix_P"] },
+    "ru.client-hooks":    { "name": "Client hooks + dbnative",    "required": true,  "ue4ss": ["DungeonborneRuClient"] },
+    "ru.client-probe":    { "name": "Client probe (diagnostics)", "required": false, "ue4ss": ["ClientProbe"] }
+  }
+}

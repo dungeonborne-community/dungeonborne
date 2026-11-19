@@ -1,0 +1,144 @@
+[
+  {
+    "data": {
+      "cost_options": [
+        {
+          "cost_items": [
+            {
+              "cost_type": 1001
+            }
+          ]
+        }
+      ],
+      "stock": 3
+    },
+    "product_id": 704014,
+    "sort_idx": 1
+  },
+  {
+    "data": {
+      "cost_options": [
+        {
+          "cost_items": [
+            {
+              "cost_price": 5000,
+              "cost_type": 1001,
+              "origin_price": 5000
+            }
+          ]
+        }
+      ],
+      "stock": 1
+    },
+    "product_id": 720001,
+    "sort_idx": 1
+  },
+  {
+    "data": {
+      "cost_options": [
+        {
+          "cost_items": [
+            {
+              "cost_price": 10000,
+              "cost_type": 1001,
+              "origin_price": 10000
+            }
+          ]
+        }
+      ],
+      "stock": 1
+    },
+    "product_id": 720001,
+    "sort_idx": 2
+  },
+  {
+    "data": {
+      "cost_options": [
+        {
+          "cost_items": [
+            {
+              "cost_price": 25000,
+              "cost_type": 1001,
+              "origin_price": 25000
+            }
+          ]
+        }
+      ],
+      "stock": 1
+    },
+    "product_id": 720001,
+    "sort_idx": 3
+  },
+  {
+    "data": {
+      "cost_options": [
+        {
+          "cost_items": [
+            {
+              "cost_price": 100,
+              "cost_type": 1012,
+              "origin_price": 100
+            }
+          ]
+        }
+      ],
+      "stock": 1
+    },
+    "product_id": 720001,
+    "sort_idx": 4
+  },
+  {
+    "data": {
+      "cost_options": [
+        {
+          "cost_items": [
+            {
+              "cost_price": 150,
+              "cost_type": 1012,
+              "origin_price": 150
+            }
+          ]
+        }
+      ],
+      "stock": 1
+    },
+    "product_id": 720001,
+    "sort_idx": 5
+  },
+  {
+    "data": {
+      "cost_options": [
+        {
+          "cost_items": [
+            {
+              "cost_price": 250,
+              "cost_type": 1012,
+              "origin_price": 250
+            }
+          ]
+        }
+      ],
+      "stock": 1
+    },
+    "product_id": 720001,
+    "sort_idx": 6
+  },
+  {
+    "data": {
+      "cost_options": [
+        {
+          "cost_items": [
+            {
+              "cost_price": 400,
+              "cost_type": 1012,
+              "origin_price": 400
+            }
+          ]
+        }
+      ],
+      "stock": 1
+    },
+    "product_id": 720001,
+    "sort_idx": 7
+  }
+]

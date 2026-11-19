@@ -1,0 +1,328 @@
+[
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "win_count": 7
+    },
+    "display_quantity": 2,
+    "first_rewards": [
+      {
+        "count": 1,
+        "type_id": 100098
+      },
+      {
+        "count": 1,
+        "type_id": 631103
+      }
+    ],
+    "first_show_rewards": [
+      {
+        "count": 1,
+        "type_id": 100098
+      },
+      {
+        "count": 1,
+        "type_id": 631311
+      }
+    ],
+    "grade_id": 101,
+    "icon": "Icon_EquipmentChest4",
+    "random_reward_id": 100008,
+    "reached_cond": {
+      "failed_range": {},
+      "win_range": {
+        "max_count": 7,
+        "min_count": 7
+      }
+    },
+    "show_items": [
+      {
+        "count": 1,
+        "type_id": 100097
+      },
+      {
+        "count": 1,
+        "type_id": 631308
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_1"
+  },
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "failed_count": 1,
+      "win_count": 7
+    },
+    "display_quantity": 2,
+    "grade_id": 102,
+    "icon": "Icon_EquipmentChest4",
+    "random_reward_id": 100009,
+    "reached_cond": {
+      "failed_range": {
+        "max_count": 1,
+        "min_count": 1
+      },
+      "win_range": {
+        "max_count": 7,
+        "min_count": 7
+      }
+    },
+    "show_items": [
+      {
+        "count": 100000,
+        "type_id": 1001
+      },
+      {
+        "count": 1,
+        "type_id": 631309
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_2"
+  },
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "failed_count": 2,
+      "win_count": 7
+    },
+    "display_quantity": 3,
+    "grade_id": 103,
+    "icon": "Icon_EquipmentChest4",
+    "random_reward_id": 100010,
+    "reached_cond": {
+      "failed_range": {
+        "max_count": 2,
+        "min_count": 2
+      },
+      "win_range": {
+        "max_count": 7,
+        "min_count": 7
+      }
+    },
+    "show_items": [
+      {
+        "count": 80000,
+        "type_id": 1001
+      },
+      {
+        "count": 1,
+        "type_id": 631310
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_3"
+  },
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "failed_count": -1,
+      "win_count": 6
+    },
+    "display_quantity": 4,
+    "grade_id": 104,
+    "icon": "Icon_EquipmentChest4",
+    "random_reward_id": 100007,
+    "reached_cond": {
+      "failed_range": {
+        "max_count": 3
+      },
+      "win_range": {
+        "max_count": 6,
+        "min_count": 6
+      }
+    },
+    "show_items": [
+      {
+        "count": 80000,
+        "type_id": 1001
+      },
+      {
+        "count": 1,
+        "type_id": 631307
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_4"
+  },
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "failed_count": -1,
+      "win_count": 5
+    },
+    "display_quantity": 5,
+    "grade_id": 105,
+    "icon": "Icon_EquipmentChest4",
+    "random_reward_id": 100006,
+    "reached_cond": {
+      "failed_range": {
+        "max_count": 3
+      },
+      "win_range": {
+        "max_count": 5,
+        "min_count": 5
+      }
+    },
+    "show_items": [
+      {
+        "count": 50000,
+        "type_id": 1001
+      },
+      {
+        "count": 1,
+        "type_id": 631306
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_5"
+  },
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "failed_count": -1,
+      "win_count": 4
+    },
+    "display_quantity": 6,
+    "grade_id": 106,
+    "icon": "Icon_EquipmentChest3",
+    "random_reward_id": 100005,
+    "reached_cond": {
+      "failed_range": {
+        "max_count": 3
+      },
+      "win_range": {
+        "max_count": 4,
+        "min_count": 4
+      }
+    },
+    "show_items": [
+      {
+        "count": 50000,
+        "type_id": 1001
+      },
+      {
+        "count": 1,
+        "type_id": 631305
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_6"
+  },
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "failed_count": -1,
+      "win_count": 3
+    },
+    "display_quantity": 6,
+    "grade_id": 107,
+    "icon": "Icon_EquipmentChest3",
+    "random_reward_id": 100004,
+    "reached_cond": {
+      "failed_range": {
+        "max_count": 3
+      },
+      "win_range": {
+        "max_count": 3,
+        "min_count": 3
+      }
+    },
+    "show_items": [
+      {
+        "count": 30000,
+        "type_id": 1001
+      },
+      {
+        "count": 1,
+        "type_id": 631304
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_7"
+  },
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "failed_count": -1,
+      "win_count": 2
+    },
+    "display_quantity": 7,
+    "grade_id": 108,
+    "icon": "Icon_EquipmentChest3",
+    "random_reward_id": 100003,
+    "reached_cond": {
+      "failed_range": {
+        "max_count": 3
+      },
+      "win_range": {
+        "max_count": 2,
+        "min_count": 2
+      }
+    },
+    "show_items": [
+      {
+        "count": 25000,
+        "type_id": 1001
+      },
+      {
+        "count": 1,
+        "type_id": 631303
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_8"
+  },
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "failed_count": -1,
+      "win_count": 1
+    },
+    "display_quantity": 7,
+    "grade_id": 109,
+    "icon": "Icon_EquipmentChest3",
+    "random_reward_id": 100002,
+    "reached_cond": {
+      "failed_range": {
+        "max_count": 3
+      },
+      "win_range": {
+        "max_count": 1,
+        "min_count": 1
+      }
+    },
+    "show_items": [
+      {
+        "count": 20000,
+        "type_id": 1001
+      },
+      {
+        "count": 1,
+        "type_id": 631302
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_9"
+  },
+  {
+    "activity_rule_id": 1,
+    "display_cond": {
+      "failed_count": -1,
+      "win_count": -1
+    },
+    "display_quantity": 8,
+    "grade_id": 110,
+    "icon": "Icon_EquipmentChest3",
+    "random_reward_id": 100001,
+    "reached_cond": {
+      "failed_range": {
+        "max_count": 3
+      },
+      "win_range": {}
+    },
+    "show_items": [
+      {
+        "count": 15000,
+        "type_id": 1001
+      },
+      {
+        "count": 1,
+        "type_id": 631301
+      }
+    ],
+    "str_desc": "ImmaculateTrial_t_10"
+  }
+]

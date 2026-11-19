@@ -1,0 +1,32 @@
+{
+  "type": "tgf.config.ExcelAffixLevelPoolRule",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 2,
+    "hash_code": "sha256:1bd5915596aefb1d24547c1f49dc7c9adb4b3bb25ebc5cc2cbafe2bab95a7f4b",
+    "data_source": [
+      {
+        "file": "3cfda9ac749c13ada0f24b3d340c5c2d8da7231862106ff6c1a59423427cba28",
+        "sheet": "edff059db9ff445f6e0d905f77a2a98756c27d7fccccb18766bac3b092957464",
+        "count": 2
+      }
+    ]
+  },
+  "rows": [
+    {
+      "rule_id": 30101,
+      "level_id": 10103,
+      "affix_pool_ids": [
+        101103
+      ]
+    },
+    {
+      "rule_id": 30102,
+      "level_id": 10103,
+      "affix_pool_ids": [
+        101104
+      ]
+    }
+  ]
+}

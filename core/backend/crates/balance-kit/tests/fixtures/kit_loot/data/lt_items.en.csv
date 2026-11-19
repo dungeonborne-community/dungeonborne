@@ -1,0 +1,19 @@
+row,key,title,path,value,name
+0,900,Gold,item_id,1,Gold
+0,900,Gold,pool,900,gold 1
+0,900,Gold,w,30000,
+0,900,Gold,cnt[0],2,
+0,900,Gold,cnt[1],4,
+1,901,Sword,item_id,2,Sword
+1,901,Sword,pool,901,"weapons 1, gems 1, potions 1"
+1,901,Sword,w,10000,
+1,901,Sword,cnt[0],1,
+2,901,Stone,item_id,3,Stone
+2,901,Stone,pool,901,"weapons 1, gems 1, potions 1"
+2,901,Stone,level,2,
+2,901,Stone,w,20000,
+2,901,Stone,cnt[0],1,
+3,901,Potion,item_id,4,Potion
+3,901,Potion,pool,901,"weapons 1, gems 1, potions 1"
+3,901,Potion,w,0,
+3,901,Potion,cnt[0],5,

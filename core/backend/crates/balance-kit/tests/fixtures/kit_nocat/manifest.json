@@ -1,0 +1,17 @@
+{
+ "format": "dbbalance-kit/1",
+ "version": "20260101-bbbbbbbb",
+ "title": "Без каталога",
+ "season": "dead-money",
+ "patch_format": "dbbalance-patch/1",
+ "tables": {
+  "gear": {
+   "sha256": "",
+   "rows": 1,
+   "values": 3,
+   "type": "t",
+   "source": "season",
+   "original": false
+  }
+ }
+}

@@ -1,0 +1,3 @@
+﻿id;return_price_difference;valid_lower_limit;po_amount_limit;so_amount_limit;currency_type;valid_price;random_item;market_type;ticket_type;bid_price_percentage;calculate_pool_id;recommend_id
+1;true;1;30;30;1001;1;true;EN_TRADE_MARKET_TYPE_HOMOGENEOUS;"[""EN_TRADE_TICKET_TYPE_PURCHASE"",""EN_TRADE_TICKET_TYPE_FIXED""]";5;1;1
+2;true;1;50;30;1001;;;EN_TRADE_MARKET_TYPE_AUCTION;"[""EN_TRADE_TICKET_TYPE_AUCTION""]";5;1;1

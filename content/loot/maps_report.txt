@@ -1,0 +1,46 @@
+=== map_select — maps in the selection menu (lobby)
+id        map_id diff  level_id  type players  name / features
+Map_1_1        1    1  40003015  2001       3  Кончина грешника  — Наказание за смерть | competition: pvp_mode= gear_rarity>=
+Map_1_2        1    2  40003017  2001       3  Кончина грешника  — Магическая коррозия, Наказание за смерть | competition: pvp_mode= gear_rarity>=
+Map_1_3        1    7  40003019  2001       3  Кончина грешника  — Магическая коррозия, Наказание за смерть | competition: pvp_mode= gear_rarity>={'rarity': ['EN_ITEM_RARITY_EPIC', 'EN_ITEM_RARITY_EXCEPTIONAL', 'EN_ITEM_RARITY_LEGENDARY', 'EN_ITEM_RARITY_UNIQUE']}
+Map_2_1        2    1  40003016  2001       1  Замок Клузо — Наказание за смерть | competition: pvp_mode= gear_rarity>=
+Map_2_2        2    2  40003018  2001       1  Замок Клузо — Магическая коррозия, Наказание за смерть | competition: pvp_mode= gear_rarity>=
+Map_2_3        2    7  40003020  2001       1  Замок Клузо — Магическая коррозия, Наказание за смерть | competition: pvp_mode= gear_rarity>={'rarity': ['EN_ITEM_RARITY_EPIC', 'EN_ITEM_RARITY_EXCEPTIONAL', 'EN_ITEM_RARITY_LEGENDARY', 'EN_ITEM_RARITY_UNIQUE']}
+Map_3_1        3    3  50000003  2002       3  Командный смертный бой — Выдача снаряжения, Защита добычи | competition: pvp_mode=EN_STATISTICS_PVP_MODE_DEATH gear_rarity>=
+Map_3_2        3    5  50000007  2002       3  MapName_7 | competition: pvp_mode= gear_rarity>=
+Map_4_1        4    6  20005004  2001       0  Пользовательская игра | competition: pvp_mode= gear_rarity>=
+Map_6_1        5    4  50000006  2002       3  Испытание Клото — Магическая коррозия, Выдача снаряжения, Защита добычи | competition: pvp_mode= gear_rarity>=
+
+=== map_detail — all maps (map_id), levels, loot
+map_id loot_map settle type  in menu    PVEloot ourLoot  levels (floors)
+     1        1 PVE          Map_1_1,Map_1_2,Map_1_3       0       0  L_Dungeon_Official_01 + L_Dungeon_Official_02[TWO]  opts=[5001, 10101]
+     2        2 PVE          Map_2_1,Map_2_2,Map_2_3       0       0  L_TGF_Gym  opts=[5000]
+     3        3 PVE          Map_3_1,Map_3_2       0       0  L_Dungeon_Official_01 + L_Dungeon_Official_02[TWO]  opts=[5001, 10101]
+     4        4 PVE          Map_4_1          0       0  L_Dungeon_Official_01 + L_Dungeon_Official_02[TWO]  opts=[5001, 10101]
+     5        5 PVE          Map_6_1          0       0  L_GothicCastle_WP_Main + L_GothicCastle_WP_Main_SecondFloor[TWO]  opts=[5002, 10201]
+     6        6 PVE          -                0       0  L_TGF_Gym_QA + L_TGF_Gym[TWO]  opts=[5000]
+     7        7 PVE          -                0       0  L_Dungeon_Official_02  opts=[5001, 10101]
+     8        8 PVE          -                0       0  L_Dungeon_Official_01  opts=[5001, 10101]
+     9        9 PVE          -                0       0  L_Dungeon_Official_01 + L_Dungeon_Official_02[TWO]  opts=[5001, 10101]
+    10       10 PVE          -                0       0  L_GothicCastle_WP_Main  opts=[5002, 10201]
+    11       11 PVE          -                0       0  L_Dungeon_Official_02  opts=[5001, 10101]
+    13       13 PVE          -                0       0  L_Dungeon_Official_02_Hard  opts=[5002, 10102]
+    16       16 PVE          -                0       0  L_TGF_Gym  opts=[5000]
+    17       17 PVE          -                0       0  L_Common_PVP03  opts=[5001]
+    18       18 PVE          -                0       0  L_TGF_Gym_PlayGround3  opts=[5001]
+ 10101    10101 PVE          -             1547    1547  L_Dungeon_Official_01 + L_Dungeon_Official_02[TWO]  opts=[5001, 10101]
+ 10102    10102 PVE          -             1567    1567  L_Dungeon_Official_01_Classic + L_Dungeon_Official_02[TWO]  opts=[5001, 10102]
+ 10103    10103 PVE          -             1567    1567  L_Dungeon_Official_01_Hard + L_Dungeon_Official_02_Hard[TWO]  opts=[5001, 10103]
+ 10201    10201 PVE          -             1547    1547  L_GothicCastle_WP_Main + L_GothicCastle_WP_Main_SecondFloor[TWO]  opts=[5002, 10201]
+ 10202    10202 PVE          -             1567    1567  L_GothicCastle_WP_Main_Classic + L_GothicCastle_WP_Main_SecondFloor[TWO]  opts=[5002, 10202]
+ 10203    10203 PVE          -             1567    1567  L_GothicCastle_WP_Main_Hard + L_GothicCastle_WP_Main_SecondFloor_Hard[TWO]  opts=[5002, 10203]
+ 30101    30101 PVP          -                0       0  L_Common_PVP01_DeathMatch  opts=[5003]
+ 30102    30102 BO5          -                0       0  L_Common_PVP01_MultiGameMode  opts=[5003]
+ 30201    30201 PVP          -                0       0  L_Common_PVP02_DeathMatch  opts=[5003]
+ 30202    30202 BO5          -                0       0  L_Common_PVP02_MultiGameMode  opts=[5003]
+ 30301    30301 PVP          -                0       0  L_Common_PVP03_DeathMatch  opts=[5003]
+ 30302    30302 BO5          -                0       0  L_Common_PVP03_MultiGameMode  opts=[5003]
+ 40001    40001 PVP          -                0       0  L_TGF_Gym_PlayGround4  opts=[5003]
+
+=== map_id from PVE loot that are not in map_detail
+  62: [10111, 10112, 10113, 10211, 10212, 10213, 11101, 11102, 11103, 11111, 11112, 11113, 11201, 11202, 11203, 11211, 11212, 11213, 12103, 12113, 12203, 12213, 13103, 13113, 13203, 13213, 14101, 14102, 14103, 14111, 14112, 14113, 14201, 14202, 14203, 14211, 14212, 14213, 15101, 15102, 15103, 15111, 15112, 15113, 15201, 15202, 15203, 15211, 15212, 15213, 16101, 16102, 16103, 16111, 16112, 16113, 16201, 16202, 16203, 16211, 16212, 16213]

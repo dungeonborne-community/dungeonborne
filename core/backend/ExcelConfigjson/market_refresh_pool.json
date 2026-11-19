@@ -1,0 +1,55 @@
+[
+  {
+    "market_location_count": 9,
+    "market_refresh_pool_id": 1,
+    "refresh_pool_random_weight": 1000
+  },
+  {
+    "market_location_count": 9,
+    "market_refresh_pool_id": 2,
+    "refresh_pool_random_weight": 1000
+  },
+  {
+    "market_location_count": 6,
+    "market_refresh_pool_id": 3,
+    "refresh_pool_random_weight": 1000
+  },
+  {
+    "market_location_count": 9,
+    "market_refresh_pool_id": 4,
+    "refresh_pool_random_weight": 1000
+  },
+  {
+    "market_location_count": 99,
+    "market_refresh_pool_id": 5,
+    "refresh_pool_random_weight": 1000,
+    "refresh_pool_type": "EN_REFRESH_POOL_TYPE_REMOVE_DUPLICATE"
+  },
+  {
+    "market_location_count": 99,
+    "market_refresh_pool_id": 6,
+    "refresh_pool_random_weight": 1000
+  },
+  {
+    "market_location_count": 99,
+    "market_refresh_pool_id": 7,
+    "refresh_pool_random_weight": 1000
+  },
+  {
+    "market_location_count": 99,
+    "market_refresh_pool_id": 8,
+    "refresh_pool_random_weight": 1000
+  },
+  {
+    "market_location_count": 99,
+    "market_refresh_pool_id": 9,
+    "refresh_pool_random_weight": 1000,
+    "refresh_pool_type": "EN_REFRESH_POOL_TYPE_REMOVE_DUPLICATE"
+  },
+  {
+    "market_location_count": 99,
+    "market_refresh_pool_id": 10,
+    "refresh_pool_random_weight": 1000,
+    "refresh_pool_type": "EN_REFRESH_POOL_TYPE_REMOVE_DUPLICATE"
+  }
+]

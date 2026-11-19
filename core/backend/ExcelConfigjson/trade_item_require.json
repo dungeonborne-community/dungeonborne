@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 100,
+    "require": [
+      "EN_TRADE_ITEM_REQUIRE_TYPE_CORRUPTION"
+    ]
+  },
+  {
+    "id": 2,
+    "priority": 99,
+    "require": [
+      "EN_TRADE_ITEM_REQUIRE_TYPE_GEAR_SET"
+    ]
+  }
+]

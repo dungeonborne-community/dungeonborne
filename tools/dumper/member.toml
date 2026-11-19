@@ -1,0 +1,12 @@
+[member]
+name = "dumper"
+kind = "tool"
+visibility = "team"   # reads the game paks with the key; not in the public edition
+lang = "csharp"
+version = "0.1.0"
+depends_on = []
+description = "dbdump — game assets (icons, monsters, heroes, curves) -> PNG and JSON over CUE4Parse; run by ws dump"
+
+[commands]
+build = "dotnet build -c Release -o <home>/tools/dbdump   # ws dump does it itself when the sources are newer"
+run   = "cargo ws dump --apply   # the key from the vault session (cargo ws secrets unlock), docs/GAME_DATA.md"

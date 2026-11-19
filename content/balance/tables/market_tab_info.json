@@ -1,0 +1,310 @@
+{
+  "type": "tgf.config.ExcelMarketTabInfo",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 26,
+    "hash_code": "sha256:1eec4d39a56fcb7db7e3a2d778791032f1b361e8a8cc544c8767b698e62633cc",
+    "data_source": [
+      {
+        "file": "c74cd0413aa390a7bfc87007efc0c938c7ce5f650efeaec6c15d071b760d7c85",
+        "sheet": "d433574662fa8bc0fde796e4cd445d503b7ca12f8f9f6836d5a05730fa853242",
+        "count": 26
+      }
+    ]
+  },
+  "rows": [
+    {
+      "market_tab_id": 1001,
+      "data": {
+        "market_tab_id": 1001,
+        "name": "MarketTabName_1001",
+        "display_order": 11,
+        "random_count": 14,
+        "period": 86400,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 1001
+      }
+    },
+    {
+      "market_tab_id": 1002,
+      "data": {
+        "market_tab_id": 1002,
+        "name": "MarketTabName_1002",
+        "display_order": 12,
+        "random_count": 9,
+        "period": 86400,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 1002
+      }
+    },
+    {
+      "market_tab_id": 1003,
+      "data": {
+        "market_tab_id": 1003,
+        "name": "MarketTabName_1003",
+        "display_order": 13,
+        "random_count": 6,
+        "period": 86400,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 1003
+      }
+    },
+    {
+      "market_tab_id": 1004,
+      "data": {
+        "market_tab_id": 1004,
+        "name": "MarketTabName_1004",
+        "display_order": 14,
+        "random_count": 99,
+        "period": 86400,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 1004
+      }
+    },
+    {
+      "market_tab_id": 4444,
+      "data": {
+        "market_tab_id": 4444,
+        "name": "MarketTabName_4444",
+        "display_order": 99,
+        "random_count": 10,
+        "display_tab_id": 4444
+      }
+    },
+    {
+      "market_tab_id": 1005,
+      "data": {
+        "market_tab_id": 1005,
+        "display_order": 14,
+        "random_count": 1,
+        "period": 86400,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 1004
+      }
+    },
+    {
+      "market_tab_id": 1006,
+      "data": {
+        "market_tab_id": 1006,
+        "display_order": 14,
+        "random_count": 2,
+        "period": 86400,
+        "start_timepoint": "2024-02-06T00:00:00Z",
+        "display_tab_id": 1004
+      }
+    },
+    {
+      "market_tab_id": 1007,
+      "data": {
+        "market_tab_id": 1007,
+        "name": "MarketTabName_1007",
+        "display_order": 15,
+        "random_count": 99,
+        "period": 86400,
+        "start_timepoint": "2024-02-06T00:00:00Z",
+        "display_tab_id": 1007
+      }
+    },
+    {
+      "market_tab_id": 2000,
+      "data": {
+        "market_tab_id": 2000,
+        "random_count": 99,
+        "display_tab_id": 2000
+      }
+    },
+    {
+      "market_tab_id": 3001,
+      "data": {
+        "market_tab_id": 3001,
+        "name": "MarketTabName_3001",
+        "display_order": 1,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 3001
+      }
+    },
+    {
+      "market_tab_id": 3002,
+      "data": {
+        "market_tab_id": 3002,
+        "name": "MarketTabName_3002",
+        "display_order": 2,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 3002
+      }
+    },
+    {
+      "market_tab_id": 3003,
+      "data": {
+        "market_tab_id": 3003,
+        "name": "MarketTabName_3003",
+        "display_order": 4,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 3003
+      }
+    },
+    {
+      "market_tab_id": 3004,
+      "data": {
+        "market_tab_id": 3004,
+        "name": "MarketTabName_3004",
+        "display_order": 5,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 3004
+      }
+    },
+    {
+      "market_tab_id": 3005,
+      "data": {
+        "market_tab_id": 3005,
+        "name": "MarketTabName_3005",
+        "display_order": 3,
+        "start_timepoint": "2023-05-02T00:00:00Z",
+        "display_tab_id": 3005
+      }
+    },
+    {
+      "market_tab_id": 1008,
+      "data": {
+        "market_tab_id": 1008,
+        "name": "MarketTabName_1008",
+        "display_order": 2,
+        "random_count": 99,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1009
+      }
+    },
+    {
+      "market_tab_id": 1009,
+      "data": {
+        "market_tab_id": 1009,
+        "name": "MarketTabName_1008",
+        "display_order": 2,
+        "random_count": 99,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1009
+      }
+    },
+    {
+      "market_tab_id": 1010,
+      "data": {
+        "market_tab_id": 1010,
+        "name": "MarketTabName_1008",
+        "display_order": 2,
+        "random_count": 99,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1009
+      }
+    },
+    {
+      "market_tab_id": 1011,
+      "data": {
+        "market_tab_id": 1011,
+        "name": "MarketTabName_1008",
+        "display_order": 2,
+        "random_count": 99,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1009
+      }
+    },
+    {
+      "market_tab_id": 1012,
+      "data": {
+        "market_tab_id": 1012,
+        "name": "MarketTabName_1008",
+        "display_order": 2,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1009
+      }
+    },
+    {
+      "market_tab_id": 1013,
+      "data": {
+        "market_tab_id": 1013,
+        "name": "MarketTabName_1008",
+        "display_order": 2,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1009
+      }
+    },
+    {
+      "market_tab_id": 1014,
+      "data": {
+        "market_tab_id": 1014,
+        "name": "MarketTabName_1007",
+        "display_order": 3,
+        "random_count": 1,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1017
+      }
+    },
+    {
+      "market_tab_id": 1015,
+      "data": {
+        "market_tab_id": 1015,
+        "name": "MarketTabName_1007",
+        "display_order": 3,
+        "random_count": 1,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1017
+      }
+    },
+    {
+      "market_tab_id": 1016,
+      "data": {
+        "market_tab_id": 1016,
+        "name": "MarketTabName_1004",
+        "display_order": 1,
+        "random_count": 99,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1016
+      }
+    },
+    {
+      "market_tab_id": 1017,
+      "data": {
+        "market_tab_id": 1017,
+        "name": "MarketTabName_1007",
+        "display_order": 3,
+        "random_count": 99,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1017
+      }
+    },
+    {
+      "market_tab_id": 1018,
+      "data": {
+        "market_tab_id": 1018,
+        "name": "MarketTabName_1008",
+        "display_order": 2,
+        "random_count": 1,
+        "period": 604800,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1009
+      }
+    },
+    {
+      "market_tab_id": 1019,
+      "data": {
+        "market_tab_id": 1019,
+        "name": "MarketTabName_1008",
+        "display_order": 1,
+        "random_count": 1,
+        "period": 3600,
+        "start_timepoint": "2023-05-06T00:00:00Z",
+        "display_tab_id": 1016
+      }
+    }
+  ]
+}

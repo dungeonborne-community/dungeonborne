@@ -1,0 +1,674 @@
+user_key {
+  user_id: 10000902
+  zone_id: 1
+}
+user_parameter {
+  faction_id: 1
+}
+deploy_preview {
+  deploy_role {
+    basic {
+      type_id: 400006
+      meta {
+        race: EN_ROLE_RACE_UNDEAD
+        career: EN_ROLE_CAREER_DEATHKNIGHT
+        gender: EN_ROLE_GENDER_MALE
+        force: EN_FORCE_TYPE_ADVENTURER
+      }
+      role_guid: 1094902005
+      role_name: "Char5"
+      create_index: 5
+      create_timepoint: 1793587627
+    }
+    backpack {
+      items {
+        basic {
+          type_id: 181040000
+          count: 1
+          guid: 100150009
+          position {
+            type: EN_ITEM_STORAGE_TYPE_BACKPACK
+            guid: 1094902005
+            limit_option {
+            }
+          }
+        }
+        data {
+        }
+        create_info {
+        }
+      }
+      items {
+        basic {
+          type_id: 100045
+          count: 15
+          guid: 100150010
+          position {
+            type: EN_ITEM_STORAGE_TYPE_BACKPACK
+            guid: 1094902005
+            x: 3
+            limit_option {
+            }
+          }
+        }
+        data {
+        }
+        create_info {
+        }
+      }
+      row_size: 7
+      column_size: 10
+    }
+    wearing {
+      items {
+        basic {
+          type_id: 181022000
+          count: 1
+          guid: 100150000
+          position {
+            type: EN_ITEM_STORAGE_TYPE_ROLE_WEARING
+            guid: 1094902005
+            x: 1
+            limit_option {
+            }
+          }
+        }
+        data {
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_HOLD
+            affix_type: EN_BATTLE_AFFIX_TYPE_BASIC
+            attribute_random {
+              key: 1101
+              value {
+                random_data {
+                  random_level: 5971
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MAJOR
+            attribute_random {
+              key: 1001
+              value {
+                random_data {
+                  random_level: 5635
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+            attribute_random {
+              key: 1103
+              value {
+                random_data {
+                  random_level: 2053
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MINOR
+            attribute_random {
+              key: 1105
+              value {
+                random_data {
+                  random_level: 367
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+        }
+        create_info {
+        }
+      }
+      items {
+        basic {
+          type_id: 181012000
+          count: 1
+          guid: 100150001
+          position {
+            type: EN_ITEM_STORAGE_TYPE_ROLE_WEARING
+            guid: 1094902005
+            x: 3
+            limit_option {
+            }
+          }
+        }
+        data {
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_HOLD
+            affix_type: EN_BATTLE_AFFIX_TYPE_BASIC
+            attribute_random {
+              key: 1101
+              value {
+                random_data {
+                  random_level: 4592
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MAJOR
+            attribute_random {
+              key: 1002
+              value {
+                random_data {
+                  random_level: 6702
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+            attribute_random {
+              key: 1104
+              value {
+                random_data {
+                  random_level: 9858
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MINOR
+            attribute_random {
+              key: 1004
+              value {
+                random_data {
+                  random_level: 2755
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+        }
+        create_info {
+        }
+      }
+      items {
+        basic {
+          type_id: 181032000
+          count: 1
+          guid: 100150002
+          position {
+            type: EN_ITEM_STORAGE_TYPE_ROLE_WEARING
+            guid: 1094902005
+            x: 4
+            limit_option {
+            }
+          }
+        }
+        data {
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MAJOR
+            attribute_random {
+              key: 1003
+              value {
+                random_data {
+                  random_level: 7736
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+            attribute_random {
+              key: 2007
+              value {
+                random_data {
+                  random_level: 5860
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MINOR
+            attribute_random {
+              key: 1103
+              value {
+                random_data {
+                  random_level: 5765
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+        }
+        create_info {
+        }
+      }
+      items {
+        basic {
+          type_id: 184012000
+          count: 1
+          guid: 100150003
+          position {
+            type: EN_ITEM_STORAGE_TYPE_ROLE_WEARING
+            guid: 1094902005
+            x: 13
+            limit_option {
+            }
+          }
+        }
+        data {
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MAJOR
+            attribute_random {
+              key: 1106
+              value {
+                random_data {
+                  random_level: 691
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+            attribute_random {
+              key: 2002
+              value {
+                random_data {
+                  random_level: 8486
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MINOR
+            attribute_random {
+              key: 3001
+              value {
+                random_data {
+                  random_level: 9379
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+        }
+        create_info {
+        }
+      }
+      items {
+        basic {
+          type_id: 184022000
+          count: 1
+          guid: 100150004
+          position {
+            type: EN_ITEM_STORAGE_TYPE_ROLE_WEARING
+            guid: 1094902005
+            x: 11
+            limit_option {
+            }
+          }
+        }
+        data {
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MAJOR
+            attribute_random {
+              key: 1106
+              value {
+                random_data {
+                  random_level: 4184
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+            attribute_random {
+              key: 2002
+              value {
+                random_data {
+                  random_level: 4700
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MINOR
+            attribute_random {
+              key: 3001
+              value {
+                random_data {
+                  random_level: 347
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+        }
+        create_info {
+        }
+      }
+      items {
+        basic {
+          type_id: 184032000
+          count: 1
+          guid: 100150005
+          position {
+            type: EN_ITEM_STORAGE_TYPE_ROLE_WEARING
+            guid: 1094902005
+            x: 15
+            limit_option {
+            }
+          }
+        }
+        data {
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MAJOR
+            attribute_random {
+              key: 1103
+              value {
+                random_data {
+                  random_level: 5413
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+            attribute_random {
+              key: 2002
+              value {
+                random_data {
+                  random_level: 2045
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MINOR
+            attribute_random {
+              key: 1002
+              value {
+                random_data {
+                  random_level: 1636
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+        }
+        create_info {
+        }
+      }
+      items {
+        basic {
+          type_id: 184042000
+          count: 1
+          guid: 100150006
+          position {
+            type: EN_ITEM_STORAGE_TYPE_ROLE_WEARING
+            guid: 1094902005
+            x: 12
+            limit_option {
+            }
+          }
+        }
+        data {
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MAJOR
+            attribute_random {
+              key: 2002
+              value {
+                random_data {
+                  random_level: 7462
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+            attribute_random {
+              key: 2007
+              value {
+                random_data {
+                  random_level: 7214
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MINOR
+            attribute_random {
+              key: 1001
+              value {
+                random_data {
+                  random_level: 1735
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+        }
+        create_info {
+        }
+      }
+      items {
+        basic {
+          type_id: 184052000
+          count: 1
+          guid: 100150007
+          position {
+            type: EN_ITEM_STORAGE_TYPE_ROLE_WEARING
+            guid: 1094902005
+            x: 14
+            limit_option {
+            }
+          }
+        }
+        data {
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MAJOR
+            attribute_random {
+              key: 1103
+              value {
+                random_data {
+                  random_level: 597
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+            attribute_random {
+              key: 2002
+              value {
+                random_data {
+                  random_level: 3237
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+          affix_data {
+            location: EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP
+            affix_type: EN_BATTLE_AFFIX_TYPE_MINOR
+            attribute_random {
+              key: 1004
+              value {
+                random_data {
+                  random_level: 1881
+                  affix_pool_value: true
+                  group_index: 1
+                }
+              }
+            }
+          }
+        }
+        create_info {
+        }
+      }
+      items {
+        basic {
+          type_id: 100012
+          count: 3
+          guid: 100150008
+          position {
+            type: EN_ITEM_STORAGE_TYPE_ROLE_WEARING
+            guid: 1094902005
+            x: 51
+            limit_option {
+            }
+          }
+        }
+        data {
+        }
+        create_info {
+        }
+      }
+    }
+    dress_up {
+      current_face_pinching {
+        face_type: 201
+        hair_type: 201
+        beard_type: 1
+        skin_type: 104
+        hair_color: 1
+        beard_color: 1
+        tatoo_type: 1
+        tatoo_color: 201
+        eye_color: 101
+        scar_type: 1
+        makeup_type: 1
+        makeup_color: 201
+      }
+      dress_facade_info {
+      }
+    }
+    role_level: 1
+    role_affix {
+      attribute {
+        key: 1001
+        value: 23
+      }
+      attribute {
+        key: 1002
+        value: 8
+      }
+      attribute {
+        key: 1003
+        value: 9
+      }
+      attribute {
+        key: 1004
+        value: 19
+      }
+      attribute {
+        key: 1005
+        value: 6
+      }
+      attribute {
+        key: 1006
+        value: 6
+      }
+      attribute {
+        key: 1103
+        value: 0.1
+      }
+      attribute {
+        key: 1104
+        value: 0.2
+      }
+      attribute {
+        key: 1105
+        value: 1
+      }
+      attribute {
+        key: 1106
+        value: 0
+      }
+      attribute {
+        key: 1107
+        value: 0
+      }
+      attribute {
+        key: 2001
+        value: 557
+      }
+      attribute {
+        key: 2007
+        value: 0.1
+      }
+      attribute {
+        key: 2009
+        value: 0.05
+      }
+      attribute {
+        key: 2010
+        value: 0.05
+      }
+      attribute {
+        key: 2011
+        value: 0.05
+      }
+      attribute {
+        key: 2012
+        value: 0.05
+      }
+      attribute {
+        key: 2013
+        value: 0.05
+      }
+      attribute {
+        key: 3001
+        value: 325
+      }
+      attribute {
+        key: 5101
+        value: 100
+      }
+    }
+    role_skill {
+      role_active_skill {
+        key_position: EN_ROLE_SKILL_POSITION_Q
+        skill_id: 108001
+      }
+      role_active_skill {
+        key_position: EN_ROLE_SKILL_POSITION_E
+        skill_id: 108002
+      }
+    }
+    small_backpack {
+    }
+    history_role_max_level: 1
+    history_role_max_total_level: 1
+    last_adventurer_role_guid: 1094902005
+  }
+}
+ds_player_key {
+  ds_user_key: "LOCAL_GAME_MODE_OPENID"
+}

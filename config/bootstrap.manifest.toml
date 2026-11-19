@@ -1,0 +1,25 @@
+# What bootstrap.ps1 downloads before the repository exists (after the clone, tools.lock takes over).
+# Every file is checked against sha256 from this file; a mismatch deletes the file and stops the script.
+# docs/WORKSPACE_PLAN.md, section 13.
+
+[repo]
+url = "https://github.com/dungeonborne-community/dungeonborne.git"   # the repository to clone; -Repo overrides it
+ref = "main"
+
+[rustup]
+# rustup-init from static.rust-lang.org; sha256 = the .sha256 file next to it
+url = "https://static.rust-lang.org/rustup/archive/1.29.1/x86_64-pc-windows-msvc/rustup-init.exe"
+sha256 = "6f4bef66261261fcb43131be8720bab817d403a09edec7455c371974b90bdb7e"
+
+[portablegit]
+# only when git is not installed; git-for-windows release v2.56.1.windows.1, sha256 = GitHub digest. The same archive
+# as tool "git" in tools.lock (ws bootstrap installs it there anyway: Git Bash for Claude Code, 19.11; was MinGit)
+url = "https://github.com/git-for-windows/git/releases/download/v2.56.1.windows.1/PortableGit-2.56.1-64-bit.7z.exe"
+archive_sha256 = "9dd04a608ceb5f6ab32a73709e0ecb159d211da71b697c45ff81f6dd0c6b49c7"
+
+[cargo-xwin]
+# only without Visual Studio: downloads Microsoft CRT and Windows SDK (Microsoft license) for linking;
+# github.com/rust-cross/cargo-xwin release v0.23.1, archive_sha256 = GitHub digest
+url = "https://github.com/rust-cross/cargo-xwin/releases/download/v0.23.1/cargo-xwin-v0.23.1.windows-x64.zip"
+archive_sha256 = "114534c57cdcca604f59c9d70024583d20ff7c5505677f06247e971184a23872"
+sha256 = "d0df17b1a0b983d73b7b27863015a832c819bb06f8081aaefdffab7e7dcef514"

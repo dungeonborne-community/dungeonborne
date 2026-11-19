@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Balance Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- sandbox: stands in for the app in a plain browser, does nothing inside it -->
+  <script src="dev/mock-tauri.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js" defer></script>
+  <link data-trunk rel="copy-file" href="styles.css">
+  <link data-trunk rel="copy-file" href="dev/mock-tauri.js" data-target-path="dev">
+  <link data-trunk rel="copy-file" href="i18n.js">
+  <link data-trunk rel="copy-file" href="app.js">
+</head>
+<!--
+  Windows 11 style, same approach as the launcher: markup lives here, app.js fills texts ([data-t] = i18n key) and sets
+  data-* states; how a state looks is written with data-[…]: variants.
+-->
+<body class="h-screen overflow-hidden bg-mica font-sans text-sm text-fg antialiased select-none">
+<div class="flex h-full flex-col">
+
+  <header class="flex h-12 shrink-0 items-center gap-3 pr-2 pl-4">
+    <span class="grid size-7 place-items-center rounded-ctl bg-accent/15"><span class="ico text-accent">&#xE9D2;</span></span>
+    <span class="font-display text-[15px] font-semibold" data-t="app.name"></span>
+    <span id="head-kit" class="truncate text-xs text-fg-3"></span>
+    <div class="ml-auto flex items-center gap-2">
+      <button id="undo" class="btn-flat hidden" disabled data-title="edit.undo"><span class="ico">&#xE7A7;</span></button>
+      <button id="redo" class="btn-flat hidden" disabled data-title="edit.redo"><span class="ico">&#xE7A6;</span></button>
+      <button id="lang" class="btn-flat"><span class="ico">&#xF2B7;</span><span data-t="app.lang"></span></button>
+    </div>
+  </header>
+
+  <div id="error" class="bar mx-4 mb-2 hidden shrink-0" data-tone="critical" role="alert">
+    <span class="ico mt-0.5 text-critical">&#xEA39;</span>
+    <div class="min-w-0 flex-1 select-text">
+      <div id="error-text" class="font-semibold"></div>
+      <div id="error-detail" class="mt-0.5 break-words font-mono text-xs text-fg-2"></div>
+    </div>
+    <button id="error-close" class="btn-flat" data-t="err.close"></button>
+  </div>
+
+  <!-- ================================================================ start -->
+  <main id="page-start" class="hidden min-h-0 flex-1 overflow-y-auto rounded-tl-ovl bg-layer">
+    <div class="mx-auto flex min-h-full max-w-2xl flex-col justify-center gap-6 p-8">
+      <div>
+        <h1 class="font-display text-[32px] leading-10 font-semibold" data-t="start.title"></h1>
+        <p class="mt-1 text-fg-2" data-t="start.text"></p>
+      </div>
+      <div id="drop" class="card flex flex-col items-center gap-3 border-dashed p-8 text-center data-[over=true]:border-accent data-[over=true]:bg-accent/10">
+        <span class="ico text-[32px]! text-accent">&#xE8B7;</span>
+        <div class="flex gap-2">
+          <button id="open-zip" class="btn-accent"><span class="ico">&#xF012;</span><span data-t="start.zip"></span></button>
+          <button id="open-folder" class="btn-std"><span class="ico">&#xE838;</span><span data-t="start.folder"></span></button>
+        </div>
+        <div class="text-xs text-fg-3" data-t="start.drop"></div>
+      </div>
+      <div id="recent-box" class="hidden">
+        <h2 class="mb-2 font-semibold" data-t="start.recent"></h2>
+        <ul id="recent" class="flex flex-col gap-0.5"></ul>
+      </div>
+      <p class="text-xs text-fg-3" data-t="start.note"></p>
+    </div>
+  </main>
+
+  <!-- ================================================================ open kit -->
+  <div id="page-kit" class="hidden min-h-0 flex-1">
+    <nav class="flex w-60 shrink-0 xl:w-72 flex-col gap-0.5 px-2 pb-2">
+      <button id="nav-summary" class="nav-item"><span class="ico">&#xE80F;</span><span data-t="nav.summary"></span></button>
+      <button id="nav-changes" class="nav-item"><span class="ico">&#xE70F;</span><span class="min-w-0 flex-1 truncate text-left" data-t="nav.changes"></span><span id="nav-changes-count" class="pill hidden h-5! px-2! data-[tone=error]:bg-critical-bg! data-[tone=error]:text-critical!"></span></button>
+      <button id="nav-items" class="nav-item hidden"><span class="ico">&#xE7C3;</span><span data-t="nav.items"></span></button>
+      <button id="nav-curves" class="nav-item hidden"><span class="ico">&#xE9D2;</span><span data-t="nav.curves"></span></button>
+      <button id="nav-loot" class="nav-item hidden"><span class="ico">&#xE7B8;</span><span data-t="nav.loot"></span></button>
+      <div class="mt-3 mb-1 px-3 text-xs text-fg-3" data-t="nav.tables"></div>
+      <div id="nav-tables" class="flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto"></div>
+      <button id="nav-change" class="nav-item mt-1"><span class="ico">&#xE8AB;</span><span data-t="nav.change"></span></button>
+    </nav>
+
+    <main class="min-w-0 flex-1 overflow-hidden rounded-tl-ovl border-t border-l border-white/[0.06] bg-layer">
+      <!-- summary -->
+      <section id="view-summary" class="hidden h-full overflow-y-auto p-6">
+        <div class="mx-auto flex max-w-4xl flex-col gap-5">
+          <div>
+            <h1 id="sum-title" class="font-display text-2xl leading-8 font-semibold"></h1>
+            <div class="mt-1 flex flex-wrap gap-2">
+              <span class="pill"><span data-t="summary.version"></span>&nbsp;<span id="sum-version" class="font-mono select-text"></span></span>
+              <span id="sum-season" class="pill"></span>
+            </div>
+          </div>
+          <div id="sum-nocat" class="bar hidden" data-tone="caution"><span class="ico text-caution">&#xE7BA;</span><span data-t="summary.nocat"></span></div>
+          <div>
+            <h2 class="mb-2 font-semibold" data-t="summary.tables"></h2>
+            <div id="sum-tables" class="flex flex-col"></div>
+          </div>
+          <div id="sum-notes-box">
+            <h2 class="mb-2 font-semibold" data-t="summary.notes"></h2>
+            <ul id="sum-notes" class="card flex flex-col gap-2 p-4 text-fg-2 select-text"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- items and the item card -->
+      <section id="view-items" class="hidden h-full min-h-0">
+        <div class="flex w-64 shrink-0 flex-col border-r border-white/[0.06] xl:w-80">
+          <div class="flex flex-col gap-2 p-3">
+            <div class="relative">
+              <span class="ico pointer-events-none absolute top-2 left-2.5 text-fg-3">&#xE721;</span>
+              <input id="it-search" class="field pl-8!" type="search" autocomplete="off" spellcheck="false">
+            </div>
+            <div class="grid gap-2">
+              <select id="it-kind" class="combo"></select>
+              <select id="it-rarity" class="combo"></select>
+            </div>
+            <div class="flex items-center gap-2">
+              <button id="it-mine" class="chip"><span class="ico text-xs">&#xE70F;</span><span data-t="grid.only_mine"></span></button>
+              <span id="it-count" class="ml-auto text-xs text-fg-3 tabular-nums"></span>
+            </div>
+          </div>
+          <div id="it-list" class="min-h-0 flex-1 overflow-y-auto px-2 pb-2"></div>
+        </div>
+        <div id="it-card" class="min-w-0 flex-1 overflow-x-hidden overflow-y-auto p-6"></div>
+      </section>
+
+      <!-- loot by source -->
+      <section id="view-loot" class="hidden h-full min-h-0">
+        <div class="flex w-64 shrink-0 flex-col border-r border-white/[0.06] xl:w-80">
+          <div class="flex flex-col gap-2 p-3">
+            <div class="relative">
+              <span class="ico pointer-events-none absolute top-2 left-2.5 text-fg-3">&#xE721;</span>
+              <input id="lt-search" class="field pl-8!" type="search" autocomplete="off" spellcheck="false">
+            </div>
+            <div class="grid gap-2">
+              <select id="lt-map" class="combo"></select>
+              <select id="lt-kind" class="combo"></select>
+            </div>
+            <div class="flex items-center gap-2">
+              <button id="lt-mine" class="chip"><span class="ico text-xs">&#xE70F;</span><span data-t="grid.only_mine"></span></button>
+              <span id="lt-count" class="ml-auto text-xs text-fg-3 tabular-nums"></span>
+            </div>
+          </div>
+          <div id="lt-list" class="flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto px-2 pb-2"></div>
+        </div>
+        <div id="lt-card" class="min-w-0 flex-1 overflow-x-hidden overflow-y-auto p-6"></div>
+      </section>
+
+      <!-- class curves -->
+      <section id="view-curves" class="hidden h-full overflow-y-auto p-6">
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-wrap items-baseline gap-3">
+            <h1 class="font-display text-2xl leading-8 font-semibold" data-t="curves.title"></h1>
+            <span class="text-xs text-fg-3" data-t="curves.note"></span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <select id="cv-attr" class="combo w-72!"></select>
+            <div id="cv-legend" class="flex flex-wrap gap-1.5"></div>
+          </div>
+          <div id="cv-chart" class="card relative p-2"></div>
+          <p class="text-xs text-fg-3" data-t="curves.hint"></p>
+          <div id="cv-table" class="card overflow-x-auto"></div>
+        </div>
+      </section>
+
+      <!-- my changes -->
+      <section id="view-changes" class="hidden h-full overflow-y-auto p-6">
+        <div class="mx-auto flex max-w-5xl flex-col gap-4">
+          <div>
+            <h1 class="font-display text-2xl leading-8 font-semibold" data-t="changes.title"></h1>
+            <p id="ch-summary" class="mt-1 text-fg-2"></p>
+          </div>
+          <div id="ch-notice" class="bar hidden select-text"><span id="ch-notice-text" class="min-w-0 flex-1 break-words"></span></div>
+          <div class="card flex flex-col gap-3 p-4">
+            <div class="grid grid-cols-[220px_1fr] gap-3">
+              <label class="flex flex-col gap-1"><span class="text-xs text-fg-2" data-t="changes.author"></span><input id="ch-author" class="field" maxlength="64" autocomplete="off" spellcheck="false"></label>
+              <label class="flex flex-col gap-1"><span class="text-xs text-fg-2" data-t="changes.comment"></span><input id="ch-comment" class="field" maxlength="500" autocomplete="off"></label>
+            </div>
+            <div class="flex flex-wrap items-center gap-2">
+              <button id="ch-save" class="btn-accent"><span class="ico">&#xE74E;</span><span data-t="changes.save"></span></button>
+              <button id="ch-open" class="btn-std"><span class="ico">&#xE8E5;</span><span data-t="changes.open"></span></button>
+              <span id="ch-hint" class="text-xs text-fg-3"></span>
+            </div>
+          </div>
+          <div id="ch-empty" class="py-10 text-center text-fg-3" data-t="changes.empty"></div>
+          <div id="ch-list" class="flex flex-col gap-4"></div>
+        </div>
+      </section>
+
+      <!-- table -->
+      <section id="view-table" class="hidden h-full min-h-0 flex-col">
+        <div class="flex shrink-0 flex-col gap-2 p-4 pb-3">
+          <div class="flex items-baseline gap-3">
+            <h1 id="t-title" class="truncate font-display text-xl font-semibold"></h1>
+            <span id="t-count" class="ml-auto shrink-0 text-xs text-fg-3 tabular-nums"></span>
+          </div>
+          <p id="t-about" class="line-clamp-2 text-xs text-fg-3 select-text"></p>
+          <div class="flex flex-wrap items-center gap-2">
+            <div class="relative w-72">
+              <span class="ico pointer-events-none absolute top-2 left-2.5 text-fg-3">&#xE721;</span>
+              <input id="f-search" class="field pl-8!" type="search" autocomplete="off" spellcheck="false">
+            </div>
+            <div class="flex rounded-ctl border border-white/[0.07]" role="group">
+              <button id="f-wide" class="seg" data-t="grid.wide"></button>
+              <button id="f-long" class="seg" data-t="grid.long"></button>
+            </div>
+            <button id="f-mine" class="chip"><span class="ico text-xs">&#xE70F;</span><span data-t="grid.only_mine"></span></button>
+            <button id="f-diff" class="chip"><span class="ico text-xs">&#xE7C1;</span><span data-t="grid.only_diff"></span></button>
+            <button id="f-all" class="chip"><span class="ico text-xs">&#xE8A9;</span><span data-t="grid.all_fields"></span></button>
+            <button id="f-bulk" class="chip"><span class="ico text-xs">&#xE8B3;</span><span data-t="bulk.open"></span></button>
+            <select id="f-kind" class="combo w-40!"></select>
+            <select id="f-rarity" class="combo w-40!"></select>
+          </div>
+          <div id="t-note" class="hidden text-xs text-accent-text" data-t="grid.by_field"></div>
+        </div>
+        <div id="grid" class="relative min-h-0 flex-1 overflow-auto border-t border-white/[0.06]" tabindex="0">
+          <div id="grid-head" class="sticky top-0 z-20 h-16 bg-card"></div>
+          <div id="grid-body" class="relative"><input id="cell-input" class="hidden" autocomplete="off" spellcheck="false"></div>
+          <div id="grid-empty" class="absolute inset-x-0 top-24 hidden text-center text-fg-3" data-t="grid.empty"></div>
+        </div>
+        <div class="flex h-8 shrink-0 items-center gap-4 border-t border-white/[0.06] px-4 text-xs text-fg-3">
+          <span class="flex items-center gap-1.5"><span class="swatch" data-st="edit"></span><span data-t="legend.edit"></span></span>
+          <span class="flex items-center gap-1.5"><span class="swatch" data-st="locked"></span><span data-t="legend.locked"></span></span>
+          <span class="flex items-center gap-1.5"><span class="swatch" data-diff="changed"></span><span data-t="legend.changed"></span></span>
+          <span class="flex items-center gap-1.5"><span class="swatch" data-diff="new"></span><span data-t="legend.new"></span></span>
+          <span class="flex items-center gap-1.5"><span class="swatch" data-mine="true"></span><span data-t="legend.mine"></span></span>
+          <span class="flex items-center gap-1.5"><span class="swatch" data-issue="error"></span><span data-t="legend.error"></span></span>
+          <span id="t-status" class="ml-auto min-w-0 truncate text-fg-2"></span>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<div id="busy" class="fixed inset-0 z-50 hidden place-items-center bg-black/50">
+  <div class="card flex items-center gap-3 px-5 py-4 shadow-2xl"><span class="spin"></span><span data-t="start.opening"></span></div>
+</div>
+<!-- bulk edit -->
+<div id="bulk" class="fixed inset-0 z-40 hidden place-items-center bg-black/50 p-6">
+  <div class="card flex h-[min(720px,calc(100vh-48px))] w-full max-w-5xl flex-col gap-3 p-5 shadow-2xl">
+    <div class="flex items-baseline gap-3">
+      <h2 class="font-display text-xl font-semibold" data-t="bulk.title"></h2>
+      <span id="bk-target" class="text-fg-2"></span>
+    </div>
+    <div class="grid min-h-0 flex-1 grid-cols-[340px_1fr] grid-rows-[minmax(0,1fr)] gap-4">
+      <div class="flex min-h-0 flex-col gap-2">
+        <div class="flex items-center gap-2">
+          <input id="bk-search" class="field" type="search" autocomplete="off" spellcheck="false">
+          <button id="bk-all" class="btn-std shrink-0" data-t="bulk.all"></button>
+        </div>
+        <div id="bk-fields" class="min-h-0 flex-1 overflow-y-auto rounded-ctl border border-white/[0.06]"></div>
+      </div>
+      <div class="flex min-h-0 min-w-0 flex-col gap-2">
+        <div class="flex flex-wrap items-center gap-2">
+          <div class="flex rounded-ctl border border-white/[0.07]" role="group">
+            <button class="seg" data-op="pct" data-t="bulk.op_pct"></button>
+            <button class="seg" data-op="mul" data-t="bulk.op_mul"></button>
+            <button class="seg" data-op="add" data-t="bulk.op_add"></button>
+            <button class="seg" data-op="set" data-t="bulk.op_set"></button>
+          </div>
+          <input id="bk-value" class="field w-28!" autocomplete="off" spellcheck="false">
+          <label class="flex items-center gap-2 text-xs text-fg-2"><input id="bk-pairs" type="checkbox" class="check mt-0!" checked><span data-t="bulk.pairs"></span></label>
+        </div>
+        <p id="bk-opnote" class="text-xs text-fg-3"></p>
+        <div id="bk-summary" class="text-sm"></div>
+        <div id="bk-preview" class="min-h-0 flex-1 overflow-y-auto rounded-ctl border border-white/[0.06]"></div>
+      </div>
+    </div>
+    <div class="flex shrink-0 items-center justify-end gap-2">
+      <button id="bk-cancel" class="btn-std" data-t="bulk.cancel"></button>
+      <button id="bk-apply" class="btn-accent" data-t="bulk.apply"></button>
+    </div>
+  </div>
+</div>
+
+<!-- moving changes to a new kit -->
+<div id="rebase" class="fixed inset-0 z-40 hidden place-items-center bg-black/50 p-6">
+  <div class="card flex h-[min(720px,calc(100vh-48px))] w-full max-w-4xl flex-col gap-3 p-5 shadow-2xl">
+    <div>
+      <h2 class="font-display text-xl font-semibold" data-t="rebase.title"></h2>
+      <p id="rb-text" class="mt-1 text-fg-2"></p>
+    </div>
+    <div id="rb-body" class="flex min-h-0 flex-1 flex-col gap-4 overflow-y-auto pr-1"></div>
+    <div class="flex shrink-0 items-center justify-end gap-3">
+      <span id="rb-hint" class="mr-auto text-xs text-fg-3"></span>
+      <button id="rb-later" class="btn-std" data-t="rebase.later"></button>
+      <button id="rb-apply" class="btn-accent" data-t="rebase.apply"></button>
+    </div>
+  </div>
+</div>
+
+<div id="tip" class="pointer-events-none fixed z-40 hidden max-w-sm rounded-ovl border border-white/10 bg-[#2c2c2c] px-3 py-2 text-xs shadow-2xl"></div>
+
+<!-- ================================================================ templates -->
+<template id="tpl-recent">
+  <li><button data-ref="open" class="row w-full rounded-ovl! text-left hover:bg-card-hi">
+    <span class="ico text-fg-2">&#xF012;</span>
+    <span class="min-w-0 flex-1">
+      <span data-ref="title" class="block truncate font-semibold"></span>
+      <span data-ref="meta" class="block truncate font-mono text-xs text-fg-3"></span>
+    </span>
+  </button></li>
+</template>
+
+<template id="tpl-nav">
+  <button class="nav-item"><span data-ref="title" class="min-w-0 flex-1 truncate text-left"></span><span data-ref="count" class="pill hidden h-5! bg-caution-bg! px-2! text-caution!"></span></button>
+</template>
+
+<template id="tpl-change-group">
+  <div>
+    <h2 class="mb-2 flex items-baseline gap-2 font-semibold"><span data-ref="title"></span><span data-ref="count" class="text-xs font-normal text-fg-3"></span></h2>
+    <div data-ref="rows" class="flex flex-col"></div>
+  </div>
+</template>
+
+<template id="tpl-change">
+  <div class="flex min-h-12 items-center gap-3 border border-white/[0.06] bg-card px-3 py-2 first:rounded-t-ovl last:rounded-b-ovl">
+    <img data-ref="icon" class="hidden size-7 shrink-0 rounded-[3px] object-contain" alt="" loading="lazy">
+    <button data-ref="open" class="min-w-0 flex-1 text-left hover:text-accent-text">
+      <span class="flex items-baseline gap-2"><span data-ref="title" class="truncate font-semibold"></span><span data-ref="key" class="shrink-0 font-mono text-[11px] text-fg-4"></span></span>
+      <span data-ref="label" class="block truncate text-xs text-fg-3"></span>
+      <span data-ref="issue" class="hidden text-xs data-[severity=error]:text-critical data-[severity=warning]:text-caution"></span>
+    </button>
+    <span class="flex shrink-0 items-center gap-2 tabular-nums">
+      <span data-ref="old" class="text-fg-3"></span><span class="ico text-xs text-fg-3">&#xE72A;</span><span data-ref="new" class="font-semibold text-accent-text"></span>
+      <span data-ref="pct" class="w-14 text-right text-xs text-fg-3"></span>
+    </span>
+    <button data-ref="revert" class="btn-flat"><span class="ico">&#xE7A7;</span></button>
+  </div>
+</template>
+
+<template id="tpl-sum-table">
+  <button class="row w-full text-left hover:bg-card-hi">
+    <span class="min-w-0 flex-1">
+      <span data-ref="title" class="block font-semibold"></span>
+      <span data-ref="about" class="mt-0.5 line-clamp-2 block text-xs text-fg-3"></span>
+    </span>
+    <span data-ref="tags" class="flex shrink-0 flex-wrap justify-end gap-1"></span>
+    <span class="ico text-xs text-fg-3">&#xE76C;</span>
+  </button>
+</template>
+</body>
+</html>

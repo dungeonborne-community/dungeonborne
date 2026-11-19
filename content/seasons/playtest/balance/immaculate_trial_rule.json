@@ -1,0 +1,40 @@
+{
+  "type": "tgf.config.ExcelImmaculateTrialRule",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 1,
+    "hash_code": "sha256:741e6ec38140d75f978e58829b0f7b97e1effbacac4f1b6dfad3f375bf8daf26",
+    "data_source": [
+      {
+        "file": "ba654e0208ee5aa2afca1c7a15438e10e297d89fc559878974e7339c2f89ac76",
+        "sheet": "c8adc018e9ab624adfa4aca391ebc305c3d10691ef2d3c5c7edd6ee71c4ba8d9",
+        "count": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "activity_rule_id": 1,
+      "activity_end_tips_time": 10800,
+      "activity_end_match_time": 3600,
+      "activity_end_lock_time": 3600,
+      "open_time": [
+        5,
+        6,
+        0
+      ],
+      "win_count": 7,
+      "failed_count": 3,
+      "cost_itmes": [
+        {
+          "type_id": 1033,
+          "count": 1
+        }
+      ],
+      "first_reward_mail_id": 501030,
+      "random_reward_mail_id": 501031,
+      "rank_id": 20001
+    }
+  ]
+}

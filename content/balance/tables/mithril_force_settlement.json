@@ -1,0 +1,59 @@
+{
+  "type": "tgf.config.ExcelMithrilForceSettlement",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 11,
+    "hash_code": "sha256:0d016266309526539ab0a12f6342ce255a9eabed5474f19acc2f4164664c76b6",
+    "data_source": [
+      {
+        "file": "1e63ceabfee57c31d5de6d8394881ec3992c5ba23b72f6fd18f507bf2a88ccde",
+        "sheet": "7bb808a8eee310c0c1c87238ba0110f6edcbc8f87a31a5752ad53a16834bf5a9",
+        "count": 11
+      }
+    ]
+  },
+  "rows": [
+    {},
+    {
+      "damage": 500,
+      "exp": 5
+    },
+    {
+      "damage": 1000,
+      "exp": 10
+    },
+    {
+      "damage": 1500,
+      "exp": 15
+    },
+    {
+      "damage": 2000,
+      "exp": 20
+    },
+    {
+      "damage": 2500,
+      "exp": 25
+    },
+    {
+      "damage": 3000,
+      "exp": 30
+    },
+    {
+      "damage": 3500,
+      "exp": 35
+    },
+    {
+      "damage": 4000,
+      "exp": 40
+    },
+    {
+      "damage": 4500,
+      "exp": 45
+    },
+    {
+      "damage": 5000,
+      "exp": 50
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "type": "tgf.config.ExcelGearSoulBoundWearPartRandom",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 19,
+    "hash_code": "sha256:7c7557b98e2ea273cea1004fa8ff4102e3fe2b60c37634886f7d24e5bc2eefc4",
+    "data_source": [
+      {
+        "file": "54c944e9bc3a8f9642bccac2adbce040f441b5c130566a5e5a8b5311153d2ed0",
+        "sheet": "b09ddb4079b9d2d985f77948e7f156f4319267191420c0b0b10dc50ee3a244e1",
+        "count": 19
+      }
+    ]
+  },
+  "rows": [
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+    },
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+    },
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+    },
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+    },
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+    },
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+    },
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+    },
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_NECKLACE"
+    },
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_LEFTRING"
+    },
+    {
+      "group_id": 1,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_RIGHTRING"
+    },
+    {
+      "group_id": 2,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1RIGHTWEAPON"
+    },
+    {
+      "group_id": 3,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_HELMET"
+    },
+    {
+      "group_id": 4,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_UPPERARMOR"
+    },
+    {
+      "group_id": 5,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_LOWERARMOR"
+    },
+    {
+      "group_id": 6,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_SHOE"
+    },
+    {
+      "group_id": 7,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_GLOVE"
+    },
+    {
+      "group_id": 8,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_NECKLACE"
+    },
+    {
+      "group_id": 9,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_LEFTRING"
+    },
+    {
+      "group_id": 10,
+      "wear_part": "EN_ITEM_WEARING_PART_TYPE_PAIR1LEFTWEAPON"
+    }
+  ]
+}

@@ -1,0 +1,692 @@
+[
+  {},
+  {
+    "error_code": -131,
+    "invisible": true
+  },
+  {
+    "error_code": -421,
+    "invisible": true
+  },
+  {
+    "error_code": -532,
+    "invisible": true
+  },
+  {
+    "error_code": -543,
+    "invisible": true
+  },
+  {
+    "error_code": -601,
+    "invisible": true
+  },
+  {
+    "error_code": -611,
+    "invisible": true
+  },
+  {
+    "error_code": -617,
+    "invisible": true
+  },
+  {
+    "error_code": -619,
+    "invisible": true
+  },
+  {
+    "error_code": -622,
+    "invisible": true
+  },
+  {
+    "error_code": -626,
+    "invisible": true
+  },
+  {
+    "error_code": -630,
+    "invisible": true
+  },
+  {
+    "error_code": -645,
+    "invisible": true
+  },
+  {
+    "error_code": -644,
+    "invisible": true
+  },
+  {
+    "error_code": -643,
+    "invisible": true
+  },
+  {
+    "error_code": -681,
+    "invisible": true
+  },
+  {
+    "error_code": -687,
+    "invisible": true
+  },
+  {
+    "error_code": -691,
+    "invisible": true
+  },
+  {
+    "error_code": -695,
+    "invisible": true
+  },
+  {
+    "error_code": -711,
+    "invisible": true
+  },
+  {
+    "error_code": -748,
+    "invisible": true
+  },
+  {
+    "error_code": -749,
+    "invisible": true
+  },
+  {
+    "error_code": -754,
+    "invisible": true
+  },
+  {
+    "error_code": -1017,
+    "invisible": true,
+    "popup_mode": "EN_ERROR_CODE_POPUP_MODE_MODAL"
+  },
+  {
+    "error_code": -1020,
+    "invisible": true,
+    "popup_mode": "EN_ERROR_CODE_POPUP_MODE_MODAL"
+  },
+  {
+    "error_code": -1025,
+    "invisible": true
+  },
+  {
+    "error_code": -1026,
+    "invisible": true,
+    "popup_mode": "EN_ERROR_CODE_POPUP_MODE_MODAL"
+  },
+  {
+    "error_code": -1027,
+    "invisible": true
+  },
+  {
+    "error_code": -1028,
+    "invisible": true
+  },
+  {
+    "error_code": -1514,
+    "invisible": true
+  },
+  {
+    "error_code": -1543,
+    "invisible": true
+  },
+  {
+    "error_code": -1545,
+    "invisible": true
+  },
+  {
+    "error_code": -1546,
+    "invisible": true
+  },
+  {
+    "error_code": -1547,
+    "invisible": true
+  },
+  {
+    "error_code": -1548,
+    "invisible": true
+  },
+  {
+    "error_code": -1549,
+    "invisible": true
+  },
+  {
+    "error_code": -3005,
+    "invisible": true
+  },
+  {
+    "error_code": -3011,
+    "invisible": true
+  },
+  {
+    "error_code": -3014,
+    "invisible": true
+  },
+  {
+    "error_code": -3015,
+    "invisible": true
+  },
+  {
+    "error_code": -3109,
+    "invisible": true
+  },
+  {
+    "error_code": -3201,
+    "invisible": true
+  },
+  {
+    "error_code": -3202,
+    "invisible": true
+  },
+  {
+    "error_code": -3203,
+    "invisible": true
+  },
+  {
+    "error_code": -3204,
+    "invisible": true
+  },
+  {
+    "error_code": -3205,
+    "invisible": true
+  },
+  {
+    "error_code": -3206,
+    "invisible": true
+  },
+  {
+    "error_code": -3208,
+    "invisible": true
+  },
+  {
+    "error_code": -3209,
+    "invisible": true
+  },
+  {
+    "error_code": -3210,
+    "invisible": true
+  },
+  {
+    "error_code": -3211,
+    "invisible": true
+  },
+  {
+    "error_code": -3212,
+    "invisible": true
+  },
+  {
+    "error_code": -3213,
+    "invisible": true
+  },
+  {
+    "error_code": -3214,
+    "invisible": true
+  },
+  {
+    "error_code": -3215,
+    "invisible": true
+  },
+  {
+    "error_code": -3216,
+    "invisible": true
+  },
+  {
+    "error_code": -3217,
+    "invisible": true
+  },
+  {
+    "error_code": -3218,
+    "invisible": true
+  },
+  {
+    "error_code": -3219,
+    "invisible": true
+  },
+  {
+    "error_code": -3220,
+    "invisible": true
+  },
+  {
+    "error_code": -3221,
+    "invisible": true
+  },
+  {
+    "error_code": -3222,
+    "invisible": true
+  },
+  {
+    "error_code": -3223,
+    "invisible": true
+  },
+  {
+    "error_code": -3224,
+    "invisible": true
+  },
+  {
+    "error_code": -3225,
+    "invisible": true
+  },
+  {
+    "error_code": -3226,
+    "invisible": true
+  },
+  {
+    "error_code": -3227,
+    "invisible": true
+  },
+  {
+    "error_code": -3228,
+    "invisible": true
+  },
+  {
+    "error_code": -3229,
+    "invisible": true
+  },
+  {
+    "error_code": -3230,
+    "invisible": true
+  },
+  {
+    "error_code": -3231,
+    "invisible": true
+  },
+  {
+    "error_code": -3232,
+    "invisible": true
+  },
+  {
+    "error_code": -3233,
+    "invisible": true
+  },
+  {
+    "error_code": -3234,
+    "invisible": true
+  },
+  {
+    "error_code": -3235,
+    "invisible": true
+  },
+  {
+    "error_code": -3236,
+    "invisible": true
+  },
+  {
+    "error_code": -3237,
+    "invisible": true
+  },
+  {
+    "error_code": -3238,
+    "invisible": true
+  },
+  {
+    "error_code": -3239,
+    "invisible": true
+  },
+  {
+    "error_code": -3240,
+    "invisible": true
+  },
+  {
+    "error_code": -3241,
+    "invisible": true
+  },
+  {
+    "error_code": -3244,
+    "invisible": true,
+    "popup_mode": "EN_ERROR_CODE_POPUP_MODE_MODAL"
+  },
+  {
+    "error_code": -3603,
+    "invisible": true,
+    "popup_mode": "EN_ERROR_CODE_POPUP_MODE_MODAL"
+  },
+  {
+    "error_code": -3610,
+    "invisible": true
+  },
+  {
+    "error_code": -3611,
+    "invisible": true
+  },
+  {
+    "error_code": -3702,
+    "invisible": true
+  },
+  {
+    "error_code": -3703,
+    "invisible": true
+  },
+  {
+    "error_code": -3704,
+    "invisible": true
+  },
+  {
+    "error_code": -3705,
+    "invisible": true
+  },
+  {
+    "error_code": -3706,
+    "invisible": true
+  },
+  {
+    "error_code": -3707,
+    "invisible": true
+  },
+  {
+    "error_code": -3708,
+    "invisible": true
+  },
+  {
+    "error_code": -3815,
+    "invisible": true
+  },
+  {
+    "error_code": -3831,
+    "invisible": true
+  },
+  {
+    "error_code": -3832,
+    "invisible": true
+  },
+  {
+    "error_code": -3833,
+    "invisible": true
+  },
+  {
+    "error_code": -3834,
+    "invisible": true
+  },
+  {
+    "error_code": -3835,
+    "invisible": true
+  },
+  {
+    "error_code": -3836,
+    "invisible": true
+  },
+  {
+    "error_code": -3837,
+    "invisible": true
+  },
+  {
+    "error_code": -3838,
+    "invisible": true
+  },
+  {
+    "error_code": -3839,
+    "invisible": true
+  },
+  {
+    "error_code": -3840,
+    "invisible": true
+  },
+  {
+    "error_code": -3844,
+    "invisible": true
+  },
+  {
+    "error_code": -4104,
+    "invisible": true
+  },
+  {
+    "error_code": -4108,
+    "invisible": true
+  },
+  {
+    "error_code": -4114,
+    "invisible": true
+  },
+  {
+    "error_code": -4122,
+    "invisible": true
+  },
+  {
+    "error_code": -4209,
+    "invisible": true
+  },
+  {
+    "error_code": -4210,
+    "invisible": true
+  },
+  {
+    "error_code": -4223,
+    "invisible": true
+  },
+  {
+    "error_code": -4224,
+    "invisible": true
+  },
+  {
+    "error_code": -4225,
+    "invisible": true
+  },
+  {
+    "error_code": -4226,
+    "invisible": true
+  },
+  {
+    "error_code": -4227,
+    "invisible": true
+  },
+  {
+    "error_code": -4234,
+    "invisible": true
+  },
+  {
+    "error_code": -4236,
+    "invisible": true
+  },
+  {
+    "error_code": -4237,
+    "invisible": true
+  },
+  {
+    "error_code": -4242,
+    "invisible": true
+  },
+  {
+    "error_code": -4243,
+    "invisible": true
+  },
+  {
+    "error_code": -4254,
+    "invisible": true
+  },
+  {
+    "error_code": -4265,
+    "invisible": true
+  },
+  {
+    "error_code": -4601,
+    "invisible": true
+  },
+  {
+    "error_code": -4602,
+    "invisible": true
+  },
+  {
+    "error_code": -4603,
+    "invisible": true
+  },
+  {
+    "error_code": -4604,
+    "invisible": true
+  },
+  {
+    "error_code": -4605,
+    "invisible": true
+  },
+  {
+    "error_code": -4606,
+    "invisible": true
+  },
+  {
+    "error_code": -4609,
+    "invisible": true
+  },
+  {
+    "error_code": -4611,
+    "invisible": true
+  },
+  {
+    "error_code": -4612,
+    "invisible": true
+  },
+  {
+    "error_code": -4613,
+    "invisible": true
+  },
+  {
+    "error_code": -4614,
+    "invisible": true
+  },
+  {
+    "error_code": -4615,
+    "invisible": true
+  },
+  {
+    "error_code": -4616,
+    "invisible": true
+  },
+  {
+    "error_code": -4617,
+    "invisible": true
+  },
+  {
+    "error_code": -4618,
+    "invisible": true
+  },
+  {
+    "error_code": -4619,
+    "invisible": true
+  },
+  {
+    "error_code": -4620,
+    "invisible": true
+  },
+  {
+    "error_code": -4621,
+    "invisible": true
+  },
+  {
+    "error_code": -4622,
+    "invisible": true
+  },
+  {
+    "error_code": -4625,
+    "invisible": true
+  },
+  {
+    "error_code": -4629,
+    "invisible": true
+  },
+  {
+    "error_code": -4630,
+    "invisible": true
+  },
+  {
+    "error_code": -4631,
+    "invisible": true
+  },
+  {
+    "error_code": -4632,
+    "invisible": true
+  },
+  {
+    "error_code": -4634,
+    "invisible": true
+  },
+  {
+    "error_code": -4636,
+    "invisible": true
+  },
+  {
+    "error_code": -4637,
+    "invisible": true
+  },
+  {
+    "error_code": -4719,
+    "invisible": true
+  },
+  {
+    "error_code": -4721,
+    "invisible": true
+  },
+  {
+    "error_code": -4722,
+    "invisible": true
+  },
+  {
+    "error_code": -4725,
+    "invisible": true
+  },
+  {
+    "error_code": -4813,
+    "invisible": true
+  },
+  {
+    "error_code": -4812,
+    "invisible": true
+  },
+  {
+    "error_code": -4811,
+    "invisible": true
+  },
+  {
+    "error_code": -4810,
+    "invisible": true
+  },
+  {
+    "error_code": -4804,
+    "invisible": true
+  },
+  {
+    "error_code": -4803,
+    "invisible": true
+  },
+  {
+    "error_code": -4802,
+    "invisible": true
+  },
+  {
+    "error_code": -4801,
+    "invisible": true
+  },
+  {
+    "error_code": -4815,
+    "invisible": true
+  },
+  {
+    "error_code": -5019,
+    "invisible": true
+  },
+  {
+    "error_code": -5025,
+    "invisible": true
+  },
+  {
+    "error_code": -5026,
+    "invisible": true
+  },
+  {
+    "error_code": -5404,
+    "invisible": true
+  },
+  {
+    "error_code": -5406,
+    "invisible": true
+  },
+  {
+    "error_code": -5501,
+    "invisible": true
+  },
+  {
+    "error_code": -5502,
+    "invisible": true
+  },
+  {
+    "error_code": -5503,
+    "invisible": true
+  },
+  {
+    "error_code": -5504,
+    "invisible": true
+  },
+  {
+    "error_code": -4727,
+    "invisible": true
+  }
+]

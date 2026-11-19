@@ -1,0 +1,127 @@
+# Components (schema dbcomponents/1): what a person or an AI installs to work on one part — docs/COMPONENTS_PLAN.md.
+#
+# A component is a set of members (config/workspace.toml). `needs` — components it cannot work without (their folders
+# are installed with it). The base component (`base = true`) is always installed: its members plus everything outside
+# members (root files, config, docs, agents, .claude).
+#
+# `ws check` (rule components): every member is in exactly one component, `needs` exist and have no cycles, a member's
+# depends_on lies inside its component's closure, `visibility` equals the strictest member visibility.
+# Entries are cut from editions by `visibility` (export filter), so an entry has no empty lines inside.
+#
+# On disk: `ws components list | add | remove | set <names|preset|all> [--apply]` (git sparse checkout); the choice
+# lives in config/local.toml [components] installed. Presets (`[[preset]]`, at the end) are named sets for DevKit.
+
+[[component]]
+name = "base"
+base = true
+title = "Base: ws, xtask, DevKit, docs, agent rules"
+about = "Always installed. ws (check, doctor, bootstrap, secrets), cargo xtask, DevKit, config, docs, agents."
+members = ["tools/ws", "xtask", "apps/devkit"]
+needs = []
+visibility = "public"
+
+[[component]]
+name = "server"
+title = "Server and game data"
+about = "Backend (Rust), ds-agent, balance-kit and the data it serves: seasons, balance tables, loot, names, match checks. One component: backend tests and its cargo xtask read content/."
+members = ["core/backend", "content"]
+needs = []
+visibility = "team"
+
+[[component]]
+name = "launcher"
+title = "Player launcher"
+about = "Tauri launcher, mock server and the developer console (dev-app)."
+members = ["apps/launcher"]
+needs = []
+visibility = "public"
+
+[[component]]
+name = "studio"
+title = "Balance Studio"
+about = "The designer's app (Tauri); builds against the balance-kit crate of the server."
+members = ["apps/studio"]
+needs = ["server"]
+visibility = "public"
+
+[[component]]
+name = "site"
+title = "Community site"
+about = "web/landing; news and class pages are built from seasons, names and server tables."
+members = ["web/landing"]
+needs = ["server"]
+visibility = "team"
+
+[[component]]
+name = "mods"
+title = "Game mods"
+about = "UE4SS mods (Lua) and dbnative, client mod installer, mod catalog, paks, Blueprint patches; built and checked by the server's cargo xtask mods."
+members = ["game/ue4ss", "game/client-mod", "game/catalog", "game/paks", "game/bp-patches"]
+needs = ["server"]
+visibility = "team"
+
+[[component]]
+name = "stand"
+title = "Test stand"
+about = "Local backend + battle server + clients in the real game, probes and debug mods; needs your own game installs."
+members = ["tools/stand", "ops/machine", "tools/probe", "tools/debug"]
+needs = ["server", "mods"]
+visibility = "team"
+
+[[component]]
+name = "unreal"
+title = "Unreal projects"
+about = "The new class: UE 5.1 projects, cook and paks (heavy parts in home); scripts use the stand paths."
+members = ["game/unreal/new-class"]
+needs = ["mods", "stand"]
+visibility = "team"
+
+[[component]]
+name = "research"
+title = "Client research"
+about = "Research notes, python tools (tools/py, incl. the path helper wspaths.py), protocol recordings (rpc-evidence), the TGCP sniffer."
+members = ["research", "tools/py", "tools/sniffer", "tools/dumper"]
+needs = ["server"]
+visibility = "team"
+
+[[component]]
+name = "discord"
+title = "Discord bot"
+about = "The community Discord bot (Rust) and the Discord server setup tooling; talks to the server over HTTP."
+members = ["apps/discord-bot"]
+needs = []
+visibility = "public"
+
+[[component]]
+name = "owner"
+title = "Production (owner)"
+about = "Deploy, backups, Forgejo, Discord."
+members = ["ops/deploy", "ops/backup", "ops/forgejo"]
+needs = ["server", "stand"]
+visibility = "owner"
+
+# --- presets: what a person picks in DevKit (or `ws components set <preset>`); what the components need comes with them
+[[preset]]
+name = "full"
+title = "Everything"
+components = ["all"]
+
+[[preset]]
+name = "balance"
+title = "Balance designer: Studio and the tables"
+components = ["studio"]
+
+[[preset]]
+name = "web"
+title = "Site"
+components = ["site"]
+
+[[preset]]
+name = "modding"
+title = "Mods and checking them in the game"
+components = ["mods", "stand"]
+
+[[preset]]
+name = "re"
+title = "Client research"
+components = ["research", "mods"]

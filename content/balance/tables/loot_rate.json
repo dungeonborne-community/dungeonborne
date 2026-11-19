@@ -1,0 +1,525 @@
+{
+  "type": "tgf.config.ExcelItemLootRate",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 16,
+    "hash_code": "sha256:1c169d4aa90b418b4714b77e8c4a1a844530ac721671b4e890193238af34c5fb",
+    "data_source": [
+      {
+        "file": "6c342a0a102f7d955128ef7992dcfd0a99b340e9e0f99177a2f6bde64a480577",
+        "sheet": "74829f60e94e4ec7f275ee29b7c37d7f02aebe5bd8b8f2aa181a488bf7f238d9",
+        "count": 16
+      }
+    ]
+  },
+  "rows": [
+    {
+      "random_id": 100001
+    },
+    {
+      "random_id": 100002
+    },
+    {
+      "random_id": 100003
+    },
+    {
+      "random_id": 100004
+    },
+    {
+      "random_id": 100005
+    },
+    {
+      "random_id": 100006
+    },
+    {
+      "random_id": 100007
+    },
+    {
+      "random_id": 100008
+    },
+    {
+      "random_id": 100009
+    },
+    {
+      "random_id": 100010
+    },
+    {
+      "random_id": 100011
+    },
+    {
+      "random_id": 100012
+    },
+    {
+      "random_id": 100013
+    },
+    {
+      "random_id": 100014
+    },
+    {
+      "random_id": 100015
+    },
+    {
+      "random_id": 100016
+    },
+    {
+      "random_id": 900001
+    },
+    {
+      "random_id": 900002
+    },
+    {
+      "random_id": 900003
+    },
+    {
+      "random_id": 900004
+    },
+    {
+      "random_id": 900005
+    },
+    {
+      "random_id": 900006
+    },
+    {
+      "random_id": 900007
+    },
+    {
+      "random_id": 900008
+    },
+    {
+      "random_id": 900009
+    },
+    {
+      "random_id": 900010
+    },
+    {
+      "random_id": 900011
+    },
+    {
+      "random_id": 900012
+    },
+    {
+      "random_id": 900013
+    },
+    {
+      "random_id": 900014
+    },
+    {
+      "random_id": 900015
+    },
+    {
+      "random_id": 900016
+    },
+    {
+      "random_id": 900017
+    },
+    {
+      "random_id": 900018
+    },
+    {
+      "random_id": 900019
+    },
+    {
+      "random_id": 900020
+    },
+    {
+      "random_id": 900021
+    },
+    {
+      "random_id": 900022
+    },
+    {
+      "random_id": 900023
+    },
+    {
+      "random_id": 900024
+    },
+    {
+      "random_id": 900025
+    },
+    {
+      "random_id": 900026
+    },
+    {
+      "random_id": 900027
+    },
+    {
+      "random_id": 900028
+    },
+    {
+      "random_id": 900029
+    },
+    {
+      "random_id": 900030
+    },
+    {
+      "random_id": 900031
+    },
+    {
+      "random_id": 900032
+    },
+    {
+      "random_id": 900033
+    },
+    {
+      "random_id": 900034
+    },
+    {
+      "random_id": 900035
+    },
+    {
+      "random_id": 900036
+    },
+    {
+      "random_id": 900037
+    },
+    {
+      "random_id": 900038
+    },
+    {
+      "random_id": 900039
+    },
+    {
+      "random_id": 900040
+    },
+    {
+      "random_id": 900041
+    },
+    {
+      "random_id": 900042
+    },
+    {
+      "random_id": 900043
+    },
+    {
+      "random_id": 900044
+    },
+    {
+      "random_id": 900045
+    },
+    {
+      "random_id": 900046
+    },
+    {
+      "random_id": 900047
+    },
+    {
+      "random_id": 900048
+    },
+    {
+      "random_id": 900049
+    },
+    {
+      "random_id": 900050
+    },
+    {
+      "random_id": 900051
+    },
+    {
+      "random_id": 900052
+    },
+    {
+      "random_id": 900053
+    },
+    {
+      "random_id": 900054
+    },
+    {
+      "random_id": 900055
+    },
+    {
+      "random_id": 900056
+    },
+    {
+      "random_id": 900057
+    },
+    {
+      "random_id": 900058
+    },
+    {
+      "random_id": 900059
+    },
+    {
+      "random_id": 900060
+    },
+    {
+      "random_id": 900061
+    },
+    {
+      "random_id": 900062
+    },
+    {
+      "random_id": 900063
+    },
+    {
+      "random_id": 900064
+    },
+    {
+      "random_id": 900065
+    },
+    {
+      "random_id": 900066
+    },
+    {
+      "random_id": 900067
+    },
+    {
+      "random_id": 900068
+    },
+    {
+      "random_id": 900069
+    },
+    {
+      "random_id": 900070
+    },
+    {
+      "random_id": 900071
+    },
+    {
+      "random_id": 900072
+    },
+    {
+      "random_id": 900073
+    },
+    {
+      "random_id": 900074
+    },
+    {
+      "random_id": 900075
+    },
+    {
+      "random_id": 900076
+    },
+    {
+      "random_id": 900077
+    },
+    {
+      "random_id": 900078
+    },
+    {
+      "random_id": 900079
+    },
+    {
+      "random_id": 900080
+    },
+    {
+      "random_id": 900081
+    },
+    {
+      "random_id": 900082
+    },
+    {
+      "random_id": 900083
+    },
+    {
+      "random_id": 900084
+    },
+    {
+      "random_id": 900085
+    },
+    {
+      "random_id": 900086
+    },
+    {
+      "random_id": 900087
+    },
+    {
+      "random_id": 900088
+    },
+    {
+      "random_id": 900089
+    },
+    {
+      "random_id": 900090
+    },
+    {
+      "random_id": 900091
+    },
+    {
+      "random_id": 900092
+    },
+    {
+      "random_id": 900093
+    },
+    {
+      "random_id": 900094
+    },
+    {
+      "random_id": 900095
+    },
+    {
+      "random_id": 900096
+    },
+    {
+      "random_id": 900097
+    },
+    {
+      "random_id": 900098
+    },
+    {
+      "random_id": 900099
+    },
+    {
+      "random_id": 900100
+    },
+    {
+      "random_id": 900101
+    },
+    {
+      "random_id": 900102
+    },
+    {
+      "random_id": 900103
+    },
+    {
+      "random_id": 900104
+    },
+    {
+      "random_id": 900105
+    },
+    {
+      "random_id": 900106
+    },
+    {
+      "random_id": 900107
+    },
+    {
+      "random_id": 900108
+    },
+    {
+      "random_id": 900109
+    },
+    {
+      "random_id": 900110
+    },
+    {
+      "random_id": 900111
+    },
+    {
+      "random_id": 900112
+    },
+    {
+      "random_id": 900113
+    },
+    {
+      "random_id": 900114
+    },
+    {
+      "random_id": 900115
+    },
+    {
+      "random_id": 900116
+    },
+    {
+      "random_id": 900117
+    },
+    {
+      "random_id": 900118
+    },
+    {
+      "random_id": 900119
+    },
+    {
+      "random_id": 900120
+    },
+    {
+      "random_id": 990001
+    },
+    {
+      "random_id": 990002
+    },
+    {
+      "random_id": 990003
+    },
+    {
+      "random_id": 990004
+    },
+    {
+      "random_id": 990005
+    },
+    {
+      "random_id": 990006
+    },
+    {
+      "random_id": 990007
+    },
+    {
+      "random_id": 990008
+    },
+    {
+      "random_id": 990009
+    },
+    {
+      "random_id": 990010
+    },
+    {
+      "random_id": 990011
+    },
+    {
+      "random_id": 990012
+    },
+    {
+      "random_id": 990013
+    },
+    {
+      "random_id": 990014
+    },
+    {
+      "random_id": 990015
+    },
+    {
+      "random_id": 990016
+    },
+    {
+      "random_id": 990017
+    },
+    {
+      "random_id": 990018
+    },
+    {
+      "random_id": 990019
+    },
+    {
+      "random_id": 990020
+    },
+    {
+      "random_id": 990021
+    },
+    {
+      "random_id": 990022
+    },
+    {
+      "random_id": 990023
+    },
+    {
+      "random_id": 990024
+    },
+    {
+      "random_id": 990025
+    },
+    {
+      "random_id": 990026
+    },
+    {
+      "random_id": 990027
+    },
+    {
+      "random_id": 990028
+    },
+    {
+      "random_id": 990029
+    },
+    {
+      "random_id": 990030
+    },
+    {
+      "random_id": 990031
+    },
+    {
+      "random_id": 990032
+    },
+    {
+      "random_id": 990033
+    }
+  ]
+}

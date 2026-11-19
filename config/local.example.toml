@@ -1,0 +1,112 @@
+# Sample machine settings. `ws bootstrap` copies it to local.toml (which is not in git) — edit it there.
+# Everything that depends on a specific PC goes only into local.toml. Read by ws, xtask (ws.rs), tools/py (wspaths.py), tools/stand.
+# "home:<path>" — inside DB_HOME, "ws:<path>" — from the workspace root. The defaults fit the layout of
+# bootstrap.ps1: <root>\workspace, <root>\home, <root>\vault. There are no paths or addresses of a specific machine here:
+# write your own into local.toml.
+
+[home]
+# path = 'C:/DBDev/home'        # DB_HOME; default ../home next to workspace; the DB_HOME variable takes precedence
+
+[vault]
+path = 'ws:../vault'            # secrets (KeePassXC), ws secrets
+# db = 'team.kdbx'              # database name, if not from secrets.toml (developer machine: the team database)
+# tier = 'team'                 # database tier: owner (no field) | team | public; higher entries are not looked up
+
+[tools]
+# lua = 'C:/Program Files (x86)/lua-5.4.7/lua.exe'   # Lua check (cargo xtask mods check); absent — the check is skipped
+repak = 'home:tools/repak/repak.exe'                 # pak builds (balance build, mods)
+# ghidra = 'C:/Tools/ghidra_11.4'                     # client exe analysis (external program, installed by a human; tools.lock)
+
+# Game installs (working copies of the game): --game=<name> for cargo xtask mods; balance build --deploy puts the balance
+# pak into all of them. `cargo ws stand --apply` makes them for the stand (home/game/stand-*) and writes the lines here;
+# set them yourself only for installs of your own.
+[games]
+# steam = 'home:game/stand-server'   # local battle server
+# client = 'home:game/stand-client'  # client
+# client-e = 'home:game/stand-client2'   # second client (ws stand --clients=2)
+
+# Stand (tools/stand): working folder; port locks are one folder for the whole machine by default
+# (%ProgramData%\DungeonborneStand\locks) — every workspace on this PC must see them, so set `locks` only if all do.
+[stand]
+work = 'home:runs/stand'
+# locks = 'C:/ProgramData/DungeonborneStand/locks'
+# Steam ID of the stand host (the battle server's Goldberg account): ws stand writes it
+# host_open_id = '76561198000001001'
+
+# Unreal projects (game/unreal): UE 5.1 editor and working folders. Needed only by those who build the Jester paks
+# (jester/scripts/build_pak.ps1) or run the new-class game copies (new-class/start_game.ps1)
+# [unreal]
+# editor_cmd = 'C:/UE/UE_5.1/Engine/Binaries/Win64/UnrealEditor-Cmd.exe'
+# jester = 'home:unreal/ue_jester'
+# new_class = 'home:unreal/new_class'
+# new_class_sandbox = 'home:unreal/new_class_sandbox'
+# retoc = 'home:tools/retoc/retoc.exe'   # this is the default
+
+# Game exports: FModel Exports (item icons — tools/py/item_icons.py)
+[dumps]
+fmodel_exports = 'home:dumps/fmodel/Exports/Dungeonborne'
+
+# Old project location (owner only): the "legacy:…" source in tools.lock and artifacts.toml
+[legacy]
+# root = 'X:/Dungeonborne-res'
+
+# Variables for agents: ws bootstrap writes them into .claude/settings.local.json "env".
+[env]
+CARGO_TARGET_DIR = 'home:cache/target'
+SCCACHE_DIR = 'home:cache/sccache'
+UV_CACHE_DIR = 'home:cache/uv'
+
+# Artifact store (paks, launcher bundle): a folder over HTTPS, objects by sha256 (tools/ws/core/src/store.rs).
+# The password is not here: ws secrets run artifact_store -- ws bootstrap (owner: artifact_store_push -- ws artifacts push).
+[store]
+# url = 'https://<read-only sub-account>.your-storagebox.de'
+# user = '<read-only sub-account>'
+# push_url = 'https://<sub-account with write access>.your-storagebox.de'   # owner only
+# push_user = '<sub-account with write access>'
+
+# Backups (ops/backup, owner only): Storage Box and the PC and VM sub-accounts
+[backup]
+# host = 'uXXXXXX.your-storagebox.de'
+# pc_user = 'uXXXXXX-sub2'
+# vm_user = 'uXXXXXX-sub1'
+
+# Prod (owner only): ssh addresses of the VM and Robot
+[remote]
+# vm = 'root@<VM address>'
+# robot = 'Administrator@<Robot address>'   # via -J vm
+
+[me]
+# Who works at this machine — the AI reads it at the start of a session and talks, asks and reports accordingly
+# (CLAUDE.md, "Talking to the human"). Not in git.
+# level  — newcomer: not a programmer (results in plain words, previews, one decision at a time, edits only in texts
+#          and data); designer: balance, texts, site content (changes in game terms, before/after); dev: a developer
+#          (diffs, tests, trade-offs; the default when [me] is missing); owner: everything, plus what goes outside.
+# lang   — the language of answers and reports: ru | en
+# detail — short | normal | full: how much the AI explains
+# level = "dev"
+# lang = "ru"
+# detail = "normal"
+
+[setup]
+# how to install the build programs (trunk, tauri-cli) and our ws / DevKit: "prebuilt" (official releases by sha256 and
+# the signed cargo xtask dist release) or "source" (everything is built here). The --prebuilt / --from-source flags take precedence.
+# build = "prebuilt"
+
+[dist]
+# where the signed ws and DevKit releases live (a <id> folder per tag or commit); default home:out/dist
+# source = "home:out/dist"
+
+# The game reference (docs/GAME_DATA.md): default home/game/original. Another workspace on this machine already
+# has one - share it (it is read-only):
+# [game]
+# original = 'X:/DBDev/home/game/original'
+
+# Reverse engineering of your copy of the game (docs/GAME_DATA.md):
+# [re]
+# aes_key = '0x…'   # the pak key: public, you find it yourself (docs/SECRETS.md, "The pak key"); ws dump, ws dump paks
+# usmap = 'home:re/ue4ss/<name>.usmap'   # the game's mappings; default: the first *.usmap in home/re/ue4ss
+
+# Components on this machine (docs/COMPONENTS_PLAN.md): written by `ws components set|add|remove ... --apply`;
+# absent or "all" - a full checkout. ws doctor / bootstrap handle the programs and data of these only.
+# [components]
+# installed = ["base", "server", "site"]

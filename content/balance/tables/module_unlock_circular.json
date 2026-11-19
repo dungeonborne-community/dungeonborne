@@ -1,0 +1,47 @@
+{
+  "type": "tgf.config.ExcelModuleUnlockCircular",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 2,
+    "hash_code": "sha256:5abec0bf7f40b1187486a5aa1d4a1a2228a4778d6664c1fe08678d5c863d5324",
+    "data_source": [
+      {
+        "file": "a05237e75bf5f9fdf5f085bb74e291c27d0f3bfae8bd8eec82a801299b530d4b",
+        "sheet": "fda46030faf4eb85402fd5493b7bb51c9c276094378770af48bbc5034cc1ccd0",
+        "count": 2
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 1,
+      "start_time": "2024-07-22T00:00:00Z",
+      "end_time": "2034-09-30T00:00:00Z",
+      "circular_queue": [
+        {
+          "module_id": 1200036,
+          "duration": 1440
+        },
+        {
+          "module_id": 1200037,
+          "duration": 1440
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "start_time": "2024-08-12T00:00:00Z",
+      "end_time": "2024-09-08T23:59:59Z",
+      "circular_queue": [
+        {
+          "module_id": 1200024,
+          "duration": 5760
+        },
+        {
+          "duration": 4320
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[Unit]
+Description=restic: nightly backup of the prod VM to Hetzner Storage Box
+After=network-online.target forgejo-backup.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/restic-backup
+Nice=15
+IOWeight=10
+CPUWeight=10
+MemoryMax=700M

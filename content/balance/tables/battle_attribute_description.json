@@ -1,0 +1,1048 @@
+{
+  "type": "tgf.config.ExcelBattleAttributeDescription",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 120,
+    "hash_code": "sha256:bf09e0c0d293fa0f7ef8908b8ecd518282f6631315912269ea23191d41582c09",
+    "data_source": [
+      {
+        "file": "3cfda9ac749c13ada0f24b3d340c5c2d8da7231862106ff6c1a59423427cba28",
+        "sheet": "c6839bc8c3dacc123385b5dae8ff7e4ecbee395ddb94e3047253f7b37084da34",
+        "count": 120
+      }
+    ]
+  },
+  "rows": [
+    {
+      "attribute_type": 1101,
+      "name": "affix_attack_right_weapon_attack",
+      "display_order": 1,
+      "role_display_order": 1,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 2004,
+      "name": "affix_defend_def_gear_level",
+      "display_order": 1,
+      "role_display_order": 1,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 1120,
+      "name": "affix_attack_att_gear_level",
+      "display_order": 2,
+      "role_display_order": 2,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 2006,
+      "name": "affix_defend_guarded_damage_reduce_rate",
+      "display_order": 2,
+      "role_display_order": 2,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true
+    },
+    {
+      "attribute_type": 2001,
+      "name": "affix_defend_max_health_base",
+      "display_order": 3,
+      "role_display_order": 3,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 5001,
+      "name": "affix_magic_max_magic_base",
+      "display_order": 4,
+      "role_display_order": 4,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5101,
+      "name": "affix_soul_energy_max_soul_energy_base",
+      "display_order": 4,
+      "role_display_order": 4,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5201,
+      "name": "affix_natural_energy_max_natural_energy_base",
+      "display_order": 4,
+      "role_display_order": 4,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 3001,
+      "name": "affix_speed_move_speed_base",
+      "display_order": 5,
+      "role_display_order": 5,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 1021,
+      "name": "affix__first_level_all",
+      "display_order": 6,
+      "role_display_order": 6,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1001,
+      "name": "affix_first_level_strength",
+      "display_order": 7,
+      "role_display_order": 7,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1002,
+      "name": "affix_first_level_dexterity",
+      "display_order": 8,
+      "role_display_order": 8,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1003,
+      "name": "affix_first_level_stamina",
+      "display_order": 9,
+      "role_display_order": 9,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1004,
+      "name": "affix_first_level_intelligence",
+      "display_order": 10,
+      "role_display_order": 10,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1005,
+      "name": "affix_first_level_will",
+      "display_order": 11,
+      "role_display_order": 11,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1006,
+      "name": "affix_first_level_faith",
+      "display_order": 12,
+      "role_display_order": 12,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1102,
+      "name": "affix_attack_attack_bonus",
+      "display_order": 13,
+      "role_display_order": 13,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1103,
+      "name": "affix_attack_attack_boost_rate",
+      "display_order": 14,
+      "role_display_order": 14,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1104,
+      "name": "affix_attack_critical_rate",
+      "display_order": 15,
+      "role_display_order": 15,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1105,
+      "name": "affix_attack_crit_damage_rate",
+      "display_order": 16,
+      "role_display_order": 16,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1106,
+      "name": "affix_attack_element_boost_rate_none",
+      "display_order": 17,
+      "role_display_order": 17,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1107,
+      "name": "affix_attack_element_boost_rate_all",
+      "display_order": 18,
+      "role_display_order": 18,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1108,
+      "name": "affix_attack_element_boost_rate_fire",
+      "display_order": 19,
+      "role_display_order": 19,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1110,
+      "name": "affix_attack_element_boost_rate_thunder",
+      "display_order": 20,
+      "role_display_order": 20,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1109,
+      "name": "affix_attack_element_boost_rate_ice",
+      "display_order": 21,
+      "role_display_order": 21,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1111,
+      "name": "affix_attack_element_boost_rate_light",
+      "display_order": 22,
+      "role_display_order": 22,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1112,
+      "name": "affix_attack_element_boost_rate_dark",
+      "display_order": 23,
+      "role_display_order": 23,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1122,
+      "name": "affix_attack_skill_damage",
+      "display_order": 24,
+      "role_display_order": 24,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true
+    },
+    {
+      "attribute_type": 1114,
+      "name": "affix_attack_physical_penetration",
+      "display_order": 25,
+      "role_display_order": 25,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1115,
+      "name": "affix_attack_fire_penetration",
+      "display_order": 26,
+      "role_display_order": 26,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1116,
+      "name": "affix_attack_cold_penetration",
+      "display_order": 27,
+      "role_display_order": 27,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1117,
+      "name": "affix_attack_lightning_penetration",
+      "display_order": 28,
+      "role_display_order": 28,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1118,
+      "name": "affix_attack_divine_penetration",
+      "display_order": 29,
+      "role_display_order": 29,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1119,
+      "name": "affix_attack_shadow_penetration",
+      "display_order": 30,
+      "role_display_order": 30,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1121,
+      "name": "affix_attack_extra_att_gear_level",
+      "display_order": 31,
+      "role_display_order": 31,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 1113,
+      "name": "affix_attack_def_ignore_base",
+      "display_order": 32,
+      "role_display_order": 32,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 1
+    },
+    {
+      "attribute_type": 2007,
+      "name": "affix_defend_element_resistance_rate_none",
+      "display_order": 33,
+      "role_display_order": 33,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 2008,
+      "name": "affix_defend_element_resistance_rate_all",
+      "display_order": 34,
+      "role_display_order": 34,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 2009,
+      "name": "affix_defend_element_resistance_rate_fire",
+      "display_order": 35,
+      "role_display_order": 35,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 2010,
+      "name": "affix_defend_element_resistance_rate_ice",
+      "display_order": 36,
+      "role_display_order": 36,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 2011,
+      "name": "affix_defend_element_resistance_rate_thunder",
+      "display_order": 37,
+      "role_display_order": 37,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 2012,
+      "name": "affix_defend_element_resistance_rate_light",
+      "display_order": 38,
+      "role_display_order": 38,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 2013,
+      "name": "affix_defend_element_resistance_rate_dark",
+      "display_order": 39,
+      "role_display_order": 39,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 2002,
+      "name": "affix_defend_max_health_percent",
+      "display_order": 40,
+      "role_display_order": 40,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 2003,
+      "name": "affix_defend_max_health_extra",
+      "display_order": 41,
+      "role_display_order": 41,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 4005,
+      "name": "affix_recover_heal_over_time_base",
+      "display_order": 42,
+      "role_display_order": 42,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 4004,
+      "name": "affix_recover_heal_on_kill_base",
+      "display_order": 43,
+      "role_display_order": 43,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 4003,
+      "name": "affix_recover_heal_on_hit_base",
+      "display_order": 44,
+      "role_display_order": 44,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 4001,
+      "name": "affix_recover_life_leach_rate",
+      "display_order": 45,
+      "role_display_order": 45,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 2005,
+      "name": "affix_defend_extra_def_gear_level",
+      "display_order": 46,
+      "role_display_order": 46,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 2
+    },
+    {
+      "attribute_type": 4002,
+      "name": "affix_recover_heal_boost_rate",
+      "display_order": 47,
+      "role_display_order": 47,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 4006,
+      "name": "affix_recover_shield_boost_rate",
+      "display_order": 48,
+      "role_display_order": 48,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true
+    },
+    {
+      "attribute_type": 2014,
+      "name": "affix_defend_extra_guarded_damage_reduce_rate",
+      "display_order": 49,
+      "role_display_order": 49,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true
+    },
+    {
+      "attribute_type": 4008,
+      "name": "affix_recover_skill_cooldown_scale_rate",
+      "display_order": 50,
+      "role_display_order": 50,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6001,
+      "name": "affix_buff_arg_killing_max_layer_max_health_percent",
+      "display_order": 51,
+      "role_display_order": 51,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6002,
+      "name": "affix_buff_arg_killing_max_layer_attack_boost_rate",
+      "display_order": 52,
+      "role_display_order": 52,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6003,
+      "name": "affix_buff_arg_killing_max_layer_critical_rate",
+      "display_order": 53,
+      "role_display_order": 53,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 3002,
+      "name": "affix_speed_level_interact_speed_rate",
+      "display_order": 54,
+      "role_display_order": 54,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6101,
+      "name": "affix_stat_effect_move_speed_with_hit_running",
+      "display_order": 55,
+      "role_display_order": 55,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6102,
+      "name": "affix_stat_effect_heal_over_time_with_hit_running",
+      "display_order": 56,
+      "role_display_order": 56,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6103,
+      "name": "affix_stat_effect_critical_rate_with_hit_running",
+      "display_order": 57,
+      "role_display_order": 57,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6104,
+      "name": "affix_stat_effect_life_leach_rate_with_hit_running",
+      "display_order": 58,
+      "role_display_order": 58,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6105,
+      "name": "affix_stat_effect_attack_boost_rate_with_full_health",
+      "display_order": 59,
+      "role_display_order": 59,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6106,
+      "name": "affix_stat_effect_critical_rate_with_full_health",
+      "display_order": 60,
+      "role_display_order": 60,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6201,
+      "name": "affix_trigger_effect_heal_on_open_box",
+      "display_order": 61,
+      "role_display_order": 61,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6202,
+      "name": "affix_trigger_effect_magic_on_open_box",
+      "display_order": 62,
+      "role_display_order": 62,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6203,
+      "name": "affix_trigger_effect_gain_gold_on_open_box",
+      "display_order": 63,
+      "role_display_order": 63,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6204,
+      "name": "affix_trigger_effect_gain_gold_on_kill",
+      "display_order": 64,
+      "role_display_order": 64,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 4009,
+      "name": "affix_recover_gain_gold_out_of_portal",
+      "display_order": 65,
+      "role_display_order": 65,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6205,
+      "name": "affix_trigger_effect_heal_on_defend_success",
+      "display_order": 66,
+      "role_display_order": 66,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6206,
+      "name": "affix_trigger_effect_damage_on_defend_success",
+      "display_order": 67,
+      "role_display_order": 67,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6208,
+      "name": "affix_trigger_effect_add_shield_on_cast_skill",
+      "display_order": 68,
+      "role_display_order": 68,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 5003,
+      "name": "affix_magic_magic_on_hit",
+      "display_order": 69,
+      "role_display_order": 69,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 5004,
+      "name": "affix_magic_magic_on_kill",
+      "display_order": 70,
+      "role_display_order": 70,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6210,
+      "name": "affix_trigger_effect_additional_element_fire_damage_on_causing_hit",
+      "display_order": 71,
+      "role_display_order": 71,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6211,
+      "name": "affix_trigger_effect_additional_element_thunder_damage_on_causing_hit",
+      "display_order": 72,
+      "role_display_order": 72,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6212,
+      "name": "affix_trigger_effect_additional_element_ice_damage_on_causing_hit",
+      "display_order": 73,
+      "role_display_order": 73,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6213,
+      "name": "affix_trigger_effect_additional_element_light_damage_on_causing_hit",
+      "display_order": 74,
+      "role_display_order": 74,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 6214,
+      "name": "affix_trigger_effect_additional_element_dark_damage_on_causing_hit",
+      "display_order": 75,
+      "role_display_order": 75,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 5002,
+      "name": "affix_magic_magic_over_time",
+      "display_order": 76,
+      "role_display_order": 76,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11
+    },
+    {
+      "attribute_type": 4010,
+      "name": "affix_recover_exp_boost_rate_out_of_portal",
+      "display_order": 77,
+      "role_display_order": 77,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 11,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 5006,
+      "name": "affix_magic_magic_generate_rate",
+      "display_order": 78,
+      "role_display_order": 78,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 5105,
+      "name": "affix_soul_energy_soul_energy_generate_rate",
+      "display_order": 79,
+      "role_display_order": 79,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12,
+      "display_percentage": true,
+      "attribute_classify": 3
+    },
+    {
+      "attribute_type": 5005,
+      "name": "affix_magic_magic_on_hurt",
+      "display_order": 80,
+      "role_display_order": 80,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 12
+    },
+    {
+      "attribute_type": 11001,
+      "name": "affix_gear_set_fleet_foot_work",
+      "display_order": 991,
+      "role_display_order": 991,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 15,
+      "attribute_classify": 4,
+      "attribute_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_FleetFootwork.T_ItemGearSet_FleetFootwork'"
+    },
+    {
+      "attribute_type": 11002,
+      "name": "affix_gear_set_kleptomancy",
+      "display_order": 992,
+      "role_display_order": 992,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 15,
+      "attribute_classify": 4,
+      "attribute_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_Kleptomancy.T_ItemGearSet_Kleptomancy'"
+    },
+    {
+      "attribute_type": 11003,
+      "name": "affix_gear_set_undying_grasp",
+      "display_order": 993,
+      "role_display_order": 993,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 15,
+      "attribute_classify": 4,
+      "attribute_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_UndyingGrasp.T_ItemGearSet_UndyingGrasp'"
+    },
+    {
+      "attribute_type": 11004,
+      "name": "affix_gear_set_thunder_law",
+      "display_order": 994,
+      "role_display_order": 994,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 15,
+      "attribute_classify": 4,
+      "attribute_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_ThunderLaw.T_ItemGearSet_ThunderLaw'"
+    },
+    {
+      "attribute_type": 11005,
+      "name": "affix_gear_set_bone_plating",
+      "display_order": 995,
+      "role_display_order": 995,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 15,
+      "attribute_classify": 4,
+      "attribute_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_BonePlating.T_ItemGearSet_BonePlating'"
+    },
+    {
+      "attribute_type": 11006,
+      "name": "affix_gear_set_avoid_death",
+      "display_order": 996,
+      "role_display_order": 996,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 15,
+      "attribute_classify": 4,
+      "attribute_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_AvoidDeath.T_ItemGearSet_AvoidDeath'"
+    },
+    {
+      "attribute_type": 11007,
+      "name": "affix_gear_set_scorching_touch",
+      "display_order": 997,
+      "role_display_order": 997,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 15,
+      "attribute_classify": 4,
+      "attribute_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_ScorchingTouch.T_ItemGearSet_ScorchingTouch'"
+    },
+    {
+      "attribute_type": 11008,
+      "name": "affix_gear_set_summoning_aery",
+      "display_order": 998,
+      "role_display_order": 998,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 15,
+      "attribute_classify": 4,
+      "attribute_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_SummoningAery.T_ItemGearSet_SummoningAery'"
+    },
+    {
+      "attribute_type": 11009,
+      "name": "affix_set_coin_master",
+      "display_order": 999,
+      "role_display_order": 999,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "attribute_classify": 4,
+      "attribute_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/ItemGearSet/T_ItemGearSet_CoinMaster.T_ItemGearSet_CoinMaster'"
+    },
+    {
+      "attribute_type": 4007,
+      "name": "affix_recover_heal_wound_rate",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true
+    },
+    {
+      "attribute_type": 5102,
+      "name": "affix_soul_energy_soul_energy_on_hit",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5103,
+      "name": "affix_soul_energy_soul_energy_on_kill",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5104,
+      "name": "affix_soul_energy_soul_energy_on_hurt",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5202,
+      "name": "affix_natural_energy_natural_energy_over_time",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5203,
+      "name": "affix_natural_energy_natural_energy_on_hit",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5204,
+      "name": "affix_natural_energy_natural_energy_on_kill",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5205,
+      "name": "affix_natural_energy_natural_energy_on_hurt",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5206,
+      "name": "affix_natural_energy_natural_energy_generate_rate",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10,
+      "display_percentage": true
+    },
+    {
+      "attribute_type": 6207,
+      "name": "affix_trigger_effect_additional_fixed_damage_on_causing_hit",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 6209,
+      "name": "affix_trigger_effect_additional_element_none_damage_on_causing_hit",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10001,
+      "name": "affix_gem_slot_attack",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10002,
+      "name": "affix_gem_slot_defend",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10003,
+      "name": "affix_gem_slot_function",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10004,
+      "name": "affix_gem_slot_first_level",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10005,
+      "name": "affix_gem_slot_gear_set",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10051,
+      "name": "affix_gem_slot_attack",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10052,
+      "name": "affix_gem_slot_defend",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10053,
+      "name": "affix_gem_slot_function",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10054,
+      "name": "affix_gem_slot_first_level",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 10055,
+      "name": "affix_gem_slot_gear_set",
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 1,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 2,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 3,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 4,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 5,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    },
+    {
+      "attribute_type": 6,
+      "major_attribute_rating": 10,
+      "minor_attribute_rating": 10
+    }
+  ]
+}

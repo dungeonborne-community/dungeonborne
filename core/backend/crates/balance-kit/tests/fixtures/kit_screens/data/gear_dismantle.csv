@@ -1,0 +1,4 @@
+﻿row,key,title,path,value,name
+0,100,Меч,item_id,100,Меч
+0,100,Меч,reward[0].type_id,7,Трава
+0,100,Меч,reward[0].count,10,

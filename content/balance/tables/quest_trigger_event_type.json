@@ -1,0 +1,208 @@
+{
+  "type": "tgf.config.ExcelQuestTriggerEventType",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 24,
+    "hash_code": "sha256:c5eda6c0491fefd7a9274055999fd0459d1e4ce3b7897a59b5f212c782def5d4",
+    "data_source": [
+      {
+        "file": "098308c491e85b0404e8f5279339333a8a26ba378c51520a89a159a26dad0e1b",
+        "sheet": "92bc6c079b9fe112bd6f56d5e340ac17195401db4f67750f542e149eb01ec0b7",
+        "count": 24
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_PLAYER_LEVEL_PROMOTE",
+      "unlock_condition_types": [
+        1
+      ],
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_PLAYER_ROLE_LEVEL_ARRIVE_BY_GUID",
+        "EN_QUEST_PROGRESS_TYPE_PLAYER_ROLE_LEVEL_ARRIVE_BY_CAREER"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_ROLE_ACQUIRE",
+      "unlock_condition_types": [
+        2,
+        7
+      ],
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_ROLE_TOTAL_ARRIVE"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_RANK_ARRIVE",
+      "unlock_condition_types": [
+        3
+      ],
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_TIERS_ARRIVE"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_PLAYER_VIP_LEVEL_PROMOTE",
+      "unlock_condition_types": [
+        4
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_QUEST_COMPLETE",
+      "unlock_condition_types": [
+        5
+      ],
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_COMPLETE_QUEST"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_QUEST_RECEIVE"
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_BATTLE_FINISH",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_BATTLE_VICTORY",
+        "EN_QUEST_PROGRESS_TYPE_KILL_TYPE",
+        "EN_QUEST_PROGRESS_TYPE_BATTLE_PARTICIPATE",
+        "EN_QUEST_PROGRESS_TYPE_KILL_ACTOR_STAT_ID",
+        "EN_QUEST_PROGRESS_TYPE_INTERACTING_STAT_ID",
+        "EN_QUEST_PROGRESS_TYPE_MOVING_AREA",
+        "EN_QUEST_PROGRESS_TYPE_DESTROYING_OBJECT",
+        "EN_QUEST_PROGRESS_TYPE_ALIVE_TIME",
+        "EN_QUEST_PROGRESS_TYPE_WORTH_LOSS_IN_BATTLE",
+        "EN_QUEST_PROGRESS_TYPE_RESURRECT_TEAM",
+        "EN_QUEST_PROGRESS_TYPE_LOOT",
+        "EN_QUEST_PROGRESS_TYPE_PLAYER_CAUSED_TOTAL_DAMAGE",
+        "EN_QUEST_PROGRESS_TYPE_PLAYER_CAUSED_TOTAL_HEAL",
+        "EN_QUEST_PROGRESS_TYPE_PLAYER_GOT_TOTAL_DAMAGE",
+        "EN_QUEST_PROGRESS_TYPE_PLAYER_TAKE_ITEM_WORTH",
+        "EN_QUEST_PROGRESS_TYPE_PLAYER_ABILITY",
+        "EN_QUEST_PROGRESS_TYPE_PLAYER_ACTION",
+        "EN_QUEST_PROGRESS_TYPE_BATTLE_RELATION_STAT",
+        "EN_QUEST_PROGRESS_TYPE_BATTLE_PORTAL_TYPE_COUNT",
+        "EN_QUEST_PROGRESS_TYPE_BATTLE_SYNTHESIZE_COST_ITEM",
+        "EN_QUEST_PROGRESS_TYPE_CONSECUTIVE_DEAD"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_COST_COINS",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_COUNT_OF_COINS_SPENT"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_LOGIN",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_CUMULATIVE_LOGIN_DAYS",
+        "EN_QUEST_PROGRESS_TYPE_CONSECUTIVE_LOGIN_DAYS"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_ONLINE",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_ONLINE_TIME"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_ITEM_ACQUIRE",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_ITEM_ACQUIRE",
+        "EN_QUEST_PROGRESS_TYPE_ITEM_ADD_SUB",
+        "EN_QUEST_PROGRESS_TYPE_ITEM_ACQUIRE_WORTH"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_ITEM_CONSUME",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_ITEM_CONSUME",
+        "EN_QUEST_PROGRESS_TYPE_ITEM_ADD_SUB"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_TASK_TIME_TICK",
+      "unlock_condition_types": [
+        6
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_ITEM_SUBMIT",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_ITEM_SUBMIT"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_PLAYER_HIS_MAX_LEVEL_PROMOTE",
+      "unlock_condition_types": [
+        1
+      ],
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_PLAYER_LEVEL_ARRIVE"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_HEIRLOOM_UPGRADE",
+      "unlock_condition_types": [
+        1
+      ],
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_HEIRLOOM_UPGRADE"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_ITEM_USE",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_ITEM_USE"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_SELL_ITEM",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_ITEM_SELL_COUNT",
+        "EN_QUEST_PROGRESS_TYPE_ITEM_SELL_PRICE"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_TRADE_BUY_ITEM",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_TRADE_OP_ITEM",
+        "EN_QUEST_PROGRESS_TYPE_TRADE_BUY_ITEM",
+        "EN_QUEST_PROGRESS_TYPE_TRADE_BUY_ITEM_COST"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_TRADE_SALES_ITEM",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_TRADE_OP_ITEM",
+        "EN_QUEST_PROGRESS_TYPE_TRADE_SALES_ITEM",
+        "EN_QUEST_PROGRESS_TYPE_TRADE_SALES_ITEM_COST"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_GEM_UPGRADE",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_GEM_UPGRADE"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_ITEM_BUY",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_ITEM_BUY"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_LOGIN_FOR_AC",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_CUMULATIVE_LOGIN_DAYS_AFTER_ACTIVITY"
+      ]
+    },
+    {
+      "id": "EN_QUEST_TRIGGER_TYPE_BATTLE_ITEM_ACQUIRE",
+      "progress_types": [
+        "EN_QUEST_PROGRESS_TYPE_BATTLE_ITEM_ACQUIRE"
+      ]
+    }
+  ]
+}

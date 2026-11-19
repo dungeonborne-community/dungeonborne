@@ -1,0 +1,41 @@
+[
+  {
+    "currency_active_coefficient": 100,
+    "heirloom_item_coefficient": 100
+  },
+  {
+    "currency_active_coefficient": 100,
+    "damage": "400",
+    "exp_bottle_active_coefficient": 20,
+    "heirloom_item_coefficient": 100,
+    "potion_active_coefficient": 20
+  },
+  {
+    "currency_active_coefficient": 100,
+    "damage": "800",
+    "exp_bottle_active_coefficient": 40,
+    "heirloom_item_coefficient": 100,
+    "potion_active_coefficient": 40
+  },
+  {
+    "currency_active_coefficient": 100,
+    "damage": "1200",
+    "exp_bottle_active_coefficient": 60,
+    "heirloom_item_coefficient": 100,
+    "potion_active_coefficient": 60
+  },
+  {
+    "currency_active_coefficient": 100,
+    "damage": "1600",
+    "exp_bottle_active_coefficient": 80,
+    "heirloom_item_coefficient": 100,
+    "potion_active_coefficient": 80
+  },
+  {
+    "currency_active_coefficient": 100,
+    "damage": "2000",
+    "exp_bottle_active_coefficient": 100,
+    "heirloom_item_coefficient": 100,
+    "potion_active_coefficient": 100
+  }
+]

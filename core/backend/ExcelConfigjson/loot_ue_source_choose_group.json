@@ -1,0 +1,74 @@
+[
+  {
+    "loot_ids": [
+      "100004",
+      "100012"
+    ],
+    "ue_loot_source_id": 207
+  },
+  {
+    "loot_ids": [
+      "100003"
+    ],
+    "ue_loot_source_id": 205
+  },
+  {
+    "loot_ids": [
+      "100009"
+    ],
+    "ue_loot_source_id": 211
+  },
+  {
+    "loot_ids": [
+      "100009"
+    ],
+    "ue_loot_source_id": 175
+  },
+  {
+    "loot_ids": [
+      "100007",
+      "100010"
+    ],
+    "ue_loot_source_id": 180
+  },
+  {
+    "loot_ids": [
+      "100008",
+      "100005"
+    ],
+    "ue_loot_source_id": 174
+  },
+  {
+    "loot_ids": [
+      "100009"
+    ],
+    "ue_loot_source_id": 268
+  },
+  {
+    "loot_ids": [
+      "100001",
+      "100013"
+    ],
+    "ue_loot_source_id": 208
+  },
+  {
+    "loot_ids": [
+      "100005",
+      "100003"
+    ],
+    "ue_loot_source_id": 160
+  },
+  {
+    "loot_ids": [
+      "100002",
+      "100014"
+    ],
+    "ue_loot_source_id": 206
+  },
+  {
+    "loot_ids": [
+      "100015"
+    ],
+    "ue_loot_source_id": 248
+  }
+]

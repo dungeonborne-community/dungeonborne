@@ -1,0 +1,39 @@
+{
+ "title": "Тестовый набор",
+ "notes": [],
+ "table": [
+  {
+   "name": "gear",
+   "title": "Предметы",
+   "layout": "long",
+   "icon": "item_id",
+   "editable": [
+    "attack.offset.min_value",
+    "attack.offset.max_value",
+    "power.fixed_value",
+    "rate",
+    "count",
+    "free",
+    "mode",
+    "negative"
+   ]
+  },
+  {
+   "name": "affix",
+   "title": "Аффиксы",
+   "layout": "wide",
+   "icon": "",
+   "editable": [
+    "data.affix_data[*].rarity_range[*].min_value",
+    "data.affix_data[*].rarity_range[*].max_value"
+   ]
+  },
+  {
+   "name": "info",
+   "title": "Справка",
+   "layout": "wide",
+   "icon": "",
+   "editable": []
+  }
+ ]
+}

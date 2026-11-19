@@ -1,0 +1,41 @@
+{
+  "type": "tgf.config.ExcelMithrilForcePrestige",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 4,
+    "hash_code": "sha256:2a12c8f2a749c4754a16104e6dec193e4f9857590ac8301359e34d7e321edaaf",
+    "data_source": [
+      {
+        "file": "1e63ceabfee57c31d5de6d8394881ec3992c5ba23b72f6fd18f507bf2a88ccde",
+        "sheet": "9ca4b54d1e1e9d00b3caa488f5cb08cb4ba97afad3ca5b2393c1f486e82e61a4",
+        "count": 4
+      }
+    ]
+  },
+  "rows": [
+    {
+      "level": 1,
+      "name": "MithrilForceAbilityName_001",
+      "description": "MithrilForceAbilityDesc_001"
+    },
+    {
+      "level": 2,
+      "name": "MithrilForceAbilityName_002",
+      "description": "MithrilForceAbilityDesc_002",
+      "exp": 100
+    },
+    {
+      "level": 3,
+      "name": "MithrilForceAbilityName_003",
+      "description": "MithrilForceAbilityDesc_003",
+      "exp": 200
+    },
+    {
+      "level": 4,
+      "name": "MithrilForceAbilityName_004",
+      "description": "MithrilForceAbilityDesc_004",
+      "exp": 300
+    }
+  ]
+}

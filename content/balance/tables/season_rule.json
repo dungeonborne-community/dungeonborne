@@ -1,0 +1,29 @@
+{
+  "type": "tgf.config.ExcelSeasonRule",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 1,
+    "hash_code": "sha256:9875cad2ee5f60ea5468af00c71af0a103f85091614c6e50edd53fc1d2e35a80",
+    "data_source": [
+      {
+        "file": "3915fba7574c08bf0b259e227bb54c4117ddd71d9c3bb3fb4b1415086eee1f01",
+        "sheet": "3557edf38e5dfebad70985d57a2359bddcc9e78ec095b9c9905682925c487ba2",
+        "count": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "season_id": 1,
+      "craft_group_id": 1,
+      "merchant_market_id": 101,
+      "mall_market_id": 102,
+      "special_market_id": 103,
+      "trade_market_id": [
+        1,
+        2
+      ]
+    }
+  ]
+}

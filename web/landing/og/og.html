@@ -1,0 +1,75 @@
+<!doctype html>
+<!-- Link preview (og:image) 1200×630. Build: node site/og/render.mjs → site/web/img/og.jpg. Fonts — the site's (OFL). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "DB Serif"; font-weight: 100 599; src: url("../web/fonts/DungeonborneSerifLatin-Regular.woff2") format("woff2"); unicode-range: U+0000-00FF, U+2000-206F; }
+  @font-face { font-family: "DB Serif"; font-weight: 600 900; src: url("../web/fonts/DungeonborneSerifLatin-Bold.woff2") format("woff2"); unicode-range: U+0000-00FF, U+2000-206F; }
+  @font-face { font-family: "DB Serif"; font-weight: 100 900; src: url("../web/fonts/NotoSerif-var-cyrillic.woff2") format("woff2"); unicode-range: U+0400-045F; }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    font-family: "DB Serif", Georgia, serif;
+    color: #efe6d6;
+    background:
+      radial-gradient(900px 520px at 26% -12%, rgb(224 168 74 / 0.22), transparent 70%),
+      radial-gradient(1100px 480px at 78% -8%, #3a2412, transparent 70%),
+      radial-gradient(800px 500px at 0% 110%, rgb(224 168 74 / 0.08), transparent 70%),
+      linear-gradient(180deg, #120c08, #0b0907);
+  }
+  /* rays from a point above the left edge, like the site background */
+  .rays {
+    position: absolute; inset: -10% -20% 0;
+    background: conic-gradient(from 128deg at 30% -4%, transparent 0deg,
+      rgb(224 168 74 / 0.11) 4deg, transparent 9deg, transparent 15deg,
+      rgb(224 168 74 / 0.07) 18deg, transparent 24deg,
+      rgb(224 168 74 / 0.14) 30deg, rgb(224 168 74 / 0.05) 36deg, transparent 40deg, transparent 49deg,
+      rgb(224 168 74 / 0.09) 53deg, transparent 60deg, transparent 68deg,
+      rgb(224 168 74 / 0.06) 72deg, transparent 80deg, transparent 360deg);
+    -webkit-mask-image: radial-gradient(85% 95% at 30% 0%, #000 0%, rgb(0 0 0 / 0.5) 45%, transparent 85%);
+    filter: blur(6px);
+  }
+  .dust { position: absolute; border-radius: 50%; background: #ff9a3c; box-shadow: 0 0 8px 2px rgb(255 154 60 / 0.7); }
+  .frame {
+    position: absolute; inset: 36px; border: 1px solid rgb(107 86 56 / 0.55); border-radius: 8px;
+  }
+  .frame::before, .frame::after { content: ""; position: absolute; width: 34px; height: 34px; border-color: #e0a84a; }
+  .frame::before { top: -1px; left: -1px; border-top: 2px solid #e0a84a; border-left: 2px solid #e0a84a; border-top-left-radius: 8px; }
+  .frame::after { bottom: -1px; right: -1px; border-bottom: 2px solid #e0a84a; border-right: 2px solid #e0a84a; border-bottom-right-radius: 8px; }
+  .content { position: absolute; left: 110px; right: 110px; top: 50%; transform: translateY(-52%); }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .tile {
+    display: grid; place-items: center; width: 96px; height: 96px; border-radius: 8px;
+    border: 1px solid #6b5638; background: #27211a; color: #e0a84a; font-size: 64px; font-weight: 700;
+    box-shadow: 0 0 40px -6px rgb(224 168 74 / 0.75), inset 0 1px 0 rgb(255 255 255 / 0.06);
+  }
+  .name { font-size: 84px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1;
+    text-shadow: 0 2px 18px rgb(0 0 0 / 0.8); }
+  .community { margin-top: 18px; font-size: 34px; letter-spacing: 0.42em; text-transform: uppercase; color: #f6cd7a;
+    text-shadow: 0 0 24px rgb(224 168 74 / 0.55); }
+  .rule { margin-top: 34px; height: 1px; width: 520px; background: linear-gradient(90deg, #e0a84a, transparent); }
+  .tag { margin-top: 26px; font-size: 30px; color: #d4c9b6; }
+  .tag.ru { margin-top: 8px; font-size: 26px; color: #afa392; }
+  .url { position: absolute; right: 80px; bottom: 66px; font-size: 22px; letter-spacing: 0.08em; color: #afa392; }
+</style>
+</head>
+<body>
+  <div class="rays"></div>
+  <span class="dust" style="left:320px;top:150px;width:4px;height:4px"></span>
+  <span class="dust" style="left:440px;top:300px;width:3px;height:3px;opacity:.7"></span>
+  <span class="dust" style="left:250px;top:420px;width:3px;height:3px;opacity:.6"></span>
+  <span class="dust" style="left:610px;top:120px;width:2px;height:2px;opacity:.8"></span>
+  <span class="dust" style="left:980px;top:200px;width:3px;height:3px;opacity:.5"></span>
+  <span class="dust" style="left:860px;top:470px;width:2px;height:2px;opacity:.6"></span>
+  <div class="frame"></div>
+  <div class="content">
+    <div class="brand"><span class="tile">D</span><span class="name">ungeonborne</span></div>
+    <p class="community">Community</p>
+    <div class="rule"></div>
+    <p class="tag">Community server — download the launcher and play again</p>
+  </div>
+  <p class="url">dungeonborne-community.com</p>
+</body>
+</html>

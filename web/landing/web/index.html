@@ -1,0 +1,1096 @@
+<!doctype html>
+<html lang="en" data-boot>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dungeonborne — community server: play again</title>
+  <meta name="description" content="Community server for Dungeonborne after the official shutdown: a launcher with Discord sign-in, mods and instance lobbies. Download and play again.">
+  <meta name="theme-color" content="#0b0907">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dungeonborne — community server: play again">
+  <meta property="og:description" content="Download the launcher, sign in with Discord and descend into the dungeon again.">
+  <!-- seo:start — built by build_seo.py, do not edit by hand -->
+  <meta property="og:site_name" content="Dungeonborne Community">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dungeonborne — community server: play again">
+  <link rel="canonical" href="https://dungeonborne-community.com/">
+  <link rel="alternate" hreflang="en" href="https://dungeonborne-community.com/">
+  <link rel="alternate" hreflang="ru" href="https://dungeonborne-community.com/?lang=ru">
+  <link rel="alternate" hreflang="x-default" href="https://dungeonborne-community.com/">
+  <meta property="og:url" content="https://dungeonborne-community.com/">
+  <meta property="og:image" content="https://dungeonborne-community.com/img/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "name": "Dungeonborne Community",
+   "description": "Community server for Dungeonborne after the official shutdown: a launcher with Discord sign-in, mods and instance lobbies. Download and play again.",
+   "inLanguage": [
+    "en",
+    "ru"
+   ],
+   "url": "https://dungeonborne-community.com/"
+  },
+  {
+   "@type": "Organization",
+   "name": "Dungeonborne Community",
+   "url": "https://dungeonborne-community.com/"
+  },
+  {
+   "@type": "SoftwareApplication",
+   "name": "Dungeonborne Community Launcher",
+   "applicationCategory": "GameApplication",
+   "operatingSystem": "Windows 10, Windows 11",
+   "softwareVersion": "1.7.0",
+   "fileSize": "18.9 MB",
+   "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+   },
+   "description": "Community server for Dungeonborne after the official shutdown: a launcher with Discord sign-in, mods and instance lobbies. Download and play again.",
+   "url": "https://dungeonborne-community.com/",
+   "downloadUrl": "https://dungeonborne-community.com/downloads/DungeonborneLauncher.exe"
+  },
+  {
+   "@type": "FAQPage",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Windows says “Windows protected your PC” or the antivirus complains",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The launcher has no paid code signature, so SmartScreen shows “Windows protected your PC”: click “More info” → “Run anyway”. Antivirus software is sometimes wary of the launcher changing game files (installing mods) — that is expected. But only download the launcher from this site and check the checksum: copies from chats and other sites may be tampered with."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "How to check the file is genuine",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Open PowerShell in the launcher's folder and run: Get-FileHash .\\DungeonborneLauncher.exe The hash must match this one (version 1.7.0 ): 852D5FCE0788D2A4BF4284E439C777E936240C8EE74CCA127236B5C10C7BA283"
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Anti-cheat error “13-131084-2”",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "It happens when the game is started a few seconds after it was closed. Wait about 30 seconds after quitting and start again."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Sign-in fails, “CURLCode 28”, the lobby hangs",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Some ISPs in Russia drop connections to our servers. The launcher notices this and shows a banner. The free Cloudflare WARP or any VPN helps: turn it on and restart the launcher. If only battles lose connection, turn on “bypass for battles” in the launcher."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "“Game version does not match the server”",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The server is built for a specific Dungeonborne.exe, and the launcher will not start another version. Verify the game files in Steam and point the launcher to that folder."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Updated from an older version — what about hosts?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nothing: since 1.7.0 the game needs no hosts, and the launcher no longer asks for administrator rights. If the hosts file still has lines from older versions, the launcher settings show a “Remove hosts changes” button — you can remove them or leave them."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Start in the game does nothing",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Join an instance tab in the launcher first. Voting starts once enough players have joined; the hall lets you in while it is open and your group size matches the vote."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "“Only members of the Discord server can sign in”",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Members of the project's Discord server can play: join the server and sign in to the launcher again. During maintenance sign-in is closed to everyone except the admins."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Nothing helped — what to send the admins",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The launcher's logs are in %LOCALAPPDATA%\\DungeonborneLauncher\\logs : attach relay.log and launcher.log. For connection problems the launcher banner has a “Copy report” button. Logs contain no tokens or passwords."
+     }
+    }
+   ]
+  }
+ ]
+}
+  </script>
+  <!-- seo:end -->
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="preload" href="fonts/NotoSerif-var-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/DungeonborneSerifLatin-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/DungeonborneSerifLatin-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
+  <script src="classes_ru.js" defer></script>
+  <script src="news.js" defer></script>
+  <script src="site.js" defer></script>
+  <script src="atmos.js" defer></script>
+</head>
+<body class="min-h-screen font-sans text-base leading-relaxed text-fg antialiased">
+<!-- splash screen until the font loads (site.js removes data-boot from <html>; without a script it leaves by itself) -->
+<div class="boot" aria-hidden="true"><span class="boot-mark">D</span><span class="boot-bar"></span></div>
+<div class="atmos" data-theme-follow aria-hidden="true">
+  <div class="atmos-layer" data-theme="torch" data-on></div><div class="atmos-layer" data-theme="crypt"></div><div class="atmos-layer" data-theme="blood"></div>
+  <div class="rays"></div><canvas class="atmos-gpu"></canvas>
+</div>
+
+<!-- icons: our own, so they look the same on Windows and on a phone -->
+<svg width="0" height="0" class="absolute" aria-hidden="true">
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></symbol>
+  <symbol id="i-group" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-5.5 6.5-5.5s6.5 2 6.5 5.5"/><path d="M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.8c2.2.6 3.5 2.4 3.5 5.2"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9"/><path d="M20 4v6h-6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-scroll" viewBox="0 0 24 24"><path d="M6 3h11a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6z"/><path d="M9 8h7M9 12h7M9 16h4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17v.5"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 10v4h4l7 4V6L7 10z"/><path d="M18 9a4 4 0 0 1 0 6"/></symbol>
+  <symbol id="i-swords" viewBox="0 0 24 24"><path d="M4 4l10 10M4 4h4M4 4v4M20 4L10 14M20 4h-4M20 4v4M7 17l-3 3M17 17l3 3M8 13l3 3M16 13l-3 3"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8L3.5 9.7l5.9-.9z"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5 5L13 18a2.1 2.1 0 0 1-3-3l6.5-6.5"/><path d="M14.5 6.5L17 4a4 4 0 0 1 3 3l-2.5 2.5"/><path d="M10 15l-5.5 5.5"/></symbol>
+  <symbol id="i-scales" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7h14"/><path d="M5 7l-3 6a3 3 0 0 0 6 0zM19 7l-3 6a3 3 0 0 0 6 0z"/></symbol>
+  <symbol id="i-portal" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6.5" ry="9"/><ellipse cx="12" cy="12" rx="3" ry="5"/><path d="M12 7v.01M12 17v.01"/></symbol>
+  <!-- class crests: our own drawings, not from the game -->
+  <symbol id="k-fighter" viewBox="0 0 32 32"><path d="M16 4l9 3v8c0 6-4 10-9 13-5-3-9-7-9-13V7z"/><path d="M16 9v14M11.5 13.5h9"/></symbol>
+  <symbol id="k-rogue" viewBox="0 0 32 32"><path d="M7 25L20 12l4-6-6 4L5 23zM25 25L12 12 8 6l6 4 13 13"/><path d="M6 20l6 6M26 20l-6 6"/></symbol>
+  <symbol id="k-priest" viewBox="0 0 32 32"><circle cx="16" cy="16" r="5"/><path d="M16 3v5M16 24v5M3 16h5M24 16h5M6.8 6.8l3.5 3.5M21.7 21.7l3.5 3.5M6.8 25.2l3.5-3.5M21.7 10.3l3.5-3.5"/></symbol>
+  <symbol id="k-pyro" viewBox="0 0 32 32"><path d="M16 3c1 5 8 8 8 15a8 8 0 0 1-16 0c0-4 2-7 4.5-9 0 3 1 5 3.5 6 0-5-1-8 0-12z"/><path d="M16 28a3.5 3.5 0 0 1-3.5-3.5c0-2 1.5-3.5 3.5-5.5 2 2 3.5 3.5 3.5 5.5A3.5 3.5 0 0 1 16 28z"/></symbol>
+  <symbol id="k-sword" viewBox="0 0 32 32"><path d="M6 26C15 20 23 12 27 4c-1 6-7 14-17 22"/><path d="M8 19l5 5M4 28l3-3"/></symbol>
+  <symbol id="k-druid" viewBox="0 0 32 32"><path d="M6 26C6 13 13 6 26 6c0 13-7 20-20 20z"/><path d="M6 26L19 13M12 20h5M15 17v-5"/></symbol>
+  <symbol id="k-dk" viewBox="0 0 32 32"><path d="M7 15a9 9 0 0 1 18 0v4l-2.5 2.5V27h-13v-5.5L7 19z"/><circle cx="12.5" cy="16" r="2.2"/><circle cx="19.5" cy="16" r="2.2"/><path d="M14 27v-3M18 27v-3M16 19.5l-1.2 2h2.4z"/></symbol>
+  <symbol id="k-cryo" viewBox="0 0 32 32"><path d="M16 3v26M4.7 9.5l22.6 13M4.7 22.5l22.6-13"/><path d="M12.5 5l3.5 3.5L19.5 5M12.5 27l3.5-3.5 3.5 3.5M5 13.5l4.8-1.3-1.3-4.8M27 18.5l-4.8 1.3 1.3 4.8M5 18.5l4.8 1.3-1.3 4.8M27 13.5l-4.8-1.3 1.3-4.8"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M3 6.5l6-2.5 6 2.5 6-2.5v13.5l-6 2.5-6-2.5-6 2.5z"/><path d="M9 4v13.5M15 6.5V20"/></symbol>
+</svg>
+
+<!-- ============================================================ header: like the launcher window title bar -->
+<header data-theme-follow class="sticky top-0 z-40 border-b border-line/70 bg-mica/92 transition-[background-color,box-shadow] duration-300 data-scrolled:bg-mica/95 data-scrolled:shadow-header">
+  <div class="page flex h-14 items-center gap-3">
+    <!-- logo: the "D" tile — the first letter of the name, then "UNGEONBORNE" (for screen readers — the whole word) -->
+    <a href="#top" class="flex items-center gap-3 text-fg no-underline">
+      <span class="sr-only">Dungeonborne</span>
+      <span class="flex items-center gap-1" aria-hidden="true">
+        <span class="grid size-7 place-items-center rounded-ctl border border-line-hi bg-card-hi font-display text-base font-bold text-accent shadow-glow">D</span>
+        <span class="font-display text-base font-semibold tracking-widest uppercase sm:tracking-brand">ungeonborne</span>
+      </span>
+      <span class="brand-sub hidden xl:inline" data-t="brand.sub">community server</span>
+    </a>
+    <nav class="ml-auto hidden items-center lg:flex" data-t-attr="aria-label:nav.label" aria-label="Sections">
+      <a class="btn-flat" href="#game" data-nav="game" data-t="nav.game">The game</a>
+      <a class="btn-flat" href="#start" data-nav="start" data-t="nav.start">Getting started</a>
+      <a class="btn-flat" href="#launcher" data-nav="launcher" data-t="nav.launcher">Launcher</a>
+      <a class="btn-flat" href="#news" data-nav="news" data-t="nav.news">News</a>
+      <a class="btn-flat" href="#help" data-nav="help" data-t="nav.help">Help</a>
+    </nav>
+    <!-- "Animations": visible only if animation effects are off in Windows (or motion is already turned on here); site.js -->
+    <button id="motion" type="button" class="btn-flat ml-auto aria-pressed:text-accent-text lg:ml-2 [&[hidden]]:hidden" aria-pressed="false" hidden
+      data-t-attr="title:motion.title" title="Turn animations on even if Windows has animation effects off">
+      <svg class="icon"><use href="#i-play"/></svg><span class="hidden sm:inline" data-t="motion.label">Animations</span>
+    </button>
+    <button id="lang" type="button" class="btn-flat ml-auto lg:ml-2 [#motion:not([hidden])+&]:ml-0" aria-label="Language / Язык">
+      <svg class="icon"><use href="#i-globe"/></svg><span id="lang-text">EN</span>
+    </button>
+    <a class="btn-accent hidden sm:inline-flex" href="downloads/DungeonborneLauncher.exe" download>
+      <svg class="icon"><use href="#i-download"/></svg><span data-t="cta.short">Download</span>
+    </a>
+    <button id="menu-btn" type="button" class="group btn-flat -mr-2 size-9 px-0 lg:hidden" aria-expanded="false" aria-controls="menu" data-t-attr="aria-label:nav.menu" aria-label="Menu">
+      <svg class="icon text-xl group-aria-expanded:hidden"><use href="#i-menu"/></svg>
+      <svg class="icon hidden text-xl group-aria-expanded:block"><use href="#i-close"/></svg>
+    </button>
+  </div>
+  <nav id="menu" class="border-t border-line/70 bg-layer lg:hidden" hidden data-t-attr="aria-label:nav.label" aria-label="Sections">
+    <div class="page flex flex-col py-2">
+      <a class="mnav-link" href="#game" data-nav="game" data-t="nav.game">The game</a>
+      <a class="mnav-link" href="#start" data-nav="start" data-t="nav.start">Getting started</a>
+      <a class="mnav-link" href="#launcher" data-nav="launcher" data-t="nav.launcher">Launcher</a>
+      <a class="mnav-link" href="#news" data-nav="news" data-t="nav.news">News</a>
+      <a class="mnav-link" href="#help" data-nav="help" data-t="nav.help">Help</a>
+    </div>
+  </nav>
+  <div class="scroll-progress" aria-hidden="true"></div>
+</header>
+
+<!-- ============================================================ page navigation: dots on the right (wide screens) -->
+<nav data-theme-follow class="scroll-rail" data-t-attr="aria-label:rail.label" aria-label="On this page">
+  <a class="rail-link" href="#top" data-spy="top"><span class="rail-label" data-t="rail.top">Top</span><span class="rail-dot"></span></a>
+  <a class="rail-link" href="#game" data-spy="game"><span class="rail-label" data-t="nav.game">The game</span><span class="rail-dot"></span></a>
+  <a class="rail-link" href="#start" data-spy="start"><span class="rail-label" data-t="nav.start">Getting started</span><span class="rail-dot"></span></a>
+  <a class="rail-link" href="#launcher" data-spy="launcher"><span class="rail-label" data-t="nav.launcher">Launcher</span><span class="rail-dot"></span></a>
+  <a class="rail-link" href="#news" data-spy="news"><span class="rail-label" data-t="nav.news">News</span><span class="rail-dot"></span></a>
+  <a class="rail-link" href="#help" data-spy="help"><span class="rail-label" data-t="nav.help">Help</span><span class="rail-dot"></span></a>
+</nav>
+
+<!-- slide-out scrollbar (site.js "scrollbar"): visible while the page moves or the mouse is near the right edge; the system one
+     is hidden. Mouse only — touch screens keep the system one. -->
+<div data-theme-follow class="sbar" aria-hidden="true" hidden><div class="sbar-thumb"></div></div>
+
+<main id="top" class="overflow-x-clip">
+
+  <!-- ============================================================ first screen -->
+  <!-- first screen: the heading and the launcher window — exactly the window height (without the header), the next section does not peek in -->
+  <div class="hero-pin">
+  <section class="page relative grid min-h-[calc(100svh-3.5rem)] content-center items-center gap-12 py-12 lg:grid-cols-feature">
+    <div class="hero-copy reveal-stagger">
+      <span class="pill text-ok"><span class="led"></span><span data-t="hero.status">Playtest · for members of the Discord server</span></span>
+      <h1 class="mt-5 font-display text-hero font-bold tracking-wide drop-shadow-ink">Dungeonborne</h1>
+      <p class="mt-1 font-display text-lg tracking-brand text-accent-text uppercase" data-t="hero.sub">Community server</p>
+      <p class="mt-5 max-w-lg text-lg text-fg-2" data-t="hero.lead">Dungeons, loot and fights with other adventurers. The launcher signs you in with Discord, installs the mods and connects the game to the server by itself.</p>
+
+      <div class="mt-8 max-w-sm">
+        <div class="relative">
+          <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <a class="btn-play h-14 w-full text-xl" href="downloads/DungeonborneLauncher.exe" download>
+            <svg class="icon text-lg"><use href="#i-download"/></svg><span data-t="cta.play">Download launcher</span>
+          </a>
+        </div>
+        <p class="mt-2.5 text-center text-xs text-fg-2">
+          <span data-t="cta.ver">Version</span> <span data-release="version">1.7.0</span>
+          · Windows 10/11 ·
+          <span data-release="size" data-bytes="19807744">18,9</span> <span data-t="cta.mb">MB</span>
+          · <span data-t="cta.noinstall">no install</span>
+        </p>
+      </div>
+      <div class="mt-6 flex flex-wrap gap-2">
+        <a class="btn-std" href="#start"><span data-t="hero.how">Getting started</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+        <a class="btn-flat" href="#sha"><svg class="icon"><use href="#i-shield"/></svg><span data-t="hero.sha">Verify the file</span></a>
+      </div>
+    </div>
+
+    <!-- launcher window: not a picture but the same components as in the launcher (display only, no actions) -->
+    <div class="hero-window reveal relative isolate">
+      <div class="motion-safe:animate-float">
+    <div class="window-shot scene pointer-events-none select-none" aria-hidden="true">
+      <div class="flex h-10 items-center gap-2.5 border-b border-line/70 bg-black/30 pl-3">
+        <span class="grid size-6 place-items-center rounded-ctl border border-line-hi bg-card-hi font-display text-sm font-bold text-accent">D</span>
+        <span class="font-display text-label font-semibold tracking-caps uppercase">Dungeonborne</span>
+        <span class="hidden text-2xs whitespace-nowrap text-fg-3 sm:inline" data-t="w.subtitle">community launcher</span>
+        <span class="ml-auto flex items-center gap-1.5 px-2 text-xs text-fg-2"><svg class="icon"><use href="#i-globe"/></svg><span data-t="w.lang">RU</span></span>
+        <span class="hidden self-stretch text-fg-3 sm:flex">
+          <span class="grid w-9 place-items-center text-3xs">—</span><span class="grid w-9 place-items-center text-3xs">☐</span><span class="grid w-9 place-items-center text-xs">✕</span>
+        </span>
+      </div>
+      <div class="flex">
+        <div class="hidden w-44 shrink-0 flex-col border-r border-line/70 bg-layer/70 pt-3 pb-2 sm:flex">
+          <span class="title-rule px-4 text-2xs" data-t="w.servers">Servers</span>
+          <div class="mt-2 px-2">
+            <div class="relative flex items-center gap-2.5 rounded-ctl border border-line-hi bg-card-hi px-2.5 py-2">
+              <span class="absolute top-2 bottom-2 -left-px w-0.75 rounded-r bg-accent shadow-glow"></span>
+              <span class="led text-ok"></span>
+              <span class="min-w-0">
+                <span class="block truncate font-display text-label font-semibold tracking-wide text-accent-text">Dungeonborne RU</span>
+                <span class="block truncate text-2xs text-fg-3" data-t="w.online">online · 38 ms</span>
+              </span>
+            </div>
+          </div>
+          <div class="mt-auto space-y-0.5 border-t border-line px-2 pt-2 text-label text-fg-2">
+            <div class="flex h-8 items-center gap-2.5 px-2.5 whitespace-nowrap"><svg class="icon"><use href="#i-plus"/></svg><span data-t="w.add">Add server</span></div>
+            <div class="flex h-8 items-center gap-2.5 px-2.5"><svg class="icon"><use href="#i-gear"/></svg><span data-t="w.settings">Settings</span></div>
+          </div>
+        </div>
+        <div class="min-w-0 flex-1 space-y-3 p-3 sm:p-4">
+          <div class="card framed overflow-hidden">
+            <div class="hero-art flex flex-col gap-4 px-5 pt-6 pb-5 sm:flex-row sm:items-end">
+              <div class="min-w-0 flex-1">
+                <p class="font-display text-xl font-bold tracking-wide whitespace-nowrap drop-shadow-ink">Dungeonborne RU</p>
+                <div class="mt-1.5 flex flex-wrap gap-1">
+                  <span class="pill h-5 text-2xs text-ok"><span class="led size-1.5"></span><span data-t="w.online2">online · 38 ms</span></span>
+                  <span class="pill h-5 text-2xs">playtest</span>
+                </div>
+              </div>
+              <div class="relative w-full sm:w-36">
+                <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <span class="btn-play h-10 w-full text-base"><svg class="icon text-sm"><use href="#i-play"/></svg><span data-t="w.play">Play</span></span>
+              </div>
+            </div>
+            <div class="flex items-center gap-2.5 border-t border-line bg-black/30 px-5 py-2 text-label text-fg-2">
+              <svg class="icon text-accent"><use href="#i-megaphone"/></svg><span data-t="w.motd">Season “Playtest”</span>
+            </div>
+          </div>
+          <div class="flex gap-5 border-b border-line px-1 text-xs">
+            <span class="tab" data-active data-t="w.tab1">Server</span>
+            <span class="tab" data-t="w.tab2">Patch notes</span>
+          </div>
+          <div class="card space-y-3 px-4 py-3.5">
+            <div class="flex items-center gap-2">
+              <svg class="icon text-accent"><use href="#i-swords"/></svg>
+              <span class="title-rule flex-1 text-2xs" data-t="w.instances">Instances</span>
+            </div>
+            <div class="grid grid-cols-3 gap-1">
+              <span class="rounded-ctl border border-accent bg-card-hi px-2 py-1.5 shadow-underline"><span class="block truncate font-display text-label font-semibold text-accent-text" data-t="w.i1">Instance 1</span><span class="block truncate text-2xs text-fg-3" data-t="w.s1">Map vote</span></span>
+              <span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i2">Instance 2</span><span class="block truncate text-2xs text-fg-3" data-t="w.s2">Party vote</span></span>
+              <span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i3">Instance 3</span><span class="block truncate text-2xs text-fg-3" data-t="w.s3">Hall open</span></span>
+              <span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i4">Instance 4</span><span class="block truncate text-2xs text-fg-3" data-t="w.s4">In battle</span></span>
+              <span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i5">Instance 5</span><span class="block truncate text-2xs text-fg-3" data-t="w.s5">Free</span></span>
+              <span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i6">Instance 6</span><span class="block truncate text-2xs text-fg-3" data-t="w.s6">Free</span></span>
+            </div>
+            <p class="text-label text-fg-2" data-t="w.vote">Voting for the map. Players here: 5.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
+  <div class="pin-spacers"></div>
+  </div>
+
+  <!-- ============================================================ about the game: only facts from the game and the patch notes, no borrowed art -->
+  <section id="game" data-zone="torch" data-theme="torch" class="border-t border-line/60 bg-black/20">
+    <div class="page pb-20">
+      <!-- prologue — on wide screens exactly the window height (the chapters start from the next screen) -->
+      <div class="grid items-center gap-10 py-20 lg:min-h-[calc(100svh-3.5rem)] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-14 lg:py-12">
+        <div>
+        <p class="reveal title-rule max-w-md" data-t="g.eyebrow">The game</p>
+        <h2 class="reveal mt-2 font-display text-3xl font-bold tracking-wide sm:text-5xl" data-t="g.title">Descend. Loot. Get out.</h2>
+        <p class="reveal mt-6 text-lg text-fg-2 first-letter:float-left first-letter:mt-1 first-letter:mr-3 first-letter:font-display first-letter:text-6xl first-letter:leading-[0.8] first-letter:font-bold first-letter:text-accent-text" data-t="g.lead">Dungeonborne is a first-person dungeon where monsters and other delvers are both out to get you. This is the story of one raid: from gearing up in town to the moment you either step into a blue portal with full bags, or stay down in the dark with everything you brought.</p>
+        </div>
+        <!-- game screenshots: carousel (site.js, "carousel"); images — img/shots/, list in img/README.md -->
+        <div class="reveal card framed">
+          <div class="shots aspect-video" data-carousel role="region" aria-roledescription="carousel" data-t-attr="aria-label:shots.label" aria-label="Game screenshots">
+            <figure class="shot" data-slide data-active>
+              <div class="slot " data-slot="img/shots/1-town.webp · 1920×1080"><span class="crest"><svg class="icon"><use href="#i-scales"/></svg></span><img src="img/shots/1-town.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async"></div>
+              <figcaption class="shot-caption" data-t="shot.1">Town: trader, auction and forge</figcaption>
+            </figure>
+            <figure class="shot" data-slide>
+              <div class="slot " data-slot="img/shots/2-descent.webp · 1920×1080"><span class="crest"><svg class="icon"><use href="#i-map"/></svg></span><img src="img/shots/2-descent.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async"></div>
+              <figcaption class="shot-caption" data-t="shot.2">The descent: first corridors</figcaption>
+            </figure>
+            <figure class="shot" data-slide>
+              <div class="slot " data-slot="img/shots/3-fight.webp · 1920×1080"><span class="crest"><svg class="icon"><use href="#i-swords"/></svg></span><img src="img/shots/3-fight.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async"></div>
+              <figcaption class="shot-caption" data-t="shot.3">Fighting monsters and other parties</figcaption>
+            </figure>
+            <figure class="shot" data-slide>
+              <div class="slot " data-slot="img/shots/4-portals.webp · 1920×1080"><span class="crest"><svg class="icon"><use href="#i-portal"/></svg></span><img src="img/shots/4-portals.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async"></div>
+              <figcaption class="shot-caption" data-t="shot.4">Portals: blue, red, violet</figcaption>
+            </figure>
+            <figure class="shot" data-slide>
+              <div class="slot " data-slot="img/shots/5-boss.webp · 1920×1080"><span class="crest"><svg class="icon"><use href="#i-star"/></svg></span><img src="img/shots/5-boss.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async"></div>
+              <figcaption class="shot-caption" data-t="shot.5">A boss and its loot</figcaption>
+            </figure>
+            <figure class="shot" data-slide>
+              <div class="slot " data-slot="img/shots/6-extract.webp · 1920×1080"><span class="crest"><svg class="icon"><use href="#i-box"/></svg></span><img src="img/shots/6-extract.webp" width="1920" height="1080" alt="" loading="lazy" decoding="async"></div>
+              <figcaption class="shot-caption" data-t="shot.6">Made it out — the loot is yours</figcaption>
+            </figure>
+            <button type="button" class="shots-btn left-3" data-shots="prev" data-t-attr="aria-label:shots.prev" aria-label="Previous screenshot"><svg class="icon rotate-180"><use href="#i-arrow"/></svg></button>
+            <button type="button" class="shots-btn right-3" data-shots="next" data-t-attr="aria-label:shots.next" aria-label="Next screenshot"><svg class="icon"><use href="#i-arrow"/></svg></button>
+            <div class="shots-dots"><button type="button" class="shots-dot"></button><button type="button" class="shots-dot"></button><button type="button" class="shots-dot"></button><button type="button" class="shots-dot"></button><button type="button" class="shots-dot"></button><button type="button" class="shots-dot"></button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- raid chapters: the golden thread on the left fills as you scroll -->
+      <!-- pinned chapter scene (the pin utility, engine in site.js): scrolling pages through the chapters, the page stays -->
+      <div class="pin mt-16" data-pin>
+        <div data-theme-follow class="pin-stage story-stage chapter-subs">
+      <ol class="story pin-scenes space-y-24">
+        <li id="ch1" class="chapter group" data-step data-zone="torch" data-theme="torch">
+          <span class="step-no chapter-no">I</span>
+          <div class="reveal">
+            <p class="chapter-kicker" data-t="ch1.k">Chapter I · Gearing up</p>
+            <h3 class="chapter-title" data-t="ch1.h">Take only what you can afford to lose</h3>
+            <p class="chapter-text" data-t="ch1.p">It all starts in town. You put a kit together at the merchant, the auction house or the forge — and wear it: there is no chest in the dungeon to leave spares in. Whatever you carry is what you risk.</p>
+            <ul class="notes">
+              <li data-sub data-t="ch1.n1">Insurance: for gold, an item survives one death, and your killer gets the insurance premium instead.</li>
+              <li data-sub data-t="ch1.n2">The merchant restocks every hour; the auction house has other players' items.</li>
+            </ul>
+          </div>
+          <figure class="reveal card framed"><div class="relative aspect-art overflow-hidden rounded-ovl">
+            <div class="slot pin-swap absolute inset-0" data-hl="ch1" data-slot="img/story/1-gear.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-shield"/></svg></span><img src="img/story/1-gear.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap absolute inset-0" data-hl="ch1-1" data-slot="img/story/1-1-insurance.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-shield"/></svg></span><img src="img/story/1-1-insurance.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap absolute inset-0" data-hl="ch1-2" data-slot="img/story/1-2-trader.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-scales"/></svg></span><img src="img/story/1-2-trader.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+          </div></figure>
+        </li>
+
+        <li id="ch2" class="chapter group" data-step data-zone="torch" data-theme="torch">
+          <span class="step-no chapter-no">II</span>
+          <div class="reveal">
+            <p class="chapter-kicker" data-t="ch2.k">Chapter II · The descent</p>
+            <h3 class="chapter-title" data-t="ch2.h">Vote, hall, Start</h3>
+            <p class="chapter-text" data-t="ch2.p">In the launcher you pick an instance and vote with everyone else: first for party size — solo, duo or trio — then for the map. Once the votes are in, the waiting hall opens. You press Start in the game, wait for the stragglers — and the gates rise.</p>
+            <ul class="notes">
+              <li data-sub data-t="ch2.n1">The hall waits three minutes. Miss it and you sit this battle out, no penalty.</li>
+              <li data-sub data-t="ch2.n2">Solos fight solos, trios fight trios. Exceptions: Hard and Challenger Mode.</li>
+            </ul>
+          </div>
+          <figure class="reveal card framed"><div class="relative aspect-art overflow-hidden rounded-ovl">
+            <div class="slot pin-swap absolute inset-0" data-hl="ch2" data-slot="img/story/2-descent.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-swords"/></svg></span><img src="img/story/2-descent.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap absolute inset-0" data-hl="ch2-1" data-slot="img/story/2-1-hall.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-group"/></svg></span><img src="img/story/2-1-hall.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap absolute inset-0" data-hl="ch2-2" data-slot="img/story/2-2-groups.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-swords"/></svg></span><img src="img/story/2-2-groups.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+          </div></figure>
+        </li>
+
+        <li id="ch3" class="chapter group" data-step data-zone="crypt" data-theme="crypt">
+          <span class="step-no chapter-no">III</span>
+          <div class="reveal">
+            <p class="chapter-kicker" data-t="ch3.k">Chapter III · The dark</p>
+            <h3 class="chapter-title" data-t="ch3.h">The circle closes in</h3>
+            <p class="chapter-text" data-t="ch3.p">Inside are corridors, monsters, chests and bosses. And other parties who came for the same thing you did. The safe zone shrinks in circles, and every time you have to decide: search one more room, or head for the exit before the circle catches you.</p>
+            <ul class="notes">
+              <li data-sub data-t="ch3.n1">The rarer an item, the more properties it has.</li>
+              <li data-sub data-t="ch3.n2">The fallen can be searched: whatever they carried goes to the winner.</li>
+            </ul>
+          </div>
+          <figure class="reveal card framed"><div class="relative aspect-art overflow-hidden rounded-ovl">
+            <div class="slot pin-swap absolute inset-0" data-hl="ch3" data-slot="img/story/3-dark.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-star"/></svg></span><img src="img/story/3-dark.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap absolute inset-0" data-hl="ch3-1" data-slot="img/story/3-1-loot.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-star"/></svg></span><img src="img/story/3-1-loot.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap absolute inset-0" data-hl="ch3-2" data-slot="img/story/3-2-search.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-box"/></svg></span><img src="img/story/3-2-search.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+          </div></figure>
+        </li>
+
+        <li id="ch4" class="chapter group" data-step data-zone="crypt" data-theme="crypt">
+          <span class="step-no chapter-no">IV</span>
+          <div class="reveal">
+            <p class="chapter-kicker" data-t="ch4.k">Chapter IV · Portals</p>
+            <h3 class="chapter-title" data-t="ch4.h">Three colours, three choices</h3>
+            <p class="chapter-text" data-t="ch4.p">As the circle shrinks, portals open inside it. The colour decides how your story ends.</p>
+            <ul class="mt-5 space-y-3">
+              <li class="path border-portal-blue" data-sub><span class="led size-2.5 text-portal-blue"></span><span><b class="font-display text-fg" data-t="pl.1">Blue — the way out.</b> <span data-t="pl.1p">Step in and the raid is over; everything you found is yours.</span></span></li>
+              <li class="path border-portal-red" data-sub><span class="led size-2.5 text-portal-red"></span><span><b class="font-display text-fg" data-t="pl.2">Red — deeper.</b> <span data-t="pl.2p">To the second floor, where the loot is richer and the only way out is blue.</span></span></li>
+              <li class="path border-portal-violet" data-sub><span class="led size-2.5 text-portal-violet"></span><span><b class="font-display text-fg" data-t="pl.3">Purple — the throne room.</b> <span data-t="pl.3p">From the first floor of Sinner's End — to the Shadow King.</span></span></li>
+            </ul>
+          </div>
+          <figure class="reveal card framed"><div class="relative aspect-art overflow-hidden rounded-ovl">
+            <div class="slot pin-swap absolute inset-0" data-hl="ch4" data-slot="img/story/4-portals.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-portal"/></svg></span><img src="img/story/4-portals.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap absolute inset-0" data-hl="ch4-1" data-slot="img/story/4-1-blue.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-portal"/></svg></span><img src="img/story/4-1-blue.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap absolute inset-0" data-hl="ch4-2" data-slot="img/story/4-2-red.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-portal"/></svg></span><img src="img/story/4-2-red.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap absolute inset-0" data-hl="ch4-3" data-slot="img/story/4-3-violet.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-portal"/></svg></span><img src="img/story/4-3-violet.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+          </div></figure>
+        </li>
+
+        <li id="ch5" class="chapter group" data-step data-zone="blood" data-theme="blood">
+          <span class="step-no chapter-no">V</span>
+          <div class="reveal">
+            <p class="chapter-kicker" data-t="ch5.k">Chapter V · Deeper</p>
+            <h3 class="chapter-title" data-t="ch5.h">Two maps, three difficulties</h3>
+            <p class="chapter-text" data-t="ch5.p">Sinner's End is a two-floor dungeon: a red portal takes you down, and there is no way back up. Clouseau Castle is a one-floor gothic castle: no going deeper, only out through blue portals. Every map can be run on Normal, Classic or Hard — the higher, the richer the loot and the stricter the gear rules.</p>
+            <ul class="notes">
+              <li data-sub data-t="ch5.n1">Castle on Normal: grey and green only, bags included — anything else goes to the stash when you enter.</li>
+              <li data-sub data-t="ch5.n2">Hard: everything you wear must be Epic or higher; parties of any size meet in one battle.</li>
+              <li data-sub data-t="ch5.n3">In the launcher the maps are called Dungeon and Castle.</li>
+            </ul>
+          </div>
+          <div class="reveal grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+            <figure class="card framed"><div class="slot aspect-video rounded-t-ovl border-b border-line" data-slot="img/maps/sinners-end.webp · 1280×720"><span class="crest"><svg class="icon"><use href="#i-map"/></svg></span><img src="img/maps/sinners-end.webp" width="1280" height="720" alt="" loading="lazy" decoding="async"></div><figcaption class="px-4 py-3 font-display text-lg font-bold" data-t="m1.n">Sinner's End</figcaption></figure>
+            <figure class="card framed"><div class="slot aspect-video rounded-t-ovl border-b border-line" data-slot="img/maps/clouseau-castle.webp · 1280×720"><span class="crest"><svg class="icon"><use href="#i-map"/></svg></span><img src="img/maps/clouseau-castle.webp" width="1280" height="720" alt="" loading="lazy" decoding="async"></div><figcaption class="px-4 py-3 font-display text-lg font-bold" data-t="m2.n">Clouseau Castle</figcaption></figure>
+          </div>
+        </li>
+
+        <li id="ch6" class="chapter" data-step data-zone="blood" data-theme="blood">
+          <span class="step-no chapter-no">VI</span>
+          <div class="reveal lg:col-span-2">
+            <p class="chapter-kicker" data-t="ch6.k">Chapter VI · The outcome</p>
+            <h3 class="chapter-title" data-t="ch6.h">Get out or stay down</h3>
+            <div class="mt-6 grid gap-8 sm:grid-cols-2">
+              <div class="border-t-2 border-ok pt-4" data-sub>
+                <p class="font-display text-xl font-bold text-ok" data-t="ch6.ok">Escaped</p>
+                <p class="chapter-text mt-2" data-t="ch6.okp">Everything you carried out is yours: to the stash, to sell, to the forge. Experience, battle pass quests, a line in your stats. You can go down again — richer this time.</p>
+              </div>
+              <div class="border-t-2 border-critical pt-4" data-sub>
+                <p class="font-display text-xl font-bold text-critical" data-t="ch6.no">Fallen</p>
+                <p class="chapter-text mt-2" data-t="ch6.nop">Your gear stays in the dungeon — whoever killed you takes it. Only insured items survive. Gear up again — and back down.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+          <div class="pin-marks" aria-hidden="true"></div>
+        </div>
+        <div class="pin-spacers"></div>
+      </div>
+
+      <!-- classes: names and descriptions — from the game strings -->
+      <!-- classes — one screen (pinned for one step: fits — takes the whole screen, does not — a plain block) -->
+      <div class="pin mt-24" data-zone="crypt" data-theme="crypt" data-pin data-pin-steps="cls">
+      <div class="pin-stage in-data-pinned:py-4">
+      <h3 id="classes" class="reveal title-rule" data-t="g.classes">Who you'll be next time</h3>
+      <p class="reveal mt-2 max-w-2xl text-lg text-fg-2 in-data-pinned:hidden" data-t="cls.lead">Eight classes of three races. Pick a crest and see how the class fights.</p>
+      <!-- classes:start — built by build_classes.py from the game tables, do not edit by hand -->
+      <div class="reveal mt-5" data-classes>
+        <!-- picker: hidden without JS, and the scenes below are all shown in a row -->
+        <div role="tablist" aria-label="Classes" data-t-attr="aria-label:cls.label" class="class-picker" hidden>
+          <div class="class-group"><p class="class-group-label text-accent-text" data-t="race.hp">Humans</p><div class="flex gap-1"><button type="button" role="tab" id="tab-fighter" aria-controls="cls-fighter" aria-selected="false" class="class-tab"><span class="crest class-crest"><svg class="icon"><use href="#k-fighter"/></svg></span><span class="leading-tight" data-t="cls.fighter.n">Fighter</span></button><button type="button" role="tab" id="tab-rogue" aria-controls="cls-rogue" aria-selected="false" class="class-tab"><span class="crest class-crest"><svg class="icon"><use href="#k-rogue"/></svg></span><span class="leading-tight" data-t="cls.rogue.n">Rogue</span></button><button type="button" role="tab" id="tab-priest" aria-controls="cls-priest" aria-selected="false" class="class-tab"><span class="crest class-crest"><svg class="icon"><use href="#k-priest"/></svg></span><span class="leading-tight" data-t="cls.priest.n">Priest</span></button><button type="button" role="tab" id="tab-pyromancer" aria-controls="cls-pyromancer" aria-selected="false" class="class-tab"><span class="crest class-crest"><svg class="icon"><use href="#k-pyro"/></svg></span><span class="leading-tight" data-t="cls.pyromancer.n">Pyromancer</span></button></div></div>
+          <div class="class-group"><p class="class-group-label text-ok" data-t="race.ep">Elves</p><div class="flex gap-1"><button type="button" role="tab" id="tab-swordmaster" aria-controls="cls-swordmaster" aria-selected="false" class="class-tab"><span class="crest class-crest"><svg class="icon"><use href="#k-sword"/></svg></span><span class="leading-tight" data-t="cls.swordmaster.n">Swordmaster</span></button><button type="button" role="tab" id="tab-druid" aria-controls="cls-druid" aria-selected="false" class="class-tab"><span class="crest class-crest"><svg class="icon"><use href="#k-druid"/></svg></span><span class="leading-tight" data-t="cls.druid.n">Druid</span></button></div></div>
+          <div class="class-group"><p class="class-group-label text-arcane" data-t="race.up">Undead</p><div class="flex gap-1"><button type="button" role="tab" id="tab-death-knight" aria-controls="cls-death-knight" aria-selected="false" class="class-tab"><span class="crest class-crest"><svg class="icon"><use href="#k-dk"/></svg></span><span class="leading-tight" data-t="cls.death-knight.n">Death Knight</span></button><button type="button" role="tab" id="tab-cryomancer" aria-controls="cls-cryomancer" aria-selected="false" class="class-tab"><span class="crest class-crest"><svg class="icon"><use href="#k-cryo"/></svg></span><span class="leading-tight" data-t="cls.cryomancer.n">Cryomancer</span></button></div></div>
+        </div>
+        <div class="class-panels mt-5 space-y-16">
+        <article id="cls-fighter" role="tabpanel" aria-labelledby="tab-fighter" class="class-panel" data-video="video/classes/fighter">
+          <div class="class-stage">
+            <div class="min-w-0">
+              <div class="group/media relative">
+              <div class="card framed">
+                <div class="slot aspect-video rounded-ovl" data-slot="video/classes/fighter.webm|.mp4 · video/skills/&lt;id&gt; · img/classes/fighter.webp · 1280×720">
+                  <span class="crest"><svg class="icon"><use href="#k-fighter"/></svg></span>
+                  <img src="img/classes/fighter.webp" width="1280" height="720" alt="" loading="lazy" decoding="async">
+                  <video class="class-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+                  <p class="video-caption" hidden></p>
+                  <button type="button" class="video-toggle group" hidden><svg class="icon group-data-playing:hidden"><use href="#i-play"/></svg><svg class="icon hidden group-data-playing:block"><use href="#i-pause"/></svg><span class="group-data-playing:hidden" data-t="cls.play">Watch</span><span class="hidden group-data-playing:inline" data-t="cls.pause">Pause</span></button>
+                </div>
+              </div>
+              <div class="skill-details"><div class="skill-detail" id="sk-107001" data-skill="107001"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.107001.n">Whirlwind</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.107001.d">Swings weapon and spins while moving, gradually increasing movement speed and dealing multiple instances of weapon damage to surrounding enemies. (Requires a two-handed weapon)</p></div><div class="skill-detail" id="sk-107002" data-skill="107002"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.107002.n">Charge</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.107002.d">Quickly charge forward a short distance. Using this ability will not interrupt actions currently being performed.</p></div><div class="skill-detail" id="sk-107004" data-skill="107004"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.107004.n">Battle Cry</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.107004.d">Let out a battle cry, increasing your attack damage by 30%, physical resistance by 30%, and granting 30% Life Steal for 5 seconds.</p></div><div class="skill-detail" id="sk-107005" data-skill="107005"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.107005.n">Inspire</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.107005.d">Boost the morale of yourself and nearby allies, increasing movement speed by 150 for 3 seconds.</p></div><div class="skill-detail" id="sk-107006" data-skill="107006"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.107006.n">Rupture</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.107006.d">Activates Rupturing Power for 15 seconds. The next weapon attack that deals unblocked active damage will lacerate the target, causing initial damage based on the target's current health. The target will also be Ruptured, taking damage based on the distance they move during the duration. Rupture lasts 6 seconds on players and 10 seconds on monsters. Applies a 30% Grievous Wound effect to the target during Rupture.</p></div><div class="skill-detail" id="tl-fighter-1" data-skill="t1"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Fighter.1.n">Weapon Mastery</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Fighter.1.d">When releasing Q, gain a 200 point shield for 8 seconds.</p></div><div class="skill-detail" id="tl-fighter-2" data-skill="t2"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Fighter.2.n">Vengeful Riposte</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Fighter.2.d">After a successful defense, your next attack is guaranteed to be a critical strike.</p></div><div class="skill-detail" id="tl-fighter-3" data-skill="t3"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Fighter.3.n">Restraint</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Fighter.3.d">Cannot damage allies and cannot be damaged by allies.</p></div><div class="skill-detail" id="tl-fighter-4" data-skill="t4"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Fighter.4.n">Fired Up</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Fighter.4.d">E can store up to two charges.</p></div><div class="skill-detail" id="tl-fighter-5" data-skill="t5"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Fighter.5.n">Hamstring</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Fighter.5.d">Applies a 20% slow to enemies affected by Q</p></div></div>
+              </div>
+              <div class="class-skills"><div><p class="class-sub">Q</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-107001" data-skill="107001"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/107001.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.107001.n">Whirlwind</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-107004" data-skill="107004"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/107004.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.107004.n">Battle Cry</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-107006" data-skill="107006"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/107006.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.107006.n">Rupture</span></button></div></div><div><p class="class-sub">E</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-107002" data-skill="107002"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/107002.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.107002.n">Charge</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-107005" data-skill="107005"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/107005.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.107005.n">Inspire</span></button></div></div></div>
+            </div>
+            <div class="min-w-0">
+              <p class="text-2xs font-semibold tracking-brand uppercase text-accent-text" data-t="race.h">Human</p>
+              <h4 class="mt-1 font-display text-3xl font-bold lg:text-2xl" data-t="cls.fighter.n">Fighter</h4>
+              <p class="mt-2 text-copy text-fg-2 lg:text-label" data-t="cls.fighter.d">A heavily armored warrior adept at frontline combat. They have high health and excel at breaking into enemy lines and disrupting formations.</p>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div><p class="class-sub text-ok" data-t="cls.pros">Strengths</p><ul class="mt-1.5 space-y-0.5"><li class="pro text-fg" data-t="cls.fighter.pro0">Shreds enemy lines</li><li class="pro" data-t="cls.fighter.pro1">Can wield most weapons</li><li class="pro" data-t="cls.fighter.pro2">Can be immune to friendly fire</li></ul></div>
+                <div><p class="class-sub text-critical" data-t="cls.cons">Weaknesses</p><ul class="mt-1.5 space-y-0.5"><li class="con" data-t="cls.fighter.con0">Q Skill can be blocked</li><li class="con" data-t="cls.fighter.con1">Struggles against ranged enemies</li></ul></div>
+              </div>
+              <p class="class-sub mt-3" data-t="cls.weapons">Weapons</p>
+              <ul class="mt-1.5 flex flex-wrap gap-1"><li class="pill" data-t="cls.fighter.w0">One-Handed Swords</li><li class="pill" data-t="cls.fighter.w1">Two-Handed Swords</li><li class="pill" data-t="cls.fighter.w2">Crossbows</li><li class="pill" data-t="cls.fighter.w3">Daggers</li><li class="pill" data-t="cls.fighter.w4">Shields</li><li class="pill" data-t="cls.fighter.w5">One-handed Maces</li></ul>
+              <p class="class-sub mt-3"><span data-t="cls.talents">Talents</span> · 5</p>
+              <div class="mt-1.5 flex flex-wrap gap-1"><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-fighter-1" data-skill="t1"><span data-t="tl.Fighter.1.n">Weapon Mastery</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-fighter-2" data-skill="t2"><span data-t="tl.Fighter.2.n">Vengeful Riposte</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-fighter-3" data-skill="t3"><span data-t="tl.Fighter.3.n">Restraint</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-fighter-4" data-skill="t4"><span data-t="tl.Fighter.4.n">Fired Up</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-fighter-5" data-skill="t5"><span data-t="tl.Fighter.5.n">Hamstring</span></button></div>
+            </div>
+          </div>
+        </article>
+        <article id="cls-rogue" role="tabpanel" aria-labelledby="tab-rogue" class="class-panel" data-video="video/classes/rogue">
+          <div class="class-stage">
+            <div class="min-w-0">
+              <div class="group/media relative">
+              <div class="card framed">
+                <div class="slot aspect-video rounded-ovl" data-slot="video/classes/rogue.webm|.mp4 · video/skills/&lt;id&gt; · img/classes/rogue.webp · 1280×720">
+                  <span class="crest"><svg class="icon"><use href="#k-rogue"/></svg></span>
+                  <img src="img/classes/rogue.webp" width="1280" height="720" alt="" loading="lazy" decoding="async">
+                  <video class="class-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+                  <p class="video-caption" hidden></p>
+                  <button type="button" class="video-toggle group" hidden><svg class="icon group-data-playing:hidden"><use href="#i-play"/></svg><svg class="icon hidden group-data-playing:block"><use href="#i-pause"/></svg><span class="group-data-playing:hidden" data-t="cls.play">Watch</span><span class="hidden group-data-playing:inline" data-t="cls.pause">Pause</span></button>
+                </div>
+              </div>
+              <div class="skill-details"><div class="skill-detail" id="sk-103001" data-skill="103001"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.103001.n">Petrifying Poison</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.103001.d">Coats melee or ranged weapon with poison. The next successful attack will cause the target to be Petrified. Petrified targets cannot act and have their damage taken reduced by 100%. The effect is removed when the target is attacked from close range.</p></div><div class="skill-detail" id="sk-103002" data-skill="103002"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.103002.n">Vanish</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.103002.d">Enter Stealth for 30 seconds after channeling for 3 seconds, increasing critical damage while Stealthed. If unblocked active damage is dealt while Stealthed, gain 50% damage reduction for 3 seconds.</p></div><div class="skill-detail" id="sk-103003" data-skill="103003"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.103003.n">Quick Blades</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.103003.d">Shoot out 6 daggers to attack multiple enemies in front of you, cleansing all debuffs from yourself, causing a 70% slow effect for 3 seconds.</p></div><div class="skill-detail" id="sk-103004" data-skill="103004"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.103004.n">Swift Concealment</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.103004.d">Immediately enter Stealth for 6 seconds, increasing critical damage while Stealthed. If unblocked active damage is dealt while Stealthed, gain 50% damage reduction for 3 seconds.</p></div><div class="skill-detail" id="sk-103005" data-skill="103005"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.103005.n">Shadow Veil</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.103005.d">After preparing for 3 seconds, grants nearby allies (excluding Panthers) Stealth for 15 seconds, increasing critical damage while Stealthed. If unblocked active damage is dealt while Stealthed, gain 50% damage reduction for 3 seconds.</p></div><div class="skill-detail" id="tl-rogue-1" data-skill="t1"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Rogue.1.n">Featherfoot</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Rogue.1.d">Entering Stealth increases movement speed by 200, decaying over 5 seconds.</p></div><div class="skill-detail" id="tl-rogue-2" data-skill="t2"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Rogue.2.n">Toxic Cloak</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Rogue.2.d">When Q activates, enter Stealth.</p></div><div class="skill-detail" id="tl-rogue-3" data-skill="t3"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Rogue.3.n">Ambush</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Rogue.3.d">Stealth grants 50% Life Steal. This effect is lost upon breaking Stealth.</p></div><div class="skill-detail" id="tl-rogue-4" data-skill="t4"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Rogue.4.n">Evaporate</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Rogue.4.d">Enter Stealth after killing an enemy, with a 15 second cooldown.</p></div><div class="skill-detail" id="tl-rogue-5" data-skill="t5"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Rogue.5.n">Stealthbreak Venom</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Rogue.5.d">While in Stealth, unblocked attacks apply Poison, dealing 25 damage every 0.5 seconds for 3 seconds.</p></div></div>
+              </div>
+              <div class="class-skills"><div><p class="class-sub">Q</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-103001" data-skill="103001"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/103001.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.103001.n">Petrifying Poison</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-103003" data-skill="103003"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/103003.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.103003.n">Quick Blades</span></button></div></div><div><p class="class-sub">E</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-103002" data-skill="103002"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/103002.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.103002.n">Vanish</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-103004" data-skill="103004"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/103004.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.103004.n">Swift Concealment</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-103005" data-skill="103005"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/103005.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.103005.n">Shadow Veil</span></button></div></div></div>
+            </div>
+            <div class="min-w-0">
+              <p class="text-2xs font-semibold tracking-brand uppercase text-accent-text" data-t="race.h">Human</p>
+              <h4 class="mt-1 font-display text-3xl font-bold lg:text-2xl" data-t="cls.rogue.n">Rogue</h4>
+              <p class="mt-2 text-copy text-fg-2 lg:text-label" data-t="cls.rogue.d">Masters of stealth and deception, rogues excel at assassination, thievery, and deadly dagger attacks.</p>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div><p class="class-sub text-ok" data-t="cls.pros">Strengths</p><ul class="mt-1.5 space-y-0.5"><li class="pro text-fg" data-t="cls.rogue.pro0">Stealthy assassin with deadly strikes</li><li class="pro" data-t="cls.rogue.pro1">Highly agile</li><li class="pro" data-t="cls.rogue.pro2">Fast looter</li></ul></div>
+                <div><p class="class-sub text-critical" data-t="cls.cons">Weaknesses</p><ul class="mt-1.5 space-y-0.5"><li class="con" data-t="cls.rogue.con0">Low health and defense</li><li class="con" data-t="cls.rogue.con1">Requires precise positioning</li></ul></div>
+              </div>
+              <p class="class-sub mt-3" data-t="cls.weapons">Weapons</p>
+              <ul class="mt-1.5 flex flex-wrap gap-1"><li class="pill" data-t="cls.rogue.w0">One-Handed Swords</li><li class="pill" data-t="cls.rogue.w1">Crossbows</li><li class="pill" data-t="cls.rogue.w2">Daggers</li></ul>
+              <p class="class-sub mt-3"><span data-t="cls.talents">Talents</span> · 5</p>
+              <div class="mt-1.5 flex flex-wrap gap-1"><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-rogue-1" data-skill="t1"><span data-t="tl.Rogue.1.n">Featherfoot</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-rogue-2" data-skill="t2"><span data-t="tl.Rogue.2.n">Toxic Cloak</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-rogue-3" data-skill="t3"><span data-t="tl.Rogue.3.n">Ambush</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-rogue-4" data-skill="t4"><span data-t="tl.Rogue.4.n">Evaporate</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-rogue-5" data-skill="t5"><span data-t="tl.Rogue.5.n">Stealthbreak Venom</span></button></div>
+            </div>
+          </div>
+        </article>
+        <article id="cls-priest" role="tabpanel" aria-labelledby="tab-priest" class="class-panel" data-video="video/classes/priest">
+          <div class="class-stage">
+            <div class="min-w-0">
+              <div class="group/media relative">
+              <div class="card framed">
+                <div class="slot aspect-video rounded-ovl" data-slot="video/classes/priest.webm|.mp4 · video/skills/&lt;id&gt; · img/classes/priest.webp · 1280×720">
+                  <span class="crest"><svg class="icon"><use href="#k-priest"/></svg></span>
+                  <img src="img/classes/priest.webp" width="1280" height="720" alt="" loading="lazy" decoding="async">
+                  <video class="class-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+                  <p class="video-caption" hidden></p>
+                  <button type="button" class="video-toggle group" hidden><svg class="icon group-data-playing:hidden"><use href="#i-play"/></svg><svg class="icon hidden group-data-playing:block"><use href="#i-pause"/></svg><span class="group-data-playing:hidden" data-t="cls.play">Watch</span><span class="hidden group-data-playing:inline" data-t="cls.pause">Pause</span></button>
+                </div>
+              </div>
+              <div class="skill-details"><div class="skill-detail" id="sk-105001" data-skill="105001"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.105001.n">Divine Guidance</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.105001.d">Channels the power of the Holy Light to summon an oracle at the designated location. After a brief delay, it heals friendly targets and deals active Holy damage to enemy targets within the area. The healing effect has a chance to critical strike. (Requires a Staff/Orb)</p></div><div class="skill-detail" id="sk-105002" data-skill="105002"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.105002.n">Divine Protection</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.105002.d">Apply a Divine Shield to a friendly target, making them immune to all damage for 3 seconds; Press Interaction Key (F) to apply it to yourself.</p></div><div class="skill-detail" id="sk-105004" data-skill="105004"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.105004.n">Cleanse</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.105004.d">Channels the power of the Holy Light to heal a friendly target; Press Interaction Key (F) to heal yourself. Charged casting can enhance the skill effect. The healing effect has a chance to critical strike. (Requires a Staff/Orb)</p></div><div class="skill-detail" id="sk-105005" data-skill="105005"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.105005.n">Guard</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.105005.d">Grant a shield to yourself and nearby allies for 60 seconds. (Requires a Staff/Orb)</p></div><div class="skill-detail" id="tl-priest-1" data-skill="t1"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Priest.1.n">Cleansing Rites</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Priest.1.d">When casting E, cleanse the ally target of all debuffs and make them immune to all debuffs for 2 seconds.</p></div><div class="skill-detail" id="tl-priest-2" data-skill="t2"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Priest.2.n">Resurrection</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Priest.2.d">Casting Q on a dead teammate can resurrect them. This can only be used once during an adventure, and the count resets after entering a portal.</p></div><div class="skill-detail" id="tl-priest-3" data-skill="t3"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Priest.3.n">Recompense</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Priest.3.d">When casting E, the target's movement speed is increased by 100 for 1 second.</p></div><div class="skill-detail" id="tl-priest-4" data-skill="t4"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Priest.4.n">Faithful</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Priest.4.d">Restore 5 Mana on critical hits.</p></div><div class="skill-detail" id="tl-priest-5" data-skill="t5"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Priest.5.n">Benediction</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Priest.5.d">E can store up to two charges.</p></div></div>
+              </div>
+              <div class="class-skills"><div><p class="class-sub">Q</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-105001" data-skill="105001"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/105001.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.105001.n">Divine Guidance</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-105004" data-skill="105004"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/105004.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.105004.n">Cleanse</span></button></div></div><div><p class="class-sub">E</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-105002" data-skill="105002"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/105002.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.105002.n">Divine Protection</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-105005" data-skill="105005"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/105005.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.105005.n">Guard</span></button></div></div></div>
+            </div>
+            <div class="min-w-0">
+              <p class="text-2xs font-semibold tracking-brand uppercase text-accent-text" data-t="race.h">Human</p>
+              <h4 class="mt-1 font-display text-3xl font-bold lg:text-2xl" data-t="cls.priest.n">Priest</h4>
+              <p class="mt-2 text-copy text-fg-2 lg:text-label" data-t="cls.priest.d">Priests are vital to any adventuring team's survival. With their ability to heal and support their allies, they are essential to keep their team fighting strong.</p>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div><p class="class-sub text-ok" data-t="cls.pros">Strengths</p><ul class="mt-1.5 space-y-0.5"><li class="pro text-fg" data-t="cls.priest.pro0">Powerful team healer</li><li class="pro" data-t="cls.priest.pro1">Enhanced defense</li><li class="pro" data-t="cls.priest.pro2">Great for prolonged teamfights</li></ul></div>
+                <div><p class="class-sub text-critical" data-t="cls.cons">Weaknesses</p><ul class="mt-1.5 space-y-0.5"><li class="con" data-t="cls.priest.con0">Lacks offensive capabilities</li><li class="con" data-t="cls.priest.con1">Fragile</li></ul></div>
+              </div>
+              <p class="class-sub mt-3" data-t="cls.weapons">Weapons</p>
+              <ul class="mt-1.5 flex flex-wrap gap-1"><li class="pill" data-t="cls.priest.w0">One-Handed Swords</li><li class="pill" data-t="cls.priest.w1">One-handed Maces</li><li class="pill" data-t="cls.priest.w2">Staffs</li><li class="pill" data-t="cls.priest.w3">Orbs</li></ul>
+              <p class="class-sub mt-3"><span data-t="cls.talents">Talents</span> · 5</p>
+              <div class="mt-1.5 flex flex-wrap gap-1"><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-priest-1" data-skill="t1"><span data-t="tl.Priest.1.n">Cleansing Rites</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-priest-2" data-skill="t2"><span data-t="tl.Priest.2.n">Resurrection</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-priest-3" data-skill="t3"><span data-t="tl.Priest.3.n">Recompense</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-priest-4" data-skill="t4"><span data-t="tl.Priest.4.n">Faithful</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-priest-5" data-skill="t5"><span data-t="tl.Priest.5.n">Benediction</span></button></div>
+            </div>
+          </div>
+        </article>
+        <article id="cls-pyromancer" role="tabpanel" aria-labelledby="tab-pyromancer" class="class-panel" data-video="video/classes/pyromancer">
+          <div class="class-stage">
+            <div class="min-w-0">
+              <div class="group/media relative">
+              <div class="card framed">
+                <div class="slot aspect-video rounded-ovl" data-slot="video/classes/pyromancer.webm|.mp4 · video/skills/&lt;id&gt; · img/classes/pyromancer.webp · 1280×720">
+                  <span class="crest"><svg class="icon"><use href="#k-pyro"/></svg></span>
+                  <img src="img/classes/pyromancer.webp" width="1280" height="720" alt="" loading="lazy" decoding="async">
+                  <video class="class-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+                  <p class="video-caption" hidden></p>
+                  <button type="button" class="video-toggle group" hidden><svg class="icon group-data-playing:hidden"><use href="#i-play"/></svg><svg class="icon hidden group-data-playing:block"><use href="#i-pause"/></svg><span class="group-data-playing:hidden" data-t="cls.play">Watch</span><span class="hidden group-data-playing:inline" data-t="cls.pause">Pause</span></button>
+                </div>
+              </div>
+              <div class="skill-details"><div class="skill-detail" id="sk-109001" data-skill="109001"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.109001.n">Pyroblast</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.109001.d">Fireball can be charged up to 2 stages. Stage 1: Shoot 3 tracking fireballs at the target, each dealing a small amount of fire damage. Stage 2: Launch a large fireball that deals a large amount of fire damage in an area at the point of impact. Upon completing Stage 2's charge, gain the ability to levitate by pressing the spacebar while airborne. (Requires a Staff/Orb)</p></div><div class="skill-detail" id="sk-109002" data-skill="109002"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.109002.n">Fire Blast</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.109002.d">Shoot out a ring-shaped fire shockwave, knocking back surrounding enemies and dealing a small amount of fire damage, and greatly slowing them for a short duration. Can be used during any action without interrupting the current action.</p></div><div class="skill-detail" id="tl-pyromancer-1" data-skill="t1"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Wizard.1.n">Swift Casting</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Wizard.1.d">Hitting an enemy with Fire Blast grants Swift Casting for 10 seconds. Swift Casting reduces the channeling time of your next Pyroblast by half.</p></div><div class="skill-detail" id="tl-pyromancer-2" data-skill="t2"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Wizard.2.n">Rekindle</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Wizard.2.d">Resets cooldown of Fire Blast after killing an enemy player.</p></div><div class="skill-detail" id="tl-pyromancer-3" data-skill="t3"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Wizard.3.n">Ignite</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Wizard.3.d">Stage 2 Pyroblast and Fire Blast apply 8 seconds of Ignite and 50% reduction of healing received to hit enemy targets.</p></div><div class="skill-detail" id="tl-pyromancer-4" data-skill="t4"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Wizard.4.n">Iris of Fire</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Wizard.4.d">When using Pyroblast, the targeted fire source is transformed into Iris of Fire that protects you by automatically attacking nearby enemies and applying 8 seconds of Ignite and 50% reduction of healing received.</p></div><div class="skill-detail" id="tl-pyromancer-5" data-skill="t5"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Wizard.5.n">Phoenix Aspect</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Wizard.5.d">When using Fire Blast, restore 50 Life. For each additional target hit, restore an extra 50 Life (up to a maximum of 200 Life).</p></div></div>
+              </div>
+              <div class="class-skills"><div><p class="class-sub">Q</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-109001" data-skill="109001"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/109001.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.109001.n">Pyroblast</span></button></div></div><div><p class="class-sub">E</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-109002" data-skill="109002"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/109002.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.109002.n">Fire Blast</span></button></div></div></div>
+            </div>
+            <div class="min-w-0">
+              <p class="text-2xs font-semibold tracking-brand uppercase text-accent-text" data-t="race.h">Human</p>
+              <h4 class="mt-1 font-display text-3xl font-bold lg:text-2xl" data-t="cls.pyromancer.n">Pyromancer</h4>
+              <p class="mt-2 text-copy text-fg-2 lg:text-label" data-t="cls.pyromancer.d">The Pyromancer is a mage who commands the power of fire. Capable of delivering high burst damage from a distance, the Pyromancer can deal lethal blows to enemies.</p>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div><p class="class-sub text-ok" data-t="cls.pros">Strengths</p><ul class="mt-1.5 space-y-0.5"><li class="pro text-fg" data-t="cls.pyromancer.pro0">Long-range, high burst damage</li><li class="pro" data-t="cls.pyromancer.pro1">Short-term levitation</li><li class="pro" data-t="cls.pyromancer.pro2">Knockback abilities</li></ul></div>
+                <div><p class="class-sub text-critical" data-t="cls.cons">Weaknesses</p><ul class="mt-1.5 space-y-0.5"><li class="con" data-t="cls.pyromancer.con0">A long charge-up time</li><li class="con" data-t="cls.pyromancer.con1">Slow movement speed</li></ul></div>
+              </div>
+              <p class="class-sub mt-3" data-t="cls.weapons">Weapons</p>
+              <ul class="mt-1.5 flex flex-wrap gap-1"><li class="pill" data-t="cls.pyromancer.w0">One-Handed Swords</li><li class="pill" data-t="cls.pyromancer.w1">Daggers</li><li class="pill" data-t="cls.pyromancer.w2">Staffs</li><li class="pill" data-t="cls.pyromancer.w3">Orbs</li></ul>
+              <p class="class-sub mt-3"><span data-t="cls.talents">Talents</span> · 5</p>
+              <div class="mt-1.5 flex flex-wrap gap-1"><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-pyromancer-1" data-skill="t1"><span data-t="tl.Wizard.1.n">Swift Casting</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-pyromancer-2" data-skill="t2"><span data-t="tl.Wizard.2.n">Rekindle</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-pyromancer-3" data-skill="t3"><span data-t="tl.Wizard.3.n">Ignite</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-pyromancer-4" data-skill="t4"><span data-t="tl.Wizard.4.n">Iris of Fire</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-pyromancer-5" data-skill="t5"><span data-t="tl.Wizard.5.n">Phoenix Aspect</span></button></div>
+            </div>
+          </div>
+        </article>
+        <article id="cls-swordmaster" role="tabpanel" aria-labelledby="tab-swordmaster" class="class-panel" data-video="video/classes/swordmaster">
+          <div class="class-stage">
+            <div class="min-w-0">
+              <div class="group/media relative">
+              <div class="card framed">
+                <div class="slot aspect-video rounded-ovl" data-slot="video/classes/swordmaster.webm|.mp4 · video/skills/&lt;id&gt; · img/classes/swordmaster.webp · 1280×720">
+                  <span class="crest"><svg class="icon"><use href="#k-sword"/></svg></span>
+                  <img src="img/classes/swordmaster.webp" width="1280" height="720" alt="" loading="lazy" decoding="async">
+                  <video class="class-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+                  <p class="video-caption" hidden></p>
+                  <button type="button" class="video-toggle group" hidden><svg class="icon group-data-playing:hidden"><use href="#i-play"/></svg><svg class="icon hidden group-data-playing:block"><use href="#i-pause"/></svg><span class="group-data-playing:hidden" data-t="cls.play">Watch</span><span class="hidden group-data-playing:inline" data-t="cls.pause">Pause</span></button>
+                </div>
+              </div>
+              <div class="skill-details"><div class="skill-detail" id="sk-101001" data-skill="101001"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.101001.n">Psionic Blades</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.101001.d">The Swordmaster summons up to 4 Psionic Blades from their sword slots to track and attack enemies, dealing damage. The cooldown of the skill is determined by the number of swords launched. Using Psionic Blades of Uncommon or higher rarity will increase the damage.</p></div><div class="skill-detail" id="sk-101002" data-skill="101002"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.101002.n">Whirling Blade</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.101002.d">The Swordmasters summons 1 sword from the sword slots to continuously orbit around themselves for 8 seconds, dealing a small amount of damage to nearby enemies during this period.</p></div><div class="skill-detail" id="tl-swordmaster-1" data-skill="t1"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.SwordMaster.1.n">Crippling Strike</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.SwordMaster.1.d">If Psionic Blades critically hits an enemy, the enemy's movement speed is reduced by 60 for 5 seconds.</p></div><div class="skill-detail" id="tl-swordmaster-2" data-skill="t2"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.SwordMaster.2.n">Flurry of Blades</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.SwordMaster.2.d">After simultaneously firing 3 or 4 Psionic Blades, the skill cooldown is reduced to 10 or 15 seconds respectively.</p></div><div class="skill-detail" id="tl-swordmaster-3" data-skill="t3"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.SwordMaster.3.n">Deflection</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.SwordMaster.3.d">While Whirling Blade is active, all damage taken is reduced by 50%.</p></div><div class="skill-detail" id="tl-swordmaster-4" data-skill="t4"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.SwordMaster.4.n">Momentum</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.SwordMaster.4.d">Psionic Blades increases your Critical Strike Chance by 50% for 5 seconds after hitting an enemy.</p></div><div class="skill-detail" id="tl-swordmaster-5" data-skill="t5"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.SwordMaster.5.n">Healing Scabbard</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.SwordMaster.5.d">Psionic Blades restores 30 Life to the Swordmaster when it deals unblocked damage.</p></div></div>
+              </div>
+              <div class="class-skills"><div><p class="class-sub">Q</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-101001" data-skill="101001"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/101001.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.101001.n">Psionic Blades</span></button></div></div><div><p class="class-sub">E</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-101002" data-skill="101002"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/101002.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.101002.n">Whirling Blade</span></button></div></div></div>
+            </div>
+            <div class="min-w-0">
+              <p class="text-2xs font-semibold tracking-brand uppercase text-ok" data-t="race.e">Elf</p>
+              <h4 class="mt-1 font-display text-3xl font-bold lg:text-2xl" data-t="cls.swordmaster.n">Swordmaster</h4>
+              <p class="mt-2 text-copy text-fg-2 lg:text-label" data-t="cls.swordmaster.d">Wandering warriors from the far east that wield magic-enhanced swords. By consuming one-handed swords equipped in their class-specific sword slots, they can release powerful and flexible attacks.</p>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div><p class="class-sub text-ok" data-t="cls.pros">Strengths</p><ul class="mt-1.5 space-y-0.5"><li class="pro text-fg" data-t="cls.swordmaster.pro0">Powerful chaser</li><li class="pro" data-t="cls.swordmaster.pro1">Quick ranged initiator</li><li class="pro" data-t="cls.swordmaster.pro2">Solid melee duelist</li></ul></div>
+                <div><p class="class-sub text-critical" data-t="cls.cons">Weaknesses</p><ul class="mt-1.5 space-y-0.5"><li class="con" data-t="cls.swordmaster.con0">Skills require one-handed swords</li><li class="con" data-t="cls.swordmaster.con1">Not great at supporting the team</li></ul></div>
+              </div>
+              <p class="class-sub mt-3" data-t="cls.weapons">Weapons</p>
+              <ul class="mt-1.5 flex flex-wrap gap-1"><li class="pill" data-t="cls.swordmaster.w0">One-Handed Swords</li><li class="pill" data-t="cls.swordmaster.w1">Two-Handed Swords</li><li class="pill" data-t="cls.swordmaster.w2">Crossbows</li><li class="pill" data-t="cls.swordmaster.w3">Shields</li></ul>
+              <p class="class-sub mt-3"><span data-t="cls.talents">Talents</span> · 5</p>
+              <div class="mt-1.5 flex flex-wrap gap-1"><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-swordmaster-1" data-skill="t1"><span data-t="tl.SwordMaster.1.n">Crippling Strike</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-swordmaster-2" data-skill="t2"><span data-t="tl.SwordMaster.2.n">Flurry of Blades</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-swordmaster-3" data-skill="t3"><span data-t="tl.SwordMaster.3.n">Deflection</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-swordmaster-4" data-skill="t4"><span data-t="tl.SwordMaster.4.n">Momentum</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-swordmaster-5" data-skill="t5"><span data-t="tl.SwordMaster.5.n">Healing Scabbard</span></button></div>
+            </div>
+          </div>
+        </article>
+        <article id="cls-druid" role="tabpanel" aria-labelledby="tab-druid" class="class-panel" data-video="video/classes/druid">
+          <div class="class-stage">
+            <div class="min-w-0">
+              <div class="group/media relative">
+              <div class="card framed">
+                <div class="slot aspect-video rounded-ovl" data-slot="video/classes/druid.webm|.mp4 · video/skills/&lt;id&gt; · img/classes/druid.webp · 1280×720">
+                  <span class="crest"><svg class="icon"><use href="#k-druid"/></svg></span>
+                  <img src="img/classes/druid.webp" width="1280" height="720" alt="" loading="lazy" decoding="async">
+                  <video class="class-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+                  <p class="video-caption" hidden></p>
+                  <button type="button" class="video-toggle group" hidden><svg class="icon group-data-playing:hidden"><use href="#i-play"/></svg><svg class="icon hidden group-data-playing:block"><use href="#i-pause"/></svg><span class="group-data-playing:hidden" data-t="cls.play">Watch</span><span class="hidden group-data-playing:inline" data-t="cls.pause">Pause</span></button>
+                </div>
+              </div>
+              <div class="skill-details"><div class="skill-detail" id="sk-106001" data-skill="106001"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.106001.n">Primal Awakening</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.106001.d">Transform into Panther Form (requires a weapon equipped). While in Panther Form, Force of Nature is replaced with Shadow Assault. Activate again to revert to Human Form.</p></div><div class="skill-detail" id="sk-106002" data-skill="106002"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.106002.n">Force of Nature</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.106002.d">Summon a treant at the designated location, lasting for 30 seconds. The treant will attack nearby enemies and grant a shield to the druid. When the druid hits an enemy within the treant's attack range using Shadow Assault, the treant will immediately start attacking that enemy. (Requires a Staff/Orb)</p></div><div class="skill-detail" id="sk-106004" data-skill="106004"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.106004.n">Shadow Assault</span> <span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.panther">in panther form</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.106004.d">Consumes Primal Energy to pounce forward, dealing shadow damage to nearby enemies upon landing. Basic attacks and Shadow Assault in Panther Form restore Primal Energy when they deal damage to enemies.</p></div><div class="skill-detail" id="sk-106006" data-skill="106006"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.106006.n">Regrowth</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.106006.d">AppliesRegrowth to allied targets, continuously restoring Life over a period of time. (Requires a Staff/Orb equipped)</p></div><div class="skill-detail" id="tl-druid-1" data-skill="t1"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DruidPanther.1.n">Predatory Senses</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DruidPanther.1.d">In Panther Form, you can sense enemy players within a radius of 25 meters.</p></div><div class="skill-detail" id="tl-druid-2" data-skill="t2"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DruidPanther.2.n">Seed Pods</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DruidPanther.2.d">E can store an additional charge.</p></div><div class="skill-detail" id="tl-druid-3" data-skill="t3"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DruidPanther.3.n">Hunter's Focus</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DruidPanther.3.d">Shadow Assault returns an additional 20 points of Primal Energy when damaging enemies.</p></div><div class="skill-detail" id="tl-druid-4" data-skill="t4"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DruidPanther.4.n">Natural Swiftness</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DruidPanther.4.d">The cooldown time of E is reduced to 10 seconds.</p></div><div class="skill-detail" id="tl-druid-5" data-skill="t5"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DruidPanther.5.n">Nature's Breath</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DruidPanther.5.d">Force of Nature adds a 150-point shield to the treant when summoned, Regrowth adds a 150 shield to the target when used, lasting 30 seconds.</p></div></div>
+              </div>
+              <div class="class-skills"><div><p class="class-sub">Q</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-106001" data-skill="106001"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/106001.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.106001.n">Primal Awakening</span></button></div></div><div><p class="class-sub">E</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-106002" data-skill="106002"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/106002.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.106002.n">Force of Nature</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-106004" data-skill="106004"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/106004.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.106004.n">Shadow Assault</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-106006" data-skill="106006"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/106006.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.106006.n">Regrowth</span></button></div></div></div>
+            </div>
+            <div class="min-w-0">
+              <p class="text-2xs font-semibold tracking-brand uppercase text-ok" data-t="race.e">Elf</p>
+              <h4 class="mt-1 font-display text-3xl font-bold lg:text-2xl" data-t="cls.druid.n">Druid</h4>
+              <p class="mt-2 text-copy text-fg-2 lg:text-label" data-t="cls.druid.d">Druids are spellcasters who harness the power of nature. They can summon treants to attack enemies, or transform into a swift panther to pursue foes or withdraw from combat.</p>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div><p class="class-sub text-ok" data-t="cls.pros">Strengths</p><ul class="mt-1.5 space-y-0.5"><li class="pro text-fg" data-t="cls.druid.pro0">High mobility and burst damage in Panther form</li><li class="pro" data-t="cls.druid.pro1">Synergizes with summoned treants</li><li class="pro" data-t="cls.druid.pro2">Versatile in both ranged and melee combat</li></ul></div>
+                <div><p class="class-sub text-critical" data-t="cls.cons">Weaknesses</p><ul class="mt-1.5 space-y-0.5"><li class="con" data-t="cls.druid.con0">Damage relies on player skill</li><li class="con" data-t="cls.druid.con1">Squishy</li></ul></div>
+              </div>
+              <p class="class-sub mt-3" data-t="cls.weapons">Weapons</p>
+              <ul class="mt-1.5 flex flex-wrap gap-1"><li class="pill" data-t="cls.druid.w0">Daggers</li><li class="pill" data-t="cls.druid.w1">One-handed Maces</li><li class="pill" data-t="cls.druid.w2">Staffs</li><li class="pill" data-t="cls.druid.w3">Orbs</li></ul>
+              <p class="class-sub mt-3"><span data-t="cls.talents">Talents</span> · 5</p>
+              <div class="mt-1.5 flex flex-wrap gap-1"><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-druid-1" data-skill="t1"><span data-t="tl.DruidPanther.1.n">Predatory Senses</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-druid-2" data-skill="t2"><span data-t="tl.DruidPanther.2.n">Seed Pods</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-druid-3" data-skill="t3"><span data-t="tl.DruidPanther.3.n">Hunter's Focus</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-druid-4" data-skill="t4"><span data-t="tl.DruidPanther.4.n">Natural Swiftness</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-druid-5" data-skill="t5"><span data-t="tl.DruidPanther.5.n">Nature's Breath</span></button></div>
+            </div>
+          </div>
+        </article>
+        <article id="cls-death-knight" role="tabpanel" aria-labelledby="tab-death-knight" class="class-panel" data-video="video/classes/death-knight">
+          <div class="class-stage">
+            <div class="min-w-0">
+              <div class="group/media relative">
+              <div class="card framed">
+                <div class="slot aspect-video rounded-ovl" data-slot="video/classes/death-knight.webm|.mp4 · video/skills/&lt;id&gt; · img/classes/death-knight.webp · 1280×720">
+                  <span class="crest"><svg class="icon"><use href="#k-dk"/></svg></span>
+                  <img src="img/classes/death-knight.webp" width="1280" height="720" alt="" loading="lazy" decoding="async">
+                  <video class="class-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+                  <p class="video-caption" hidden></p>
+                  <button type="button" class="video-toggle group" hidden><svg class="icon group-data-playing:hidden"><use href="#i-play"/></svg><svg class="icon hidden group-data-playing:block"><use href="#i-pause"/></svg><span class="group-data-playing:hidden" data-t="cls.play">Watch</span><span class="hidden group-data-playing:inline" data-t="cls.pause">Pause</span></button>
+                </div>
+              </div>
+              <div class="skill-details"><div class="skill-detail" id="sk-108001" data-skill="108001"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.108001.n">Soul Shroud</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.108001.d">Summon evil spirits to surround yourself. When the skill is activated, enemies near you are slowed, and it then deals shadow damage to the surrounding area. This damage is further influenced by your Strength, Intelligence, and Will attributes.</p></div><div class="skill-detail" id="sk-108002" data-skill="108002"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.108002.n">Grasp of the Grave</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.108002.d">Fire a spectral hand at the target, dealing a small amount of shadow damage and pulling the target to you. Friendly targets are immune to the damage. Recover a small amount of Soul Energy if it hits an enemy target.</p></div><div class="skill-detail" id="sk-108005" data-skill="108005"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.108005.n">Soulstorm</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.108005.d">Unleashes Soul Energy, dealing continuous shadow damage to nearby enemies. While active, it continuously consumes Soul Energy and can be stopped at any time.</p></div><div class="skill-detail" id="tl-death-knight-1" data-skill="t1"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DeathKnight.1.n">Soul Reaper</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DeathKnight.1.d">Resets the cooldown of Grasp of the Grave after killing an enemy player.</p></div><div class="skill-detail" id="tl-death-knight-2" data-skill="t2"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DeathKnight.2.n">Life Steal</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DeathKnight.2.d">Absorbing 1 Soul Energy orb restores 14 Life.</p></div><div class="skill-detail" id="tl-death-knight-3" data-skill="t3"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DeathKnight.3.n">Grim Harvest</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DeathKnight.3.d">Grasp of the Grave generates 20 Soul Energy if it hits an enemy target.</p></div><div class="skill-detail" id="tl-death-knight-4" data-skill="t4"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DeathKnight.4.n">Soul Cage</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DeathKnight.4.d">Q grants a shield that can absorb 200 damage of any type when activated, lasting 8 seconds with a 30 second cooldown.</p></div><div class="skill-detail" id="tl-death-knight-5" data-skill="t5"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DeathKnight.5.n">Endless Torment</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DeathKnight.5.d">When Soul Shroud is activated, each absorbed soul energy orb will extend the duration of Soul Shroud by 0.5 seconds, up to a maximum of 4.5 seconds.</p></div><div class="skill-detail" id="tl-death-knight-6" data-skill="t6"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.DeathKnight.6.n">Decay</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.DeathKnight.6.d">Enemies affected by Q have their movement speed reduced: high-speed enemies are slowed by 25%, and low-speed enemies are slowed by 10%, for 0.5 seconds.</p></div></div>
+              </div>
+              <div class="class-skills"><div><p class="class-sub">Q</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-108001" data-skill="108001"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/108001.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.108001.n">Soul Shroud</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-108005" data-skill="108005"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/108005.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.108005.n">Soulstorm</span></button></div></div><div><p class="class-sub">E</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-108002" data-skill="108002"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/108002.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.108002.n">Grasp of the Grave</span></button></div></div></div>
+            </div>
+            <div class="min-w-0">
+              <p class="text-2xs font-semibold tracking-brand uppercase text-arcane" data-t="race.u">Undead</p>
+              <h4 class="mt-1 font-display text-3xl font-bold lg:text-2xl" data-t="cls.death-knight.n">Death Knight</h4>
+              <p class="mt-2 text-copy text-fg-2 lg:text-label" data-t="cls.death-knight.d">Terrifying warrior that strikes fear into enemies at close range combat, capable of delivering sustained damage and pulling distant enemies into melee range.</p>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div><p class="class-sub text-ok" data-t="cls.pros">Strengths</p><ul class="mt-1.5 space-y-0.5"><li class="pro text-fg" data-t="cls.death-knight.pro0">Sustained area damage to torment nearby foes</li><li class="pro" data-t="cls.death-knight.pro1">Pulls enemies in</li><li class="pro" data-t="cls.death-knight.pro2">Strong in melee fights</li></ul></div>
+                <div><p class="class-sub text-critical" data-t="cls.cons">Weaknesses</p><ul class="mt-1.5 space-y-0.5"><li class="con" data-t="cls.death-knight.con0">Damage relies on Soul Energy</li><li class="con" data-t="cls.death-knight.con1">Lacks mobility</li></ul></div>
+              </div>
+              <p class="class-sub mt-3" data-t="cls.weapons">Weapons</p>
+              <ul class="mt-1.5 flex flex-wrap gap-1"><li class="pill" data-t="cls.death-knight.w0">One-Handed Swords</li><li class="pill" data-t="cls.death-knight.w1">Two-Handed Swords</li><li class="pill" data-t="cls.death-knight.w2">Crossbows</li><li class="pill" data-t="cls.death-knight.w3">Shields</li><li class="pill" data-t="cls.death-knight.w4">One-handed Maces</li></ul>
+              <p class="class-sub mt-3"><span data-t="cls.talents">Talents</span> · 6</p>
+              <div class="mt-1.5 flex flex-wrap gap-1"><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-death-knight-1" data-skill="t1"><span data-t="tl.DeathKnight.1.n">Soul Reaper</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-death-knight-2" data-skill="t2"><span data-t="tl.DeathKnight.2.n">Life Steal</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-death-knight-3" data-skill="t3"><span data-t="tl.DeathKnight.3.n">Grim Harvest</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-death-knight-4" data-skill="t4"><span data-t="tl.DeathKnight.4.n">Soul Cage</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-death-knight-5" data-skill="t5"><span data-t="tl.DeathKnight.5.n">Endless Torment</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-death-knight-6" data-skill="t6"><span data-t="tl.DeathKnight.6.n">Decay</span></button></div>
+            </div>
+          </div>
+        </article>
+        <article id="cls-cryomancer" role="tabpanel" aria-labelledby="tab-cryomancer" class="class-panel" data-video="video/classes/cryomancer">
+          <div class="class-stage">
+            <div class="min-w-0">
+              <div class="group/media relative">
+              <div class="card framed">
+                <div class="slot aspect-video rounded-ovl" data-slot="video/classes/cryomancer.webm|.mp4 · video/skills/&lt;id&gt; · img/classes/cryomancer.webp · 1280×720">
+                  <span class="crest"><svg class="icon"><use href="#k-cryo"/></svg></span>
+                  <img src="img/classes/cryomancer.webp" width="1280" height="720" alt="" loading="lazy" decoding="async">
+                  <video class="class-video" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+                  <p class="video-caption" hidden></p>
+                  <button type="button" class="video-toggle group" hidden><svg class="icon group-data-playing:hidden"><use href="#i-play"/></svg><svg class="icon hidden group-data-playing:block"><use href="#i-pause"/></svg><span class="group-data-playing:hidden" data-t="cls.play">Watch</span><span class="hidden group-data-playing:inline" data-t="cls.pause">Pause</span></button>
+                </div>
+              </div>
+              <div class="skill-details"><div class="skill-detail" id="sk-110001" data-skill="110001"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.110001.n">Ice Storm</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.110001.d">Guide a moving small-scale ice storm that can be moved by clicking on the ground, dealing a small amount of passive damage and slowing enemies. When the channeling is complete, the ice storm stops moving and unleashes a blizzard at its location, dealing active damage and continuously slowing enemies within it. (Requires a Staff/Orb)</p></div><div class="skill-detail" id="sk-110002" data-skill="110002"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.110002.n">Frost Barrier</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.110002.d">Encase yourself in a frost barrier. During this time, you will not take damage and will continuously recover life. Using this skill while channeling Ice Storm will not interrupt the casting. The Cryomancer can remove the barrier at any time.</p></div><div class="skill-detail" id="sk-110004" data-skill="110004"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">Q</span><span class="font-display text-xl font-bold" data-t="sk.110004.n">Frostbite Curse</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.110004.d">Charge up to 2 stages. Stage 1: Shoots a frost arrow at the target, dealing active damage, applying a slow effect and applying "Frostbite Curse" on hit: Deals passive damage to the target every second for a duration, healing the Cryomancer; Stage 2: Directly applies "Frostbite Curse" to the target, dealing additional active damage and applying a slow effect. After a short delay, spreads "Frostbite Curse" to other nearby targets. Frostbite Curse can only have 1 stack on the same target at a time. (Requires a Staff/Orb)</p></div><div class="skill-detail" id="sk-110005" data-skill="110005"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill">E</span><span class="font-display text-xl font-bold" data-t="sk.110005.n">Ice Armor</span></p><p class="mt-2 text-copy text-fg-2" data-t="sk.110005.d">Apply a shield to an ally target. When taking active damage from close range, slow the attacker, this can only trigger once; Press Interaction Key (F) to apply it to yourself. (Requires a Staff/Orb)</p></div><div class="skill-detail" id="tl-cryomancer-1" data-skill="t1"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Lich.1.n">Frost Echoes</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Lich.1.d">When allies deal unblocked active damage to targets affected by Q, gain a 40-point shield. This effect does not stack.</p></div><div class="skill-detail" id="tl-cryomancer-2" data-skill="t2"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Lich.2.n">Bone Chilling</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Lich.2.d">When the distance between you and the target affected by Q exceeds 15 meters, the farther the distance, the greater the damage dealt by Q. At a distance of over25meters, the damage increase caps at30%.</p></div><div class="skill-detail" id="tl-cryomancer-3" data-skill="t3"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Lich.3.n">Cryotherapy</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Lich.3.d">When dealing cold damage, gain stacks of Cryotherapy. Consume all stacks on the next use of E to recover 0.5 Life per stack.</p></div><div class="skill-detail" id="tl-cryomancer-4" data-skill="t4"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Lich.4.n">Frostbite</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Lich.4.d">The damage dealt by the first phase of Ice Storm and the active damage dealt by Frostbite Curse increased by 50%</p></div><div class="skill-detail" id="tl-cryomancer-5" data-skill="t5"><p class="flex flex-wrap items-center gap-2"><span class="skill-key-pill"><svg class="icon"><use href="#i-star"/></svg></span><span class="font-display text-xl font-bold" data-t="tl.Lich.5.n">Permafrost</span><span class="pill h-5 align-middle text-2xs text-fg-2" data-t="cls.talent">talent</span></p><p class="mt-2 text-copy text-fg-2" data-t="tl.Lich.5.d">Restore 1 Soul Energy when dealing critical damage.</p></div></div>
+              </div>
+              <div class="class-skills"><div><p class="class-sub">Q</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-110001" data-skill="110001"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/110001.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.110001.n">Ice Storm</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-110004" data-skill="110004"><span class="slot skill-icon"><span class="skill-key">Q</span><img src="img/skills/110004.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.110004.n">Frostbite Curse</span></button></div></div><div><p class="class-sub">E</p><div class="mt-2 flex flex-wrap gap-2"><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-110002" data-skill="110002"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/110002.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.110002.n">Frost Barrier</span></button><button type="button" class="skill-tile" aria-pressed="false" aria-controls="sk-110005" data-skill="110005"><span class="slot skill-icon"><span class="skill-key">E</span><img src="img/skills/110005.webp" width="128" height="128" alt="" loading="lazy" decoding="async"></span><span class="skill-name" data-t="sk.110005.n">Ice Armor</span></button></div></div></div>
+            </div>
+            <div class="min-w-0">
+              <p class="text-2xs font-semibold tracking-brand uppercase text-arcane" data-t="race.u">Undead</p>
+              <h4 class="mt-1 font-display text-3xl font-bold lg:text-2xl" data-t="cls.cryomancer.n">Cryomancer</h4>
+              <p class="mt-2 text-copy text-fg-2 lg:text-label" data-t="cls.cryomancer.d">Spellcaster who constantly restricts and weakens enemies on the battlefield. When coordinated well with teammates, they can create an advantageous environment for the team's damage dealers.</p>
+              <div class="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                <div><p class="class-sub text-ok" data-t="cls.pros">Strengths</p><ul class="mt-1.5 space-y-0.5"><li class="pro text-fg" data-t="cls.cryomancer.pro0">Superb AOE crowd control</li><li class="pro" data-t="cls.cryomancer.pro1">Survivability skill</li><li class="pro" data-t="cls.cryomancer.pro2">High sustains</li></ul></div>
+                <div><p class="class-sub text-critical" data-t="cls.cons">Weaknesses</p><ul class="mt-1.5 space-y-0.5"><li class="con" data-t="cls.cryomancer.con0">Requires uninterrupted casting</li><li class="con" data-t="cls.cryomancer.con1">Lacks burst damage</li></ul></div>
+              </div>
+              <p class="class-sub mt-3" data-t="cls.weapons">Weapons</p>
+              <ul class="mt-1.5 flex flex-wrap gap-1"><li class="pill" data-t="cls.cryomancer.w0">One-Handed Swords</li><li class="pill" data-t="cls.cryomancer.w1">Daggers</li><li class="pill" data-t="cls.cryomancer.w2">Staffs</li><li class="pill" data-t="cls.cryomancer.w3">Orbs</li></ul>
+              <p class="class-sub mt-3"><span data-t="cls.talents">Talents</span> · 5</p>
+              <div class="mt-1.5 flex flex-wrap gap-1"><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-cryomancer-1" data-skill="t1"><span data-t="tl.Lich.1.n">Frost Echoes</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-cryomancer-2" data-skill="t2"><span data-t="tl.Lich.2.n">Bone Chilling</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-cryomancer-3" data-skill="t3"><span data-t="tl.Lich.3.n">Cryotherapy</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-cryomancer-4" data-skill="t4"><span data-t="tl.Lich.4.n">Frostbite</span></button><button type="button" class="talent-chip" aria-pressed="false" aria-controls="tl-cryomancer-5" data-skill="t5"><span data-t="tl.Lich.5.n">Permafrost</span></button></div>
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+      <!-- classes:end -->
+      </div>
+      <div class="pin-spacers"></div>
+      </div>
+
+      <!-- epilogue: why this server exists -->
+      <div class="pin mt-24" data-zone="torch" data-theme="torch" data-pin data-pin-steps="ep ep-hold">
+      <div class="pin-stage">
+      <div id="epilogue" class="reveal mx-auto max-w-3xl text-center">
+        <p class="chapter-kicker" data-t="ep.k">Epilogue · This server</p>
+        <h3 class="mt-2 font-display text-3xl font-bold sm:text-4xl" data-t="ep.h">The torches still burn</h3>
+        <p class="chapter-text mt-5" data-t="ep.p">Dungeonborne can no longer be bought on Steam, but the dungeon hasn't closed. This server is run by the community: we brought back raids, lobbies and trading, built the launcher and fix bugs from your reports. The current season is Playtest — restarted on 11 November. Every season starts with a progress reset, and everyone begins at level 1.</p>
+        <ul class="notes mx-auto mt-6 max-w-xl text-left">
+          <li data-t="ep.n1">A battle pass with quests, a leaderboard, character stats.</li>
+          <li data-t="ep.n2">Challenger Mode: solos and duos against trios.</li>
+          <li data-t="ep.n3">Coming soon — the Trial of Clotho: a three-on-three arena, a run of up to seven wins.</li>
+        </ul>
+        <div class="mt-8 flex flex-wrap justify-center gap-2">
+          <a class="btn-accent h-10 px-4" href="downloads/DungeonborneLauncher.exe" download><svg class="icon"><use href="#i-download"/></svg><span data-t="cta.play">Download launcher</span></a>
+          <a class="btn-std h-10 px-4" href="#start"><span data-t="hero.how">Getting started</span><svg class="icon"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+      </div>
+      <div class="pin-spacers"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ getting started: pinned scene, the step and its image -->
+  <section id="start" data-zone="torch" data-theme="torch" class="border-t border-line/60">
+    <div class="pin" data-pin>
+      <div class="pin-stage page grid items-center gap-10 py-8 lg:grid-cols-feature">
+        <div>
+          <p class="reveal title-rule max-w-md" data-t="start.eyebrow">Four steps</p>
+          <h2 class="reveal mt-2 font-display text-3xl font-bold tracking-wide sm:text-4xl" data-t="start.title">Getting started</h2>
+          <ol class="reveal mt-6">
+            <li id="st1" class="row step-row" data-step><span class="step-no">1</span><div class="min-w-0"><h3 class="font-semibold" data-t="s1.h">Download the launcher</h3><div class="feature-text"><div><p class="text-copy text-fg-2" data-t="s1.p">It is a single exe, no install needed: put it in any folder and run it. Only download it here — the checksum is in “Help”. On first start Windows may warn about an unknown publisher — what to click is in “Help” too.</p></div></div></div></li>
+            <li id="st2" class="row step-row" data-step><span class="step-no">2</span><div class="min-w-0"><h3 class="font-semibold" data-t="s2.h">Pick the game folder</h3><div class="feature-text"><div><p class="text-copy text-fg-2" data-t="s2.p">You need Dungeonborne installed. The launcher checks that your game version matches the server. Optionally, the settings can make Steam's “Play” open the launcher.</p></div></div></div></li>
+            <li id="st3" class="row step-row" data-step><span class="step-no">3</span><div class="min-w-0"><h3 class="font-semibold" data-t="s3.h">Sign in with Discord</h3><div class="feature-text"><div><p class="text-copy text-fg-2" data-t="s3.p">The launcher opens your browser. Your account on the server is your Discord: no passwords, no SteamID.</p></div></div></div></li>
+            <li id="st4" class="row step-row" data-step><span class="step-no">4</span><div class="min-w-0"><h3 class="font-semibold" data-t="s4.h">Play</h3><div class="feature-text"><div><p class="text-copy text-fg-2" data-t="s4.p">“Play” installs the mods and starts the game. Pick an instance tab, vote for group size and map, then press Start in the game — you land in the waiting hall.</p></div></div></div></li>
+          </ol>
+          <div class="reveal mt-5">
+            <p class="class-sub" data-t="need.h">What you need</p>
+            <ul class="mt-2 space-y-1 text-copy text-fg-2"><li class="flex gap-2"><svg class="icon mt-1 text-ok"><use href="#i-check"/></svg><span data-t="need.1">Windows 10 or 11, 64-bit</span></li><li class="flex gap-2"><svg class="icon mt-1 text-ok"><use href="#i-check"/></svg><span data-t="need.2">Dungeonborne installed</span></li><li class="flex gap-2"><svg class="icon mt-1 text-ok"><use href="#i-check"/></svg><span data-t="need.3">A Discord account and membership in the project's Discord server</span></li></ul>
+            <p class="mt-3 flex gap-2 text-label text-fg-2"><svg class="icon mt-0.5 text-caution"><use href="#i-alert"/></svg><span data-t="need.warn">This is a playtest: the database may be reset and the server may go down for maintenance.</span></p>
+          </div>
+        </div>
+        <!-- step image: in the feed — the first one, in the scene — the current step's one (img/README.md) -->
+        <div class="reveal card framed">
+          <div class="relative aspect-art overflow-hidden rounded-ovl">
+            <div class="slot pin-swap size-full rounded-ovl" data-hl="st1" data-slot="img/start/1-download.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-download"/></svg></span><img src="img/start/1-download.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap size-full rounded-ovl" data-hl="st2" data-slot="img/start/2-folder.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-box"/></svg></span><img src="img/start/2-folder.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap size-full rounded-ovl" data-hl="st3" data-slot="img/start/3-discord.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-user"/></svg></span><img src="img/start/3-discord.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+            <div class="slot pin-swap size-full rounded-ovl" data-hl="st4" data-slot="img/start/4-play.webp · 1600×1000"><span class="crest"><svg class="icon"><use href="#i-swords"/></svg></span><img src="img/start/4-play.webp" width="1600" height="1000" alt="" loading="lazy" decoding="async"></div>
+          </div>
+        </div>
+      </div>
+      <div class="pin-spacers"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ what the launcher does: pinned scene, window with a highlight -->
+  <section id="launcher" data-zone="torch" data-theme="torch" class="border-t border-line/60 bg-black/20">
+    <div class="pin" data-pin>
+      <div class="pin-stage page grid items-center gap-10 py-14 lg:grid-cols-feature">
+        <div>
+          <p class="reveal title-rule max-w-md" data-t="l.eyebrow">Launcher</p>
+          <h2 class="reveal mt-2 font-display text-3xl font-bold tracking-wide sm:text-4xl" data-t="l.title">It does everything itself</h2>
+          <ol class="reveal mt-6 space-y-1">
+            <li id="lf1" class="feature" data-step><span class="tile"><svg class="icon"><use href="#i-user"/></svg></span><div class="min-w-0"><h3 data-t="f1.h">Sign in with Discord</h3><div class="feature-text"><div><p class="mt-1 text-copy text-fg-2" data-t="f1.p">Your account on the server is your Discord. No passwords, no borrowed SteamIDs.</p></div></div></div></li>
+            <li id="lf2" class="feature" data-step><span class="tile"><svg class="icon"><use href="#i-box"/></svg></span><div class="min-w-0"><h3 data-t="f2.h">Mods install themselves</h3><div class="feature-text"><div><p class="mt-1 text-copy text-fg-2" data-t="f2.p">Before launch the launcher downloads and checks the server's mods, and cleans up after the game.</p></div></div></div></li>
+            <li id="lf3" class="feature" data-step><span class="tile"><svg class="icon"><use href="#i-swords"/></svg></span><div class="min-w-0"><h3 data-t="f3.h">Instance lobby</h3><div class="feature-text"><div><p class="mt-1 text-copy text-fg-2" data-t="f3.p">Pick an instance, vote for group size and map, join with Start in the game.</p></div></div></div></li>
+            <li id="lf4" class="feature" data-step><span class="tile"><svg class="icon"><use href="#i-scroll"/></svg></span><div class="min-w-0"><h3 data-t="f4.h">Patch notes</h3><div class="feature-text"><div><p class="mt-1 text-copy text-fg-2" data-t="f4.p">See what changed on the server right in the launcher — the same entries as in News below.</p></div></div></div></li>
+            <li id="lf5" class="feature" data-step><span class="tile"><svg class="icon"><use href="#i-refresh"/></svg></span><div class="min-w-0"><h3 data-t="f5.h">Updates itself</h3><div class="feature-text"><div><p class="mt-1 text-copy text-fg-2" data-t="f5.p">Installs only builds signed by the project — the server cannot swap them.</p></div></div></div></li>
+            <li id="lf6" class="feature" data-step><span class="tile"><svg class="icon"><use href="#i-shield"/></svg></span><div class="min-w-0"><h3 data-t="f6.h">Helps with connection</h3><div class="feature-text"><div><p class="mt-1 text-copy text-fg-2" data-t="f6.p">If your ISP drops the connection, the launcher notices, suggests WARP and turns on a bypass for battles.</p></div></div></div></li>
+          </ol>
+          <div class="reveal mt-6 max-w-sm">
+            <div class="relative">
+              <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <a class="btn-play h-12 w-full text-lg" href="downloads/DungeonborneLauncher.exe" download>
+                <svg class="icon"><use href="#i-download"/></svg><span data-t="cta.play">Download launcher</span>
+              </a>
+            </div>
+            <p class="mt-2 text-center text-xs text-fg-2">
+              <span data-t="cta.ver">Version</span> <span data-release="version">1.7.0</span>
+              · Windows 10/11 ·
+              <span data-release="size" data-bytes="19807744">18,9</span> <span data-t="cta.mb">MB</span>
+              · <span data-t="cta.noinstall">no install</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- launcher window: the same components as in the launcher; on a step its own part is highlighted (data-hl) -->
+        <div class="reveal pin-dim">
+          <div class="demo-window scene pointer-events-none select-none" aria-hidden="true">
+            <div class="flex h-10 items-center gap-2.5 border-b border-line/70 bg-black/30 pl-3">
+              <span class="grid size-6 place-items-center rounded-ctl border border-line-hi bg-card-hi font-display text-sm font-bold text-accent">D</span>
+              <span class="font-display text-label font-semibold tracking-caps uppercase">Dungeonborne</span>
+              <span class="hidden text-2xs whitespace-nowrap text-fg-3 sm:inline" data-t="w.subtitle">community launcher</span>
+              <span class="ml-auto flex items-center gap-1.5 px-2 text-xs text-fg-2"><svg class="icon"><use href="#i-globe"/></svg><span data-t="w.lang">RU</span></span>
+              <span class="hidden self-stretch text-fg-3 sm:flex"><span class="grid w-9 place-items-center text-3xs">—</span><span class="grid w-9 place-items-center text-3xs">☐</span><span class="grid w-9 place-items-center text-xs">✕</span></span>
+            </div>
+            <div class="pin-show border-b border-line/70" data-hl="lf5">
+              <div class="flex items-center gap-3 bg-[linear-gradient(90deg,color-mix(in_srgb,var(--glow-c)_16%,transparent),transparent_70%)] px-4 py-2.5 text-label">
+                <svg class="icon text-accent"><use href="#i-refresh"/></svg><span class="min-w-0 flex-1 text-fg" data-t="w2.update">A new launcher version 1.8.0 is available (you have 1.7.0).</span>
+                <span class="btn-accent h-7 px-2.5 text-xs" data-t="w2.update_btn">Update and restart</span>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="hidden w-40 shrink-0 flex-col border-r border-line/70 bg-layer/70 pt-3 pb-2 sm:flex">
+                <span class="title-rule px-4 text-2xs" data-t="w.servers">Servers</span>
+                <div class="mt-2 px-2">
+                  <div class="relative flex items-center gap-2.5 rounded-ctl border border-line-hi bg-card-hi px-2.5 py-2">
+                    <span class="absolute top-2 bottom-2 -left-px w-0.75 rounded-r bg-accent shadow-glow"></span>
+                    <span class="led text-ok"></span>
+                    <span class="min-w-0"><span class="block truncate font-display text-label font-semibold tracking-wide text-accent-text">Dungeonborne RU</span><span class="block truncate text-2xs text-fg-3" data-t="w.online">online · 38 ms</span></span>
+                  </div>
+                </div>
+                <div class="mt-auto space-y-0.5 border-t border-line px-2 pt-2 text-label text-fg-2">
+                  <div class="flex h-8 items-center gap-2.5 px-2.5 whitespace-nowrap"><svg class="icon"><use href="#i-plus"/></svg><span data-t="w.add">Add server</span></div>
+                  <div class="flex h-8 items-center gap-2.5 px-2.5"><svg class="icon"><use href="#i-gear"/></svg><span data-t="w.settings">Settings</span></div>
+                </div>
+              </div>
+              <div class="min-w-0 flex-1 space-y-2.5 p-3 sm:p-4">
+                <div class="pin-show" data-hl="lf6">
+                  <div class="bar" data-tone="caution">
+                    <svg class="icon mt-0.5 text-caution"><use href="#i-alert"/></svg>
+                    <div class="min-w-0 flex-1"><p class="text-label text-fg" data-t="w2.net">Your provider seems to be limiting connections to our servers</p>
+                      <div class="mt-2 flex flex-wrap gap-1.5"><span class="btn-std h-7 px-2.5 text-xs" data-t="w2.warp">Get WARP</span><span class="btn-std h-7 px-2.5 text-xs" data-t="w2.bypass">Turn on the battle workaround</span></div></div>
+                  </div>
+                </div>
+                <div class="card framed overflow-hidden">
+                  <div class="hero-art flex items-end gap-4 px-4 pt-5 pb-4">
+                    <div class="min-w-0 flex-1">
+                      <p class="font-display text-lg font-bold tracking-wide whitespace-nowrap drop-shadow-ink">Dungeonborne RU</p>
+                      <span class="pill mt-1 h-5 text-2xs text-ok"><span class="led size-1.5"></span><span data-t="w.online2">online · 38 ms</span></span>
+                    </div>
+                    <span class="btn-play h-9 w-32 text-sm" data-hl="lf2"><svg class="icon text-xs"><use href="#i-play"/></svg><span data-t="w.play">Play</span></span>
+                  </div>
+                  <div class="divide-y divide-line border-t border-line bg-black/30 text-label">
+                    <div class="flex items-center gap-2.5 px-4 py-2" data-hl="lf1">
+                      <span class="w-16 shrink-0 text-2xs tracking-caps text-fg-3 uppercase" data-t="w2.account">Account</span>
+                      <span class="grid size-5 place-items-center rounded-full bg-[#5865f2] text-3xs font-bold text-white">D</span>
+                      <span class="min-w-0 flex-1 truncate text-fg" data-t="w2.user">Delver</span>
+                      <span class="btn-flat h-6 px-2 text-xs" data-t="w2.logout">Sign out</span>
+                    </div>
+                    <div class="px-4 py-2" data-hl="lf2">
+                      <div class="flex items-center gap-2.5">
+                        <span class="w-16 shrink-0 text-2xs tracking-caps text-fg-3 uppercase" data-t="w2.mods">Mods</span>
+                        <span class="min-w-0 flex-1 truncate text-fg-2" data-t="w2.mods_sum">Required: 3 · optional: 1</span>
+                      </div>
+                      <div class="pin-show" data-hl="lf2">
+                        <div class="mt-2 flex items-center gap-2.5"><span class="h-1 flex-1 overflow-hidden rounded-full bg-line"><span class="block h-full w-3/4 rounded-full bg-accent shadow-glow"></span></span><span class="text-2xs text-fg-3" data-t="w2.mods_dl">Downloading mods: 3 of 4</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-5 border-b border-line px-1 text-xs">
+                  <span class="tab" data-active data-t="w.tab1">Server</span>
+                  <span class="tab flex items-center gap-1.5" data-hl="lf4"><span data-t="w.tab2">Patch notes</span><span class="pill h-4 px-1.5 text-3xs text-arcane" data-t="w2.new">new</span></span>
+                </div>
+                <div class="card space-y-2.5 px-4 py-3" data-hl="lf3">
+                  <div class="flex items-center gap-2"><svg class="icon text-accent"><use href="#i-swords"/></svg><span class="title-rule flex-1 text-2xs" data-t="w.instances">Instances</span></div>
+                  <div class="grid grid-cols-3 gap-1"><span class="rounded-ctl border border-accent bg-card-hi shadow-underline px-2 py-1.5"><span class="block truncate font-display text-label font-semibold text-accent-text" data-t="w.i1">Instance 1</span><span class="block truncate text-2xs text-fg-3" data-t="w.s1">Map vote</span></span><span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i2">Instance 2</span><span class="block truncate text-2xs text-fg-3" data-t="w.s2">Party vote</span></span><span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i3">Instance 3</span><span class="block truncate text-2xs text-fg-3" data-t="w.s3">Hall open</span></span><span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i4">Instance 4</span><span class="block truncate text-2xs text-fg-3" data-t="w.s4">In battle</span></span><span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i5">Instance 5</span><span class="block truncate text-2xs text-fg-3" data-t="w.s5">Free</span></span><span class="rounded-ctl border border-line bg-black/25 px-2 py-1.5"><span class="block truncate font-display text-label font-semibold" data-t="w.i6">Instance 6</span><span class="block truncate text-2xs text-fg-3" data-t="w.s6">Free</span></span></div>
+                  <p class="text-label text-fg-2" data-t="w.vote">Voting for the map. Players here: 5.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pin-spacers"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ news: the server's patch notes, as in the launcher -->
+  <section id="news" data-zone="torch" data-theme="torch" class="border-t border-line/60">
+    <div class="page py-20">
+      <p class="reveal title-rule max-w-md" data-t="news.eyebrow">Server patch notes</p>
+      <h2 class="reveal mt-2 font-display text-3xl font-bold tracking-wide sm:text-4xl" data-t="news.title">News</h2>
+      <div id="news-list" class="reveal mt-8 max-w-3xl space-y-3">
+        <noscript><p class="text-fg-2">News needs JavaScript; the same notes are in the launcher, on the “Changelog” tab.</p></noscript>
+      </div>
+    </div>
+
+    <template id="tpl-note">
+      <details class="expander group/note">
+        <summary>
+          <span class="min-w-0 flex-1">
+            <span class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+              <span data-ref="title" class="font-display text-xl font-semibold"></span>
+              <span data-ref="date" class="text-xs text-fg-3"></span>
+            </span>
+            <span data-ref="counts" class="mt-1.5 flex flex-wrap gap-1.5 group-open/note:hidden"></span>
+          </span>
+          <svg class="icon chev text-fg-3"><use href="#i-chev"/></svg>
+        </summary>
+        <div data-ref="sections" class="space-y-4 px-4 pb-5"></div>
+      </details>
+    </template>
+  </section>
+
+  <!-- ============================================================ help -->
+  <section id="help" data-zone="torch" data-theme="torch" class="border-t border-line/60 bg-black/20">
+    <div class="page py-20">
+      <p class="reveal title-rule max-w-md" data-t="h.eyebrow">Help</p>
+      <h2 class="reveal mt-2 font-display text-3xl font-bold tracking-wide sm:text-4xl" data-t="h.title">If something goes wrong</h2>
+
+      <div class="reveal-stagger mt-8 max-w-3xl">
+        <details class="expander">
+          <summary><span class="flex-1" data-t="q1.q">Windows says “Windows protected your PC” or the antivirus complains</span><svg class="icon chev text-fg-3"><use href="#i-chev"/></svg></summary>
+          <div class="space-y-3 px-4 pb-4 text-fg-2">
+            <p data-t="q1.a1">The launcher has no paid code signature, so SmartScreen shows “Windows protected your PC”: click “More info” → “Run anyway”. Antivirus software is sometimes wary of the launcher changing game files (installing mods) — that is expected.</p>
+            <p data-t="q1.a2">But only download the launcher from this site and check the checksum: copies from chats and other sites may be tampered with.</p>
+          </div>
+        </details>
+        <details class="expander" id="sha">
+          <summary><span class="flex-1" data-t="q2.q">How to check the file is genuine</span><svg class="icon chev text-fg-3"><use href="#i-chev"/></svg></summary>
+          <div class="space-y-3 px-4 pb-4 text-fg-2">
+            <p data-t="q2.a1">Open PowerShell in the launcher's folder and run:</p>
+            <p><span class="code">Get-FileHash .\DungeonborneLauncher.exe</span></p>
+            <p><span data-t="q2.a2">The hash must match this one (version</span> <span data-release="version">1.7.0</span>):</p>
+            <p><span class="code" data-release="sha256">852D5FCE0788D2A4BF4284E439C777E936240C8EE74CCA127236B5C10C7BA283</span></p>
+          </div>
+        </details>
+        <details class="expander">
+          <summary><span class="flex-1" data-t="q3.q">Anti-cheat error “13-131084-2”</span><svg class="icon chev text-fg-3"><use href="#i-chev"/></svg></summary>
+          <div class="px-4 pb-4 text-fg-2"><p data-t="q3.a">It happens when the game is started a few seconds after it was closed. Wait about 30 seconds after quitting and start again.</p></div>
+        </details>
+        <details class="expander">
+          <summary><span class="flex-1" data-t="q4.q">Sign-in fails, “CURLCode 28”, the lobby hangs</span><svg class="icon chev text-fg-3"><use href="#i-chev"/></svg></summary>
+          <div class="space-y-3 px-4 pb-4 text-fg-2">
+            <p data-t="q4.a1">Some ISPs in Russia drop connections to our servers. The launcher notices this and shows a banner.</p>
+            <p data-t="q4.a2">The free Cloudflare WARP or any VPN helps: turn it on and restart the launcher. If only battles lose connection, turn on “bypass for battles” in the launcher.</p>
+          </div>
+        </details>
+        <details class="expander">
+          <summary><span class="flex-1" data-t="q5.q">“Game version does not match the server”</span><svg class="icon chev text-fg-3"><use href="#i-chev"/></svg></summary>
+          <div class="px-4 pb-4 text-fg-2"><p data-t="q5.a">The server is built for a specific Dungeonborne.exe, and the launcher will not start another version. Verify the game files in Steam and point the launcher to that folder.</p></div>
+        </details>
+        <details class="expander">
+          <summary><span class="flex-1" data-t="q9.q">Updated from an older version — what about hosts?</span><svg class="icon chev text-fg-3"><use href="#i-chev"/></svg></summary>
+          <div class="px-4 pb-4 text-fg-2"><p data-t="q9.a">Nothing: since 1.7.0 the game needs no hosts, and the launcher no longer asks for administrator rights. If the hosts file still has lines from older versions, the launcher settings show a “Remove hosts changes” button — you can remove them or leave them.</p></div>
+        </details>
+        <details class="expander">
+          <summary><span class="flex-1" data-t="q6.q">Start in the game does nothing</span><svg class="icon chev text-fg-3"><use href="#i-chev"/></svg></summary>
+          <div class="px-4 pb-4 text-fg-2"><p data-t="q6.a">Join an instance tab in the launcher first. Voting starts once enough players have joined; the hall lets you in while it is open and your group size matches the vote.</p></div>
+        </details>
+        <details class="expander">
+          <summary><span class="flex-1" data-t="q7.q">“Only members of the Discord server can sign in”</span><svg class="icon chev text-fg-3"><use href="#i-chev"/></svg></summary>
+          <div class="px-4 pb-4 text-fg-2"><p data-t="q7.a">Members of the project's Discord server can play: join the server and sign in to the launcher again. During maintenance sign-in is closed to everyone except the admins.</p></div>
+        </details>
+        <details class="expander">
+          <summary><span class="flex-1" data-t="q8.q">Nothing helped — what to send the admins</span><svg class="icon chev text-fg-3"><use href="#i-chev"/></svg></summary>
+          <div class="space-y-3 px-4 pb-4 text-fg-2">
+            <p><span data-t="q8.a1">The launcher's logs are in</span> <span class="code">%LOCALAPPDATA%\DungeonborneLauncher\logs</span><span data-t="q8.a2">: attach relay.log and launcher.log. For connection problems the launcher banner has a “Copy report” button. Logs contain no tokens or passwords.</span></p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============================================================ footer: like the window status bar -->
+<footer class="border-t border-line/70 bg-black/40">
+  <!-- community links: addresses are in build_seo.py (LINKS), it also writes them here and into the markup for search engines;
+       while there is no address — href="#", a click does nothing (site.js) -->
+  <nav class="page flex flex-wrap items-center gap-x-1 gap-y-2 border-b border-line/50 py-4 text-sm" data-t-attr="aria-label:foot.links" aria-label="Community">
+    <span class="mr-3 font-display text-2xs tracking-caps text-fg-3 uppercase" data-t="foot.links">Community</span>
+    <a class="btn-flat" href="#" data-link="discord"><svg class="icon"><use href="#i-group"/></svg>Discord · Dungeonborne Community</a>
+    <a class="btn-flat" href="#" data-link="youtube"><svg class="icon"><use href="#i-play"/></svg>YouTube</a>
+    <a class="btn-flat" href="#" data-link="telegram"><svg class="icon"><use href="#i-megaphone"/></svg>Telegram</a>
+    <a class="btn-flat" href="#" data-link="vk"><svg class="icon"><use href="#i-user"/></svg>VK</a>
+    <a class="btn-flat" href="#" data-link="reddit"><svg class="icon"><use href="#i-scroll"/></svg>Reddit</a>
+  </nav>
+  <div class="page flex flex-col gap-4 py-6 text-sm text-fg-2 md:flex-row md:items-center">
+    <span class="flex items-center gap-2.5">
+      <span class="grid size-6 place-items-center rounded-ctl border border-line-hi bg-card-hi font-display text-sm font-bold text-accent">D</span>
+      <span class="font-display tracking-brand text-fg-2 uppercase">Dungeonborne</span>
+    </span>
+    <p class="flex-1" data-t="foot.p">Community server. A fan project, not affiliated with the game's developer or publisher; game assets belong to their rights holders.</p>
+    <a class="btn-std self-start md:self-auto" href="downloads/DungeonborneLauncher.exe" download>
+      <svg class="icon"><use href="#i-download"/></svg><span data-t="cta.play">Download launcher</span>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>

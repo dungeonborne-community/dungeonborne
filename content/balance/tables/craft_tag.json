@@ -1,0 +1,26 @@
+{
+  "type": "tgf.config.ExcelCraftingTag",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 2,
+    "hash_code": "sha256:c4fc5cdf5f9c6cdecbbec520521b1b597a63de9eca86b7a566d83ff7c84154d6",
+    "data_source": [
+      {
+        "file": "16abdb17c1104c5ef920b8c22c532c622511c27cfb178f444e2648f6b1154491",
+        "sheet": "a8276b2ef972d27db29f0c24d83f0159e0b089fc5338f19d0a01432d5b9724bc",
+        "count": 2
+      }
+    ]
+  },
+  "rows": [
+    {
+      "tag_id": 1,
+      "craft_name": "Fusion_Potion"
+    },
+    {
+      "tag_id": 3,
+      "craft_name": "Fusion_Collect"
+    }
+  ]
+}

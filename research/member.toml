@@ -1,0 +1,15 @@
+[member]
+name = "research"
+kind = "research"
+visibility = "team"
+lang = "mixed"
+version = "0"
+depends_on = []
+description = "Research notes and scripts. Notes and scripts live here; research data (exports, BP, IDA) is in home/re/research, FModel in home/dumps/fmodel"
+
+[rules]
+# Decrypting paks with the key and analysing the INTL login: only after the user says so.
+
+[known-absolute-paths]
+# one-off research scripts: they read data from the old location (legacy:backups, legacy:new_class)
+files = ["legendary/table.py"]

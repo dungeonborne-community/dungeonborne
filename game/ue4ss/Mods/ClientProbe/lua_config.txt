@@ -1,0 +1,22 @@
+# LuaProbe — a probe inside the client's Lua (pak zzzzz_RebuildPrivate_P, Game/System/Match/LuaProbe.lua).
+# Read on entering the lobby. 0 — the probe does nothing. See docs/CLIENT_PROBE.md.
+enabled = 1
+log_dir = <repo>/probe/logs
+# client name; empty — as in ClientProbe ("alt" if local_save.txt is present, otherwise "steam")
+name =
+# modules whose functions are wrapped (prefixes of require names, separated by ;) and exceptions
+modules = Game.Service;Game.System;Mail;Chat;Social;Team;PVP;Inventory;UserRole;BattlePass;Task;Mithril;Blacksmith;Unlock;PlayerGrade;Banner
+skip_modules = Game.System.Match;Table;Core;Base;Common;Text;Data
+# 0 — do not wrap modules loaded before the lobby (if the UI starts behaving oddly)
+wrap_loaded = 1
+# substrings of function names that are not wrapped
+skip = Tick;OnPaint;OnMouse;GetDesired;NativeTick
+call_limit = 40
+# FIELD: the first read of fields of classes/structs with these prefixes
+fields = 1
+field_prefixes = UTGFProtoTgf;FTGF
+# TRACE: every call of a Lua function from files whose path contains the substring (heavy — enable temporarily)
+trace = 0
+trace_filter = Mail;Chat;Social;Team;PVP
+# command-line flags that disable the probe (dbtest auto instances)
+skip_cmdline = -dbserver;-dbclient

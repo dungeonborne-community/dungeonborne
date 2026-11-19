@@ -1,0 +1,41 @@
+// node edgestop.mjs <url> — stop at the screen edge: a wheel flick does not skip the edge; further — only after another 500 px
+import { spawn } from "node:child_process";
+import { mkdtempSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+const [url] = process.argv.slice(2);
+const port = 9339;
+const proc = spawn("C:/Program Files/Google/Chrome/Application/chrome.exe", ["--headless=new", "--enable-gpu", "--use-angle=d3d11", "--ignore-gpu-blocklist",
+  `--remote-debugging-port=${port}`, `--user-data-dir=${mkdtempSync(join(tmpdir(), "cdp-"))}`, "--window-size=1920,1080", "about:blank"], { stdio: "ignore" });
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+let targets;
+for (let i = 0; i < 50; i++) { try { targets = await (await fetch(`http://127.0.0.1:${port}/json`)).json(); if (targets.length) break; } catch {} await sleep(200); }
+const ws = new WebSocket(targets.find((t) => t.type === "page").webSocketDebuggerUrl);
+await new Promise((r) => ws.addEventListener("open", r, { once: true }));
+let id = 0; const p = new Map();
+ws.addEventListener("message", (e) => { const m = JSON.parse(e.data); if (m.id && p.has(m.id)) { p.get(m.id)(m); p.delete(m.id); } });
+const send = (method, params = {}) => new Promise((r) => { const i = ++id; p.set(i, r); ws.send(JSON.stringify({ id: i, method, params })); });
+await send("Emulation.setDeviceMetricsOverride", { width: 1920, height: 1080, deviceScaleFactor: 1, mobile: false });
+await send("Emulation.setEmulatedMedia", { features: [{ name: "prefers-reduced-motion", value: "no-preference" }] });
+await send("Page.enable"); await send("Page.navigate", { url }); await sleep(2500);
+const ev = async (expr) => (await send("Runtime.evaluate", { expression: expr, awaitPromise: true, returnByValue: true })).result?.result?.value;
+await sleep(800);
+const wheel = async (dy, n, every) => { for (let k = 0; k < n; k++) { await send("Input.dispatchMouseEvent", { type: "mouseWheel", x: 960, y: 540, deltaX: 0, deltaY: dy }); await sleep(every); } await sleep(900); return ev("Math.round(scrollY)"); };
+const go = async (y) => { await ev(`scrollTo({ top: ${y}, behavior: 'instant' })`); await sleep(500); };
+const pro = await ev("Math.round(document.querySelector('#game .page > div').getBoundingClientRect().top + scrollY - 56)");
+const pin = await ev("Math.round(document.querySelector('[data-pin][data-pinned]').getBoundingClientRect().top + scrollY - 56)");
+console.log("prologue", pro, "first pin", pin);
+const rows = [];
+const P = (ms) => sleep(ms);
+await go(0); rows.push(["hero: fast spin 20x100 down", await wheel(100, 20, 30), `stop at ${pro}`]);
+rows.push(["  pause, spin 4x100 (400 < 500)", await wheel(100, 4, 30), `hold at ${pro}`]);
+rows.push(["  pause, spin 5x100 (pushed 500)", await wheel(100, 5, 30), `${pro + 500}`]);
+await go(pro); rows.push(["prologue: fast spin 15x100", await wheel(100, 15, 30), `stop at ${pin}`]);
+rows.push(["  spin up 3x100 (back is free)", await wheel(-100, 3, 30), `${pin - 300}`]);
+await go(pro); await wheel(100, 15, 30); await P(1500);
+rows.push(["  after 1.5 s: 4x100 (push forgotten)", await wheel(100, 4, 30), `hold at ${pin}`]);
+await P(1500); rows.push(["  after 1.5 s: 4x100 again", await wheel(100, 4, 30), `hold at ${pin}`]);
+rows.push(["  right away: 3x100 (400+100 → passes)", await wheel(100, 3, 30), `${pin + 300}`]);
+await go(pin + 3000); rows.push(["inside pin: spin 5x100", await wheel(100, 5, 30), `${pin + 3500} (free)`]);
+for (const r of rows) console.log(r[0].padEnd(36), "now", String(r[1]).padEnd(6), "want", r[2]);
+ws.close(); proc.kill();

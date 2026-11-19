@@ -1,0 +1,15 @@
+{
+  "type": "tgf.config.ExcelLootRarePoolCntLimit",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "hash_code": "sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data_source": [
+      {
+        "file": "6c342a0a102f7d955128ef7992dcfd0a99b340e9e0f99177a2f6bde64a480577",
+        "sheet": "99b747813742580dfd76b87711738ce0599835c69d57589e47b267cdc27974fe"
+      }
+    ]
+  },
+  "rows": []
+}

@@ -1,0 +1,28 @@
+# Season "Playtest" — what is on prod since 06.11 (docs/SEASONS_FORMAT.md). Backend: SEASON=playtest.
+id = "playtest"
+name = { ru = "Плейтест", en = "Playtest" }   # a string or per-language (src/text.rs)
+plugin = ""                  # no custom rules, only core flags
+state_key = "playtest"       # no progress; key reserved for the future
+
+[features]
+auto_sell_extracted = false  # user's decision 07.11: no auto-sell in the playtest (there never was on prod)
+relic_lower_quality = true   # + pak zz_RelicQuality_P (in mods/catalog.toml season = "playtest")
+# kill_reward not set: on prod the reward was never granted
+# 12.11 (user's decision): no starting relic resources (since 09.11 it was 5000 of five kinds); everyone's were reset
+# by the one-off reset relic_reset_20261112 (src/relic_reset.rs)
+start_gold = 10000           # user's decision 08.11 (evening): a new character starts with 10 000 gold (base — 1 000 000; was 0, before that 10 M)
+merchant_refresh_secs = 3600 # user's decision 07.11: the merchant refreshes once an hour (base — per tab config)
+mixed_party_rooms = false    # 08.11 user's decision: as in the original — party size equals room size (was true since 07.11: solo in trios)
+
+# 18.11 owner's decision (item 1): a new account gets 3 stash pages, each next one — 5000 gold (product 720001 "Exquisite
+# box", used at once), up to the game's max (const inventory_max_page = 8). Accounts created before keep their 8 pages.
+[features.stash]
+base_pages = 3
+page_price = 5000
+
+# Server settings, not season ones: they stay in prod's dbserver.env environment.
+#   TRADE_SYSTEM_BUYOUT=1, TRADE_SYSTEM_AUCTION=1 — system sellers and auction (awaiting decision: base or season)
+#   TRADE_SYSTEM_BUYOUT_STOCK=25, TRADE_SYSTEM_AUCTION_LOTS=25 — 25 of each item (user's decision 07.11)
+#   DS_ROOM_TTL=3000, LAUNCHER_LOBBY=1
+[server]
+maps = []                    # battle maps are set by DS_POOL / RuClient, as before

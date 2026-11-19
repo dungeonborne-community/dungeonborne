@@ -1,0 +1,46 @@
+[package]
+name = "dungeonborne-dev"
+version = "0.1.0"
+description = "Dungeonborne server developer tool: backend profiles, game clients, Host Game, GM console"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+publish = false
+
+[lib]
+name = "dbdev"
+path = "src/lib.rs"
+
+[[bin]]
+name = "dungeonborne-dev"
+path = "src/main.rs"
+
+[features]
+# Frontend is a plain folder (no build step), so a plain `cargo build --release` gives the finished exe.
+default = ["custom-protocol"]
+custom-protocol = ["tauri/custom-protocol"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# Launcher library: winutil (UAC, processes, port owners), profile::Install, auth (login flow), manifest, creds, net.
+dbl = { package = "dungeonborne-launcher", path = "../src-tauri" }
+tauri = { version = "2", default-features = false, features = ["wry", "common-controls-v6", "dynamic-acl"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "io-util", "time", "sync", "fs", "process", "signal"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+axum = { version = "0.8", default-features = false, features = ["http1", "json", "query", "tokio"] }
+
+[dependencies.windows-sys]
+version = "0.59"
+features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_Console",
+    "Win32_System_JobObjects",
+    "Win32_System_Threading",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+]

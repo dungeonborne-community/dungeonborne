@@ -1,0 +1,22 @@
+[
+  {
+    "base_pic": "/Game/TGF/UI/Textures/Dynamic/ActivityCenter/Horoscope_1720001.Horoscope_1720001",
+    "id": 1720001,
+    "name": "QuestTitle_1720001"
+  },
+  {
+    "base_pic": "/Game/TGF/UI/Textures/Dynamic/ActivityCenter/Horoscope_1720002.Horoscope_1720002",
+    "id": 1720002,
+    "name": "QuestTitle_1720002"
+  },
+  {
+    "base_pic": "/Game/TGF/UI/Textures/Dynamic/ActivityCenter/Horoscope_1720003.Horoscope_1720003",
+    "id": 1720003,
+    "name": "QuestTitle_1720003"
+  },
+  {
+    "base_pic": "/Game/TGF/UI/Textures/Dynamic/ActivityCenter/Preseason_1720004.Preseason_1720004",
+    "id": 1720004,
+    "name": "QuestTitle_1720004"
+  }
+]

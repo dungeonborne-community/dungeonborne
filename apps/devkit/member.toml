@@ -1,0 +1,21 @@
+[member]
+name = "devkit"
+kind = "app"
+visibility = "public"
+lang = "rust+html"
+version = "0.1.0"
+depends_on = ["tools/ws"]   # ws-core
+description = "DevKit — window over ws-core: machine state, workspace rules, secrets, PC backups, launching tools"
+
+[commands]
+test  = "cargo test -p devkit"
+build = "cargo tauri build --no-bundle   # from src-tauri; the crate is in the root Cargo workspace"
+
+[preview]
+# how a person sees it (ws preview, DevKit "Work", .claude/launch.json — docs/PREVIEW.md)
+name = "devkit-ui"
+run  = ["trunk", "serve"]
+env  = { NO_COLOR = "true" }   # trunk takes only true/false there; agents' shells may have NO_COLOR=1
+dir  = "ui"
+port = 1440
+note = "the DevKit UI in a browser with a mock of the Tauri API (ui/dev/mock-tauri.js) - not the real window"

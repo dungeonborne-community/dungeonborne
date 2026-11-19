@@ -1,0 +1,13 @@
+[
+  {
+    "craft_group_id": 1,
+    "mall_market_id": 102,
+    "merchant_market_id": 101,
+    "season_id": 1,
+    "special_market_id": 103,
+    "trade_market_id": [
+      1,
+      2
+    ]
+  }
+]

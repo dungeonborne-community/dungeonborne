@@ -1,0 +1,8 @@
+[member]
+name = "client-mod"
+kind = "mod"
+visibility = "public"
+lang = "powershell"
+version = "0"
+depends_on = []
+description = "Client mod installer (install.ps1); paks and cacert — in home"

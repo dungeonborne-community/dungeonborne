@@ -1,0 +1,17 @@
+# Headers for Cloudflare Pages / Netlify. On other hosting — the same in its settings.
+/*
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+
+# the page, styles and scripts change without renaming: the browser checks with the server (ETag) before every view
+/*.js
+  Cache-Control: no-cache
+/*.css
+  Cache-Control: no-cache
+/
+  Cache-Control: no-cache
+
+/downloads/*
+  Content-Disposition: attachment
+  Cache-Control: no-cache

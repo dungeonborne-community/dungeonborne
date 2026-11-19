@@ -1,0 +1,22 @@
+{
+  "type": "tgf.config.ExcelCuverTableSource",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 1,
+    "hash_code": "sha256:081c8727f1b862f87b24c1cbe73fe24a9913c75bf4e68a63ca792d5f407cc7b5",
+    "data_source": [
+      {
+        "file": "29b3370d55a5d6a583628b33a878c0dbbe69402001fa26d319c20fde00a67815",
+        "sheet": "1c9da9581bd064abd550318e6a4bb3ac30c1e953546167ed052f22205ff52a5f",
+        "count": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 1,
+      "source": "/Script/Engine.CurveTable'/Game/TGF/Character/Hero/CareerSkillDamageCurveTable.CareerSkillDamageCurveTable'"
+    }
+  ]
+}

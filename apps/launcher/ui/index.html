@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeonborne Launcher</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- sandbox: stands in for the launcher in a plain browser, does nothing inside it -->
+  <script src="dev/mock-tauri.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js" defer></script>
+  <script src="atmos.js" defer></script>
+  <link data-trunk rel="copy-file" href="styles.css">
+  <link data-trunk rel="copy-file" href="atmos.js">
+  <link data-trunk rel="copy-file" href="dev/mock-tauri.js" data-target-path="dev">
+  <link data-trunk rel="copy-file" href="i18n.js">
+  <link data-trunk rel="copy-file" href="app.js">
+  <link data-trunk rel="copy-dir" href="fonts">
+</head>
+<!--
+  «Torch» game style (dark stone, gold, fire). All markup lives here: app.js fills texts ([data-t] = i18n key, ids, data-ref inside templates)
+  and sets data-state / data-tone; how a state looks is written right here with data-[…]: variants.
+-->
+<body class="scene h-screen overflow-hidden font-sans text-[15px] text-fg antialiased select-none">
+<!-- the theme's atmosphere behind the window (atmos.js, WebGPU): lies under everything, does not catch clicks -->
+<canvas class="atmos-gpu pointer-events-none fixed inset-0 size-full" aria-hidden="true"></canvas>
+<div class="relative flex h-full flex-col">
+
+  <!-- ============================================================ title bar -->
+  <!-- own title bar (the window has no system frame): data-tauri-drag-region moves the window, double click maximizes -->
+  <header data-tauri-drag-region class="flex h-12 shrink-0 items-center gap-3 border-b border-line/70 bg-black/30 pl-4">
+    <!-- logo as on the site: a "D" tile — the first letter of the name, then "UNGEONBORNE"; the caption is gold small caps -->
+    <span data-tauri-drag-region class="flex items-center gap-1" aria-label="Dungeonborne">
+      <span data-tauri-drag-region class="grid size-7 place-items-center rounded-ctl border border-line-hi bg-card-hi font-display text-base font-bold text-accent shadow-glow" aria-hidden="true">D</span>
+      <span data-tauri-drag-region class="font-display text-base font-semibold tracking-brand uppercase" aria-hidden="true">ungeonborne</span>
+    </span>
+    <span data-tauri-drag-region class="brand-sub" data-t="app.subtitle"></span>
+    <div data-tauri-drag-region class="flex-1 self-stretch"></div>
+    <div class="flex items-center gap-2">
+      <span id="hosts-pill" class="pill group data-[state=ok]:bg-ok-bg data-[state=ok]:text-ok data-[state=missing]:bg-critical-bg data-[state=missing]:text-critical">
+        <span class="ico text-xs group-data-[state=missing]:hidden">&#xE930;</span>
+        <span class="ico text-xs hidden group-data-[state=missing]:inline-block">&#xEA39;</span>
+        <span id="hosts-text"></span>
+      </span>
+      <span id="dev-pill" class="pill hidden bg-dev-bg text-dev"><span class="ico text-xs">&#xEC7A;</span><span data-t="dev.badge"></span></span>
+      <button id="lang" class="btn-flat"><span class="ico">&#xF2B7;</span><span id="lang-text"></span></button>
+    </div>
+    <div class="ml-2 flex self-stretch">
+      <button id="win-min" class="grid w-12 place-items-center text-fg-3 transition-colors hover:bg-white/[0.06] hover:text-fg"><span class="ico text-[10px]">&#xE921;</span></button>
+      <button id="win-max" class="group grid w-12 place-items-center text-fg-3 transition-colors hover:bg-white/[0.06] hover:text-fg">
+        <span class="ico text-[10px] group-data-[max]:hidden">&#xE922;</span><span class="ico hidden text-[10px] group-data-[max]:inline-block">&#xE923;</span>
+      </button>
+      <button id="win-close" class="grid w-12 place-items-center text-fg-3 transition-colors hover:bg-[#c42b1c] hover:text-white"><span class="ico text-[10px]">&#xE8BB;</span></button>
+    </div>
+  </header>
+
+  <!-- ============================================================ launcher update (InfoBar) -->
+  <div id="update" class="bar enter mx-3 mb-2 hidden items-center" data-tone="info">
+    <span class="ico text-accent">&#xE896;</span>
+    <span id="update-text" class="font-semibold"></span>
+    <span id="update-progress" class="text-xs text-fg-3"></span>
+    <button id="update-btn" class="btn-accent ml-auto" data-t="update.button"></button>
+  </div>
+
+  <div class="flex min-h-0 flex-1">
+
+    <!-- ============================================================ NavigationView pane -->
+    <nav class="flex w-64 shrink-0 flex-col border-r border-line/70 bg-layer/70 pt-3 pb-2">
+      <div class="flex items-center justify-between py-1 pr-2 pl-5">
+        <span class="title-rule flex-1 pr-2" data-t="servers.title"></span>
+        <button id="refresh" class="btn-flat size-8 px-0"><span class="ico text-[13px]">&#xE72C;</span></button>
+      </div>
+      <div id="servers" class="flex-1 space-y-0.5 overflow-y-auto px-2"></div>
+      <div class="mx-4 my-2 h-px bg-line"></div>
+      <div class="space-y-0.5 px-2">
+        <button id="nav-add" class="relative flex h-10 w-full items-center gap-3 rounded-ctl px-3 text-fg-2 transition-colors hover:bg-white/[0.04] hover:text-fg">
+          <span class="ico">&#xE710;</span><span data-t="servers.add"></span>
+        </button>
+        <button id="nav-settings" class="group relative flex h-10 w-full items-center gap-3 rounded-ctl border border-transparent px-3 text-fg-2 transition-colors hover:bg-white/[0.04] hover:text-fg data-[active]:border-line-hi data-[active]:bg-card-hi data-[active]:text-accent-text">
+          <span class="absolute top-2 bottom-2 -left-px hidden w-[3px] rounded-r bg-accent shadow-[0_0_12px_color-mix(in_srgb,var(--glow-c)_80%,transparent)] group-data-[active]:block"></span>
+          <span class="ico">&#xE713;</span><span data-t="settings.title"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ============================================================ content layer -->
+    <main class="min-w-0 flex-1 overflow-y-auto">
+
+      <!-- ---------------------------------------- no server -->
+      <section id="page-empty" class="enter hidden h-full flex-col items-center justify-center gap-4 text-center">
+        <span class="ico text-5xl text-fg-4">&#xE968;</span>
+        <p class="max-w-sm text-fg-3" data-t="servers.empty"></p>
+        <button id="empty-add" class="btn-accent"><span class="ico">&#xE710;</span><span data-t="servers.add"></span></button>
+      </section>
+
+      <!-- ---------------------------------------- server page -->
+      <section id="page-server" class="enter mx-auto hidden max-w-[880px] space-y-4 px-8 py-7">
+
+        <!-- maintenance: new battles are closed -->
+        <div id="maint-bar" class="bar enter hidden" data-tone="caution">
+          <span class="ico mt-0.5 text-caution">&#xE7BA;</span>
+          <div class="min-w-0 flex-1">
+            <p class="font-semibold" data-t="maint.title"></p>
+            <p id="maint-text" class="text-fg-2 select-text"></p>
+          </div>
+        </div>
+
+        <!-- the provider freezes connections: offer the battle tunnel -->
+        <!-- the provider cuts the connection to the server (netblock / relay stalls): WARP or a VPN -->
+        <div id="net-bar" class="bar enter hidden" data-tone="caution">
+          <span class="ico mt-0.5 text-caution">&#xE7BA;</span>
+          <div class="min-w-0 flex-1 space-y-1">
+            <p class="font-semibold" data-t="net.title"></p>
+            <p class="text-fg-2" data-t="net.warp_text"></p>
+            <p id="net-tunnel-text" class="hidden text-xs text-fg-3" data-t="net.text"></p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <button id="net-warp" class="btn-accent" data-t="net.warp"></button>
+              <button id="net-on" class="btn-std hidden" data-t="net.enable"></button>
+              <button id="net-copy" class="btn-std" data-t="net.copy"></button>
+              <button id="net-later" class="btn-flat" data-t="net.later"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- server key changed -->
+        <div id="key-bar" class="bar enter hidden" data-tone="caution">
+          <span class="ico mt-0.5 text-caution">&#xE7BA;</span>
+          <div class="min-w-0 flex-1 space-y-1.5">
+            <p class="font-semibold" data-t="card.key_changed"></p>
+            <p id="key-old" class="truncate font-mono text-xs text-fg-2 select-text"></p>
+            <p id="key-new" class="truncate font-mono text-xs text-fg-2 select-text"></p>
+          </div>
+          <button id="key-accept" class="btn-std shrink-0" data-t="card.key_accept"></button>
+        </div>
+
+        <!-- hero: what the server is + Play -->
+        <div class="card framed overflow-hidden">
+          <div class="hero-art relative flex min-h-[250px] flex-col justify-end px-8 pt-8 pb-7">
+            <div class="flex items-end gap-8">
+              <div class="min-w-0 flex-1">
+                <h1 id="srv-name" class="line-clamp-3 font-display text-[26px] leading-8 font-bold tracking-wide break-words drop-shadow-ink lg:text-[30px] lg:leading-9"></h1>
+                <div class="mt-2 flex flex-wrap items-center gap-1.5">
+                  <span id="srv-status" class="pill group data-[state=online]:text-ok data-[state=offline]:text-critical">
+                    <span class="size-2 rounded-full bg-fg-4 group-data-[state=online]:bg-ok group-data-[state=offline]:bg-critical"></span>
+                    <span id="srv-status-text"></span>
+                  </span>
+                  <span id="srv-region" class="pill"><span class="ico text-xs">&#xE774;</span><span id="srv-region-text"></span></span>
+                  <span id="srv-tags" class="contents"></span>
+                </div>
+                <p id="srv-desc" class="mt-3 max-w-xl whitespace-pre-line text-fg-2"></p>
+              </div>
+              <!-- Play block -->
+              <div class="w-72 shrink-0 space-y-2">
+                <div class="relative">
+                  <div class="embers" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <button id="play" class="btn-play h-14 w-full text-xl data-[boot]:outline-2 data-[boot]:outline-offset-2 data-[boot]:outline-accent-text">
+                    <span class="ico text-lg">&#xE768;</span><span data-t="card.play"></span>
+                  </button>
+                </div>
+                <p id="play-note" class="min-h-4 text-center text-xs text-fg-3 data-[tone=dev]:text-dev data-[tone=boot]:text-accent-text"></p>
+              </div>
+            </div>
+          </div>
+          <div id="srv-motd" class="flex items-center gap-3 border-t border-line bg-black/30 px-8 py-3 text-fg-2">
+            <span class="ico text-accent">&#xE789;</span><span id="srv-motd-text"></span>
+          </div>
+        </div>
+
+        <!-- support of the project (16.11): this month's server goal from the manifest's support.url; the project's gold
+             in every theme (not the theme's accent). Always shown while there is a goal: no cross (owner 16.11) -->
+        <div id="support" class="enter hidden items-center gap-4 rounded-ovl border border-patron/45 bg-[linear-gradient(90deg,color-mix(in_srgb,var(--color-patron)_20%,transparent),transparent_75%)] px-5 py-3">
+          <div class="min-w-0 flex-1">
+            <div class="flex items-baseline gap-3">
+              <span id="support-text" class="min-w-0 flex-1 truncate text-sm text-fg"></span>
+              <span id="support-pct" class="shrink-0 font-mono text-xs text-fg-2"></span>
+            </div>
+            <div class="mt-1.5 h-1.5 overflow-hidden rounded-full border border-patron/30 bg-black/40">
+              <div id="support-fill" class="h-full rounded-full bg-patron shadow-[0_0_8px_var(--color-patron)] transition-[width] duration-200 ease-decelerate"></div>
+            </div>
+            <!-- per platform (goals[0].sources): Patreon and Boosty, a thin bar each, share of the target -->
+            <div id="support-sources" class="mt-2 hidden grid-cols-2 gap-x-5"></div>
+            <p class="mt-1.5 text-2xs text-fg-3" data-t="support.note"></p>
+          </div>
+          <!-- two buttons in a column, Patreon on top, same width (owner 16.11); a platform without a link in the data (under review) — off, "Coming soon" -->
+          <div class="grid shrink-0 gap-2">
+            <button id="support-patreon" class="btn border border-patron-hi/60 bg-[linear-gradient(180deg,var(--color-patron-hi),var(--color-patron))] font-semibold text-patron-ink shadow-[0_0_14px_-4px_var(--color-patron)] enabled:hover:brightness-110 disabled:cursor-default disabled:opacity-75 disabled:shadow-none"><span>Patreon</span><span data-ref="soon" class="hidden rounded-sm bg-patron-ink/20 px-1.5 py-px text-2xs font-semibold tracking-caps uppercase" data-t="support.soon"></span></button>
+            <button id="support-boosty" class="btn border border-patron-hi/60 bg-[linear-gradient(180deg,var(--color-patron-hi),var(--color-patron))] font-semibold text-patron-ink shadow-[0_0_14px_-4px_var(--color-patron)] enabled:hover:brightness-110 disabled:cursor-default disabled:opacity-75 disabled:shadow-none"><span>Boosty</span><span data-ref="soon" class="hidden rounded-sm bg-patron-ink/20 px-1.5 py-px text-2xs font-semibold tracking-caps uppercase" data-t="support.soon"></span></button>
+          </div>
+        </div>
+
+        <!-- server page tabs (Pivot): the server itself, and what changed on it -->
+        <div class="flex items-center gap-7 border-b border-line px-1">
+          <button class="srv-tab tab" data-view="overview" data-t="tabs.overview"></button>
+          <button class="srv-tab tab flex items-center gap-2" data-view="notes">
+            <span data-t="tabs.notes"></span>
+            <span id="notes-new" class="hidden h-5 items-center rounded-sm bg-accent px-1.5 font-sans text-2xs leading-none font-bold tracking-normal text-accent-ink normal-case shadow-[0_0_10px_color-mix(in_srgb,var(--glow-c)_70%,transparent)]" data-t="notes.badge"></span>
+          </button>
+        </div>
+
+        <!-- patch notes of the server -->
+        <div id="srv-notes" class="enter hidden space-y-3"></div>
+
+        <div id="srv-overview" class="enter space-y-4">
+        <!-- lobby of game instances: tabs, votes, the waiting room -->
+        <div id="lobby" class="card enter hidden space-y-4 px-6 py-5">
+          <div class="flex items-center gap-2">
+            <span class="ico text-lg text-accent">&#xE8F1;</span>
+            <span class="title-rule flex-1" data-t="lobby.title"></span>
+            <span id="lobby-timer" class="ml-auto font-mono text-base tabular-nums"></span>
+            <button id="lobby-leave" class="btn-std hidden" data-t="lobby.leave"></button>
+          </div>
+          <div id="lobby-tabs" class="flex flex-wrap gap-1"></div>
+          <p id="lobby-hint" class="enter hidden font-semibold text-accent-text" data-t="lobby.hint"></p>
+          <p id="lobby-status" class="text-fg-2"></p>
+          <div id="lobby-start" class="bar enter hidden" data-tone="info">
+            <span class="ico mt-0.5 text-accent">&#xE768;</span>
+            <span id="lobby-start-text" class="flex-1 font-semibold"></span>
+            <button id="lobby-play" class="btn-accent hidden" data-t="card.play"></button>
+          </div>
+          <!-- Trial of Clotho (instance kind "clotho"): a recruitment for a 3v3 arena match, no votes; joining is a button,
+               not a tab click (it may open a run for a trial stone) -->
+          <div id="clotho" class="enter hidden space-y-3">
+            <div>
+              <h3 class="font-display text-xl font-semibold tracking-wide text-accent-text" data-t="lobby.clotho.tab"></h3>
+              <p class="mt-0.5 text-xs text-fg-3" data-t="lobby.clotho.about"></p>
+            </div>
+            <div id="clotho-trial" class="grid grid-cols-2 gap-3">
+              <div class="rounded-ctl border border-line bg-black/25 px-3 py-2.5">
+                <div class="flex items-baseline justify-between gap-2">
+                  <span class="text-xs font-bold tracking-caps text-fg-3 uppercase" data-t="lobby.clotho.wins"></span>
+                  <span id="clotho-wins-text" class="font-display text-base text-accent-text"></span>
+                </div>
+                <div id="clotho-wins" class="mt-2 flex gap-1.5"></div>
+              </div>
+              <div class="rounded-ctl border border-line bg-black/25 px-3 py-2.5">
+                <div class="flex items-baseline justify-between gap-2">
+                  <span class="text-xs font-bold tracking-caps text-fg-3 uppercase" data-t="lobby.clotho.tokens"></span>
+                  <span id="clotho-tokens-text" class="font-display text-base text-accent-text"></span>
+                </div>
+                <div id="clotho-tokens" class="mt-2 flex gap-1.5"></div>
+              </div>
+            </div>
+            <p id="clotho-note" class="text-xs text-fg-2"></p>
+            <p id="clotho-ingame" class="hidden text-xs text-accent-text" data-t="lobby.clotho.ingame"></p>
+            <button id="clotho-join" class="btn-accent hidden" data-t="lobby.clotho.join"></button>
+          </div>
+          <div id="lobby-votes" class="space-y-4">
+          <div id="lobby-sizes-box" class="space-y-2">
+            <div class="text-xs font-bold tracking-caps text-fg-3 uppercase" data-t="lobby.size_title"></div>
+            <div id="lobby-sizes" class="grid grid-cols-3 gap-2"></div>
+          </div>
+          <div id="lobby-maps-box" class="space-y-2">
+            <div class="text-xs font-bold tracking-caps text-fg-3 uppercase" data-t="lobby.map_title"></div>
+            <div id="lobby-maps" class="grid grid-cols-3 gap-2"></div>
+          </div>
+          <div id="lobby-rules-box" class="space-y-1">
+            <div class="text-xs font-bold tracking-caps text-fg-3 uppercase" data-t="lobby.rules_title"></div>
+            <p id="lobby-rules" class="rounded-ctl border border-line bg-black/25 px-3 py-2.5 text-xs leading-relaxed whitespace-pre-line text-fg-2"></p>
+          </div>
+          </div>
+        </div>
+
+        <!-- launch progress -->
+        <div id="run" class="card hidden space-y-4 px-6 py-5">
+          <div class="flex items-center gap-2">
+            <span id="run-title" class="font-display text-base font-semibold tracking-wide"></span>
+            <span id="run-state" class="ml-auto text-xs text-fg-3"></span>
+          </div>
+          <div id="steps" class="flex flex-wrap items-center gap-2"></div>
+          <div id="dl" class="hidden items-center gap-3">
+            <div class="relative h-1.5 flex-1 overflow-hidden rounded-full border border-line bg-black/40"><div id="dl-fill" class="h-full rounded-full transition-[width] duration-200 ease-decelerate bg-gradient-to-r from-accent-strong to-accent-text shadow-[0_0_8px_color-mix(in_srgb,var(--glow-c)_70%,transparent)] transition-[width]"></div></div>
+            <span id="dl-text" class="shrink-0 text-xs text-fg-3"></span>
+          </div>
+          <div id="run-error" class="bar hidden" data-tone="critical">
+            <span class="ico mt-0.5 text-critical">&#xEA39;</span><span id="run-error-text" class="select-text"></span>
+          </div>
+        </div>
+
+        <!-- account -->
+        <div>
+          <div class="row">
+            <span id="acc-icon" class="ico text-xl text-fg-2">&#xE77B;</span>
+            <div id="acc-avatar" class="hidden size-9 shrink-0 place-items-center rounded-full border border-accent/60 bg-accent/15 font-display font-bold text-accent-text"></div>
+            <div class="min-w-0 flex-1">
+              <div id="acc-title" class="truncate"></div>
+              <div id="acc-sub" class="truncate text-xs text-fg-3"></div>
+            </div>
+            <span id="acc-spin" class="spin hidden"></span>
+            <span id="acc-code" class="hidden rounded-ctl border border-line-hi bg-black/35 px-3 py-1 font-mono text-base tracking-widest text-accent-text select-text"></span>
+            <button id="acc-join" class="btn-accent hidden"><span class="ico">&#xE8A7;</span><span data-t="card.join_guild"></span></button>
+            <button id="acc-login" class="btn-accent hidden"></button>
+            <button id="acc-cancel" class="btn-std hidden" data-t="card.login_cancel"></button>
+            <button id="acc-logout" class="btn-std hidden"><span class="ico">&#xF3B1;</span><span data-t="card.logout"></span></button>
+          </div>
+          <div id="acc-error" class="row hidden !min-h-0 gap-3 border-t-0 bg-critical-bg py-2.5">
+            <span class="ico text-critical">&#xEA39;</span><span id="acc-error-text" class="text-fg-2"></span>
+          </div>
+        </div>
+
+        <!-- mods (Expander) -->
+        <div>
+          <button id="mods-head" class="row group w-full text-left hover:border-line-hi" data-open="">
+            <span class="ico text-xl text-fg-2">&#xEA86;</span>
+            <div class="min-w-0 flex-1">
+              <div data-t="card.mods"></div>
+              <div id="mods-summary" class="text-xs text-fg-3"></div>
+            </div>
+            <span class="ico text-xs text-fg-2 transition-transform group-data-[open=yes]:rotate-180">&#xE70D;</span>
+          </button>
+          <ul id="mods" class="enter hidden space-y-2.5 rounded-b-ovl border border-t-0 border-line bg-card/60 px-5 py-4 pl-[60px]"></ul>
+        </div>
+
+        <!-- installs -->
+        <div>
+          <div class="row !min-h-0 py-3"><span class="ico text-xl text-fg-2">&#xE7F8;</span><span class="flex-1" data-t="card.game"></span></div>
+          <div id="installs"></div>
+        </div>
+
+        <!-- server management -->
+        <div class="flex flex-wrap items-center justify-end gap-1 pt-1">
+          <span class="order-last basis-full px-3 text-right font-mono text-xs text-fg-4" id="srv-id"></span>
+          <button id="srv-bug" class="btn-flat"><span class="ico">&#xEBE8;</span><span data-t="bug.button"></span></button>
+          <button id="srv-contact" class="btn-flat hidden"><span class="ico">&#xE8F2;</span><span id="srv-contact-text"></span></button>
+          <button id="srv-site" class="btn-flat"><span class="ico">&#xE774;</span><span data-t="card.website"></span></button>
+          <button id="srv-refresh" class="btn-flat"><span class="ico">&#xE72C;</span><span data-t="card.refresh"></span></button>
+          <button id="srv-remove" class="btn-flat text-critical"><span class="ico">&#xE74D;</span><span data-t="card.remove"></span></button>
+        </div>
+
+        <!-- journal (Expander) -->
+        <div>
+          <button id="log-head" class="row group w-full text-left hover:border-line-hi" data-open="">
+            <span class="ico text-xl text-fg-2">&#xE81C;</span>
+            <div class="min-w-0 flex-1">
+              <div data-t="log.title"></div>
+              <div id="log-last" class="truncate font-mono text-xs text-fg-3"></div>
+            </div>
+            <span class="ico text-xs text-fg-2 transition-transform group-data-[open=yes]:rotate-180">&#xE70D;</span>
+          </button>
+          <div id="log-body" class="enter hidden rounded-b-ovl border border-t-0 border-line bg-black/20">
+            <div class="flex items-center gap-5 border-b border-line px-5">
+              <button class="log-tab tab text-xs" data-tab="launch" data-t="log.launch"></button>
+              <button class="log-tab tab text-xs" data-tab="relay" data-t="log.relay"></button>
+              <button class="log-tab tab text-xs" data-tab="all" data-t="log.all"></button>
+              <button id="log-clear" class="btn-flat ml-auto h-7 text-xs text-fg-3" data-t="log.clear"></button>
+            </div>
+            <div id="log" class="h-56 overflow-y-auto px-5 py-2 font-mono text-xs leading-5 select-text"></div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <!-- ---------------------------------------- settings page (Windows Settings style, applies at once) -->
+      <section id="page-settings" class="enter mx-auto hidden max-w-[880px] space-y-6 px-8 py-7">
+        <h1 class="font-display text-[34px] font-bold tracking-wide" data-t="settings.title"></h1>
+
+        <div class="space-y-1">
+          <h2 class="title-rule mb-3" data-t="card.game"></h2>
+          <div class="row">
+            <span class="ico text-xl text-fg-2">&#xE8B7;</span>
+            <div class="min-w-0 flex-1 space-y-1.5">
+              <div data-t="settings.install1"></div>
+              <div class="flex gap-2">
+                <input id="set-install-0" class="field min-w-0 flex-1 font-mono text-xs" spellcheck="false" placeholder="C:\Steam\steamapps\common\Dungeonborne">
+                <button id="install-browse" class="btn-std shrink-0" data-t="install.browse"></button>
+                <button id="install-find" class="btn-flat shrink-0" data-t="install.find"></button>
+              </div>
+              <div id="set-install-0-info" class="text-xs text-fg-3 data-[tone=bad]:text-critical"></div>
+            </div>
+          </div>
+          <label class="row">
+            <span class="ico text-xl text-fg-2">&#xEA18;</span>
+            <div class="flex-1" data-t="settings.admin"></div>
+            <input id="set-admin" type="checkbox" class="toggle">
+          </label>
+          <label class="row">
+            <span class="ico text-xl text-fg-2">&#xE8B2;</span>
+            <div class="min-w-0 flex-1"><div data-t="settings.steam"></div><div class="text-xs text-fg-3" data-t="settings.steam_hint"></div><div id="set-steam-status" class="mt-1 text-xs text-accent-text"></div></div>
+            <input id="set-steam" type="checkbox" class="toggle">
+          </label>
+        </div>
+
+        <div class="space-y-1">
+          <h2 class="title-rule mb-3" data-t="settings.net"></h2>
+          <div id="set-net" class="space-y-1"></div>
+          <p class="px-1 pt-1 text-xs text-fg-3" data-t="settings.net_hint"></p>
+        </div>
+
+        <div class="space-y-1">
+          <h2 class="title-rule mb-3" data-t="settings.other"></h2>
+          <!-- 1.7.2: a server without hosts (relay.no_hosts) can still be played through hosts; the launcher turns it on
+               itself when this computer's DNS hides the server or the game does not come to it -->
+          <label id="force-hosts-row" class="row hidden">
+            <span class="ico text-xl text-fg-2">&#xE774;</span>
+            <div class="min-w-0 flex-1"><div data-t="settings.force_hosts"></div><div class="text-xs text-fg-3" data-t="settings.force_hosts_hint"></div></div>
+            <input id="set-force-hosts" type="checkbox" class="toggle">
+          </label>
+          <!-- a server without relay.no_hosts needs the game's domains in hosts: set up / remove -->
+          <div id="hosts-setup-row" class="row hidden">
+            <span class="ico text-xl text-fg-2">&#xE774;</span>
+            <div class="min-w-0 flex-1"><div id="set-hosts-state"></div><div id="set-hosts-setup-path" class="truncate font-mono text-xs text-fg-3"></div></div>
+            <button id="hosts-install" class="btn-std" data-t="settings.hosts_install"></button>
+            <button id="hosts-setup-uninstall" class="btn-flat text-critical" data-t="settings.hosts_uninstall"></button>
+          </div>
+          <!-- servers that need no hosts (relay.no_hosts): only lines older runs left are offered for removal -->
+          <div id="hosts-row" class="row hidden">
+            <span class="ico text-xl text-fg-2">&#xE774;</span>
+            <div class="min-w-0 flex-1"><div data-t="settings.hosts_leftover"></div><div id="set-hosts-path" class="truncate font-mono text-xs text-fg-3"></div></div>
+            <button id="hosts-uninstall" class="btn-std" data-t="settings.hosts_uninstall"></button>
+          </div>
+          <div class="row">
+            <span class="ico text-xl text-fg-2">&#xEDA2;</span>
+            <div class="min-w-0 flex-1"><div data-t="settings.cache"></div><div id="set-cache" class="text-xs text-fg-3"></div></div>
+            <button id="cache-clear" class="btn-std" data-t="settings.cache_clear"></button>
+          </div>
+          <label class="row">
+            <span class="ico text-xl text-fg-2">&#xE790;</span>
+            <div class="flex-1" data-t="settings.theme"></div>
+            <select id="set-theme" class="combo w-40">
+              <option value="torch" data-t="theme.torch"></option>
+              <option value="crypt" data-t="theme.crypt"></option>
+              <option value="blood" data-t="theme.blood"></option>
+            </select>
+          </label>
+          <label class="row">
+            <span class="ico text-xl text-fg-2">&#xF2B7;</span>
+            <div class="flex-1">Язык / Language</div>
+            <select id="set-lang" class="combo w-40"><option value="ru">Русский</option><option value="en">English</option></select>
+          </label>
+          <label class="row">
+            <span class="ico text-xl text-fg-2">&#xEC7A;</span>
+            <div class="min-w-0 flex-1"><div data-t="settings.dev"></div><div class="text-xs text-fg-3" data-t="settings.dev_hint"></div></div>
+            <input id="set-dev" type="checkbox" class="toggle">
+          </label>
+        </div>
+
+        <p class="text-xs text-fg-4">Dungeonborne Launcher <span id="version"></span></p>
+      </section>
+    </main>
+  </div>
+</div>
+
+<!-- ============================================================ ContentDialogs -->
+<!-- what's new on the server: the whole window, once for each new patch notes entry -->
+<div id="notes-splash" class="scene overlay fixed inset-x-0 top-12 bottom-0 z-40 hidden flex-col">
+  <div id="splash-scroll" class="min-h-0 flex-1 overflow-y-auto">
+    <div class="mx-auto max-w-[760px] space-y-5 px-8 pt-14 pb-8">
+      <div class="flex items-start gap-4">
+        <span class="ico mt-1 text-[32px] text-accent">&#xE789;</span>
+        <div class="min-w-0">
+          <p class="font-display text-sm font-semibold tracking-brand text-accent-text uppercase" data-t="notes.splash_kicker"></p>
+          <h1 id="splash-title" class="mt-1 font-display text-[38px] leading-[44px] font-bold tracking-wide break-words"></h1>
+          <p id="splash-season" class="mt-1 hidden text-fg-2"></p>
+        </div>
+      </div>
+      <div id="splash-list" class="space-y-3"></div>
+    </div>
+  </div>
+  <div class="flex justify-center gap-2 border-t border-line bg-black/40 px-8 py-4">
+    <button id="splash-ok" class="btn-play h-10 min-w-44 text-base" data-t="notes.splash_ok"></button>
+    <button id="splash-all" class="btn-std" data-t="notes.splash_all"></button>
+  </div>
+</div>
+
+<div id="dlg-add" class="overlay fixed inset-0 z-20 hidden items-center justify-center bg-black/60">
+  <div class="card framed pop w-[480px] overflow-hidden shadow-2xl shadow-black/70">
+    <div class="space-y-4 p-6">
+      <h2 class="font-display text-xl font-semibold" data-t="servers.add"></h2>
+      <input id="add-url" class="field" spellcheck="false" autocomplete="off">
+    </div>
+    <div class="grid grid-cols-2 gap-2 border-t border-line bg-black/35 px-6 py-4">
+      <button id="add-ok" class="btn-accent" data-t="servers.add"></button>
+      <button id="add-cancel" class="btn-std" data-t="common.cancel"></button>
+    </div>
+  </div>
+</div>
+
+<!-- "Report a bug": the form, then the report's way to the Discord forum -->
+<div id="dlg-bug" class="overlay fixed inset-0 z-20 hidden items-center justify-center bg-black/60">
+  <div class="card framed pop w-[560px] max-w-[calc(100vw-32px)] overflow-hidden shadow-2xl shadow-black/70">
+    <div id="bug-form" class="space-y-3 p-6">
+      <h2 class="font-display text-xl font-semibold" data-t="bug.title"></h2>
+      <p class="text-fg-2" data-t="bug.intro"></p>
+      <div id="bug-login" class="bar hidden" data-tone="caution">
+        <span class="ico mt-0.5 text-caution">&#xE7BA;</span><span data-t="bug.login_needed"></span>
+      </div>
+      <div id="bug-crash" class="bar hidden" data-tone="caution">
+        <span class="ico mt-0.5 text-caution">&#xE7BA;</span><span data-t="bug.crash_hint"></span>
+      </div>
+      <label class="block space-y-1">
+        <span class="text-sm text-fg-2" data-t="bug.kind"></span>
+        <select id="bug-kind" class="combo">
+          <option value="crash" data-t="bug.kind_crash"></option>
+          <option value="game" data-t="bug.kind_game"></option>
+          <option value="launcher" data-t="bug.kind_launcher"></option>
+        </select>
+      </label>
+      <label class="block space-y-1">
+        <span class="flex justify-between text-sm text-fg-2"><span data-t="bug.name"></span><span id="bug-title-n" class="text-fg-4"></span></span>
+        <input id="bug-title" class="field" maxlength="100" autocomplete="off">
+      </label>
+      <label class="block space-y-1">
+        <span class="flex justify-between text-sm text-fg-2"><span data-t="bug.description"></span><span id="bug-desc-n" class="text-fg-4"></span></span>
+        <textarea id="bug-desc" class="field !h-36 resize-none py-2" maxlength="1500"></textarea>
+      </label>
+      <p class="text-xs text-fg-3"><span data-t="bug.files"></span> <span id="bug-files" class="select-text"></span></p>
+    </div>
+    <div id="bug-sent" class="hidden space-y-3 p-6">
+      <h2 class="flex items-center gap-2 font-display text-xl font-semibold">
+        <span id="bug-sent-spin" class="ico spin text-fg-2">&#xE72C;</span><span id="bug-sent-ok" class="ico hidden text-ok">&#xE930;</span>
+        <span data-t="bug.sent_title"></span>
+      </h2>
+      <p id="bug-sent-text" class="text-fg-2"></p>
+      <p id="bug-sent-id" class="font-mono text-xs text-fg-4 select-text"></p>
+    </div>
+    <div class="grid grid-cols-2 gap-2 border-t border-line bg-black/35 px-6 py-4">
+      <button id="bug-send" class="btn-accent"></button>
+      <button id="bug-open" class="btn-accent hidden"></button>
+      <button id="bug-close" class="btn-std"></button>
+    </div>
+  </div>
+</div>
+
+<div id="dlg-confirm"class="overlay fixed inset-0 z-30 hidden items-center justify-center bg-black/60">
+  <div class="card framed pop w-[460px] overflow-hidden shadow-2xl shadow-black/70">
+    <div class="space-y-3 p-6">
+      <h2 id="confirm-title" class="font-display text-xl font-semibold"></h2>
+      <p id="confirm-text" class="whitespace-pre-line text-fg-2"></p>
+    </div>
+    <div class="grid grid-cols-2 gap-2 border-t border-line bg-black/35 px-6 py-4">
+      <button id="confirm-yes" class="btn-accent" data-t="common.confirm"></button>
+      <button id="confirm-no" class="btn-std" data-t="common.cancel"></button>
+    </div>
+  </div>
+</div>
+
+<div id="toasts" class="pointer-events-none fixed top-14 right-4 z-40 w-96 space-y-2"></div>
+
+<!-- ============================================================ templates (cloned by app.js) -->
+
+<!-- NavigationViewItem -->
+<template id="tpl-lobby-tab">
+  <button class="group relative min-w-0 flex-auto rounded-ctl border border-line bg-black/25 px-3 py-2 text-left transition-colors hover:border-line-hi data-[active]:border-accent data-[active]:bg-card-hi data-[active]:shadow-underline">
+    <span class="flex items-center gap-1.5 truncate"><span data-ref="name" class="truncate font-display text-base font-semibold whitespace-nowrap group-data-[active]:text-accent-text"></span><span data-ref="mine" class="ico hidden text-xs text-accent-text">&#xE73E;</span></span>
+    <span data-ref="state" class="block truncate text-xs text-fg-3"></span>
+  </button>
+</template>
+
+<template id="tpl-lobby-option">
+  <button class="group flex min-h-10 items-center justify-between gap-3 rounded-ctl border border-line bg-black/25 px-3 py-2 text-left text-fg-2 transition-colors enabled:hover:border-line-hi enabled:hover:text-fg disabled:text-fg-3 data-[mine]:border-accent data-[mine]:bg-[linear-gradient(180deg,color-mix(in_srgb,var(--glow-c)_16%,transparent),transparent)] data-[mine]:text-accent-text data-[win]:border-ok data-[win]:bg-ok-bg data-[win]:text-fg">
+    <span data-ref="name" class="truncate"></span>
+    <span data-ref="count" class="shrink-0 font-display text-base text-fg-3"></span>
+  </button>
+</template>
+
+<template id="tpl-server">
+  <button class="group relative flex w-full items-center gap-3 rounded-ctl border border-transparent px-3 py-2.5 text-left transition-colors hover:border-line hover:bg-white/[0.03] data-[active]:border-line-hi data-[active]:bg-card-hi">
+    <span class="absolute top-2 bottom-2 -left-px hidden w-[3px] rounded-r bg-accent shadow-[0_0_12px_color-mix(in_srgb,var(--glow-c)_80%,transparent)] group-data-[active]:block"></span>
+    <span data-ref="dot" class="size-2 shrink-0 rounded-full bg-fg-4 data-[state=online]:bg-ok data-[state=online]:shadow-[0_0_8px_var(--color-ok)] data-[state=offline]:bg-critical"></span>
+    <span class="min-w-0 flex-1">
+      <span data-ref="name" class="block truncate font-display text-base font-semibold tracking-wide group-data-[active]:text-accent-text"></span>
+      <span data-ref="status" class="block truncate text-xs text-fg-3"></span>
+    </span>
+    <span data-ref="warn" class="ico hidden text-caution">&#xE7BA;</span>
+  </button>
+</template>
+
+<template id="tpl-tag"><span class="pill"></span></template>
+
+<!-- one update of the server's patch notes -->
+<template id="tpl-note">
+  <article class="card px-6 py-5">
+    <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+      <h2 data-ref="title" class="min-w-0 font-display text-2xl leading-8 font-semibold break-words select-text"></h2>
+      <span data-ref="ver" class="pill hidden font-mono text-xs"></span>
+      <span data-ref="orig" class="pill hidden text-xs text-fg-3"></span>
+      <span data-ref="date" class="ml-auto shrink-0 text-xs text-fg-3"></span>
+    </div>
+    <div data-ref="sections" class="mt-3 space-y-3"></div>
+  </article>
+</template>
+
+<template id="tpl-note-section">
+  <section>
+    <h3 class="flex items-center gap-2 text-xs font-bold tracking-caps text-fg-2 uppercase data-[kind=new]:text-arcane data-[kind=fixed]:text-ok data-[kind=balance]:text-accent" data-ref="head">
+      <span data-ref="icon" class="ico text-sm"></span><span data-ref="name"></span>
+    </h3>
+    <ul data-ref="items" class="mt-1.5 list-disc space-y-1 pl-6 text-fg-2 marker:text-accent-strong select-text"></ul>
+  </section>
+</template>
+
+<!-- launch step: glyph by data-state -->
+<template id="tpl-step">
+  <span class="group flex items-center gap-2 text-xs text-fg-4 data-[state]:text-fg data-[state=done]:text-fg-2 data-[state=error]:text-critical">
+    <span data-ref="line" class="h-px w-6 bg-line group-data-[state]:bg-accent"></span>
+    <span class="inline-block size-4 rounded-full border border-fg-4 group-data-[state]:hidden"></span>
+    <span class="spin hidden group-data-[state=start]:inline-block group-data-[state=progress]:inline-block group-data-[state=running]:inline-block"></span>
+    <span class="ico hidden text-ok group-data-[state=done]:inline-block">&#xE930;</span>
+    <span class="ico hidden text-critical group-data-[state=error]:inline-block">&#xEA39;</span>
+    <span class="ico hidden text-caution group-data-[state=warn]:inline-block">&#xE7BA;</span>
+    <span data-ref="label"></span>
+  </span>
+</template>
+
+<template id="tpl-mod">
+  <li class="flex items-start gap-3">
+    <input data-ref="check" type="checkbox" class="check">
+    <div data-ref="text" class="min-w-0 flex-1">
+      <div data-ref="id" class="truncate font-mono text-xs"></div>
+      <div data-ref="ver" class="truncate font-mono text-2xs text-fg-3"></div>
+    </div>
+    <span data-ref="req" class="pill hidden"></span>
+    <span data-ref="cached" class="pill hidden bg-ok-bg text-ok"></span>
+    <span data-ref="nosrc" class="pill hidden bg-critical-bg text-critical"></span>
+  </li>
+</template>
+
+<template id="tpl-install">
+  <div class="row group !min-h-[52px] rounded-none border-t-0 pl-[60px] last:rounded-b-ovl">
+    <span data-ref="slot" class="w-24 shrink-0 text-fg-2"></span>
+    <span data-ref="path" class="min-w-0 flex-1 truncate font-mono text-xs text-fg-3"></span>
+    <span data-ref="state" class="flex items-center gap-1.5 text-fg-3 group-data-[tone=ok]:text-ok group-data-[tone=bad]:text-critical group-data-[tone=warn]:text-caution">
+      <span class="ico hidden text-sm group-data-[tone=ok]:inline-block">&#xE930;</span>
+      <span data-ref="text"></span>
+    </span>
+    <span data-ref="dirty" class="ico hidden text-caution">&#xE7BA;</span>
+    <button data-ref="browse" class="btn-flat h-8 px-2"><span class="ico">&#xE8B7;</span></button>
+  </div>
+</template>
+
+<!-- notification -->
+<!-- one platform under the support bar: name, sum, thin bar -->
+<template id="tpl-support-source">
+  <div class="min-w-0">
+    <div class="flex items-baseline justify-between gap-2 text-xs"><span data-ref="name" class="truncate text-fg-2"></span><span data-ref="sum" class="font-mono text-fg"></span></div>
+    <div class="mt-0.5 h-1 overflow-hidden rounded-full bg-black/40"><div data-ref="fill" class="h-full rounded-full bg-patron/75 transition-[width] duration-200 ease-decelerate"></div></div>
+  </div>
+</template>
+
+<template id="tpl-toast">
+  <div class="bar enter-side group pointer-events-auto shadow-xl shadow-black/50" data-tone="info">
+    <span class="ico mt-0.5 text-ok group-data-[tone=critical]:hidden">&#xE930;</span>
+    <span class="ico mt-0.5 hidden text-critical group-data-[tone=critical]:inline-block">&#xEA39;</span>
+    <span class="min-w-0 flex-1" data-ref="text"></span>
+    <button data-ref="action" class="btn-flat -my-1 hidden shrink-0"></button>
+  </div>
+</template>
+
+<template id="tpl-log">
+  <div class="text-fg-2 data-[tone=warn]:text-caution data-[tone=error]:text-critical data-[tone=relay]:text-fg-3">
+    <span data-ref="time" class="text-fg-4"></span> <span data-ref="scope" class="text-fg-3"></span> <span data-ref="text"></span>
+  </div>
+</template>
+</body>
+</html>

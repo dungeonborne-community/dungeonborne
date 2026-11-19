@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dungeonborne Dev</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">Dungeonborne <b>Dev</b> <span id="ver" class="muted"></span></div>
+  <div class="run">
+    <select id="profileSel" title="Profile"></select>
+    <button id="runBtn" class="primary" title="backend → server (if any) → clients">▶ Run profile</button>
+    <button id="cancelFlowBtn" class="ghost" title="Stop the scenario (whatever is already running keeps running)">Abort</button>
+    <button id="stopBtn" class="danger">■ Stop backend</button>
+  </div>
+  <div class="chips" id="chips"></div>
+</header>
+<div id="flow" class="flow"></div>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="backend" class="on">Backend</button>
+  <button data-tab="game">Game</button>
+  <button data-tab="host">Host Game</button>
+  <button data-tab="gm">GM</button>
+  <button data-tab="tools">Tools</button>
+  <button data-tab="settings">Settings</button>
+</nav>
+
+<main>
+  <!-- ======================================================================= backend -->
+  <section id="tab-backend" class="tab on">
+    <div class="grid2">
+      <div class="card">
+        <h3>Profile</h3>
+        <div class="form" id="profileForm">
+          <label>Name <input id="p_name"></label>
+          <div class="row">
+            <label class="chk"><input type="checkbox" id="p_rpc_dump"> RPC_DUMP=1</label>
+            <label class="chk"><input type="checkbox" id="p_pve_sniff"> PVE_SNIFF=127.0.0.1</label>
+            <label class="chk"><input type="checkbox" id="p_release"> --release</label>
+          </div>
+          <label>SERVER_TOML <input id="p_server_toml" list="tomlList" placeholder="(default: server.toml if present — otherwise no login)"></label>
+          <datalist id="tomlList"></datalist>
+          <label>DB_PATH <input id="p_db_path" list="dbList" placeholder="surreal_saves (main)"></label>
+          <datalist id="dbList"><option value="surreal_saves"><option value="probe/auth_test/db"></datalist>
+          <label>BIND_IP <input id="p_bind_ip" placeholder="127.0.0.1"></label>
+          <div class="sub">Clients (in order)</div>
+          <div class="row" id="p_clients"></div>
+          <label>Client mode
+            <select id="p_client_mode">
+              <option value="gui">game window (log in by hand)</option>
+              <option value="connect">-dbclient: logs in by itself and connects to 127.0.0.1:7777</option>
+            </select>
+          </label>
+          <div class="sub">Host Game</div>
+          <div class="row">
+            <label>Mode
+              <select id="p_host">
+                <option value="none">none</option>
+                <option value="listen">server (listen as dedicated)</option>
+                <option value="ds">server + native match (DS)</option>
+              </select>
+            </label>
+            <label>Server install <select id="p_host_install"></select></label>
+          </div>
+          <div class="row">
+            <label class="grow">Map <input id="p_host_map" placeholder="/TgfMaps/... (mod default)"></label>
+            <label class="chk"><input type="checkbox" id="p_host_observer"> observer</label>
+            <label class="chk"><input type="checkbox" id="p_host_window"> server window</label>
+          </div>
+          <div class="cmdline"><code id="p_cmdline"></code> <button class="ghost sm" id="copyCmd">copy</button></div>
+          <div class="row">
+            <button id="saveProfile" class="primary">Save profile</button>
+            <button id="dupProfile" class="ghost">Duplicate</button>
+            <button id="delProfile" class="danger">Delete</button>
+            <button id="startBackendOnly" class="ghost">Backend only</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Ports <button class="ghost sm" id="portsBtn">check</button></h3>
+        <div id="lockInfo" class="muted"></div>
+        <table class="ports"><thead><tr><th>port</th><th>for</th><th>held by</th></tr></thead><tbody id="portsBody"></tbody></table>
+      </div>
+    </div>
+    <div class="card logcard">
+      <div class="logbar">
+        <div class="filters" id="logFilters"></div>
+        <input id="logSearch" placeholder="search…">
+        <label class="chk"><input type="checkbox" id="logErrOnly"> stderr</label>
+        <label class="chk"><input type="checkbox" id="logAuto" checked> autoscroll</label>
+        <button class="ghost sm" id="logClear">clear</button>
+        <span class="muted" id="logCount"></span>
+      </div>
+      <div id="log" class="log"></div>
+    </div>
+  </section>
+
+  <!-- ======================================================================= game -->
+  <section id="tab-game" class="tab">
+    <div class="card">
+      <h3>Installs</h3>
+      <p class="muted" id="elevNote"></p>
+      <table class="installs"><thead><tr><th>#</th><th>path</th><th>state</th><th></th></tr></thead><tbody id="installsBody"></tbody></table>
+      <div class="row">
+        <label>Launch mode
+          <select id="g_mode">
+            <option value="gui">game window</option>
+            <option value="connect">-dbclient → 127.0.0.1:7777</option>
+          </select>
+        </label>
+        <button id="killMutexBtn" class="ghost">Kill mutexes</button>
+        <button id="listMutexBtn" class="ghost">List mutexes (DbTools)</button>
+        <button class="ghost" data-ctl="dbclient:quit">quit to client (-dbclient)</button>
+        <button class="ghost" data-ctl="dbclient:probe">probe to client</button>
+      </div>
+      <pre id="gameOut" class="out"></pre>
+    </div>
+  </section>
+
+  <!-- ======================================================================= host -->
+  <section id="tab-host" class="tab">
+    <div class="grid2">
+      <div class="card">
+        <h3>Game server</h3>
+        <p class="muted" data-i18n-html="host_intro">Headless game instance with the DungeonborneRuServer mod (<code>-dbserver</code>), like <code>dbtest\run.ps1</code> /
+          <code>play.ps1</code>: status — <code>dbtools\run\dbserver-status.json</code>, commands — <code>dbserver-control.txt</code>.
+          DS mode: clients press the game's native match button (<code>match-mode.txt = native</code>), the backend sends them to the
+          server by itself (<code>DS_POOL</code> defaults to <code>127.0.0.1:7777@*</code>, docs/DS_PIPELINE.md).</p>
+        <div class="row">
+          <label>Install <select id="h_install"></select></label>
+          <label class="grow">Map <input id="h_map" placeholder="/TgfMaps/... (mod default)"></label>
+        </div>
+        <div class="row">
+          <label class="chk"><input type="checkbox" id="h_observer" checked> observer</label>
+          <label class="chk"><input type="checkbox" id="h_window"> window</label>
+          <label class="chk"><input type="checkbox" id="h_probe"> -dbprobe</label>
+          <label>DSA <input id="h_dsa" placeholder="ip:port (DS SDK experiment)" size="16"></label>
+        </div>
+        <div class="row">
+          <button id="hostStart" class="primary">Start server</button>
+          <button class="danger" data-ctl="dbserver:quit" title="Writes quit to dbserver-control.txt (the backend does not pass quit)">quit</button>
+          <button id="mmNative" class="ghost">match-mode = native</button>
+          <button id="mmRestore" class="ghost">Restore match-mode</button>
+        </div>
+        <div class="kv" id="hostStatus"></div>
+      </div>
+      <div class="card">
+        <h3>Server commands via the backend <span id="hcState" class="tag"></span></h3>
+        <p class="muted" data-i18n-html="hc_intro">dev-app → backend (<code>POST /admin/v1/host/command</code>) → server; the mod runs it through the game's native
+          <code>UTgfCheatComponent</code> and answers in <code>dbserver-command-result.json</code>. The server must be in phase
+          <code>ready</code>. The backend waits up to 10 s for the mod's answer.</p>
+        <div class="row">
+          <button class="primary" data-hc="portal">Portal in front of players</button>
+          <button class="primary" data-hc="exits">Open all exits</button>
+          <button class="ghost" data-hc="probe">probe</button>
+        </div>
+        <div class="row">
+          <select id="hcPlayer" class="grow"><option value="">— online player —</option></select>
+          <button class="ghost sm" id="hcPlayersBtn">refresh</button>
+          <button class="primary" id="hcPortalOne">Portal in front of player…</button>
+        </div>
+        <div class="kv" id="hcLast"></div>
+        <pre id="hcOut" class="out"></pre>
+      </div>
+      <div class="card">
+        <h3>ds-agent (backend :9091) <button class="ghost sm" id="agentsBtn">refresh</button></h3>
+        <p class="muted" data-i18n-html="agents_intro">Read-only: <code>GET /ds/agents</code>. dev-app does not register its own ds-agent — an agent that does not poll
+          <code>/ds/next</code> would hold the match until the fallback mode.</p>
+        <pre id="agentsOut" class="out"></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================= gm -->
+  <section id="tab-gm" class="tab">
+    <div class="grid2">
+      <div class="card">
+        <h3>Admin API <span id="adminState" class="tag"></span></h3>
+        <div class="row">
+          <button id="mockBtn" class="ghost">Mock</button>
+          <label class="chk"><input type="checkbox" id="mockRelay"> mock with require = relay</label>
+          <button id="mockStopBtn" class="ghost">Stop mock</button>
+        </div>
+        <div class="row">
+          <button id="loginBtn" class="ghost">Log in (relay)</button>
+          <button id="logoutBtn" class="ghost">Log out</button>
+          <input id="tokenIn" type="password" placeholder="or paste a Bearer token" class="grow">
+          <button id="tokenBtn" class="ghost sm">set</button>
+        </div>
+        <div id="loginInfo" class="muted"></div>
+        <h3>Online <button class="ghost sm" id="playersBtn">refresh</button> <label class="chk"><input type="checkbox" id="playersAuto" checked> every 5 s</label></h3>
+        <table class="players"><thead><tr><th>nick</th><th>open_id</th><th>user_id</th><th>roles</th><th>online</th></tr></thead><tbody id="playersBody"></tbody></table>
+      </div>
+      <div class="card">
+        <h3>GM console — <span id="gmTarget" class="muted">no player selected</span></h3>
+        <div class="row quick" id="gmQuick">
+          <button class="ghost sm" data-gm="help">help</button>
+          <button class="ghost sm" data-gm="info">info</button>
+          <button class="ghost sm" data-gm="gold 1000">gold 1000</button>
+          <button class="ghost sm" data-gm="gold 100000">gold 100000</button>
+          <button class="ghost sm" data-fill="coin ">coin…</button>
+          <button class="ghost sm" data-fill="item ">item…</button>
+          <button class="ghost sm" data-fill="facade ">facade…</button>
+          <button class="ghost sm" data-fill="ban ">ban…</button>
+          <button class="ghost sm" data-fill="unban ">unban…</button>
+        </div>
+        <form id="gmForm" class="row"><input id="gmCmd" class="grow" placeholder="command, e.g. item 100101 2 (↑/↓ — history)" autocomplete="off"><button class="primary">Run</button></form>
+        <div id="gmOut" class="log gm"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================================= tools -->
+  <section id="tab-tools" class="tab">
+    <div class="card">
+      <h3 data-i18n-html="tools_title">backups tools (<code>python -I tools/…</code>)</h3>
+      <div class="tools">
+        <div class="row"><button class="primary" data-tool="compare_heads">compare_heads</button><input class="grow" id="arg_compare_heads" placeholder="--since 05:30 --tags PVE,OUR"></div>
+        <div class="row"><button class="primary" data-tool="probe_timeline">probe_timeline</button><input class="grow" id="arg_probe_timeline" placeholder="--summary | --grep mail | --kinds ERR,EVT,S2C | --all"></div>
+        <div class="row"><button class="primary" data-tool="auth_e2e">auth_e2e</button><input class="grow" id="arg_auth_e2e" placeholder="--web http://127.0.0.1:8090 (backend with probe/auth_test/server.toml)"></div>
+      </div>
+      <div class="row">
+        <button id="toolStop" class="danger">Stop</button>
+        <button class="ghost" data-open="our_jsonl">rpc_dump/OUR.jsonl</button>
+        <button class="ghost" data-open="rpc_dump">rpc_dump folder</button>
+        <button class="ghost" data-open="probe_logs">probe/logs</button>
+        <button class="ghost" data-open="dbtools_logs">dbtools/logs (UE)</button>
+        <button class="ghost" data-open="dbtools_run">dbtools/run</button>
+        <button class="ghost" data-open="backups">backups</button>
+      </div>
+      <div id="toolOut" class="log"></div>
+    </div>
+  </section>
+
+  <!-- ======================================================================= settings -->
+  <section id="tab-settings" class="tab">
+    <div class="card form">
+      <h3>Paths and addresses</h3>
+      <label>backups (cargo run, tools) <input id="s_backups_dir"></label>
+      <label>dbtools (request.json, run\, logs\) <input id="s_dbtools_dir"></label>
+      <label>Install 1 <input id="s_install0"></label>
+      <label>Install 2 <input id="s_install1"></label>
+      <label>Install 3 (optional) <input id="s_install2" placeholder="C:\Games\Dungeonborne"></label>
+      <label>Admin API <input id="s_admin_url"></label>
+      <label>Launcher web API (relay login) <input id="s_web_url"></label>
+      <label>ds-agent HTTP <input id="s_ds_agent_url"></label>
+      <label>python <input id="s_python"></label>
+      <div class="row"><button id="saveSettings" class="primary">Save</button><button class="ghost" data-open="settings">settings folder</button></div>
+      <h3>Language / Язык</h3>
+      <label>UI <select id="uiLang"><option value="en">English</option><option value="ru">Русский</option></select></label>
+    </div>
+  </section>
+</main>
+<div id="toast" class="toast"></div>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

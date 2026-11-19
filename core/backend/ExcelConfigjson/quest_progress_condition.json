@@ -1,0 +1,587 @@
+[
+  {
+    "id": 101001,
+    "value": {
+      "battle_which_role_type": 400001
+    }
+  },
+  {
+    "id": 101002,
+    "value": {
+      "battle_which_role_type": 400002
+    }
+  },
+  {
+    "id": 102001,
+    "value": {
+      "battle_which_level_type": "2001"
+    }
+  },
+  {
+    "id": 102002,
+    "value": {
+      "battle_which_level_type": "2002"
+    }
+  },
+  {
+    "id": 103001,
+    "value": {
+      "battle_which_level_id": "40003009"
+    }
+  },
+  {
+    "id": 103002,
+    "value": {
+      "battle_which_level_id": "40003015"
+    }
+  },
+  {
+    "id": 103003,
+    "value": {
+      "battle_which_level_id": "40003016"
+    }
+  },
+  {
+    "id": 103004,
+    "value": {
+      "battle_which_level_id": "40003017"
+    }
+  },
+  {
+    "id": 103005,
+    "value": {
+      "battle_which_level_id": "40003018"
+    }
+  },
+  {
+    "id": 103007,
+    "value": {
+      "battle_which_level_id": "50000003"
+    }
+  },
+  {
+    "id": 103008,
+    "value": {
+      "battle_which_level_id": "50000006"
+    }
+  },
+  {
+    "id": 103009,
+    "value": {
+      "battle_which_level_id": "40003019"
+    }
+  },
+  {
+    "id": 103010,
+    "value": {
+      "battle_which_level_id": "40003020"
+    }
+  },
+  {
+    "id": 104001,
+    "value": {
+      "battle_which_scense_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+    }
+  },
+  {
+    "id": 104002,
+    "value": {
+      "battle_which_scense_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+    }
+  },
+  {
+    "id": 104003,
+    "value": {
+      "battle_which_scense_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO_PURPLE_DOOR"
+    }
+  },
+  {
+    "id": 105001,
+    "value": {
+      "battle_is_in_team": true
+    }
+  },
+  {
+    "id": 106001,
+    "value": {
+      "battle_game_over_type": "EN_DS_PLAYER_ACTOR_STATUS_TYPE_ESCAPE"
+    }
+  },
+  {
+    "id": 106002,
+    "value": {
+      "battle_game_over_type": "EN_DS_PLAYER_ACTOR_STATUS_TYPE_DEAD"
+    }
+  },
+  {
+    "id": 107001,
+    "value": {
+      "battle_scene_tag": "EN_BATTLE_GAMEPLAY_PLAYER_SCENE_TAG_DEFAULT"
+    }
+  },
+  {
+    "id": 107002,
+    "value": {
+      "battle_scene_tag": "EN_BATTLE_GAMEPLAY_PLAYER_SCENE_TAG_SHADOW"
+    }
+  },
+  {
+    "id": 108001,
+    "value": {
+      "battle_for_ac_type": "EN_ACTIVITY_CENTER_IMMACULATE_TRIAL"
+    }
+  },
+  {
+    "id": 109001,
+    "value": {
+      "battle_which_one_level_id": {
+        "values": [
+          "50000003",
+          "50000006"
+        ]
+      }
+    }
+  },
+  {
+    "id": 109002,
+    "value": {
+      "battle_which_one_level_id": {
+        "values": [
+          "40003015",
+          "40003017",
+          "40003019"
+        ]
+      }
+    }
+  },
+  {
+    "id": 109003,
+    "value": {
+      "battle_which_one_level_id": {
+        "values": [
+          "40003016",
+          "40003018",
+          "40003020"
+        ]
+      }
+    }
+  },
+  {
+    "id": 109004,
+    "value": {
+      "battle_which_one_level_id": {
+        "values": [
+          "40003015",
+          "40003016"
+        ]
+      }
+    }
+  },
+  {
+    "id": 109005,
+    "value": {
+      "battle_which_one_level_id": {
+        "values": [
+          "40003017",
+          "40003018"
+        ]
+      }
+    }
+  },
+  {
+    "id": 109006,
+    "value": {
+      "battle_which_one_level_id": {
+        "values": [
+          "40003019",
+          "40003020"
+        ]
+      }
+    }
+  },
+  {
+    "id": 112001,
+    "value": {
+      "player_kill_actor_not_lt": 4
+    }
+  },
+  {
+    "id": 113001,
+    "value": {
+      "player_kill_lt": 1
+    }
+  },
+  {
+    "id": 114001,
+    "value": {
+      "player_kill_not_lt": 15
+    }
+  },
+  {
+    "id": 115001,
+    "value": {
+      "player_got_damage_lt": 1
+    }
+  },
+  {
+    "id": 123001,
+    "value": {
+      "player_caused_damage_percent_not_lt": 50
+    }
+  },
+  {
+    "id": 124001,
+    "value": {
+      "player_caused_heal_percent_not_lt": 35
+    }
+  },
+  {
+    "id": 125001,
+    "value": {
+      "player_kill_actor_each_not_lt": 1
+    }
+  },
+  {
+    "id": 126001,
+    "value": {
+      "player_death_each_lt": 1
+    }
+  },
+  {
+    "id": 127001,
+    "value": {
+      "player_match_point": true
+    }
+  },
+  {
+    "id": 127002,
+    "value": {
+      "player_match_point": false
+    }
+  },
+  {
+    "id": 128001,
+    "value": {
+      "player_rival_win_qty_lt": 1
+    }
+  },
+  {
+    "id": 201001,
+    "value": {
+      "role_which_career": "EN_ROLE_CAREER_SWORDMASTER"
+    }
+  },
+  {
+    "id": 201002,
+    "value": {
+      "role_which_career": "EN_ROLE_CAREER_FIGHTER"
+    }
+  },
+  {
+    "id": 201003,
+    "value": {
+      "role_which_career": "EN_ROLE_CAREER_ROGUE"
+    }
+  },
+  {
+    "id": 201004,
+    "value": {
+      "role_which_career": "EN_ROLE_CAREER_PRIEST"
+    }
+  },
+  {
+    "id": 201005,
+    "value": {
+      "role_which_career": "EN_ROLE_CAREER_WIZARD"
+    }
+  },
+  {
+    "id": 201006,
+    "value": {
+      "role_which_career": "EN_ROLE_CAREER_DEATHKNIGHT"
+    }
+  },
+  {
+    "id": 201007,
+    "value": {
+      "role_which_career": "EN_ROLE_CAREER_LICH"
+    }
+  },
+  {
+    "id": 201008,
+    "value": {
+      "role_which_career": "EN_ROLE_CAREER_DRUID_PANTHER"
+    }
+  },
+  {
+    "id": 203001,
+    "value": {
+      "role_which_race": "EN_ROLE_RACE_HUMAN"
+    }
+  },
+  {
+    "id": 203002,
+    "value": {
+      "role_which_race": "EN_ROLE_RACE_NIGHT_ELF"
+    }
+  },
+  {
+    "id": 203003,
+    "value": {
+      "role_which_race": "EN_ROLE_RACE_UNDEAD"
+    }
+  },
+  {
+    "id": 204001,
+    "value": {
+      "role_history_max_level_less": "8"
+    }
+  },
+  {
+    "id": 205001,
+    "value": {
+      "role_level": "10"
+    }
+  },
+  {
+    "id": 205002,
+    "value": {
+      "role_level": "20"
+    }
+  },
+  {
+    "id": 206001,
+    "value": {
+      "role_created_time_gt_quest": "1"
+    }
+  },
+  {
+    "id": 207001,
+    "value": {
+      "role_which_force": "EN_FORCE_TYPE_ADVENTURER"
+    }
+  },
+  {
+    "id": 207002,
+    "value": {
+      "role_which_force": "EN_FORCE_TYPE_MITHRIL_FORCE"
+    }
+  },
+  {
+    "id": 210001,
+    "value": {
+      "item_chg_main_type": "EN_ICMT_TRADE"
+    }
+  },
+  {
+    "id": 210002,
+    "value": {
+      "item_chg_main_type": "EN_ICMT_CRAFTING"
+    }
+  },
+  {
+    "id": 210003,
+    "value": {
+      "item_chg_main_type": "EN_ICMT_BATTLE_BRING_OUT"
+    }
+  },
+  {
+    "id": 211001,
+    "value": {
+      "item_chg_sub_type": {
+        "values": [
+          "EN_ICST_GEAR_SOUL_BOUND"
+        ]
+      }
+    }
+  },
+  {
+    "id": 211002,
+    "value": {
+      "item_chg_sub_type": {
+        "values": [
+          "EN_ICST_GEAR_HEIRLOOM_INST"
+        ]
+      }
+    }
+  },
+  {
+    "id": 211003,
+    "value": {
+      "item_chg_sub_type": {
+        "values": [
+          "EN_ICST_GEAR_DISMANTLE"
+        ]
+      }
+    }
+  },
+  {
+    "id": 211004,
+    "value": {
+      "item_chg_sub_type": {
+        "values": [
+          "EN_ICST_GEAR_DISMANTLE_COST"
+        ]
+      }
+    }
+  },
+  {
+    "id": 211005,
+    "value": {
+      "item_chg_sub_type": {
+        "values": [
+          "EN_ICST_GEAR_DISMANTLE_REWARD"
+        ]
+      }
+    }
+  },
+  {
+    "id": 212001,
+    "value": {
+      "item_raity": {
+        "values": [
+          "EN_ITEM_RARITY_EPIC"
+        ]
+      }
+    }
+  },
+  {
+    "id": 212003,
+    "value": {
+      "item_raity": {
+        "values": [
+          "EN_ITEM_RARITY_UNCOMMON"
+        ]
+      }
+    }
+  },
+  {
+    "id": 212004,
+    "value": {
+      "item_raity": {
+        "values": [
+          "EN_ITEM_RARITY_ENHANCED"
+        ]
+      }
+    }
+  },
+  {
+    "id": 212005,
+    "value": {
+      "item_raity": {
+        "values": [
+          "EN_ITEM_RARITY_LEGENDARY"
+        ]
+      }
+    }
+  },
+  {
+    "id": 212006,
+    "value": {
+      "item_raity": {
+        "values": [
+          "EN_ITEM_RARITY_UNIQUE"
+        ]
+      }
+    }
+  },
+  {
+    "id": 212007,
+    "value": {
+      "item_raity": {
+        "values": [
+          "EN_ITEM_RARITY_EPIC",
+          "EN_ITEM_RARITY_LEGENDARY",
+          "EN_ITEM_RARITY_UNIQUE"
+        ]
+      }
+    }
+  },
+  {
+    "id": 212008,
+    "value": {
+      "item_raity": {
+        "values": [
+          "EN_ITEM_RARITY_UNCOMMON",
+          "EN_ITEM_RARITY_ENHANCED",
+          "EN_ITEM_RARITY_EPIC",
+          "EN_ITEM_RARITY_EXCEPTIONAL",
+          "EN_ITEM_RARITY_LEGENDARY",
+          "EN_ITEM_RARITY_UNIQUE"
+        ]
+      }
+    }
+  },
+  {
+    "id": 213001,
+    "value": {
+      "item_major_type": "EN_ITEM_MAJOR_TYPE_CRAFTS"
+    }
+  },
+  {
+    "id": 213002,
+    "value": {
+      "item_major_type": "EN_ITEM_MAJOR_TYPE_EQUIPMENT"
+    }
+  },
+  {
+    "id": 214001,
+    "value": {
+      "item_chg_channel": 101
+    }
+  },
+  {
+    "id": 214002,
+    "value": {
+      "item_chg_channel": 102
+    }
+  },
+  {
+    "id": 215001,
+    "value": {
+      "item_gem_shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    }
+  },
+  {
+    "id": 215002,
+    "value": {
+      "item_gem_shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    }
+  },
+  {
+    "id": 215003,
+    "value": {
+      "item_gem_shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    }
+  },
+  {
+    "id": 301001,
+    "value": {
+      "total_quest_worth_less_than": "15000"
+    }
+  },
+  {
+    "id": 302001,
+    "value": {
+      "total_coin_less_than": {
+        "coin_type_id": 1001,
+        "count": "15000",
+        "limit_option": {
+          "season": {}
+        }
+      }
+    }
+  },
+  {
+    "id": 303001,
+    "value": {
+      "total_coin_not_lt": {
+        "coin_type_id": 1001,
+        "count": "998",
+        "limit_option": {
+          "season": {}
+        }
+      }
+    }
+  }
+]

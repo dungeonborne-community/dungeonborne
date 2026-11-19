@@ -1,0 +1,36 @@
+[package]
+name = "ws-core"
+edition.workspace = true
+version.workspace = true
+publish.workspace = true
+
+[dependencies]
+toml.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+regex.workspace = true
+keepass = { version = "0.17", features = ["save_kdbx4"] }
+rpassword = "7"
+# ws stand: the stand's own TLS certificate for the local login, made on each machine (src/stand.rs). Optional (feature
+# stand-tls, on in the ws binary): ring compiles C, and xtask — built by bootstrap.ps1 before LLVM is installed in a
+# build without Visual Studio — must not need a C compiler (19.11, found by a clean run)
+rcgen = { version = "0.14", default-features = false, features = ["crypto", "pem", "ring"], optional = true }
+# RSA 2048 like the production certificate: the client's login SDK does not take an ECDSA one (18.11, stand test);
+# ring cannot generate RSA keys, rsa does, rcgen signs with it
+rsa = { version = "0.9", optional = true }
+rand = { version = "0.8", optional = true }
+
+[features]
+stand-tls = ["dep:rcgen", "dep:rsa", "dep:rand"]
+
+# the vault session (src/vault.rs): a named pipe for the current user only, and who is on its other end
+[target.'cfg(windows)'.dependencies]
+windows-sys = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Security_Authorization",
+    "Win32_Storage_FileSystem",
+    "Win32_System_IO",
+    "Win32_System_Pipes",
+    "Win32_System_Threading",
+] }

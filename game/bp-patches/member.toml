@@ -1,0 +1,8 @@
+[member]
+name = "bp-patches"
+kind = "mod"
+visibility = "team"
+lang = "python+lua"
+version = "0"
+depends_on = []
+description = "Blueprint patches (retoc + kismet-analyzer from home/tools)"

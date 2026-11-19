@@ -1,0 +1,683 @@
+=== CHEAT SHEET OF REAL DATA FROM THE DB (JSON) ===
+
+--- Structure of the sample_state.json file ---
+affix_gen: Number (example: 2)
+hall_role_guid: Number (example: 1000001)
+heirloom: {
+    gems: [
+    ]
+    inlaid: {
+        21014020: [
+            gem: Number (example: 240192000)
+            loc: String (example: "EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP")
+            slot: Number (example: 1)
+        ]
+    }
+    unlocked: [
+    ]
+}
+inventory: {
+    coins_data: [
+        coin_type_id: Number (example: 1001)
+        count: String (example: "972200")
+    ]
+    inventory_pages: [
+        column_size: Number (example: 10)
+        item_group: [
+            element: [
+                basic: {
+                    count: Number (example: 1)
+                    guid: String (example: "100000070")
+                    position: {
+                        type: Number (example: 1)
+                        y: Number (example: 2)
+                    }
+                    type_id: Number (example: 189010001)
+                }
+                data: {
+                    affix_data: [
+                        affix_type: String (example: "EN_BATTLE_AFFIX_TYPE_BASIC")
+                        attribute_random: {
+                            1101: {
+                                random_data: [
+                                    random_level: Number (example: 6472)
+                                ]
+                            }
+                        }
+                        location: String (example: "EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_HOLD")
+                    ]
+                }
+            ]
+        ]
+        page_id: String (example: "0")
+        row_size: Number (example: 17)
+    ]
+}
+level_select: {
+    level_id: Number (example: 40003020)
+    level_type: Number (example: 2001)
+    region: String (example: "de")
+}
+market: {
+    sold: [
+        item_data: {
+            basic: {
+                count: Number (example: 1)
+                guid: String (example: "100000007")
+                type_id: Number (example: 184050000)
+            }
+            data: {
+                affix_data: [
+                    affix_type: String (example: "EN_BATTLE_AFFIX_TYPE_MAJOR")
+                    attribute_random: {
+                        1103: {
+                            random_data: [
+                                affix_pool_value: Bool (example: true)
+                                group_index: Number (example: 1)
+                                random_level: Number (example: 5411)
+                            ]
+                        }
+                        2002: {
+                            random_data: [
+                                affix_pool_value: Bool (example: true)
+                                group_index: Number (example: 1)
+                                random_level: Number (example: 8678)
+                            ]
+                        }
+                    }
+                    location: String (example: "EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_EQUIP")
+                ]
+            }
+        }
+        last_sold_timepoint: String (example: "1792755996")
+        sold_version: String (example: "15")
+    ]
+    sold_version: Number (example: 24)
+    tabs: {
+        1009: {
+            data: {
+                available_products: [
+                    available_count: Number (example: 1)
+                    cost_options: [
+                        cost_items: [
+                            cost_price: Number (example: 27000)
+                            cost_type: Number (example: 1001)
+                            origin_price: Number (example: 27000)
+                        ]
+                    ]
+                    identified: Bool (example: true)
+                    identified_items: [
+                        basic: {
+                            count: Number (example: 1)
+                            guid: String (example: "100000019")
+                            type_id: Number (example: 181014000)
+                        }
+                        data: {
+                            affix_data: [
+                                affix_type: Number (example: 5)
+                                attribute_random: {
+                                    1101: {
+                                        random_data: [
+                                            random_level: Number (example: 9724)
+                                        ]
+                                    }
+                                }
+                                location: Number (example: 3)
+                            ]
+                        }
+                    ]
+                    last_auto_refresh_reset_time: String (example: "1792713600")
+                    next_auto_refresh_reset_time: String (example: "1792800000")
+                    product_id: Number (example: 760061)
+                    total_available_count: Number (example: 1)
+                ]
+                last_auto_refresh_reset_time: String (example: "1792713600")
+                market_tab_id: Number (example: 1009)
+                next_auto_refresh_reset_time: String (example: "1792800000")
+            }
+            gen: Number (example: 4)
+            period: Number (example: 1266)
+        }
+        1010: {
+            data: {
+                available_products: [
+                    available_count: Number (example: 1)
+                    cost_options: [
+                        cost_items: [
+                            cost_price: Number (example: 1600)
+                            cost_type: Number (example: 1001)
+                            origin_price: Number (example: 1600)
+                        ]
+                    ]
+                    identified: Bool (example: true)
+                    identified_items: [
+                        basic: {
+                            count: Number (example: 1)
+                            guid: String (example: "100000049")
+                            type_id: Number (example: 183012000)
+                        }
+                        data: {
+                            affix_data: [
+                                affix_type: Number (example: 10)
+                                attribute_random: {
+                                    1105: {
+                                        random_data: [
+                                            affix_pool_value: Bool (example: true)
+                                            group_index: Number (example: 1)
+                                            random_level: Number (example: 7545)
+                                        ]
+                                    }
+                                    2002: {
+                                        random_data: [
+                                            affix_pool_value: Bool (example: true)
+                                            group_index: Number (example: 1)
+                                            random_level: Number (example: 8844)
+                                        ]
+                                    }
+                                }
+                                location: Number (example: 1)
+                            ]
+                        }
+                    ]
+                    last_auto_refresh_reset_time: String (example: "1792713600")
+                    next_auto_refresh_reset_time: String (example: "1792800000")
+                    product_id: Number (example: 751221)
+                    total_available_count: Number (example: 1)
+                ]
+                last_auto_refresh_reset_time: String (example: "1792713600")
+                market_tab_id: Number (example: 1010)
+                next_auto_refresh_reset_time: String (example: "1792800000")
+            }
+            gen: Number (example: 4)
+            period: Number (example: 1266)
+        }
+        1011: {
+            data: {
+                available_products: [
+                    available_count: Number (example: 1)
+                    cost_options: [
+                        cost_items: [
+                            cost_price: Number (example: 1440)
+                            cost_type: Number (example: 1001)
+                            origin_price: Number (example: 1440)
+                        ]
+                    ]
+                    identified: Bool (example: true)
+                    identified_items: [
+                        basic: {
+                            count: Number (example: 1)
+                            guid: String (example: "100000059")
+                            type_id: Number (example: 185012002)
+                        }
+                        data: {
+                            affix_data: [
+                                affix_type: Number (example: 10)
+                                attribute_random: {
+                                    1003: {
+                                        random_data: [
+                                            affix_pool_value: Bool (example: true)
+                                            group_index: Number (example: 1)
+                                            random_level: Number (example: 3717)
+                                        ]
+                                    }
+                                    2008: {
+                                        random_data: [
+                                            affix_pool_value: Bool (example: true)
+                                            group_index: Number (example: 1)
+                                            random_level: Number (example: 620)
+                                        ]
+                                    }
+                                }
+                                location: Number (example: 1)
+                            ]
+                        }
+                    ]
+                    last_auto_refresh_reset_time: String (example: "1792713600")
+                    next_auto_refresh_reset_time: String (example: "1792800000")
+                    product_id: Number (example: 751321)
+                    total_available_count: Number (example: 1)
+                ]
+                last_auto_refresh_reset_time: String (example: "1792713600")
+                market_tab_id: Number (example: 1011)
+                next_auto_refresh_reset_time: String (example: "1792800000")
+            }
+            gen: Number (example: 4)
+            period: Number (example: 1266)
+        }
+        1014: {
+            data: {
+                available_products: [
+                    available_count: Number (example: 999)
+                    cost_options: [
+                        cost_items: [
+                            cost_price: Number (example: 1600)
+                            cost_type: Number (example: 1001)
+                            origin_price: Number (example: 1600)
+                        ]
+                    ]
+                    last_auto_refresh_reset_time: String (example: "1792713600")
+                    next_auto_refresh_reset_time: String (example: "1792800000")
+                    product_id: Number (example: 751419)
+                    total_available_count: Number (example: 999)
+                ]
+                last_auto_refresh_reset_time: String (example: "1792713600")
+                market_tab_id: Number (example: 1014)
+                next_auto_refresh_reset_time: String (example: "1792800000")
+            }
+            gen: Number (example: 4)
+            period: Number (example: 1266)
+        }
+        1015: {
+            data: {
+                available_products: [
+                    available_count: Number (example: 999)
+                    cost_options: [
+                        cost_items: [
+                            cost_price: Number (example: 10800)
+                            cost_type: Number (example: 1001)
+                            origin_price: Number (example: 10800)
+                        ]
+                    ]
+                    last_auto_refresh_reset_time: String (example: "1792713600")
+                    next_auto_refresh_reset_time: String (example: "1792800000")
+                    product_id: Number (example: 751522)
+                    total_available_count: Number (example: 999)
+                ]
+                last_auto_refresh_reset_time: String (example: "1792713600")
+                market_tab_id: Number (example: 1015)
+                next_auto_refresh_reset_time: String (example: "1792800000")
+            }
+            gen: Number (example: 4)
+            period: Number (example: 1266)
+        }
+        1016: {
+            data: {
+                available_products: [
+                    available_count: Number (example: 100)
+                    cost_options: [
+                        cost_items: [
+                            cost_price: Number (example: 500)
+                            cost_type: Number (example: 1001)
+                            origin_price: Number (example: 500)
+                        ]
+                    ]
+                    last_auto_refresh_reset_time: String (example: "1792713600")
+                    next_auto_refresh_reset_time: String (example: "1792800000")
+                    product_id: Number (example: 705001)
+                    total_available_count: Number (example: 100)
+                ]
+                last_auto_refresh_reset_time: String (example: "1792713600")
+                market_tab_id: Number (example: 1016)
+                next_auto_refresh_reset_time: String (example: "1792800000")
+            }
+            gen: Number (example: 4)
+            period: Number (example: 1266)
+        }
+        1017: {
+            data: {
+                available_products: [
+                    available_count: Number (example: 5)
+                    cost_options: [
+                        cost_items: [
+                            cost_price: Number (example: 20000)
+                            cost_type: Number (example: 1001)
+                            origin_price: Number (example: 20000)
+                        ]
+                    ]
+                    last_auto_refresh_reset_time: String (example: "1792713600")
+                    next_auto_refresh_reset_time: String (example: "1792800000")
+                    product_id: Number (example: 706001)
+                    total_available_count: Number (example: 5)
+                ]
+                last_auto_refresh_reset_time: String (example: "1792713600")
+                market_tab_id: Number (example: 1017)
+                next_auto_refresh_reset_time: String (example: "1792800000")
+            }
+            gen: Number (example: 4)
+            period: Number (example: 1266)
+        }
+        1019: {
+            data: {
+                available_products: [
+                    available_count: Number (example: 999)
+                    cost_options: [
+                        cost_items: [
+                            cost_price: Number (example: 7500)
+                            cost_type: Number (example: 1001)
+                            origin_price: Number (example: 7500)
+                        ]
+                    ]
+                    last_auto_refresh_reset_time: String (example: "1792756800")
+                    next_auto_refresh_reset_time: String (example: "1792760400")
+                    product_id: Number (example: 705013)
+                    total_available_count: Number (example: 999)
+                ]
+                last_auto_refresh_reset_time: String (example: "1792756800")
+                market_tab_id: Number (example: 1019)
+                next_auto_refresh_reset_time: String (example: "1792760400")
+            }
+            gen: Number (example: 4)
+            period: Number (example: 30396)
+        }
+        2000: {
+            data: {
+                available_products: [
+                    available_count: Number (example: 999)
+                    cost_options: [
+                        cost_items: [
+                            cost_price: Number (example: 30000)
+                            cost_type: Number (example: 1001)
+                            origin_price: Number (example: 30000)
+                        ]
+                    ]
+                    last_auto_refresh_reset_time: String (example: "0")
+                    next_auto_refresh_reset_time: String (example: "0")
+                    product_id: Number (example: 704016)
+                    total_available_count: Number (example: 999)
+                ]
+                last_auto_refresh_reset_time: String (example: "0")
+                market_tab_id: Number (example: 2000)
+                next_auto_refresh_reset_time: String (example: "0")
+            }
+            gen: Number (example: 4)
+            period: Number (example: 0)
+        }
+    }
+}
+next_guid: Number (example: 1000002)
+next_item_guid: Number (example: 100000124)
+open_id: String (example: "76561198000000904")
+player_setting: {
+    data: {
+        113: {
+            mutable_value: {
+                repeated_value: [
+                ]
+            }
+        }
+        121: {
+            mutable_value: {
+                repeated_value: [
+                ]
+            }
+        }
+        125: {
+            mutable_value: {
+                repeated_value: [
+                ]
+            }
+        }
+        126: {
+            mutable_value: {
+                repeated_value: [
+                ]
+            }
+        }
+        127: {
+            mutable_value: {
+                repeated_value: [
+                ]
+            }
+        }
+        129: {
+            mutable_value: {
+                repeated_value: [
+                ]
+            }
+        }
+    }
+}
+quest: {
+    act: Number (example: 16518)
+    daily: [
+        idx: Number (example: 1)
+        quest: Number (example: 1651809)
+    ]
+    daily_at: Number (example: 1792755843)
+    daily_day: Number (example: 20749)
+    daily_idx: Number (example: 3)
+    dispatched: Number (example: 3)
+    event_id: Number (example: 1)
+    join: Number (example: 1792755843)
+    quests: {
+        1601000: {
+            created: Number (example: 1792755843)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651809: {
+            created: Number (example: 1792755843)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651812: {
+            created: Number (example: 1792755843)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651814: {
+            created: Number (example: 1792755843)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651818: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651819: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651820: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651821: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651822: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651823: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651824: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651825: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651826: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+        1651827: {
+            created: Number (example: 1792755843)
+            period: Number (example: 125)
+            status: Number (example: 1)
+            values: [
+            ]
+        }
+    }
+}
+raid_done: String (example: "6adb48b4bf76-11")
+roles: Null
+starter_given: [
+]
+user_id: Number (example: 10001)
+
+--- Structure of the sample_role.json file ---
+basic: {
+    create_index: String (example: "1")
+    create_timepoint: String (example: "1792755892")
+    meta: {
+        career: String (example: "EN_ROLE_CAREER_FIGHTER")
+        force: String (example: "EN_FORCE_TYPE_ADVENTURER")
+        gender: String (example: "EN_ROLE_GENDER_FEMALE")
+        race: String (example: "EN_ROLE_RACE_HUMAN")
+    }
+    role_guid: String (example: "1000001")
+    role_name: String (example: "1111111")
+    type_id: Number (example: 400002)
+}
+deploy_role: {
+    backpack: {
+        column_size: Number (example: 10)
+        items: [
+            basic: {
+                count: Number (example: 1)
+                guid: String (example: "100000090")
+                position: {
+                    guid: String (example: "1000001")
+                    type: String (example: "EN_ITEM_STORAGE_TYPE_BACKPACK")
+                    y: Number (example: 8)
+                }
+                type_id: Number (example: 181046000)
+            }
+            data: {
+                affix_data: [
+                    affix_type: String (example: "EN_BATTLE_AFFIX_TYPE_BASIC")
+                    attribute_random: {
+                        1101: {
+                            random_data: [
+                                random_level: Number (example: 4405)
+                            ]
+                        }
+                    }
+                    location: String (example: "EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_HOLD")
+                ]
+            }
+        ]
+        row_size: Number (example: 7)
+    }
+    basic: {
+        create_index: String (example: "1")
+        create_timepoint: String (example: "1792755892")
+        meta: {
+            career: String (example: "EN_ROLE_CAREER_FIGHTER")
+            force: String (example: "EN_FORCE_TYPE_ADVENTURER")
+            gender: String (example: "EN_ROLE_GENDER_FEMALE")
+            race: String (example: "EN_ROLE_RACE_HUMAN")
+        }
+        role_guid: String (example: "1000001")
+        role_name: String (example: "1111111")
+        type_id: Number (example: 400002)
+    }
+    dress_up: {
+        current_face_pinching: {
+            beard_color: Number (example: 1)
+            beard_type: Number (example: 1)
+            eye_color: Number (example: 8)
+            face_type: Number (example: 101)
+            hair_color: Number (example: 1)
+            hair_type: Number (example: 101)
+            makeup_color: Number (example: 1)
+            makeup_type: Number (example: 1)
+            scar_type: Number (example: 1)
+            skin_type: Number (example: 1)
+            tatoo_color: Number (example: 1)
+            tatoo_type: Number (example: 1)
+        }
+        dress_facade_info: {
+        }
+    }
+    exp: Number (example: 15)
+    history_role_max_level: Number (example: 2)
+    role_affix: {
+        attribute: {
+            1001: Number (example: 30)
+            1002: Number (example: 6)
+            1003: Number (example: 16)
+            1004: Number (example: 6)
+            1005: Number (example: 8)
+            1006: Number (example: 6)
+            1103: Number (example: 0)
+            1104: Number (example: 0.2)
+            1105: Number (example: 1)
+            1106: Number (example: 0.1)
+            1107: Number (example: 0)
+            2001: Number (example: 558)
+            2007: Number (example: 0.1)
+            2009: Number (example: 0.05)
+            2010: Number (example: 0.05)
+            2011: Number (example: 0.05)
+            2012: Number (example: 0.05)
+            2013: Number (example: 0.05)
+            3001: Number (example: 330)
+        }
+    }
+    role_level: Number (example: 2)
+    role_skill: {
+        role_active_skill: [
+            key_position: String (example: "EN_ROLE_SKILL_POSITION_Q")
+            skill_id: Number (example: 107001)
+        ]
+    }
+    small_backpack: {
+    }
+    wearing: {
+        items: [
+            basic: {
+                count: Number (example: 1)
+                guid: String (example: "100000098")
+                position: {
+                    guid: String (example: "1000001")
+                    type: String (example: "EN_ITEM_STORAGE_TYPE_ROLE_WEARING")
+                    x: Number (example: 1)
+                }
+                type_id: Number (example: 181025000)
+            }
+            data: {
+                affix_data: [
+                    affix_type: String (example: "EN_BATTLE_AFFIX_TYPE_BASIC")
+                    attribute_random: {
+                        1101: {
+                            random_data: [
+                                random_level: Number (example: 9455)
+                            ]
+                        }
+                    }
+                    location: String (example: "EN_BATTLE_AFFIX_EFFECTIVE_LOCATION_ROLE_HOLD")
+                ]
+            }
+        ]
+    }
+}
+last_use_timepoint: String (example: "1792755892")
+

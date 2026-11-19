@@ -1,0 +1,88 @@
+# Example server.toml (copy to server.toml next to the exe or set the path in env SERVER_TOML).
+# Without server.toml the server works as before: login without accounts, web API and relay off.
+
+[server]
+id = "ru.dungeonborne.main"
+name = "Dungeonborne RU"
+# description and motd — a string or languages: the launcher shows the text in its own language (src/text.rs, LAUNCHER_SPEC §15)
+description = { ru = "Свой гейммод, кооп-подземелья", en = "Our own game mode, co-op dungeons" }
+region = "eu-central"
+languages = ["ru", "en"]
+website = "https://example.org"
+contact = "discord.gg/xxxx"
+capacity = 64
+motd = ""
+
+[game]
+exe_sha256 = "62d509a00d984696e021fb5ddba9f87fd1b27c84f695877345ff5fe9401f58b3"
+label = "Dungeonborne Win64 final"
+
+# Launcher API and login pages; TLS outside — a reverse proxy with a public certificate
+[web]
+bind = "127.0.0.1:8090"
+public_url = "https://example.org"
+# sites the browser will hand GET /dbserver/status to (CORS); empty — the community site and its test stand, ["*"] — anyone
+# status_cors = ["https://www.example.org"]
+
+[auth]
+# none — identity from what the client claimed (local tests); relay — only through the launcher relay
+require = "relay"
+# providers in order, the first is the default; dev — for local tests only
+providers = ["discord"]
+session_ttl_days = 30
+# match access (match search, room start) — only with one of these roles; empty — everyone. gm/admin — always
+battle_roles = []        # e.g. ["tester"] and a Discord role → "tester" in [auth.discord.roles]
+# battle_denied_message = "…"   # refusal text for the player
+# login to the server (launcher, relay) — only with one of these roles; empty — everyone. gm/admin — always
+login_roles = []         # whitelist: ["whitelist"] and the Discord role "Whitelist" → "whitelist" in [auth.discord.roles]
+# login_denied_message = "…"
+
+[auth.discord]
+client_id = "000000000000000000"
+client_secret_env = "DISCORD_CLIENT_SECRET"
+guild_id = ""            # community server; empty — any Discord account
+require_guild = false
+invite_url = ""        # server invite: shown on a not_in_guild refusal
+banned_role = ""
+# watcher of live-session roles (ban, server membership, roles): bot token from env, check every recheck_secs;
+# no token — the watcher is off
+bot_token_env = "DISCORD_BOT_TOKEN"
+recheck_secs = 300
+[auth.discord.roles]     # Discord role id = our role
+# "111111111111111111" = "admin"
+# "222222222222222222" = "whitelist"   # Discord role "Whitelist" (Discord/server.yaml)
+
+# Launcher relay receiver. Do not expose the game ports (80/443/8085/6601-6604) in this case (bind_ip 127.0.0.1)
+[relay]
+bind = "0.0.0.0:7443"
+public_address = "relay.example.org"
+public_port = 7443
+cert = "relay_cert.pem"
+key = "relay_key.pem"
+upstream_ip = "127.0.0.1"
+# minimum launcher version: older — refused with launcher_outdated (empty — no check)
+min_client = ""
+# game without hosts (launcher 1.7.1+): the ru.rebuild-private mod points it at https://localhost and our own directory domain,
+# INTL login — via the open INTLConfig.ini; false — the launcher writes hosts lines, as before
+no_hosts = false
+
+# Client mods for the launcher (dbmod/1): zip packages and manifest_mods.json from launcher/tools/make_mods.py.
+# Served at <public_url>/mods/<file>; the list is re-read when manifest_mods.json changes (no restart).
+[mods]
+dir = "mods"
+# false — the launcher removes foreign paks and UE4SS mods for the duration of the game (everyone has the same set); true — as before
+allow_unlisted = true
+
+# Server changelog for the launcher tab (src/auth/notes.rs). First seasons/<SEASON>/patch_notes.toml of the active season,
+# if there is none — this file. If neither exists — the tab says "The server does not publish a changelog".
+# Files are re-read automatically, without a restart. Example — seasons/playtest/patch_notes.toml.
+[patch_notes]
+file = "patch_notes.toml"
+
+# Fundraising bar in the launcher: JSON with the month goal and links; empty — no support field in the manifest
+[support]
+url = ""
+
+# Launcher self-update: launcher.json + exe from launcher/tools/release.py sign (the launcher checks the signature).
+[launcher]
+dir = "launcher"

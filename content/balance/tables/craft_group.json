@@ -1,0 +1,44 @@
+{
+  "type": "tgf.config.ExcelCraftingGroup",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 2,
+    "hash_code": "sha256:85174bd5bdc4c5f6ffd812d674cf9be6286c5b96f9ee7946961faefae8c91289",
+    "data_source": [
+      {
+        "file": "16abdb17c1104c5ef920b8c22c532c622511c27cfb178f444e2648f6b1154491",
+        "sheet": "53f7cc014200e8fe14018e95ddf6341bb47cbf5b3d05001943a06200c4ce4202",
+        "count": 2
+      }
+    ]
+  },
+  "rows": [
+    {
+      "group_id": 1,
+      "recipes": [
+        101,
+        102,
+        103,
+        10000,
+        10001,
+        10002,
+        10003,
+        10004
+      ]
+    },
+    {
+      "group_id": 2,
+      "recipes": [
+        101,
+        102,
+        103,
+        10000,
+        10001,
+        10002,
+        10003,
+        10004
+      ]
+    }
+  ]
+}

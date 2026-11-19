@@ -1,0 +1,16 @@
+[member]
+name = "ue4ss"
+kind = "mod"
+visibility = "public"
+lang = "lua+c"
+version = "0"
+depends_on = []   # the catalog builds the mods itself (game/catalog depends_on game/ue4ss)
+description = "UE4SS mods (Mods/*) and dbnative (native/dbnative). Packages are built by cargo xtask mods from game/catalog"
+
+[notes]
+# dbnative.dll is not in git: xtask mods check compares the times of the dll and dbnative.c — after a clone set dbnative.c to the source
+# time or rebuild native/dbnative/build.bat.
+
+[known-absolute-paths]
+# The mod log folder is hardcoded in Lua (stand): a mod config is needed, not a path in the code.
+files = ["Mods/ClientProbe/Scripts/main.lua", "Mods/DungeonborneDruidProbe/Scripts/main.lua", "Mods/DungeonborneStatWatch/Scripts/main.lua"]

@@ -1,0 +1,15 @@
+# Game builds the workspace knows (docs/GAME_DATA.md, section 1). Used by `ws game`: it prints the exact Steam command
+# for the human, finds the finished download in Steam's folder (`ws game original steam`) and checks it against the
+# numbers here. Numbers of a public Steam depot — not secrets.
+#
+# The download needs your own Steam account that owns the game, so a human runs it once:
+#   steam://open/console  ->  download_depot <app> <depot> <manifest>
+# Steam puts it into <Steam>/steamapps/content/app_<app>/depot_<depot>.
+
+[[build]]
+id = "16716489"              # the last public build (the game is closed); prod and the stand run it
+app = "2448970"
+depot = "2448971"
+manifest = "4035623128766163436"
+files = 374
+bytes = 16982379624          # 17 GB

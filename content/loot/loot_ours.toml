@@ -1,0 +1,2090 @@
+# Шаблон лута. Правите этот файл, затем:
+#   cargo xtask loot show             — что в среднем выпадает из каждой группы (с учётом [rules])
+#   cargo xtask loot build [--deploy] — шаблон -> balance\loot*.json -> сервер + клиентский пак
+# Подробно — BALANCE.md, раздел «Лут».
+#
+# [groups.*]  группа источников с одинаковым лутом: sources — сундуки/монстры (имя BP из loot_source_map или id),
+#             slots — броски: каждый слот независимо выпадает с шансом chance (%), из пула pool — ОДИН предмет.
+#             Слот можно повторить — будет два броска. pools = [a, b] + pr = [70, 30] — выбор пула по весам.
+#             id слота можно не писать (новый слот получит id сам).
+#             maps = [10101, 10201] — на каких картах (map_detail.loot_map_id: 10101/10102/10103 — Склеп
+#             обычн./Classic/Hard, 10201/10202/10203 — Замок); без maps — карта 0, лут по умолчанию.
+#             loot_types = [0, 1, …] — варианты лута карты (у PVE 1–5 почти копии 0; 3/4 — с алтарями).
+# [pools.*]   пул: items — { id, w, cnt, level }. id — число или имя предмета («Золото»). w — вес внутри пула
+#             (относительный, при сборке приводится к сумме 30000). cnt — количество: число или список
+#             ([3, 5, 8] — равновероятно одно из), по умолчанию 1. Ключ пула: число (= random_id) или любое имя.
+# Категории для [rules]: gold weapon armor jewelry gem treasure potion throwable supply currency other;
+#   группы: equipment (weapon+armor+jewelry), consumable (potion+throwable+supply), all.
+#   Можно и по-русски: "золото", "сокровища"… (в кавычках).
+
+[rules]
+remove = []   # убрать предметы: ["equipment"] — вся экипировка; ["weapon", 100013] — оружие и предмет 100013
+chance = {}   # множитель шанса слота по составу его пула: { treasure = 2.0, gold = 1.5 } (не выше 100%)
+weight = {}   # множитель веса предметов внутри пулов: { treasure = 3.0 } — в смешанных пулах сокровища чаще
+count = {}    # множитель количества: { gold = 2.0 }
+
+[groups.g01]
+name = "BP_Barrel_01_C и ещё 61"
+sources = [
+  "BP_Barrel_01_C",  # 12
+  "BP_Box_two_01_C",  # 14
+  "BP_ClayPot_10_C",  # 16
+  "BP_ClayPot_11_C",  # 17
+  "BP_ClayPot_12_C",  # 18
+  "BP_ClayPot_13_C",  # 20
+  "BP_ClayPot_15_C",  # 22
+  "BP_ClayPot_1_C",  # 24
+  "BP_ClayPot_2_C",  # 25
+  "BP_ClayPot_3_C",  # 26
+  "BP_ClayPot_4_C",  # 27
+  "BP_ClayPot_5_C",  # 29
+  "BP_ClayPot_6_C",  # 30
+  "BP_ClayPot_8_C",  # 32
+  "BP_ClayPot_three_02_C",  # 34
+  "BP_Claypot_three_01_C",  # 35
+  "BP_Crate_01_C",  # 72
+  "BP_DestroyableBase_C",  # 73
+  "BP_DestructibleClayPot_03_C",  # 74
+  "BP_Destructible_Fridge_C",  # 75
+  "BP_Destructible_Wall_C",  # 76
+  "BP_PropsBarrel01_1_C",  # 79
+  "BP_PropsBox01_1_C",  # 81
+  "BP_Wood_deco_Box025_C",  # 183
+  "BP_WoodenCase_three_01_C",  # 184
+  "BP_WoodenCase_three_02_C",  # 185
+  "BP_WoodenCase_two_01_C",  # 186
+  "BP_WoodenVat_five_01_C",  # 187
+  "BP_WoodenVat_four_01_C",  # 188
+  "BP_vase_2_C",  # 189
+  "BP_Crate_A_01_C",  # 191
+  "BP_OpenCrate_01_C",  # 192
+  "BP_Pot_A_01_C",  # 193
+  "BP_Pot_B_01_C",  # 194
+  "BP_Pot_C_01_C",  # 195
+  "BP_Pot_D_01_C",  # 196
+  "BP_Pot_E_01_C",  # 197
+  "BP_Pot_F_01_C",  # 198
+  "BP_Barrel_01_1_C",  # 199
+  "BP_Barrel_01_4_C",  # 200
+  "BP_Barrel_01a_C",  # 201
+  "BP_Box01_1_C",  # 202
+  "BP_Box01_2_C",  # 203
+  "BP_wooden_fish_05_C",  # 204
+  "BP_Box01_2a_C",  # 209
+  "BP_Cave_Rock_C",  # 222
+  "BP_DA_Woodbox_2_C",  # 229
+  "BP_DA_Woodbox_01_C",  # 239
+  "BP_DA_Woodenvat_01_C",  # 256
+  "BP_DA_Woodenvat_02_C",  # 257
+  "BP_DA_Woodenvat_03_C",  # 258
+  "BP_DA_Woodenvat_04_C",  # 259
+  "BP_DA_Woodenvat_05_C",  # 260
+  "BP_DA_Woodenvat_06_C",  # 261
+  "BP_Box01_3_C",  # 262
+  "BP_BoxMerged_01_C",  # 263
+  "BP_BoxMerged_02_C",  # 264
+  "BP_DA_Woodbox_10_C",  # 269
+  "BP_DA_Woodbox_11_C",  # 270
+  "BP_DA_Woodbox_12_C",  # 271
+  "BP_DA_Damage_Door_03_C",  # 281
+  "BP_DA_Door_16a_break_C",  # 282
+]
+slots = [
+  { id = 910001, pool = 900001, chance = 35 },  # Золото ×3–12
+  { id = 910002, pool = 900008, chance = 12 },  # зелья 6, метательное 4
+  { id = 910003, pool = 900009, chance = 10 },  # сокровища 12, расходники 2
+  { id = 910004, pool = 900004, chance = 8 },  # броня 100, оружие 85, украшения 63
+]
+
+[groups.g02]
+name = "BP_ChestMidrangeLarge_Chest_15_MidLevel_C и ещё 13"
+sources = [
+  "BP_ChestMidrangeLarge_Chest_15_MidLevel_C",  # 15
+  "BP_InteractableChest_C",  # 78
+  "BP_TreasureChest_Wood_01_C",  # 173
+  "BP_TreasureChest_Wood_02_C",  # 174
+  "BP_TreasureChest_Wood_03_C",  # 175
+  "BP_TreasureChest_Wood_04_C",  # 176
+  "BP_TreasureChest_Wood_05_C",  # 177
+  "BP_TreasureChest_Wood_06_C",  # 178
+  "BP_TreasureChest_Wood_07_C",  # 179
+  "BP_TreasureChest_Wood_08_C",  # 180
+  "BP_TreasureChest_Wood_09_C",  # 181
+  "BP_TreasureChest_Wood_10_C",  # 182
+  "BP_InteractableChestBase_C",  # 275
+  "BP_InteractableChest_V2_C",  # 277
+]
+slots = [
+  { id = 910005, pool = 900002, chance = 100 },  # Золото ×10–40
+  { id = 910006, pool = 900005, chance = 100 },  # броня 100, оружие 85, украшения 63
+  { id = 910007, pool = 900005, chance = 45 },  # броня 100, оружие 85, украшения 63
+  { id = 910008, pool = 900008, chance = 50 },  # зелья 6, метательное 4
+  { id = 910009, pool = 900009, chance = 40 },  # сокровища 12, расходники 2
+  { id = 910010, pool = 900010, chance = 3 },  # сокровища 7
+]
+
+[groups.g03]
+name = "BP_CollectableBase_AlchemicalPotion_BurningPotion_C"
+sources = [
+  "BP_CollectableBase_AlchemicalPotion_BurningPotion_C",  # 36
+]
+slots = [
+  { id = 910035, pool = 900011, chance = 100 },  # Зажигательная фляга
+]
+
+[groups.g04]
+name = "BP_CollectableBase_AlchemicalPotion_EarthPotion_C"
+sources = [
+  "BP_CollectableBase_AlchemicalPotion_EarthPotion_C",  # 37
+]
+slots = [
+  { id = 910036, pool = 900012, chance = 100 },  # Фляга барьера
+]
+
+[groups.g05]
+name = "BP_CollectableBase_AlchemicalPotion_SmokePotion_C"
+sources = [
+  "BP_CollectableBase_AlchemicalPotion_SmokePotion_C",  # 38
+]
+slots = [
+  { id = 910037, pool = 900013, chance = 100 },  # Фляга завесы
+]
+
+[groups.g06]
+name = "BP_CollectableBase_AlchemicalPotion_ThunderPotion_C"
+sources = [
+  "BP_CollectableBase_AlchemicalPotion_ThunderPotion_C",  # 39
+]
+slots = [
+  { id = 910038, pool = 900014, chance = 100 },  # Громовая фляга
+]
+
+[groups.g07]
+name = "BP_CollectableBase_LegendWeapon_CrossBow5001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_CrossBow5001_C",  # 43
+]
+slots = [
+  { id = 910039, pool = 900015, chance = 100 },  # Штормовой ветер
+]
+
+[groups.g08]
+name = "BP_CollectableBase_LegendWeapon_CrossBow6001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_CrossBow6001_C",  # 44
+]
+slots = [
+  { id = 910040, pool = 900016, chance = 100 },  # Жало скорпиона
+]
+
+[groups.g09]
+name = "BP_CollectableBase_LegendWeapon_Dagger5001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Dagger5001_C",  # 45
+]
+slots = [
+  { id = 910041, pool = 900017, chance = 100 },  # Громовой кинжал
+]
+
+[groups.g10]
+name = "BP_CollectableBase_LegendWeapon_Dagger5002_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Dagger5002_C",  # 46
+]
+slots = [
+  { id = 910042, pool = 900018, chance = 100 },  # Кинжал разбойника
+]
+
+[groups.g11]
+name = "BP_CollectableBase_LegendWeapon_Dagger6002_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Dagger6002_C",  # 47
+]
+slots = [
+  { id = 910043, pool = 900019, chance = 100 },  # Шип чародея
+]
+
+[groups.g12]
+name = "BP_CollectableBase_LegendWeapon_LongSword5001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_LongSword5001_C",  # 48
+]
+slots = [
+  { id = 910044, pool = 900020, chance = 100 },  # Клинок Громовержца
+]
+
+[groups.g13]
+name = "BP_CollectableBase_LegendWeapon_LongSword5002_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_LongSword5002_C",  # 49
+]
+slots = [
+  { id = 910045, pool = 900021, chance = 100 },  # 17-й ключ
+]
+
+[groups.g14]
+name = "BP_CollectableBase_LegendWeapon_LongSword6002_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_LongSword6002_C",  # 50
+]
+slots = [
+  { id = 910046, pool = 900022, chance = 100 },  # Душегуб
+]
+
+[groups.g15]
+name = "BP_CollectableBase_LegendWeapon_Mace5001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Mace5001_C",  # 51
+]
+slots = [
+  { id = 910047, pool = 900023, chance = 100 },  # Разрушитель Санктума
+]
+
+[groups.g16]
+name = "BP_CollectableBase_LegendWeapon_Mace5002_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Mace5002_C",  # 52
+]
+slots = [
+  { id = 910048, pool = 900024, chance = 100 },  # Небесный молот
+]
+
+[groups.g17]
+name = "BP_CollectableBase_LegendWeapon_Mace6002_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Mace6002_C",  # 53
+]
+slots = [
+  { id = 910049, pool = 900025, chance = 100 },  # Молот зверолова
+]
+
+[groups.g18]
+name = "BP_CollectableBase_LegendWeapon_Shield5001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Shield5001_C",  # 54
+]
+slots = [
+  { id = 910050, pool = 900026, chance = 100 },  # Облачная завеса
+]
+
+[groups.g19]
+name = "BP_CollectableBase_LegendWeapon_Shield5002_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Shield5002_C",  # 55
+]
+slots = [
+  { id = 910051, pool = 900027, chance = 100 },  # Серебряный защитник
+]
+
+[groups.g20]
+name = "BP_CollectableBase_LegendWeapon_Shield6002_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Shield6002_C",  # 56
+]
+slots = [
+  { id = 910052, pool = 900028, chance = 100 },  # Слуга тьмы
+]
+
+[groups.g21]
+name = "BP_CollectableBase_LegendWeapon_Staff1001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff1001_C",  # 57
+]
+slots = [
+  { id = 910053, pool = 900029, chance = 100 },  # Посох пламени
+]
+
+[groups.g22]
+name = "BP_CollectableBase_LegendWeapon_Staff1003_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff1003_C",  # 58
+]
+slots = [
+  { id = 910054, pool = 900030, chance = 100 },  # Посох молнии
+]
+
+[groups.g23]
+name = "BP_CollectableBase_LegendWeapon_Staff2001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff2001_C",  # 59
+]
+slots = [
+  { id = 910055, pool = 900031, chance = 100 },  # Посох пироманта
+]
+
+[groups.g24]
+name = "BP_CollectableBase_LegendWeapon_Staff2003_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff2003_C",  # 60
+]
+slots = [
+  { id = 910056, pool = 900032, chance = 100 },  # Посох повелителя бури
+]
+
+[groups.g25]
+name = "BP_CollectableBase_LegendWeapon_Staff3001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff3001_C",  # 61
+]
+slots = [
+  { id = 910057, pool = 900033, chance = 100 },  # Посох палящего солнца
+]
+
+[groups.g26]
+name = "BP_CollectableBase_LegendWeapon_Staff3003_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff3003_C",  # 62
+]
+slots = [
+  { id = 910058, pool = 900034, chance = 100 },  # Громовой посох
+]
+
+[groups.g27]
+name = "BP_CollectableBase_LegendWeapon_Staff4001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff4001_C",  # 63
+]
+slots = [
+  { id = 910059, pool = 900035, chance = 100 },  # Посох солнечного света
+]
+
+[groups.g28]
+name = "BP_CollectableBase_LegendWeapon_Staff4003_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff4003_C",  # 64
+]
+slots = [
+  { id = 910060, pool = 900036, chance = 100 },  # Посох громового правосудия
+]
+
+[groups.g29]
+name = "BP_CollectableBase_LegendWeapon_Staff5001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff5001_C",  # 65
+]
+slots = [
+  { id = 910061, pool = 900037, chance = 100 },  # Палящее древо Эндора
+]
+
+[groups.g30]
+name = "BP_CollectableBase_LegendWeapon_Staff5003_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff5003_C",  # 66
+]
+slots = [
+  { id = 910062, pool = 900038, chance = 100 },  # Повелитель бури
+]
+
+[groups.g31]
+name = "BP_CollectableBase_LegendWeapon_Staff6003_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Staff6003_C",  # 67
+]
+slots = [
+  { id = 910063, pool = 900039, chance = 100 },  # Посох молнии бессмертия
+]
+
+[groups.g32]
+name = "BP_CollectableBase_LegendWeapon_Sword5001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Sword5001_C",  # 68
+]
+slots = [
+  { id = 910064, pool = 900040, chance = 100 },  # Меч рыцаря Белой звезды
+]
+
+[groups.g33]
+name = "BP_CollectableBase_LegendWeapon_Sword5002_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Sword5002_C",  # 69
+]
+slots = [
+  { id = 910065, pool = 900041, chance = 100 },  # Меч стража высших эльфов
+]
+
+[groups.g34]
+name = "BP_CollectableBase_LegendWeapon_Sword6001_C"
+sources = [
+  "BP_CollectableBase_LegendWeapon_Sword6001_C",  # 70
+]
+slots = [
+  { id = 910066, pool = 900042, chance = 100 },  # Реликвия священной рощи
+]
+
+[groups.g35]
+name = "BP_CollectableBase_Torch_C"
+sources = [
+  "BP_CollectableBase_Torch_C",  # 71
+]
+slots = [
+  { id = 910067, pool = 900043, chance = 100 },  # Факел
+]
+
+[groups.g36]
+name = "BP_TGF_H_Monster_Armor_Hammer_C и ещё 4"
+sources = [
+  "BP_TGF_H_Monster_Armor_Hammer_C",  # 83
+  "BP_TGF_H_Monster_Armor_Sword_C",  # 84
+  "BP_TGF_H_Monster_Beholder_C",  # 86
+  "BP_TGF_H_Monster_Treant_C",  # 100
+  "BP_TGF_H_Monster_Goblin_Thief_C",  # 234
+]
+slots = [
+  { id = 910016, pool = 900003, chance = 100 },  # Золото ×40–120
+  { id = 910017, pool = 900007, chance = 100 },  # броня 100, оружие 75, украшения 63
+  { id = 910011, pool = 900006, chance = 100 },  # броня 85, оружие 75, украшения 63
+  { id = 910031, pool = 900008, chance = 40 },  # зелья 6, метательное 4
+  { id = 910014, pool = 900009, chance = 60 },  # сокровища 12, расходники 2
+  { id = 910033, pool = 900010, chance = 20 },  # сокровища 7
+]
+
+[groups.g37]
+name = "BP_TGF_H_Monster_Bat_C и ещё 23"
+sources = [
+  "BP_TGF_H_Monster_Bat_C",  # 85
+  "BP_TGF_H_Monster_Insect_Fly_C",  # 91
+  "BP_TGF_H_Monster_Insect_Ground_C",  # 92
+  "BP_TGF_H_Monster_Rat_C",  # 96
+  "BP_TGF_Monster_Bat_C",  # 106
+  "BP_TGF_Monster_Insect_Fly_C",  # 112
+  "BP_TGF_Monster_Insect_Fly_idle_C",  # 113
+  "BP_TGF_Monster_Insect_Ground_C",  # 114
+  "BP_TGF_Monster_Insect_Ground_idle_C",  # 115
+  "BP_TGF_Monster_Rat_C",  # 119
+  "BP_TGF_Monster_Zombie_LickKingSummon_C",  # 127
+  "BP_Tgf_Monster_Virus_C",  # 149
+  "BP_TGF_Monster_Ghost_Summon_ShadowKing_1_C",  # 214
+  "BP_TGF_Monster_Ghost_Summon_ShadowKing_2_C",  # 215
+  "BP_TGF_Monster_Skeleton_Polearm_Summon_ShadowKing_C",  # 216
+  "BP_TGF_Monster_Skeleton_Wizard_Summon_ShadowKing_C",  # 217
+  "BP_TGF_Monster_Zombie_Summon_ShadowKing_1_C",  # 218
+  "BP_TGF_Monster_Zombie_Summon_ShadowKing_2_C",  # 219
+  "BP_Tgf_Monster_Skeleton_Bow_Summon_ShadowKing_C",  # 220
+  "BP_Tgf_Monster_Skeleton_Sword_Summon_ShadowKing_C",  # 221
+  "BP_TGF_Monster_Worm_Lava_C",  # 285
+  "BP_TGF_Monster_Egg_Dragon_C",  # 286
+  "BP_TGF_Monster_Wyrmling_C",  # 287
+  "BP_Tgf_Monster_Virus_Special_C",  # 295
+]
+slots = [
+  { id = 910021, pool = 900001, chance = 40 },  # Золото ×3–12
+  { id = 910002, pool = 900008, chance = 12 },  # зелья 6, метательное 4
+  { id = 910022, pool = 900004, chance = 10 },  # броня 100, оружие 85, украшения 63
+]
+
+[groups.g38]
+name = "BP_TGF_H_Monster_Boar_C и ещё 14"
+sources = [
+  "BP_TGF_H_Monster_Boar_C",  # 87
+  "BP_TGF_H_Monster_Ghost_C",  # 88
+  "BP_TGF_H_Monster_Goblin_Dagger_C",  # 89
+  "BP_TGF_H_Monster_Goblin_Shaman_C",  # 90
+  "BP_TGF_H_Monster_M_Tentacle_C",  # 93
+  "BP_TGF_H_Monster_Moose_C",  # 95
+  "BP_TGF_H_Monster_Skeleton_HammerShield_C",  # 97
+  "BP_TGF_H_Monster_Skeleton_LongSward_C",  # 98
+  "BP_TGF_H_Monster_Skeleton_Wizard_C",  # 99
+  "BP_TGF_H_Monster_Zombie_C",  # 101
+  "BP_TGF_H_Skeleton_Polearm_C",  # 102
+  "BP_Tgf_H_Monster_Goblin_Axe_C",  # 128
+  "BP_Tgf_H_Monster_Goblin_CrossBow_C",  # 129
+  "BP_Tgf_H_Monster_Skeleton_Bow_C",  # 130
+  "BP_Tgf_H_Monster_Skeleton_Sword_C",  # 131
+]
+slots = [
+  { id = 910026, pool = 900002, chance = 85 },  # Золото ×10–40
+  { id = 910018, pool = 900006, chance = 60 },  # броня 85, оружие 75, украшения 63
+  { id = 910027, pool = 900008, chance = 30 },  # зелья 6, метательное 4
+  { id = 910028, pool = 900009, chance = 25 },  # сокровища 12, расходники 2
+  { id = 910029, pool = 900010, chance = 5 },  # сокровища 7
+]
+
+[groups.g39]
+name = "BP_TGF_H_Monster_Mimic_Book_C и ещё 27"
+sources = [
+  "BP_TGF_H_Monster_Mimic_Book_C",  # 94
+  "BP_TGF_Monster_Mimic_Book_C",  # 117
+  "BP_Tgf_Monster_Chest_C",  # 133
+  "BP_Tgf_Monster_Mimic01_C",  # 137
+  "BP_Tgf_Monster_Mimic02_C",  # 138
+  "BP_Tgf_Monster_Mimic03_C",  # 139
+  "BP_Tgf_Monster_Mimic04_C",  # 140
+  "BP_Tgf_Monster_Mimic05_C",  # 141
+  "BP_Tgf_Monster_Mimic06_C",  # 142
+  "BP_Tgf_Monster_Mimic07_C",  # 143
+  "BP_Tgf_Monster_Mimic08_C",  # 144
+  "BP_Tgf_Monster_Mimic09_C",  # 145
+  "BP_TreasureChest_01_C",  # 154
+  "BP_TreasureChest_Iron_01_C",  # 159
+  "BP_TreasureChest_Iron_02_C",  # 160
+  "BP_TreasureChest_Iron_03_C",  # 161
+  "BP_TreasureChest_Iron_04_C",  # 162
+  "BP_TreasureChest_Iron_05_C",  # 163
+  "BP_TreasureChest_Mechnism_01_C",  # 164
+  "BP_TreasureChest_PVP_Cloth_C",  # 165
+  "BP_TreasureChest_PVP_CrossBow_C",  # 166
+  "BP_TreasureChest_PVP_Leather_C",  # 167
+  "BP_TreasureChest_PVP_Plate_C",  # 168
+  "BP_TreasureChest_PVP_Ring_C",  # 169
+  "BP_TreasureChest_PVP_Staff_C",  # 170
+  "BP_TreasureChest_PVP_Sword_C",  # 171
+  "BP_LockAltar_Junior_C",  # 290
+  "BP_InteractableChest_Guarded_C",  # 297
+]
+slots = [
+  { id = 910005, pool = 900002, chance = 100 },  # Золото ×10–40
+  { id = 910011, pool = 900006, chance = 100 },  # броня 85, оружие 75, украшения 63
+  { id = 910012, pool = 900005, chance = 70 },  # броня 100, оружие 85, украшения 63
+  { id = 910013, pool = 900008, chance = 60 },  # зелья 6, метательное 4
+  { id = 910014, pool = 900009, chance = 60 },  # сокровища 12, расходники 2
+  { id = 910015, pool = 900010, chance = 10 },  # сокровища 7
+]
+
+[groups.g40]
+name = "BP_TGF_Monster_Armor_Hammer_C и ещё 7"
+sources = [
+  "BP_TGF_Monster_Armor_Hammer_C",  # 104
+  "BP_TGF_Monster_Armor_Sword_C",  # 105
+  "BP_TGF_Monster_Beholder_C",  # 107
+  "BP_TGF_Monster_Treant_C",  # 125
+  "BP_TGF_Monster_GoblinThief_C",  # 213
+  "BP_TGF_Monster_Goblin_Thief_C",  # 228
+  "BP_TGF_Monster_Beholder_Tutorial_C",  # 230
+  "BP_TGF_Monster_Dragonborn_Polearm_C",  # 274
+]
+slots = [
+  { id = 910005, pool = 900002, chance = 100 },  # Золото ×10–40
+  { id = 910011, pool = 900006, chance = 100 },  # броня 85, оружие 75, украшения 63
+  { id = 910030, pool = 900005, chance = 50 },  # броня 100, оружие 85, украшения 63
+  { id = 910031, pool = 900008, chance = 40 },  # зелья 6, метательное 4
+  { id = 910032, pool = 900009, chance = 50 },  # сокровища 12, расходники 2
+  { id = 910029, pool = 900010, chance = 5 },  # сокровища 7
+]
+
+[groups.g41]
+name = "BP_TGF_Monster_Boar_C и ещё 29"
+sources = [
+  "BP_TGF_Monster_Boar_C",  # 108
+  "BP_TGF_Monster_Ghost_C",  # 109
+  "BP_TGF_Monster_Goblin_Dagger_C",  # 110
+  "BP_TGF_Monster_Goblin_Shaman_C",  # 111
+  "BP_TGF_Monster_M_Tentacle_C",  # 116
+  "BP_TGF_Monster_Moose_C",  # 118
+  "BP_TGF_Monster_Skeleton_HammerShield_C",  # 120
+  "BP_TGF_Monster_Skeleton_LongSward_C",  # 121
+  "BP_TGF_Monster_Skeleton_Polearm_C",  # 122
+  "BP_TGF_Monster_Skeleton_Polearm_idle_C",  # 123
+  "BP_TGF_Monster_Skeleton_Wizard_C",  # 124
+  "BP_TGF_Monster_Zombie_C",  # 126
+  "BP_Tgf_Monster_C",  # 132
+  "BP_Tgf_Monster_Goblin_Axe_C",  # 134
+  "BP_Tgf_Monster_Goblin_Axe_idle_C",  # 135
+  "BP_Tgf_Monster_Goblin_CrossBow_C",  # 136
+  "BP_Tgf_Monster_Skeleton_Bow_C",  # 146
+  "BP_Tgf_Monster_Skeleton_Sword_C",  # 147
+  "BP_Tgf_Monster_Skeleton_Sword_idle_C",  # 148
+  "BP_TGF_Monster_Skeleton_Polearm_Tutorial_C",  # 231
+  "BP_TGF_Monster_Skeleton_Wizard_Tutorial_C",  # 232
+  "BP_TGF_Monster_Zombie_Tutorial_C",  # 233
+  "BP_TGF_Monster_Pickaxe_C",  # 272
+  "BP_TGF_Monster_Carrier_C",  # 273
+  "BP_TGF_Monster_Dwarf_Musketeer_C",  # 279
+  "BP_TGF_Monster_DwarfShield_C",  # 283
+  "BP_TGF_Monster_Dwarf_Drunkard_C",  # 284
+  "BP_Tgf_Monster_Player_C",  # 288
+  "BP_Tgf_Monster_Bot_C",  # 289
+  "BP_Tgf_Monster_Humaniods_C",  # 292
+]
+slots = [
+  { id = 910023, pool = 900001, chance = 80 },  # Золото ×3–12
+  { id = 910007, pool = 900005, chance = 45 },  # броня 100, оружие 85, украшения 63
+  { id = 910024, pool = 900008, chance = 25 },  # зелья 6, метательное 4
+  { id = 910025, pool = 900009, chance = 15 },  # сокровища 12, расходники 2
+]
+
+[groups.g42]
+name = "BP_TreasureChest_Gold_01_C и ещё 9"
+sources = [
+  "BP_TreasureChest_Gold_01_C",  # 155
+  "BP_TreasureChest_Gold_02_C",  # 156
+  "BP_TreasureChest_Gold_03_C",  # 157
+  "BP_TreasureChest_Gold_04_C",  # 158
+  "BP_TreasureChest_Special_01_C",  # 172
+  "BP_InteractableChest_FlawlessTrial_C",  # 276
+  "BP_TGF_FlawlessTrial_Chest_C",  # 278
+  "BP_Altar_Award_C",  # 291
+  "BP_TreasureChest_Special_02_C",  # 296
+  "BP_TreasureChest_Gold_01_Special_C",  # 298
+]
+slots = [
+  { id = 910016, pool = 900003, chance = 100 },  # Золото ×40–120
+  { id = 910017, pool = 900007, chance = 100 },  # броня 100, оружие 75, украшения 63
+  { id = 910011, pool = 900006, chance = 100 },  # броня 85, оружие 75, украшения 63
+  { id = 910018, pool = 900006, chance = 60 },  # броня 85, оружие 75, украшения 63
+  { id = 910019, pool = 900010, chance = 50 },  # сокровища 7
+  { id = 910020, pool = 900009, chance = 100 },  # сокровища 12, расходники 2
+  { id = 910013, pool = 900008, chance = 60 },  # зелья 6, метательное 4
+]
+
+[groups.g43]
+name = "BP_TGF_Monster_Shadow_King_C и ещё 24"
+sources = [
+  "BP_TGF_Monster_Shadow_King_C",  # 212
+  "BP_TGF_H_Monster_Goblin_Thief_LootBlue_C",  # 235
+  "BP_TGF_H_Monster_Goblin_Thief_LootPurple_C",  # 236
+  "BP_TGF_Monster_Goblin_Thief_LootBlue_C",  # 237
+  "BP_TGF_Monster_Goblin_Thief_LootGreen_C",  # 238
+  "BP_TGF_H_Monster_Curesd_King_C",  # 240
+  "BP_TGF_H_Monster_Cyclop_C",  # 241
+  "BP_TGF_H_Monster_Executioner_C",  # 242
+  "BP_TGF_H_Monster_Khazra_C",  # 243
+  "BP_TGF_H_Monster_Reaper_C",  # 244
+  "BP_TGF_H_Werewolf_C",  # 245
+  "BP_TGF_M_Werewolf_C",  # 246
+  "BP_TGF_Monster_Curesd_King_C",  # 247
+  "BP_TGF_Monster_Cyclop_C",  # 249
+  "BP_TGF_Monster_Executioner_C",  # 250
+  "BP_TGF_Monster_Khazra_C",  # 251
+  "BP_TGF_Monster_Khazra_Tutorial_C",  # 252
+  "BP_TGF_Monster_Reaper_C",  # 253
+  "BP_Tgf_H_Monster_Wendigo_C",  # 254
+  "BP_Tgf_Monster_Wendigo_C",  # 255
+  "BP_TGF_H_Monster_Shadow_King_C",  # 265
+  "BP_TGF_Monster_Cerberus_C",  # 280
+  "BP_TGF_H_Monster_Reaper_Special_C",  # 294
+  "BP_TGF_H_Monster_Executioner_Special_C",  # 301
+  "BP_TGF_Monster_Reaper_Special_C",  # 302
+]
+slots = [
+  { id = 910016, pool = 900003, chance = 100 },  # Золото ×40–120
+  { id = 910016, pool = 900003, chance = 100 },  # Золото ×40–120
+  { id = 910017, pool = 900007, chance = 100 },  # броня 100, оружие 75, украшения 63
+  { id = 910017, pool = 900007, chance = 100 },  # броня 100, оружие 75, украшения 63
+  { id = 910011, pool = 900006, chance = 100 },  # броня 85, оружие 75, украшения 63
+  { id = 910034, pool = 900010, chance = 100 },  # сокровища 7
+  { id = 910008, pool = 900008, chance = 50 },  # зелья 6, метательное 4
+]
+
+[groups.g44]
+name = "BP_Loot_Gold_100069_C"
+sources = [
+  "BP_Loot_Gold_100069_C",  # 266
+]
+slots = [
+  { id = 910068, pool = 900044, chance = 100 },  # Золото ×15–40
+]
+
+[groups.g45]
+name = "BP_Tgf_Monster_Goblin_Axe_Tutorial_C"
+sources = [
+  "BP_Tgf_Monster_Goblin_Axe_Tutorial_C",  # 207
+]
+slots = [
+  { id = 100004, pool = 100004, chance = 40 },  # Поломанные наголенники
+  { id = 100012, pool = 100012, chance = 100 },  # Мутная эссенция жизни
+]
+
+[groups.g46]
+name = "BP_TGF_Monster_Goblin_Dagger_Tutorial_C"
+sources = [
+  "BP_TGF_Monster_Goblin_Dagger_Tutorial_C",  # 205
+]
+slots = [
+  { id = 100003, pool = 100003, chance = 100 },  # броня 2, зелья 1
+]
+
+[groups.g47]
+name = "BP_Tgf_Monster_Skeleton_Bow_Tutorial_C и ещё 1"
+sources = [
+  "BP_Tgf_Monster_Skeleton_Bow_Tutorial_C",  # 211
+  "BP_Tgf_Monster_Skeleton_Bow_Tutorial_2_C",  # 268
+]
+slots = [
+  { id = 100009, pool = 100009, chance = 100 },  # Повязка
+]
+
+[groups.g48]
+name = "BP_Tgf_Monster_Skeleton_Sword_Tutorial_C"
+sources = [
+  "BP_Tgf_Monster_Skeleton_Sword_Tutorial_C",  # 208
+]
+slots = [
+  { id = 100001, pool = 100001, chance = 100 },  # Поломанные доспехи
+  { id = 100013, pool = 100013, chance = 100 },  # Отменный серебряный кубок
+]
+
+[groups.g49]
+name = "BP_TGF_Monster_Skeleton_HammerShield_Tutorial_C"
+sources = [
+  "BP_TGF_Monster_Skeleton_HammerShield_Tutorial_C",  # 206
+]
+slots = [
+  { id = 100002, pool = 100002, chance = 100 },  # Поломанные набедренники
+  { id = 100014, pool = 100014, chance = 100 },  # Отменный золотой кубок (копия)
+]
+
+[groups.g50]
+name = "BP_TGF_Monster_Curesd_King_Tutorial_C"
+sources = [
+  "BP_TGF_Monster_Curesd_King_Tutorial_C",  # 248
+]
+slots = [
+  { id = 100015, pool = 100015, chance = 100 },  # Отменная статуэтка лошади
+]
+
+[groups.no_source]
+name = "слоты без источника (могут вызываться по id напрямую) — не удалять"
+sources = [
+]
+slots = [
+  { id = 100005, pool = 100005, chance = 100 },  # Зелье исцеления
+  { id = 100006, pool = 100006, chance = 100 },  # Поломанные рукавицы
+  { id = 100007, pool = 100007, chance = 100 },  # Простой меч
+  { id = 100008, pool = 100008, chance = 100 },  # Простой длинный меч
+  { id = 100010, pool = 100010, chance = 25 },  # Зелье исцеления
+  { id = 100011, pool = 100011, chance = 100 },  # Корона
+  { id = 100016, pool = 100016, chance = 100 },  # Золотая пивная кружка
+]
+
+[pools.900001]
+name = "Золото ×3–12"
+items = [
+  { id = 100069, cnt = [3, 5, 6, 8, 10, 12], w = 30000 },  # Золото [gold]
+]
+
+[pools.900002]
+name = "Золото ×10–40"
+items = [
+  { id = 100069, cnt = [10, 15, 20, 25, 30, 40], w = 30000 },  # Золото [gold]
+]
+
+[pools.900003]
+name = "Золото ×40–120"
+items = [
+  { id = 100069, cnt = [40, 50, 60, 80, 100, 120], w = 30000 },  # Золото [gold]
+]
+
+[pools.900004]
+name = "броня 100, оружие 85, украшения 63"
+items = [
+  { id = 181010000, w = 299 },  # Ржавый меч [weapon]
+  { id = 181011000, w = 504 },  # Простой меч [weapon]
+  { id = 181012000, w = 162 },  # Меч путешественника [weapon]
+  { id = 181013000, w = 56 },  # Меч солдата [weapon]
+  { id = 181014000, w = 17 },  # Изящный меч [weapon]
+  { id = 181014001, w = 17 },  # Меч рыцаря [weapon]
+  { id = 181015000, w = 2 },  # Меч рыцаря Белой звезды [weapon]
+  { id = 181015001, w = 2 },  # Меч стража высших эльфов [weapon]
+  { id = 181016000, w = 1 },  # Реликвия священной рощи [weapon]
+  { id = 181016001, w = 1 },  # Морозный клык [weapon]
+  { id = 181020000, w = 299 },  # Ржавый длинный меч [weapon]
+  { id = 181021000, w = 364 },  # Простой длинный меч [weapon]
+  { id = 181022000, w = 162 },  # Длинный меч путешественника [weapon]
+  { id = 181023000, w = 56 },  # Длинный меч солдата [weapon]
+  { id = 181024000, w = 17 },  # Изящный длинный меч [weapon]
+  { id = 181024001, w = 17 },  # Длинный меч рыцаря [weapon]
+  { id = 181025000, w = 1 },  # Клинок Громовержца [weapon]
+  { id = 181025001, w = 2 },  # 17-й ключ [weapon]
+  { id = 181026000, w = 1 },  # Кровавое эхо [weapon]
+  { id = 181026001, w = 1 },  # Душегуб [weapon]
+  { id = 181030000, w = 299 },  # Поврежденный щит [weapon]
+  { id = 181031000, w = 364 },  # Простой щит [weapon]
+  { id = 181032000, w = 162 },  # Щит путешественника [weapon]
+  { id = 181033000, w = 56 },  # Щит солдата [weapon]
+  { id = 181034000, w = 17 },  # Королевский щит [weapon]
+  { id = 181034001, w = 17 },  # Щит рыцаря [weapon]
+  { id = 181035000, w = 2 },  # Облачная завеса [weapon]
+  { id = 181035001, w = 2 },  # Серебряный защитник [weapon]
+  { id = 181036000, w = 1 },  # Оплот драконьей чешуи [weapon]
+  { id = 181036001, w = 1 },  # Слуга тьмы [weapon]
+  { id = 181040000, w = 299 },  # Ржавый арбалет [weapon]
+  { id = 181041000, w = 364 },  # Крепкий арбалет [weapon]
+  { id = 181042000, w = 162 },  # Арбалет из твердого дерева [weapon]
+  { id = 181043000, w = 56 },  # Арбалет со стальным наконечником [weapon]
+  { id = 181044000, w = 17 },  # Арбалет кары [weapon]
+  { id = 181044001, w = 17 },  # Арбалет осуждения [weapon]
+  { id = 181045000, w = 2 },  # Штормовой ветер [weapon]
+  { id = 181046000, w = 1 },  # Жало скорпиона [weapon]
+  { id = 181050001, w = 299 },  # Сломанный посох пламени [weapon]
+  { id = 181050002, w = 299 },  # Старый морозный посох [weapon]
+  { id = 181050003, w = 299 },  # Старый посох молнии [weapon]
+  { id = 181051001, w = 364 },  # Посох пламени [weapon]
+  { id = 181051002, w = 364 },  # Морозный посох [weapon]
+  { id = 181051003, w = 364 },  # Посох молнии [weapon]
+  { id = 181052001, w = 162 },  # Посох пироманта [weapon]
+  { id = 181052002, w = 162 },  # Посох криоманта [weapon]
+  { id = 181052003, w = 162 },  # Посох повелителя бури [weapon]
+  { id = 181053001, w = 56 },  # Посох палящего солнца [weapon]
+  { id = 181053002, w = 56 },  # Посох холода [weapon]
+  { id = 181053003, w = 56 },  # Громовой посох [weapon]
+  { id = 181054001, w = 17 },  # Посох солнечного света [weapon]
+  { id = 181054002, w = 17 },  # Посох оледенения [weapon]
+  { id = 181054003, w = 17 },  # Посох громового правосудия [weapon]
+  { id = 181055001, w = 2 },  # Палящее древо Эндора [weapon]
+  { id = 181055002, w = 2 },  # Морозный посох Эндора [weapon]
+  { id = 181055003, w = 2 },  # Повелитель бури [weapon]
+  { id = 181056001, w = 1 },  # Огненный посох бессмертия [weapon]
+  { id = 181056003, w = 1 },  # Посох молнии бессмертия [weapon]
+  { id = 181080000, w = 299 },  # Сфера темной завесы [weapon]
+  { id = 181081000, w = 364 },  # Сфера беззвездной ночи [weapon]
+  { id = 181082000, w = 162 },  # Сфера магистра [weapon]
+  { id = 181083000, w = 56 },  # Сфера превосходства [weapon]
+  { id = 181084000, w = 17 },  # Сфера созерцания [weapon]
+  { id = 181085000, w = 2 },  # Сфера Эндора [weapon]
+  { id = 181086000, w = 1 },  # Череп монарха [weapon]
+  { id = 181110000, w = 299 },  # Закаленный боевой кинжал [weapon]
+  { id = 181111000, w = 364 },  # Железный кинжал [weapon]
+  { id = 181112000, w = 162 },  # Стальной кинжал [weapon]
+  { id = 181113000, w = 56 },  # Изысканный кинжал [weapon]
+  { id = 181114000, w = 17 },  # Изящный клинок [weapon]
+  { id = 181114001, w = 17 },  # Кровавый клинок [weapon]
+  { id = 181115000, w = 2 },  # Громовой кинжал [weapon]
+  { id = 181115001, w = 2 },  # Кинжал разбойника [weapon]
+  { id = 181116000, w = 1 },  # Благосклонность Авиль [weapon]
+  { id = 181116001, w = 1 },  # Шип чародея [weapon]
+  { id = 181120000, w = 299 },  # Ржавая булава [weapon]
+  { id = 181121000, w = 364 },  # Утонченная булава [weapon]
+  { id = 181122000, w = 162 },  # Полированная булава [weapon]
+  { id = 181123000, w = 56 },  # Молот стража [weapon]
+  { id = 181124000, w = 17 },  # Булава порядка [weapon]
+  { id = 181124001, w = 17 },  # Молот казни [weapon]
+  { id = 181125000, w = 2 },  # Разрушитель Санктума [weapon]
+  { id = 181125001, w = 2 },  # Небесный молот [weapon]
+  { id = 181126000, w = 1 },  # Благословение Авиль [weapon]
+  { id = 181126001, w = 1 },  # Молот зверолова [weapon]
+  { id = 182010000, w = 299 },  # Рваная шляпа [armor]
+  { id = 182011000, w = 364 },  # Прочная шляпа [armor]
+  { id = 182012000, w = 162 },  # Крестьянский платок [armor]
+  { id = 182013000, w = 56 },  # Капюшон ученика [armor]
+  { id = 182014000, w = 17 },  # Капюшон веры [armor]
+  { id = 182015000, w = 2 },  # Шляпа Эндора [armor]
+  { id = 182015001, w = 2 },  # Шляпа решимости [armor]
+  { id = 182020000, w = 299 },  # Рваное одеяние [armor]
+  { id = 182021000, w = 364 },  # Простое одеяние [armor]
+  { id = 182022000, w = 162 },  # Крестьянское одеяние [armor]
+  { id = 182023000, w = 56 },  # Одеяние ученика [armor]
+  { id = 182024000, w = 17 },  # Одеяние праведника [armor]
+  { id = 182025000, w = 2 },  # Одеяние Эндора [armor]
+  { id = 182025001, w = 2 },  # Одеяние решимости [armor]
+  { id = 182030000, w = 299 },  # Рваные наручи [armor]
+  { id = 182031000, w = 364 },  # Прочные наручи [armor]
+  { id = 182032000, w = 162 },  # Крестьянские наручи [armor]
+  { id = 182033000, w = 56 },  # Наручи ученика [armor]
+  { id = 182034000, w = 17 },  # Наручи праведника [armor]
+  { id = 182035000, w = 2 },  # Наручи Эндора [armor]
+  { id = 182035001, w = 2 },  # Перчатки решимости [armor]
+  { id = 182040000, w = 299 },  # Рваные поножи [armor]
+  { id = 182041000, w = 364 },  # Прочные поножи [armor]
+  { id = 182042000, w = 162 },  # Крестьянские поножи [armor]
+  { id = 182043000, w = 56 },  # Поножи ученика [armor]
+  { id = 182044000, w = 17 },  # Штаны праведника [armor]
+  { id = 182045000, w = 2 },  # Штаны Эндора [armor]
+  { id = 182045001, w = 2 },  # Поножи решимости [armor]
+  { id = 182050000, w = 299 },  # Рваные туфли [armor]
+  { id = 182051000, w = 364 },  # Прочные туфли [armor]
+  { id = 182052000, w = 162 },  # Крестьянские туфли [armor]
+  { id = 182053000, w = 56 },  # Туфли ученика [armor]
+  { id = 182054000, w = 17 },  # Туфли праведника [armor]
+  { id = 182055000, w = 2 },  # Туфли Эндора [armor]
+  { id = 182055001, w = 2 },  # Туфли решимости [armor]
+  { id = 183010000, w = 299 },  # Потрескавшаяся повязка [armor]
+  { id = 183011000, w = 364 },  # Прочная повязка [armor]
+  { id = 183012000, w = 162 },  # Маска странника [armor]
+  { id = 183013000, w = 56 },  # Капюшон бандита [armor]
+  { id = 183014000, w = 17 },  # Капюшон убийцы [armor]
+  { id = 183015000, w = 2 },  # Капюшон теней [armor]
+  { id = 183015001, w = 2 },  # Мифический капюшон [armor]
+  { id = 183020000, w = 299 },  # Потрескавшийся жилет [armor]
+  { id = 183021000, w = 364 },  # Прочный жилет [armor]
+  { id = 183022000, w = 162 },  # Жилет странника [armor]
+  { id = 183023000, w = 56 },  # Жилет бандита [armor]
+  { id = 183024000, w = 17 },  # Жилет убийцы [armor]
+  { id = 183025000, w = 2 },  # Жилет теней [armor]
+  { id = 183025001, w = 2 },  # Мифический жилет [armor]
+  { id = 183030000, w = 299 },  # Потрескавшиеся рукавицы [armor]
+  { id = 183031000, w = 364 },  # Прочные наручи [armor]
+  { id = 183032000, w = 162 },  # Рукавицы странника [armor]
+  { id = 183033000, w = 56 },  # Рукавицы бандита [armor]
+  { id = 183034000, w = 17 },  # Рукавицы убийцы [armor]
+  { id = 183035000, w = 2 },  # Рукавицы теней [armor]
+  { id = 183035001, w = 2 },  # Мифические рукавицы [armor]
+  { id = 183040000, w = 299 },  # Потрескавшиеся портки [armor]
+  { id = 183041000, w = 364 },  # Прочные портки [armor]
+  { id = 183042000, w = 162 },  # Портки странника [armor]
+  { id = 183043000, w = 56 },  # Портки бандита [armor]
+  { id = 183044000, w = 17 },  # Штаны убийцы [armor]
+  { id = 183045000, w = 2 },  # Портки теней [armor]
+  { id = 183045001, w = 2 },  # Мифические портки [armor]
+  { id = 183050000, w = 299 },  # Потрескавшаяся обувь [armor]
+  { id = 183051000, w = 364 },  # Прочная обувь [armor]
+  { id = 183052000, w = 162 },  # Обувь странника [armor]
+  { id = 183053000, w = 56 },  # Обувь бандита [armor]
+  { id = 183054000, w = 17 },  # Обувь убийцы [armor]
+  { id = 183055000, w = 2 },  # Обувь теней [armor]
+  { id = 183055001, w = 2 },  # Мифическая обувь [armor]
+  { id = 184010000, w = 299 },  # Поломанный шлем [armor]
+  { id = 184011000, w = 364 },  # Прочный шлем [armor]
+  { id = 184012000, w = 162 },  # Шлем путешественника [armor]
+  { id = 184013000, w = 56 },  # Бацинет солдата [armor]
+  { id = 184014000, w = 17 },  # Бацинет рыцаря [armor]
+  { id = 184015000, w = 2 },  # Шлем славы [armor]
+  { id = 184020000, w = 299 },  # Поломанные доспехи [armor]
+  { id = 184021000, w = 364 },  # Прочные доспехи [armor]
+  { id = 184022000, w = 162 },  # Доспехи путешественника [armor]
+  { id = 184023000, w = 56 },  # Доспехи солдата [armor]
+  { id = 184024000, w = 17 },  # Доспехи рыцаря [armor]
+  { id = 184025000, w = 2 },  # Доспехи славы [armor]
+  { id = 184030000, w = 299 },  # Поломанные рукавицы [armor]
+  { id = 184031000, w = 364 },  # Прочные рукавицы [armor]
+  { id = 184032000, w = 162 },  # Рукавицы путешественника [armor]
+  { id = 184033000, w = 56 },  # Рукавицы солдата [armor]
+  { id = 184034000, w = 17 },  # Рукавицы рыцаря [armor]
+  { id = 184035000, w = 2 },  # Рукавицы славы [armor]
+  { id = 184040000, w = 299 },  # Поломанные набедренники [armor]
+  { id = 184041000, w = 364 },  # Прочные набедренники [armor]
+  { id = 184042000, w = 162 },  # Набедренники путешественника [armor]
+  { id = 184043000, w = 56 },  # Набедренники солдата [armor]
+  { id = 184044000, w = 17 },  # Набедренники рыцаря [armor]
+  { id = 184045000, w = 2 },  # Набедренники славы [armor]
+  { id = 184050000, w = 299 },  # Поломанные наголенники [armor]
+  { id = 184051000, w = 364 },  # Прочные ботинки [armor]
+  { id = 184052000, w = 162 },  # Ботинки путешественника [armor]
+  { id = 184053000, w = 56 },  # Ботинки солдата [armor]
+  { id = 184054000, w = 17 },  # Ботинки рыцаря [armor]
+  { id = 184055000, w = 2 },  # Ботинки славы [armor]
+  { id = 185011000, w = 364 },  # Ржавое кольцо силы [jewelry]
+  { id = 185011001, w = 364 },  # Ржавое кольцо ловкости [jewelry]
+  { id = 185011002, w = 364 },  # Ржавое кольцо выносливости [jewelry]
+  { id = 185011003, w = 364 },  # Ржавое кольцо интеллекта [jewelry]
+  { id = 185011004, w = 364 },  # Ржавое кольцо воли [jewelry]
+  { id = 185011005, w = 364 },  # Ржавое кольцо веры [jewelry]
+  { id = 185012000, w = 162 },  # Прочное кольцо силы [jewelry]
+  { id = 185012001, w = 162 },  # Прочное кольцо ловкости [jewelry]
+  { id = 185012002, w = 162 },  # Прочное кольцо выносливости [jewelry]
+  { id = 185012003, w = 162 },  # Прочное кольцо интеллекта [jewelry]
+  { id = 185012004, w = 162 },  # Прочное кольцо воли [jewelry]
+  { id = 185012005, w = 162 },  # Прочное кольцо веры [jewelry]
+  { id = 185013000, w = 56 },  # Славное кольцо силы [jewelry]
+  { id = 185013001, w = 56 },  # Славное кольцо ловкости [jewelry]
+  { id = 185013002, w = 56 },  # Славное кольцо выносливости [jewelry]
+  { id = 185013003, w = 56 },  # Славное кольцо интеллекта [jewelry]
+  { id = 185013004, w = 56 },  # Славное кольцо воли [jewelry]
+  { id = 185013005, w = 56 },  # Славное кольцо веры [jewelry]
+  { id = 185014000, w = 17 },  # Роскошное кольцо силы [jewelry]
+  { id = 185014001, w = 17 },  # Роскошное кольцо ловкости [jewelry]
+  { id = 185014002, w = 17 },  # Роскошное кольцо выносливости [jewelry]
+  { id = 185014003, w = 17 },  # Роскошное кольцо интеллекта [jewelry]
+  { id = 185014004, w = 17 },  # Роскошное кольцо воли [jewelry]
+  { id = 185014005, w = 17 },  # Роскошное кольцо веры [jewelry]
+  { id = 185015000, w = 2 },  # Взгляд смерти [jewelry]
+  { id = 185015001, w = 1 },  # Защита эгиды [jewelry]
+  { id = 185015002, w = 2 },  # Плач павших [jewelry]
+  { id = 185016000, w = 2 },  # Переплетение хаоса [jewelry]
+  { id = 185016001, w = 2 },  # Удручающий взгляд [jewelry]
+  { id = 185016002, w = 2 },  # Благословение феи [jewelry]
+  { id = 185021000, w = 364 },  # Ржавое ожерелье силы [jewelry]
+  { id = 185021001, w = 364 },  # Ржавое ожерелье ловкости [jewelry]
+  { id = 185021002, w = 364 },  # Ржавое ожерелье выносливости [jewelry]
+  { id = 185021003, w = 364 },  # Ржавое ожерелье интеллекта [jewelry]
+  { id = 185021004, w = 364 },  # Ржавое ожерелье воли [jewelry]
+  { id = 185021005, w = 364 },  # Ржавое ожерелье веры [jewelry]
+  { id = 185022000, w = 162 },  # Прочное ожерелье силы [jewelry]
+  { id = 185022001, w = 162 },  # Прочное ожерелье ловкости [jewelry]
+  { id = 185022002, w = 162 },  # Прочное ожерелье выносливости [jewelry]
+  { id = 185022003, w = 162 },  # Прочное ожерелье интеллекта [jewelry]
+  { id = 185022004, w = 162 },  # Прочное ожерелье воли [jewelry]
+  { id = 185022005, w = 162 },  # Прочное ожерелье веры [jewelry]
+  { id = 185023000, w = 56 },  # Славное ожерелье силы [jewelry]
+  { id = 185023001, w = 56 },  # Славное ожерелье ловкости [jewelry]
+  { id = 185023002, w = 56 },  # Славное ожерелье выносливости [jewelry]
+  { id = 185023003, w = 56 },  # Славное ожерелье интеллекта [jewelry]
+  { id = 185023004, w = 56 },  # Славное ожерелье воли [jewelry]
+  { id = 185023005, w = 56 },  # Славное ожерелье веры [jewelry]
+  { id = 185024000, w = 17 },  # Роскошное ожерелье силы [jewelry]
+  { id = 185024001, w = 17 },  # Роскошное ожерелье ловкости [jewelry]
+  { id = 185024002, w = 17 },  # Роскошное ожерелье выносливости [jewelry]
+  { id = 185024003, w = 17 },  # Роскошное ожерелье интеллекта [jewelry]
+  { id = 185024004, w = 17 },  # Роскошное ожерелье воли [jewelry]
+  { id = 185024005, w = 17 },  # Роскошное ожерелье веры [jewelry]
+  { id = 185025000, w = 2 },  # Подвеска искателя теней [jewelry]
+  { id = 185025001, w = 2 },  # Талисман бури [jewelry]
+  { id = 185025002, w = 2 },  # Звезда пламени [jewelry]
+  { id = 185025003, w = 2 },  # Ледяное сердце [jewelry]
+  { id = 185025004, w = 2 },  # Носитель света [jewelry]
+  { id = 185025005, w = 2 },  # Медальон чемпиона [jewelry]
+  { id = 185025006, w = 2 },  # Цена чистоты [jewelry]
+  { id = 185026000, w = 1 },  # Знак жнеца [jewelry]
+  { id = 185026001, w = 1 },  # Сердце дракона [jewelry]
+]
+
+[pools.900005]
+name = "броня 100, оружие 85, украшения 63"
+items = [
+  { id = 181010000, w = 120 },  # Ржавый меч [weapon]
+  { id = 181011000, w = 441 },  # Простой меч [weapon]
+  { id = 181012000, w = 227 },  # Меч путешественника [weapon]
+  { id = 181013000, w = 113 },  # Меч солдата [weapon]
+  { id = 181014000, w = 41 },  # Изящный меч [weapon]
+  { id = 181014001, w = 41 },  # Меч рыцаря [weapon]
+  { id = 181015000, w = 8 },  # Меч рыцаря Белой звезды [weapon]
+  { id = 181015001, w = 8 },  # Меч стража высших эльфов [weapon]
+  { id = 181016000, w = 8 },  # Реликвия священной рощи [weapon]
+  { id = 181016001, w = 8 },  # Морозный клык [weapon]
+  { id = 181020000, w = 120 },  # Ржавый длинный меч [weapon]
+  { id = 181021000, w = 324 },  # Простой длинный меч [weapon]
+  { id = 181022000, w = 227 },  # Длинный меч путешественника [weapon]
+  { id = 181023000, w = 113 },  # Длинный меч солдата [weapon]
+  { id = 181024000, w = 41 },  # Изящный длинный меч [weapon]
+  { id = 181024001, w = 41 },  # Длинный меч рыцаря [weapon]
+  { id = 181025000, w = 8 },  # Клинок Громовержца [weapon]
+  { id = 181025001, w = 8 },  # 17-й ключ [weapon]
+  { id = 181026000, w = 8 },  # Кровавое эхо [weapon]
+  { id = 181026001, w = 8 },  # Душегуб [weapon]
+  { id = 181030000, w = 120 },  # Поврежденный щит [weapon]
+  { id = 181031000, w = 324 },  # Простой щит [weapon]
+  { id = 181032000, w = 227 },  # Щит путешественника [weapon]
+  { id = 181033000, w = 113 },  # Щит солдата [weapon]
+  { id = 181034000, w = 41 },  # Королевский щит [weapon]
+  { id = 181034001, w = 41 },  # Щит рыцаря [weapon]
+  { id = 181035000, w = 8 },  # Облачная завеса [weapon]
+  { id = 181035001, w = 8 },  # Серебряный защитник [weapon]
+  { id = 181036000, w = 8 },  # Оплот драконьей чешуи [weapon]
+  { id = 181036001, w = 8 },  # Слуга тьмы [weapon]
+  { id = 181040000, w = 120 },  # Ржавый арбалет [weapon]
+  { id = 181041000, w = 324 },  # Крепкий арбалет [weapon]
+  { id = 181042000, w = 227 },  # Арбалет из твердого дерева [weapon]
+  { id = 181043000, w = 113 },  # Арбалет со стальным наконечником [weapon]
+  { id = 181044000, w = 41 },  # Арбалет кары [weapon]
+  { id = 181044001, w = 41 },  # Арбалет осуждения [weapon]
+  { id = 181045000, w = 8 },  # Штормовой ветер [weapon]
+  { id = 181046000, w = 8 },  # Жало скорпиона [weapon]
+  { id = 181050001, w = 120 },  # Сломанный посох пламени [weapon]
+  { id = 181050002, w = 120 },  # Старый морозный посох [weapon]
+  { id = 181050003, w = 120 },  # Старый посох молнии [weapon]
+  { id = 181051001, w = 324 },  # Посох пламени [weapon]
+  { id = 181051002, w = 324 },  # Морозный посох [weapon]
+  { id = 181051003, w = 324 },  # Посох молнии [weapon]
+  { id = 181052001, w = 227 },  # Посох пироманта [weapon]
+  { id = 181052002, w = 227 },  # Посох криоманта [weapon]
+  { id = 181052003, w = 227 },  # Посох повелителя бури [weapon]
+  { id = 181053001, w = 113 },  # Посох палящего солнца [weapon]
+  { id = 181053002, w = 113 },  # Посох холода [weapon]
+  { id = 181053003, w = 113 },  # Громовой посох [weapon]
+  { id = 181054001, w = 41 },  # Посох солнечного света [weapon]
+  { id = 181054002, w = 41 },  # Посох оледенения [weapon]
+  { id = 181054003, w = 41 },  # Посох громового правосудия [weapon]
+  { id = 181055001, w = 8 },  # Палящее древо Эндора [weapon]
+  { id = 181055002, w = 8 },  # Морозный посох Эндора [weapon]
+  { id = 181055003, w = 8 },  # Повелитель бури [weapon]
+  { id = 181056001, w = 8 },  # Огненный посох бессмертия [weapon]
+  { id = 181056003, w = 8 },  # Посох молнии бессмертия [weapon]
+  { id = 181080000, w = 120 },  # Сфера темной завесы [weapon]
+  { id = 181081000, w = 324 },  # Сфера беззвездной ночи [weapon]
+  { id = 181082000, w = 227 },  # Сфера магистра [weapon]
+  { id = 181083000, w = 113 },  # Сфера превосходства [weapon]
+  { id = 181084000, w = 41 },  # Сфера созерцания [weapon]
+  { id = 181085000, w = 8 },  # Сфера Эндора [weapon]
+  { id = 181086000, w = 8 },  # Череп монарха [weapon]
+  { id = 181110000, w = 120 },  # Закаленный боевой кинжал [weapon]
+  { id = 181111000, w = 324 },  # Железный кинжал [weapon]
+  { id = 181112000, w = 227 },  # Стальной кинжал [weapon]
+  { id = 181113000, w = 113 },  # Изысканный кинжал [weapon]
+  { id = 181114000, w = 41 },  # Изящный клинок [weapon]
+  { id = 181114001, w = 41 },  # Кровавый клинок [weapon]
+  { id = 181115000, w = 8 },  # Громовой кинжал [weapon]
+  { id = 181115001, w = 8 },  # Кинжал разбойника [weapon]
+  { id = 181116000, w = 8 },  # Благосклонность Авиль [weapon]
+  { id = 181116001, w = 8 },  # Шип чародея [weapon]
+  { id = 181120000, w = 120 },  # Ржавая булава [weapon]
+  { id = 181121000, w = 324 },  # Утонченная булава [weapon]
+  { id = 181122000, w = 227 },  # Полированная булава [weapon]
+  { id = 181123000, w = 113 },  # Молот стража [weapon]
+  { id = 181124000, w = 41 },  # Булава порядка [weapon]
+  { id = 181124001, w = 41 },  # Молот казни [weapon]
+  { id = 181125000, w = 8 },  # Разрушитель Санктума [weapon]
+  { id = 181125001, w = 8 },  # Небесный молот [weapon]
+  { id = 181126000, w = 8 },  # Благословение Авиль [weapon]
+  { id = 181126001, w = 8 },  # Молот зверолова [weapon]
+  { id = 182010000, w = 120 },  # Рваная шляпа [armor]
+  { id = 182011000, w = 324 },  # Прочная шляпа [armor]
+  { id = 182012000, w = 227 },  # Крестьянский платок [armor]
+  { id = 182013000, w = 113 },  # Капюшон ученика [armor]
+  { id = 182014000, w = 41 },  # Капюшон веры [armor]
+  { id = 182015000, w = 8 },  # Шляпа Эндора [armor]
+  { id = 182015001, w = 8 },  # Шляпа решимости [armor]
+  { id = 182020000, w = 120 },  # Рваное одеяние [armor]
+  { id = 182021000, w = 324 },  # Простое одеяние [armor]
+  { id = 182022000, w = 227 },  # Крестьянское одеяние [armor]
+  { id = 182023000, w = 113 },  # Одеяние ученика [armor]
+  { id = 182024000, w = 41 },  # Одеяние праведника [armor]
+  { id = 182025000, w = 8 },  # Одеяние Эндора [armor]
+  { id = 182025001, w = 8 },  # Одеяние решимости [armor]
+  { id = 182030000, w = 120 },  # Рваные наручи [armor]
+  { id = 182031000, w = 324 },  # Прочные наручи [armor]
+  { id = 182032000, w = 227 },  # Крестьянские наручи [armor]
+  { id = 182033000, w = 113 },  # Наручи ученика [armor]
+  { id = 182034000, w = 41 },  # Наручи праведника [armor]
+  { id = 182035000, w = 8 },  # Наручи Эндора [armor]
+  { id = 182035001, w = 8 },  # Перчатки решимости [armor]
+  { id = 182040000, w = 120 },  # Рваные поножи [armor]
+  { id = 182041000, w = 324 },  # Прочные поножи [armor]
+  { id = 182042000, w = 227 },  # Крестьянские поножи [armor]
+  { id = 182043000, w = 113 },  # Поножи ученика [armor]
+  { id = 182044000, w = 41 },  # Штаны праведника [armor]
+  { id = 182045000, w = 8 },  # Штаны Эндора [armor]
+  { id = 182045001, w = 8 },  # Поножи решимости [armor]
+  { id = 182050000, w = 120 },  # Рваные туфли [armor]
+  { id = 182051000, w = 324 },  # Прочные туфли [armor]
+  { id = 182052000, w = 227 },  # Крестьянские туфли [armor]
+  { id = 182053000, w = 113 },  # Туфли ученика [armor]
+  { id = 182054000, w = 41 },  # Туфли праведника [armor]
+  { id = 182055000, w = 8 },  # Туфли Эндора [armor]
+  { id = 182055001, w = 8 },  # Туфли решимости [armor]
+  { id = 183010000, w = 120 },  # Потрескавшаяся повязка [armor]
+  { id = 183011000, w = 324 },  # Прочная повязка [armor]
+  { id = 183012000, w = 227 },  # Маска странника [armor]
+  { id = 183013000, w = 113 },  # Капюшон бандита [armor]
+  { id = 183014000, w = 41 },  # Капюшон убийцы [armor]
+  { id = 183015000, w = 8 },  # Капюшон теней [armor]
+  { id = 183015001, w = 8 },  # Мифический капюшон [armor]
+  { id = 183020000, w = 120 },  # Потрескавшийся жилет [armor]
+  { id = 183021000, w = 324 },  # Прочный жилет [armor]
+  { id = 183022000, w = 227 },  # Жилет странника [armor]
+  { id = 183023000, w = 113 },  # Жилет бандита [armor]
+  { id = 183024000, w = 41 },  # Жилет убийцы [armor]
+  { id = 183025000, w = 8 },  # Жилет теней [armor]
+  { id = 183025001, w = 8 },  # Мифический жилет [armor]
+  { id = 183030000, w = 120 },  # Потрескавшиеся рукавицы [armor]
+  { id = 183031000, w = 324 },  # Прочные наручи [armor]
+  { id = 183032000, w = 227 },  # Рукавицы странника [armor]
+  { id = 183033000, w = 113 },  # Рукавицы бандита [armor]
+  { id = 183034000, w = 41 },  # Рукавицы убийцы [armor]
+  { id = 183035000, w = 8 },  # Рукавицы теней [armor]
+  { id = 183035001, w = 8 },  # Мифические рукавицы [armor]
+  { id = 183040000, w = 120 },  # Потрескавшиеся портки [armor]
+  { id = 183041000, w = 324 },  # Прочные портки [armor]
+  { id = 183042000, w = 227 },  # Портки странника [armor]
+  { id = 183043000, w = 113 },  # Портки бандита [armor]
+  { id = 183044000, w = 41 },  # Штаны убийцы [armor]
+  { id = 183045000, w = 8 },  # Портки теней [armor]
+  { id = 183045001, w = 8 },  # Мифические портки [armor]
+  { id = 183050000, w = 120 },  # Потрескавшаяся обувь [armor]
+  { id = 183051000, w = 324 },  # Прочная обувь [armor]
+  { id = 183052000, w = 227 },  # Обувь странника [armor]
+  { id = 183053000, w = 113 },  # Обувь бандита [armor]
+  { id = 183054000, w = 41 },  # Обувь убийцы [armor]
+  { id = 183055000, w = 8 },  # Обувь теней [armor]
+  { id = 183055001, w = 8 },  # Мифическая обувь [armor]
+  { id = 184010000, w = 120 },  # Поломанный шлем [armor]
+  { id = 184011000, w = 324 },  # Прочный шлем [armor]
+  { id = 184012000, w = 227 },  # Шлем путешественника [armor]
+  { id = 184013000, w = 113 },  # Бацинет солдата [armor]
+  { id = 184014000, w = 41 },  # Бацинет рыцаря [armor]
+  { id = 184015000, w = 8 },  # Шлем славы [armor]
+  { id = 184020000, w = 120 },  # Поломанные доспехи [armor]
+  { id = 184021000, w = 324 },  # Прочные доспехи [armor]
+  { id = 184022000, w = 227 },  # Доспехи путешественника [armor]
+  { id = 184023000, w = 113 },  # Доспехи солдата [armor]
+  { id = 184024000, w = 41 },  # Доспехи рыцаря [armor]
+  { id = 184025000, w = 8 },  # Доспехи славы [armor]
+  { id = 184030000, w = 120 },  # Поломанные рукавицы [armor]
+  { id = 184031000, w = 324 },  # Прочные рукавицы [armor]
+  { id = 184032000, w = 227 },  # Рукавицы путешественника [armor]
+  { id = 184033000, w = 113 },  # Рукавицы солдата [armor]
+  { id = 184034000, w = 41 },  # Рукавицы рыцаря [armor]
+  { id = 184035000, w = 8 },  # Рукавицы славы [armor]
+  { id = 184040000, w = 120 },  # Поломанные набедренники [armor]
+  { id = 184041000, w = 324 },  # Прочные набедренники [armor]
+  { id = 184042000, w = 227 },  # Набедренники путешественника [armor]
+  { id = 184043000, w = 113 },  # Набедренники солдата [armor]
+  { id = 184044000, w = 41 },  # Набедренники рыцаря [armor]
+  { id = 184045000, w = 8 },  # Набедренники славы [armor]
+  { id = 184050000, w = 120 },  # Поломанные наголенники [armor]
+  { id = 184051000, w = 324 },  # Прочные ботинки [armor]
+  { id = 184052000, w = 227 },  # Ботинки путешественника [armor]
+  { id = 184053000, w = 113 },  # Ботинки солдата [armor]
+  { id = 184054000, w = 41 },  # Ботинки рыцаря [armor]
+  { id = 184055000, w = 8 },  # Ботинки славы [armor]
+  { id = 185011000, w = 324 },  # Ржавое кольцо силы [jewelry]
+  { id = 185011001, w = 324 },  # Ржавое кольцо ловкости [jewelry]
+  { id = 185011002, w = 324 },  # Ржавое кольцо выносливости [jewelry]
+  { id = 185011003, w = 324 },  # Ржавое кольцо интеллекта [jewelry]
+  { id = 185011004, w = 324 },  # Ржавое кольцо воли [jewelry]
+  { id = 185011005, w = 324 },  # Ржавое кольцо веры [jewelry]
+  { id = 185012000, w = 227 },  # Прочное кольцо силы [jewelry]
+  { id = 185012001, w = 227 },  # Прочное кольцо ловкости [jewelry]
+  { id = 185012002, w = 227 },  # Прочное кольцо выносливости [jewelry]
+  { id = 185012003, w = 227 },  # Прочное кольцо интеллекта [jewelry]
+  { id = 185012004, w = 227 },  # Прочное кольцо воли [jewelry]
+  { id = 185012005, w = 227 },  # Прочное кольцо веры [jewelry]
+  { id = 185013000, w = 113 },  # Славное кольцо силы [jewelry]
+  { id = 185013001, w = 113 },  # Славное кольцо ловкости [jewelry]
+  { id = 185013002, w = 113 },  # Славное кольцо выносливости [jewelry]
+  { id = 185013003, w = 113 },  # Славное кольцо интеллекта [jewelry]
+  { id = 185013004, w = 113 },  # Славное кольцо воли [jewelry]
+  { id = 185013005, w = 113 },  # Славное кольцо веры [jewelry]
+  { id = 185014000, w = 41 },  # Роскошное кольцо силы [jewelry]
+  { id = 185014001, w = 41 },  # Роскошное кольцо ловкости [jewelry]
+  { id = 185014002, w = 41 },  # Роскошное кольцо выносливости [jewelry]
+  { id = 185014003, w = 41 },  # Роскошное кольцо интеллекта [jewelry]
+  { id = 185014004, w = 41 },  # Роскошное кольцо воли [jewelry]
+  { id = 185014005, w = 41 },  # Роскошное кольцо веры [jewelry]
+  { id = 185015000, w = 8 },  # Взгляд смерти [jewelry]
+  { id = 185015001, w = 8 },  # Защита эгиды [jewelry]
+  { id = 185015002, w = 8 },  # Плач павших [jewelry]
+  { id = 185016000, w = 8 },  # Переплетение хаоса [jewelry]
+  { id = 185016001, w = 8 },  # Удручающий взгляд [jewelry]
+  { id = 185016002, w = 8 },  # Благословение феи [jewelry]
+  { id = 185021000, w = 324 },  # Ржавое ожерелье силы [jewelry]
+  { id = 185021001, w = 324 },  # Ржавое ожерелье ловкости [jewelry]
+  { id = 185021002, w = 324 },  # Ржавое ожерелье выносливости [jewelry]
+  { id = 185021003, w = 324 },  # Ржавое ожерелье интеллекта [jewelry]
+  { id = 185021004, w = 324 },  # Ржавое ожерелье воли [jewelry]
+  { id = 185021005, w = 324 },  # Ржавое ожерелье веры [jewelry]
+  { id = 185022000, w = 227 },  # Прочное ожерелье силы [jewelry]
+  { id = 185022001, w = 227 },  # Прочное ожерелье ловкости [jewelry]
+  { id = 185022002, w = 227 },  # Прочное ожерелье выносливости [jewelry]
+  { id = 185022003, w = 227 },  # Прочное ожерелье интеллекта [jewelry]
+  { id = 185022004, w = 227 },  # Прочное ожерелье воли [jewelry]
+  { id = 185022005, w = 227 },  # Прочное ожерелье веры [jewelry]
+  { id = 185023000, w = 113 },  # Славное ожерелье силы [jewelry]
+  { id = 185023001, w = 113 },  # Славное ожерелье ловкости [jewelry]
+  { id = 185023002, w = 113 },  # Славное ожерелье выносливости [jewelry]
+  { id = 185023003, w = 113 },  # Славное ожерелье интеллекта [jewelry]
+  { id = 185023004, w = 113 },  # Славное ожерелье воли [jewelry]
+  { id = 185023005, w = 113 },  # Славное ожерелье веры [jewelry]
+  { id = 185024000, w = 41 },  # Роскошное ожерелье силы [jewelry]
+  { id = 185024001, w = 41 },  # Роскошное ожерелье ловкости [jewelry]
+  { id = 185024002, w = 41 },  # Роскошное ожерелье выносливости [jewelry]
+  { id = 185024003, w = 41 },  # Роскошное ожерелье интеллекта [jewelry]
+  { id = 185024004, w = 41 },  # Роскошное ожерелье воли [jewelry]
+  { id = 185024005, w = 41 },  # Роскошное ожерелье веры [jewelry]
+  { id = 185025000, w = 8 },  # Подвеска искателя теней [jewelry]
+  { id = 185025001, w = 8 },  # Талисман бури [jewelry]
+  { id = 185025002, w = 8 },  # Звезда пламени [jewelry]
+  { id = 185025003, w = 8 },  # Ледяное сердце [jewelry]
+  { id = 185025004, w = 8 },  # Носитель света [jewelry]
+  { id = 185025005, w = 8 },  # Медальон чемпиона [jewelry]
+  { id = 185025006, w = 8 },  # Цена чистоты [jewelry]
+  { id = 185026000, w = 8 },  # Знак жнеца [jewelry]
+  { id = 185026001, w = 8 },  # Сердце дракона [jewelry]
+]
+
+[pools.900006]
+name = "броня 85, оружие 75, украшения 63"
+items = [
+  { id = 181011000, w = 202 },  # Простой меч [weapon]
+  { id = 181012000, w = 405 },  # Меч путешественника [weapon]
+  { id = 181013000, w = 194 },  # Меч солдата [weapon]
+  { id = 181014000, w = 90 },  # Изящный меч [weapon]
+  { id = 181014001, w = 90 },  # Меч рыцаря [weapon]
+  { id = 181015000, w = 23 },  # Меч рыцаря Белой звезды [weapon]
+  { id = 181015001, w = 23 },  # Меч стража высших эльфов [weapon]
+  { id = 181016000, w = 16 },  # Реликвия священной рощи [weapon]
+  { id = 181016001, w = 16 },  # Морозный клык [weapon]
+  { id = 181021000, w = 202 },  # Простой длинный меч [weapon]
+  { id = 181022000, w = 267 },  # Длинный меч путешественника [weapon]
+  { id = 181023000, w = 194 },  # Длинный меч солдата [weapon]
+  { id = 181024000, w = 90 },  # Изящный длинный меч [weapon]
+  { id = 181024001, w = 90 },  # Длинный меч рыцаря [weapon]
+  { id = 181025000, w = 16 },  # Клинок Громовержца [weapon]
+  { id = 181025001, w = 23 },  # 17-й ключ [weapon]
+  { id = 181026000, w = 16 },  # Кровавое эхо [weapon]
+  { id = 181026001, w = 16 },  # Душегуб [weapon]
+  { id = 181031000, w = 202 },  # Простой щит [weapon]
+  { id = 181032000, w = 267 },  # Щит путешественника [weapon]
+  { id = 181033000, w = 194 },  # Щит солдата [weapon]
+  { id = 181034000, w = 90 },  # Королевский щит [weapon]
+  { id = 181034001, w = 90 },  # Щит рыцаря [weapon]
+  { id = 181035000, w = 23 },  # Облачная завеса [weapon]
+  { id = 181035001, w = 23 },  # Серебряный защитник [weapon]
+  { id = 181036000, w = 16 },  # Оплот драконьей чешуи [weapon]
+  { id = 181036001, w = 16 },  # Слуга тьмы [weapon]
+  { id = 181041000, w = 202 },  # Крепкий арбалет [weapon]
+  { id = 181042000, w = 267 },  # Арбалет из твердого дерева [weapon]
+  { id = 181043000, w = 194 },  # Арбалет со стальным наконечником [weapon]
+  { id = 181044000, w = 90 },  # Арбалет кары [weapon]
+  { id = 181044001, w = 90 },  # Арбалет осуждения [weapon]
+  { id = 181045000, w = 23 },  # Штормовой ветер [weapon]
+  { id = 181046000, w = 16 },  # Жало скорпиона [weapon]
+  { id = 181051001, w = 202 },  # Посох пламени [weapon]
+  { id = 181051002, w = 202 },  # Морозный посох [weapon]
+  { id = 181051003, w = 202 },  # Посох молнии [weapon]
+  { id = 181052001, w = 267 },  # Посох пироманта [weapon]
+  { id = 181052002, w = 267 },  # Посох криоманта [weapon]
+  { id = 181052003, w = 267 },  # Посох повелителя бури [weapon]
+  { id = 181053001, w = 194 },  # Посох палящего солнца [weapon]
+  { id = 181053002, w = 194 },  # Посох холода [weapon]
+  { id = 181053003, w = 194 },  # Громовой посох [weapon]
+  { id = 181054001, w = 90 },  # Посох солнечного света [weapon]
+  { id = 181054002, w = 90 },  # Посох оледенения [weapon]
+  { id = 181054003, w = 90 },  # Посох громового правосудия [weapon]
+  { id = 181055001, w = 23 },  # Палящее древо Эндора [weapon]
+  { id = 181055002, w = 23 },  # Морозный посох Эндора [weapon]
+  { id = 181055003, w = 23 },  # Повелитель бури [weapon]
+  { id = 181056001, w = 16 },  # Огненный посох бессмертия [weapon]
+  { id = 181056003, w = 16 },  # Посох молнии бессмертия [weapon]
+  { id = 181081000, w = 202 },  # Сфера беззвездной ночи [weapon]
+  { id = 181082000, w = 267 },  # Сфера магистра [weapon]
+  { id = 181083000, w = 194 },  # Сфера превосходства [weapon]
+  { id = 181084000, w = 90 },  # Сфера созерцания [weapon]
+  { id = 181085000, w = 23 },  # Сфера Эндора [weapon]
+  { id = 181086000, w = 16 },  # Череп монарха [weapon]
+  { id = 181111000, w = 202 },  # Железный кинжал [weapon]
+  { id = 181112000, w = 267 },  # Стальной кинжал [weapon]
+  { id = 181113000, w = 194 },  # Изысканный кинжал [weapon]
+  { id = 181114000, w = 90 },  # Изящный клинок [weapon]
+  { id = 181114001, w = 90 },  # Кровавый клинок [weapon]
+  { id = 181115000, w = 23 },  # Громовой кинжал [weapon]
+  { id = 181115001, w = 23 },  # Кинжал разбойника [weapon]
+  { id = 181116000, w = 16 },  # Благосклонность Авиль [weapon]
+  { id = 181116001, w = 16 },  # Шип чародея [weapon]
+  { id = 181121000, w = 202 },  # Утонченная булава [weapon]
+  { id = 181122000, w = 267 },  # Полированная булава [weapon]
+  { id = 181123000, w = 194 },  # Молот стража [weapon]
+  { id = 181124000, w = 90 },  # Булава порядка [weapon]
+  { id = 181124001, w = 90 },  # Молот казни [weapon]
+  { id = 181125000, w = 23 },  # Разрушитель Санктума [weapon]
+  { id = 181125001, w = 23 },  # Небесный молот [weapon]
+  { id = 181126000, w = 16 },  # Благословение Авиль [weapon]
+  { id = 181126001, w = 16 },  # Молот зверолова [weapon]
+  { id = 182011000, w = 202 },  # Прочная шляпа [armor]
+  { id = 182012000, w = 267 },  # Крестьянский платок [armor]
+  { id = 182013000, w = 194 },  # Капюшон ученика [armor]
+  { id = 182014000, w = 90 },  # Капюшон веры [armor]
+  { id = 182015000, w = 23 },  # Шляпа Эндора [armor]
+  { id = 182015001, w = 23 },  # Шляпа решимости [armor]
+  { id = 182021000, w = 202 },  # Простое одеяние [armor]
+  { id = 182022000, w = 267 },  # Крестьянское одеяние [armor]
+  { id = 182023000, w = 194 },  # Одеяние ученика [armor]
+  { id = 182024000, w = 90 },  # Одеяние праведника [armor]
+  { id = 182025000, w = 23 },  # Одеяние Эндора [armor]
+  { id = 182025001, w = 23 },  # Одеяние решимости [armor]
+  { id = 182031000, w = 202 },  # Прочные наручи [armor]
+  { id = 182032000, w = 267 },  # Крестьянские наручи [armor]
+  { id = 182033000, w = 194 },  # Наручи ученика [armor]
+  { id = 182034000, w = 90 },  # Наручи праведника [armor]
+  { id = 182035000, w = 23 },  # Наручи Эндора [armor]
+  { id = 182035001, w = 23 },  # Перчатки решимости [armor]
+  { id = 182041000, w = 202 },  # Прочные поножи [armor]
+  { id = 182042000, w = 267 },  # Крестьянские поножи [armor]
+  { id = 182043000, w = 194 },  # Поножи ученика [armor]
+  { id = 182044000, w = 90 },  # Штаны праведника [armor]
+  { id = 182045000, w = 23 },  # Штаны Эндора [armor]
+  { id = 182045001, w = 23 },  # Поножи решимости [armor]
+  { id = 182051000, w = 202 },  # Прочные туфли [armor]
+  { id = 182052000, w = 267 },  # Крестьянские туфли [armor]
+  { id = 182053000, w = 194 },  # Туфли ученика [armor]
+  { id = 182054000, w = 90 },  # Туфли праведника [armor]
+  { id = 182055000, w = 23 },  # Туфли Эндора [armor]
+  { id = 182055001, w = 23 },  # Туфли решимости [armor]
+  { id = 183011000, w = 202 },  # Прочная повязка [armor]
+  { id = 183012000, w = 267 },  # Маска странника [armor]
+  { id = 183013000, w = 194 },  # Капюшон бандита [armor]
+  { id = 183014000, w = 90 },  # Капюшон убийцы [armor]
+  { id = 183015000, w = 23 },  # Капюшон теней [armor]
+  { id = 183015001, w = 23 },  # Мифический капюшон [armor]
+  { id = 183021000, w = 202 },  # Прочный жилет [armor]
+  { id = 183022000, w = 267 },  # Жилет странника [armor]
+  { id = 183023000, w = 194 },  # Жилет бандита [armor]
+  { id = 183024000, w = 90 },  # Жилет убийцы [armor]
+  { id = 183025000, w = 23 },  # Жилет теней [armor]
+  { id = 183025001, w = 23 },  # Мифический жилет [armor]
+  { id = 183031000, w = 202 },  # Прочные наручи [armor]
+  { id = 183032000, w = 267 },  # Рукавицы странника [armor]
+  { id = 183033000, w = 194 },  # Рукавицы бандита [armor]
+  { id = 183034000, w = 90 },  # Рукавицы убийцы [armor]
+  { id = 183035000, w = 23 },  # Рукавицы теней [armor]
+  { id = 183035001, w = 23 },  # Мифические рукавицы [armor]
+  { id = 183041000, w = 202 },  # Прочные портки [armor]
+  { id = 183042000, w = 267 },  # Портки странника [armor]
+  { id = 183043000, w = 194 },  # Портки бандита [armor]
+  { id = 183044000, w = 90 },  # Штаны убийцы [armor]
+  { id = 183045000, w = 23 },  # Портки теней [armor]
+  { id = 183045001, w = 23 },  # Мифические портки [armor]
+  { id = 183051000, w = 202 },  # Прочная обувь [armor]
+  { id = 183052000, w = 267 },  # Обувь странника [armor]
+  { id = 183053000, w = 194 },  # Обувь бандита [armor]
+  { id = 183054000, w = 90 },  # Обувь убийцы [armor]
+  { id = 183055000, w = 23 },  # Обувь теней [armor]
+  { id = 183055001, w = 23 },  # Мифическая обувь [armor]
+  { id = 184011000, w = 202 },  # Прочный шлем [armor]
+  { id = 184012000, w = 267 },  # Шлем путешественника [armor]
+  { id = 184013000, w = 194 },  # Бацинет солдата [armor]
+  { id = 184014000, w = 90 },  # Бацинет рыцаря [armor]
+  { id = 184015000, w = 23 },  # Шлем славы [armor]
+  { id = 184021000, w = 202 },  # Прочные доспехи [armor]
+  { id = 184022000, w = 267 },  # Доспехи путешественника [armor]
+  { id = 184023000, w = 194 },  # Доспехи солдата [armor]
+  { id = 184024000, w = 90 },  # Доспехи рыцаря [armor]
+  { id = 184025000, w = 23 },  # Доспехи славы [armor]
+  { id = 184031000, w = 202 },  # Прочные рукавицы [armor]
+  { id = 184032000, w = 267 },  # Рукавицы путешественника [armor]
+  { id = 184033000, w = 194 },  # Рукавицы солдата [armor]
+  { id = 184034000, w = 90 },  # Рукавицы рыцаря [armor]
+  { id = 184035000, w = 23 },  # Рукавицы славы [armor]
+  { id = 184041000, w = 202 },  # Прочные набедренники [armor]
+  { id = 184042000, w = 267 },  # Набедренники путешественника [armor]
+  { id = 184043000, w = 194 },  # Набедренники солдата [armor]
+  { id = 184044000, w = 90 },  # Набедренники рыцаря [armor]
+  { id = 184045000, w = 23 },  # Набедренники славы [armor]
+  { id = 184051000, w = 202 },  # Прочные ботинки [armor]
+  { id = 184052000, w = 267 },  # Ботинки путешественника [armor]
+  { id = 184053000, w = 194 },  # Ботинки солдата [armor]
+  { id = 184054000, w = 90 },  # Ботинки рыцаря [armor]
+  { id = 184055000, w = 23 },  # Ботинки славы [armor]
+  { id = 185011000, w = 202 },  # Ржавое кольцо силы [jewelry]
+  { id = 185011001, w = 202 },  # Ржавое кольцо ловкости [jewelry]
+  { id = 185011002, w = 202 },  # Ржавое кольцо выносливости [jewelry]
+  { id = 185011003, w = 202 },  # Ржавое кольцо интеллекта [jewelry]
+  { id = 185011004, w = 202 },  # Ржавое кольцо воли [jewelry]
+  { id = 185011005, w = 202 },  # Ржавое кольцо веры [jewelry]
+  { id = 185012000, w = 267 },  # Прочное кольцо силы [jewelry]
+  { id = 185012001, w = 267 },  # Прочное кольцо ловкости [jewelry]
+  { id = 185012002, w = 267 },  # Прочное кольцо выносливости [jewelry]
+  { id = 185012003, w = 267 },  # Прочное кольцо интеллекта [jewelry]
+  { id = 185012004, w = 267 },  # Прочное кольцо воли [jewelry]
+  { id = 185012005, w = 267 },  # Прочное кольцо веры [jewelry]
+  { id = 185013000, w = 194 },  # Славное кольцо силы [jewelry]
+  { id = 185013001, w = 194 },  # Славное кольцо ловкости [jewelry]
+  { id = 185013002, w = 194 },  # Славное кольцо выносливости [jewelry]
+  { id = 185013003, w = 194 },  # Славное кольцо интеллекта [jewelry]
+  { id = 185013004, w = 194 },  # Славное кольцо воли [jewelry]
+  { id = 185013005, w = 194 },  # Славное кольцо веры [jewelry]
+  { id = 185014000, w = 90 },  # Роскошное кольцо силы [jewelry]
+  { id = 185014001, w = 90 },  # Роскошное кольцо ловкости [jewelry]
+  { id = 185014002, w = 90 },  # Роскошное кольцо выносливости [jewelry]
+  { id = 185014003, w = 90 },  # Роскошное кольцо интеллекта [jewelry]
+  { id = 185014004, w = 90 },  # Роскошное кольцо воли [jewelry]
+  { id = 185014005, w = 90 },  # Роскошное кольцо веры [jewelry]
+  { id = 185015000, w = 23 },  # Взгляд смерти [jewelry]
+  { id = 185015001, w = 16 },  # Защита эгиды [jewelry]
+  { id = 185015002, w = 23 },  # Плач павших [jewelry]
+  { id = 185016000, w = 23 },  # Переплетение хаоса [jewelry]
+  { id = 185016001, w = 23 },  # Удручающий взгляд [jewelry]
+  { id = 185016002, w = 23 },  # Благословение феи [jewelry]
+  { id = 185021000, w = 202 },  # Ржавое ожерелье силы [jewelry]
+  { id = 185021001, w = 202 },  # Ржавое ожерелье ловкости [jewelry]
+  { id = 185021002, w = 202 },  # Ржавое ожерелье выносливости [jewelry]
+  { id = 185021003, w = 202 },  # Ржавое ожерелье интеллекта [jewelry]
+  { id = 185021004, w = 202 },  # Ржавое ожерелье воли [jewelry]
+  { id = 185021005, w = 202 },  # Ржавое ожерелье веры [jewelry]
+  { id = 185022000, w = 267 },  # Прочное ожерелье силы [jewelry]
+  { id = 185022001, w = 267 },  # Прочное ожерелье ловкости [jewelry]
+  { id = 185022002, w = 267 },  # Прочное ожерелье выносливости [jewelry]
+  { id = 185022003, w = 267 },  # Прочное ожерелье интеллекта [jewelry]
+  { id = 185022004, w = 267 },  # Прочное ожерелье воли [jewelry]
+  { id = 185022005, w = 267 },  # Прочное ожерелье веры [jewelry]
+  { id = 185023000, w = 194 },  # Славное ожерелье силы [jewelry]
+  { id = 185023001, w = 194 },  # Славное ожерелье ловкости [jewelry]
+  { id = 185023002, w = 194 },  # Славное ожерелье выносливости [jewelry]
+  { id = 185023003, w = 194 },  # Славное ожерелье интеллекта [jewelry]
+  { id = 185023004, w = 194 },  # Славное ожерелье воли [jewelry]
+  { id = 185023005, w = 194 },  # Славное ожерелье веры [jewelry]
+  { id = 185024000, w = 90 },  # Роскошное ожерелье силы [jewelry]
+  { id = 185024001, w = 90 },  # Роскошное ожерелье ловкости [jewelry]
+  { id = 185024002, w = 90 },  # Роскошное ожерелье выносливости [jewelry]
+  { id = 185024003, w = 90 },  # Роскошное ожерелье интеллекта [jewelry]
+  { id = 185024004, w = 90 },  # Роскошное ожерелье воли [jewelry]
+  { id = 185024005, w = 90 },  # Роскошное ожерелье веры [jewelry]
+  { id = 185025000, w = 23 },  # Подвеска искателя теней [jewelry]
+  { id = 185025001, w = 23 },  # Талисман бури [jewelry]
+  { id = 185025002, w = 23 },  # Звезда пламени [jewelry]
+  { id = 185025003, w = 23 },  # Ледяное сердце [jewelry]
+  { id = 185025004, w = 23 },  # Носитель света [jewelry]
+  { id = 185025005, w = 23 },  # Медальон чемпиона [jewelry]
+  { id = 185025006, w = 23 },  # Цена чистоты [jewelry]
+  { id = 185026000, w = 16 },  # Знак жнеца [jewelry]
+  { id = 185026001, w = 16 },  # Сердце дракона [jewelry]
+]
+
+[pools.900007]
+name = "броня 100, оружие 75, украшения 63"
+items = [
+  { id = 181011000, w = 40 },  # Простой меч [weapon]
+  { id = 181012000, w = 145 },  # Меч путешественника [weapon]
+  { id = 181013000, w = 376 },  # Меч солдата [weapon]
+  { id = 181014000, w = 195 },  # Изящный меч [weapon]
+  { id = 181014001, w = 195 },  # Меч рыцаря [weapon]
+  { id = 181015000, w = 70 },  # Меч рыцаря Белой звезды [weapon]
+  { id = 181015001, w = 70 },  # Меч стража высших эльфов [weapon]
+  { id = 181016000, w = 50 },  # Реликвия священной рощи [weapon]
+  { id = 181016001, w = 50 },  # Морозный клык [weapon]
+  { id = 181021000, w = 40 },  # Простой длинный меч [weapon]
+  { id = 181022000, w = 145 },  # Длинный меч путешественника [weapon]
+  { id = 181023000, w = 259 },  # Длинный меч солдата [weapon]
+  { id = 181024000, w = 195 },  # Изящный длинный меч [weapon]
+  { id = 181024001, w = 195 },  # Длинный меч рыцаря [weapon]
+  { id = 181025000, w = 50 },  # Клинок Громовержца [weapon]
+  { id = 181025001, w = 70 },  # 17-й ключ [weapon]
+  { id = 181026000, w = 50 },  # Кровавое эхо [weapon]
+  { id = 181026001, w = 50 },  # Душегуб [weapon]
+  { id = 181031000, w = 40 },  # Простой щит [weapon]
+  { id = 181032000, w = 145 },  # Щит путешественника [weapon]
+  { id = 181033000, w = 259 },  # Щит солдата [weapon]
+  { id = 181034000, w = 195 },  # Королевский щит [weapon]
+  { id = 181034001, w = 195 },  # Щит рыцаря [weapon]
+  { id = 181035000, w = 70 },  # Облачная завеса [weapon]
+  { id = 181035001, w = 70 },  # Серебряный защитник [weapon]
+  { id = 181036000, w = 50 },  # Оплот драконьей чешуи [weapon]
+  { id = 181036001, w = 50 },  # Слуга тьмы [weapon]
+  { id = 181041000, w = 40 },  # Крепкий арбалет [weapon]
+  { id = 181042000, w = 145 },  # Арбалет из твердого дерева [weapon]
+  { id = 181043000, w = 259 },  # Арбалет со стальным наконечником [weapon]
+  { id = 181044000, w = 195 },  # Арбалет кары [weapon]
+  { id = 181044001, w = 195 },  # Арбалет осуждения [weapon]
+  { id = 181045000, w = 70 },  # Штормовой ветер [weapon]
+  { id = 181046000, w = 50 },  # Жало скорпиона [weapon]
+  { id = 181051001, w = 40 },  # Посох пламени [weapon]
+  { id = 181051002, w = 40 },  # Морозный посох [weapon]
+  { id = 181051003, w = 40 },  # Посох молнии [weapon]
+  { id = 181052001, w = 145 },  # Посох пироманта [weapon]
+  { id = 181052002, w = 145 },  # Посох криоманта [weapon]
+  { id = 181052003, w = 145 },  # Посох повелителя бури [weapon]
+  { id = 181053001, w = 259 },  # Посох палящего солнца [weapon]
+  { id = 181053002, w = 259 },  # Посох холода [weapon]
+  { id = 181053003, w = 259 },  # Громовой посох [weapon]
+  { id = 181054001, w = 195 },  # Посох солнечного света [weapon]
+  { id = 181054002, w = 195 },  # Посох оледенения [weapon]
+  { id = 181054003, w = 195 },  # Посох громового правосудия [weapon]
+  { id = 181055001, w = 70 },  # Палящее древо Эндора [weapon]
+  { id = 181055002, w = 70 },  # Морозный посох Эндора [weapon]
+  { id = 181055003, w = 70 },  # Повелитель бури [weapon]
+  { id = 181056001, w = 50 },  # Огненный посох бессмертия [weapon]
+  { id = 181056003, w = 50 },  # Посох молнии бессмертия [weapon]
+  { id = 181081000, w = 40 },  # Сфера беззвездной ночи [weapon]
+  { id = 181082000, w = 145 },  # Сфера магистра [weapon]
+  { id = 181083000, w = 259 },  # Сфера превосходства [weapon]
+  { id = 181084000, w = 195 },  # Сфера созерцания [weapon]
+  { id = 181085000, w = 70 },  # Сфера Эндора [weapon]
+  { id = 181086000, w = 50 },  # Череп монарха [weapon]
+  { id = 181111000, w = 40 },  # Железный кинжал [weapon]
+  { id = 181112000, w = 145 },  # Стальной кинжал [weapon]
+  { id = 181113000, w = 259 },  # Изысканный кинжал [weapon]
+  { id = 181114000, w = 195 },  # Изящный клинок [weapon]
+  { id = 181114001, w = 195 },  # Кровавый клинок [weapon]
+  { id = 181115000, w = 70 },  # Громовой кинжал [weapon]
+  { id = 181115001, w = 70 },  # Кинжал разбойника [weapon]
+  { id = 181116000, w = 50 },  # Благосклонность Авиль [weapon]
+  { id = 181116001, w = 50 },  # Шип чародея [weapon]
+  { id = 181121000, w = 40 },  # Утонченная булава [weapon]
+  { id = 181122000, w = 145 },  # Полированная булава [weapon]
+  { id = 181123000, w = 259 },  # Молот стража [weapon]
+  { id = 181124000, w = 195 },  # Булава порядка [weapon]
+  { id = 181124001, w = 195 },  # Молот казни [weapon]
+  { id = 181125000, w = 70 },  # Разрушитель Санктума [weapon]
+  { id = 181125001, w = 70 },  # Небесный молот [weapon]
+  { id = 181126000, w = 50 },  # Благословение Авиль [weapon]
+  { id = 181126001, w = 50 },  # Молот зверолова [weapon]
+  { id = 182011000, w = 40 },  # Прочная шляпа [armor]
+  { id = 182012000, w = 145 },  # Крестьянский платок [armor]
+  { id = 182013000, w = 259 },  # Капюшон ученика [armor]
+  { id = 182014000, w = 195 },  # Капюшон веры [armor]
+  { id = 182014001, w = 40 },  # Капюшон мудреца [armor]
+  { id = 182015000, w = 70 },  # Шляпа Эндора [armor]
+  { id = 182015001, w = 70 },  # Шляпа решимости [armor]
+  { id = 182021000, w = 40 },  # Простое одеяние [armor]
+  { id = 182022000, w = 145 },  # Крестьянское одеяние [armor]
+  { id = 182023000, w = 259 },  # Одеяние ученика [armor]
+  { id = 182024000, w = 195 },  # Одеяние праведника [armor]
+  { id = 182024001, w = 40 },  # Одеяние мудреца [armor]
+  { id = 182025000, w = 70 },  # Одеяние Эндора [armor]
+  { id = 182025001, w = 70 },  # Одеяние решимости [armor]
+  { id = 182031000, w = 40 },  # Прочные наручи [armor]
+  { id = 182032000, w = 145 },  # Крестьянские наручи [armor]
+  { id = 182033000, w = 259 },  # Наручи ученика [armor]
+  { id = 182034000, w = 195 },  # Наручи праведника [armor]
+  { id = 182034001, w = 40 },  # Наручи мудреца [armor]
+  { id = 182035000, w = 70 },  # Наручи Эндора [armor]
+  { id = 182035001, w = 70 },  # Перчатки решимости [armor]
+  { id = 182041000, w = 40 },  # Прочные поножи [armor]
+  { id = 182042000, w = 145 },  # Крестьянские поножи [armor]
+  { id = 182043000, w = 259 },  # Поножи ученика [armor]
+  { id = 182044000, w = 195 },  # Штаны праведника [armor]
+  { id = 182044001, w = 40 },  # Штаны мудреца [armor]
+  { id = 182045000, w = 70 },  # Штаны Эндора [armor]
+  { id = 182045001, w = 70 },  # Поножи решимости [armor]
+  { id = 182051000, w = 40 },  # Прочные туфли [armor]
+  { id = 182052000, w = 145 },  # Крестьянские туфли [armor]
+  { id = 182053000, w = 259 },  # Туфли ученика [armor]
+  { id = 182054000, w = 195 },  # Туфли праведника [armor]
+  { id = 182054001, w = 40 },  # Туфли мудреца [armor]
+  { id = 182055000, w = 70 },  # Туфли Эндора [armor]
+  { id = 182055001, w = 70 },  # Туфли решимости [armor]
+  { id = 183011000, w = 40 },  # Прочная повязка [armor]
+  { id = 183012000, w = 145 },  # Маска странника [armor]
+  { id = 183013000, w = 259 },  # Капюшон бандита [armor]
+  { id = 183014000, w = 195 },  # Капюшон убийцы [armor]
+  { id = 183014001, w = 40 },  # Капюшон наблюдателя [armor]
+  { id = 183015000, w = 70 },  # Капюшон теней [armor]
+  { id = 183015001, w = 70 },  # Мифический капюшон [armor]
+  { id = 183021000, w = 40 },  # Прочный жилет [armor]
+  { id = 183022000, w = 145 },  # Жилет странника [armor]
+  { id = 183023000, w = 259 },  # Жилет бандита [armor]
+  { id = 183024000, w = 195 },  # Жилет убийцы [armor]
+  { id = 183024001, w = 40 },  # Жилет наблюдателя [armor]
+  { id = 183025000, w = 70 },  # Жилет теней [armor]
+  { id = 183025001, w = 70 },  # Мифический жилет [armor]
+  { id = 183031000, w = 40 },  # Прочные наручи [armor]
+  { id = 183032000, w = 145 },  # Рукавицы странника [armor]
+  { id = 183033000, w = 259 },  # Рукавицы бандита [armor]
+  { id = 183034000, w = 195 },  # Рукавицы убийцы [armor]
+  { id = 183034001, w = 40 },  # Перчатки наблюдателя [armor]
+  { id = 183035000, w = 70 },  # Рукавицы теней [armor]
+  { id = 183035001, w = 70 },  # Мифические рукавицы [armor]
+  { id = 183041000, w = 40 },  # Прочные портки [armor]
+  { id = 183042000, w = 145 },  # Портки странника [armor]
+  { id = 183043000, w = 259 },  # Портки бандита [armor]
+  { id = 183044000, w = 195 },  # Штаны убийцы [armor]
+  { id = 183044001, w = 40 },  # Поножи наблюдателя [armor]
+  { id = 183045000, w = 70 },  # Портки теней [armor]
+  { id = 183045001, w = 70 },  # Мифические портки [armor]
+  { id = 183051000, w = 40 },  # Прочная обувь [armor]
+  { id = 183052000, w = 145 },  # Обувь странника [armor]
+  { id = 183053000, w = 259 },  # Обувь бандита [armor]
+  { id = 183054000, w = 195 },  # Обувь убийцы [armor]
+  { id = 183054001, w = 40 },  # Ботинки наблюдателя [armor]
+  { id = 183055000, w = 70 },  # Обувь теней [armor]
+  { id = 183055001, w = 70 },  # Мифическая обувь [armor]
+  { id = 184011000, w = 40 },  # Прочный шлем [armor]
+  { id = 184012000, w = 145 },  # Шлем путешественника [armor]
+  { id = 184013000, w = 259 },  # Бацинет солдата [armor]
+  { id = 184014000, w = 195 },  # Бацинет рыцаря [armor]
+  { id = 184014001, w = 40 },  # Шлем завоевателя [armor]
+  { id = 184015000, w = 70 },  # Шлем славы [armor]
+  { id = 184021000, w = 40 },  # Прочные доспехи [armor]
+  { id = 184022000, w = 145 },  # Доспехи путешественника [armor]
+  { id = 184023000, w = 259 },  # Доспехи солдата [armor]
+  { id = 184024000, w = 195 },  # Доспехи рыцаря [armor]
+  { id = 184024001, w = 40 },  # Нагрудник завоевателя [armor]
+  { id = 184025000, w = 70 },  # Доспехи славы [armor]
+  { id = 184031000, w = 40 },  # Прочные рукавицы [armor]
+  { id = 184032000, w = 145 },  # Рукавицы путешественника [armor]
+  { id = 184033000, w = 259 },  # Рукавицы солдата [armor]
+  { id = 184034000, w = 195 },  # Рукавицы рыцаря [armor]
+  { id = 184034001, w = 40 },  # Рукавицы завоевателя [armor]
+  { id = 184035000, w = 70 },  # Рукавицы славы [armor]
+  { id = 184041000, w = 40 },  # Прочные набедренники [armor]
+  { id = 184042000, w = 145 },  # Набедренники путешественника [armor]
+  { id = 184043000, w = 259 },  # Набедренники солдата [armor]
+  { id = 184044000, w = 195 },  # Набедренники рыцаря [armor]
+  { id = 184044001, w = 40 },  # Набедренники завоевателя [armor]
+  { id = 184045000, w = 70 },  # Набедренники славы [armor]
+  { id = 184051000, w = 40 },  # Прочные ботинки [armor]
+  { id = 184052000, w = 145 },  # Ботинки путешественника [armor]
+  { id = 184053000, w = 259 },  # Ботинки солдата [armor]
+  { id = 184054000, w = 195 },  # Ботинки рыцаря [armor]
+  { id = 184054001, w = 40 },  # Наголенники завоевателя [armor]
+  { id = 184055000, w = 70 },  # Ботинки славы [armor]
+  { id = 185011000, w = 40 },  # Ржавое кольцо силы [jewelry]
+  { id = 185011001, w = 40 },  # Ржавое кольцо ловкости [jewelry]
+  { id = 185011002, w = 40 },  # Ржавое кольцо выносливости [jewelry]
+  { id = 185011003, w = 40 },  # Ржавое кольцо интеллекта [jewelry]
+  { id = 185011004, w = 40 },  # Ржавое кольцо воли [jewelry]
+  { id = 185011005, w = 40 },  # Ржавое кольцо веры [jewelry]
+  { id = 185012000, w = 145 },  # Прочное кольцо силы [jewelry]
+  { id = 185012001, w = 145 },  # Прочное кольцо ловкости [jewelry]
+  { id = 185012002, w = 145 },  # Прочное кольцо выносливости [jewelry]
+  { id = 185012003, w = 145 },  # Прочное кольцо интеллекта [jewelry]
+  { id = 185012004, w = 145 },  # Прочное кольцо воли [jewelry]
+  { id = 185012005, w = 145 },  # Прочное кольцо веры [jewelry]
+  { id = 185013000, w = 259 },  # Славное кольцо силы [jewelry]
+  { id = 185013001, w = 259 },  # Славное кольцо ловкости [jewelry]
+  { id = 185013002, w = 259 },  # Славное кольцо выносливости [jewelry]
+  { id = 185013003, w = 259 },  # Славное кольцо интеллекта [jewelry]
+  { id = 185013004, w = 259 },  # Славное кольцо воли [jewelry]
+  { id = 185013005, w = 259 },  # Славное кольцо веры [jewelry]
+  { id = 185014000, w = 195 },  # Роскошное кольцо силы [jewelry]
+  { id = 185014001, w = 195 },  # Роскошное кольцо ловкости [jewelry]
+  { id = 185014002, w = 195 },  # Роскошное кольцо выносливости [jewelry]
+  { id = 185014003, w = 195 },  # Роскошное кольцо интеллекта [jewelry]
+  { id = 185014004, w = 195 },  # Роскошное кольцо воли [jewelry]
+  { id = 185014005, w = 195 },  # Роскошное кольцо веры [jewelry]
+  { id = 185015000, w = 70 },  # Взгляд смерти [jewelry]
+  { id = 185015001, w = 50 },  # Защита эгиды [jewelry]
+  { id = 185015002, w = 70 },  # Плач павших [jewelry]
+  { id = 185016000, w = 70 },  # Переплетение хаоса [jewelry]
+  { id = 185016001, w = 70 },  # Удручающий взгляд [jewelry]
+  { id = 185016002, w = 70 },  # Благословение феи [jewelry]
+  { id = 185021000, w = 40 },  # Ржавое ожерелье силы [jewelry]
+  { id = 185021001, w = 40 },  # Ржавое ожерелье ловкости [jewelry]
+  { id = 185021002, w = 40 },  # Ржавое ожерелье выносливости [jewelry]
+  { id = 185021003, w = 40 },  # Ржавое ожерелье интеллекта [jewelry]
+  { id = 185021004, w = 40 },  # Ржавое ожерелье воли [jewelry]
+  { id = 185021005, w = 40 },  # Ржавое ожерелье веры [jewelry]
+  { id = 185022000, w = 145 },  # Прочное ожерелье силы [jewelry]
+  { id = 185022001, w = 145 },  # Прочное ожерелье ловкости [jewelry]
+  { id = 185022002, w = 145 },  # Прочное ожерелье выносливости [jewelry]
+  { id = 185022003, w = 145 },  # Прочное ожерелье интеллекта [jewelry]
+  { id = 185022004, w = 145 },  # Прочное ожерелье воли [jewelry]
+  { id = 185022005, w = 145 },  # Прочное ожерелье веры [jewelry]
+  { id = 185023000, w = 259 },  # Славное ожерелье силы [jewelry]
+  { id = 185023001, w = 259 },  # Славное ожерелье ловкости [jewelry]
+  { id = 185023002, w = 259 },  # Славное ожерелье выносливости [jewelry]
+  { id = 185023003, w = 259 },  # Славное ожерелье интеллекта [jewelry]
+  { id = 185023004, w = 259 },  # Славное ожерелье воли [jewelry]
+  { id = 185023005, w = 259 },  # Славное ожерелье веры [jewelry]
+  { id = 185024000, w = 195 },  # Роскошное ожерелье силы [jewelry]
+  { id = 185024001, w = 195 },  # Роскошное ожерелье ловкости [jewelry]
+  { id = 185024002, w = 195 },  # Роскошное ожерелье выносливости [jewelry]
+  { id = 185024003, w = 195 },  # Роскошное ожерелье интеллекта [jewelry]
+  { id = 185024004, w = 195 },  # Роскошное ожерелье воли [jewelry]
+  { id = 185024005, w = 195 },  # Роскошное ожерелье веры [jewelry]
+  { id = 185025000, w = 70 },  # Подвеска искателя теней [jewelry]
+  { id = 185025001, w = 70 },  # Талисман бури [jewelry]
+  { id = 185025002, w = 70 },  # Звезда пламени [jewelry]
+  { id = 185025003, w = 70 },  # Ледяное сердце [jewelry]
+  { id = 185025004, w = 70 },  # Носитель света [jewelry]
+  { id = 185025005, w = 70 },  # Медальон чемпиона [jewelry]
+  { id = 185025006, w = 70 },  # Цена чистоты [jewelry]
+  { id = 185026000, w = 50 },  # Знак жнеца [jewelry]
+  { id = 185026001, w = 50 },  # Сердце дракона [jewelry]
+]
+
+[pools.900008]
+name = "зелья 6, метательное 4"
+items = [
+  { id = 100013, w = 3774 },  # Зелье исцеления [potion]
+  { id = 100016, w = 3771 },  # Повязка [potion]
+  { id = 100018, w = 3771 },  # Зелье маны [potion]
+  { id = 100047, w = 3771 },  # Зажигательная фляга [throwable]
+  { id = 100048, w = 3771 },  # Громовая фляга [throwable]
+  { id = 100049, w = 3771 },  # Фляга барьера [throwable]
+  { id = 100050, w = 3771 },  # Фляга завесы [throwable]
+  { id = 100106, w = 1200 },  # Мощный эликсир ярости [potion]
+  { id = 100107, w = 1200 },  # Мощный эликсир защиты [potion]
+  { id = 100108, w = 1200 },  # Мощный эликсир восстановления [potion]
+]
+
+[pools.900009]
+name = "сокровища 12, расходники 2"
+items = [
+  { id = 100001, w = 2400 },  # Серебряная чашка [treasure]
+  { id = 100002, w = 2400 },  # Серебряный кубок [treasure]
+  { id = 100003, w = 2400 },  # Золотая пивная кружка (копия) [treasure]
+  { id = 100004, w = 2400 },  # Золотой кубок (копия) [treasure]
+  { id = 100005, w = 2400 },  # Рог [treasure]
+  { id = 100006, w = 2400 },  # Статуэтка лошади [treasure]
+  { id = 100007, w = 2400 },  # Статуэтка золотого льва (копия) [treasure]
+  { id = 100008, w = 2400 },  # Статуэтка (копия) [treasure]
+  { id = 100060, w = 2400 },  # Мутная эссенция жизни [supply]
+  { id = 100066, w = 2400 },  # Тысячелистник [supply]
+  { id = 100080, w = 1500 },  # Отменный серебряный кубок [treasure]
+  { id = 100081, w = 1500 },  # Отменный золотой кубок (копия) [treasure]
+  { id = 100082, w = 1500 },  # Отменная статуэтка лошади [treasure]
+  { id = 100083, w = 1500 },  # Отменная поддельная статуэтка [treasure]
+]
+
+[pools.900010]
+name = "сокровища 7"
+items = [
+  { id = 100009, w = 3000 },  # Корона [treasure]
+  { id = 100051, w = 5503 },  # Золотая пивная кружка [treasure]
+  { id = 100052, w = 3499 },  # Золотой кубок [treasure]
+  { id = 100053, w = 5500 },  # Статуэтка золотого льва [treasure]
+  { id = 100054, w = 3499 },  # Таинственная статуэтка [treasure]
+  { id = 2100000, w = 3499 },  # Портальный резонанс камень(Жесткий) [treasure]
+  { id = 2100018, w = 5500 },  # Портальный резонанс камень(Стандартно) [treasure]
+]
+
+[pools.900011]
+name = "Зажигательная фляга"
+items = [
+  { id = 100047, w = 30000 },  # Зажигательная фляга [throwable]
+]
+
+[pools.900012]
+name = "Фляга барьера"
+items = [
+  { id = 100049, w = 30000 },  # Фляга барьера [throwable]
+]
+
+[pools.900013]
+name = "Фляга завесы"
+items = [
+  { id = 100050, w = 30000 },  # Фляга завесы [throwable]
+]
+
+[pools.900014]
+name = "Громовая фляга"
+items = [
+  { id = 100048, w = 30000 },  # Громовая фляга [throwable]
+]
+
+[pools.900015]
+name = "Штормовой ветер"
+items = [
+  { id = 181045000, w = 30000 },  # Штормовой ветер [weapon]
+]
+
+[pools.900016]
+name = "Жало скорпиона"
+items = [
+  { id = 181046000, w = 30000 },  # Жало скорпиона [weapon]
+]
+
+[pools.900017]
+name = "Громовой кинжал"
+items = [
+  { id = 181115000, w = 30000 },  # Громовой кинжал [weapon]
+]
+
+[pools.900018]
+name = "Кинжал разбойника"
+items = [
+  { id = 181115001, w = 30000 },  # Кинжал разбойника [weapon]
+]
+
+[pools.900019]
+name = "Шип чародея"
+items = [
+  { id = 181116001, w = 30000 },  # Шип чародея [weapon]
+]
+
+[pools.900020]
+name = "Клинок Громовержца"
+items = [
+  { id = 181025000, w = 30000 },  # Клинок Громовержца [weapon]
+]
+
+[pools.900021]
+name = "17-й ключ"
+items = [
+  { id = 181025001, w = 30000 },  # 17-й ключ [weapon]
+]
+
+[pools.900022]
+name = "Душегуб"
+items = [
+  { id = 181026001, w = 30000 },  # Душегуб [weapon]
+]
+
+[pools.900023]
+name = "Разрушитель Санктума"
+items = [
+  { id = 181125000, w = 30000 },  # Разрушитель Санктума [weapon]
+]
+
+[pools.900024]
+name = "Небесный молот"
+items = [
+  { id = 181125001, w = 30000 },  # Небесный молот [weapon]
+]
+
+[pools.900025]
+name = "Молот зверолова"
+items = [
+  { id = 181126001, w = 30000 },  # Молот зверолова [weapon]
+]
+
+[pools.900026]
+name = "Облачная завеса"
+items = [
+  { id = 181035000, w = 30000 },  # Облачная завеса [weapon]
+]
+
+[pools.900027]
+name = "Серебряный защитник"
+items = [
+  { id = 181035001, w = 30000 },  # Серебряный защитник [weapon]
+]
+
+[pools.900028]
+name = "Слуга тьмы"
+items = [
+  { id = 181036001, w = 30000 },  # Слуга тьмы [weapon]
+]
+
+[pools.900029]
+name = "Посох пламени"
+items = [
+  { id = 181051001, w = 30000 },  # Посох пламени [weapon]
+]
+
+[pools.900030]
+name = "Посох молнии"
+items = [
+  { id = 181051003, w = 30000 },  # Посох молнии [weapon]
+]
+
+[pools.900031]
+name = "Посох пироманта"
+items = [
+  { id = 181052001, w = 30000 },  # Посох пироманта [weapon]
+]
+
+[pools.900032]
+name = "Посох повелителя бури"
+items = [
+  { id = 181052003, w = 30000 },  # Посох повелителя бури [weapon]
+]
+
+[pools.900033]
+name = "Посох палящего солнца"
+items = [
+  { id = 181053001, w = 30000 },  # Посох палящего солнца [weapon]
+]
+
+[pools.900034]
+name = "Громовой посох"
+items = [
+  { id = 181053003, w = 30000 },  # Громовой посох [weapon]
+]
+
+[pools.900035]
+name = "Посох солнечного света"
+items = [
+  { id = 181054001, w = 30000 },  # Посох солнечного света [weapon]
+]
+
+[pools.900036]
+name = "Посох громового правосудия"
+items = [
+  { id = 181054003, w = 30000 },  # Посох громового правосудия [weapon]
+]
+
+[pools.900037]
+name = "Палящее древо Эндора"
+items = [
+  { id = 181055001, w = 30000 },  # Палящее древо Эндора [weapon]
+]
+
+[pools.900038]
+name = "Повелитель бури"
+items = [
+  { id = 181055003, w = 30000 },  # Повелитель бури [weapon]
+]
+
+[pools.900039]
+name = "Посох молнии бессмертия"
+items = [
+  { id = 181056003, w = 30000 },  # Посох молнии бессмертия [weapon]
+]
+
+[pools.900040]
+name = "Меч рыцаря Белой звезды"
+items = [
+  { id = 181015000, w = 30000 },  # Меч рыцаря Белой звезды [weapon]
+]
+
+[pools.900041]
+name = "Меч стража высших эльфов"
+items = [
+  { id = 181015001, w = 30000 },  # Меч стража высших эльфов [weapon]
+]
+
+[pools.900042]
+name = "Реликвия священной рощи"
+items = [
+  { id = 181016000, w = 30000 },  # Реликвия священной рощи [weapon]
+]
+
+[pools.900043]
+name = "Факел"
+items = [
+  { id = 100012, w = 30000 },  # Факел [throwable]
+]
+
+[pools.900044]
+name = "Золото ×15–40"
+items = [
+  { id = 100069, cnt = [15, 25, 40], w = 30000 },  # Золото [gold]
+]
+
+[pools.100001]
+name = "Поломанные доспехи"
+items = [
+  { id = 184020000, w = 30000 },  # Поломанные доспехи [armor]
+]
+
+[pools.100002]
+name = "Поломанные набедренники"
+items = [
+  { id = 184040000, w = 30000 },  # Поломанные набедренники [armor]
+]
+
+[pools.100003]
+name = "броня 2, зелья 1"
+items = [
+  { id = 184030000, w = 10000 },  # Поломанные рукавицы [armor]
+  { id = 184050000, w = 10000 },  # Поломанные наголенники [armor]
+  { id = 100016, w = 10000 },  # Повязка [potion]
+]
+
+[pools.100004]
+name = "Поломанные наголенники"
+items = [
+  { id = 184050000, w = 30000 },  # Поломанные наголенники [armor]
+]
+
+[pools.100005]
+name = "Зелье исцеления"
+items = [
+  { id = 100013, w = 30000 },  # Зелье исцеления [potion]
+]
+
+[pools.100006]
+name = "Поломанные рукавицы"
+items = [
+  { id = 184030000, w = 30000 },  # Поломанные рукавицы [armor]
+]
+
+[pools.100007]
+name = "Простой меч"
+items = [
+  { id = 181011000, w = 30000 },  # Простой меч [weapon]
+]
+
+[pools.100008]
+name = "Простой длинный меч"
+items = [
+  { id = 181021000, w = 30000 },  # Простой длинный меч [weapon]
+]
+
+[pools.100009]
+name = "Повязка"
+items = [
+  { id = 100016, w = 30000 },  # Повязка [potion]
+]
+
+[pools.100010]
+name = "Зелье исцеления"
+items = [
+  { id = 100013, w = 30000 },  # Зелье исцеления [potion]
+]
+
+[pools.100011]
+name = "Корона"
+items = [
+  { id = 100009, w = 30000 },  # Корона [treasure]
+]
+
+[pools.100012]
+name = "Мутная эссенция жизни"
+items = [
+  { id = 100060, w = 30000 },  # Мутная эссенция жизни [supply]
+]
+
+[pools.100013]
+name = "Отменный серебряный кубок"
+items = [
+  { id = 100080, w = 30000 },  # Отменный серебряный кубок [treasure]
+]
+
+[pools.100014]
+name = "Отменный золотой кубок (копия)"
+items = [
+  { id = 100081, w = 30000, level = 4 },  # Отменный золотой кубок (копия) [treasure]
+]
+
+[pools.100015]
+name = "Отменная статуэтка лошади"
+items = [
+  { id = 100082, w = 30000, level = 3 },  # Отменная статуэтка лошади [treasure]
+]
+
+[pools.100016]
+name = "Золотая пивная кружка"
+items = [
+  { id = 100051, w = 30000, level = 3 },  # Золотая пивная кружка [treasure]
+]

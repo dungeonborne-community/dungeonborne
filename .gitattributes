@@ -1,0 +1,9 @@
+# Files are checked out exactly as stored, whatever core.autocrlf says. Git for Windows defaults to autocrlf=true and
+# would turn LF into CRLF on clone: hashes of sources then differ from the recorded ones (17.11 trial install:
+# dbnative.build.sha256 vs dbnative.c, `cargo xtask mods check` failed). The repository keeps LF, CRLF and mixed files
+# as they are; no conversion either way.
+* -text
+
+# cargo tauri build rewrites these files with LF; with core.autocrlf=true (Git for Windows default) a CRLF checkout
+# would then show them as modified after every build. Keep them LF everywhere.
+apps/*/src-tauri/Cargo.toml text eol=lf

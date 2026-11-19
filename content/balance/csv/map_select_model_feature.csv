@@ -1,0 +1,10 @@
+﻿model_feature_id;icon_res;model_feature_name;model_feature_describe;type
+1;/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_01.T_SelectMap_BuffIcon_01;SelectMap_Buff_Name_01;SelectMap_Buff_Desc_01;1
+2;/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_02.T_SelectMap_BuffIcon_02;SelectMap_Buff_Name_02;SelectMap_Buff_Desc_02;1
+3;/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_03.T_SelectMap_BuffIcon_03;SelectMap_Buff_Name_03;SelectMap_Buff_Desc_03;1
+4;/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_04.T_SelectMap_BuffIcon_04;SelectMap_Buff_Name_04;;2
+5;/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_03.T_SelectMap_BuffIcon_03;SelectMap_Buff_Name_03;SelectMap_Buff_Desc_08;1
+6;/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_05.T_SelectMap_BuffIcon_05;SelectMap_Buff_Name_06;SelectMap_Buff_Desc_06;1
+7;/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_06.T_SelectMap_BuffIcon_06;SelectMap_Buff_Name_07;SelectMap_Buff_Desc_07;1
+8;/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_05.T_SelectMap_BuffIcon_05;SelectMap_Buff_Name_06;SelectMap_Buff_Desc_06;1
+9;/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_07.T_SelectMap_BuffIcon_07;SelectMap_Buff_Name_09;SelectMap_Buff_Desc_09;1

@@ -1,0 +1,8 @@
+[member]
+name = "probe"
+kind = "tool"
+visibility = "team"
+lang = "lua+python"
+version = "0"
+depends_on = []
+description = "Client and login probes (ClientProbe, auth_test, pve capture)"

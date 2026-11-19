@@ -1,0 +1,202 @@
+[
+  {
+    "affix_pool_ids": [
+      101401
+    ],
+    "level_id": 10201,
+    "monster_id": 249,
+    "rule_id": 40101
+  },
+  {
+    "affix_pool_ids": [
+      101401
+    ],
+    "level_id": 10201,
+    "monster_id": 212,
+    "rule_id": 40101
+  },
+  {
+    "affix_pool_ids": [
+      101401
+    ],
+    "level_id": 10101,
+    "monster_id": 255,
+    "rule_id": 40101
+  },
+  {
+    "affix_pool_ids": [
+      101401
+    ],
+    "level_id": 10101,
+    "monster_id": 212,
+    "rule_id": 40101
+  },
+  {
+    "affix_pool_ids": [
+      101402
+    ],
+    "level_id": 10201,
+    "monster_id": 249,
+    "rule_id": 40102
+  },
+  {
+    "affix_pool_ids": [
+      101402
+    ],
+    "level_id": 10201,
+    "monster_id": 212,
+    "rule_id": 40102
+  },
+  {
+    "affix_pool_ids": [
+      101402
+    ],
+    "level_id": 10101,
+    "monster_id": 255,
+    "rule_id": 40102
+  },
+  {
+    "affix_pool_ids": [
+      101402
+    ],
+    "level_id": 10101,
+    "monster_id": 212,
+    "rule_id": 40102
+  },
+  {
+    "affix_pool_ids": [
+      101401,
+      101402
+    ],
+    "level_id": 10201,
+    "monster_id": 249,
+    "rule_id": 40103
+  },
+  {
+    "affix_pool_ids": [
+      101401,
+      101402
+    ],
+    "level_id": 10201,
+    "monster_id": 212,
+    "rule_id": 40103
+  },
+  {
+    "affix_pool_ids": [
+      101401,
+      101402
+    ],
+    "level_id": 10101,
+    "monster_id": 255,
+    "rule_id": 40103
+  },
+  {
+    "affix_pool_ids": [
+      101401,
+      101402
+    ],
+    "level_id": 10101,
+    "monster_id": 212,
+    "rule_id": 40103
+  },
+  {
+    "affix_pool_ids": [
+      101101
+    ],
+    "level_id": 10203,
+    "monster_id": 241,
+    "rule_id": 40111
+  },
+  {
+    "affix_pool_ids": [
+      101101
+    ],
+    "level_id": 10203,
+    "monster_id": 265,
+    "rule_id": 40111
+  },
+  {
+    "affix_pool_ids": [
+      101101
+    ],
+    "level_id": 10103,
+    "monster_id": 254,
+    "rule_id": 40111
+  },
+  {
+    "affix_pool_ids": [
+      101101
+    ],
+    "level_id": 10103,
+    "monster_id": 265,
+    "rule_id": 40111
+  },
+  {
+    "affix_pool_ids": [
+      101102
+    ],
+    "level_id": 10203,
+    "monster_id": 241,
+    "rule_id": 40112
+  },
+  {
+    "affix_pool_ids": [
+      101102
+    ],
+    "level_id": 10203,
+    "monster_id": 265,
+    "rule_id": 40112
+  },
+  {
+    "affix_pool_ids": [
+      101102
+    ],
+    "level_id": 10103,
+    "monster_id": 254,
+    "rule_id": 40112
+  },
+  {
+    "affix_pool_ids": [
+      101102
+    ],
+    "level_id": 10103,
+    "monster_id": 265,
+    "rule_id": 40112
+  },
+  {
+    "affix_pool_ids": [
+      101101,
+      101102
+    ],
+    "level_id": 10203,
+    "monster_id": 241,
+    "rule_id": 40113
+  },
+  {
+    "affix_pool_ids": [
+      101101,
+      101102
+    ],
+    "level_id": 10203,
+    "monster_id": 265,
+    "rule_id": 40113
+  },
+  {
+    "affix_pool_ids": [
+      101101,
+      101102
+    ],
+    "level_id": 10103,
+    "monster_id": 254,
+    "rule_id": 40113
+  },
+  {
+    "affix_pool_ids": [
+      101101,
+      101102
+    ],
+    "level_id": 10103,
+    "monster_id": 265,
+    "rule_id": 40113
+  }
+]

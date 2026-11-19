@@ -1,0 +1,57 @@
+{
+  "type": "tgf.config.ExcelMithrilForceSettlementFactor",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 6,
+    "hash_code": "sha256:97ad23da19b6177b5eafebc48fd449a2a7198c81088022fd649bf48706bc2da2",
+    "data_source": [
+      {
+        "file": "1e63ceabfee57c31d5de6d8394881ec3992c5ba23b72f6fd18f507bf2a88ccde",
+        "sheet": "7f0ee69b7b3285bac8595f737e560619ef82e115746564163710b231ef975edb",
+        "count": 6
+      }
+    ]
+  },
+  "rows": [
+    {
+      "currency_active_coefficient": 100,
+      "heirloom_item_coefficient": 100
+    },
+    {
+      "currency_active_coefficient": 100,
+      "heirloom_item_coefficient": 100,
+      "damage": 400,
+      "exp_bottle_active_coefficient": 20,
+      "potion_active_coefficient": 20
+    },
+    {
+      "currency_active_coefficient": 100,
+      "heirloom_item_coefficient": 100,
+      "damage": 800,
+      "exp_bottle_active_coefficient": 40,
+      "potion_active_coefficient": 40
+    },
+    {
+      "currency_active_coefficient": 100,
+      "heirloom_item_coefficient": 100,
+      "damage": 1200,
+      "exp_bottle_active_coefficient": 60,
+      "potion_active_coefficient": 60
+    },
+    {
+      "currency_active_coefficient": 100,
+      "heirloom_item_coefficient": 100,
+      "damage": 1600,
+      "exp_bottle_active_coefficient": 80,
+      "potion_active_coefficient": 80
+    },
+    {
+      "currency_active_coefficient": 100,
+      "heirloom_item_coefficient": 100,
+      "damage": 2000,
+      "exp_bottle_active_coefficient": 100,
+      "potion_active_coefficient": 100
+    }
+  ]
+}

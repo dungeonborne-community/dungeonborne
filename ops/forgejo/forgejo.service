@@ -1,0 +1,22 @@
+[Unit]
+Description=Forgejo (git; local only: http 127.0.0.1:3000, ssh 127.0.0.1:2222)
+After=network.target
+
+[Service]
+Type=simple
+User=git
+Group=git
+WorkingDirectory=/var/lib/forgejo/
+ExecStart=/usr/local/bin/forgejo web --config /etc/forgejo/app.ini
+Restart=always
+RestartSec=5
+Environment=USER=git HOME=/home/git FORGEJO_WORK_DIR=/var/lib/forgejo
+# на одной VM с dbserver: Forgejo уступает ему память, процессор и диск
+MemoryHigh=400M
+MemoryMax=600M
+CPUWeight=20
+IOWeight=20
+Nice=10
+
+[Install]
+WantedBy=multi-user.target

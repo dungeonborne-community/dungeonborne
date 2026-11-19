@@ -1,0 +1,4 @@
+﻿row,key,title,path,value,name
+0,100,Меч,item_id,100,Меч
+0,100,Меч,durability,100,
+1,200,Щит,item_id,200,Щит

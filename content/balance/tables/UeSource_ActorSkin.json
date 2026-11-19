@@ -1,0 +1,555 @@
+{
+  "type": "tgf.config.UeSourceActorSkin",
+  "header": {},
+  "rows": [
+    {
+      "skin_id": 1340001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_SWORD",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Weapon/Skeleton/Sword_skeleton.Sword_skeleton'"
+    },
+    {
+      "skin_id": 1340008,
+      "slot_type": "EN_SKIN_SLOT_TYPE_STAFF",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Weapon/Skeleton/Staff_Skeleton.Staff_Skeleton'"
+    },
+    {
+      "skin_id": 1340003,
+      "slot_type": "EN_SKIN_SLOT_TYPE_SHIELD",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Weapon/Skeleton/Shield_Skeleton.Shield_Skeleton'"
+    },
+    {
+      "skin_id": 1340007,
+      "slot_type": "EN_SKIN_SLOT_TYPE_RELIC",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Weapon/Skeleton/Relic_Skeleton.Relic_Skeleton'"
+    },
+    {
+      "skin_id": 1340006,
+      "slot_type": "EN_SKIN_SLOT_TYPE_MACE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Weapon/Skeleton/Mace_Skeleton.Mace_Skeleton'"
+    },
+    {
+      "skin_id": 1340002,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LONG_SWORD",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Weapon/Skeleton/LongSword_Skeleton.LongSword_Skeleton'"
+    },
+    {
+      "skin_id": 1340004,
+      "slot_type": "EN_SKIN_SLOT_TYPE_HEAVY_CROSS_BOW",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Weapon/Skeleton/HeavyCrossbow_Skeleton.HeavyCrossbow_Skeleton'"
+    },
+    {
+      "skin_id": 1340005,
+      "slot_type": "EN_SKIN_SLOT_TYPE_DAGGER",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Weapon/Skeleton/Dagger_Skeleton.Dagger_Skeleton'"
+    },
+    {
+      "skin_id": 1310001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_SWORD",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Weapon/Heirloom/BrokenSword.BrokenSword'"
+    },
+    {
+      "skin_id": 1300002,
+      "slot_type": "EN_SKIN_SLOT_TYPE_TORCH",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Torch/Torch_Skin_Moonlight.Torch_Skin_Moonlight'"
+    },
+    {
+      "skin_id": 1300003,
+      "slot_type": "EN_SKIN_SLOT_TYPE_TORCH",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Torch/Torch_Skin_HandofGlory.Torch_Skin_HandofGlory'"
+    },
+    {
+      "skin_id": 1300001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_TORCH",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Torch/Torch_Skin.Torch_Skin'"
+    },
+    {
+      "skin_id": 1300005,
+      "slot_type": "EN_SKIN_SLOT_TYPE_TORCH",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Torch/Torch_004_Pixel.Torch_004_Pixel'"
+    },
+    {
+      "skin_id": 1300004,
+      "slot_type": "EN_SKIN_SLOT_TYPE_TORCH",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Torch/Torch_003_EyeOfSodor.Torch_003_EyeOfSodor'"
+    },
+    {
+      "skin_id": 1301007,
+      "slot_type": "EN_SKIN_SLOT_TYPE_POTION",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Potion/Skin_Potion_005_twitch.Skin_Potion_005_twitch'"
+    },
+    {
+      "skin_id": 1301005,
+      "slot_type": "EN_SKIN_SLOT_TYPE_POTION",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Potion/Skin_Potion_004_Cola.Skin_Potion_004_Cola'"
+    },
+    {
+      "skin_id": 1301006,
+      "slot_type": "EN_SKIN_SLOT_TYPE_POTION",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Potion/Skin_Potion_003_Witcher.Skin_Potion_003_Witcher'"
+    },
+    {
+      "skin_id": 1301004,
+      "slot_type": "EN_SKIN_SLOT_TYPE_POTION",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Potion/SkinPotionSkeleton.SkinPotionSkeleton'"
+    },
+    {
+      "skin_id": 1301002,
+      "slot_type": "EN_SKIN_SLOT_TYPE_POTION",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Potion/SkinPotionforpublisher.SkinPotionforpublisher'"
+    },
+    {
+      "skin_id": 1301003,
+      "slot_type": "EN_SKIN_SLOT_TYPE_POTION",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Potion/SkinPotionCult.SkinPotionCult'"
+    },
+    {
+      "skin_id": 1301001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_POTION",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Potion/SkinPotionBetaEvent.SkinPotionBetaEvent'"
+    },
+    {
+      "skin_id": 1330001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_KILLING_EFFECT",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/KillingEffect/KillingEffect_Skin_WhiteCoin.KillingEffect_Skin_WhiteCoin'"
+    },
+    {
+      "skin_id": 1330000,
+      "slot_type": "EN_SKIN_SLOT_TYPE_KILLING_EFFECT",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/KillingEffect/Killingeffect_Skin01.Killingeffect_Skin01'"
+    },
+    {
+      "skin_id": 132000903,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_014_BearHead/Helmet_BearHead_Plate.Helmet_BearHead_Plate'"
+    },
+    {
+      "skin_id": 132000901,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_014_BearHead/Helmet_BearHead_Cloth.Helmet_BearHead_Cloth'"
+    },
+    {
+      "skin_id": 132000902,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_014_BearHead/Helemt_BearHead_Leather.Helemt_BearHead_Leather'"
+    },
+    {
+      "skin_id": 132001303,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_013_DruidMask/Helmet_DruidMask_Plate.Helmet_DruidMask_Plate'"
+    },
+    {
+      "skin_id": 132001302,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_013_DruidMask/Helmet_DruidMask_Leather.Helmet_DruidMask_Leather'"
+    },
+    {
+      "skin_id": 132001301,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_013_DruidMask/Helmet_DruidMask_Cloth.Helmet_DruidMask_Cloth'"
+    },
+    {
+      "skin_id": 132001003,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_012_RogueMask/Helmet_RogueMask_Plate.Helmet_RogueMask_Plate'"
+    },
+    {
+      "skin_id": 132001002,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_012_RogueMask/Helmet_RogueMask_Leather.Helmet_RogueMask_Leather'"
+    },
+    {
+      "skin_id": 132001001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_012_RogueMask/Helmet_RogueMask_Cloth.Helmet_RogueMask_Cloth'"
+    },
+    {
+      "skin_id": 132001103,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_011_SowrdmanHat/Helmet_SwordmanHat_Plate.Helmet_SwordmanHat_Plate'"
+    },
+    {
+      "skin_id": 132001102,
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_011_SowrdmanHat/Helmet_SwordmanHat_Leather.Helmet_SwordmanHat_Leather'"
+    },
+    {
+      "skin_id": 132001101,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_011_SowrdmanHat/Helmet_SwordmanHat_Cloth.Helmet_SwordmanHat_Cloth'"
+    },
+    {
+      "skin_id": 132001203,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_010_DKHelmet/Helmet_SKHelmet_Plate.Helmet_SKHelmet_Plate'"
+    },
+    {
+      "skin_id": 132001202,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_010_DKHelmet/Helmet_DKHelmet_Leather.Helmet_DKHelmet_Leather'"
+    },
+    {
+      "skin_id": 132001201,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_010_DKHelmet/Helmet_DKHelmet_Cloth.Helmet_DKHelmet_Cloth'"
+    },
+    {
+      "skin_id": 132000803,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_009_Galadriel/Helmet_Galadriel_Plate.Helmet_Galadriel_Plate'"
+    },
+    {
+      "skin_id": 132000802,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_009_Galadriel/Helmet_Galadriel_Leather.Helmet_Galadriel_Leather'"
+    },
+    {
+      "skin_id": 132000801,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_009_Galadriel/Helmet_Galadriel_Cloth.Helmet_Galadriel_Cloth'"
+    },
+    {
+      "skin_id": 132000603,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_008_PixelFemale/Helmet_PixelFemale_Plate.Helmet_PixelFemale_Plate'"
+    },
+    {
+      "skin_id": 132000602,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_008_PixelFemale/Helmet_PixelFemale_Leather.Helmet_PixelFemale_Leather'"
+    },
+    {
+      "skin_id": 132000601,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_008_PixelFemale/Helmet_PixelFemale_Cloth.Helmet_PixelFemale_Cloth'"
+    },
+    {
+      "skin_id": 132000703,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_007_Thranduil/Helmet_Thranduil_Plate.Helmet_Thranduil_Plate'"
+    },
+    {
+      "skin_id": 132000702,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_007_Thranduil/Helmet_Thranduil_Leather.Helmet_Thranduil_Leather'"
+    },
+    {
+      "skin_id": 132000701,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_007_Thranduil/Helmet_Thranduil_Cloth.Helmet_Thranduil_Cloth'"
+    },
+    {
+      "skin_id": 132000503,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_006_Pixel/Helmet_Pixel_Plate.Helmet_Pixel_Plate'"
+    },
+    {
+      "skin_id": 132000502,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_006_Pixel/Helmet_Pixel_Leather.Helmet_Pixel_Leather'"
+    },
+    {
+      "skin_id": 132000501,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_006_Pixel/Helmet_Pixel_Cloth.Helmet_Pixel_Cloth'"
+    },
+    {
+      "skin_id": 132000403,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_005_PirateHat/Helmet_Pirate_Plate.Helmet_Pirate_Plate'"
+    },
+    {
+      "skin_id": 132000402,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_005_PirateHat/Helmet_Pirate_Leather.Helmet_Pirate_Leather'"
+    },
+    {
+      "skin_id": 132000401,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_005_PirateHat/Helmet_Pirate_Cloth.Helmet_Pirate_Cloth'"
+    },
+    {
+      "skin_id": 132000303,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_004_DevilHorn/Helmet_DevilHorns_Plate.Helmet_DevilHorns_Plate'"
+    },
+    {
+      "skin_id": 132000302,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_004_DevilHorn/Helmet_DevilHorns_Leather.Helmet_DevilHorns_Leather'"
+    },
+    {
+      "skin_id": 132000301,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_004_DevilHorn/Helmet_DevilHorns_Cloth.Helmet_DevilHorns_Cloth'"
+    },
+    {
+      "skin_id": 132000203,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_003_Bucket/Helmet_Bucket_Plate.Helmet_Bucket_Plate'"
+    },
+    {
+      "skin_id": 132000202,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_003_Bucket/Helmet_Bucket_Leather.Helmet_Bucket_Leather'"
+    },
+    {
+      "skin_id": 132000201,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_003_Bucket/Helmet_Bucket_Cloth.Helmet_Bucket_Cloth'"
+    },
+    {
+      "skin_id": 132000103,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_002_Bell/Helmet_Bell_Plate.Helmet_Bell_Plate'"
+    },
+    {
+      "skin_id": 132000102,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_002_Bell/Helmet_Bell_Leather.Helmet_Bell_Leather'"
+    },
+    {
+      "skin_id": 132000101,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_002_Bell/Helmet_Bell_Cloth.Helmet_Bell_Cloth'"
+    },
+    {
+      "skin_id": 132000003,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_001_BirdSkull/Skull_Bird_Plate.Skull_Bird_Plate'"
+    },
+    {
+      "skin_id": 132000002,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_001_BirdSkull/Skull_Bird_Leather.Skull_Bird_Leather'"
+    },
+    {
+      "skin_id": 132000001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Hood/Skin_Ho_001_BirdSkull/Skull_Bird_Cloth.Skull_Bird_Cloth'"
+    },
+    {
+      "skin_id": 1410001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_HEADFRAME",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Head/HeadFrame_001.HeadFrame_001'"
+    },
+    {
+      "skin_id": 1322002,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOAK",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Cape/CapeSkin_003_Cult.CapeSkin_003_Cult'"
+    },
+    {
+      "skin_id": 1322001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOAK",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Cape/CapeSkin_002_Moonlight.CapeSkin_002_Moonlight'"
+    },
+    {
+      "skin_id": 1322000,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOAK",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Cape/CapeSkin_001.CapeSkin_001'"
+    },
+    {
+      "skin_id": 1321001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_ATTACHING_BACK",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Back/Back_WitcherBlades.Back_WitcherBlades'"
+    },
+    {
+      "skin_id": 1321000,
+      "slot_type": "EN_SKIN_SLOT_TYPE_ATTACHING_BACK",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Back/Back_ResurrectStone.Back_ResurrectStone'"
+    },
+    {
+      "skin_id": 1321003,
+      "slot_type": "EN_SKIN_SLOT_TYPE_ATTACHING_BACK",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Back/Back_PixelPickaxe.Back_PixelPickaxe'"
+    },
+    {
+      "skin_id": 1321002,
+      "slot_type": "EN_SKIN_SLOT_TYPE_ATTACHING_BACK",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Back/Back_Horn.Back_Horn'"
+    },
+    {
+      "skin_id": 1321005,
+      "slot_type": "EN_SKIN_SLOT_TYPE_ATTACHING_BACK",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Back/Back_05_Lute.Back_05_Lute'"
+    },
+    {
+      "skin_id": 1321004,
+      "slot_type": "EN_SKIN_SLOT_TYPE_ATTACHING_BACK",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Back/Back_04_TurtleShell.Back_04_TurtleShell'"
+    },
+    {
+      "skin_id": 1360018,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_TROUSERS",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_L1000301/Skin_L_Trousers_02.Skin_L_Trousers_02'"
+    },
+    {
+      "skin_id": 1360019,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_SHOE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_L1000301/Skin_L_Shoes_02.Skin_L_Shoes_02'"
+    },
+    {
+      "skin_id": 1360015,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_L1000301/Skin_L_Helmet_02.Skin_L_Helmet_02'"
+    },
+    {
+      "skin_id": 1360017,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_GLOVE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_L1000301/Skin_L_Glove_02.Skin_L_Glove_02'"
+    },
+    {
+      "skin_id": 1360016,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_CHEST",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_L1000301/Skin_L_Chest_02.Skin_L_Chest_02'"
+    },
+    {
+      "skin_id": 1360013,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_TROUSERS",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_P1000101/Skin_P_Trouser_01.Skin_P_Trouser_01'"
+    },
+    {
+      "skin_id": 1360014,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_SHOE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_P1000101/Skin_P_Shoes_01.Skin_P_Shoes_01'"
+    },
+    {
+      "skin_id": 1360010,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_P1000101/Skin_P_Helmet_01.Skin_P_Helmet_01'"
+    },
+    {
+      "skin_id": 1360012,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_GLOVE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_P1000101/Skin_P_Glove_01.Skin_P_Glove_01'"
+    },
+    {
+      "skin_id": 1360011,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_CHEST",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_P1000101/Skin_P_Chest_01.Skin_P_Chest_01'"
+    },
+    {
+      "skin_id": 1360008,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_TROUSERS",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_L1000101/Skin_L_Trousers_01.Skin_L_Trousers_01'"
+    },
+    {
+      "skin_id": 1360009,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_SHOE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_L1000101/Skin_L_Shoes_01.Skin_L_Shoes_01'"
+    },
+    {
+      "skin_id": 1360005,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_L1000101/Skin_L_Helmet_01.Skin_L_Helmet_01'"
+    },
+    {
+      "skin_id": 1360007,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_GLOVE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_L1000101/Skin_L_Glove_01.Skin_L_Glove_01'"
+    },
+    {
+      "skin_id": 1360006,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_CHEST",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_L1000101/Skin_L_Chest_01.Skin_L_Chest_01'"
+    },
+    {
+      "skin_id": 1360003,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_TROUSERS",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_C1000101/Skin_C_Trousers_01.Skin_C_Trousers_01'"
+    },
+    {
+      "skin_id": 1360004,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_SHOE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_C1000101/Skin_C_Shoes_01.Skin_C_Shoes_01'"
+    },
+    {
+      "skin_id": 1360000,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_C1000101/Skin_C_Helmet_01.Skin_C_Helmet_01'"
+    },
+    {
+      "skin_id": 1360002,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_GLOVE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_C1000101/Skin_C_Glove_01.Skin_C_Glove_01'"
+    },
+    {
+      "skin_id": 1360001,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_CHEST",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/Skin_S_10001_UEshop1/Skin_S_C1000101/Skin_C_Chest_01.Skin_C_Chest_01'"
+    },
+    {
+      "skin_id": 1360033,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_TROUSERS",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_P3000101/Skin_P_Trousers_Skeleton.Skin_P_Trousers_Skeleton'"
+    },
+    {
+      "skin_id": 1360034,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_SHOE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_P3000101/Skin_P_Shoes_Skeleton.Skin_P_Shoes_Skeleton'"
+    },
+    {
+      "skin_id": 1360030,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_P3000101/Skin_P_Helmet_Skeleton.Skin_P_Helmet_Skeleton'"
+    },
+    {
+      "skin_id": 1360032,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_GLOVE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_P3000101/Skin_P_Glove_Skeleton.Skin_P_Glove_Skeleton'"
+    },
+    {
+      "skin_id": 1360031,
+      "slot_type": "EN_SKIN_SLOT_TYPE_PLATE_CHEST",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_P3000101/Skin_P_Chest_Skeleton.Skin_P_Chest_Skeleton'"
+    },
+    {
+      "skin_id": 1360028,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_TROUSERS",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_L3000101/Skin_L_Trousers_Skeleton.Skin_L_Trousers_Skeleton'"
+    },
+    {
+      "skin_id": 1360029,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_SHOE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_L3000101/Skin_L_Shoes_Skeleton.Skin_L_Shoes_Skeleton'"
+    },
+    {
+      "skin_id": 1360025,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_L3000101/Skin_L_Helmet_Skeleton.Skin_L_Helmet_Skeleton'"
+    },
+    {
+      "skin_id": 1360027,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_GLOVE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_L3000101/Skin_L_Glove_Skeleton.Skin_L_Glove_Skeleton'"
+    },
+    {
+      "skin_id": 1360026,
+      "slot_type": "EN_SKIN_SLOT_TYPE_LEATHER_CHEST",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_L3000101/Skin_L_Chest_Skeleton.Skin_L_Chest_Skeleton'"
+    },
+    {
+      "skin_id": 1360023,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_TROUSERS",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_C3000101/Skin_C_Trousers_Skeleton.Skin_C_Trousers_Skeleton'"
+    },
+    {
+      "skin_id": 1360024,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_SHOE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_C3000101/Skin_C_Shoes_Skeleton.Skin_C_Shoes_Skeleton'"
+    },
+    {
+      "skin_id": 1360020,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_HELMET",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_C3000101/Skin_C_Helmet_Skeleton.Skin_C_Helmet_Skeleton'"
+    },
+    {
+      "skin_id": 1360022,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_GLOVE",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_C3000101/Skin_C_Glove_Skeleton.Skin_C_Glove_Skeleton'"
+    },
+    {
+      "skin_id": 1360021,
+      "slot_type": "EN_SKIN_SLOT_TYPE_CLOTH_CHEST",
+      "ue_path": "/Script/LyraGame.ItemSkinSet'/Game/TGF/Equipment/Skin/Armor/30001_Skeleton/Sink_S_C3000101/Skin_C_Chest_Skeleton.Skin_C_Chest_Skeleton'"
+    }
+  ]
+}

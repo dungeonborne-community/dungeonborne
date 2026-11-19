@@ -1,0 +1,31 @@
+# ACE A/B experiment (05.11): the game via the launcher to a local backend — as on prod (launcher as parent, TLS relay), but
+# dev login (without Discord), local game server 7777. Run: dbtest\run_launcher_dev.ps1. Backend on 127.0.0.2,
+# launcher on 127.0.0.1. Server in the launcher: http://127.0.0.1:8090/.well-known/dbserver.json
+[server]
+id = "local.launcher.test"
+name = "Local launcher test (dev)"
+
+[game]
+exe_sha256 = "62d509a00d984696e021fb5ddba9f87fd1b27c84f695877345ff5fe9401f58b3"   # Binaries\Win64\Dungeonborne.exe
+label = "Dungeonborne Win64 final"
+
+[web]
+bind = "127.0.0.1:8090"
+public_url = "http://127.0.0.1:8090"
+
+[auth]
+require = "relay"
+providers = ["dev"]
+session_ttl_days = 7
+
+# mods as on prod (the same set that was rolled out on 04.11: launcher/dist/mods, manifest_mods.json)
+[mods]
+dir = "../launcher/dist/mods"
+
+[relay]
+bind = "127.0.0.1:7443"
+public_address = "127.0.0.1"
+public_port = 7443
+cert = "cert.pem"
+key = "key.pem"
+upstream_ip = "127.0.0.2"

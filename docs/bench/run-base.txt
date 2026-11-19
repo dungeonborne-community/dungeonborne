@@ -1,0 +1,42 @@
+﻿05:35:39 idle: CPU 0%, free 30794 MB; dbserver-lite.txt: empty (base)
+05:35:43 server start 7777 (free 30787 MB)
+05:36:16 server 7777 ready in 33 s
+05:36:28 N=1: warm-up 45 s
+05:39:18 N=1: fps 58,9 (worst 18,9), CPU per server 121% (100% = 1 logical CPU), WS 2963 MB, private 3088 MB, system CPU 11,1%, free 27604 MB
+05:39:18    7777: fps 58,9 (min 18,9) cpu 121% ws 2963 MB private 3088 MB threads 178
+05:39:22 server start 7787 (free 27630 MB)
+05:39:58 server 7787 ready in 36 s
+05:40:07 N=2: warm-up 45 s
+05:42:57 N=2: fps 58,2 (worst 24,4), CPU per server 135% (100% = 1 logical CPU), WS 2900 MB, private 3098 MB, system CPU 22,2%, free 23806 MB
+05:42:57    7777: fps 56,8 (min 24,4) cpu 146% ws 2850 MB private 3127 MB threads 178
+05:42:57    7787: fps 59,7 (min 55,6) cpu 124% ws 2950 MB private 3070 MB threads 176
+05:43:01 server start 7797 (free 23719 MB)
+05:43:43 server 7797 ready in 42 s
+05:43:50 server start 7807 (free 25044 MB)
+05:44:36 server 7807 ready in 45 s
+05:44:36 N=4: warm-up 45 s
+05:47:23 N=4: fps 52,8 (worst 11,3), CPU per server 168% (100% = 1 logical CPU), WS 2060 MB, private 3100 MB, system CPU 60,8%, free 20109 MB
+05:47:23    7777: fps 50,1 (min 16) cpu 165% ws 734 MB private 3158 MB threads 178
+05:47:23    7787: fps 49,9 (min 11,3) cpu 174% ws 1549 MB private 3116 MB threads 178
+05:47:23    7797: fps 54,6 (min 24,7) cpu 174% ws 2963 MB private 3053 MB threads 176
+05:47:23    7807: fps 56,7 (min 22) cpu 159% ws 2994 MB private 3073 MB threads 171
+05:47:28 server start 7817 (free 20736 MB)
+05:48:16 server 7817 ready in 48 s
+05:48:21 server start 7827 (free 20571 MB)
+05:49:15 server 7827 ready in 54 s
+05:49:21 server start 7837 (free 19376 MB)
+05:50:15 server 7837 ready in 54 s
+05:50:21 server start 7847 (free 16695 MB)
+05:51:18 server 7847 ready in 57 s
+05:51:18 N=8: warm-up 45 s
+05:54:06 N=8: fps 27,9 (worst 2,5), CPU per server 144% (100% = 1 logical CPU), WS 1578 MB, private 3119 MB, system CPU 98,8%, free 13503 MB
+05:54:06    7777: fps 24,1 (min 9) cpu 147% ws 675 MB private 3144 MB threads 178
+05:54:06    7787: fps 13,5 (min 2,5) cpu 100% ws 693 MB private 3147 MB threads 178
+05:54:06    7797: fps 33,1 (min 6,6) cpu 161% ws 833 MB private 3099 MB threads 177
+05:54:06    7807: fps 30,9 (min 9,1) cpu 164% ws 1007 MB private 3185 MB threads 175
+05:54:06    7817: fps 29,2 (min 10,9) cpu 131% ws 2065 MB private 3068 MB threads 168
+05:54:06    7827: fps 38,8 (min 17,7) cpu 163% ws 2323 MB private 3154 MB threads 176
+05:54:06    7837: fps 30 (min 8,1) cpu 165% ws 2395 MB private 3100 MB threads 176
+05:54:06    7847: fps 23,5 (min 3) cpu 123% ws 2629 MB private 3054 MB threads 172
+05:55:37 servers stopped (processes left: 2)
+05:55:37 result: <repo>\docs\bench\bench-base-20261103-0535.md

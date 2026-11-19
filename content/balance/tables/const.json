@@ -1,0 +1,940 @@
+{
+  "type": "tgf.config.excel_origin_const_config",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 231,
+    "hash_code": "sha256:af09b57a9cd1ad82a78b18ef834f82bec012b64f77f253f0c82b0d5b2078e54f",
+    "data_source": [
+      {
+        "file": "de099c5911b76983bae38dff14122d3c59f99263e33911998524ab38f637f1b0",
+        "sheet": "64405d5763c00f5e0b425d3ab225412b8e59c3ab94fe82fa96cc8fa71dc6deca",
+        "count": 231
+      }
+    ]
+  },
+  "rows": [
+    {
+      "key": "test_duration",
+      "value": "30d"
+    },
+    {
+      "key": "test_timestamp",
+      "value": "\"2009-07-05 15:25:00\" \"2009-07-05 15:25:00Z\" \"2009-07-05 15:25:00+04:00\""
+    },
+    {
+      "key": "mail_default_expire",
+      "value": "30d"
+    },
+    {
+      "key": "user_mail_max_count_per_major_type",
+      "value": "100"
+    },
+    {
+      "key": "global_mail_max_count_per_major_type",
+      "value": "30"
+    },
+    {
+      "key": "user_future_reserve_mail_max_count_per_major_type",
+      "value": "20"
+    },
+    {
+      "key": "global_future_reserve_mail_max_count_per_major_type",
+      "value": "20"
+    },
+    {
+      "key": "i18n_system_admin",
+      "value": "System"
+    },
+    {
+      "key": "pvp_online_matching_ampily_interval",
+      "value": "10s"
+    },
+    {
+      "key": "pvp_online_add_star_by_win",
+      "value": "1"
+    },
+    {
+      "key": "pvp_online_sub_star_by_lose",
+      "value": "1"
+    },
+    {
+      "key": "pvp_online_recently_matching_protection",
+      "value": "5"
+    },
+    {
+      "key": "pvp_online_recently_matching_history_count",
+      "value": "50"
+    },
+    {
+      "key": "pvp_online_max_history_report_count",
+      "value": "10"
+    },
+    {
+      "key": "pvp_online_max_history_report_timeout",
+      "value": "2w"
+    },
+    {
+      "key": "pvp_online_max_history_season_count",
+      "value": "4"
+    },
+    {
+      "key": "matching_log_expire_timeout",
+      "value": "5m"
+    },
+    {
+      "key": "matching_log_keep_count",
+      "value": "50"
+    },
+    {
+      "key": "matching_log_max_count",
+      "value": "300"
+    },
+    {
+      "key": "matching_equipment_combat_value_coefficient",
+      "value": "1"
+    },
+    {
+      "key": "matching_equipment_combat_value_fix",
+      "value": "0"
+    },
+    {
+      "key": "matching_equipment_durability_coefficient",
+      "value": "1"
+    },
+    {
+      "key": "matching_equipment_durability_threshold",
+      "value": "0.0"
+    },
+    {
+      "key": "matching_gem_combat_value_coefficient",
+      "value": "0"
+    },
+    {
+      "key": "matching_gem_combat_value_fix",
+      "value": "0"
+    },
+    {
+      "key": "matching_gem_durability_coefficient",
+      "value": "1"
+    },
+    {
+      "key": "matching_current_role_combat_value_coefficient",
+      "value": "0"
+    },
+    {
+      "key": "matching_history_max_role_total_combat_value_coefficient",
+      "value": "0"
+    },
+    {
+      "key": "matching_pvp_rank_score_damage_coefficient",
+      "value": "0"
+    },
+    {
+      "key": "matching_pvp_rank_score_damage_max_score",
+      "value": "0"
+    },
+    {
+      "key": "matching_pvp_rank_score_heal_coefficient",
+      "value": "0"
+    },
+    {
+      "key": "matching_pvp_rank_score_heal_max_score",
+      "value": "0"
+    },
+    {
+      "key": "matching_pvp_rank_score_succ_adding_score",
+      "value": "500"
+    },
+    {
+      "key": "matching_history_total_role_level_combat_value_threshold",
+      "value": "10"
+    },
+    {
+      "key": "matching_history_total_role_level_combat_value_fix",
+      "value": "1"
+    },
+    {
+      "key": "is_disabled_ban_last_battle_users_by_excel",
+      "value": "FALSE"
+    },
+    {
+      "key": "last_battle_start_new_matching_same_duration_by_excel",
+      "value": "4s"
+    },
+    {
+      "key": "lazy_search_random_begin_second",
+      "value": "1"
+    },
+    {
+      "key": "lazy_search_random_end_second",
+      "value": "3"
+    },
+    {
+      "key": "lazy_search_random_begin_second_for_pvp",
+      "value": "1"
+    },
+    {
+      "key": "lazy_search_random_end_second_for_pvp",
+      "value": "3"
+    },
+    {
+      "key": "is_disabled_ban_last_battle_users_by_excel_for_pvp",
+      "value": "TRUE"
+    },
+    {
+      "key": "robot_zone_id",
+      "value": "5"
+    },
+    {
+      "key": "start_add_robot_time_duration",
+      "value": "79s"
+    },
+    {
+      "key": "start_add_robot_global_matching_user",
+      "value": "10000"
+    },
+    {
+      "key": "matching_calc_total_matching_player_count_cache_timeout",
+      "value": "1s"
+    },
+    {
+      "key": "stand_alone_disable",
+      "value": "TRUE"
+    },
+    {
+      "key": "robot_disable",
+      "value": "TRUE"
+    },
+    {
+      "key": "robot_create_index_start",
+      "value": "50"
+    },
+    {
+      "key": "matching_not_create_room_for_role_force",
+      "value": "2"
+    },
+    {
+      "key": "matching_same_team_and_faction_for_role_force"
+    },
+    {
+      "key": "matching_same_faction_id_start",
+      "value": "150"
+    },
+    {
+      "key": "is_enable_noob_matching_logic_statistics_ids",
+      "value": "10001"
+    },
+    {
+      "key": "noob_matching_logic_statistics_n_days",
+      "value": "14"
+    },
+    {
+      "key": "noob_matching_logic_statistics_m_battle_times",
+      "value": "10"
+    },
+    {
+      "key": "noob_matching_logic_enable_battle_times",
+      "value": "4"
+    },
+    {
+      "key": "noob_matching_logic_kd_less_than",
+      "value": "0.25"
+    },
+    {
+      "key": "noob_matching_logic_escape_rate_less_than",
+      "value": "0.25"
+    },
+    {
+      "key": "noob_matching_logic_sub_score",
+      "value": "60"
+    },
+    {
+      "key": "newbie_matching_logic_enable_battle_times",
+      "value": "5"
+    },
+    {
+      "key": "newbie_noob_matching_logic_sub_score",
+      "value": "60"
+    },
+    {
+      "key": "thief_role_type_ids",
+      "value": "400004\n400008"
+    },
+    {
+      "key": "thief_comprehensive_score_threshold",
+      "value": "99999"
+    },
+    {
+      "key": "battle_copy_defense_precious_rarity",
+      "value": "6\n7\n8"
+    },
+    {
+      "key": "friend_invite_expire",
+      "value": "7d"
+    },
+    {
+      "key": "friend_gift_expire",
+      "value": "30d"
+    },
+    {
+      "key": "friend_daily_send_gift_limit",
+      "value": "30"
+    },
+    {
+      "key": "friend_daily_receive_gift_limit",
+      "value": "30"
+    },
+    {
+      "key": "friend_max_number",
+      "value": "30"
+    },
+    {
+      "key": "friend_suggest_level_down",
+      "value": "20"
+    },
+    {
+      "key": "friend_suggest_level_up",
+      "value": "30"
+    },
+    {
+      "key": "friend_suggest_number",
+      "value": "100"
+    },
+    {
+      "key": "friend_allow_cross_zone",
+      "value": "no"
+    },
+    {
+      "key": "friend_daily_invite_limit",
+      "value": "200"
+    },
+    {
+      "key": "friend_total_invitee_limit",
+      "value": "1600"
+    },
+    {
+      "key": "friend_total_inviter_limit",
+      "value": "100"
+    },
+    {
+      "key": "player_recent_limit",
+      "value": "20"
+    },
+    {
+      "key": "guild_subscribe_member_interval",
+      "value": "2m"
+    },
+    {
+      "key": "guild_default_max_member_number",
+      "value": "50"
+    },
+    {
+      "key": "guild_apply_expire_timeout",
+      "value": "3d"
+    },
+    {
+      "key": "guild_apply_max_count",
+      "value": "999"
+    },
+    {
+      "key": "guild_apply_max_count_per_user",
+      "value": "5"
+    },
+    {
+      "key": "guild_invitation_expire_timeout",
+      "value": "3d"
+    },
+    {
+      "key": "guild_invitation_max_count",
+      "value": "20"
+    },
+    {
+      "key": "guild_invitation_max_count_per_user",
+      "value": "5"
+    },
+    {
+      "key": "guild_log_expire_timeout",
+      "value": "3h"
+    },
+    {
+      "key": "guild_log_keep_count",
+      "value": "50"
+    },
+    {
+      "key": "guild_log_max_count",
+      "value": "300"
+    },
+    {
+      "key": "guild_log_show_count",
+      "value": "30"
+    },
+    {
+      "key": "guild_set_owner_lock_time",
+      "value": "1d"
+    },
+    {
+      "key": "guild_exit_lock_time",
+      "value": "1d"
+    },
+    {
+      "key": "guild_batch_get_max_count",
+      "value": "30"
+    },
+    {
+      "key": "guild_name_length_limit",
+      "value": "6"
+    },
+    {
+      "key": "guild_announcement_length_limit",
+      "value": "60"
+    },
+    {
+      "key": "guild_force_update_interval",
+      "value": "1h"
+    },
+    {
+      "key": "guild_notify_mail_id_for_set_admin",
+      "value": "0"
+    },
+    {
+      "key": "guild_notify_mail_id_for_remove_admin",
+      "value": "0"
+    },
+    {
+      "key": "guild_notify_mail_id_for_remove_member",
+      "value": "0"
+    },
+    {
+      "key": "guild_notify_mail_id_for_set_owner",
+      "value": "0"
+    },
+    {
+      "key": "guild_notify_mail_id_for_exit_guild",
+      "value": "0"
+    },
+    {
+      "key": "guild_impeachment_offline_time",
+      "value": "15d"
+    },
+    {
+      "key": "guild_impeachment_duration",
+      "value": "2d"
+    },
+    {
+      "key": "guild_impeachment_interval",
+      "value": "7d"
+    },
+    {
+      "key": "guild_impeachment_show_time",
+      "value": "2d"
+    },
+    {
+      "key": "guild_impeachment_success_vote_pemillage",
+      "value": "600"
+    },
+    {
+      "key": "guild_impeachment_confirm_agree_pemillage",
+      "value": "500"
+    },
+    {
+      "key": "item_default_max_count",
+      "value": "1000000000"
+    },
+    {
+      "key": "user_options_max_size",
+      "value": "8192"
+    },
+    {
+      "key": "user_nickname_length_limit",
+      "value": "12"
+    },
+    {
+      "key": "user_nickname_ascii_char_length",
+      "value": "1"
+    },
+    {
+      "key": "user_nickname_no_ascii_char_length",
+      "value": "1.5"
+    },
+    {
+      "key": "user_nickname_preserve_prefix",
+      "value": "游客:"
+    },
+    {
+      "key": "idip_update_item_max_limit",
+      "value": "0"
+    },
+    {
+      "key": "idip_prohibited_items"
+    },
+    {
+      "key": "quest_days_refresh_time",
+      "value": "00:00:00"
+    },
+    {
+      "key": "gear_three_d_sum_upper",
+      "value": "60"
+    },
+    {
+      "key": "gear_three_d_sum_lower",
+      "value": "40"
+    },
+    {
+      "key": "gear_single_attr_upper",
+      "value": "30"
+    },
+    {
+      "key": "gear_single_attr_lower",
+      "value": "5"
+    },
+    {
+      "key": "gear_three_d_sum_diff_upper",
+      "value": "10"
+    },
+    {
+      "key": "gear_three_d_sum_diff_lower",
+      "value": "-10"
+    },
+    {
+      "key": "gear_inventory_max_count",
+      "value": "1000"
+    },
+    {
+      "key": "gear_max_lock_count",
+      "value": "200"
+    },
+    {
+      "key": "market_product_daily_reset_time_offset",
+      "value": "5h"
+    },
+    {
+      "key": "market_product_weekly_reset_time_offset",
+      "value": "5h"
+    },
+    {
+      "key": "market_product_month_reset_time_offset",
+      "value": "5h"
+    },
+    {
+      "key": "market_refresh_enable",
+      "value": "yes"
+    },
+    {
+      "key": "market_poor_man_lvl_condition",
+      "value": "20"
+    },
+    {
+      "key": "market_poor_man_wealth_condition",
+      "value": "10000"
+    },
+    {
+      "key": "market_poor_man_cd_second",
+      "value": "1800"
+    },
+    {
+      "key": "market_poor_man_product_count_per_tab",
+      "value": "1"
+    },
+    {
+      "key": "market_max_can_buy_count_single",
+      "value": "10000"
+    },
+    {
+      "key": "inventory_default_row_size",
+      "value": "17"
+    },
+    {
+      "key": "inventory_defualt_column_size",
+      "value": "10"
+    },
+    {
+      "key": "inventory_max_page",
+      "value": "8"
+    },
+    {
+      "key": "role_backpack_default_row_size",
+      "value": "6"
+    },
+    {
+      "key": "role_backpack_defualt_column_size",
+      "value": "10"
+    },
+    {
+      "key": "role_backpack_race_add_row_size",
+      "value": "1"
+    },
+    {
+      "key": "role_count_limit",
+      "value": "10"
+    },
+    {
+      "key": "enable_small_backpack_role_type_id_list",
+      "value": "400004"
+    },
+    {
+      "key": "role_small_backpack_default_row_size",
+      "value": "2"
+    },
+    {
+      "key": "role_small_backpack_defualt_column_size",
+      "value": "8"
+    },
+    {
+      "key": "role_first_create_present_backpack_items",
+      "value": "100013,3,0\n100016,3,0\n100018,3,0\n100080,1,0\n100081,1,0\n100082,1,0\n100060,9,0"
+    },
+    {
+      "key": "item_storage_row_size_limit",
+      "value": "1000"
+    },
+    {
+      "key": "item_storage_column_size_limit",
+      "value": "100"
+    },
+    {
+      "key": "item_ea_resave_item_ids",
+      "value": "1013\n1032"
+    },
+    {
+      "key": "role_name_length_limit",
+      "value": "11"
+    },
+    {
+      "key": "role_name_length_lower_limit",
+      "value": "5"
+    },
+    {
+      "key": "role_defult_name_delimiter",
+      "value": "#"
+    },
+    {
+      "key": "role_lazy_delete_duration",
+      "value": "24h"
+    },
+    {
+      "key": "role_create_index_offest",
+      "value": "100"
+    },
+    {
+      "key": "ds_max_fps",
+      "value": "18"
+    },
+    {
+      "key": "merchant_repurchase_list_max_size",
+      "value": "10"
+    },
+    {
+      "key": "team_global_max_size",
+      "value": "3"
+    },
+    {
+      "key": "trade_auction_search_count",
+      "value": "32"
+    },
+    {
+      "key": "trade_market_user_max_history_order",
+      "value": "100"
+    },
+    {
+      "key": "trade_fixed_order_vaild_time",
+      "value": "5"
+    },
+    {
+      "key": "trade_heartbeat_success_duration_min",
+      "value": "30"
+    },
+    {
+      "key": "trade_heartbeat_failed_duration_sec",
+      "value": "20"
+    },
+    {
+      "key": "trade_order_detail_ttl_hour",
+      "value": "0"
+    },
+    {
+      "key": "trade_order_publish_new_unit",
+      "value": "1m"
+    },
+    {
+      "key": "trade_market_product_best_selling_count",
+      "value": "20"
+    },
+    {
+      "key": "trade_market_product_price_increase_count",
+      "value": "20"
+    },
+    {
+      "key": "trade_market_product_show_permillage_bound",
+      "value": "500"
+    },
+    {
+      "key": "trade_market_product_show_price_stat_bound",
+      "value": "1000"
+    },
+    {
+      "key": "trade_market_product_timeout_stop",
+      "value": "15m"
+    },
+    {
+      "key": "trade_bid_unlock_level",
+      "value": "10"
+    },
+    {
+      "key": "team_invitation_expired_timeout",
+      "value": "30s"
+    },
+    {
+      "key": "team_invitee_join_team_timeout",
+      "value": "10s"
+    },
+    {
+      "key": "team_action_time_tolerance",
+      "value": "3s"
+    },
+    {
+      "key": "self_quit_ban_creat_matching_time_duration",
+      "value": "60s"
+    },
+    {
+      "key": "role_snapshot_save_interval",
+      "value": "3"
+    },
+    {
+      "key": "repair_material_ids",
+      "value": "1052 1037 1038 1039"
+    },
+    {
+      "key": "daily_reset_time_offset",
+      "value": "00:00:00"
+    },
+    {
+      "key": "team_match_expired_timeout",
+      "value": "120s"
+    },
+    {
+      "key": "room_menber_max_size",
+      "value": "12"
+    },
+    {
+      "key": "room_delete_outline_time",
+      "value": "5m"
+    },
+    {
+      "key": "room_name_max_size",
+      "value": "19"
+    },
+    {
+      "key": "room_password_max_size",
+      "value": "8"
+    },
+    {
+      "key": "room_refresh_button_CD",
+      "value": "1s"
+    },
+    {
+      "key": "room_invite_duration",
+      "value": "15m"
+    },
+    {
+      "key": "room_invite_ignore_count",
+      "value": "5"
+    },
+    {
+      "key": "trade_max_display_stacks_of_same_price",
+      "value": "50"
+    },
+    {
+      "key": "homeland_mode_reward_id",
+      "value": "189010003"
+    },
+    {
+      "key": "homeland_mode_reward_mail_template_id",
+      "value": "501049"
+    },
+    {
+      "key": "room_batch_get_max_count",
+      "value": "100"
+    },
+    {
+      "key": "ban_mail_rank_all_type_name",
+      "value": "$$ban_mail_rank_all_type_name^^"
+    },
+    {
+      "key": "ban_mail_rank_all_type_desc",
+      "value": "$$ban_mail_rank_all_type_desc^^"
+    },
+    {
+      "key": "moon_phases_time",
+      "value": "21600"
+    },
+    {
+      "key": "moon_phases_starttime",
+      "value": "2024-03-01 00:00:00"
+    },
+    {
+      "key": "unregister_account_tips",
+      "value": "Unregister_Account_Tips"
+    },
+    {
+      "key": "teen_chat_global_change_mail_template_id",
+      "value": "501023"
+    },
+    {
+      "key": "teen_chat_mail_template_id",
+      "value": "501024"
+    },
+    {
+      "key": "market_goods_deliver_mail_id",
+      "value": "501033"
+    },
+    {
+      "key": "mithril_force_level_list",
+      "value": "40003015 40003016"
+    },
+    {
+      "key": "mithril_force_default_level_id",
+      "value": "40003015"
+    },
+    {
+      "key": "mithril_force_default_level_type",
+      "value": "2001"
+    },
+    {
+      "key": "mithril_force_same_faction_rebirths_count",
+      "value": "0"
+    },
+    {
+      "key": "mithril_force_mail_id",
+      "value": "501034"
+    },
+    {
+      "key": "pay_compliance_policy",
+      "value": "392:1,[0,16);2,[16,18);3,[18,999)|410:1,[0,18);2,[18,999)"
+    },
+    {
+      "key": "mithril_force_currency_basic_factor",
+      "value": "100"
+    },
+    {
+      "key": "mithril_force_currency_fixed_reward",
+      "value": "0"
+    },
+    {
+      "key": "mithril_force_heirloom_basic_factor",
+      "value": "100"
+    },
+    {
+      "key": "mithril_force_heirloom_fixed_reward",
+      "value": "0"
+    },
+    {
+      "key": "mithril_force_expbottle_basic_probability",
+      "value": "10"
+    },
+    {
+      "key": "mithril_force_affix_basic_probability",
+      "value": "0"
+    },
+    {
+      "key": "mithril_force_exp_bottle_item_id",
+      "value": "100070"
+    },
+    {
+      "key": "mithril_force_heirloom_item_id",
+      "value": "1052"
+    },
+    {
+      "key": "mithril_force_currency_item_id",
+      "value": "1001"
+    },
+    {
+      "key": "mail_attachment_window_row_size",
+      "value": "1000"
+    },
+    {
+      "key": "mail_attachment_window_row_size_min",
+      "value": "17"
+    },
+    {
+      "key": "role_reshape_face_pinching_cost_item",
+      "value": "1040,1,0"
+    },
+    {
+      "key": "enable_prod_excel_check",
+      "value": "true"
+    },
+    {
+      "key": "facade_template_list_size",
+      "value": "20"
+    },
+    {
+      "key": "mithril_force_potion_basic_probability",
+      "value": "100"
+    },
+    {
+      "key": "mithril_force_potion_item_id",
+      "value": "100013"
+    },
+    {
+      "key": "mithril_force_heirloom_item_id_2",
+      "value": "1037"
+    },
+    {
+      "key": "mithril_force_heirloom_basic_factor_2",
+      "value": "100"
+    },
+    {
+      "key": "mithril_force_heirloom_fixed_reward_2",
+      "value": "0"
+    },
+    {
+      "key": "mithril_force_exp_bottle_item_num",
+      "value": "1"
+    },
+    {
+      "key": "mithril_force_potion_item_num",
+      "value": "2"
+    },
+    {
+      "key": "mail_detail_item_max_size",
+      "value": "15"
+    },
+    {
+      "key": "latency_low_limit",
+      "value": "60"
+    },
+    {
+      "key": "latency_medium_limit",
+      "value": "100"
+    },
+    {
+      "key": "report_pve_kill_player_rank_min_batlle_count",
+      "value": "5"
+    },
+    {
+      "key": "pve_kill_player_rank_max_save_battle_count",
+      "value": "50"
+    },
+    {
+      "key": "Guide_Trade_Pop_DisplayTime",
+      "value": "6s"
+    },
+    {
+      "key": "mail_template_id_for_battle_item_copy",
+      "value": "501070"
+    },
+    {
+      "key": "mail_template_id_for_team_member_item_bring",
+      "value": "501036"
+    },
+    {
+      "key": "match_waiting_tip_interval",
+      "value": "3601"
+    },
+    {
+      "key": "dice_attenuate_ratio",
+      "value": "150"
+    }
+  ]
+}

@@ -1,0 +1,2322 @@
+{
+  "type": "tgf.config.ExcelGearGemGuide",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 144,
+    "hash_code": "sha256:37005c1be8ee6c29338b9a44ab009f88322063d44d2f623ccd06a7ed92c6aa0b",
+    "data_source": [
+      {
+        "file": "999923b62aed5829e040900e94f56cb3769256decefd1c4c30bd851063956f9e",
+        "sheet": "ad152ef9010b68782397ddb0b4497b3dd8c0e9fc9079909b4252652e602387d5",
+        "count": 144
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 230112000,
+      "sort_priority": 1101,
+      "inst_id": 240112000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230112001,
+      "sort_priority": 1102,
+      "inst_id": 240112001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230112002,
+      "sort_priority": 1103,
+      "inst_id": 240112002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230112003,
+      "sort_priority": 1104,
+      "inst_id": 240112003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230112004,
+      "sort_priority": 1105,
+      "inst_id": 240112004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230112005,
+      "sort_priority": 1106,
+      "inst_id": 240112005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230112006,
+      "sort_priority": 1107,
+      "inst_id": 240112006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113000,
+      "sort_priority": 1108,
+      "inst_id": 240113000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113001,
+      "sort_priority": 1109,
+      "inst_id": 240113001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113002,
+      "sort_priority": 1110,
+      "inst_id": 240113002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113003,
+      "sort_priority": 1111,
+      "inst_id": 240113003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113004,
+      "sort_priority": 1112,
+      "inst_id": 240113004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113005,
+      "sort_priority": 1113,
+      "inst_id": 240113005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113006,
+      "sort_priority": 1114,
+      "inst_id": 240113006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113007,
+      "sort_priority": 1115,
+      "inst_id": 240113007,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113008,
+      "sort_priority": 1116,
+      "inst_id": 240113008,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113009,
+      "sort_priority": 1117,
+      "inst_id": 240113009,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113010,
+      "sort_priority": 1118,
+      "inst_id": 240113010,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230113011,
+      "sort_priority": 1119,
+      "inst_id": 240113011,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114000,
+      "sort_priority": 1120,
+      "inst_id": 240114000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114001,
+      "sort_priority": 1121,
+      "inst_id": 240114001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114002,
+      "sort_priority": 1122,
+      "inst_id": 240114002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114003,
+      "sort_priority": 1123,
+      "inst_id": 240114003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114004,
+      "sort_priority": 1124,
+      "inst_id": 240114004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114005,
+      "sort_priority": 1125,
+      "inst_id": 240114005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114006,
+      "sort_priority": 1126,
+      "inst_id": 240114006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114007,
+      "sort_priority": 1127,
+      "inst_id": 240114007,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114008,
+      "sort_priority": 1128,
+      "inst_id": 240114008,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114009,
+      "sort_priority": 1129,
+      "inst_id": 240114009,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230114010,
+      "sort_priority": 1130,
+      "inst_id": 240114010,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230122000,
+      "sort_priority": 1201,
+      "inst_id": 240122000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230122001,
+      "sort_priority": 1202,
+      "inst_id": 240122001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230122002,
+      "sort_priority": 1203,
+      "inst_id": 240122002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230122003,
+      "sort_priority": 1204,
+      "inst_id": 240122003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230122004,
+      "sort_priority": 1205,
+      "inst_id": 240122004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230122005,
+      "sort_priority": 1206,
+      "inst_id": 240122005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230122006,
+      "sort_priority": 1207,
+      "inst_id": 240122006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230123000,
+      "sort_priority": 1208,
+      "inst_id": 240123000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230123001,
+      "sort_priority": 1209,
+      "inst_id": 240123001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230123002,
+      "sort_priority": 1210,
+      "inst_id": 240123002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230123003,
+      "sort_priority": 1211,
+      "inst_id": 240123003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230124000,
+      "sort_priority": 1212,
+      "inst_id": 240124000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230124001,
+      "sort_priority": 1213,
+      "inst_id": 240124001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230124002,
+      "sort_priority": 1214,
+      "inst_id": 240124002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230124003,
+      "sort_priority": 1215,
+      "inst_id": 240124003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230124004,
+      "sort_priority": 1216,
+      "inst_id": 240124004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230124005,
+      "sort_priority": 1217,
+      "inst_id": 240124005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230132000,
+      "sort_priority": 1301,
+      "inst_id": 240132000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230132001,
+      "sort_priority": 1302,
+      "inst_id": 240132001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230132002,
+      "sort_priority": 1303,
+      "inst_id": 240132002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230132003,
+      "sort_priority": 1304,
+      "inst_id": 240132003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230132004,
+      "sort_priority": 1305,
+      "inst_id": 240132004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230133000,
+      "sort_priority": 1306,
+      "inst_id": 240133000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230133001,
+      "sort_priority": 1307,
+      "inst_id": 240133001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230134000,
+      "sort_priority": 1308,
+      "inst_id": 240134000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230134001,
+      "sort_priority": 1309,
+      "inst_id": 240134001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230134002,
+      "sort_priority": 1310,
+      "inst_id": 240134002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230142000,
+      "sort_priority": 1401,
+      "inst_id": 240142000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230142001,
+      "sort_priority": 1402,
+      "inst_id": 240142001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230142002,
+      "sort_priority": 1403,
+      "inst_id": 240142002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230142003,
+      "sort_priority": 1404,
+      "inst_id": 240142003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230142004,
+      "sort_priority": 1405,
+      "inst_id": 240142004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230142005,
+      "sort_priority": 1406,
+      "inst_id": 240142005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230154000,
+      "sort_priority": 1401,
+      "inst_id": 240154000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230154001,
+      "sort_priority": 1402,
+      "inst_id": 240154001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230154002,
+      "sort_priority": 1403,
+      "inst_id": 240154002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230154003,
+      "sort_priority": 1404,
+      "inst_id": 240154003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230154004,
+      "sort_priority": 1405,
+      "inst_id": 240154004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230154005,
+      "sort_priority": 1406,
+      "inst_id": 240154005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230154006,
+      "sort_priority": 1407,
+      "inst_id": 240154006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230154007,
+      "sort_priority": 1408,
+      "inst_id": 240154007,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230154008,
+      "sort_priority": 1409,
+      "inst_id": 240154008,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230162000,
+      "sort_priority": 2101,
+      "inst_id": 240162000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230162001,
+      "sort_priority": 2102,
+      "inst_id": 240162001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230162002,
+      "sort_priority": 2103,
+      "inst_id": 240162002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230162003,
+      "sort_priority": 2104,
+      "inst_id": 240162003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230162004,
+      "sort_priority": 2105,
+      "inst_id": 240162004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230162005,
+      "sort_priority": 2106,
+      "inst_id": 240162005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230162006,
+      "sort_priority": 2107,
+      "inst_id": 240162006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163000,
+      "sort_priority": 2108,
+      "inst_id": 240163000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163001,
+      "sort_priority": 2109,
+      "inst_id": 240163001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163002,
+      "sort_priority": 2110,
+      "inst_id": 240163002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163003,
+      "sort_priority": 2111,
+      "inst_id": 240163003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163004,
+      "sort_priority": 2112,
+      "inst_id": 240163004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163005,
+      "sort_priority": 2113,
+      "inst_id": 240163005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163006,
+      "sort_priority": 2114,
+      "inst_id": 240163006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163007,
+      "sort_priority": 2115,
+      "inst_id": 240163007,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163008,
+      "sort_priority": 2116,
+      "inst_id": 240163008,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163009,
+      "sort_priority": 2117,
+      "inst_id": 240163009,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163010,
+      "sort_priority": 2118,
+      "inst_id": 240163010,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230163011,
+      "sort_priority": 2119,
+      "inst_id": 240163011,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164000,
+      "sort_priority": 2120,
+      "inst_id": 240164000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164001,
+      "sort_priority": 2121,
+      "inst_id": 240164001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164002,
+      "sort_priority": 2122,
+      "inst_id": 240164002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164003,
+      "sort_priority": 2123,
+      "inst_id": 240164003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164004,
+      "sort_priority": 2124,
+      "inst_id": 240164004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164005,
+      "sort_priority": 2125,
+      "inst_id": 240164005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164006,
+      "sort_priority": 2126,
+      "inst_id": 240164006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164007,
+      "sort_priority": 2127,
+      "inst_id": 240164007,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164008,
+      "sort_priority": 2128,
+      "inst_id": 240164008,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164009,
+      "sort_priority": 2129,
+      "inst_id": 240164009,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230164010,
+      "sort_priority": 2130,
+      "inst_id": 240164010,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230172000,
+      "sort_priority": 2201,
+      "inst_id": 240172000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230172001,
+      "sort_priority": 2202,
+      "inst_id": 240172001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230172002,
+      "sort_priority": 2203,
+      "inst_id": 240172002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230172003,
+      "sort_priority": 2204,
+      "inst_id": 240172003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230172004,
+      "sort_priority": 2205,
+      "inst_id": 240172004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230172005,
+      "sort_priority": 2206,
+      "inst_id": 240172005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230172006,
+      "sort_priority": 2207,
+      "inst_id": 240172006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230173000,
+      "sort_priority": 2208,
+      "inst_id": 240173000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230173001,
+      "sort_priority": 2209,
+      "inst_id": 240173001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230173002,
+      "sort_priority": 2210,
+      "inst_id": 240173002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230173003,
+      "sort_priority": 2211,
+      "inst_id": 240173003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230174000,
+      "sort_priority": 2212,
+      "inst_id": 240174000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230174001,
+      "sort_priority": 2213,
+      "inst_id": 240174001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230174002,
+      "sort_priority": 2214,
+      "inst_id": 240174002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230174003,
+      "sort_priority": 2215,
+      "inst_id": 240174003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230174004,
+      "sort_priority": 2216,
+      "inst_id": 240174004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230174005,
+      "sort_priority": 2217,
+      "inst_id": 240174005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230182000,
+      "sort_priority": 2301,
+      "inst_id": 240182000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230182001,
+      "sort_priority": 2302,
+      "inst_id": 240182001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230182002,
+      "sort_priority": 2303,
+      "inst_id": 240182002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230182003,
+      "sort_priority": 2304,
+      "inst_id": 240182003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230182004,
+      "sort_priority": 2305,
+      "inst_id": 240182004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230183000,
+      "sort_priority": 2306,
+      "inst_id": 240183000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230183001,
+      "sort_priority": 2307,
+      "inst_id": 240183001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230184000,
+      "sort_priority": 2308,
+      "inst_id": 240184000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230184001,
+      "sort_priority": 2309,
+      "inst_id": 240184001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230184002,
+      "sort_priority": 2310,
+      "inst_id": 240184002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230192000,
+      "sort_priority": 2401,
+      "inst_id": 240192000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230192001,
+      "sort_priority": 2402,
+      "inst_id": 240192001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230192002,
+      "sort_priority": 2403,
+      "inst_id": 240192002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230192003,
+      "sort_priority": 2404,
+      "inst_id": 240192003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230192004,
+      "sort_priority": 2405,
+      "inst_id": 240192004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230192005,
+      "sort_priority": 2406,
+      "inst_id": 240192005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1037,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230104000,
+      "sort_priority": 2403,
+      "inst_id": 240104000,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230104001,
+      "sort_priority": 2404,
+      "inst_id": 240104001,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230104002,
+      "sort_priority": 2405,
+      "inst_id": 240104002,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230104003,
+      "sort_priority": 2406,
+      "inst_id": 240104003,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230104004,
+      "sort_priority": 2407,
+      "inst_id": 240104004,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230104005,
+      "sort_priority": 2401,
+      "inst_id": 240104005,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230104006,
+      "sort_priority": 2402,
+      "inst_id": 240104006,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230104007,
+      "sort_priority": 2410,
+      "inst_id": 240104007,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 230104008,
+      "sort_priority": 2411,
+      "inst_id": 240104008,
+      "unlock_costs": [
+        {
+          "index": 1,
+          "items": [
+            {
+              "type_id": 1038,
+              "count": 150
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

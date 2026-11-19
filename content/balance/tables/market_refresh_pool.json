@@ -1,0 +1,71 @@
+{
+  "type": "tgf.config.ExcelMarketRefreshPool",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 10,
+    "hash_code": "sha256:01d2c5a0bcf0fda353500f077315705e9c555294d1d2865e6fefcb0aec9fa58f",
+    "data_source": [
+      {
+        "file": "c74cd0413aa390a7bfc87007efc0c938c7ce5f650efeaec6c15d071b760d7c85",
+        "sheet": "660311f48ad77c9d7bdf193f2f14a05d403ced41dc7b4fd6bd157c2ced939fc6",
+        "count": 10
+      }
+    ]
+  },
+  "rows": [
+    {
+      "market_refresh_pool_id": 1,
+      "market_location_count": 9,
+      "refresh_pool_random_weight": 1000
+    },
+    {
+      "market_refresh_pool_id": 2,
+      "market_location_count": 9,
+      "refresh_pool_random_weight": 1000
+    },
+    {
+      "market_refresh_pool_id": 3,
+      "market_location_count": 6,
+      "refresh_pool_random_weight": 1000
+    },
+    {
+      "market_refresh_pool_id": 4,
+      "market_location_count": 9,
+      "refresh_pool_random_weight": 1000
+    },
+    {
+      "market_refresh_pool_id": 5,
+      "market_location_count": 99,
+      "refresh_pool_random_weight": 1000,
+      "refresh_pool_type": "EN_REFRESH_POOL_TYPE_REMOVE_DUPLICATE"
+    },
+    {
+      "market_refresh_pool_id": 6,
+      "market_location_count": 99,
+      "refresh_pool_random_weight": 1000
+    },
+    {
+      "market_refresh_pool_id": 7,
+      "market_location_count": 99,
+      "refresh_pool_random_weight": 1000
+    },
+    {
+      "market_refresh_pool_id": 8,
+      "market_location_count": 99,
+      "refresh_pool_random_weight": 1000
+    },
+    {
+      "market_refresh_pool_id": 9,
+      "market_location_count": 99,
+      "refresh_pool_random_weight": 1000,
+      "refresh_pool_type": "EN_REFRESH_POOL_TYPE_REMOVE_DUPLICATE"
+    },
+    {
+      "market_refresh_pool_id": 10,
+      "market_location_count": 99,
+      "refresh_pool_random_weight": 1000,
+      "refresh_pool_type": "EN_REFRESH_POOL_TYPE_REMOVE_DUPLICATE"
+    }
+  ]
+}

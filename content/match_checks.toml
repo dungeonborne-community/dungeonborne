@@ -1,0 +1,30 @@
+# Matchmaking checks. No file or no key — the check works as in the original.
+#
+# Sections gear_rarity, gear_score, level_cost are checked by the client itself against the competition_level table.
+# An edit takes effect after `cargo xtask balance build` (server ExcelConfig + zzzzzz_Balance_P.pak) and an update of the
+# ru.balance mod for players. The server section is read by the backend at start (file next to dbserver-rs or MATCH_CHECKS_FILE).
+
+# Gear rarity limit on a map: the "All equipment slots only …" window on entry and search.
+# enabled = false — no limit on any map. levels — a custom list per level, works even with enabled = false.
+[gear_rarity]
+enabled = true
+# levels = { 40003019 = ["EN_ITEM_RARITY_EPIC", "EN_ITEM_RARITY_LEGENDARY"] }
+# 08.11 (user's decision): Castle normal — only grey and green (like Crypt normal in the original's season 1 row)
+levels = { 40003016 = ["EN_ITEM_RARITY_NONE", "EN_ITEM_RARITY_ROTTED", "EN_ITEM_RARITY_NORMAL", "EN_ITEM_RARITY_UNCOMMON"] }
+
+# Minimum gear score: the "Not enough gear score" window. The original table has no minimum for any map.
+[gear_score]
+enabled = true
+# levels = { 40003017 = 120 }
+
+# Entry price (competition_costs), the IsTicketsEnough check. enabled = false — free entry on all maps.
+[level_cost]
+enabled = true
+
+[server]
+# Account roles for matches ([auth] battle_roles in server.toml)
+battle_access = true
+# Launcher lobby: party size equals the size chosen by vote. false — a smaller party also passes, a bigger one does not.
+lobby_party_exact = true
+# Launcher lobby: all party members in the tab of the player who pressed Start
+lobby_same_tab = true

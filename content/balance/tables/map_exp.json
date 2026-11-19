@@ -1,0 +1,558 @@
+{
+  "type": "tgf.config.ExcelMapExp",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 110,
+    "hash_code": "sha256:67d33c011cda6ce5c4810614e2d8a974ed1ef4167551adbe428d75081cedbc0b",
+    "data_source": [
+      {
+        "file": "7ff63cf7914904a019f7a45125a1b7e38f8aa2984622229eef851b175e299de9",
+        "sheet": "97e32eba5f574808989f70f5a75fe8cf29fe77c6f7a95d5a9b7b6fd0fac680b0",
+        "count": 110
+      }
+    ]
+  },
+  "rows": [
+    {
+      "map_id": 1,
+      "alive_time": 10
+    },
+    {
+      "map_id": 1,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 1,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 1,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 1,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 1,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 1,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 1,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 1,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 1,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 1,
+      "alive_time": 600,
+      "exp": 160
+    },
+    {
+      "map_id": 2,
+      "alive_time": 10
+    },
+    {
+      "map_id": 2,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 2,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 2,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 2,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 2,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 2,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 2,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 2,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 2,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 2,
+      "alive_time": 600,
+      "exp": 160
+    },
+    {
+      "map_id": 3,
+      "alive_time": 10
+    },
+    {
+      "map_id": 3,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 3,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 3,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 3,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 3,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 3,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 3,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 3,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 3,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 3,
+      "alive_time": 600,
+      "exp": 160
+    },
+    {
+      "map_id": 4,
+      "alive_time": 10
+    },
+    {
+      "map_id": 4,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 4,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 4,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 4,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 4,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 4,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 4,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 4,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 4,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 4,
+      "alive_time": 600,
+      "exp": 160
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 10
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 10101,
+      "alive_time": 600,
+      "exp": 160
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 10
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 10102,
+      "alive_time": 600,
+      "exp": 160
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 10
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 10103,
+      "alive_time": 600,
+      "exp": 160
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 10
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 10201,
+      "alive_time": 600,
+      "exp": 160
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 10
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 10202,
+      "alive_time": 600,
+      "exp": 160
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 10
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 60,
+      "exp": 5
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 120,
+      "exp": 10
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 180,
+      "exp": 20
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 240,
+      "exp": 35
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 300,
+      "exp": 50
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 360,
+      "exp": 70
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 420,
+      "exp": 100
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 480,
+      "exp": 130
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 540,
+      "exp": 150
+    },
+    {
+      "map_id": 10203,
+      "alive_time": 600,
+      "exp": 160
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "tgf.config.ExcelDLCContent",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 2,
+    "hash_code": "sha256:bc86ee63a3d956854bb9de8a57dbdaa73565da23e20f8a71ce8a3f6870029936",
+    "data_source": [
+      {
+        "file": "59b7188cefd63b8eeeb5524b2e5514f7d710fe960a871aa54e6f18a157186b3f",
+        "sheet": "b0a4ad86db8f9564b2e46729f2c8903da4db05743bad21604846cece68ac7d27",
+        "count": 2
+      }
+    ]
+  },
+  "rows": [
+    {
+      "app_id": 2897620,
+      "dlc_type": "EN_DLC_TYPE_PACKET",
+      "dlc_icon": "/Game/TGF/UI/WBP/DLCPacket/T_DLCPacket_Entrance.T_DLCPacket_Entrance",
+      "dlc_img": "/Game/TGF/UI/WBP/DLCPacket/T_DLCPacket_Role.T_DLCPacket_Role",
+      "dlc_name": "DLC_2897620_T"
+    },
+    {
+      "app_id": 3153730,
+      "dlc_type": "EN_DLC_TYPE_PACKET",
+      "dlc_name": "DLC_3153730_T"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[member]
+name = "launcher"
+kind = "app"
+visibility = "public"
+lang = "rust+html"
+version = "1.7.5"
+depends_on = []      # contracts dbserver/1, dbmod/1 are shared with core/backend (moving them to core/protocol — later)
+description = "Player launcher (Tauri 2): login, mods, relay, lobby"
+
+[commands]
+test    = "cargo test"
+build   = "cargo tauri build   # from src-tauri; UI — trunk + Tailwind standalone"
+release = "see README.md and docs/LAUNCHER_SPEC.md"
+
+[contents]
+# src-tauri — the launcher; mock-server — test server; dev-app — developer tool (future devtool / DevKit).
+
+[known-absolute-paths]
+# Fixed by the launcher session: default values of tools and dev-app, test data, mock UI.
+# 17.11: make_mods.py, make_client_bundle.py ([games] client), release.py, iostore-rename-test.ps1 — no machine paths.
+files = ["src-tauri/src/locate.rs", "dev-app/src/config.rs", "dev-app/src/ports.rs",
+         "ui/dev/mock-tauri.js", "UIs/classic/dev/mock-tauri.js", "UIs/fluent/dev/mock-tauri.js"]
+
+[preview]
+# how a person sees it (ws preview, DevKit "Work", .claude/launch.json — docs/PREVIEW.md)
+name = "launcher-ui"
+run  = ["python", "-m", "http.server", "8811", "--bind", "127.0.0.1"]
+dir  = "ui"
+port = 8811
+note = "the launcher UI in a browser with a mock of the Tauri API (ui/dev/mock-tauri.js) - not the real window, no game, no server"

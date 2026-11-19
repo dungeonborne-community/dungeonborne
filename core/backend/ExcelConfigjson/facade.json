@@ -1,0 +1,3689 @@
+[
+  {
+    "id": 1400001,
+    "on_sales": true,
+    "priority": 1,
+    "type": "EN_FACADE_TYPE_AVATAR",
+    "worth_value": 10
+  },
+  {
+    "id": 1400002,
+    "on_sales": true,
+    "priority": 2,
+    "type": "EN_FACADE_TYPE_AVATAR",
+    "worth_value": 10
+  },
+  {
+    "id": 1400003,
+    "on_sales": true,
+    "priority": 3,
+    "type": "EN_FACADE_TYPE_AVATAR",
+    "worth_value": 10
+  },
+  {
+    "id": 1400004,
+    "on_sales": true,
+    "priority": 4,
+    "type": "EN_FACADE_TYPE_AVATAR",
+    "worth_value": 10
+  },
+  {
+    "id": 1400005,
+    "on_sales": true,
+    "priority": 5,
+    "type": "EN_FACADE_TYPE_AVATAR",
+    "worth_value": 10
+  },
+  {
+    "descs": "Item_Description_1410001",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_OPE_Login16500_Profile.Icon_OPE_Login16500_Profile",
+    "id": 1410001,
+    "name": "Item_Name_1410001",
+    "on_sales": true,
+    "priority": 1,
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_OPE_Login16500_Profile.D_Icon_OPE_Login16500_Profile",
+    "type": "EN_FACADE_TYPE_AVATAR_BORDER",
+    "ue_skin_ids": [
+      1410001
+    ],
+    "worth_value": 10
+  },
+  {
+    "id": 1420001,
+    "on_sales": true,
+    "priority": 1,
+    "type": "EN_FACADE_TYPE_TITLE",
+    "worth_value": 10
+  },
+  {
+    "id": 1420002,
+    "on_sales": true,
+    "priority": 2,
+    "type": "EN_FACADE_TYPE_TITLE",
+    "worth_value": 10
+  },
+  {
+    "id": 1420003,
+    "on_sales": true,
+    "priority": 3,
+    "type": "EN_FACADE_TYPE_TITLE",
+    "worth_value": 10
+  },
+  {
+    "id": 1420004,
+    "on_sales": true,
+    "priority": 4,
+    "type": "EN_FACADE_TYPE_TITLE",
+    "worth_value": 10
+  },
+  {
+    "id": 1420005,
+    "on_sales": true,
+    "priority": 5,
+    "type": "EN_FACADE_TYPE_TITLE",
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 120,
+            "cost_type": 1012,
+            "origin_price": 120
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 12000,
+            "cost_type": 1001,
+            "origin_price": 12000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1300001",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/OPE_Event_Torch.OPE_Event_Torch",
+    "id": 1300001,
+    "name": "Item_Name_1300001",
+    "offset": {
+      "Z": -10.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TORCH"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "scale": 1.3,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_OPE_Event_Torch.D_OPE_Event_Torch",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1300001
+    ],
+    "use_description": "Item_use_Description_1300001",
+    "worth_value": 10,
+    "xyz": {
+      "X": 20.0,
+      "Z": -90.0
+    }
+  },
+  {
+    "access_type": {
+      "type": "EN_FACADE_SALES_TYPE_STEAM_DLC",
+      "url": "https://store.steampowered.com/app/2897620"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 250,
+            "cost_type": 1012,
+            "origin_price": 250
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 25000,
+            "cost_type": 1001,
+            "origin_price": 25000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1300002",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_Skin1300002.Icon_Skin1300002",
+    "id": 1300002,
+    "name": "Item_Name_1300002",
+    "offset": {},
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TORCH"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 6,
+    "scale": 1.7,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1300002.D_Icon_Skin1300002",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1300002
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "X": -20.0,
+      "Z": 100.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740018"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 500,
+            "cost_type": 1012,
+            "origin_price": 500
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 50000,
+            "cost_type": 1001,
+            "origin_price": 50000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1300003",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_Skin1300003.Icon_Skin1300003",
+    "id": 1300003,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1300003.Icon_Store_1300003",
+    "name": "Item_Name_1300003",
+    "offset": {},
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TORCH"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "scale": 1.5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1300003.D_Icon_Skin1300003",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1300003
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "Y": 20.0,
+      "Z": -155.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740004"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 250,
+            "cost_type": 1012,
+            "origin_price": 250
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 25000,
+            "cost_type": 1001,
+            "origin_price": 25000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1300004",
+    "id": 1300004,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1300004.Icon_Store_1300004",
+    "name": "Item_Name_1300004",
+    "offset": {},
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TORCH"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "scale": 1.7,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1300004.D_Icon_Skin1300004",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1300004
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "Y": -20.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740002"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 250,
+            "cost_type": 1012,
+            "origin_price": 250
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 25000,
+            "cost_type": 1001,
+            "origin_price": 25000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1300005",
+    "id": 1300005,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1300005.Icon_Store_1300005",
+    "name": "Item_Name_1300005",
+    "offset": {},
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TORCH"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-29T08:30:00Z",
+    "scale": 1.7,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1300005.D_Icon_Skin1300005",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1300005
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "Y": -20.0
+    }
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 50,
+            "cost_type": 1012,
+            "origin_price": 50
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 5000,
+            "cost_type": 1001,
+            "origin_price": 5000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1301001",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_Skin1301001.Icon_Skin1301001",
+    "id": 1301001,
+    "name": "Item_Name_1301001",
+    "offset": {
+      "X": 4.0,
+      "Z": -5.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_POTION"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1301001.D_Icon_Skin1301001",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1301001
+    ],
+    "use_description": "Item_use_Description_1300001",
+    "worth_value": 10,
+    "xyz": {
+      "Z": -70.0
+    }
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 50,
+            "cost_type": 1012,
+            "origin_price": 50
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 5000,
+            "cost_type": 1001,
+            "origin_price": 5000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1301002",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_Skin1301002.Icon_Skin1301002",
+    "id": 1301002,
+    "name": "Item_Name_1301002",
+    "offset": {
+      "X": 4.0,
+      "Z": -5.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_POTION"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_PotionSkin_Publisher.D_Icon_PotionSkin_Publisher",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1301002
+    ],
+    "use_description": "Item_use_Description_1301002",
+    "worth_value": 10,
+    "xyz": {
+      "Z": -70.0
+    }
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1301003",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_Skin1301003.Icon_Skin1301003",
+    "id": 1301003,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1301003.Icon_Store_1301003",
+    "name": "Item_Name_1301003",
+    "offset": {
+      "X": 4.0,
+      "Z": -5.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_POTION"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1301003.D_Icon_Skin1301003",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1301003
+    ],
+    "use_description": "Item_use_Description_1301003",
+    "worth_value": 10,
+    "xyz": {
+      "Z": -70.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740019"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1301004",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_OPE_Event_HealingPotionparticles.Icon_OPE_Event_HealingPotionparticles",
+    "id": 1301004,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1301004.Icon_Store_1301004",
+    "name": "Item_Name_1301004",
+    "offset": {
+      "X": 4.0,
+      "Z": -5.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_POTION"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1301004.D_Icon_Skin1301004",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1301004
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "Z": -70.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740008"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1301005",
+    "id": 1301005,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1301005.Icon_Store_1301005",
+    "name": "Item_Name_1301005",
+    "offset": {
+      "X": 4.0,
+      "Z": -5.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_POTION"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1301005.D_Icon_Skin1301005",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1301005
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "Z": 50.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740009"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1301006",
+    "id": 1301006,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1301006.Icon_Store_1301006",
+    "name": "Item_Name_1301006",
+    "offset": {
+      "X": 4.0,
+      "Z": -5.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_POTION"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1301006.D_Icon_Skin1301006",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1301006
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "Z": -105.0
+    }
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 50,
+            "cost_type": 1012,
+            "origin_price": 50
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 5000,
+            "cost_type": 1001,
+            "origin_price": 5000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1301007",
+    "id": 1301007,
+    "name": "Item_Name_1301007",
+    "offset": {
+      "X": 4.0,
+      "Z": -5.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_POTION"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1301007.D_Icon_Skin1301007",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1301007
+    ],
+    "use_description": "Item_use_Description_1301007",
+    "worth_value": 10,
+    "xyz": {}
+  },
+  {
+    "descs": "Item_Description_1310001",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_Skin1300003.Icon_Skin1300003",
+    "id": 1310001,
+    "name": "Item_Name_1310001",
+    "offset": {
+      "X": 4.0,
+      "Z": 10.0
+    },
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHANDED_SWORD"
+    ],
+    "rarity": 5,
+    "scale": 0.9,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1300003.D_Icon_Skin1300003",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1310001
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "X": 20.0,
+      "Z": 90.0
+    }
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320000",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_Ex_Helmet_189010000.D_Icon_Ex_Helmet_189010000",
+    "id": 1320000,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320000.Icon_Store_1320000",
+    "name": "Item_Name_1320000",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320000.D_Icon_Skin1320000",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000001,
+      132000002,
+      132000003
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320001",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_Skin1320001.Icon_Skin1320001",
+    "id": 1320001,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320001.Icon_Store_1320001",
+    "name": "Item_Name_1320001",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320001.D_Icon_Skin1320001",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000101,
+      132000102,
+      132000103
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320002",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_Ex_Helmet_189010000.D_Icon_Ex_Helmet_189010000",
+    "id": 1320002,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320002.Icon_Store_1320002",
+    "name": "Item_Name_1320002",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "sales_time": "2024-08-08T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320002.D_Icon_Skin1320002",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000201,
+      132000202,
+      132000203
+    ],
+    "use_description": "Item_use_Description_1320002",
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740005"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320003",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_Ex_Helmet_189010006.D_Icon_Ex_Helmet_189010006",
+    "id": 1320003,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320003.Icon_Store_1320003",
+    "name": "Item_Name_1320003",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320003.D_Icon_Skin1320003",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000301,
+      132000302,
+      132000303
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320004",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_Mithril_Cloth_C192012000.D_Icon_Mithril_Cloth_C192012000",
+    "id": 1320004,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320004.Icon_Store_1320004",
+    "name": "Item_Name_1320004",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320004.D_Icon_Skin1320004",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000401,
+      132000402,
+      132000403
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740001"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320005",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_Ex_Helmet_189010006.D_Icon_Ex_Helmet_189010006",
+    "id": 1320005,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320005.Icon_Store_1320005",
+    "name": "Item_Name_1320005",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-29T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320005.D_Icon_Skin1320005",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000501,
+      132000502,
+      132000503
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740024"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320006",
+    "id": 1320006,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320006.Icon_Store_1320006",
+    "name": "Item_Name_1320006",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-29T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320006.D_Icon_Skin1320006",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000601,
+      132000602,
+      132000603
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740020"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320007",
+    "id": 1320007,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320007.Icon_Store_1320007",
+    "name": "Item_Name_1320007",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320007.D_Icon_Skin1320007",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000701,
+      132000702,
+      132000703
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740021"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320008",
+    "id": 1320008,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320008.Icon_Store_1320008",
+    "name": "Item_Name_1320008",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320008.D_Icon_Skin1320008",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000801,
+      132000802,
+      132000803
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320009",
+    "id": 1320009,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1320009.Icon_Store_1320009",
+    "name": "Item_Name_1320009",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320009.D_Icon_Skin1320009",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132000901,
+      132000902,
+      132000903
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "type": "EN_FACADE_SALES_TYPE_ACTIVITY",
+      "url": "1651646"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320010",
+    "id": 1320010,
+    "name": "Item_Name_1320010",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320010.D_Icon_Skin1320010",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132001001,
+      132001002,
+      132001003
+    ],
+    "use_description": "Item_use_Description_1320010",
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320011",
+    "id": 1320011,
+    "name": "Item_Name_1320011",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320012.D_Icon_Skin1320012",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132001101,
+      132001102,
+      132001103
+    ],
+    "use_description": "Item_use_Description_1320011",
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "type": "EN_FACADE_SALES_TYPE_ACTIVITY",
+      "url": "1651670"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320012",
+    "id": 1320012,
+    "name": "Item_Name_1320012",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "sales_time": "2024-09-06T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320013.D_Icon_Skin1320013",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132001201,
+      132001202,
+      132001203
+    ],
+    "use_description": "Item_use_Description_1320012",
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "type": "EN_FACADE_SALES_TYPE_ACTIVITY",
+      "url": "1651654"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1320013",
+    "id": 1320013,
+    "name": "Item_Name_1320013",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1320011.D_Icon_Skin1320011",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      132001301,
+      132001302,
+      132001303
+    ],
+    "use_description": "Item_use_Description_1320013",
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "type": "EN_FACADE_SALES_TYPE_STEAM_DLC",
+      "url": "https://store.steampowered.com/app/3153730"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1321000",
+    "icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_CSM_Resurrect.D_Icon_CSM_Resurrect",
+    "id": 1321000,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1321000.Icon_Store_1321000",
+    "name": "Item_Name_1321000",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_BACK"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1321000.D_Icon_Skin1321000",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1321000
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740006"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1321001",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_Ex_LongSword_189010001.D_Icon_Ex_LongSword_189010001",
+    "id": 1321001,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1321001.Icon_Store_1321001",
+    "name": "Item_Name_1321001",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_BACK"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1321001.D_Icon_Skin1321001",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1321001
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740007"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1321002",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_004002.D_Icon_ACC_Necklace_004002",
+    "id": 1321002,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1321002.Icon_Store_1321002",
+    "name": "Item_Name_1321002",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_BACK"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1321002.D_Icon_Skin1321002",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1321002
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740003"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1321003",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_Gem_Purple1.D_Icon_Gem_Purple1",
+    "id": 1321003,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1321003.Icon_Store_1321003",
+    "name": "Item_Name_1321003",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_BACK"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-29T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1321003.D_Icon_Skin1321003",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1321003
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1321004",
+    "id": 1321004,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1321004.Icon_Store_1321004",
+    "name": "Item_Name_1321004",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_BACK"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1321004.D_Icon_Skin1321004",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1321004
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 200,
+            "cost_type": 1012,
+            "origin_price": 200
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 20000,
+            "cost_type": 1001,
+            "origin_price": 20000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1321005",
+    "id": 1321005,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1321005.Icon_Store_1321005",
+    "name": "Item_Name_1321005",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_BACK"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1321005.D_Icon_Skin1321005",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1321005
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 150,
+            "cost_type": 1012,
+            "origin_price": 150
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 15000,
+            "cost_type": 1001,
+            "origin_price": 15000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1322000",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_thunder1.D_Icon_ACC_Necklace_thunder1",
+    "id": 1322000,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1322000.Icon_Store_1322000",
+    "name": "Item_Name_1322000",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CLOAK"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1322000.D_Icon_Skin1322000",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1322000
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "type": "EN_FACADE_SALES_TYPE_STEAM_DLC",
+      "url": "https://store.steampowered.com/app/2897620"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1322001",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_Skin1322001.Icon_Skin1322001",
+    "id": 1322001,
+    "name": "Item_Name_1322001",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CLOAK"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 6,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1322001.D_Icon_Skin1322001",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1322001
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "type": "EN_FACADE_SALES_TYPE_ACTIVITY",
+      "url": "1651679"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1322002",
+    "id": 1322002,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1322002.Icon_Store_1322002",
+    "name": "Item_Name_1322002",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CLOAK"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-09-26T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1322002.D_Icon_Skin1322002",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1322002
+    ],
+    "use_description": "Item_use_Description_1322002",
+    "worth_value": 10
+  },
+  {
+    "descs": "Item_Description_1330000",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_KillEffectcoin1330000.Icon_KillEffectcoin1330000",
+    "id": 1330000,
+    "name": "Item_Name_1330000",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_KILL_EFFECT"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_KillEffectcoin1330000.D_Icon_KillEffectcoin1330000",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1330000
+    ],
+    "use_description": "Item_use_Description_1330000",
+    "video": "/Game/TGF/Movies/Facade/FMS_KillEffectcoins_Gold.FMS_KillEffectcoins_Gold",
+    "worth_value": 10
+  },
+  {
+    "descs": "Item_Description_1330001",
+    "icon": "/Game/TGF/UI/Textures/Icon/Icons/Icon_KillEffectcoin1330001.Icon_KillEffectcoin1330001",
+    "id": 1330001,
+    "name": "Item_Name_1330001",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_KILL_EFFECT"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 6,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_KillEffectcoin1330001.D_Icon_KillEffectcoin1330001",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1330001
+    ],
+    "use_description": "Item_use_Description_1330001",
+    "video": "/Game/TGF/Movies/Facade/FMS_KillEffectcoins_PlatinumCoin.FMS_KillEffectcoins_PlatinumCoin",
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740010"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 400,
+            "cost_type": 1012,
+            "origin_price": 400
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 40000,
+            "cost_type": 1001,
+            "origin_price": 40000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1340001",
+    "icon": "/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomEquipIconTips/D_Icon_Heirloom_Sword_220110140.D_Icon_Heirloom_Sword_220110140",
+    "id": 1340001,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1340001.Icon_Store_1340001",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_SWORD"
+    ],
+    "name": "Item_Name_1340001",
+    "offset": {
+      "Z": -20.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHANDED_SWORD"
+    ],
+    "quality_type": "Market_QualityType2",
+    "rarity": 5,
+    "scale": 1.6,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1340001.D_Icon_Skin1340001",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1340001
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "X": -30.0,
+      "Z": 75.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740016"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 400,
+            "cost_type": 1012,
+            "origin_price": 400
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 40000,
+            "cost_type": 1001,
+            "origin_price": 40000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1340002",
+    "icon": "/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomEquipIconTips/D_Icon_Heirloom_LongSword_220110240.D_Icon_Heirloom_LongSword_220110240",
+    "id": 1340002,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1340002.Icon_Store_1340002",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LONG_SWORD"
+    ],
+    "name": "Item_Name_1340002",
+    "offset": {
+      "Z": -10.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_BHANDED_SWORD"
+    ],
+    "quality_type": "Market_QualityType2",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "scale": 1.8,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1340002.D_Icon_Skin1340002",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1340002
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "X": -30.0,
+      "Z": 75.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740014"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 400,
+            "cost_type": 1012,
+            "origin_price": 400
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 40000,
+            "cost_type": 1001,
+            "origin_price": 40000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1340003",
+    "icon": "/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomEquipIconTips/D_Icon_Heirloom_Shield_220110340.D_Icon_Heirloom_Shield_220110340",
+    "id": 1340003,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1340003.Icon_Store_1340003",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_SHIELD"
+    ],
+    "name": "Item_Name_1340003",
+    "offset": {
+      "Z": 40.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHIELD"
+    ],
+    "quality_type": "Market_QualityType2",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "scale": 1.5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1340003.D_Icon_Skin1340003",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1340003
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "Z": 90.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740011"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 400,
+            "cost_type": 1012,
+            "origin_price": 400
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 40000,
+            "cost_type": 1001,
+            "origin_price": 40000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1340004",
+    "icon": "/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomEquipIconTips/D_Icon_Heirloom_HeavyCrossbow_220110440.D_Icon_Heirloom_HeavyCrossbow_220110440",
+    "id": 1340004,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1340004.Icon_Store_1340004",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_HEAVY_CROSSBOW"
+    ],
+    "name": "Item_Name_1340004",
+    "offset": {
+      "X": 30.0,
+      "Z": 25.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_ARBALEST"
+    ],
+    "quality_type": "Market_QualityType2",
+    "rarity": 5,
+    "scale": 2.0,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1340004.D_Icon_Skin1340004",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1340004
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "X": 20.0,
+      "Y": -110.0,
+      "Z": 90.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740012"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 400,
+            "cost_type": 1012,
+            "origin_price": 400
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 40000,
+            "cost_type": 1001,
+            "origin_price": 40000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1340005",
+    "icon": "/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomEquipIconTips/D_Icon_Heirloom_Dagger_220111140.D_Icon_Heirloom_Dagger_220111140",
+    "id": 1340005,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1340005.Icon_Store_1340005",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_DAGGER"
+    ],
+    "name": "Item_Name_1340005",
+    "offset": {
+      "X": -2.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_DAGGER"
+    ],
+    "quality_type": "Market_QualityType2",
+    "rarity": 5,
+    "scale": 1.2,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1340005.D_Icon_Skin1340005",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1340005
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "X": -30.0,
+      "Z": 75.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740017"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 400,
+            "cost_type": 1012,
+            "origin_price": 400
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 40000,
+            "cost_type": 1001,
+            "origin_price": 40000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1340006",
+    "icon": "/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomEquipIconTips/D_Icon_Heirloom_Mace_220111240.D_Icon_Heirloom_Mace_220111240",
+    "id": 1340006,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1340006.Icon_Store_1340006",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_MACE"
+    ],
+    "name": "Item_Name_1340006",
+    "offset": {
+      "X": -10.0,
+      "Z": -10.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHANDED_HAMMER"
+    ],
+    "quality_type": "Market_QualityType2",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "scale": 1.5,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1340006.D_Icon_Skin1340006",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1340006
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "X": -30.0,
+      "Z": 74.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740015"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 400,
+            "cost_type": 1012,
+            "origin_price": 400
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 40000,
+            "cost_type": 1001,
+            "origin_price": 40000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1340007",
+    "icon": "/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomEquipIconTips/D_Icon_Heirloom_Relic_220110840.D_Icon_Heirloom_Relic_220110840",
+    "id": 1340007,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1340007.Icon_Store_1340007",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_RELIC"
+    ],
+    "name": "Item_Name_1340007",
+    "offset": {
+      "X": 5.0,
+      "Z": 10.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_ARTIFACTS"
+    ],
+    "quality_type": "Market_QualityType2",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "scale": 1.3,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1340007.D_Icon_Skin1340007",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1340007
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "Z": -20.0
+    }
+  },
+  {
+    "access_type": {
+      "url": "740013"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 400,
+            "cost_type": 1012,
+            "origin_price": 400
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 40000,
+            "cost_type": 1001,
+            "origin_price": 40000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1340008",
+    "icon": "/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomEquipIconTips/D_Icon_Heirloom_Staff_220110530.D_Icon_Heirloom_Staff_220110530",
+    "id": 1340008,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1340008.Icon_Store_1340008",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_STAFF"
+    ],
+    "name": "Item_Name_1340008",
+    "offset": {
+      "X": 10.0,
+      "Z": 50.0
+    },
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_STAFF"
+    ],
+    "quality_type": "Market_QualityType2",
+    "rarity": 5,
+    "scale": 1.7,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1340008.D_Icon_Skin1340008",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1340008
+    ],
+    "worth_value": 10,
+    "xyz": {
+      "X": 30.0,
+      "Z": -95.0
+    }
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360000",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_006001.D_Icon_ACC_Necklace_006001",
+    "id": 1360000,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360000",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360000.D_Icon_Skin1360000",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360000
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360001",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_006001.D_Icon_ACC_Necklace_006001",
+    "id": 1360001,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360001",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CHEST"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360001.D_Icon_Skin1360001",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360001
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360002",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_006001.D_Icon_ACC_Necklace_006001",
+    "id": 1360002,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360002",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_GLOVE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360002.D_Icon_Skin1360002",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360002
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360003",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_006001.D_Icon_ACC_Necklace_006001",
+    "id": 1360003,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360003",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TROUSERS"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360003.D_Icon_Skin1360003",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360003
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360004",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_006001.D_Icon_ACC_Necklace_006001",
+    "id": 1360004,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360004",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHOE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360004.D_Icon_Skin1360004",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360004
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360005",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Ring_006003.D_Icon_ACC_Ring_006003",
+    "id": 1360005,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360005",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360005.D_Icon_Skin1360005",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360005
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360006",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Ring_006003.D_Icon_ACC_Ring_006003",
+    "id": 1360006,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360006",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CHEST"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360006.D_Icon_Skin1360006",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360006
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360007",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Ring_006003.D_Icon_ACC_Ring_006003",
+    "id": 1360007,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360007",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_GLOVE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360007.D_Icon_Skin1360007",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360007
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360008",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Ring_006003.D_Icon_ACC_Ring_006003",
+    "id": 1360008,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360008",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TROUSERS"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360008.D_Icon_Skin1360008",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360008
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360009",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Ring_006003.D_Icon_ACC_Ring_006003",
+    "id": 1360009,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360009",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHOE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360009.D_Icon_Skin1360009",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360009
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360010",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_18901003.D_Icon_ACC_Necklace_18901003",
+    "id": 1360010,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360010",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360010.D_Icon_Skin1360010",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360010
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360011",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_18901003.D_Icon_ACC_Necklace_18901003",
+    "id": 1360011,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360011",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CHEST"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360011.D_Icon_Skin1360011",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360011
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360012",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_18901003.D_Icon_ACC_Necklace_18901003",
+    "id": 1360012,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360012",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_GLOVE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360012.D_Icon_Skin1360012",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360012
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360013",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_18901003.D_Icon_ACC_Necklace_18901003",
+    "id": 1360013,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360013",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TROUSERS"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360013.D_Icon_Skin1360013",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360013
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360014",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_18901003.D_Icon_ACC_Necklace_18901003",
+    "id": 1360014,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360014",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHOE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360014.D_Icon_Skin1360014",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360014
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360015",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_005002.D_Icon_ACC_Necklace_005002",
+    "id": 1360015,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360015",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360015.D_Icon_Skin1360015",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360015
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360016",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_005002.D_Icon_ACC_Necklace_005002",
+    "id": 1360016,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360016",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CHEST"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360016.D_Icon_Skin1360016",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360016
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360017",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_005002.D_Icon_ACC_Necklace_005002",
+    "id": 1360017,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360017",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_GLOVE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360017.D_Icon_Skin1360017",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360017
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360018",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_005002.D_Icon_ACC_Necklace_005002",
+    "id": 1360018,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360018",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TROUSERS"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360018.D_Icon_Skin1360018",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360018
+    ],
+    "worth_value": 10
+  },
+  {
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 100,
+            "cost_type": 1012,
+            "origin_price": 100
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 10000,
+            "cost_type": 1001,
+            "origin_price": 10000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360019",
+    "icon": "/Game/TGF/UI/Textures/Icon/EquipIconTips/D_Icon_ACC_Necklace_005002.D_Icon_ACC_Necklace_005002",
+    "id": 1360019,
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360019",
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHOE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 4,
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360019.D_Icon_Skin1360019",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360019
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740028"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360020",
+    "id": 1360020,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360020.Icon_Store_1360020",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360020",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360020.D_Icon_Skin1360020",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360020
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740029"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360021",
+    "id": 1360021,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360021.Icon_Store_1360021",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360021",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CHEST"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360021.D_Icon_Skin1360021",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360021
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740030"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360022",
+    "id": 1360022,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360022.Icon_Store_1360022",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360022",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_GLOVE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360022.D_Icon_Skin1360022",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360022
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740031"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 250,
+            "cost_type": 1012,
+            "origin_price": 250
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 25000,
+            "cost_type": 1001,
+            "origin_price": 25000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360023",
+    "id": 1360023,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360023.Icon_Store_1360023",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360023",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TROUSERS"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360023.D_Icon_Skin1360023",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360023
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740032"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 250,
+            "cost_type": 1012,
+            "origin_price": 250
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 25000,
+            "cost_type": 1001,
+            "origin_price": 25000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360024",
+    "id": 1360024,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360024.Icon_Store_1360024",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_CLOTH_HELMET"
+    ],
+    "name": "Item_Name_1360024",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHOE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360024.D_Icon_Skin1360024",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360024
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740033"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360025",
+    "id": 1360025,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360025.Icon_Store_1360025",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360025",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360025.D_Icon_Skin1360025",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360025
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740034"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360026",
+    "id": 1360026,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360026.Icon_Store_1360026",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360026",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CHEST"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360026.D_Icon_Skin1360026",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360026
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740035"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360027",
+    "id": 1360027,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360027.Icon_Store_1360027",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360027",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_GLOVE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360027.D_Icon_Skin1360027",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360027
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740036"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 250,
+            "cost_type": 1012,
+            "origin_price": 250
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 25000,
+            "cost_type": 1001,
+            "origin_price": 25000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360028",
+    "id": 1360028,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360028.Icon_Store_1360028",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360028",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TROUSERS"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360028.D_Icon_Skin1360028",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360028
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740037"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 250,
+            "cost_type": 1012,
+            "origin_price": 250
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 25000,
+            "cost_type": 1001,
+            "origin_price": 25000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360029",
+    "id": 1360029,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360029.Icon_Store_1360029",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_LEATHER_HELMET"
+    ],
+    "name": "Item_Name_1360029",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHOE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360029.D_Icon_Skin1360029",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360029
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740038"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360030",
+    "id": 1360030,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360030.Icon_Store_1360030",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360030",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_HELMET"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360030.D_Icon_Skin1360030",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360030
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740039"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360031",
+    "id": 1360031,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360031.Icon_Store_1360031",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360031",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_CHEST"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360031.D_Icon_Skin1360031",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360031
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740040"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 300,
+            "cost_type": 1012,
+            "origin_price": 300
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 30000,
+            "cost_type": 1001,
+            "origin_price": 30000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360032",
+    "id": 1360032,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360032.Icon_Store_1360032",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360032",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_GLOVE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360032.D_Icon_Skin1360032",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360032
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740041"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 250,
+            "cost_type": 1012,
+            "origin_price": 250
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 25000,
+            "cost_type": 1001,
+            "origin_price": 25000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360033",
+    "id": 1360033,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360033.Icon_Store_1360033",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360033",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_TROUSERS"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360033.D_Icon_Skin1360033",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360033
+    ],
+    "worth_value": 10
+  },
+  {
+    "access_type": {
+      "url": "740042"
+    },
+    "cost_options": [
+      {
+        "cost_items": [
+          {
+            "cost_price": 250,
+            "cost_type": 1012,
+            "origin_price": 250
+          }
+        ]
+      },
+      {
+        "cost_items": [
+          {
+            "cost_price": 25000,
+            "cost_type": 1001,
+            "origin_price": 25000
+          }
+        ]
+      }
+    ],
+    "descs": "Item_Description_1360034",
+    "id": 1360034,
+    "marketplace_pic": "/Game/TGF/UI/Textures/Dynamic/Store/Icon_Store_1360034.Icon_Store_1360034",
+    "materials": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "materials_shows": [
+      "EN_GEAR_EQUIP_SUBTYPE_PLATE_HELMET"
+    ],
+    "name": "Item_Name_1360034",
+    "on_sales": true,
+    "put_third_sorts": [
+      "EN_FACADE_SKIN_THIRD_SORT_SHOE"
+    ],
+    "quality_type": "Market_QualityType1",
+    "rarity": 5,
+    "sales_time": "2024-08-15T08:30:00Z",
+    "tips_icon": "/Game/TGF/UI/Textures/Icon/ItemIconTips/D_Icon_Skin1360034.D_Icon_Skin1360034",
+    "type": "EN_FACADE_TYPE_SKIN",
+    "ue_skin_ids": [
+      1360034
+    ],
+    "worth_value": 10
+  }
+]

@@ -1,0 +1,455 @@
+{
+  "type": "tgf.config.ExcelTiers",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 22,
+    "hash_code": "sha256:494bb7ed5ca98d797d137e17103d4aa6293f7af381b73047653d282469a3c6bd",
+    "data_source": [
+      {
+        "file": "c31b4699a2de0ea9e5d043609dbcb944b672f898568e6356dd0f70ef4679c55f",
+        "sheet": "9d48a31e8515e6f67a7514be1f8849e587d08192c73a99be191f886c89c325c3",
+        "count": 22
+      }
+    ]
+  },
+  "rows": [
+    {
+      "tiers_id": 101,
+      "major_tiers_id": 1,
+      "next_tiers_score": 500,
+      "demotion_protection": 101,
+      "score_id": 1,
+      "season_id": 1,
+      "next_tiers_id": 102,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_1-1",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon1.T_PlayerGrade_Icon1'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem1.T_PlayerGrade_Gem1'",
+      "tiers_rarity": 2
+    },
+    {
+      "tiers_id": 102,
+      "major_tiers_id": 1,
+      "next_tiers_score": 1000,
+      "demotion_protection": 101,
+      "score_id": 1,
+      "season_id": 1,
+      "next_tiers_id": 103,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_1-2",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon1.T_PlayerGrade_Icon1'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem1.T_PlayerGrade_Gem1'",
+      "tiers_rarity": 2
+    },
+    {
+      "tiers_id": 103,
+      "major_tiers_id": 1,
+      "next_tiers_score": 1400,
+      "demotion_protection": 101,
+      "score_id": 1,
+      "season_id": 1,
+      "next_tiers_id": 201,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_1-3",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon1.T_PlayerGrade_Icon1'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem1.T_PlayerGrade_Gem1'",
+      "tiers_rarity": 2
+    },
+    {
+      "tiers_id": 201,
+      "major_tiers_id": 2,
+      "next_tiers_score": 2400,
+      "demotion_protection": 201,
+      "score_id": 2,
+      "season_id": 1,
+      "next_tiers_id": 202,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_2-1",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon2.T_PlayerGrade_Icon2'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem2.T_PlayerGrade_Gem2'",
+      "tiers_rarity": 3
+    },
+    {
+      "tiers_id": 202,
+      "major_tiers_id": 2,
+      "next_tiers_score": 2400,
+      "demotion_protection": 201,
+      "score_id": 2,
+      "season_id": 1,
+      "next_tiers_id": 203,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_2-2",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon2.T_PlayerGrade_Icon2'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem2.T_PlayerGrade_Gem2'",
+      "tiers_rarity": 3
+    },
+    {
+      "tiers_id": 203,
+      "major_tiers_id": 2,
+      "next_tiers_score": 2400,
+      "demotion_protection": 201,
+      "score_id": 2,
+      "season_id": 1,
+      "next_tiers_id": 301,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_2-3",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon2.T_PlayerGrade_Icon2'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem2.T_PlayerGrade_Gem2'",
+      "tiers_rarity": 3
+    },
+    {
+      "tiers_id": 301,
+      "major_tiers_id": 3,
+      "next_tiers_score": 5800,
+      "demotion_protection": 301,
+      "score_id": 3,
+      "season_id": 1,
+      "next_tiers_id": 302,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_3-1",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon3.T_PlayerGrade_Icon3'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem3.T_PlayerGrade_Gem3'",
+      "tiers_rarity": 4
+    },
+    {
+      "tiers_id": 302,
+      "major_tiers_id": 3,
+      "next_tiers_score": 5800,
+      "demotion_protection": 301,
+      "score_id": 3,
+      "season_id": 1,
+      "next_tiers_id": 303,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_3-2",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon3.T_PlayerGrade_Icon3'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem3.T_PlayerGrade_Gem3'",
+      "tiers_rarity": 4
+    },
+    {
+      "tiers_id": 303,
+      "major_tiers_id": 3,
+      "next_tiers_score": 5800,
+      "demotion_protection": 301,
+      "score_id": 3,
+      "season_id": 1,
+      "next_tiers_id": 304,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_3-3",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon3.T_PlayerGrade_Icon3'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem3.T_PlayerGrade_Gem3'",
+      "tiers_rarity": 4
+    },
+    {
+      "tiers_id": 304,
+      "major_tiers_id": 3,
+      "next_tiers_score": 5800,
+      "demotion_protection": 301,
+      "score_id": 3,
+      "season_id": 1,
+      "next_tiers_id": 401,
+      "need_require_levels": [
+        40003015,
+        40003016,
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_3-4",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon3.T_PlayerGrade_Icon3'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem3.T_PlayerGrade_Gem3'",
+      "tiers_rarity": 4
+    },
+    {
+      "tiers_id": 401,
+      "major_tiers_id": 4,
+      "next_tiers_score": 8700,
+      "demotion_protection": 301,
+      "score_id": 4,
+      "season_id": 1,
+      "next_tiers_id": 402,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_4-1",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon4.T_PlayerGrade_Icon4'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem4.T_PlayerGrade_Gem4'",
+      "tiers_rarity": 5
+    },
+    {
+      "tiers_id": 402,
+      "major_tiers_id": 4,
+      "next_tiers_score": 8700,
+      "demotion_protection": 301,
+      "score_id": 4,
+      "season_id": 1,
+      "next_tiers_id": 403,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_4-2",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon4.T_PlayerGrade_Icon4'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem4.T_PlayerGrade_Gem4'",
+      "tiers_rarity": 5
+    },
+    {
+      "tiers_id": 403,
+      "major_tiers_id": 4,
+      "next_tiers_score": 8700,
+      "demotion_protection": 301,
+      "score_id": 4,
+      "season_id": 1,
+      "next_tiers_id": 404,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_4-3",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon4.T_PlayerGrade_Icon4'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem4.T_PlayerGrade_Gem4'",
+      "tiers_rarity": 5
+    },
+    {
+      "tiers_id": 404,
+      "major_tiers_id": 4,
+      "next_tiers_score": 8700,
+      "demotion_protection": 301,
+      "score_id": 4,
+      "season_id": 1,
+      "next_tiers_id": 405,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_4-4",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon4.T_PlayerGrade_Icon4'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem4.T_PlayerGrade_Gem4'",
+      "tiers_rarity": 5
+    },
+    {
+      "tiers_id": 405,
+      "major_tiers_id": 4,
+      "next_tiers_score": 8700,
+      "demotion_protection": 301,
+      "score_id": 4,
+      "season_id": 1,
+      "next_tiers_id": 501,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_4-5",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon4.T_PlayerGrade_Icon4'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem4.T_PlayerGrade_Gem4'",
+      "tiers_rarity": 5
+    },
+    {
+      "tiers_id": 501,
+      "major_tiers_id": 5,
+      "next_tiers_score": 9400,
+      "demotion_protection": 401,
+      "score_id": 5,
+      "season_id": 1,
+      "next_tiers_id": 502,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_5-1",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon5.T_PlayerGrade_Icon5'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem5.T_PlayerGrade_Gem5'",
+      "tiers_rarity": 8
+    },
+    {
+      "tiers_id": 502,
+      "major_tiers_id": 5,
+      "next_tiers_score": 9400,
+      "demotion_protection": 401,
+      "score_id": 5,
+      "season_id": 1,
+      "next_tiers_id": 503,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_5-2",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon5.T_PlayerGrade_Icon5'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem5.T_PlayerGrade_Gem5'",
+      "tiers_rarity": 8
+    },
+    {
+      "tiers_id": 503,
+      "major_tiers_id": 5,
+      "next_tiers_score": 9400,
+      "demotion_protection": 401,
+      "score_id": 5,
+      "season_id": 1,
+      "next_tiers_id": 504,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_5-3",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon5.T_PlayerGrade_Icon5'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem5.T_PlayerGrade_Gem5'",
+      "tiers_rarity": 8
+    },
+    {
+      "tiers_id": 504,
+      "major_tiers_id": 5,
+      "next_tiers_score": 9400,
+      "demotion_protection": 401,
+      "score_id": 5,
+      "season_id": 1,
+      "next_tiers_id": 505,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_5-4",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon5.T_PlayerGrade_Icon5'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem5.T_PlayerGrade_Gem5'",
+      "tiers_rarity": 8
+    },
+    {
+      "tiers_id": 505,
+      "major_tiers_id": 5,
+      "next_tiers_score": 9400,
+      "demotion_protection": 401,
+      "score_id": 5,
+      "season_id": 1,
+      "next_tiers_id": 601,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_5-5",
+      "tiers_icon": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Icon5.T_PlayerGrade_Icon5'",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem5.T_PlayerGrade_Gem5'",
+      "tiers_rarity": 8
+    },
+    {
+      "tiers_id": 601,
+      "major_tiers_id": 6,
+      "next_tiers_score": 55800,
+      "demotion_protection": 401,
+      "score_id": 6,
+      "season_id": 1,
+      "next_tiers_id": 701,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_6-1",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem6.T_PlayerGrade_Gem6'",
+      "tiers_rarity": 6,
+      "tiers_bp": "/Script/UMGEditor.WidgetBlueprint'/Game/TGF/UI/WBP/PlayerGrade/PlayerGradeIcon/WBP_PlayerGradeIcon_Grade_02.WBP_PlayerGradeIcon_Grade_02_C'"
+    },
+    {
+      "tiers_id": 701,
+      "major_tiers_id": 7,
+      "next_tiers_score": -1,
+      "demotion_protection": 401,
+      "score_id": 7,
+      "season_id": 1,
+      "need_require_levels": [
+        40003017,
+        40003018,
+        40003019,
+        40003020
+      ],
+      "tiers_name": "Tiers_Name_7-1",
+      "tiers_color": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Dynamic/PlayerGradeIcon/T_PlayerGrade_Gem7.T_PlayerGrade_Gem7'",
+      "tiers_rarity": 7,
+      "tiers_bp": "/Script/UMGEditor.WidgetBlueprint'/Game/TGF/UI/WBP/PlayerGrade/PlayerGradeIcon/WBP_PlayerGradeIcon_Grade_01.WBP_PlayerGradeIcon_Grade_01_C'"
+    }
+  ]
+}

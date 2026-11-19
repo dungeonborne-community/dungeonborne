@@ -1,0 +1,13 @@
+[package]
+edition = "2021"
+name    = "ds-agent"
+version = "0.1.0"
+publish = false
+
+# Game server supervisor on the server machine (Robot, Windows): start, health by backend heartbeat,
+# restarting hung ones. See ds-agent/README.md and docs/DS_PIPELINE.md (ds-agent).
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+chrono = { version = "0.4", default-features = false, features = ["clock"] }

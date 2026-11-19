@@ -1,0 +1,25 @@
+[
+  {
+    "description": "MithrilForceAbilityDesc_001",
+    "level": 1,
+    "name": "MithrilForceAbilityName_001"
+  },
+  {
+    "description": "MithrilForceAbilityDesc_002",
+    "exp": "100",
+    "level": 2,
+    "name": "MithrilForceAbilityName_002"
+  },
+  {
+    "description": "MithrilForceAbilityDesc_003",
+    "exp": "200",
+    "level": 3,
+    "name": "MithrilForceAbilityName_003"
+  },
+  {
+    "description": "MithrilForceAbilityDesc_004",
+    "exp": "300",
+    "level": 4,
+    "name": "MithrilForceAbilityName_004"
+  }
+]

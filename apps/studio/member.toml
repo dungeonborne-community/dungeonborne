@@ -1,0 +1,21 @@
+[member]
+name = "studio"
+kind = "app"
+visibility = "public"
+lang = "rust+html"
+version = "1.2.0"
+depends_on = ["core/backend"]   # crates/balance-kit
+description = "Balance Studio — the balance designer's app (Tauri 2), prepares a dbbalance-patch/1 patch"
+
+[commands]
+test  = "cargo test"
+build = "cargo tauri build"
+
+[preview]
+# how a person sees it (ws preview, DevKit "Work", .claude/launch.json — docs/PREVIEW.md)
+name = "balance-studio-ui"
+run  = ["trunk", "serve"]
+env  = { NO_COLOR = "true" }   # trunk takes only true/false there; agents' shells may have NO_COLOR=1
+dir  = "ui"
+port = 1430
+note = "the studio UI in a browser with a mock of the Tauri API (ui/dev/mock-tauri.js) - not the real window"

@@ -1,0 +1,404 @@
+# Balance kit for players: which tables, what can be edited in them, how to show it. Built with
+# `cargo xtask balance kit` (balance_kit/README.md). Player edits come back as a patch → `cargo xtask balance patch`.
+#
+# editable — long-form paths that may be changed ('*' — any characters, including '.', '[', ']').
+# layout   — "wide": table row = sheet row, field = column; "long": one sheet row = one value.
+# icon     — row field whose value is used to look up the picture icons/<value>.png (empty — the column is empty).
+# context  — non-editable fields the app shows next to editable ones (level for class curves).
+# title_en, about_en, where_en — the same texts for the app's English UI; notes_en — caveats.
+# fields   — readable field names for Excel headers and descriptions for the LLM (by the last part of the path).
+
+# Shared by the framework; a season extends it with its own seasons/<id>/kit.toml (title, notes, [[table]] — see season.rs/kit.rs)
+title = "Dungeonborne — баланс"
+title_en = "Dungeonborne balance"
+# item pictures: <type_id>.png (= item_id of the tables); copied into the kit's icons/ (custom ones — balance_kit/icons/)
+icons_dir = "core/backend/assets/item_icons/icons"
+
+# Common caveats — into the workbook (the "How to edit" sheet) and into PROMPT.md for the LLM
+notes = [
+  "Урон умений здесь НЕ меняется: его считают эффекты умений (GameplayEffect) и кривые урона в паке игры, а не эти таблицы.",
+  "Свойства предмета хранятся как ролл 0…9999; значение игра считает из таблицы: одно из значений мин, мин + шаг, …, макс (равномерно, по ролл × число значений / 10000; проверено на сервере 05.11). Поэтому правка мин/макс меняет и уже выпавшие предметы. Какие свойства есть у предмета — решается при его создании.",
+  "Правка вступает в силу после пересборки баланса и перезапуска игровых серверов; у игроков — после обновления лаунчера (иначе подсказки в игре покажут старые цифры, а бой пойдёт по новым).",
+  "Доля: 0.05 = 5 %. Очки: целые единицы атрибута.",
+]
+
+notes_en = [
+  "Skill damage is NOT changed here: it comes from the skills' effects (GameplayEffect) and damage curves in the game's pak, not from these tables.",
+  "An item property is stored as a roll of 0…9999; the game computes the value from the table: one of min, min + step, …, max (evenly, by roll × number of values / 10000; checked on the server on 05.11). So changing min or max also changes items already dropped. Which properties an item has is decided when it is created.",
+  "A change takes effect after the balance is rebuilt and the game servers restart; for players, after the launcher updates (otherwise in-game tooltips show the old numbers while combat uses the new ones).",
+  "Share: 0.05 = 5%. Points: whole units of the attribute.",
+]
+
+[[table]]
+name = "role_level_upgrade"
+group = "classes"
+where = "игровой сервер (бой, статы героя) + клиент (окно героя)"
+title = "Классы: атрибуты по уровням"
+title_en = "Classes: attributes by level"
+about_en = "Base attributes of each class (role_type_id) at each level (role_level). Values are fixed_value: how much of the attribute the level gives."
+where_en = "game server (combat, hero stats) + client (hero window)"
+about = "Базовые атрибуты персонажа каждого класса (role_type_id) на каждом уровне (role_level). Значения — fixed_value: сколько атрибута даёт уровень."
+editable = ["role_attribute.*"]
+layout = "wide"
+icon = "role_type_id"
+context = ["role_level"]
+
+[[table]]
+name = "affix_template"
+group = "items"
+where = "игровой сервер и клиент — значения свойств по роллу; бэкенд — какие свойства у нового предмета"
+title = "Предметы: базовые характеристики"
+title_en = "Items: base properties"
+about_en = "Base properties of each item (item_id): weapon damage, armor, speed and so on. fixed_rule[*].attribute.<attribute> holds a fixed_value (constant) or offset.min_value…max_value (a range: the value depends on the item's roll). random_rule is the random affix pools, not changed here."
+where_en = "game server and client: property values by roll; backend: which properties a new item gets"
+about = "Базовые свойства каждого предмета (item_id): урон оружия, броня, скорость и т.п. — fixed_rule[*].attribute.<атрибут>: fixed_value (постоянное) или offset.min_value…max_value (диапазон: значение по роллу предмета). random_rule — пулы случайных аффиксов (здесь не меняются)."
+editable = ["data.fixed_rule[*].attribute.*.fixed_value", "data.fixed_rule[*].attribute.*.offset.min_value", "data.fixed_rule[*].attribute.*.offset.max_value"]
+layout = "long"
+icon = "item_id"
+
+[[table]]
+name = "affix_value_template"
+group = "items"
+where = "игровой сервер и клиент — значения аффиксов по роллу; бэкенд — выбор аффиксов при создании"
+title = "Аффиксы: диапазоны по редкости"
+title_en = "Affixes: ranges by rarity"
+about_en = "What an affix (attribute_type) gives when it drops: min_value…max_value for each rarity rarity_range[N]. affix_data[i] is the kind of affix (major or minor)."
+where_en = "game server and client: affix values by roll; backend: choosing affixes on creation"
+about = "Сколько даёт аффикс (attribute_type) при выпадении: для каждой редкости rarity_range[N] — min_value…max_value. affix_data[i] — вид аффикса (major/minor)."
+editable = ["data.affix_data[*].rarity_range[*].min_value", "data.affix_data[*].rarity_range[*].max_value"]
+layout = "wide"
+icon = ""
+
+[[table]]
+name = "affix_legendary_rule"
+group = "items"
+where = "игровой сервер и клиент"
+title = "Легендарные свойства"
+title_en = "Legendary properties"
+about_en = "Strength of a legendary property (affix_alias_id): offset.min_value…max_value."
+where_en = "game server and client"
+about = "Сила легендарного свойства (affix_alias_id): offset.min_value…max_value."
+editable = ["offset.min_value", "offset.max_value"]
+layout = "wide"
+icon = "affix_alias_id"
+
+[[table]]
+name = "market_product_item"
+group = "economy"
+where = "бэкенд (цена при покупке) + клиент (цена на витрине)"
+title = "Торговец: цены"
+title_en = "Vendor: prices"
+about_en = "Vendor products (product_id): the price cost_price (origin_price is the price without a discount), the currency cost_type, what you get is reward_items[*].count."
+where_en = "backend (price on purchase) + client (price in the shop)"
+about = "Товары торговца (product_id): цена cost_price (origin_price — цена без скидки), валюта cost_type, сколько получаешь — reward_items[*].count."
+editable = ["product.cost_options[*].cost_items[*].cost_price", "product.cost_options[*].cost_items[*].origin_price", "product.reward_items[*].count"]
+layout = "wide"
+icon = "product.reward_items[0].type_id"
+
+[[table]]
+name = "gear_template"
+group = "items"
+where = "бэкенд (новые предметы) + игровой сервер и клиент"
+title = "Предметы: прочность"
+title_en = "Items: durability"
+about_en = "Item durability. Empty means the game's default."
+where_en = "backend (new items) + game server and client"
+about = "Прочность предмета (durability). Пусто — по умолчанию игры."
+editable = ["durability"]
+layout = "wide"
+icon = "item_id"
+
+[[table]]
+name = "item_type"
+group = "economy"
+title = "Предметы: цена продажи"
+title_en = "Items: sell price"
+about = "Сколько платит торговец за предмет (system_repurchase_price). Нет цены: берётся базовая цена с рынка игроков, если она есть. От этой же цены считается страховка. В сезоне Dead Money экипировка при выносе стоит 0, что бы здесь ни было написано."
+about_en = "What the vendor pays for an item (system_repurchase_price). With no price, the base price of the player market is used, if any. Insurance is computed from the same price. In the Dead Money season carried-out gear is worth 0 whatever is set here."
+where = "бэкенд: продажа предметов, продажа лута при выходе из рейда, страховка"
+where_en = "backend: selling items, selling loot when leaving a raid, insurance"
+editable = ["system_repurchase_price"]
+layout = "wide"
+icon = "type_id"
+
+[[table]]
+name = "trade_commodity"
+group = "economy"
+title = "Рынок игроков: цены и налог"
+title_en = "Player market: prices and tax"
+about = "Товары рынка игроков по рынкам (market_id). Базовая цена price_def действует, пока нет сделок за неделю, и заменяет цену выкупа, если её нет. Налог tax_percentage берётся с выручки, publish_cost — плата за выставление лота."
+about_en = "Player market goods by market (market_id). The base price price_def applies while there are no deals in a week, and replaces the sell price if there is none. tax_percentage is taken from the proceeds, publish_cost is the listing fee."
+where = "бэкенд: рынок игроков, цена продажи и страховки"
+where_en = "backend: player market, sell and insurance prices"
+editable = ["price_def", "tax_percentage", "publish_cost"]
+layout = "wide"
+icon = "item_id"
+context = ["market_id"]
+
+[[table]]
+name = "gear_dismantle"
+group = "economy"
+title = "Разбор предметов"
+title_en = "Dismantling items"
+about = "Что получает игрок за разбор предмета: reward[*].count, сколько материала."
+about_en = "What a player gets for dismantling an item: reward[*].count, how much material."
+where = "бэкенд: разбор предмета"
+where_en = "backend: dismantling an item"
+editable = ["reward[*].count"]
+layout = "wide"
+icon = "item_id"
+
+[[table]]
+name = "craft_table"
+group = "economy"
+title = "Крафт: рецепты"
+title_en = "Crafting: recipes"
+about = "Сколько материала нужно (item_cost[*].count) и сколько предметов получится (product[*].count). Крафт сейчас мгновенный, поэтому время здесь не меняется."
+about_en = "How much material is needed (item_cost[*].count) and how many items you get (product[*].count). Crafting is instant for now, so time isn't changed here."
+where = "бэкенд: крафт"
+where_en = "backend: crafting"
+editable = ["item_cost[*].count", "product[*].count"]
+layout = "wide"
+icon = "product[0].type_id"
+
+[[table]]
+name = "market_special_cost"
+group = "economy"
+title = "Особые товары: цена по покупкам"
+title_en = "Special goods: price per purchase"
+about = "Цена товара торговца, которая зависит от номера покупки (sort_idx): первая покупка, вторая и так далее. После последней строки действует её цена."
+about_en = "The price of a vendor product that depends on the purchase number (sort_idx): first purchase, second and so on. After the last row its price stays."
+where = "бэкенд: покупка у торговца"
+where_en = "backend: buying from the vendor"
+editable = ["data.cost_options[*].cost_items[*].cost_price", "data.cost_options[*].cost_items[*].origin_price"]
+layout = "wide"
+icon = ""
+context = ["sort_idx"]
+
+[[table]]
+name = "gear_insurance_item"
+group = "economy"
+title = "Страховка: коэффициент по редкости"
+title_en = "Insurance: factor by rarity"
+about = "Цена страховки = цена продажи × sp_rate / 10000. Эта формула наша, на официальном сервере цена могла считаться иначе."
+about_en = "The insurance price = sell price × sp_rate / 10000. This formula is ours, the official server may have computed the price differently."
+where = "бэкенд: страховка предмета"
+where_en = "backend: insuring an item"
+editable = ["sp_rate"]
+layout = "wide"
+icon = ""
+
+[[table]]
+name = "role_level_exp"
+group = "progress"
+title = "Опыт до следующего уровня"
+title_en = "Experience to the next level"
+about = "Сколько опыта нужно, чтобы перейти с этого уровня на следующий (max_exp)."
+about_en = "How much experience takes you from this level to the next (max_exp)."
+where = "бэкенд: опыт и уровень персонажа"
+where_en = "backend: character experience and level"
+editable = ["max_exp"]
+layout = "wide"
+icon = ""
+
+[[table]]
+name = "map_exp"
+group = "progress"
+title = "Опыт за рейд"
+title_en = "Experience per raid"
+about = "Сколько опыта даёт рейд на карте в зависимости от времени в нём (alive_time, секунды). Действует последняя ступень, которую игрок прошёл. Если у карты нет строк, берутся строки карты 1."
+about_en = "How much experience a raid on a map gives depending on the time in it (alive_time, seconds). The last step the player reached applies. A map with no rows uses the rows of map 1."
+where = "бэкенд: опыт после рейда"
+where_en = "backend: experience after a raid"
+editable = ["exp"]
+layout = "wide"
+icon = ""
+context = ["alive_time"]
+
+# reference tables (read only): explain why an affix's min/max is "not visible"
+[[table]]
+name = "lt_slots"
+group = "loot"
+source = "loot_template"
+where = "игра (игровой сервер и клиент читают таблицы лута из пака): нужен новый пак"
+title = "Лут: шансы слотов"
+title_en = "Loot: slot chances"
+about = "Источник лута (сундук, монстр) бросает каждый свой слот отдельно: chance — шанс в процентах (0…100). Слот с несколькими пулами выбирает один по долям pr. Удобнее править на экране «Лут». Шанс 0 убирает слот."
+about_en = "A loot source (chest, monster) rolls each of its slots separately: chance is a percentage (0…100). A slot with several pools picks one by the shares in pr. The Loot screen is the easier place to edit this. Chance 0 removes the slot."
+where_en = "the game (game server and client read loot tables from the pak): a new pak is needed"
+editable = ["chance", "pr[*]"]
+layout = "wide"
+icon = ""
+context = ["pool[0]", "pool[1]", "pool[2]"]
+limits = { "chance" = [0, 100], "pr[*]" = [0] }
+
+[[table]]
+name = "lt_items"
+group = "loot"
+source = "loot_template"
+where = "игра (игровой сервер и клиент читают таблицы лута из пака): нужен новый пак"
+title = "Лут: предметы пулов"
+title_en = "Loot: pool items"
+about = "Из пула выпадает один предмет: w — его вес среди предметов пула, cnt — сколько штук (несколько чисел — одно из них, поровну). Вес 0 убирает предмет; хотя бы у одного предмета пула вес должен остаться больше нуля. Пул может использоваться несколькими группами источников: правка меняет их все."
+about_en = "A pool drops one item: w is its weight among the pool's items, cnt is how many (several numbers: one of them, evenly). Weight 0 removes the item; at least one item in the pool must keep a weight above zero. Several source groups can share a pool: a change affects them all."
+where_en = "the game (game server and client read loot tables from the pak): a new pak is needed"
+editable = ["w", "cnt[*]"]
+layout = "wide"
+icon = "item_id"
+context = ["pool"]
+limits = { "w" = [0], "cnt[*]" = [1] }
+positive_in_key = "w"
+
+[[table]]
+name = "lt_rules"
+group = "loot"
+source = "loot_template"
+where = "игра (игровой сервер и клиент читают таблицы лута из пака): нужен новый пак"
+title = "Лут: правила и режимы"
+title_en = "Loot: rules and modes"
+about = "Правки поверх всего шаблона: множители шанса, веса и количества по категориям и quality (сдвиг к дорогим предметам). Строка rules действует везде, строка modes.* — на своих картах и поверх rules. Пусто — без множителя."
+about_en = "Changes on top of the whole template: multipliers of chance, weight and count by category, and quality (a shift towards expensive items). The rules row applies everywhere, a modes.* row on its own maps and on top of rules. Empty means no multiplier."
+where_en = "the game (game server and client read loot tables from the pak): a new pak is needed"
+editable = ["chance.*", "weight.*", "count.*", "quality"]
+layout = "wide"
+icon = ""
+context = ["remove", "maps"]
+limits = { "chance.*" = [0], "weight.*" = [0], "count.*" = [0], "quality" = [-10, 10] }
+
+[[table]]
+name = "affix_count_random_pool"
+group = "reference"
+title = "Справка: сколько аффиксов выпадает"
+title_en = "Reference: how many affixes drop"
+about_en = "Pools of affix counts (affix_count_pool_id): count is how many, random_weight is the weight of the option. Read only. Our server doesn't use this table: the number of affixes depends on their kind."
+where_en = "nowhere for now: the number of affixes is set in the server code"
+about = "Пулы числа аффиксов (affix_count_pool_id): count — сколько, random_weight — вес варианта. Только для чтения. Наш сервер этой таблицей не пользуется: число аффиксов зависит от их вида."
+where = "сейчас нигде: число аффиксов задано в коде сервера"
+editable = []
+layout = "wide"
+icon = ""
+
+[[table]]
+name = "affix_level_pool_rule"
+group = "reference"
+title = "Справка: пулы аффиксов по уровням карты"
+title_en = "Reference: affix pools by map level"
+about_en = "Which affix pools (affix_pool_ids) apply at a level or map (level_id). Read only."
+where_en = "nowhere for now: the server code doesn't read this table"
+about = "Какие пулы аффиксов (affix_pool_ids) действуют на уровне/карте (level_id). Только для чтения."
+where = "сейчас нигде: сервер эту таблицу не читает"
+editable = []
+layout = "wide"
+icon = ""
+
+# Map names for tables with map_id: in the game's localization all difficulties of a map share one name
+[maps]
+"0" = { ru = "Без своей карты (лут по умолчанию)", en = "No map of its own (default loot)" }
+"1" = { ru = "Старая карта 1 (и все карты без своих строк)", en = "Old map 1 (and all maps with no rows of their own)" }
+"2" = { ru = "Старая карта 2", en = "Old map 2" }
+"3" = { ru = "Старая карта 3", en = "Old map 3" }
+"4" = { ru = "Старая карта 4", en = "Old map 4" }
+"10101" = { ru = "Склеп", en = "Sinner's End" }
+"10102" = { ru = "Склеп Classic", en = "Sinner's End Classic" }
+"10103" = { ru = "Склеп Hard", en = "Sinner's End Hard" }
+"10201" = { ru = "Замок", en = "Clouseau Castle" }
+"10202" = { ru = "Замок Classic", en = "Clouseau Castle Classic" }
+"10203" = { ru = "Замок Hard", en = "Clouseau Castle Hard" }
+
+[fields]
+chance = "шанс"
+w = "вес"
+cnt = "кол-во"
+pr = "доля пула"
+slot = "слот"
+pool = "пул"
+level = "уровень предмета"
+remove = "убирает"
+maps = "карты"
+weight = "вес"
+quality = "качество"
+gold = "золото"
+weapon = "оружие"
+armor = "броня"
+jewelry = "украшения"
+gem = "самоцветы"
+treasure = "сокровища"
+potion = "зелья"
+throwable = "метательное"
+supply = "расходники"
+currency = "валюта"
+other = "прочее"
+equipment = "экипировка"
+consumable = "расходуемое"
+all = "всё"
+system_repurchase_price = "цена выкупа"
+price_def = "базовая цена"
+tax_percentage = "налог, %"
+publish_cost = "плата за лот"
+market_id = "рынок"
+sort_idx = "покупка №"
+sp_rate = "коэф. страховки"
+max_exp = "опыт до уровня"
+exp = "опыт"
+alive_time = "секунд в рейде"
+reward = "материал"
+item_cost = "нужно"
+product = "получится"
+fixed_value = "значение"
+min_value = "мин."
+max_value = "макс."
+cost_price = "цена"
+origin_price = "цена без скидки"
+count = "кол-во"
+durability = "прочность"
+role_level = "Уровень"
+cost_items = "стоимость"
+reward_items = "выдаётся"
+rarity_range = "редкость"
+first_level_strength = "Сила"
+first_level_dexterity = "Ловкость"
+first_level_stamina = "Выносливость"
+first_level_intelligence = "Интеллект"
+first_level_will = "Воля"
+first_level_faith = "Вера"
+
+# English names of common fields; attributes come from the game's localization
+[fields_en]
+chance = "chance"
+w = "weight"
+cnt = "count"
+pr = "pool share"
+slot = "slot"
+pool = "pool"
+level = "item level"
+remove = "removes"
+maps = "maps"
+weight = "weight"
+quality = "quality"
+gold = "gold"
+weapon = "weapons"
+armor = "armor"
+jewelry = "accessories"
+gem = "gems"
+treasure = "treasure"
+potion = "potions"
+throwable = "throwables"
+supply = "supplies"
+currency = "currency"
+other = "other"
+equipment = "equipment"
+consumable = "consumables"
+all = "everything"
+system_repurchase_price = "sell price"
+price_def = "base price"
+tax_percentage = "tax, %"
+publish_cost = "listing fee"
+market_id = "market"
+sort_idx = "purchase no."
+sp_rate = "insurance factor"
+max_exp = "exp to level"
+exp = "exp"
+alive_time = "seconds in raid"
+reward = "material"
+item_cost = "needs"
+product = "gives"

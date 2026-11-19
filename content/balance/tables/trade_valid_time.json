@@ -1,0 +1,43 @@
+{
+  "type": "tgf.config.ExcelTradeValidTime",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 5,
+    "hash_code": "sha256:5662b9ee6eb44a0bb75e672ebfd55d9c3821bd0bafeaa6b8cb88626cf93cbc76",
+    "data_source": [
+      {
+        "file": "36833179b2b5c89d1abfa3911c6242a96ae9a62d685d093e0598a3d02ccb89a0",
+        "sheet": "887b2b2921f6458248faf9ef6ec5054eace4e6f0cdc6cf67bbffb72ba4fb26eb",
+        "count": 5
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 1,
+      "po_valid_time": "3600s",
+      "so_valid_time": "604800s"
+    },
+    {
+      "id": 2,
+      "po_valid_time": "3600s",
+      "so_valid_time": "86400s"
+    },
+    {
+      "id": 3,
+      "po_valid_time": "3600s",
+      "so_valid_time": "7200s"
+    },
+    {
+      "id": 4,
+      "po_valid_time": "3600s",
+      "so_valid_time": "900s"
+    },
+    {
+      "id": 5,
+      "po_valid_time": "3600s",
+      "so_valid_time": "43200s"
+    }
+  ]
+}

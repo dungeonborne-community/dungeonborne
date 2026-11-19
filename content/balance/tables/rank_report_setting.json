@@ -1,0 +1,1532 @@
+{
+  "type": "tgf.config.ExcelRankReportSetting",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 144,
+    "hash_code": "sha256:32781c135946a297bc088e04237550a516fff6dcdb5de40fc71c8a6d05871fa9",
+    "data_source": [
+      {
+        "file": "4a402272b34f705685a5a7640e143127cc2831661a379d4d92b3ed20b83ab5ea",
+        "sheet": "794f0973af52d8d69fc77df5da126e59929bf99b0aca391128e31d8f2510cff3",
+        "count": 144
+      }
+    ]
+  },
+  "rows": [
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 1,
+      "sort": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 2,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 1,
+      "sort": 2,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 3,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 1,
+      "sort": 3,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 4,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 1,
+      "sort": 4,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 5,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 1,
+      "sort": 5,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 6,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 1,
+      "sort": 6,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 7,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 1,
+      "sort": 7,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 8,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 1,
+      "sort": 8,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 9,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 1,
+      "sort": 9,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 101,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 2,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 102,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 2,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 103,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 2,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 104,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 2,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 105,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 2,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 106,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 2,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 107,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 2,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 108,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 2,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 109,
+      "level_ids": [
+        50000003
+      ],
+      "data_type": 2,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 201,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 3,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 202,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 3,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 203,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 3,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 204,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 3,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 205,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 3,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 206,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 3,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 207,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 3,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 208,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 3,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 209,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 3,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 301,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 4,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 302,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 4,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 303,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 4,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 304,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 4,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 305,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 4,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 306,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 4,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 307,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 4,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 308,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 4,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 309,
+      "level_ids": [
+        40003016
+      ],
+      "data_type": 4,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 401,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 3,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 402,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 3,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 403,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 3,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 404,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 3,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 405,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 3,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 406,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 3,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 407,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 3,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 408,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 3,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 409,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 3,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 501,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 4,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 502,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 4,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 503,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 4,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 504,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 4,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 505,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 4,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 506,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 4,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 507,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 4,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 508,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 4,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 509,
+      "level_ids": [
+        40003018
+      ],
+      "data_type": 4,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 601,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 3,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 602,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 3,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 603,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 3,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 604,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 3,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 605,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 3,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 606,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 3,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 607,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 3,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 608,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 3,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 609,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 3,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 701,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 4,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 702,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 4,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 703,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 4,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 704,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 4,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 705,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 4,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 706,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 4,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 707,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 4,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 708,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 4,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 709,
+      "level_ids": [
+        40003015
+      ],
+      "data_type": 4,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 801,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 3,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 802,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 3,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 803,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 3,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 804,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 3,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 805,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 3,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 806,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 3,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 807,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 3,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 808,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 3,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 809,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 3,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 901,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 4,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 902,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 4,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 903,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 4,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 904,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 4,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 905,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 4,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 906,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 4,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 907,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 4,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 908,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 4,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 909,
+      "level_ids": [
+        40003017
+      ],
+      "data_type": 4,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1001,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1002,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1003,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1004,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1005,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1006,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1007,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1008,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1009,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1101,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1102,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1103,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1104,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1105,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1106,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1107,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1108,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1109,
+      "level_ids": [
+        40003016,
+        40003018,
+        40003020,
+        40003015,
+        40003017,
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1201,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1202,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1203,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1204,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1205,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1206,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1207,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1208,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1209,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 3,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1301,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1302,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1303,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1304,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1305,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1306,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1307,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1308,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1309,
+      "level_ids": [
+        40003019
+      ],
+      "data_type": 4,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1401,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 3,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1402,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 3,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1403,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 3,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1404,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 3,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1405,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 3,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1406,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 3,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1407,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 3,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1408,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 3,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1409,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 3,
+      "sort": 18,
+      "type_id": 400008
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1501,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 4,
+      "sort": 10
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1502,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 4,
+      "sort": 11,
+      "type_id": 400001
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1503,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 4,
+      "sort": 12,
+      "type_id": 400002
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1504,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 4,
+      "sort": 13,
+      "type_id": 400003
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1505,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 4,
+      "sort": 14,
+      "type_id": 400004
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1506,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 4,
+      "sort": 15,
+      "type_id": 400005
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1507,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 4,
+      "sort": 16,
+      "type_id": 400006
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1508,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 4,
+      "sort": 17,
+      "type_id": 400007
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1509,
+      "level_ids": [
+        40003020
+      ],
+      "data_type": 4,
+      "sort": 18,
+      "type_id": 400008
+    }
+  ]
+}

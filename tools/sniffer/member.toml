@@ -1,0 +1,11 @@
+[member]
+name = "sniffer"
+kind = "tool"
+visibility = "team"
+lang = "rust"
+version = "0"
+depends_on = []
+description = "TGCP sniffer (formerly legacy:sniper); dumps go to home/runs"
+
+[commands]
+build = "cargo build --release"

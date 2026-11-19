@@ -1,0 +1,29 @@
+/target
+/ui/dist
+/ui/styles.css
+/src-tauri/gen
+/mock-server/data
+/dev-app/gen
+/dist
+/experiments/target
+/experiments/*/node_modules
+/experiments/*/dist
+/experiments/*/styles.css
+
+# 07.11: secrets, binaries, logs. bundle/client.zip is needed for the build (include_bytes), but it is a binary
+# (UE4SS, Goldberg) — kept in the backup, built by tools/make_client_bundle.py
+*.pem
+*.key
+*.pfx
+*.env
+*.env.*
+!*.env.example
+.claude/settings.local.json
+/bundle/*.zip
+*.log
+*.dll
+*.exe
+*.pak
+*.ucas
+*.utoc
+*.zip

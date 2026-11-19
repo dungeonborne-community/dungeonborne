@@ -1,0 +1,19 @@
+[member]
+name = "landing"
+kind = "site"
+visibility = "team"
+lang = "html+python"
+version = "0"
+depends_on = ["core/backend"]   # build_news.py, build_classes.py read seasons, names, ExcelConfigjson
+description = "Community site. Read first: DESIGNBOOK.md"
+
+[commands]
+dev   = "python web/dev_server.py 8821"
+build = "python web/build_news.py && python web/build_classes.py && python web/build_seo.py"
+
+[preview]
+# how a person sees it (ws preview, DevKit "Work", .claude/launch.json — docs/PREVIEW.md)
+name = "site"
+run  = ["python", "web/dev_server.py", "8821"]
+port = 8821
+note = "the site from the files, as on the hosting (no cache); news and classes as last built (commands.build)"

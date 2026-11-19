@@ -1,0 +1,17 @@
+[member]
+name = "backup"
+kind = "ops"
+visibility = "owner"
+lang = "bash+powershell"
+version = "0"
+depends_on = ["tools/stand", "tools/ws"]
+description = "restic backups to Hetzner Storage Box: production VM (nightly timer) and this PC (home/re, artifacts, unreal, vault)"
+
+[commands]
+vm_setup = "scp ops/backup/vm/* root@<vm>:/root/backup/ && ssh root@<vm> bash /root/backup/setup.sh <host> <vm_user>"
+pc_init = "powershell -ExecutionPolicy Bypass -File ops/backup/pc/backup.ps1 -Init"
+pc_backup = "powershell -ExecutionPolicy Bypass -File ops/backup/pc/backup.ps1"
+pc_snapshots = "powershell -ExecutionPolicy Bypass -File ops/backup/pc/backup.ps1 -Snapshots"
+
+[rules]
+# Changes on the production VM only after the owner's "yes" (14.11: Storage Box and backups approved).

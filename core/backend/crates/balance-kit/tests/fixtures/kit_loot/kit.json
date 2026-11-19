@@ -1,0 +1,93 @@
+{
+ "title": "Лут",
+ "notes": [],
+ "fields": {
+  "chance": "шанс",
+  "w": "вес",
+  "cnt": "кол-во",
+  "gold": "золото"
+ },
+ "fields_en": {
+  "chance": "chance",
+  "w": "weight",
+  "cnt": "count",
+  "gold": "gold"
+ },
+ "table": [
+  {
+   "name": "lt_slots",
+   "group": "loot",
+   "source": "loot_template",
+   "title": "Слоты",
+   "layout": "wide",
+   "icon": "",
+   "editable": [
+    "chance",
+    "pr[*]"
+   ],
+   "context": [
+    "pool[0]",
+    "pool[1]"
+   ],
+   "limits": {
+    "chance": [
+     0,
+     100
+    ],
+    "pr[*]": [
+     0
+    ]
+   }
+  },
+  {
+   "name": "lt_items",
+   "group": "loot",
+   "source": "loot_template",
+   "title": "Предметы",
+   "layout": "wide",
+   "icon": "item_id",
+   "editable": [
+    "w",
+    "cnt[*]"
+   ],
+   "limits": {
+    "w": [
+     0
+    ],
+    "cnt[*]": [
+     1
+    ]
+   },
+   "positive_in_key": "w"
+  },
+  {
+   "name": "lt_rules",
+   "group": "loot",
+   "source": "loot_template",
+   "title": "Правила",
+   "layout": "wide",
+   "icon": "",
+   "editable": [
+    "chance.*",
+    "weight.*",
+    "count.*",
+    "quality"
+   ],
+   "limits": {
+    "chance.*": [
+     0
+    ],
+    "weight.*": [
+     0
+    ],
+    "count.*": [
+     0
+    ],
+    "quality": [
+     -10,
+     10
+    ]
+   }
+  }
+ ]
+}

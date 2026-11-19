@@ -1,0 +1,109 @@
+{
+  "type": "tgf.config.ExcelActivityCenterRandomRewards",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 7,
+    "hash_code": "sha256:ea5780405b9721268afe714fc6bf1aafbd3dfdffb74d6ef9deb561ad1e201589",
+    "data_source": [
+      {
+        "file": "cd2e5d8e251bdd9eec25427669583af808771fa90f2625090bcfe7a3f9bdbdad",
+        "sheet": "a3999d93e6f3e39816e672404068cc03214a1f66ad8b8132af878e6b587e7e1d",
+        "count": 7
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 1,
+      "activity_id": 16502,
+      "career_type_id": 1,
+      "selected_max": 1,
+      "item_cnt_pool": [
+        {
+          "k": 1,
+          "v": 100
+        }
+      ],
+      "item_randoom_pool_id": 1
+    },
+    {
+      "id": 2,
+      "activity_id": 16502,
+      "career_type_id": 2,
+      "selected_max": 1,
+      "item_cnt_pool": [
+        {
+          "k": 1,
+          "v": 100
+        }
+      ],
+      "item_randoom_pool_id": 2
+    },
+    {
+      "id": 3,
+      "activity_id": 16502,
+      "career_type_id": 3,
+      "selected_max": 1,
+      "item_cnt_pool": [
+        {
+          "k": 1,
+          "v": 100
+        }
+      ],
+      "item_randoom_pool_id": 3
+    },
+    {
+      "id": 4,
+      "activity_id": 16502,
+      "career_type_id": 4,
+      "selected_max": 1,
+      "item_cnt_pool": [
+        {
+          "k": 1,
+          "v": 100
+        }
+      ],
+      "item_randoom_pool_id": 4
+    },
+    {
+      "id": 5,
+      "activity_id": 16502,
+      "career_type_id": 5,
+      "selected_max": 1,
+      "item_cnt_pool": [
+        {
+          "k": 1,
+          "v": 100
+        }
+      ],
+      "item_randoom_pool_id": 5
+    },
+    {
+      "id": 6,
+      "activity_id": 16502,
+      "career_type_id": 6,
+      "selected_max": 1,
+      "item_cnt_pool": [
+        {
+          "k": 1,
+          "v": 100
+        }
+      ],
+      "item_randoom_pool_id": 6
+    },
+    {
+      "id": 7,
+      "activity_id": 16502,
+      "career_type_id": 7,
+      "selected_max": 1,
+      "item_cnt_pool": [
+        {
+          "k": 1,
+          "v": 100
+        }
+      ],
+      "item_randoom_pool_id": 7
+    }
+  ]
+}

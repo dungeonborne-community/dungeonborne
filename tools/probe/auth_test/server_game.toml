@@ -1,0 +1,28 @@
+# Full test with the game and the launcher on one machine: backend on 127.0.0.2 ($env:BIND_IP='127.0.0.2'), launcher on 127.0.0.1.
+[server]
+id = "local.auth.test"
+name = "Auth test"
+
+[game]
+exe_sha256 = "62d509a00d984696e021fb5ddba9f87fd1b27c84f695877345ff5fe9401f58b3"   # Binaries\Win64\Dungeonborne.exe, both installs (02.11)
+label = "Dungeonborne Win64 final"
+
+[web]
+bind = "127.0.0.1:8090"
+public_url = "http://127.0.0.1:8090"
+
+[auth]
+require = "relay"
+providers = ["dev"]
+
+[relay]
+bind = "127.0.0.1:7443"
+public_address = "127.0.0.1"
+public_port = 7443
+cert = "cert.pem"
+key = "key.pem"
+upstream_ip = "127.0.0.2"
+
+# mod packages from launcher/tools/make_mods.py (run from backups)
+[mods]
+dir = "../launcher/dist/mods"

@@ -1,0 +1,27 @@
+{
+ "format": "dbbalance-catalog/1",
+ "items": {
+  "100": {
+   "ru": "Меч",
+   "en": "Sword"
+  }
+ },
+ "classes": {},
+ "rarities": {},
+ "field_types": {
+  "gear": {
+   "attack.offset.min_value": "int32",
+   "attack.offset.max_value": "int32",
+   "power.fixed_value": "int32",
+   "rate": "float",
+   "count": "uint32",
+   "free": "float",
+   "mode": "enum",
+   "negative": "int32"
+  },
+  "affix": {
+   "data.affix_data[*].rarity_range[*].min_value": "int32",
+   "data.affix_data[*].rarity_range[*].max_value": "int32"
+  }
+ }
+}

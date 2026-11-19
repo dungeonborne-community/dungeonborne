@@ -1,0 +1,103 @@
+# Dungeonborne workspace (schema dbws/1). Like [workspace] in Cargo.toml: ALL members are listed here.
+# What is not in members is not in the project. Each member has member.toml (name, kind, commands, links) and README.md.
+# Plan and decisions: docs/WORKSPACE_PLAN.md.
+
+[workspace]
+name = "dungeonborne"
+schema = "dbws/1"
+
+members = [
+    "core/backend",          # server (Rust) + ds-agent + xtask + balance-kit; server data (ExcelConfig, Configure.pb)
+    "content",               # data edited by people: seasons, balance, loot, names, search checks
+    "apps/launcher",         # player launcher (Tauri) + mock-server + dev-app (future devtool)
+    "apps/studio",           # Balance Studio — the designer's app (Tauri)
+    "apps/devkit",           # DevKit — a window over ws-core (Tauri): doctor, check, secrets, copies
+    "apps/discord-bot",      # community Discord bot (Rust) + Discord server tooling (moved from a separate folder 19.11)
+    "web/landing",           # community site
+    "game/catalog",          # catalog of mods and paks (cargo xtask mods)
+    "game/ue4ss",            # UE4SS mods (Lua) and dbnative
+    "game/client-mod",       # client mod installer
+    "game/bp-patches",       # Blueprint patches
+    "game/paks",             # pak sources: balance (built by xtask), legacy
+    "game/unreal/new-class", # new class (heavy parts in home)
+    "tools/ws",              # ws: check, doctor, bootstrap, game clone, runs collect (ws-core — also for DevKit)
+    "tools/py",              # python development tools
+    "tools/stand",           # test stand (formerly dbtest)
+    "tools/probe",           # client and login probes
+    "tools/debug",           # debug mods and probes
+    "tools/sniffer",         # TGCP sniffer (formerly sniper)
+    "tools/dumper",          # dbdump: game assets -> PNG/JSON over CUE4Parse, run by ws dump (adr/0004)
+    "ops/deploy",            # deploy: VM, Robot, scripts
+    "ops/backup",            # restic backups to Hetzner Storage Box (VM and PC)
+    "ops/forgejo",           # Forgejo git server on the VM (local only, SSH tunnel)
+    "ops/machine",           # machine setup (run by a human): Windows variables, WSL, DbTools task
+    "xtask",                 # cargo xtask: build tasks for the toolset (setup, devkit, ci)
+    "research",              # research notes and scripts
+]
+
+# Not members, but shared folders:
+#   sandbox/ — experiments (sandbox/README.md; contents are not in git)
+#   docs/    — for people (specs, plans, FIX_LIST, BACKLOG, runbooks)
+#   agents/  — for AI (memory, briefs, roles)
+#   .claude/ — Claude Code settings, skills, roles
+
+[workspace.layout]
+# what may live in the root (ws check, layout rule)
+root = ["README.md", "CLAUDE.md", ".gitignore", ".gitattributes",
+        "Cargo.toml", "Cargo.lock", "rust-toolchain.toml",   # cargo and rustup look for them only in the root (adr/0002)
+        "bootstrap.ps1",                                     # entry point from an empty disk (plan, section 13)
+        "AGENTS.md", "LICENSE-MIT", "LICENSE-APACHE"]        # public edition (export/public overlay)
+# member group folders (contain no files of their own)
+groups = ["core", "apps", "web", "game", "tools", "ops"]
+# shared folders outside members; config — workspace settings (this file, tools.lock, secrets.toml, local.toml, …)
+shared = ["config", "docs", "agents", ".claude", ".cargo", ".github", "export",   # export — edition spec and files of the public edition
+          "sandbox"]   # experiments of people and agents: only README.md in git, the rest ignored (docs/adr/0003-sandbox.md)
+
+[workspace.core]
+# The core (docs/EXTENDING.md): what the server, the mods and the running season are made of. New things go next to it
+# (new files and folders); ws check notes changed core files (modified/deleted, not added) — the PR says why.
+paths = ["core/backend/src", "core/backend/Cargo.toml",
+         "game/ue4ss/Mods/DungeonborneRuServer", "game/ue4ss/Mods/DungeonborneRuClient", "game/ue4ss/native/dbnative",
+         "content/seasons/base.toml", "content/seasons/playtest", "content/balance/tables",
+         "tools/ws", "xtask", "apps/devkit", "config", "bootstrap.ps1", "Cargo.toml", "Cargo.lock"]
+
+[workspace.visibility]
+# Visibility of files outside members (plan, section 13.3): public ⊂ team ⊂ owner; if several match — the strictest.
+# Members — [member] visibility in their member.toml; agents/memory notes — the visibility field in the header (absent — owner).
+# ws roles — what is currently at which level.
+default = "team"
+public = ["README.md", "Cargo.toml", "Cargo.lock", "rust-toolchain.toml", ".cargo", "bootstrap.ps1",
+          "config/bootstrap.manifest.toml", "config/tools.lock", "config/local.example.toml", ".gitignore",
+          ".gitattributes"]
+owner = ["docs/ghidra_*", "docs/discord", "docs/runbooks", "docs/owner", "agents/memory/MEMORY.md", "agents/OWNER.md"]
+
+[workspace.home]
+# DB_HOME — programs, game, dumps, caches, logs. This machine's path is in local.toml (not in git).
+default = "../home"
+
+[workspace.tools]
+# Shared tool versions (like [workspace.dependencies]). Pinned at step 4.
+rust = "stable"            # TODO step 4: rust-toolchain.toml with the exact version
+python = "3.12"
+uv = "*"
+tailwind = "4"             # standalone CLI, no npm (launcher, Studio, site)
+trunk = "*"
+tauri-cli = "2"
+
+[workspace.rules]
+# Checked by `ws check` (tools/ws): run before committing.
+no-new-root-entries = true     # new things in the root — only via docs/adr/
+members-only = true            # code lives only inside members
+no-absolute-paths = true       # paths to machine data only in local.toml (exceptions — member.toml, known-absolute-paths)
+no-secrets = true              # secrets — in the vault (KeePassXC)
+no-binaries = true             # exe/pak/zip — in home: out, tools, artifacts
+# what counts as a path to machine data (regex): drives D–G and the user profile. System C:\Windows,
+# Program Files, C:\ProgramData\DbTools (stand task) and paths on Robot (C:\DungeonbornServer) are not this machine's data
+machine-paths = ['(^|[^A-Za-z0-9_\\])[D-G]:[\\/]', '(^|[^A-Za-z0-9_\\])[Cc]:[\\/][Uu]sers[\\/]']
+# only in code strings (ws check, 17.11): game installs on C: — everyone has their own, they belong in local.toml [games];
+# in comments, hints and documents they are fine as examples (exports write them instead of the owner's paths)
+machine-paths-code = ['(^|[^A-Za-z0-9_\\])[Cc]:[\\/](Steam|SteamLibrary|Games)[\\/]']
+# leaks: what must not get into public-level files (ws check warnings; export — item 7 of section 13)
+owner-markers = []   # public copy: owner markers are checked by the export on the owner's side
+public-ips-ok = ["1.1.1.1", "8.8.8.8", "1.2.3.4", "5.6.7.8"]   # well-known addresses and examples in tests
+game-files = ["**/*.uasset", "**/*.umap", "**/*.uexp", "**/*.pb", "**/*.bytes", "**/assets/excel", "**/ExcelConfig", "**/ExcelConfigjson"]

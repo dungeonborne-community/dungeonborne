@@ -1,0 +1,108 @@
+{
+ "format": "dbbalance-catalog/1",
+ "items": {
+  "1": {
+   "ru": "Золото",
+   "en": "Gold",
+   "rarity": "COMMON"
+  },
+  "2": {
+   "ru": "Меч",
+   "en": "Sword",
+   "rarity": "RARE"
+  },
+  "3": {
+   "ru": "Камень",
+   "en": "Stone",
+   "rarity": "COMMON"
+  },
+  "4": {
+   "ru": "Зелье",
+   "en": "Potion",
+   "rarity": "COMMON"
+  }
+ },
+ "classes": {},
+ "rarities": {
+  "COMMON": {
+   "value": 1,
+   "ru": "Обычный",
+   "en": "Common"
+  },
+  "RARE": {
+   "value": 3,
+   "ru": "Редкий",
+   "en": "Rare"
+  }
+ },
+ "products": {},
+ "maps": {
+  "0": {
+   "ru": "По умолчанию",
+   "en": "Default"
+  },
+  "10101": {
+   "ru": "Склеп",
+   "en": "Crypt"
+  },
+  "10102": {
+   "ru": "Склеп Classic",
+   "en": "Crypt Classic"
+  }
+ },
+ "field_types": {
+  "lt_slots": {
+   "chance": "float",
+   "pr[*]": "int32"
+  },
+  "lt_items": {
+   "w": "float",
+   "cnt[*]": "int32"
+  },
+  "lt_rules": {
+   "chance.gold": "float",
+   "chance.weapon": "float",
+   "chance.armor": "float",
+   "chance.jewelry": "float",
+   "chance.gem": "float",
+   "chance.treasure": "float",
+   "chance.potion": "float",
+   "chance.throwable": "float",
+   "chance.supply": "float",
+   "chance.currency": "float",
+   "chance.other": "float",
+   "chance.equipment": "float",
+   "chance.consumable": "float",
+   "chance.all": "float",
+   "weight.gold": "float",
+   "weight.weapon": "float",
+   "weight.armor": "float",
+   "weight.jewelry": "float",
+   "weight.gem": "float",
+   "weight.treasure": "float",
+   "weight.potion": "float",
+   "weight.throwable": "float",
+   "weight.supply": "float",
+   "weight.currency": "float",
+   "weight.other": "float",
+   "weight.equipment": "float",
+   "weight.consumable": "float",
+   "weight.all": "float",
+   "count.gold": "float",
+   "count.weapon": "float",
+   "count.armor": "float",
+   "count.jewelry": "float",
+   "count.gem": "float",
+   "count.treasure": "float",
+   "count.potion": "float",
+   "count.throwable": "float",
+   "count.supply": "float",
+   "count.currency": "float",
+   "count.other": "float",
+   "count.equipment": "float",
+   "count.consumable": "float",
+   "count.all": "float",
+   "quality": "float"
+  }
+ }
+}

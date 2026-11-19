@@ -1,0 +1,178 @@
+[
+  {
+    "default_rate": 10000,
+    "loot_id": "100001",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100001"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100002",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100002"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100003",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100003"
+    ]
+  },
+  {
+    "default_rate": 4000,
+    "loot_id": "100004",
+    "max_rate": 4000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100004"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100005",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100005"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100006",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100006"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100007",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100007"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100008",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100008"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100009",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100009"
+    ]
+  },
+  {
+    "default_rate": 2500,
+    "loot_id": "100010",
+    "max_rate": 2500,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100010"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100011",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100011"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100012",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100012"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100013",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100013"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100014",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100014"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100015",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100015"
+    ]
+  },
+  {
+    "default_rate": 10000,
+    "loot_id": "100016",
+    "max_rate": 10000,
+    "pr": [
+      100
+    ],
+    "random_ids": [
+      "100016"
+    ]
+  }
+]

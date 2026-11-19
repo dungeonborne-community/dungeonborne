@@ -1,0 +1,34 @@
+# ClientProbe — client log for RPC analysis (see docs/CLIENT_PROBE.md). Read at game start.
+# 0 — the mod does nothing
+enabled = 1
+# client events (UTGFEventArgs), windows (UTGFWindowArgs), service functions (UTGFService and helpers)
+events = 1
+windows = 1
+# services = 1 CRASHES THE GAME on login (bisection 31.10: even with hook_params = simple) — do not enable;
+# Lua service calls are logged by the Lua probe (LCALL)
+services = 0
+# log folder (on G:, so that both the game and Claude can see the files)
+log_dir = <repo>/probe/logs
+# client name in the file name; empty — "alt" if local_save.txt is in Win64 (the second client C:\Games\Dungeonborne), otherwise "steam"
+name =
+# how many calls of one function / events of one class to log in full (after that — every 500th)
+call_limit = 40
+event_limit = 200
+# dump depth: call arguments, events and windows, services snapshot (F10). Deep — only the root object and
+# protocol data (TGFProto*); strings (FString/FText) are never read — they corrupted the game heap (31.10)
+arg_depth = 2
+event_depth = 4
+snap_depth = 3
+max_lines = 400000
+# substrings of function names that are not hooked (separated by ;)
+skip = Tick;DelegateSignature;GetWorld
+# command-line flags that disable the probe (dbtest auto instances)
+skip_cmdline = -dbserver;-dbclient
+# simple — hooks only on functions with simple parameters (numbers, bool, enum, FName, objects);
+# all — on all of them (functions with TArray/FString/structs in parameters crashed the game on login, 31.10)
+hook_params = simple
+# rogue stealth (STL): every 1 s, while someone has the Stealth state active — CloakType, GetOwnPlayer, MID parameters
+# and distance; read only. 0 — off.
+stealth = 0
+# experiment 12.11: the client sets StealthVisibleDistance = N on the stealth material of an enemy rogue; 0 — leave alone
+stl_vis = 0

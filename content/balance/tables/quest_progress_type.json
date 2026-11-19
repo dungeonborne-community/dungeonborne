@@ -1,0 +1,219 @@
+{
+  "type": "tgf.config.ExcelQuestProgressType",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 51,
+    "hash_code": "sha256:4e7f370e6971bcba06b2e3c8efcd294fda461f24b758f752e00cb1fa754190ea",
+    "data_source": [
+      {
+        "file": "098308c491e85b0404e8f5279339333a8a26ba378c51520a89a159a26dad0e1b",
+        "sheet": "4d017efd3eccba841ce7607fee9c11d6bd00b213446a9cfddee50580d130953e",
+        "count": 51
+      }
+    ]
+  },
+  "rows": [
+    {},
+    {
+      "id": 1,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 2,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 4,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 5,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 6,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 7,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 8,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 9,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 10,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 11,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 12,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 13,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 14,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 15,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 16,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 17,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 18,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 19,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 20,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 21,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 22,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 23,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 24,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 25,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 26,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 27,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 28,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 29,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 30,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 31,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 32,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 33,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 34,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 35,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 36,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 37,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 38,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 39,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 40,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 41,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 42,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 43,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 44,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 45,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 46,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 47,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 48,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 49,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 50,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    },
+    {
+      "id": 51,
+      "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+    }
+  ]
+}

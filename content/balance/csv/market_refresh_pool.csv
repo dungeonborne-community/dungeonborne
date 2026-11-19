@@ -1,0 +1,11 @@
+﻿market_refresh_pool_id;market_location_count;refresh_pool_random_weight;refresh_pool_type
+1;9;1000;
+2;9;1000;
+3;6;1000;
+4;9;1000;
+5;99;1000;EN_REFRESH_POOL_TYPE_REMOVE_DUPLICATE
+6;99;1000;
+7;99;1000;
+8;99;1000;
+9;99;1000;EN_REFRESH_POOL_TYPE_REMOVE_DUPLICATE
+10;99;1000;EN_REFRESH_POOL_TYPE_REMOVE_DUPLICATE

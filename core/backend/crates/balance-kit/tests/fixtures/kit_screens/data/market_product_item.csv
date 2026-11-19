@@ -1,0 +1,11 @@
+﻿row,key,title,path,value,name
+0,5001,,product_id,5001,
+0,5001,,product.cost_options[0].cost_items[0].cost_type,1,Золото
+0,5001,,product.cost_options[0].cost_items[0].cost_price,50,
+0,5001,,product.reward_items[0].type_id,100,Меч
+0,5001,,product.reward_items[0].count,1,
+1,9001,,product_id,9001,
+1,9001,,product.cost_options[0].cost_items[0].cost_type,1,Золото
+1,9001,,product.cost_options[0].cost_items[0].cost_price,99,
+1,9001,,product.reward_items[0].type_id,777,
+1,9001,,product.reward_items[0].count,1,

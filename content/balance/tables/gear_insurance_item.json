@@ -1,0 +1,74 @@
+{
+  "type": "tgf.config.ExcelGearInsuranceItem",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 8,
+    "hash_code": "sha256:a03612c3d7f069ff6a57d854ac6aa9f39eb7669663a083537c983d8c1be7aaa2",
+    "data_source": [
+      {
+        "file": "2c5cedf35675fc93cf6266d524769790ff5fe30916353e9a29adafa98c9c6d7f",
+        "sheet": "8b1c2e5a2c4b06240689ad983cdcec6d2fe46501e7aacb1288e1a27e2acbd8ce",
+        "count": 8
+      }
+    ]
+  },
+  "rows": [
+    {
+      "rarity": "EN_ITEM_RARITY_ROTTED",
+      "id": 2100010,
+      "standard_rarity": "EN_ITEM_RARITY_EPIC",
+      "standard_rate": 1000,
+      "sp_rate": 100
+    },
+    {
+      "rarity": "EN_ITEM_RARITY_NORMAL",
+      "id": 2100011,
+      "standard_rarity": "EN_ITEM_RARITY_EPIC",
+      "standard_rate": 1000,
+      "sp_rate": 100
+    },
+    {
+      "rarity": "EN_ITEM_RARITY_UNCOMMON",
+      "id": 2100012,
+      "standard_rarity": "EN_ITEM_RARITY_EPIC",
+      "standard_rate": 1000,
+      "sp_rate": 300
+    },
+    {
+      "rarity": "EN_ITEM_RARITY_ENHANCED",
+      "id": 2100013,
+      "standard_rarity": "EN_ITEM_RARITY_EPIC",
+      "standard_rate": 1000,
+      "sp_rate": 1000
+    },
+    {
+      "rarity": "EN_ITEM_RARITY_EPIC",
+      "id": 2100014,
+      "standard_rarity": "EN_ITEM_RARITY_EPIC",
+      "standard_rate": 1000,
+      "sp_rate": 4000
+    },
+    {
+      "rarity": "EN_ITEM_RARITY_EXCEPTIONAL",
+      "id": 2100015,
+      "standard_rarity": "EN_ITEM_RARITY_EPIC",
+      "standard_rate": 1000,
+      "sp_rate": 1000
+    },
+    {
+      "rarity": "EN_ITEM_RARITY_LEGENDARY",
+      "id": 2100016,
+      "standard_rarity": "EN_ITEM_RARITY_EPIC",
+      "standard_rate": 1000,
+      "sp_rate": 200
+    },
+    {
+      "rarity": "EN_ITEM_RARITY_UNIQUE",
+      "id": 2100017,
+      "standard_rarity": "EN_ITEM_RARITY_EPIC",
+      "standard_rate": 1000,
+      "sp_rate": 200
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "type": "tgf.config.ExcelTradeMarket",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 2,
+    "hash_code": "sha256:623840a4e995b37b5ee7a50b4ce0a7a367ad018891381542e10f0ec176244332",
+    "data_source": [
+      {
+        "file": "36833179b2b5c89d1abfa3911c6242a96ae9a62d685d093e0598a3d02ccb89a0",
+        "sheet": "b5850598fe57a0895e4a6f7ddc86fbf947f444a70e73d100af87f1a8f597c5c1",
+        "count": 2
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 1,
+      "return_price_difference": true,
+      "valid_lower_limit": 1,
+      "po_amount_limit": 30,
+      "so_amount_limit": 30,
+      "currency_type": 1001,
+      "valid_price": 1,
+      "random_item": true,
+      "market_type": "EN_TRADE_MARKET_TYPE_HOMOGENEOUS",
+      "ticket_type": [
+        "EN_TRADE_TICKET_TYPE_PURCHASE",
+        "EN_TRADE_TICKET_TYPE_FIXED"
+      ],
+      "bid_price_percentage": 5,
+      "calculate_pool_id": 1,
+      "recommend_id": 1
+    },
+    {
+      "id": 2,
+      "return_price_difference": true,
+      "valid_lower_limit": 1,
+      "po_amount_limit": 50,
+      "so_amount_limit": 30,
+      "currency_type": 1001,
+      "market_type": "EN_TRADE_MARKET_TYPE_AUCTION",
+      "ticket_type": [
+        "EN_TRADE_TICKET_TYPE_AUCTION"
+      ],
+      "bid_price_percentage": 5,
+      "calculate_pool_id": 1,
+      "recommend_id": 1
+    }
+  ]
+}

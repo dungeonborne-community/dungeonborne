@@ -1,0 +1,12 @@
+[member]
+name = "catalog"
+kind = "mod"
+visibility = "team"   # refers to closed paks (game/paks, game/bp-patches)
+lang = "toml"
+version = "0"
+depends_on = ["game/ue4ss", "game/paks", "game/bp-patches"]
+description = "Catalog of mods and paks (catalog.toml): what goes into the client/server/dev profiles. Sources \"home:…\" — in DB_HOME"
+
+[commands]
+check = "cargo xtask mods check"
+build = "cargo xtask mods build --profile=<client|server|dev-client|dev-server>   # -> home/out/mods/<profile>"

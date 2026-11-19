@@ -1,0 +1,89 @@
+# What does not go into git. Heavy and re-creatable things live in DB_HOME (X:\DBDev\home), secrets in X:\DBDev\vault.
+# See docs/WORKSPACE_PLAN.md.
+
+# --- secrets: never ---
+*.pem
+*.pem.*
+*.key
+*.pfx
+*.p12
+*.env
+*.env.*
+!*.env.example
+.env
+aes_key*.txt
+*.kdbx
+/core/backend/DiscordCFG/
+
+# --- settings of this machine ---
+/config/local.toml
+.claude/settings.local.json
+
+# --- sandbox: experiments of people and agents, not in git (docs/adr/0003-sandbox.md); only the README is tracked ---
+/sandbox/*
+!/sandbox/README.md
+
+# --- builds (the shared target is in home\cache\target; local ones just in case) ---
+target/
+target_*/
+/tools/dumper/bin/
+/tools/dumper/obj/
+/core/backend/dist/
+/core/backend/out/
+/content/balance/kit/out/
+/content/seasons/*/kit/
+/content/seasons/*/pak/
+/content/seasons/*/server/
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# --- databases, snapshots, logs ---
+/core/backend/surreal_saves*/
+/core/backend/rpc_dump/
+/core/backend/backup/
+db_rocks/
+/tools/probe/logs/
+/tools/probe/auth_test/db/
+*.log
+*.dmp
+*.stackdump
+*.bak
+*.bak_*
+
+# --- game dumps and third-party kits (their place is home\dumps, home\tools) ---
+/core/backend/from_game/
+/core/backend/assets/item_icons/
+/core/backend/DungeonbornePVE/
+/game/ue4ss/DumpGame/
+/game/ue4ss/UHTHeaderDump/
+/game/ue4ss/CXXHeaderDump/
+/game/ue4ss/UE4SS_SDK/
+/game/ue4ss/UE4SS_SDK_Backends/
+/game/ue4ss/liveview/
+/game/ue4ss/watches/
+/game/ue4ss/saved_versions/
+/game/ue4ss/imgui.ini
+/game/ue4ss/Mods/shared/types/
+
+# --- binaries and archives: built from sources or kept in home ---
+*.dll
+*.exe
+*.pdb
+*.obj
+*.lib
+*.exp
+*.pak
+*.ucas
+*.utoc
+*.zip
+*.rar
+*.7z
+*.bin
+!core/backend/src/**/testdata/*.bin
+# the directory server's reference answers (our private server list, 37 and 281 bytes): part of the backend
+!core/backend/assets/packets/dump_000*_DIR_S2C.bin
+
+# --- site: the game's full fonts (~110 MB); the site needs subset copies ---
+/web/landing/fonts-src/

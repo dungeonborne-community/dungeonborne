@@ -1,0 +1,15 @@
+[alias]
+# cargo xtask balance build --deploy  etc. (see xtask/src/main.rs)
+xtask = "run --release --quiet --package xtask --"
+
+# sccache is not enabled here (17.11): with it the rocksdb build under MSVC fails on "/WX-" (cl takes the flag for a file), and
+# it is not in config/tools.lock. Whoever needs a cache for other crates — RUSTC_WRAPPER=sccache in their own environment.
+
+# Windows: the built-in rust-lld is faster and lighter than link.exe (ships with the toolchain, nothing to install)
+[target.x86_64-pc-windows-msvc]
+linker = "rust-lld.exe"
+
+# Linux (backend on the VM) is built from Windows: cargo zigbuild --release --target x86_64-unknown-linux-gnu.2.35 —
+# zig links, mold is not needed here. A separate target-dir on C: (CARGO_TARGET_DIR) so it is not mixed up with the Windows build.
+
+# Do NOT set target-cpu=native: the binary goes to other machines (VM, Robot).

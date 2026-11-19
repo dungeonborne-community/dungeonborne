@@ -1,0 +1,9 @@
+﻿row,key,title,path,value,name
+0,101,Сила,affix_value_id,101,
+0,101,Сила,attribute_type,1001,Сила
+0,101,Сила,data.unit,5,
+0,101,Сила,data.affix_data[0].rarity_range[1].min_value,5,Низкое
+0,101,Сила,data.affix_data[0].rarity_range[1].max_value,15,Низкое
+1,101,Ловкость,affix_value_id,101,
+1,101,Ловкость,attribute_type,1002,Ловкость
+1,101,Ловкость,data.affix_data[0].rarity_range[1].max_value,8,Низкое

@@ -1,0 +1,22 @@
+# Base game without a season (docs/SEASONS_FORMAT.md). User's decision 07.11: kill reward, crafting of lower
+# relics, auto-sell of extracted items and forge materials on login are not base; they are enabled only by a season.
+[features]
+auto_sell_extracted = false
+relic_lower_quality = false
+# kill_reward — not set: off
+# start_materials — not set: none
+
+# 12.11: client mod settings. They go into the server manifest (client_settings); before starting the game the launcher writes them
+# to Mods/<mod>/server_settings.ini; a season can replace any key with its own section [client.<mod>.<section>].
+# An invisible enemy rogue is visible up close (docs/ROGUE_STEALTH.md): reveal strength 0..1 by distance, cm.
+[client.DungeonborneRuClient.stealth]
+enabled = 1            # 0 — as without the mod: an enemy rogue is never visible
+distance = 2000        # beyond this — not visible (cm); 17.11: 15 m (was 10); 19.11: 20 m (stand, ghost mode — visible from 15 m)
+full_distance = 0      # closer than this — strength opacity_near (cm)
+opacity_near = 1.0     # strength point-blank (1 — semi-transparent silhouette)
+opacity_far = 0.0      # strength at the distance boundary
+curve = 0.5            # 1 — linear; 2 — stays transparent longer, reveals sharply up close; 0.5 — the opposite. 19.11: 0.5 (stand)
+solid_distance = 400   # closer than this — also almost opaque (Visibility); 0 — off (cm). 13.11: 400 — the outline alone is not enough
+solid_max = 1.0        # density point-blank (0..1)
+ghost = 1              # 19.11: the enemy up close looks like the own rogue's hands (Visibility by the curve + ISEmissive); 0 — outline mode
+glow = 0.2             # 19.11: outline strength in ghost mode = extra brightness: emissive x (1 + 10*glow) — 0.2 = x3 (stand)

@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Main window: app commands only. Processes and dialogs are started from Rust; the page has no direct file or network access.",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}

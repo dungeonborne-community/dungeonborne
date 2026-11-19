@@ -1,0 +1,148 @@
+@import "tailwindcss" source(none);
+@source "./index.html";
+@source "./app.js";
+
+/* ---------------------------------------------------------------------------------------------------------------
+   Windows 11 (Fluent 2) dark. Mica base, content layer, cards with hairline strokes, accent #60cdff.
+   Only system fonts of Windows 10/11 — nothing is downloaded (the app's CSP allows local files only).
+   Look is decided here and in index.html; app.js only sets data-state / data-tone on elements.
+   --------------------------------------------------------------------------------------------------------------- */
+@theme {
+  --font-sans: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif;
+  --font-display: "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "Cascadia Mono", Consolas, monospace;
+  /* Segoe Fluent Icons (Windows 11) / Segoe MDL2 Assets (Windows 10): same code points */
+  --font-icons: "Segoe Fluent Icons", "Segoe MDL2 Assets";
+
+  --color-mica: #1f1f1f;
+  --color-layer: #282828;
+  --color-card: #2d2d2d;
+  --color-card-hi: #333333;
+  --color-fg: #ffffff;
+  --color-fg-2: #cfcfcf;
+  --color-fg-3: #a0a0a0;
+  --color-fg-4: #6e6e6e;
+  --color-accent: #60cdff;
+  --color-accent-strong: #2ea8e0;
+  --color-accent-text: #99ebff;
+  --color-ok: #6ccb5f;
+  --color-ok-bg: #393d1b;
+  --color-caution: #fce100;
+  --color-caution-bg: #433519;
+  --color-critical: #ff99a4;
+  --color-critical-bg: #442726;
+  --color-dev: #e3b2f5;
+  --color-dev-bg: #3d2b45;
+
+  --radius-ctl: 4px;
+  --radius-ovl: 8px;
+
+  --animate-ring: spin 0.8s linear infinite;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  button {
+    cursor: default;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #5c5c5c;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    border-width: 3px;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+}
+
+/* glyph: <span class="ico">&#xE713;</span> */
+@utility ico {
+  font-family: var(--font-icons);
+  font-size: 16px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  flex: none;
+}
+
+/* ----------------------------------------------------------------------------------------------- buttons */
+@utility btn {
+  @apply inline-flex h-8 items-center justify-center gap-2 rounded-ctl px-3 text-sm whitespace-nowrap select-none
+    transition-colors disabled:pointer-events-none;
+}
+/* AccentButton */
+@utility btn-accent {
+  @apply btn border border-white/10 bg-accent font-semibold text-black enabled:hover:bg-accent/90 enabled:active:bg-accent/75
+    disabled:border-transparent disabled:bg-white/[0.12] disabled:text-white/35;
+}
+/* Button (standard) */
+@utility btn-std {
+  @apply btn border border-white/[0.07] bg-white/[0.06] text-fg enabled:hover:bg-white/[0.09] enabled:active:bg-white/[0.04]
+    enabled:active:text-fg-2 disabled:text-white/35;
+}
+/* subtle / toolbar button */
+@utility btn-flat {
+  @apply btn text-fg enabled:hover:bg-white/[0.06] enabled:active:bg-white/[0.04] enabled:active:text-fg-2 disabled:text-white/35;
+}
+
+/* ----------------------------------------------------------------------------------------------- inputs */
+/* TextBox */
+@utility field {
+  @apply h-8 w-full rounded-ctl border border-white/[0.07] border-b-white/40 bg-white/[0.06] px-3 text-sm text-fg
+    outline-none placeholder:text-fg-3 hover:bg-white/[0.08] focus:border-b-2 focus:border-b-accent focus:bg-[#1a1a1a];
+}
+/* ComboBox on a native <select> */
+@utility combo {
+  @apply field cursor-default appearance-none bg-no-repeat pr-8;
+  background-image: linear-gradient(45deg, transparent 50%, #cfcfcf 50%), linear-gradient(135deg, #cfcfcf 50%, transparent 50%);
+  background-position: calc(100% - 15px) 14px, calc(100% - 11px) 14px;
+  background-size: 4px 4px;
+  & option {
+    background: #2d2d2d;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------- DevKit */
+@utility card {
+  @apply rounded-ovl border border-white/[0.06] bg-card;
+}
+@utility nav-item {
+  @apply flex h-9 w-full items-center gap-3 rounded-ctl px-3 text-left text-sm text-fg-2 hover:bg-white/[0.05]
+    data-[active]:bg-white/[0.08] data-[active]:text-fg;
+}
+/* row of a finding: data-level = error | warn | done | ok | note (external program for some work) */
+@utility finding {
+  @apply flex items-start gap-3 border-b border-white/[0.05] px-4 py-2 last:border-b-0;
+  & .lvl {
+    @apply mt-0.5 shrink-0 rounded-full px-2 text-xs font-semibold;
+  }
+  &[data-level="error"] .lvl {
+    @apply bg-critical-bg text-critical;
+  }
+  &[data-level="warn"] .lvl {
+    @apply bg-caution-bg text-caution;
+  }
+  &[data-level="done"] .lvl {
+    @apply bg-accent/15 text-accent-text;
+  }
+  &[data-level="ok"] .lvl {
+    @apply bg-ok-bg text-ok;
+  }
+  &[data-level="note"] .lvl {
+    @apply bg-white/[0.06] text-fg-3;
+  }
+}
+@utility spin {
+  @apply inline-block size-4 animate-ring rounded-full border-2 border-accent border-t-transparent;
+}

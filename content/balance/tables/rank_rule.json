@@ -1,0 +1,2789 @@
+{
+  "type": "tgf.config.ExcelRankRule",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 145,
+    "hash_code": "sha256:cfbffd02a0605560607d52a6e6bb88b52d0f1b3ab0b27facaee59871ce1f0f6d",
+    "data_source": [
+      {
+        "file": "4a402272b34f705685a5a7640e143127cc2831661a379d4d92b3ed20b83ab5ea",
+        "sheet": "3216875228a27493bd6e55ebd0118c888766ba3adc7eb6c4ca7523c9f8957787",
+        "count": 145
+      }
+    ]
+  },
+  "rows": [
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_1^^($$TradeFilter_All^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10001,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 2,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_1^^($$CareerName_1^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10002,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 3,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_1^^($$CareerName_2^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10003,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 4,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_1^^($$CareerName_3^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10004,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 5,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_1^^($$CareerName_4^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10005,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 6,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_1^^($$CareerName_5^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10006,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 7,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_1^^($$CareerName_6^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10007,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 8,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_1^^($$CareerName_7^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10008,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 9,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_1^^($$CareerName_8^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10009,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 101,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_2^^($$TradeFilter_All^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10101,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 102,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_2^^($$CareerName_1^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10102,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 103,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_2^^($$CareerName_2^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10103,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 104,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_2^^($$CareerName_3^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10104,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 105,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_2^^($$CareerName_4^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10105,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 106,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_2^^($$CareerName_5^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10106,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 107,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_2^^($$CareerName_6^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10107,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 108,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_2^^($$CareerName_7^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10108,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 109,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "name": "$$Rank_MainTitle_1^^ - $$Rank_Title_2^^($$CareerName_8^^)",
+        "bind_level": {
+          "level_type": 1,
+          "level_id": 20005002
+        },
+        "custom_settlement": {
+          "rank_reward_pool_id": 20101,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10109,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 2001,
+      "rank_instance_id": 1,
+      "content": {
+        "name": "$$Rank_Title_20001^^",
+        "custom_settlement": {
+          "rank_reward_pool_id": 20201,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK",
+          "save_history": true
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ORIGINAL_AND_CLEAR",
+        "activity_id": 16600,
+        "sort_type": "EN_RANK_SORT_TYPE_EQUAL_SCORE"
+      },
+      "ban_id": 20001,
+      "rank_show_type": 2
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 201,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10201,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 202,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10202,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 203,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10203,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 204,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10204,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 205,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10205,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 206,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10206,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 207,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10207,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 208,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10208,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 209,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10209,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 301,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10301,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 302,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10302,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 303,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10303,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 304,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10304,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 305,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10305,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 306,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10306,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 307,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10307,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 308,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10308,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 309,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10309,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 401,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10401,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 402,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10402,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 403,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10403,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 404,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10404,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 405,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10405,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 406,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10406,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 407,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10407,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 408,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10408,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 409,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10409,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 501,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10501,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 502,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10502,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 503,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10503,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 504,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10504,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 505,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10505,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 506,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10506,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 507,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10507,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 508,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10508,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 509,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10509,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 601,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10601,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 602,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10602,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 603,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10603,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 604,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10604,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 605,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10605,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 606,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10606,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 607,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10607,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 608,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10608,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 609,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10609,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 701,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10701,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 702,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10702,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 703,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10703,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 704,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10704,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 705,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10705,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 706,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10706,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 707,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10707,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 708,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10708,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 709,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10709,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 801,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10801,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 802,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10802,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 803,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10803,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 804,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10804,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 805,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10805,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 806,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10806,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 807,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10807,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 808,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10808,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 809,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10809,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 901,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10901,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 902,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10902,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 903,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10903,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 904,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10904,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 905,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10905,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 906,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10906,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 907,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10907,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 908,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10908,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 909,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 10909,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1001,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11001,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1002,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11002,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1003,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11003,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1004,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11004,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1005,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11005,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1006,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11006,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1007,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11007,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1008,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11008,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1009,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11009,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1101,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11101,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1102,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11102,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1103,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11103,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1104,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11104,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1105,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11105,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1106,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11106,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1107,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11107,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1108,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11108,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1109,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11109,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1201,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11201,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1202,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11202,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1203,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11203,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1204,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11204,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1205,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11205,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1206,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11206,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1207,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11207,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1208,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11208,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1209,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11209,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1301,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11301,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1302,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11302,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1303,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11303,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1304,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11304,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1305,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11305,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1306,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11306,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1307,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11307,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1308,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11308,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1309,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11309,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1401,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11401,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1402,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11402,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1403,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11403,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1404,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11404,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1405,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11405,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1406,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11406,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1407,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11407,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1408,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11408,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1409,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11409,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1501,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11501,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1502,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11502,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1503,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11503,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1504,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11504,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1505,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11505,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1506,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11506,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1507,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11507,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1508,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11508,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    },
+    {
+      "rank_type": 1001,
+      "rank_instance_id": 1509,
+      "content": {
+        "sub_rank_type": 1,
+        "sub_rank_instance_id": 1,
+        "bind_level": {
+          "level_type": 1
+        },
+        "settlement_type": "EN_RANK_SETTLEMENT_TYPE_ABC_BOARD_KEEP",
+        "daily_settlement": {
+          "rank_reward_pool_id": 99999,
+          "reward_type": "EN_RANK_PREWARD_TYPE_BY_RANK"
+        }
+      },
+      "ban_id": 11509,
+      "is_role_rank": true,
+      "rank_show_type": 1
+    }
+  ]
+}

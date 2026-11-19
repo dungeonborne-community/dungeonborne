@@ -1,0 +1,339 @@
+[
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Head.T_Skin_Icon_Head",
+    "name": "HoverTips_Skin_Helmet",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_ARMOE",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HELMET",
+    "third_sort_priority": 1
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Breast.T_Skin_Icon_Breast",
+    "name": "HoverTips_Skin_Chest",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_ARMOE",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_CHEST",
+    "third_sort_priority": 2
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_hand.T_Skin_Icon_hand",
+    "name": "HoverTips_Skin_Glove",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_ARMOE",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_GLOVE",
+    "third_sort_priority": 3
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Trousers.T_Skin_Icon_Trousers",
+    "name": "HoverTips_Skin_Trousers",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_ARMOE",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_TROUSERS",
+    "third_sort_priority": 4
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Shoes.T_Skin_Icon_Shoes",
+    "name": "HoverTips_Skin_Shoes",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_ARMOE",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_SHOE",
+    "third_sort_priority": 5
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Cloak.T_Skin_Icon_Cloak",
+    "name": "HoverTips_Skin_Cape",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_ARMOE",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_CLOAK",
+    "third_sort_priority": 6
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Back.T_Skin_Icon_Back",
+    "name": "HoverTips_Skin_Back",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_ARMOE",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_BACK",
+    "third_sort_priority": 7
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_SHANDED_SWORD1",
+    "third_sort_priority": 1
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_BHANDED_SWORD",
+    "third_sort_priority": 2
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_SHIELD",
+    "third_sort_priority": 3
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_ARBALEST",
+    "third_sort_priority": 4
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_DAGGER",
+    "third_sort_priority": 5
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_SHANDED_HAMMER",
+    "third_sort_priority": 6
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_FIRE_STAFF",
+    "third_sort_priority": 7
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_THUNDER_STAFF",
+    "third_sort_priority": 8
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_ARTIFACTS",
+    "third_sort_priority": 9
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_HEIRLOOM",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_HEIRLOOM_STAFF",
+    "third_sort_priority": 10
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Torch.T_Skin_Icon_Torch",
+    "name": "HoverTips_Skin_Torch",
+    "offset": {
+      "X": 4.0,
+      "Z": -5.0
+    },
+    "original_resource_id": 100012,
+    "scale": 1.3,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_ITEM",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_TORCH",
+    "third_sort_priority": 1,
+    "xyz": {
+      "Y": -20.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Potion.T_Skin_Icon_Potion",
+    "name": "HoverTips_Skin_Potion",
+    "offset": {
+      "X": 4.0,
+      "Z": -5.0
+    },
+    "original_resource_id": 100013,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_ITEM",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_POTION",
+    "third_sort_priority": 2
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_KILL_EFFECT",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_KillEffect.T_Skin_Icon_KillEffect",
+    "name": "Skin_Tab_KillEffects",
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_KILL_EFFECT",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_KILL_EFFECT",
+    "third_sort_priority": 1
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Sward.T_Skin_Icon_Sward",
+    "name": "HoverTips_Skin_Sword",
+    "offset": {
+      "Z": -20.0
+    },
+    "original_resource_id": 181011000,
+    "scale": 1.35,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_SHANDED_SWORD",
+    "third_sort_priority": 1,
+    "xyz": {
+      "X": -30.0,
+      "Z": 75.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_LongSword.T_Skin_Icon_LongSword",
+    "name": "HoverTips_Skin_LongSword",
+    "offset": {
+      "Z": -10.0
+    },
+    "original_resource_id": 181021000,
+    "scale": 1.6,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_BHANDED_SWORD",
+    "third_sort_priority": 2,
+    "xyz": {
+      "X": -30.0,
+      "Z": 75.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Shield.T_Skin_Icon_Shield",
+    "name": "HoverTips_Skin_Shield",
+    "offset": {
+      "Z": 40.0
+    },
+    "original_resource_id": 181031000,
+    "scale": 1.3,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_SHIELD",
+    "third_sort_priority": 3,
+    "xyz": {
+      "Z": 90.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_HeavyCrossbow.T_Skin_Icon_HeavyCrossbow",
+    "name": "HoverTips_Skin_HeavyCrossbow",
+    "offset": {
+      "X": 30.0,
+      "Z": 25.0
+    },
+    "original_resource_id": 181041000,
+    "scale": 1.5,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_ARBALEST",
+    "third_sort_priority": 4,
+    "xyz": {
+      "X": 20.0,
+      "Y": -110.0,
+      "Z": 90.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Dagger.T_Skin_Icon_Dagger",
+    "name": "HoverTips_Skin_Dagger",
+    "offset": {
+      "X": -2.0
+    },
+    "original_resource_id": 181111000,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_DAGGER",
+    "third_sort_priority": 5,
+    "xyz": {
+      "X": -30.0,
+      "Z": 75.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Mace.T_Skin_Icon_Mace",
+    "name": "HoverTips_Skin_Mace",
+    "offset": {
+      "X": -10.0,
+      "Z": -10.0
+    },
+    "original_resource_id": 181121000,
+    "scale": 1.3,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_SHANDED_HAMMER",
+    "third_sort_priority": 6,
+    "xyz": {
+      "X": -30.0,
+      "Z": 74.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "offset": {
+      "Z": 10.0
+    },
+    "scale": 1.5,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_FIRE_STAFF",
+    "third_sort_priority": 7,
+    "xyz": {
+      "X": 20.0,
+      "Z": 90.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "offset": {
+      "Z": 10.0
+    },
+    "scale": 1.5,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_THUNDER_STAFF",
+    "third_sort_priority": 8,
+    "xyz": {
+      "X": 20.0,
+      "Z": 90.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Relic.T_Skin_Icon_Relic",
+    "name": "HoverTips_Skin_Relic",
+    "offset": {
+      "X": 4.0,
+      "Z": 30.0
+    },
+    "original_resource_id": 181080000,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_ARTIFACTS",
+    "third_sort_priority": 9,
+    "xyz": {
+      "Z": 90.0
+    }
+  },
+  {
+    "first_sort": "EN_FACADE_SKIN_FIRST_SORT_SKIN",
+    "icon": "/Game/TGF/UI/Textures/Dynamic/Skin/T_Skin_Icon_Staff.T_Skin_Icon_Staff",
+    "name": "HoverTips_Skin_Staff",
+    "offset": {
+      "X": 10.0,
+      "Z": 35.0
+    },
+    "original_resource_id": 181051001,
+    "scale": 1.4,
+    "second_sort": "EN_FACADE_SKIN_SECOND_SORT_WEAPON",
+    "show": true,
+    "third_sort": "EN_FACADE_SKIN_THIRD_SORT_STAFF",
+    "third_sort_priority": 10,
+    "xyz": {
+      "X": 30.0,
+      "Z": -95.0
+    }
+  }
+]

@@ -1,0 +1,185 @@
+# Heavy and binary data outside git (like Cargo.lock for data). docs/WORKSPACE_PLAN.md, sections 3, 7.
+#   ws doctor — check; ws bootstrap — copy what is missing from from and verify sha256.
+#
+# path    — where it lives: "home:…" (DB_HOME) or "ws:…" (in the working copy, in .gitignore)
+# from    — where to take it from: "legacy:…" — the old <data> (local.toml [legacy] root) until the store (step 5)
+# rebuild — how to recreate it if there is no source; value — reproducible (can be built) | irreplaceable (copy only)
+# components — needed only when one of these components is installed (ws components); absent — "ws:<path>" follows the
+#           component of the member holding the path, other paths are needed always.
+# sha256  — for files; not set for folders. required = false — work goes on without it, but not all of it.
+
+# --- external paks from the mod catalog (game/catalog/catalog.toml, "home:artifacts/paks/…")
+[[artifact]]
+name = "pak zz_LIPatch_P"
+path = "home:artifacts/paks/zz_LIPatch_P.pak"
+store_sha256 = "da2e74fed2645d505baa3661ac5fa9b334415824175dce34dfe26a9c94f2ccaa"
+from = "legacy:repack/zz_LIPatch_P.pak"
+sha256 = "da2e74fed2645d505baa3661ac5fa9b334415824175dce34dfe26a9c94f2ccaa"
+value = "irreplaceable"
+rebuild = "sources legacy:repack/zz_LIPatch_P (23.10) are outside the repository"
+profiles = ["owner", "dev"]
+components = ["mods"]
+
+[[artifact]]
+name = "pak zz_Loot_P"
+path = "home:artifacts/paks/zz_Loot_P.pak"
+store_sha256 = "9f1d372f2ad39a85f52550d1c1331afd94259da86eb9bc92127d90e6c36c7547"
+from = "legacy:repack/zz_Loot_P.pak"
+sha256 = "9f1d372f2ad39a85f52550d1c1331afd94259da86eb9bc92127d90e6c36c7547"
+value = "irreplaceable"
+rebuild = "overridden by the balance pak; the only source is this copy"
+profiles = ["owner", "dev"]
+components = ["mods"]
+
+[[artifact]]
+name = "pak zz_Market_P"
+path = "home:artifacts/paks/zz_Market_P.pak"
+store_sha256 = "b13783bff41fdbe297f1be2657866ea1ffa5755e87bce6fa94d3cdd538fe68f2"
+from = "legacy:repack/zz_Market_P.pak"
+sha256 = "b13783bff41fdbe297f1be2657866ea1ffa5755e87bce6fa94d3cdd538fe68f2"
+value = "irreplaceable"
+rebuild = "the only source is this copy"
+profiles = ["owner", "dev"]
+components = ["mods"]
+
+[[artifact]]
+name = "pak zzzzzzz_BPFix_P (pak)"
+path = "home:artifacts/paks/zzzzzzz_BPFix_P.pak"
+store_sha256 = "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd"
+from = "legacy:research/bpfix_pak_hero/zzzzzzz_BPFix_P.pak"
+sha256 = "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd"
+value = "reproducible"
+rebuild = "research/bpfix_pak_hero (retoc)"
+profiles = ["owner", "dev"]
+components = ["mods"]
+
+[[artifact]]
+name = "pak zzzzzzz_BPFix_P (ucas)"
+path = "home:artifacts/paks/zzzzzzz_BPFix_P.ucas"
+store_sha256 = "7dcbdbdf604344b823a900657eafdb0cbd09475bc63cea4a8bfdd6a710d9369e"
+from = "legacy:research/bpfix_pak_hero/zzzzzzz_BPFix_P.ucas"
+sha256 = "7dcbdbdf604344b823a900657eafdb0cbd09475bc63cea4a8bfdd6a710d9369e"
+value = "reproducible"
+rebuild = "research/bpfix_pak_hero (retoc)"
+profiles = ["owner", "dev"]
+components = ["mods"]
+
+[[artifact]]
+name = "pak zzzzzzz_BPFix_P (utoc)"
+path = "home:artifacts/paks/zzzzzzz_BPFix_P.utoc"
+store_sha256 = "570ab05bdbaf48f42e7a1f66a0ad5bba8c5005aa3581c027f7cfcffbc9f60c59"
+from = "legacy:research/bpfix_pak_hero/zzzzzzz_BPFix_P.utoc"
+sha256 = "570ab05bdbaf48f42e7a1f66a0ad5bba8c5005aa3581c027f7cfcffbc9f60c59"
+value = "reproducible"
+rebuild = "research/bpfix_pak_hero (retoc)"
+profiles = ["owner", "dev"]
+components = ["mods"]
+
+# --- in the working copy (in .gitignore)
+[[artifact]]
+name = "launcher bundle client.zip"
+path = "ws:apps/launcher/bundle/client.zip"
+store_sha256 = "fe84209f36c832ec36c64cd22a0f2017f1d1c4d92405150c4ca7b958d51ca4e6"
+from = "legacy:launcher/bundle/client.zip"
+sha256 = "fe84209f36c832ec36c64cd22a0f2017f1d1c4d92405150c4ca7b958d51ca4e6"
+value = "irreplaceable"
+rebuild = "apps/launcher/tools/make_client_bundle.py builds ON TOP of the previous bundle (keeps past versions for players' clean-up) - that history cannot be recreated without a copy; a new bundle with the same runtime: --upstream (tools.lock goldberg + ue4ss)"
+profiles = ["owner", "dev"]
+
+[[artifact]]
+name = "bp-patches paks"
+path = "ws:game/bp-patches/pak"
+store_tar = true
+store_sha256 = "90f366c2e1dc31b63b1f6260373b2446e3ff499fbda899dd6015e4b4c0465313"
+from = "legacy:backups/bp_patches/pak"
+value = "reproducible"
+rebuild = "game/bp-patches/tools (retoc)"
+profiles = ["owner", "dev"]
+
+[[artifact]]
+name = "bp-patches server pak"
+path = "ws:game/bp-patches/pak_server/zzzzzzz_ServerNet_P.pak"
+store_sha256 = "75e7144577253917f6da7312ef5e585b12fb728226a22b0938323751a6b555cd"
+from = "legacy:backups/bp_patches/pak_server/zzzzzzz_ServerNet_P.pak"
+value = "reproducible"
+rebuild = "game/bp-patches/tools (retoc); .ucas/.utoc next to it"
+profiles = ["owner", "dev"]
+
+[[artifact]]
+name = "dbnative.dll"
+path = "ws:game/ue4ss/Mods/DungeonborneRuClient/native/dbnative.dll"
+store_sha256 = "3bef3859327d280b1cc010c58b848c29e8d42aa9a6a38c8c7f4736f2d4a9c5d7"
+from = "legacy:backups/ue4ss/Mods/DungeonborneRuClient/native/dbnative.dll"
+value = "reproducible"
+rebuild = "game/ue4ss/native/dbnative/build.bat"
+profiles = ["owner", "dev"]
+
+[[artifact]]
+name = "balance pak"
+path = "ws:game/paks/balance/zzzzzz_Balance_P.pak"
+store_sha256 = "362a95d78de4beacafbf4d49d11fd7e2f9ce8c84ff2b093d008c4c0bb97e3505"
+value = "reproducible"
+rebuild = "cargo xtask balance build"
+profiles = ["owner", "dev"]
+required = false
+
+[[artifact]]
+name = "item icons"
+path = "ws:core/backend/assets/item_icons"
+store_tar = true
+store_sha256 = "6107f509cde53ce53d5c8263644f8aa0d2438a221a62c18c34373bae5dec0a73"
+from = "legacy:backups/assets/item_icons"
+value = "reproducible"
+rebuild = "tools/py/item_icons.py from the FModel export (local.toml [dumps] fmodel_exports)"
+profiles = ["owner", "dev"]
+required = false
+
+# --- for analyses (research, docs/RESEARCH.md): from your own game copy via UE4SS and paks; for the team — from the store
+[[artifact]]
+name = "game usmap"
+path = "home:re/ue4ss/Dungeonborne-5.1.1-0+++UE5+Release-5.1-cdbc0b66.usmap"
+store_sha256 = "5d2996b742737d20bf252bbf7d0dad6b158f0df6293664e5fcad1d73e7cf5bcc"
+sha256 = "5d2996b742737d20bf252bbf7d0dad6b158f0df6293664e5fcad1d73e7cf5bcc"
+value = "reproducible"
+rebuild = "tools/stand/usmap.ps1 (the stand client, headless: UE4SS DumpUSMAP -> home/re/ue4ss), or UE4SS in the client: Ctrl+Numpad6; mappings for UAssetGUI, FModel, retoc"
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false
+
+[[artifact]]
+name = "game CXXHeaderDump"
+path = "home:re/ue4ss/CXXHeaderDump"
+store_sha256 = "ab4a0358ed75db028f7e03670676fe8fc0f1c424dbe4947e478d2a047960cc61"
+store_tar = true
+from = "legacy:backups/ue4ss/CXXHeaderDump"
+value = "reproducible"
+rebuild = "UE4SS in the client: header dump (CXXHeaderDump) — types, fields, enums of the game classes"
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false
+
+[[artifact]]
+name = "client Lua (lua_all)"
+path = "home:re/lua_all"
+store_sha256 = "68c64d1fb536aa8d208888de449e30220fcb5ceccfa02f38beda286cc82bb09a"
+store_tar = true
+from = "legacy:research/lua_all"
+value = "reproducible"
+rebuild = "retoc from the client paks (Content/Script, UnLua bytecode; needs the AES key) — listing: luac54 -l -l"
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false
+
+# --- client exe image for Ghidra (research/ghidra/README.md): on request only, 171 MB
+[[artifact]]
+name = "client exe image"
+path = "home:re/ghidra/images/db_image.bin"
+store_sha256 = "d6ff66e977de9e803641955d265038065f783f3d00133fefd0d220f8dda6fd2e"
+sha256 = "d6ff66e977de9e803641955d265038065f783f3d00133fefd0d220f8dda6fd2e"
+manual = true
+for = "native analysis in Ghidra; build TimeDateStamp 0x67598c54, base 0x140000000, code decrypted"
+value = "irreplaceable"
+rebuild = "owner only (docs/owner/RE_TECHNIQUE.md)"
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false

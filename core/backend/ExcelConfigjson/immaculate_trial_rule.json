@@ -1,0 +1,24 @@
+[
+  {
+    "activity_end_lock_time": "3600",
+    "activity_end_match_time": "3600",
+    "activity_end_tips_time": "10800",
+    "activity_rule_id": 1,
+    "cost_itmes": [
+      {
+        "count": 1,
+        "type_id": 1033
+      }
+    ],
+    "failed_count": 3,
+    "first_reward_mail_id": 501030,
+    "open_time": [
+      5,
+      6,
+      0
+    ],
+    "random_reward_mail_id": 501031,
+    "rank_id": 20001,
+    "win_count": 7
+  }
+]

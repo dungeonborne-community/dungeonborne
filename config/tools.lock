@@ -1,0 +1,355 @@
+# Workstation programs (like Cargo.lock): what is needed, which version and where from. docs/WORKSPACE_PLAN.md, sections 3, 9.
+#   ws doctor    — check;  ws bootstrap — install what is missing.
+#
+# kind = "rust-target" — a rustup target of the workspace toolchain (`target`): rustup target list / add.
+# kind = "uv-python"   — a portable CPython (`version`) put by uv (tool "uv", listed before it) into `to`; nothing goes
+#                        into the system (--no-bin, --no-registry). A matching Python of the machine (check/expect) is fine too.
+# kind = "system"   — installed into the system (installer, winget); ws only checks: check — command, expect — version regex,
+#                     install — how to install. A full path can be set in local.toml [tools] <name>.
+# kind = "copy"     — copy of a folder/file from -> to (to — in DB_HOME, "home:…"); exe — the main file, sha256 — its hash.
+#                     "legacy:…" — the old <data> (local.toml [legacy] root), until there is a store (step 5).
+# kind = "download" — url (+ archive_sha256), unzip = true — unpack into to (strip = N — without the top N folders of the archive);
+#                     save_as — file name instead of the name from the url.
+# kind = "cargo"    — exe — file in to, version — what "exe --version" must show. Two ways (choice:
+#                     --prebuilt / --from-source of cargo xtask setup and ws bootstrap, otherwise local.toml [setup] build,
+#                     otherwise prebuilt):
+#                       prebuilt — [tool.prebuilt]: archive from the official releases page (url + archive_sha256),
+#                                  unpacked into the exe folder, the exe is checked against sha256;
+#                       source   — cargo install --locked <crate>@<version> --root to (from source, slower).
+# profiles — for which DevKit profiles (owner, dev, designer, agent); absent — for all. required = false — not an error.
+# components — needed only when one of these components is installed (config/components.toml, ws components);
+#              absent — for every component.
+# manual = true — ws doctor / bootstrap skip it; cargo xtask setup installs it when needed.
+# visibility — team / owner: the entry does not go into the public edition (cargo xtask export public); absent — public.
+
+# --- languages and build. Rust — MSVC target: either Visual Studio Build Tools in the system, or without them (bootstrap.ps1):
+#     CRT and Windows SDK from cargo-xwin in home/cache/xwin, linker rust-lld, C/C++ and resources — LLVM below.
+[[tool]]
+name = "llvm"
+kind = "download"
+manual = true   # without Visual Studio — for Tauri windows (clang-cl, llvm-rc); libclang for the backend build (LIBCLANG_PATH = bin); installed by cargo xtask setup --tool=llvm
+# .tar.xz, not .tar.zst: the LLVM zstd archive is built with a large window, Windows tar.exe cannot unpack it
+url = "https://github.com/llvm/llvm-project/releases/download/llvmorg-23.1.5/clang%2Bllvm-23.1.5-x86_64-pc-windows-msvc.tar.xz"
+archive_sha256 = "62fdada7f6fa2b73856486dfbbdba3d2c1882991621615bcb55c60207611c6d4"   # GitHub digest, 860 MB
+unzip = true
+strip = 1
+to = "home:toolchains/llvm"
+exe = "bin/clang-cl.exe"
+
+[[tool]]
+name = "rust"
+kind = "system"
+check = ["rustc", "--version"]
+expect = 'rustc 1\.(8[5-9]|9\d)'
+install = "rustup: https://rustup.rs (RUSTUP_HOME/CARGO_HOME in home/toolchains)"
+profiles = ["owner", "dev", "agent"]
+
+[[tool]]
+name = "uv"
+kind = "download"     # github.com/astral-sh/uv, release 0.13.4 (17.11: before — "install it from the website", newcomers did not have it)
+url = "https://github.com/astral-sh/uv/releases/download/0.13.4/uv-x86_64-pc-windows-msvc.zip"
+archive_sha256 = "ccec7508a07d9933d7cb1261880633efcf1f30d6e6eddab21823f1dae6f23225"   # digest GitHub
+unzip = true
+to = "home:tools/uv"
+exe = "uv.exe"
+sha256 = "b9d9656370ee1812e53e985d8bbb81870038106df98ef34cb45bcf4e0fe0df17"
+profiles = ["owner", "dev", "agent"]
+required = false
+
+[[tool]]
+name = "python"
+kind = "uv-python"     # 18.11: a portable CPython of this workspace, installed by uv (above: this tool must come after uv)
+version = "3.12.15"    # the newest 3.12 that uv 0.13.4 knows; uv checks the download against its own checksums
+to = "home:toolchains/python"   # -> home/toolchains/python/cpython-<version>-windows-x86_64-none/python.exe
+check = ["python", "--version"] # a Python of your own that matches `expect` is fine too
+expect = 'Python 3\.1[2-9]'
+install = "ws bootstrap --apply: uv python install <version> --install-dir home/toolchains/python --no-bin --no-registry"
+why = "tools/py and the site scripts; new PowerShell windows get it from home/env.ps1, AI agents as DB_PYTHON"
+profiles = ["owner", "dev", "agent"]
+
+[[tool]]
+name = "git"
+kind = "download"     # 19.11: PortableGit of git-for-windows v2.56.1.windows.1 (GitHub digest) — git, Git Bash (Claude Code's Bash
+                      # tool), ssh, the credential manager; a 7-Zip self-extracting archive, nothing installed in the system
+url = "https://github.com/git-for-windows/git/releases/download/v2.56.1.windows.1/PortableGit-2.56.1-64-bit.7z.exe"
+archive_sha256 = "9dd04a608ceb5f6ab32a73709e0ecb159d211da71b697c45ff81f6dd0c6b49c7"
+sfx = true
+to = "home:tools/git"          # bootstrap.ps1 puts the same archive here when the machine has no git
+exe = "bin/bash.exe"           # the marker: an older MinGit in the same folder has git but no bash
+sha256 = "1f654b9227b44acae4d388daa44564624adf42c48cd29373645a9fcde9fc7f99"
+why = "git and Git Bash for people and AI agents: agents get CLAUDE_CODE_GIT_BASH_PATH and DB_GIT (ws bootstrap)"
+profiles = ["owner", "dev", "agent"]
+
+[[tool]]
+name = "gh"
+kind = "download"     # 19.11: GitHub CLI v2.105.0 (cli/cli release, GitHub digest)
+url = "https://github.com/cli/cli/releases/download/v2.105.0/gh_2.105.0_windows_amd64.zip"
+archive_sha256 = "8813a72c899900afaa10e3fec8fbc64b908c89dbfe837e95ed2fa500fc140627"
+unzip = true
+to = "home:tools/gh"
+exe = "bin/gh.exe"
+sha256 = "77437defc10c5cf35ca0d25d626d58a5210de8ad10bf270c02df4630754bcd69"
+why = "pull requests and releases from the terminal and for AI agents (DB_GH, and on the Bash tool's PATH through a SessionStart hook); sign in once: gh auth login, then gh auth setup-git"
+profiles = ["owner", "dev", "agent"]
+
+# --- window builds (DevKit, launcher, Studio): cargo xtask setup installs them into home and adds them to the PATH of its own builds
+[[tool]]
+name = "trunk"
+kind = "cargo"
+crate = "trunk"
+version = "0.21.14"
+to = "home:tools/trunk"
+exe = "bin/trunk.exe"
+profiles = ["owner", "dev", "agent"]
+[tool.prebuilt]   # github.com/trunk-rs/trunk, release v0.21.14; archive_sha256 = their .sha256 next to the archive
+url = "https://github.com/trunk-rs/trunk/releases/download/v0.21.14/trunk-x86_64-pc-windows-msvc.zip"
+archive_sha256 = "cd6ac15b9daff0365e5695036791ef2ce3c63f61c014f5a8c532363266e4569c"
+sha256 = "209f218e2c01516ef4e59b97ab73b879ff2180c73f4187fa152b15532e8eecae"
+
+[[tool]]
+name = "tauri-cli"
+kind = "cargo"
+crate = "tauri-cli"
+version = "2.10.1"
+to = "home:tools/tauri-cli"
+exe = "bin/cargo-tauri.exe"
+profiles = ["owner", "dev", "agent"]
+[tool.prebuilt]   # github.com/tauri-apps/tauri, release tauri-cli-v2.10.1; archive_sha256 = GitHub digest
+url = "https://github.com/tauri-apps/tauri/releases/download/tauri-cli-v2.10.1/cargo-tauri-x86_64-pc-windows-msvc.zip"
+archive_sha256 = "50a3ed1c43f75ea3b6e7233a52d8a7c994cfffd98d8545ff397db8b464338d9c"
+sha256 = "81b408cd5e29a1770e6d35aa42dfa926e53c1c9d358c0d67e18875854dca1a87"
+
+[[tool]]
+name = "tailwindcss"
+kind = "download"
+url = "https://github.com/tailwindlabs/tailwindcss/releases/download/v4.3.3/tailwindcss-windows-x64.exe"
+save_as = "tailwindcss.exe"
+to = "home:tools/tailwindcss"
+exe = "tailwindcss.exe"
+sha256 = "e0e260ce048014e9268f6237ff18f8ccf02cef521cbd0ae04e82c2cdf7aa3955"
+profiles = ["owner", "dev", "agent"]
+
+[[tool]]
+name = "lua"
+kind = "download"     # LuaBinaries 5.4.8 (SourceForge, archive md5 checked against their list 17.11): lua54.exe — Lua check
+                      # in cargo xtask mods check; luac54.exe — client bytecode listing (luac54 -l -l), analyses
+url = "https://downloads.sourceforge.net/project/luabinaries/5.4.8/Tools%20Executables/lua-5.4.8_Win64_bin.zip"
+archive_sha256 = "20321e893509e575d2454dd7bbf05342c1f3cb1b3788c0ec5a55ae4279dde169"
+unzip = true
+to = "home:tools/lua"
+exe = "lua54.exe"
+sha256 = "8c95679e6210e5c3972ea473d248607d41b2cb734af67a60dd9eec4bf3ca237d"
+profiles = ["owner", "dev"]
+components = ["mods"]
+required = false
+
+[[tool]]
+name = "curl"
+kind = "system"
+check = ["curl", "--version"]
+install = "built into Windows 10+"
+
+# --- mods and game analysis (DB_HOME/tools). 17.11: official releases on GitHub; the exes were checked byte for byte against the copies
+# used since October (same sha256). Only repak is required (building the balance pak and mods); the rest is
+# for asset analysis, ready paks come from the artifact store.
+[[tool]]
+name = "repak"
+visibility = "team"   # the public edition is without it (export/public.toml filter)
+kind = "download"     # github.com/trumank/repak, release v0.2.3
+url = "https://github.com/trumank/repak/releases/download/v0.2.3/repak_cli-x86_64-pc-windows-msvc.zip"
+archive_sha256 = "6720d602144d75df477a99d5bedb6ea780997546afc335901d4937cafeaa73fa"
+unzip = true
+to = "home:tools/repak"
+exe = "repak.exe"
+sha256 = "fcd538e5994b9bb833622d425ae346f4e0692f02d4b0025114a559f9b6286022"
+profiles = ["owner", "dev"]
+components = ["server", "mods", "research"]
+
+[[tool]]
+name = "retoc"
+visibility = "team"   # the public edition is without it (export/public.toml filter)
+kind = "download"     # github.com/trumank/retoc, release v0.1.5 (retoc fetches Oodle itself on first run)
+url = "https://github.com/trumank/retoc/releases/download/v0.1.5/retoc_cli-x86_64-pc-windows-msvc.zip"
+archive_sha256 = "cc036b06ad3bdcf7003690b00d82719980c374e48a95bf0654f9959148d263aa"
+unzip = true
+to = "home:tools/retoc"
+exe = "retoc.exe"
+sha256 = "a145f3557ec60b163ed1b78b2f380232d2753fa30350c8013c98e171db3ae7e7"
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false
+
+[[tool]]
+name = "kismet-analyzer"
+visibility = "team"   # the public edition is without it (export/public.toml filter)
+kind = "download"     # github.com/trumank/kismet-analyzer, release latest (build e8982e9)
+url = "https://github.com/trumank/kismet-analyzer/releases/download/latest/kismet-analyzer-e8982e9-win-x64.zip"
+archive_sha256 = "12df3d6eb9d19e7de7aab1eaf0d43fee6955457671af38b9f1d0ad28fe57cc88"
+unzip = true
+strip = 1             # the archive has the folder kismet-analyzer-e8982e9-win-x64/
+to = "home:tools/kismet-analyzer"
+exe = "kismet-analyzer.exe"
+sha256 = "c644c2baf2c93b4a3c65c0e20e4e7148c5d083eb53a7ec863e9533e63c0f6f89"
+profiles = ["owner", "dev"]
+components = ["research", "mods"]
+required = false
+
+[[tool]]
+name = "oodle"
+visibility = "team"   # the public edition is without it (export/public.toml filter)
+kind = "download"     # Oodle 2.9.10 decompressor for the paks (ws dump, tools/dumper); the same file retoc downloads and checks
+url = "https://github.com/WorkingRobot/OodleUE/raw/5e38cb6c99c588b51cde0cae4a6420d6bc865605/Engine/Source/Programs/Shared/EpicGames.Oodle/Sdk/2.9.10/win/redist/oo2core_9_win64.dll"
+to = "home:tools/oodle"
+exe = "oo2core_9_win64.dll"
+sha256 = "6f5d41a7892ea6b2db420f2458dad2f84a63901c9a93ce9497337b16c195f457"   # = the hash pinned inside retoc v0.1.5
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false
+
+[[tool]]
+name = "uassetgui"
+visibility = "team"   # the public edition is without it (export/public.toml filter)
+kind = "download"     # github.com/atenfyr/UAssetGUI, release v1.1.0 (the exe itself, no archive)
+url = "https://github.com/atenfyr/UAssetGUI/releases/download/v1.1.0/UAssetGUI.exe"
+to = "home:tools/uassetgui"
+exe = "UAssetGUI.exe"
+sha256 = "b7d75c0893f1a60e565853ae638bc21f2416cd12c2d9d854e297abb87ceb3263"
+profiles = ["owner", "dev"]
+components = ["research", "mods"]
+required = false
+
+[[tool]]
+name = "fmodel"
+visibility = "team"   # the public edition is without it (export/public.toml filter)
+kind = "download"     # github.com/4sval/FModel, release nov-2026 (4.4.4.0+e952f6c)
+url = "https://github.com/4sval/FModel/releases/download/nov-2026/FModel.zip"
+archive_sha256 = "209bef15402dd58010cdb6bad03a799471f2100d671f8d5a52c1e613549b7de1"
+unzip = true
+to = "home:tools/fmodel"
+exe = "FModel.exe"
+sha256 = "647824eb8e0f2d17a0ce3699eeb03d55a80374ce7421765082b6ea1ecf6cdb78"
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false
+
+# The launcher's client runtime (apps/launcher/bundle/client.zip) is built from these two by
+# apps/launcher/tools/make_client_bundle.py --upstream (19.11: the shipped bundle has exactly these steam_api64.dll,
+# UE4SS.dll, dwmapi.dll and mod scripts, compared by sha256)
+[[tool]]
+name = "goldberg"
+kind = "download"     # Goldberg Steam Emulator (Mr_Goldberg, gitlab), the last master build 475342f0 (job 4247811310)
+url = "https://gitlab.com/Mr_Goldberg/goldberg_emulator/-/jobs/4247811310/artifacts/download"
+archive_sha256 = "8465984b01b42a75f5faea8f2d884bbd6085a695c40c2b90eb0385f0a5081266"
+unzip = true
+to = "home:tools/goldberg"
+exe = "steam_api64.dll"
+sha256 = "0cfe547ea82071953cf99daffa3bd11bb468eec0e400961e7e33e4dc36674ea8"
+profiles = ["owner", "dev"]
+components = ["launcher", "stand"]
+required = false
+
+[[tool]]
+name = "ue4ss"
+kind = "download"     # github.com/UE4SS-RE/RE-UE4SS, experimental build v3.0.1-1183-gcdbc0b66 (25.10.2026, GitHub digest)
+url = "https://github.com/UE4SS-RE/RE-UE4SS/releases/download/experimental/UE4SS_v3.0.1-1183-gcdbc0b66.zip"
+archive_sha256 = "e4a47e23e2eeb8379c4fc388d1b1686f01c6c5930d84a2ee4a6a9574b274e681"
+unzip = true
+to = "home:tools/ue4ss"
+exe = "ue4ss/UE4SS.dll"
+sha256 = "c273e7228687b647226fd63d7ca65888d313ece6be18996ec1320d00a5efe1f8"
+profiles = ["owner", "dev"]
+components = ["launcher", "stand"]
+required = false
+
+# --- external programs (kind = "external"): large, installed by a human and only for specific work. ws does not install them;
+#     doctor and DevKit show them "for work" (note): whether the program is present and what it is for. Lookup: local = "section.key"
+#     (path in local.toml), env — variable with the folder, detect — command whose non-empty output = found.
+[[tool]]
+name = "visual-studio"
+kind = "external"
+for = "building dbnative.dll (game/ue4ss/native/dbnative/build.bat) and the Rust linker without cargo-xwin"
+detect = ["%ProgramFiles(x86)%\\Microsoft Visual Studio\\Installer\\vswhere.exe", "-latest", "-products", "*", "-requires", "Microsoft.VisualStudio.Component.VC.Tools.x86.x64", "-property", "installationPath"]
+install = "Visual Studio 2022+ or Build Tools, workload \"Desktop development with C++\" (the installer asks for admin rights)"
+profiles = ["owner", "dev", "agent"]
+components = ["mods"]
+
+[[tool]]
+name = "unreal-engine"
+visibility = "team"   # game/unreal projects — only in the team edition
+kind = "external"
+for = "game/unreal projects (Jester, new class): cook and paks, editor scripts"
+local = "unreal.editor_cmd"
+install = "Unreal Engine 5.1 (Epic Games Launcher, ~40 GB); path to UnrealEditor-Cmd.exe — config/local.toml [unreal] editor_cmd"
+profiles = ["owner", "dev", "agent"]
+components = ["unreal"]
+
+[[tool]]
+name = "ghidra"
+visibility = "team"   # client analysis — not in the public edition
+kind = "external"
+for = "analysing the client's native code from the exe image taken from a process dump (research/ghidra/README.md; the exe on disk is packed); the dump — via the owner's link"
+path = "home:tools/ghidra/ghidraRun.bat"
+local = "tools.ghidra"
+env = "GHIDRA_INSTALL_DIR"
+install = "cargo xtask setup --apply --tool=ghidra-dist,jdk (Ghidra 12.2 + JDK 21 in home, ~750 MB, no admin rights)"
+profiles = ["owner", "dev", "agent"]
+components = ["research"]
+
+# Ghidra and its JDK — installed only on request (manual): cargo xtask setup --apply --tool=ghidra-dist,jdk
+[[tool]]
+name = "ghidra-dist"
+visibility = "team"
+kind = "download"     # github.com/NationalSecurityAgency/ghidra, release Ghidra_12.2_build (22.10.2026), 543 MB
+manual = true
+url = "https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_12.2_build/ghidra_12.2_PUBLIC_20261016.zip"
+archive_sha256 = "2c2cd776db3c1f6a097ba418922378ac3649cadd5e844a6f5f088ae628a7be67"   # digest GitHub
+unzip = true
+strip = 1
+to = "home:tools/ghidra"
+exe = "ghidraRun.bat"
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false
+
+[[tool]]
+name = "jdk"
+visibility = "team"
+kind = "download"     # github.com/adoptium/temurin21-binaries, jdk-21.0.9+10 (Ghidra 12 requires JDK 21), 195 MB
+manual = true
+url = "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jdk_x64_windows_hotspot_21.0.9_10.zip"
+archive_sha256 = "1c67df516e9795c0b09f5714bfe151da2e3cc988082042f5bbb60d75e4e63fb5"   # digest GitHub
+unzip = true
+strip = 1
+to = "home:toolchains/jdk"
+exe = "bin/java.exe"
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false
+
+[[tool]]
+name = "dotnet"
+visibility = "team"
+kind = "download"     # Microsoft .NET SDK 10.0.403 (25.10.2026) for tools/dumper (ws dump, docs/GAME_DATA.md), 301 MB
+manual = true         # on request: cargo xtask setup --apply --tool=dotnet; a .NET 10 SDK already on PATH also works
+url = "https://builds.dotnet.microsoft.com/dotnet/Sdk/10.0.403/dotnet-sdk-10.0.403-win-x64.zip"
+archive_sha256 = "f398979a9cac2dba760771c4e01f16e431dcd6bcfb2213e3e8f5b3d354095cc0"   # sha512 checked against Microsoft's releases.json (18.11)
+unzip = true
+to = "home:toolchains/dotnet"
+exe = "dotnet.exe"
+profiles = ["owner", "dev"]
+components = ["research"]
+required = false
+
+# --- backups (ops/backup)
+[[tool]]
+name = "restic"
+visibility = "owner"   # the public edition is without it (export/public.toml filter)
+kind = "download"
+url = "https://github.com/restic/restic/releases/download/v0.18.1/restic_0.18.1_windows_amd64.zip"
+archive_sha256 = "0c1a713440578cb400d2e76208feb24f1b339426b075a21f73b6b2132692515d"
+unzip = true
+to = "home:tools/restic"
+exe = "restic_0.18.1_windows_amd64.exe"
+sha256 = "034b7bf67a23049d30d58ddf4fb318239726cc74728b80bff876de824f2fc786"
+profiles = ["owner"]
+components = ["owner"]

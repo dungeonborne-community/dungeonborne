@@ -1,0 +1,98 @@
+{
+  "type": "tgf.config.ExcelItemRouter",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 16,
+    "hash_code": "sha256:a56426acad780fc4d08f2d3f3e03ed10d3981a6e18081518c893be08558abb42",
+    "data_source": [
+      {
+        "file": "04f2c5680497b1a50e237f36e0694dee7fac50f6784e2f47ec84c9d7e8b6c9e9",
+        "sheet": "5542e83b9fa3bd711e0201fd10d60dc11b8b70a30fcc971bd82d727761eb81cc",
+        "count": 16
+      }
+    ]
+  },
+  "rows": [
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+      "item_type_enum": "EN_ITEM_TYPE_VIRTUAL",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+      "item_type_enum": "EN_ITEM_TYPE_ITEM",
+      "item_router": "EN_ITEM_STORAGE_TYPE_MAIL"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+      "item_type_enum": "EN_ITEM_TYPE_RANDOM_POOL",
+      "item_router": "EN_ITEM_STORAGE_TYPE_MAIL"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+      "item_type_enum": "EN_ITEM_TYPE_SKIN_WIDGET",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+      "item_type_enum": "EN_ITEM_TYPE_ACTIVITY_EXP_ITEM",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+      "item_type_enum": "EN_ITEM_TYPE_GEAR_TYPE_ID",
+      "item_router": "EN_ITEM_STORAGE_TYPE_MAIL"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+      "item_type_enum": "EN_ITEM_TYPE_SKIN_SUIT_ID",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_SHOPPINGMALL",
+      "item_type_enum": "EN_ITEM_TYPE_ACTIVITY_COIN_ITEM",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_DLC",
+      "item_type_enum": "EN_ITEM_TYPE_VIRTUAL",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_DLC",
+      "item_type_enum": "EN_ITEM_TYPE_ITEM",
+      "item_router": "EN_ITEM_STORAGE_TYPE_MAIL"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_DLC",
+      "item_type_enum": "EN_ITEM_TYPE_RANDOM_POOL",
+      "item_router": "EN_ITEM_STORAGE_TYPE_MAIL"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_DLC",
+      "item_type_enum": "EN_ITEM_TYPE_SKIN_WIDGET",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_DLC",
+      "item_type_enum": "EN_ITEM_TYPE_ACTIVITY_EXP_ITEM",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_DLC",
+      "item_type_enum": "EN_ITEM_TYPE_GEAR_TYPE_ID",
+      "item_router": "EN_ITEM_STORAGE_TYPE_MAIL"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_DLC",
+      "item_type_enum": "EN_ITEM_TYPE_SKIN_SUIT_ID",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    },
+    {
+      "item_coming_enum": "EN_MARKET_TYPE_DLC",
+      "item_type_enum": "EN_ITEM_TYPE_ACTIVITY_COIN_ITEM",
+      "item_router": "EN_ITEM_STORAGE_TYPE_INVENTORY"
+    }
+  ]
+}

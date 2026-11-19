@@ -1,0 +1,749 @@
+{
+  "type": "tgf.config.ExcelMapDetail",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 28,
+    "hash_code": "sha256:592af9d1534454fd0b10fe6aca8c2ddce97e3285ee8fb52a1f837a09b5469136",
+    "data_source": [
+      {
+        "file": "7ff63cf7914904a019f7a45125a1b7e38f8aa2984622229eef851b175e299de9",
+        "sheet": "475b1ad0a68210eab3536b25e622390a130e7d96bf5b79874291f44cfb18f87c",
+        "count": 28
+      }
+    ]
+  },
+  "rows": [
+    {
+      "map_id": 1,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 1,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5001,
+        10101
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "dynamic_option_args": [
+        {
+          "count": 1
+        },
+        {
+          "count": 2
+        },
+        {
+          "count": 3
+        }
+      ]
+    },
+    {
+      "map_id": 2,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfTests/Maps/L_TGF_Gym",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 2,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5000
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 3,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 3,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5001,
+        10101
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 4,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 4,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5001,
+        10101
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 5,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/Level/L_GothicCastle_Matching",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/L_GothicCastle_WP_Main",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/L_GothicCastle_WP_Main_SecondFloor",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 5,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5002,
+        10201
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 6,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfTests/Maps/L_TGF_Gym_QA",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfTests/Maps/L_TGF_Gym",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 6,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5000
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 7,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 7,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5001,
+        10101
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 8,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 8,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5001,
+        10101
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 9,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/Level/L_GothicCastle_Matching",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 9,
+      "waiting_room_timeout": 600,
+      "option_args": [
+        5001,
+        10101
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 10,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/Level/L_GothicCastle_Matching",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/L_GothicCastle_WP_Main",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 10,
+      "waiting_room_timeout": 600,
+      "option_args": [
+        5002,
+        10201
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 11,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 11,
+      "waiting_room_timeout": 600,
+      "option_args": [
+        5001,
+        10101
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 13,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02_Hard",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 13,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5002,
+        10102
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 16,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfTests/Maps/L_TGF_Gym",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 16,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5000
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 17,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Common/Level/L_Common_PVP03",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 17,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5001
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 18,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfTests/Maps/L_TGF_Gym_PlayGround3",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 18,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5001
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "map_id": 10101,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 10101,
+      "waiting_room_timeout": 120,
+      "option_args": [
+        5001,
+        10101
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "dynamic_option_args": [
+        {
+          "count": 1,
+          "args": [
+            1010101
+          ]
+        },
+        {
+          "count": 2,
+          "args": [
+            1010102
+          ]
+        },
+        {
+          "count": 3,
+          "args": [
+            1010103
+          ]
+        }
+      ]
+    },
+    {
+      "map_id": 10102,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_01_Classic",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 10102,
+      "waiting_room_timeout": 120,
+      "option_args": [
+        5001,
+        10102
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "dynamic_option_args": [
+        {
+          "count": 1,
+          "args": [
+            1010201
+          ]
+        },
+        {
+          "count": 2,
+          "args": [
+            1010202
+          ]
+        },
+        {
+          "count": 3,
+          "args": [
+            1010203
+          ]
+        }
+      ]
+    },
+    {
+      "map_id": 10103,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/Level/L_Dungeon_Matching_01",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_01_Hard",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/Dungeon/L_Dungeon_Official_02_Hard",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 10103,
+      "waiting_room_timeout": 120,
+      "option_args": [
+        5001,
+        10103
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "dynamic_option_args": [
+        {
+          "count": 1,
+          "args": [
+            1010301
+          ]
+        },
+        {
+          "count": 2,
+          "args": [
+            1010302
+          ]
+        },
+        {
+          "count": 3,
+          "args": [
+            1010303
+          ]
+        }
+      ]
+    },
+    {
+      "map_id": 10201,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/Level/L_GothicCastle_Matching",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/L_GothicCastle_WP_Main",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/L_GothicCastle_WP_Main_SecondFloor",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 10201,
+      "waiting_room_timeout": 120,
+      "option_args": [
+        5002,
+        10201
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "dynamic_option_args": [
+        {
+          "count": 1,
+          "args": [
+            1020101
+          ]
+        },
+        {
+          "count": 2,
+          "args": [
+            1020102
+          ]
+        },
+        {
+          "count": 3,
+          "args": [
+            1020103
+          ]
+        }
+      ]
+    },
+    {
+      "map_id": 10202,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/Level/L_GothicCastle_Matching",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/L_GothicCastle_WP_Main_Classic",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/L_GothicCastle_WP_Main_SecondFloor",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 10202,
+      "waiting_room_timeout": 120,
+      "option_args": [
+        5002,
+        10202
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "dynamic_option_args": [
+        {
+          "count": 1,
+          "args": [
+            1020201
+          ]
+        },
+        {
+          "count": 2,
+          "args": [
+            1020202
+          ]
+        },
+        {
+          "count": 3,
+          "args": [
+            1020203
+          ]
+        }
+      ]
+    },
+    {
+      "map_id": 10203,
+      "timeout": 2400,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/Level/L_GothicCastle_Matching",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_WAITING_ROOM"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/L_GothicCastle_WP_Main_Hard",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        },
+        {
+          "ue_path": "/TgfMaps/Scenes/GothicCastle/L_GothicCastle_WP_Main_SecondFloor_Hard",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_TWO"
+        }
+      ],
+      "loot_map_id": 10203,
+      "waiting_room_timeout": 120,
+      "option_args": [
+        5002,
+        10203
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "dynamic_option_args": [
+        {
+          "count": 1,
+          "args": [
+            1020301
+          ]
+        },
+        {
+          "count": 2,
+          "args": [
+            1020302
+          ]
+        },
+        {
+          "count": 3,
+          "args": [
+            1020303
+          ]
+        }
+      ]
+    },
+    {
+      "map_id": 30101,
+      "timeout": 600,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Common/Level/L_Common_PVP01_DeathMatch",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 30101,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5003
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP"
+    },
+    {
+      "map_id": 30201,
+      "timeout": 600,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Common/Level/L_Common_PVP02_DeathMatch",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 30201,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5003
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP"
+    },
+    {
+      "map_id": 30301,
+      "timeout": 600,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Common/Level/L_Common_PVP03_DeathMatch",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 30301,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5003
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP"
+    },
+    {
+      "map_id": 30102,
+      "timeout": 1800,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Common/Level/L_Common_PVP01_MultiGameMode",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 30102,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5003
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_BO5"
+    },
+    {
+      "map_id": 30202,
+      "timeout": 1800,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Common/Level/L_Common_PVP02_MultiGameMode",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 30202,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5003
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_BO5"
+    },
+    {
+      "map_id": 30302,
+      "timeout": 1800,
+      "map_config": [
+        {
+          "ue_path": "/TgfMaps/Scenes/Common/Level/L_Common_PVP03_MultiGameMode",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 30302,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5003
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_BO5"
+    },
+    {
+      "map_id": 40001,
+      "timeout": 600,
+      "map_config": [
+        {
+          "ue_path": "/TgfTests/Maps/L_TGF_Gym_PlayGround4",
+          "room_type": "EN_DS_BATTLE_SCENES_TYPE_BATTLE_ROOM_LEVEL_ONE"
+        }
+      ],
+      "loot_map_id": 40001,
+      "waiting_room_timeout": 60,
+      "option_args": [
+        5003
+      ],
+      "ds_fleet": "ServerEmpty",
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP"
+    }
+  ]
+}

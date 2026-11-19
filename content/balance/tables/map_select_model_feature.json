@@ -1,0 +1,80 @@
+{
+  "type": "tgf.config.ExcelMapSelectModelFeature",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 9,
+    "hash_code": "sha256:a1b34428640174f3f78e99f586ae155ef4704cccf887f8496d33191946458240",
+    "data_source": [
+      {
+        "file": "8600798137ac04bf75498f7ea2ae8402f9bcabbaa362f29082ad74c5c2c33f14",
+        "sheet": "f54aaebfba7da6aca79b861da57477ffa01479ca9d0e2952be1066a7c888aee5",
+        "count": 9
+      }
+    ]
+  },
+  "rows": [
+    {
+      "model_feature_id": 1,
+      "icon_res": "/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_01.T_SelectMap_BuffIcon_01",
+      "model_feature_name": "SelectMap_Buff_Name_01",
+      "model_feature_describe": "SelectMap_Buff_Desc_01",
+      "type": 1
+    },
+    {
+      "model_feature_id": 2,
+      "icon_res": "/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_02.T_SelectMap_BuffIcon_02",
+      "model_feature_name": "SelectMap_Buff_Name_02",
+      "model_feature_describe": "SelectMap_Buff_Desc_02",
+      "type": 1
+    },
+    {
+      "model_feature_id": 3,
+      "icon_res": "/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_03.T_SelectMap_BuffIcon_03",
+      "model_feature_name": "SelectMap_Buff_Name_03",
+      "model_feature_describe": "SelectMap_Buff_Desc_03",
+      "type": 1
+    },
+    {
+      "model_feature_id": 4,
+      "icon_res": "/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_04.T_SelectMap_BuffIcon_04",
+      "model_feature_name": "SelectMap_Buff_Name_04",
+      "type": 2
+    },
+    {
+      "model_feature_id": 5,
+      "icon_res": "/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_03.T_SelectMap_BuffIcon_03",
+      "model_feature_name": "SelectMap_Buff_Name_03",
+      "model_feature_describe": "SelectMap_Buff_Desc_08",
+      "type": 1
+    },
+    {
+      "model_feature_id": 6,
+      "icon_res": "/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_05.T_SelectMap_BuffIcon_05",
+      "model_feature_name": "SelectMap_Buff_Name_06",
+      "model_feature_describe": "SelectMap_Buff_Desc_06",
+      "type": 1
+    },
+    {
+      "model_feature_id": 7,
+      "icon_res": "/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_06.T_SelectMap_BuffIcon_06",
+      "model_feature_name": "SelectMap_Buff_Name_07",
+      "model_feature_describe": "SelectMap_Buff_Desc_07",
+      "type": 1
+    },
+    {
+      "model_feature_id": 8,
+      "icon_res": "/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_05.T_SelectMap_BuffIcon_05",
+      "model_feature_name": "SelectMap_Buff_Name_06",
+      "model_feature_describe": "SelectMap_Buff_Desc_06",
+      "type": 1
+    },
+    {
+      "model_feature_id": 9,
+      "icon_res": "/Game/TGF/UI/Textures/Dynamic/SelectMap/T_SelectMap_BuffIcon_07.T_SelectMap_BuffIcon_07",
+      "model_feature_name": "SelectMap_Buff_Name_09",
+      "model_feature_describe": "SelectMap_Buff_Desc_09",
+      "type": 1
+    }
+  ]
+}

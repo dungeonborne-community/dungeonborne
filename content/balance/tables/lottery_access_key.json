@@ -1,0 +1,32 @@
+{
+  "type": "tgf.config.ExcelLotteryAccessKey",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 1,
+    "hash_code": "sha256:de336510b3012523cc4f20b049723c98c4bda9fa0c6c14dd9554d2143e0177b3",
+    "data_source": [
+      {
+        "file": "ede61d4e1e6fe0c22e7e8aa067e9dc46faa88110150aa402cce30c27163f0db7",
+        "sheet": "96bf61dc069dfc449e49816283f6f7d31659234e722dc55f663db28df9350767",
+        "count": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "type_id": 100002,
+      "access_to_keys": [
+        {
+          "type": "EN_LOTTERY_ACCESS_TO_KEYS_TYPE_GENERIC_BATTLE",
+          "limit": 10,
+          "period": {
+            "period_days": 1,
+            "start_day_reset_timepoint": "2022-10-02T04:00:00Z"
+          },
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

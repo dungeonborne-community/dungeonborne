@@ -1,0 +1,16 @@
+[
+  {
+    "affix_pool_ids": [
+      101103
+    ],
+    "level_id": 10103,
+    "rule_id": 30101
+  },
+  {
+    "affix_pool_ids": [
+      101104
+    ],
+    "level_id": 10103,
+    "rule_id": 30102
+  }
+]

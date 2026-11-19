@@ -1,0 +1,15 @@
+[member]
+name = "forgejo"
+kind = "ops"
+visibility = "owner"
+lang = "bash+systemd"
+version = "17.0.1"
+depends_on = []
+description = "Forgejo (git + CI + пакеты) на Linux-VM: только 127.0.0.1, доступ через SSH-туннель; ночной dump в /var/backups/forgejo"
+
+[commands]
+install = "scp ops/forgejo/* root@<vm>:/root/forgejo/ && ssh root@<vm> bash /root/forgejo/install.sh 17.0.1"
+tunnel  = "ssh -N -L 3300:127.0.0.1:3000 -L 2222:127.0.0.1:2222 root@<vm>"
+
+[rules]
+# Установка и обновление на проде — только после «да» пользователя (14.11: «да, ставь Forgejo»).

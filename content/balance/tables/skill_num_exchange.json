@@ -1,0 +1,297 @@
+{
+  "type": "tgf.config.ExcelSkillNumExchange",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 58,
+    "hash_code": "sha256:70c8f75a9a28bd56d4a5d38f9f822ae34ee8a9850f0c88f51138c5d4e9555b09",
+    "data_source": [
+      {
+        "file": "244a4793cdc0c1b072b77da01100832332f640a7bf4d0ba4bd3bef93c8e37aa4",
+        "sheet": "f1db84febe8f93ecdfe1e260d91a2f7eeabc8d9ded1cef0c00d55a2f44405273",
+        "count": 58
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": "GE_TGF_Damage_Instant_Fighter_QWhirlWind",
+      "ge_key": "GE_TGF_Damage_Instant_Fighter_QWhirlWind.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "SwordMasterQ_SwordNum",
+      "value": "4"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_SwordMasterQ",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_SwordMasterQ_Sub.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_SwordMasterE",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_SwordMasterE.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Heal_Basic_SwordMaster_PsycSwordAttackHeal",
+      "ge_key": "GE_TGF_Heal_Basic_SwordMaster_PsycSwordAttackHeal.Heal.Base"
+    },
+    {
+      "id": "SwordMasterE_SwordNum",
+      "value": "1"
+    },
+    {
+      "id": "SwordMasterE_Time",
+      "value": "8"
+    },
+    {
+      "id": "RogueQ_DamageRes",
+      "value": "100%"
+    },
+    {
+      "id": "RogueE_Time",
+      "value": "30"
+    },
+    {
+      "id": "RogueE2_Time",
+      "value": "6"
+    },
+    {
+      "id": "RogueE3_Time",
+      "value": "15"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Priest_Q_AOE",
+      "ge_key": "GE_TGF_Damage_Instant_Priest_Q_AOE.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Buff_Priest_Invincible.ScalableFloatMagnitude",
+      "ge_key": "GE_TGF_Buff_Priest_Invincible.ScalableFloatMagnitude"
+    },
+    {
+      "id": "GE_TGF_DruidPanther_Q_Transform.MoveSpeedBase",
+      "ge_key": "GE_TGF_DruidPanther_Q_Transform.MoveSpeedBase"
+    },
+    {
+      "id": "GE_TGF_NaturalEnergyCost_DruidPanther_ActiveQ.CurNaturalEnergy",
+      "ge_key": "GE_TGF_NaturalEnergyCost_DruidPanther_ActiveQ.CurNaturalEnergy"
+    },
+    {
+      "id": "GE_TGF_DruidPanther_PantherNEReduce.CurNaturalEnergy",
+      "ge_key": "GE_TGF_DruidPanther_PantherNEReduce.CurNaturalEnergy"
+    },
+    {
+      "id": "DruidE_Time",
+      "value": "30"
+    },
+    {
+      "id": "GE_TGF_Damage_InstantDruidPanther_E_Human",
+      "ge_key": "GE_TGF_Damage_InstantDruidPanther_E_Human.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_DruidPanther_E_Panther",
+      "ge_key": "GE_TGF_Damage_Instant_DruidPanther_E_Panther.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "DeathKnightQ_Time",
+      "value": "1"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_DeathKnightQ",
+      "ge_key": "GE_TGF_Damage_Instant_DeathKnightQ.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_DeathKnightE",
+      "ge_key": "GE_TGF_Damage_Instant_DeathKnightE.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_WizardQ2_New",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_WizardQ2_New.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_WizardQ3",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_WizardQ3.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Damage_Wizard_E3_AddDamage",
+      "ge_key": "GE_TGF_Damage_Wizard_E3_AddDamage.Damage.Base"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Lich_Q_Ice",
+      "ge_key": "GE_TGF_Damage_Instant_Lich_Q_Ice.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Lich_Q_Ice_Stage2",
+      "ge_key": "GE_TGF_Damage_Instant_Lich_Q_Ice_Stage2.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "LichE_Time",
+      "ge_key": "GE_Lich_FridgeHeal.ScalableFloatMagnitude"
+    },
+    {
+      "id": "GE_Lich_FridgeHeal",
+      "ge_key": "GE_Lich_FridgeHeal.Heal.MaxHPRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "MithrilFighterQ_ATK",
+      "value": "30%"
+    },
+    {
+      "id": "MithrilFighterQ_DEF",
+      "value": "30%"
+    },
+    {
+      "id": "MithrilFighterQ_HPSteal",
+      "value": "30%"
+    },
+    {
+      "id": "MithrilFighterQ_Time",
+      "value": "5"
+    },
+    {
+      "id": "GE_TGF_Buff_MithrilFighter_E_Self",
+      "value": "150"
+    },
+    {
+      "id": "GE_TGF_Buff_MoveSpeed_Add_MithrilFighter_E",
+      "value": "3"
+    },
+    {
+      "id": "MithrilRogueQ_Num",
+      "value": "6"
+    },
+    {
+      "id": "MithrilRogueQ_Time",
+      "value": "3"
+    },
+    {
+      "id": "MithrilRogueE_Time",
+      "value": "30"
+    },
+    {
+      "id": "GE_TGF_Buff_MithrilPriest_E_AddShield_1",
+      "ge_key": "GE_TGF_Buff_MithrilPriest_E_AddShield_1.AddShield.Base"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Projectile_MithrilRogue_Q",
+      "ge_key": "GE_TGF_Damage_Instant_Projectile_MithrilRogue_Q.MoveFactor",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Heal_Basic_MithrilPriest_Q",
+      "ge_key": "GE_TGF_Heal_Basic_MithrilPriest_Q.Heal.Base"
+    },
+    {
+      "id": "FighterQ2_ATK",
+      "ge_key": "GE_TGF_Buff_AtkDef_Add_Fighter_Q_BattleCry.AttackBoostRate",
+      "as_percent": true
+    },
+    {
+      "id": "FighterQ2_DEF",
+      "ge_key": "GE_TGF_Buff_AtkDef_Add_Fighter_Q_BattleCry.ElementResistanceRateNone",
+      "as_percent": true
+    },
+    {
+      "id": "FighterQ2_HPSteal",
+      "ge_key": "GE_TGF_Buff_AtkDef_Add_Fighter_Q_BattleCry.LifeLeachRate",
+      "as_percent": true
+    },
+    {
+      "id": "FighterQ2_Time",
+      "ge_key": "GE_TGF_Buff_AtkDef_Add_Fighter_Q_BattleCry.ScalableFloatMagnitude"
+    },
+    {
+      "id": "GE_TGF_Buff_Fighter_E2_Self",
+      "ge_key": "GE_TGF_Buff_MoveSpeed_Add_Fighter_E_Inspire.MoveSpeedBase"
+    },
+    {
+      "id": "GE_TGF_Buff_MoveSpeed_Add_Fighter_E2",
+      "ge_key": "GE_TGF_Buff_MoveSpeed_Add_Fighter_E_Inspire.ScalableFloatMagnitude"
+    },
+    {
+      "id": "Lich_Q_DOT_Time",
+      "ge_key": "GE_Buff_DOT_Lich_Q_Ice.Duration"
+    },
+    {
+      "id": "Lich_E_IceArmor_Time",
+      "ge_key": "GE_TGF_Buff_Lich_E_IceArmor.Duration"
+    },
+    {
+      "id": "GE_TGF_Damage_Instant_Lich_Q_Dot",
+      "ge_key": "GE_TGF_Damage_Instant_Lich_Q_Dot.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Damage_OverTime_Lich_Q_Dot",
+      "ge_key": "GE_TGF_Damage_OverTime_Lich_Q_Dot.MoveFactorRate",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_Lich_DOT_Heal",
+      "ge_key": "GE_TGF_Heal_Lich_Q_DOT.MoveFactor",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Heal_Priest_Q_AOE_Lv1",
+      "ge_key": "GE_TGF_Heal_Priest_Q_AOE_Lv1.Heal.MoveFactor",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Heal_Priest_Q_Single_Base",
+      "ge_key": "GE_TGF_Heal_Priest_Q_Single_Lv1.Heal.MoveFactor",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Heal_Priest_Q1_Single_Base",
+      "ge_key": "GE_TGF_Heal_Priest_Q_Single_Lv2.Heal.MoveFactor",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Shield_Lich_E_IceArmor",
+      "ge_key": "GE_TGF_Buff_Lich_E_IceArmor_AddShield_1.MoveFactor",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "GE_TGF_Buff_Priest_E_AddAoeShield_1",
+      "ge_key": "GE_TGF_Buff_Priest_E_ShieldAOE_AddShield_1.MoveFactor",
+      "as_percent": true,
+      "decimal": 2
+    },
+    {
+      "id": "Priest_E_ShieldAOE_Duration",
+      "ge_key": "GE_TGF_Buff_Priest_E_ShieldAOE_AddShield.Duration"
+    }
+  ]
+}

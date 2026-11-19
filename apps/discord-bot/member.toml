@@ -1,0 +1,19 @@
+[member]
+name = "discord-bot"
+kind = "app"
+visibility = "public"
+lang = "rust+python"
+version = "0.1.0"
+depends_on = []      # talks to core/backend only over HTTP (status, patch notes, bug-report admin API; docs/bug-report-api.md)
+description = "Community Discord bot (Rust, poise + SurrealKV) plus the Discord server setup tooling (server/)"
+
+[commands]
+check = "cargo check"
+test  = "cargo test"
+build = "cargo build --release"
+
+[contents]
+# src — the bot; bot.toml — example config (IDs are placeholders, set your own; secrets only in .env);
+# server — setup_server.py + server.yaml (server structure and posted texts), audit/go_live/post_announcement/export_texts;
+# server/texts — exported server texts; docs — bug-report API contract; assets — avatar and banner images;
+# deploy — an example systemd unit (README, "Deploying on a server").

@@ -1,0 +1,376 @@
+{
+  "type": "tgf.config.ExcelRoleSkill",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 36,
+    "hash_code": "sha256:817b733eaead312369f73ebbf9c80f0b331d3fab971d93280c7d57fac6c9fcdf",
+    "data_source": [
+      {
+        "file": "d85b058636ce4f8f99ca29bceef7bd49a333f893121bd2b2b1e4ece6447fce9a",
+        "sheet": "c72bec88d8b69c0927e7338088b89458951785044f514c34708038370bb61244",
+        "count": 36
+      }
+    ]
+  },
+  "rows": [
+    {
+      "skill_id": 101001,
+      "ability_set_id": 101001,
+      "skill_name": "Skill_Name_101001",
+      "skill_descr": "Skill_Description_101001",
+      "initial_skill_descr": "Initial_Skill_Description_101001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 101002,
+      "ability_set_id": 101002,
+      "skill_name": "Skill_Name_101002",
+      "skill_descr": "Skill_Description_101002",
+      "initial_skill_descr": "Initial_Skill_Description_101002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 107001,
+      "ability_set_id": 107001,
+      "skill_name": "Skill_Name_107001",
+      "skill_descr": "Skill_Description_107001",
+      "initial_skill_descr": "Initial_Skill_Description_107001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 107002,
+      "ability_set_id": 107002,
+      "skill_name": "Skill_Name_107002",
+      "skill_descr": "Skill_Description_107002",
+      "initial_skill_descr": "Initial_Skill_Description_107002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 107004,
+      "ability_set_id": 107004,
+      "skill_name": "Skill_Name_107004",
+      "skill_descr": "Skill_Description_107004",
+      "initial_skill_descr": "Initial_Skill_Description_107004",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 107005,
+      "ability_set_id": 107005,
+      "skill_name": "Skill_Name_107005",
+      "skill_descr": "Skill_Description_107005",
+      "initial_skill_descr": "Initial_Skill_Description_107005",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 107006,
+      "ability_set_id": 107006,
+      "skill_name": "Skill_Name_107006",
+      "skill_descr": "Skill_Description_107006",
+      "initial_skill_descr": "Initial_Skill_Description_107006",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 105001,
+      "ability_set_id": 105001,
+      "skill_name": "Skill_Name_105001",
+      "skill_descr": "Skill_Description_105001",
+      "initial_skill_descr": "Initial_Skill_Description_105001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 105002,
+      "ability_set_id": 105002,
+      "skill_name": "Skill_Name_105002",
+      "skill_descr": "Skill_Description_105002",
+      "initial_skill_descr": "Initial_Skill_Description_105002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 105004,
+      "ability_set_id": 105004,
+      "skill_name": "Skill_Name_105004",
+      "skill_descr": "Skill_Description_105004",
+      "initial_skill_descr": "Initial_Skill_Description_105004",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 105005,
+      "ability_set_id": 105005,
+      "skill_name": "Skill_Name_105005",
+      "skill_descr": "Skill_Description_105005",
+      "initial_skill_descr": "Initial_Skill_Description_105005",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 103001,
+      "ability_set_id": 103001,
+      "skill_name": "Skill_Name_103001",
+      "skill_descr": "Skill_Description_103001",
+      "initial_skill_descr": "Initial_Skill_Description_103001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 103002,
+      "ability_set_id": 103002,
+      "skill_name": "Skill_Name_103002",
+      "skill_descr": "Skill_Description_103002",
+      "initial_skill_descr": "Initial_Skill_Description_103002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 103003,
+      "ability_set_id": 103003,
+      "skill_name": "Skill_Name_103003",
+      "skill_descr": "Skill_Description_103003",
+      "initial_skill_descr": "Initial_Skill_Description_103003",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 2,
+      "is_display": true
+    },
+    {
+      "skill_id": 103004,
+      "ability_set_id": 103004,
+      "skill_name": "Skill_Name_103004",
+      "skill_descr": "Skill_Description_103004",
+      "initial_skill_descr": "Initial_Skill_Description_103004",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 2,
+      "is_display": true
+    },
+    {
+      "skill_id": 103005,
+      "ability_set_id": 103005,
+      "skill_name": "Skill_Name_103005",
+      "skill_descr": "Skill_Description_103005",
+      "initial_skill_descr": "Initial_Skill_Description_103005",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 3,
+      "is_display": true
+    },
+    {
+      "skill_id": 109001,
+      "ability_set_id": 109001,
+      "skill_name": "Skill_Name_109001",
+      "skill_descr": "Skill_Description_109001",
+      "initial_skill_descr": "Initial_Skill_Description_109001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 109002,
+      "ability_set_id": 109002,
+      "skill_name": "Skill_Name_109002",
+      "skill_descr": "Skill_Description_109002",
+      "initial_skill_descr": "Initial_Skill_Description_109002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 108001,
+      "ability_set_id": 108001,
+      "skill_name": "Skill_Name_108001",
+      "skill_descr": "Skill_Description_108001",
+      "initial_skill_descr": "Initial_Skill_Description_108001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 108002,
+      "ability_set_id": 108002,
+      "skill_name": "Skill_Name_108002",
+      "skill_descr": "Skill_Description_108002",
+      "initial_skill_descr": "Initial_Skill_Description_108002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 108005,
+      "ability_set_id": 108005,
+      "skill_name": "Skill_Name_108005",
+      "skill_descr": "Skill_Description_108005",
+      "initial_skill_descr": "Initial_Skill_Description_108005",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 2,
+      "is_display": true
+    },
+    {
+      "skill_id": 110001,
+      "ability_set_id": 110001,
+      "skill_name": "Skill_Name_110001",
+      "skill_descr": "Skill_Description_110001",
+      "initial_skill_descr": "Initial_Skill_Description_110001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 110002,
+      "ability_set_id": 110002,
+      "skill_name": "Skill_Name_110002",
+      "skill_descr": "Skill_Description_110002",
+      "initial_skill_descr": "Initial_Skill_Description_110002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 110004,
+      "ability_set_id": 110004,
+      "skill_name": "Skill_Name_110004",
+      "skill_descr": "Skill_Description_110004",
+      "initial_skill_descr": "Initial_Skill_Description_110004",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 110005,
+      "ability_set_id": 110005,
+      "skill_name": "Skill_Name_110005",
+      "skill_descr": "Skill_Description_110005",
+      "initial_skill_descr": "Initial_Skill_Description_110005",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 106001,
+      "ability_set_id": 106001,
+      "skill_name": "Skill_Name_106001",
+      "skill_descr": "Skill_Description_106001",
+      "initial_skill_descr": "Initial_Skill_Description_106001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 106002,
+      "ability_set_id": 106002,
+      "skill_name": "Skill_Name_106002",
+      "skill_descr": "Skill_Description_106002",
+      "initial_skill_descr": "Initial_Skill_Description_106002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 1,
+      "is_display": true
+    },
+    {
+      "skill_id": 106003,
+      "ability_set_id": 106003,
+      "skill_name": "Skill_Name_106003",
+      "skill_descr": "Skill_Description_106003",
+      "initial_skill_descr": "Initial_Skill_Description_106003",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 2
+    },
+    {
+      "skill_id": 106004,
+      "ability_set_id": 106004,
+      "skill_name": "Skill_Name_106004",
+      "skill_descr": "Skill_Description_106004",
+      "initial_skill_descr": "Initial_Skill_Description_106004",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 2
+    },
+    {
+      "skill_id": 106006,
+      "ability_set_id": 106006,
+      "skill_name": "Skill_Name_106006",
+      "skill_descr": "Skill_Description_106006",
+      "initial_skill_descr": "Initial_Skill_Description_106006",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 2,
+      "is_display": true
+    },
+    {
+      "skill_id": 1101001,
+      "ability_set_id": 1101001,
+      "skill_name": "Skill_Name_1101001",
+      "skill_descr": "Skill_Description_1101001",
+      "initial_skill_descr": "Initial_Skill_Description_1101001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 2,
+      "is_display": true
+    },
+    {
+      "skill_id": 1101002,
+      "ability_set_id": 1101002,
+      "skill_name": "Skill_Name_1101002",
+      "skill_descr": "Skill_Description_1101002",
+      "initial_skill_descr": "Initial_Skill_Description_1101002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 2,
+      "is_display": true
+    },
+    {
+      "skill_id": 1102001,
+      "ability_set_id": 1102001,
+      "skill_name": "Skill_Name_1102001",
+      "skill_descr": "Skill_Description_1102001",
+      "initial_skill_descr": "Initial_Skill_Description_1102001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 2,
+      "is_display": true
+    },
+    {
+      "skill_id": 1102002,
+      "ability_set_id": 1102002,
+      "skill_name": "Skill_Name_1102002",
+      "skill_descr": "Skill_Description_1102002",
+      "initial_skill_descr": "Initial_Skill_Description_1102002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 2,
+      "is_display": true
+    },
+    {
+      "skill_id": 1103001,
+      "ability_set_id": 1103001,
+      "skill_name": "Skill_Name_1103001",
+      "skill_descr": "Skill_Description_1103001",
+      "initial_skill_descr": "Initial_Skill_Description_1103001",
+      "skill_position": "EN_ROLE_SKILL_POSITION_Q",
+      "display_order": 2,
+      "is_display": true
+    },
+    {
+      "skill_id": 1103002,
+      "ability_set_id": 1103002,
+      "skill_name": "Skill_Name_1103002",
+      "skill_descr": "Skill_Description_1103002",
+      "initial_skill_descr": "Initial_Skill_Description_1103002",
+      "skill_position": "EN_ROLE_SKILL_POSITION_E",
+      "display_order": 2,
+      "is_display": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+[package]
+name = "balance-studio"
+version = "1.2.0"
+description = "Dungeonborne balance editor for designers"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lib]
+name = "studio"
+path = "src/lib.rs"
+
+[[bin]]
+name = "balance-studio"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", default-features = false, features = ["wry", "common-controls-v6", "dynamic-acl"] }
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+balance-kit = { path = "../../../core/backend/crates/balance-kit" }

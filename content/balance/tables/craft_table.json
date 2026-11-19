@@ -1,0 +1,186 @@
+{
+  "type": "tgf.config.ExcelCraftingRecipe",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 8,
+    "hash_code": "sha256:2b777d3ceb889240098eeba9bd251f9f8651b72e310fdab68bb3abbd8a921627",
+    "data_source": [
+      {
+        "file": "16abdb17c1104c5ef920b8c22c532c622511c27cfb178f444e2648f6b1154491",
+        "sheet": "4de10e58a14ab8e550a969cff7f839f0619d57d744ba8da73d52d5566b4e9840",
+        "count": 8
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 101,
+      "tag": 1,
+      "item_type": 2,
+      "time_cost": 1,
+      "count_limt": 99,
+      "product": [
+        {
+          "type_id": 100016,
+          "count": 1
+        }
+      ],
+      "great_success_multiple": 2,
+      "item_cost": [
+        {
+          "type_id": 100060,
+          "count": 3
+        }
+      ],
+      "count_max_lmit": 99
+    },
+    {
+      "id": 102,
+      "tag": 1,
+      "item_type": 1,
+      "time_cost": 1,
+      "count_limt": 99,
+      "product": [
+        {
+          "type_id": 100013,
+          "count": 1
+        }
+      ],
+      "great_success_multiple": 2,
+      "item_cost": [
+        {
+          "type_id": 100060,
+          "count": 3
+        }
+      ],
+      "count_max_lmit": 99
+    },
+    {
+      "id": 103,
+      "tag": 1,
+      "item_type": 1,
+      "time_cost": 1,
+      "count_limt": 99,
+      "product": [
+        {
+          "type_id": 100018,
+          "count": 1
+        }
+      ],
+      "great_success_multiple": 2,
+      "item_cost": [
+        {
+          "type_id": 100060,
+          "count": 3
+        }
+      ],
+      "count_max_lmit": 99
+    },
+    {
+      "id": 10000,
+      "tag": 3,
+      "item_type": 1,
+      "time_cost": 1,
+      "count_limt": 99,
+      "product": [
+        {
+          "type_id": 100047,
+          "count": 1
+        }
+      ],
+      "great_success_multiple": 2,
+      "item_cost": [
+        {
+          "type_id": 100066,
+          "count": 3
+        }
+      ],
+      "count_max_lmit": 99
+    },
+    {
+      "id": 10001,
+      "tag": 3,
+      "item_type": 1,
+      "time_cost": 1,
+      "count_limt": 99,
+      "product": [
+        {
+          "type_id": 100048,
+          "count": 1
+        }
+      ],
+      "great_success_multiple": 2,
+      "item_cost": [
+        {
+          "type_id": 100066,
+          "count": 3
+        }
+      ],
+      "count_max_lmit": 99
+    },
+    {
+      "id": 10002,
+      "tag": 3,
+      "item_type": 1,
+      "time_cost": 1,
+      "count_limt": 99,
+      "product": [
+        {
+          "type_id": 100049,
+          "count": 1
+        }
+      ],
+      "great_success_multiple": 2,
+      "item_cost": [
+        {
+          "type_id": 100066,
+          "count": 3
+        }
+      ],
+      "count_max_lmit": 99
+    },
+    {
+      "id": 10003,
+      "tag": 3,
+      "item_type": 1,
+      "time_cost": 1,
+      "count_limt": 99,
+      "product": [
+        {
+          "type_id": 100050,
+          "count": 1
+        }
+      ],
+      "great_success_multiple": 2,
+      "item_cost": [
+        {
+          "type_id": 100066,
+          "count": 3
+        }
+      ],
+      "count_max_lmit": 99
+    },
+    {
+      "id": 10004,
+      "tag": 3,
+      "item_type": 2,
+      "time_cost": 1,
+      "count_limt": 99,
+      "product": [
+        {
+          "type_id": 100017,
+          "count": 1
+        }
+      ],
+      "great_success_multiple": 2,
+      "item_cost": [
+        {
+          "type_id": 100066,
+          "count": 3
+        }
+      ],
+      "count_max_lmit": 99
+    }
+  ]
+}

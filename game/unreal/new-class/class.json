@@ -1,0 +1,56 @@
+{
+  "_": "Trial class settings. Edit here, then build\\build_paks.ps1 and build\\make_sandbox.ps1 -PaksOnly. For skill and talent names see README.",
+  "type_id": 400201,
+  "base_type": 400101,
+  "order": 9,
+
+  "name": "Страж",
+  "description": "Боец передней линии в средней броне. Менее силён, чем воин, но быстрее и выносливее.",
+  "advantages": "+ Высокая выносливость|+ Быстрое передвижение|+ Много видов оружия",
+  "disadvantages": "- Меньше урона, чем у воина|- Уязвим перед дальними атаками",
+  "equipments": "Одноручные мечи|Двуручные мечи|Арбалеты|Кинжалы|Щиты|Одноручные булавы",
+
+  "skills": {"Q": 109001, "E": 1101002},
+
+  "levels_from": 400002,
+  "stats_add": {
+    "first_level_strength": -5,
+    "first_level_dexterity": 8,
+    "first_level_stamina": 4,
+    "defend_max_health_base": 40,
+    "speed_move_speed_base": 15
+  },
+
+  "show_items_from": 400002,
+  "kit_first_config_id": 420001,
+  "kit": [
+    {"item": 181010000, "wear": "PAIR1RIGHTWEAPON"},
+    {"item": 181030000, "wear": "PAIR1LEFTWEAPON"},
+    {"item": 181020000, "wear": "PAIR2RIGHTWEAPON"},
+    {"item": 184010000, "wear": "HELMET"},
+    {"item": 184020000, "wear": "UPPERARMOR"},
+    {"item": 184030000, "wear": "GLOVE"},
+    {"item": 184040000, "wear": "LOWERARMOR"},
+    {"item": 184050000, "wear": "SHOE"},
+    {"item": 100012, "wear": "THROWABLE", "count": 3},
+    {"item": 100013, "wear": "CONSUMABLE1", "count": 3},
+    {"item": 100016, "wear": "CONSUMABLE2", "count": 3},
+    {"item": 181040000},
+    {"item": 100045, "count": 15}
+  ],
+
+  "talents": [
+    {
+      "slot": 1,
+      "ability_set": "AbilitySet_TalentFighter_MaxCritWithGuarded",
+      "name": "Жажда отмщения",
+      "desc": "<Base>Следующая атака после успешной защиты будет критической.</>"
+    },
+    {
+      "slot": 2,
+      "ability_set": "AbilitySet_TalentFighter_FriendlyNoDamage",
+      "name": "Ограничитель",
+      "desc": "<Base>Не может наносить урон союзникам и не получает урон от союзников.</>"
+    }
+  ]
+}

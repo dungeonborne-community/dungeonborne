@@ -1,0 +1,5 @@
+/target
+/ui/dist
+/ui/styles.css
+/src-tauri/gen
+/dist

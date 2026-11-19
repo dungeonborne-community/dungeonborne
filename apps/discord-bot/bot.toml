@@ -1,0 +1,332 @@
+# Bot config. A missing section means the module is off. Channels and roles: the name as in Discord, or the ID.
+# The bot token goes in .env (DISCORD_TOKEN); the bot looks for .env in the current folder and its parents.
+# In texts: {user} is a mention, {server} the server name, {#channel} a channel link, {@role} a role mention.
+
+# Translation languages: same as languages in server.yaml and in the same order (add new ones at the end).
+# Used for the «🌍 …» thread under /announce posts, the translation fields in the form, and the /faq answer language.
+languages = [
+    { code = "ru", flag = "🇷🇺", name = "Русский" },
+    { code = "zh", flag = "🇨🇳", name = "中文" },
+]
+
+[discord]
+guild_id = 0                      # set your own (guild/server ID)
+
+[db]
+path = "data/bot.db"               # embedded SurrealKV; the folder is created automatically
+
+# Moderation log: deletions, edits, joins/leaves (including rejoins), bans, timeouts
+[mod_log]
+channel = "📋・mod-log"
+
+# Newcomer welcome, sent once: without role, after onboarding in the general chat; with role, in the language category's chat
+[[welcome.greet]]
+channel = "💬・chat"
+text = "Welcome, {user}! 👋 Start with {#🚀・how-to-play}; problems → {#🆘・support}, groups → {#🤝・lfg}."
+
+[[welcome.greet]]
+role = "RU"
+channel = "💬・чат"
+text = "Привет, {user}! 👋 Начни с {#🚀・how-to-play}; проблемы → {#🆘・support}, группа → {#🤝・поиск-группы}."
+
+# Temporary voice rooms: generators per party size; the room owner can change the limit
+[temp_voice]
+name = "🔊 {user}"
+
+[[temp_voice.rooms]]
+generator = "➕・Duo"
+name = "⚔ Duo · {user}"
+user_limit = 2
+
+[[temp_voice.rooms]]
+generator = "➕・Trio"
+name = "⚔ Trio · {user}"
+user_limit = 3
+
+# Role panels: published with /rolepanel name:<name>
+[[role_panel]]
+name = "notifications"
+channel = "👋・welcome"
+title = "🔔 Notifications / Уведомления"
+description = "Get pinged about Dev Talks and events.\nПолучать пинги об эфирах и событиях."
+buttons = [
+    { role = "🔔 Events", label = "Dev Talks & events", emoji = "🎙" },
+]
+
+# Scheduled messages (every is a SurrealDB duration: 30m, 12h, 1d, 1w; minimum 1m)
+# [[timed]]
+# name = "lfg-reminder"
+# channel = "🤝・lfg-en"
+# every = "1d"
+# text = "Looking for a group? Use the template in the pinned message 📌"
+
+# Game server status: the backend's public GET /dbserver/status (online, capacity, maintenance, motd), no token.
+# The website and the launcher use the same endpoint. Bot on the VM next to the backend: status_url = "http://127.0.0.1:8090/dbserver/status"
+# and accept_invalid_certs is not needed. From a PC (test server), via nginx on the VM: its certificate is self-signed, hence accept_invalid_certs.
+# Old way: players_url = "http://127.0.0.1:9092/admin/v1/players" + bearer_env = "ADMIN_BEARER" (VM only).
+[status]
+channel = "🌐・server-status"
+status_url = "https://status.example.org/dbserver/status"   # your public address (with a certificate); on the VM: loopback, see README
+every_secs = 60
+title = "Dungeonborne Community"
+capacity = 64   # used if the backend does not report capacity
+# address = "relay.example.org"
+
+# Server fundraising: one source for Discord, the website and the launcher (fund module).
+# Month = Patreon pledges (API, creator token PATREON_TOKEN in .env) + manual amounts via `/fund add` (Boosty has no API);
+# one-off goals: `/fund goal`, `/fund close`; supporters are listed only with consent: `/supporter show|hide` (needs supporter_role),
+# without Discord: `/fund thank`. The message goes to channel, the file to json_path (written atomically). On the VM: json_path = "/var/www/status/support.json",
+# nginx serves it as https://status.example.org/dbserver/support.
+[fund]
+channel = "🌐・server-status"
+goal = 220   # $ per month: 6–8 game instances (owner, 16.11)
+text = "Pays for the game servers (6–8 instances), the launcher and the website; extra builds a server reserve, then thanks the team. Donations give nothing in the game.\nОплачивает игровые серверы (6–8 инстансов), лаунчер и сайт; сверх счёта копится резерв серверов, дальше — благодарность команде. Донат ничего не даёт в игре."
+supporter_role = "💜 Supporter"
+json_path = "data/support.json"   # local test
+# boosty_link = "https://boosty.to/your-blog"   # set your own
+# boosty_blog = "your-blog"            # the bot reads the blog's public Boosty goal and counts the monthly increase
+# boosty_target_id = 0   # set your own
+patreon_link = "https://www.patreon.com/dungeonbornecommunity"
+coming_soon = false   # 16.11 evening: the owner provided the real links (was true, i.e. "under review")
+# breakdown = [{ en = "Game servers", ru = "Игровые серверы", usd = 200 }, { en = "Domain", ru = "Домен", usd = 20 }]
+every_secs = 3600
+
+# Translation from the message menu. DeepL key (free tier, 500k characters/month) goes in .env: DEEPL_KEY=...
+[translate]
+deepl_key_env = "DEEPL_KEY"
+
+# Tickets: the panel is published with /ticketpanel; threads are created in the tickets channel
+[tickets]
+channel = "🎫・tickets"
+transcripts = "📋・mod-log"
+
+[[tickets.button]]
+lang = "en"
+label = "Open ticket"
+emoji = "🇬🇧"
+staff = "Mod EN"
+
+[[tickets.button]]
+lang = "ru"
+label = "Открыть тикет"
+emoji = "🇷🇺"
+staff = "Mod RU"
+
+# Creator application: its own form (labels up to 45 characters), pings both moderator roles
+[[tickets.button]]
+lang = "creator"
+label = "Creator application / Заявка автора"
+emoji = "🎬"
+staff = ["Mod EN", "Mod RU"]
+form_title = "Creator application / Заявка автора"
+topic_label = "Channel link / Ссылка на канал"
+details_label = "Audience, language, about / Аудитория, язык"
+
+# Helper application: its own questionnaire (up to 5 fields, labels up to 45 characters) → private thread for moderators
+[[tickets.button]]
+lang = "helper"
+label = "Become a Helper"
+emoji = "🛟"
+staff = ["Mod EN", "Mod RU"]
+form_title = "Helper application"
+fields = [
+    { label = "Nickname in game", placeholder = "As shown in the game" },
+    { label = "Languages and timezone", placeholder = "EN, RU · UTC+3" },
+    { label = "Hours per week you can help", placeholder = "5" },
+    { label = "Why do you want to help?", long = true },
+    { label = "Reply to: launcher won't start", long = true, placeholder = "How would you answer a newcomer? Short and friendly." },
+]
+
+# Invite tracker: who invited whom (in the join log and /invites). The bot needs the Manage Server permission
+[invites]
+
+# Starboard: the channel was archived (v2), the module is off
+# [starboard]
+# channel = "⭐・starboard"
+# emoji = "⭐"
+# threshold = 3
+# ignore = ["🛡️・mod-chat", "📋・mod-log", "🎫・tickets"]
+
+# Giveaways: /giveaway start | end | reroll (needs the Manage Events permission)
+[giveaways]
+
+# Feeds: a YouTube channel (ID like UC…), GitHub releases (owner/repo) or any RSS/Atom feed (url).
+# On first run everything already there is silently marked as seen; only new entries get posted.
+# [[feed]]
+# name = "youtube"
+# youtube = "UCxxxxxxxxxxxxxxxxxxxxxx"
+# channel = "📢・announcements"
+# text = "📺 **{title}**\n{link}"
+# ping = "Events"
+#
+# [[feed]]
+# name = "framework"
+# github = "owner/repo"
+# channel = "📦・framework-releases"
+# text = "📦 **{title}**\n{link}"
+
+# Twitch: TWITCH_CLIENT_ID and TWITCH_CLIENT_SECRET in .env (dev.twitch.tv → Console → Register Your Application)
+# [twitch]
+# channel = "📢・announcements"
+# logins = ["your_channel"]
+# ping = "Events"
+
+# Creators announce themselves: the «🔴 Stream / 🎥 Video» panel in hub (published with /creator panel) → form → announcement in channel.
+# /creator add | remove | list: grant and remove the role. Cooldowns are SurrealDB durations.
+[creators]
+channel = "🔴・live-now"
+hub = "🎬・creator-hub"
+role = "🎬 Creator"
+ping = "🔔 Streams"
+stream_cooldown = "4h"
+video_cooldown = "8h"
+# allowed = ["youtube.com", "youtu.be", "twitch.tv", "vkvideo.ru", "vk.com", "kick.com", "tiktok.com", "trovo.live", "rutube.ru"]
+
+# /announce channel:<channel> ping:<role>: a post following the channel guidelines: form (English + translations) →
+# preview visible only to the author → publish with the ping on the last line, a «🌍 …» thread with translations,
+# links and language buttons; in an announcement channel it is delivered to followers. Command permission: Manage Events.
+# In the text: {#channel} is a channel link, {@role} a role without a ping; times as Discord timestamps <t:UNIX:F> (date and time), <t:UNIX:R> (relative).
+[announce]
+
+[[announce.channel]]
+name = "📢・announcements"
+pings = ["🔔 Events", "🔔 Patch notes"]
+# Copy to a language category: the full translation, no ping, with a link to the original (deleting the original deletes the copy too)
+mirror = { ru = "📢・анонсы" }
+template = """
+# Title: what happened
+One or two sentences: what and when — <t:UNIX:F> (<t:UNIX:R>)
+
+## What it means for you
+- …
+
+## What to do
+- … → {#🚀・how-to-play} or a link
+
+-# Discuss → {#💬・chat}"""
+
+[[announce.channel]]
+name = "🛠️・patch-notes"
+pings = ["🔔 Patch notes"]
+template = """
+# v0.0.0 — <t:UNIX:D>
+### Added
+- …
+### Changed
+- …
+### Fixed
+- …
+### Known issues
+- …
+
+-# Same notes on the site and in the launcher"""
+
+[[announce.channel]]
+name = "📣・test-announcements"
+pings = ["🧪 Tester"]
+template = """
+## 🧪 Closed test: build 0.0.0
+**When:** <t:UNIX:F> – <t:UNIX:t>
+**Server:** launcher → **Add server** → `address:port`
+**Build:** …
+
+### What we test
+1. …
+
+Bugs → {#🐞・test-bugs} with the battle number and logs.
+-# Embargo until release"""
+
+# «Move to help» in the message menu (right-click → Apps): a chat question → a post in the help forum with a quote,
+# a language tag (by the channel it was moved from) and a link in the chat. Helpers and moderators can move.
+[move_to_forum]
+forum = "🆘・support"
+roles = ["Helper", "Lead Moderator", "Mod EN", "Mod RU"]
+default_tag = "EN"
+lang_tags = [{ tag = "RU", channels = ["💬・чат", "🍻・таверна", "🤝・поиск-группы"] }]
+
+# /faq topic:<question> [user] [language]: answers with a section from the FAQ channel (bot message + translations in the 🌍 thread).
+# Helpers and moderators answer in the channel; everyone else sees the answer only themselves.
+[faq]
+channel = "❓・faq"
+public_roles = ["Helper", "Lead Moderator", "Mod EN", "Mod RU"]
+
+# Bug reports from the game and the launcher (docs/bug-report-api.md): the bot fetches new ones from the backend's admin API
+# and publishes them as posts in the bug forum. Enable once the backend implements the endpoints.
+# [bug_reports]
+# forum = "🐛・bug-reports"
+# api = "http://127.0.0.1:9092/admin/v1/bug-reports"
+# bearer_env = "ADMIN_BEARER"
+# every_secs = 20
+# kind_tags = { crash = "Crash", game = "Gameplay", launcher = "Launcher" }
+# lang_tags = { ru = "RU" }
+# default_lang_tag = "EN"
+
+# Server patch notes (the same file as in the launcher tab and the website news) → 🛠️・patch-notes.
+# The backend on the same VM serves it without auth: GET <[web] bind>/dbserver/patch_notes?lang=..
+# The first run publishes only the backfill of the latest entries; the rest of the history is marked silently.
+[patch_notes]
+channel = "🛠️・patch-notes"
+url = "http://127.0.0.1:18090/dbserver/patch_notes"   # local backend stub; on the VM, the backend's [web] bind address
+every_secs = 300
+main_lang = "en"
+# ping = "🔔 Patch notes"   # pings subscribers; enable in production
+backfill = 1
+
+# "Images and GIFs only" channels: the bot deletes everything else and shows a hint for 10 seconds.
+# Captions on images are fine; threads under images are not checked, that is where people talk.
+[media_only]
+channels = ["🖼️・media"]
+exempt_roles = ["Lead Moderator", "Mod EN", "Mod RU"]
+notice = "{user} only images and GIFs here — videos and clips go to {#📺・content}, talk in the picture's thread or {#💬・chat}. / Здесь только картинки и GIF — видео и клипы в {#📺・content}, обсуждение в ветке под картинкой или в {#💬・чат}."
+notice_secs = 10
+
+# Timed message deletion: «Delete later» in the message menu (moderators; 0 cancels),
+# delete_after in /announce, script requests (post_announcement.py --delete-after 7d) in the queue folder.
+[expire]
+queue = "data/expire_queue"
+
+# /event create template:<template> → form (name, start, end in utc_offset, description, rules) → Discord
+# scheduled event + temporary category from the template + participant role with a «Participate» button. The event closes itself at the end:
+# text channels go to the archive (read-only, visible to the team); voice channels, the category and the role are deleted.
+# /event close closes early, /event list shows open ones. Permission: Manage Events. The bot needs Manage Events, Channels, Roles.
+[events]
+archive = "🗄️ ARCHIVE"
+staff_roles = ["Lead Moderator", "Mod EN", "Mod RU"]
+utc_offset = "+03:00"
+tz_label = "МСК / UTC+3"
+
+[[events.template]]
+name = "tournament"
+category = "⚔️ {NAME}"
+role = true
+role_name = "🎟 {name}"
+location = "In game · Dungeonborne Community"
+channels = [
+    { name = "📜・rules", rules = true, readonly = true, topic = "{name}: rules, dates, how to join / правила, даты, как участвовать" },
+    { name = "💬・chat", topic = "{name}: talk, find teammates / обсуждение, поиск команды" },
+    { name = "🏆・results", readonly = true, topic = "{name}: results from the team / результаты от команды" },
+    { name = "➕・Trio", kind = "voice" },
+]
+
+[[events.template]]
+name = "playtest"
+category = "🧪 {NAME}"
+role = true
+role_name = "🧪 {name}"
+location = "Test server · launcher → Add server"
+channels = [
+    { name = "📜・briefing", rules = true, readonly = true },
+    { name = "🐞・feedback" },
+    { name = "🔊・Test squad", kind = "voice" },
+]
+
+[[events.template]]
+name = "stream"
+stage = "🎙・Dev Talks"
+
+# Channel modes for moderators (Manage Messages permission):
+# /slowmode seconds:<0–21600> [for:30m|2h|1d]: slow mode; with for it restores the previous value itself.
+# /emojimode on|off [for:…]: "emoji only"; the bot deletes everything else with a 6 s hint; with for it turns off by itself.
+# Duo/Trio rooms: the owner gets permissions on their room and the commands /room lock|unlock|limit|name|kick|owner.
+[chatmodes]
+exempt_roles = ["Lead Moderator", "Mod EN", "Mod RU"]

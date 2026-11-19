@@ -1,0 +1,644 @@
+[
+  {
+    "config": {
+      "content": "this is a test mail with attachments.",
+      "expired_duration_s": 31536000,
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "keep_after_take_attachments": true,
+      "major_type": 2,
+      "show_time": "2022-10-02T00:00:00Z",
+      "start_time": "2022-10-02T08:00:00Z",
+      "title": "attachment1"
+    },
+    "type_id": 500009
+  },
+  {
+    "config": {
+      "content": "mail_501001_content",
+      "expired_duration_s": 31536000,
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "keep_after_take_attachments": true,
+      "major_type": 3,
+      "title": "mail_501001_title"
+    },
+    "type_id": 501001
+  },
+  {
+    "config": {
+      "content": "mail_501002_content",
+      "expired_duration_s": 31536000,
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "keep_after_take_attachments": true,
+      "major_type": 3,
+      "title": "mail_501002_title"
+    },
+    "type_id": 501002
+  },
+  {
+    "config": {
+      "content": "这是一封安全测试邮件",
+      "expired_duration_s": 31536000,
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "keep_after_take_attachments": true,
+      "major_type": 4,
+      "show_time": "2024-01-10T00:00:00Z",
+      "start_time": "2024-01-10T08:00:00Z",
+      "title": "安全测试邮件"
+    },
+    "type_id": 501003
+  },
+  {
+    "config": {
+      "attachments": [
+        {
+          "count": 1,
+          "type_id": 1001
+        }
+      ],
+      "content": "这是一封供QA压测使用的附件",
+      "expired_duration_s": 31536000,
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "keep_after_take_attachments": true,
+      "major_type": 3,
+      "show_time": "2024-01-10T00:00:00Z",
+      "start_time": "2024-01-10T08:00:00Z",
+      "title": "压测附件邮件"
+    },
+    "type_id": 501004
+  },
+  {
+    "config": {
+      "content": "BAN_END_TIME: {{extension(BAN_END_TIME)}};BAN_DURATION: {{extension(BAN_DURATION)}};BAN_TEMPLATE_ID: {{extension(BAN_TEMPLATE_ID)}};BAN_REASON: {{extension(BAN_REASON)}};rank_no: {{extension(RANK_NO)}};RANK_TYPE_DESC: {{extension(RANK_TYPE_DESC)}};RANK_TYPE_NAME: {{extension(RANK_TYPE_NAME)}};",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "封禁邮件模板"
+    },
+    "type_id": 501005
+  },
+  {
+    "config": {
+      "content": "mail_501006_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501006_title"
+    },
+    "type_id": 501006
+  },
+  {
+    "config": {
+      "content": "mail_501007_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501007_title"
+    },
+    "type_id": 501007
+  },
+  {
+    "config": {
+      "content": "mail_501008_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501008_title"
+    },
+    "type_id": 501008
+  },
+  {
+    "config": {
+      "content": "mail_501009_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501009_title"
+    },
+    "type_id": 501009
+  },
+  {
+    "config": {
+      "content": "mail_501010_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501010_title"
+    },
+    "type_id": 501010
+  },
+  {
+    "config": {
+      "content": "mail_501011_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501011_title"
+    },
+    "type_id": 501011
+  },
+  {
+    "config": {
+      "content": "mail_501012_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501012_title"
+    },
+    "type_id": 501012
+  },
+  {
+    "config": {
+      "content": "mail_501013_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501013_title"
+    },
+    "type_id": 501013
+  },
+  {
+    "config": {
+      "content": "mail_501014_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501014_title"
+    },
+    "type_id": 501014
+  },
+  {
+    "config": {
+      "content": "mail_501015_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501015_title"
+    },
+    "type_id": 501015
+  },
+  {
+    "config": {
+      "content": "mail_501016_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501016_title"
+    },
+    "type_id": 501016
+  },
+  {
+    "config": {
+      "content": "mail_501017_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501017_title"
+    },
+    "type_id": 501017
+  },
+  {
+    "config": {
+      "content": "mail_501018_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501018_title"
+    },
+    "type_id": 501018
+  },
+  {
+    "config": {
+      "content": "mail_501019_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501019_title"
+    },
+    "type_id": 501019
+  },
+  {
+    "config": {
+      "content": "mail_501020_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501020_title"
+    },
+    "type_id": 501020
+  },
+  {
+    "config": {
+      "content": "mail_501021_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501021_title"
+    },
+    "type_id": 501021
+  },
+  {
+    "config": {
+      "content": "{{extension(user_id)}}\n{{extension(Battleid)}}",
+      "is_admin_sender": true,
+      "major_type": 4,
+      "title": "装备申诉正式环境测试"
+    },
+    "type_id": 501022
+  },
+  {
+    "config": {
+      "condition_id": 100004,
+      "content": "mail_501023_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501023_title"
+    },
+    "type_id": 501023
+  },
+  {
+    "config": {
+      "condition_id": 100004,
+      "content": "mail_501024_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501024_title"
+    },
+    "type_id": 501024
+  },
+  {
+    "config": {
+      "content": "mail_501025_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501025_title"
+    },
+    "type_id": 501025
+  },
+  {
+    "config": {
+      "content": "mail_501030_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501030_title"
+    },
+    "type_id": 501030
+  },
+  {
+    "config": {
+      "content": "mail_501031_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501031_title"
+    },
+    "type_id": 501031
+  },
+  {
+    "config": {
+      "content": "mail_501032_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501032_title"
+    },
+    "type_id": 501032
+  },
+  {
+    "config": {
+      "content": "mail_501033_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501033_title"
+    },
+    "type_id": 501033
+  },
+  {
+    "config": {
+      "content": "mail_501034_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501034_title"
+    },
+    "type_id": 501034
+  },
+  {
+    "config": {
+      "content": "mail_501035_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501035_title"
+    },
+    "type_id": 501035
+  },
+  {
+    "config": {
+      "content": "mail_501036_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501036_title"
+    },
+    "type_id": 501036
+  },
+  {
+    "config": {
+      "content": "mail_501037_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501037_title"
+    },
+    "type_id": 501037
+  },
+  {
+    "config": {
+      "content": "mail_501038_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501038_title"
+    },
+    "type_id": 501038
+  },
+  {
+    "config": {
+      "content": "mail_501039_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501039_title"
+    },
+    "type_id": 501039
+  },
+  {
+    "config": {
+      "content": "mail_501040_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501040_title"
+    },
+    "type_id": 501040
+  },
+  {
+    "config": {
+      "content": "mail_501041_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501041_title"
+    },
+    "type_id": 501041
+  },
+  {
+    "config": {
+      "content": "mail_501042_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501042_title"
+    },
+    "type_id": 501042
+  },
+  {
+    "config": {
+      "content": "mail_501043_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501043_title"
+    },
+    "type_id": 501043
+  },
+  {
+    "config": {
+      "content": "mail_501044_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501044_title"
+    },
+    "type_id": 501044
+  },
+  {
+    "config": {
+      "content": "mail_501045_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501045_title"
+    },
+    "type_id": 501045
+  },
+  {
+    "config": {
+      "content": "mail_501046_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501046_title"
+    },
+    "type_id": 501046
+  },
+  {
+    "config": {
+      "content": "mail_501047_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 4,
+      "title": "mail_501047_title"
+    },
+    "type_id": 501047
+  },
+  {
+    "config": {
+      "content": "mail_501048_content",
+      "is_admin_sender": true,
+      "major_type": 4,
+      "title": "mail_501048_title"
+    },
+    "type_id": 501048
+  },
+  {
+    "config": {
+      "content": "mail_501049_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501049_title"
+    },
+    "type_id": 501049
+  },
+  {
+    "config": {
+      "content": "mail_501050_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501050_title"
+    },
+    "type_id": 501050
+  },
+  {
+    "config": {
+      "content": "mail_501051_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501051_title"
+    },
+    "type_id": 501051
+  },
+  {
+    "config": {
+      "content": "mail_501052_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501052_title"
+    },
+    "type_id": 501052
+  },
+  {
+    "config": {
+      "content": "mail_501053_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501053_title"
+    },
+    "type_id": 501053
+  },
+  {
+    "config": {
+      "content": "mail_501054_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501054_title"
+    },
+    "type_id": 501054
+  },
+  {
+    "config": {
+      "content": "mail_501055_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501055_title"
+    },
+    "type_id": 501055
+  },
+  {
+    "config": {
+      "content": "mail_501056_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501056_title"
+    },
+    "type_id": 501056
+  },
+  {
+    "config": {
+      "content": "mail_501057_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501057_title"
+    },
+    "type_id": 501057
+  },
+  {
+    "config": {
+      "content": "mail_501058_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501058_title"
+    },
+    "type_id": 501058
+  },
+  {
+    "config": {
+      "content": "mail_501059_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501059_title"
+    },
+    "type_id": 501059
+  },
+  {
+    "config": {
+      "content": "mail_501060_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501060_title"
+    },
+    "type_id": 501060
+  },
+  {
+    "config": {
+      "content": "mail_501061_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501061_title"
+    },
+    "type_id": 501061
+  },
+  {
+    "config": {
+      "content": "mail_501062_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501062_title"
+    },
+    "type_id": 501062
+  },
+  {
+    "config": {
+      "content": "mail_501063_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501063_title"
+    },
+    "type_id": 501063
+  },
+  {
+    "config": {
+      "content": "mail_501064_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501064_title"
+    },
+    "type_id": 501064
+  },
+  {
+    "config": {
+      "content": "mail_501070_content",
+      "is_admin_sender": true,
+      "is_padding_expired_time": true,
+      "major_type": 3,
+      "title": "mail_501070_title"
+    },
+    "type_id": 501070
+  }
+]

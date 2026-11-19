@@ -1,0 +1,1728 @@
+# Dungeonborne Community — structure v2 (per the "target Discord structure" document, team decisions of 14.11).
+# Run: python setup_server.py [--guild ID] [--apply]
+#
+# was: old channel/role names — the script renames the existing one instead of creating a new one (history and members are kept).
+# archive: channels move to 🗄️ ARCHIVE (visible to the team only, read-only); remove_roles / remove_channels — deletion.
+# Permissions: allow / deny / reset per role; order: category → presets → channel perms → staff.
+# Text channel and forum names — lowercase, no spaces. {server}, {#channel}, {@role} — substitutions in messages.
+
+server:
+  community: true
+  rules_channel: "📜・rules"
+  mod_updates_channel: "📋・mod-log"
+  safety_alerts_channel: "📋・mod-log"   # Discord alerts about raids and spam spikes
+  explicit_content_filter: all          # scan media from all members
+  boost_progress_bar: true              # boost progress bar
+  # 2FA for moderators (mfa_level) cannot be enabled by the bot — only by the owner with 2FA, manually
+  verification_level: medium
+  default_notifications: mentions
+  preferred_locale: en-US
+  description: "Play Dungeonborne again: a free community server with its own launcher, an open modding framework, guides and groups."
+
+# The main server language is English. Others: translations of info messages in a "🌍 …" thread under the message
+# (translations on the message) and a separate chat category that onboarding unlocks.
+# Languages. category — the language category (visible with the role from onboarding): run by that language's community manager (manager);
+# the bot keeps copies of the starter channels in that language there (message: <key>_ru). channels — which {#…} links
+# in this category's texts point to its copies instead of the English channels.
+languages:
+  ru:
+    flag: "🇷🇺"
+    name: "Русский"
+    category: "РУССКИЙ"
+    manager: "RU Community Manager"
+    channels:
+      "👋・welcome": "👋・добро-пожаловать"
+      "📜・rules": "📜・правила"
+      "🚀・how-to-play": "🚀・как-играть"
+      "🏛️・about": "🏛️・о-нас"
+      "📢・announcements": "📢・анонсы"
+      "💬・chat": "💬・чат"
+  zh: { flag: "🇨🇳", name: "中文" }   # /announce only for now: no Chinese translations of info posts
+
+roles:
+  - name: Lead Moderator
+    color: "#E74C3C"
+    hoist: true
+    mentionable: true
+    permissions: &lead_perms
+      - administrator   # granted by the owner 14.11
+      - kick_members
+      - ban_members
+      - moderate_members
+      - manage_messages
+      - manage_threads
+      - manage_nicknames
+      - manage_roles
+      - view_audit_log
+      - mute_members
+      - deafen_members
+      - move_members
+      - manage_events
+  - name: Mod EN
+    color: "#E67E22"
+    hoist: true
+    mentionable: true
+    permissions: &mod_perms
+      - kick_members
+      - ban_members
+      - moderate_members
+      - manage_messages
+      - manage_threads
+      - manage_nicknames
+      - view_audit_log
+      - mute_members
+      - deafen_members
+      - move_members
+      - manage_events
+  - name: Mod RU
+    color: "#E67E22"
+    hoist: true
+    mentionable: true
+    permissions: *mod_perms
+  # Language community manager: no server-wide permissions; all power is in their language category (perms there)
+  - name: RU Community Manager
+    color: "#F1C40F"
+    hoist: true
+    mentionable: true
+    permissions: []
+  - name: Helper
+    color: "#1ABC9C"
+    hoist: true
+    mentionable: true
+    permissions: []
+  - name: "💜 Supporter"   # supported the project (Patreon/Boosty); granted by the Patreon integration (tiers $3/$10/$25) or by the team; gives /supporter show. The Patreon bot role goes right ABOVE this one, below Helper (16.11)
+    color: "#8E44AD"
+    hoist: true   # show as a separate group — enabled by the owner on production (17.11)
+    permissions: []
+  - name: "🎬 Creator"
+    color: "#9B59B6"
+    hoist: true
+    permissions: []
+  - name: "🧪 Tester"
+    was: ["Тестировщик"]
+    color: "#F39C12"
+    permissions: []
+  - name: EN   # unlocks the ENGLISH category; granted by onboarding (English option) or "Channels & Roles"
+    permissions: []
+  - name: RU
+    permissions: []
+  # classes — same as on the site; granted by onboarding, used for group finding and the profile badge
+  - { name: Fighter, permissions: [] }
+  - { name: Rogue, permissions: [] }
+  - { name: Priest, permissions: [] }
+  - { name: Pyromancer, permissions: [] }
+  - { name: Swordmaster, permissions: [] }
+  - { name: Druid, permissions: [] }
+  - { name: Death Knight, permissions: [] }
+  - { name: Cryomancer, permissions: [] }
+  # ping subscriptions instead of @everyone
+  - name: "🔔 Patch notes"
+    mentionable: true
+    permissions: []
+  - name: "🔔 Events"
+    was: ["Events"]
+    mentionable: true
+    permissions: []
+  - name: "🔔 Streams"
+    mentionable: true
+    permissions: []
+
+# Decisions of 14.11: Player and Whitelist are no longer needed, Developer goes away together with the framework, delete personal (named) roles.
+# WARNING for production: before deleting Whitelist, check the backend's [auth] login_roles.
+# EN is not deleted (15.11): needed again — it unlocks ENGLISH.
+# Do NOT delete the GM role: the backend grants in-game GM by it ([auth.discord] roles → gm, 16.11).
+# Delete only after gm in server.toml is reassigned to another role. "Main Developer" → admin, "Banned" → login ban — do not touch.
+remove_roles: [Player, Developer, Whitelist]
+
+staff:
+  roles: [Lead Moderator, Mod EN, Mod RU]
+  allow:
+    - view_channel
+    - send_messages
+    - send_messages_in_threads
+    - create_public_threads
+    - manage_messages
+    - manage_threads
+    - mention_everyone
+    - connect
+    - speak
+
+presets:
+  # divider channel: no posting, no reactions (together with read_only)
+  divider:
+    "@everyone":
+      deny: [add_reactions]
+  read_only:
+    "@everyone":
+      deny: [send_messages, send_messages_in_threads, create_public_threads, create_private_threads]
+  # no posting in the channel itself; allowed in your own private ticket thread
+  tickets:
+    "@everyone":
+      deny: [send_messages, create_public_threads, create_private_threads]
+  # helpers manage forum threads: "Solved", duplicates, closing
+  helpers:
+    Helper: { allow: [manage_threads] }
+
+categories:
+  - name: "📌 START"
+    was: ["📌 INFO | Инфа", "📌 INFO"]
+    channels:
+      - name: "👋・welcome"
+        topic: "Start here: how to get into the game"
+        presets: [read_only]
+        message: welcome
+      - name: "📜・rules"
+        topic: "Server rules"
+        presets: [read_only]
+        message: rules
+      - name: "🚀・how-to-play"
+        topic: "Four steps to your first raid"
+        presets: [read_only]
+        message: how_to_play
+      - name: "❓・faq"
+        topic: "Common problems and fixes"
+        presets: [read_only]
+        message: faq
+      - name: "🏛️・about"
+        topic: "Who we are and what we stand for"
+        presets: [read_only]
+        message: [about, mission]
+
+  - name: "📢 NEWS"
+    was: ["📢 | NEWS"]
+    channels:
+      - name: "📢・announcements"
+        type: announcement
+        topic: "Project news. Russian translation is in the thread under each post."
+        presets: [read_only]
+      - name: "🛠️・patch-notes"
+        was: ["🛠・patch-notes", "🚀・game-updates"]
+        type: announcement
+        topic: "Server changelogs — same as on the site and in the launcher"
+        presets: [read_only]
+      - name: "🌐・server-status"
+        topic: "Server status, online, season · server funding"
+        presets: [read_only]
+
+  - name: "ENGLISH"   # like РУССКИЙ: visible only with the EN role (English option in onboarding) — so Discord does not "recommend" it to everyone else
+    was: ["💬 --- COMMUNITY ---", "💬 COMMUNITY", "💬 ENGLISH", "💬 Общение | COMMUNITY"]
+    perms:
+      "@everyone": { deny: [view_channel] }
+      EN: { allow: [view_channel] }
+    channels:
+      - name: "💬・chat"
+        was: ["💬・chat-en", "💬chat-eng"]   # 💬chat-eng — the live production chat: rename it, do not create a new one
+        topic: "Talk about the game. Problems → support forum, memes → tavern"
+        message: chat_en
+      - name: "🍻・tavern"
+        was: ["🍻・tavern-en"]
+        topic: "Off-topic and memes, anything goes (rules still apply)"
+        message: tavern_en
+      - name: "🤝・lfg"
+        was: ["🤝・lfg-en"]
+        topic: "Looking for group: size, map, difficulty, time"
+        slowmode: 30
+        message: lfg_en
+      - name: "🍺・Tavern"
+        type: voice
+
+  - name: "РУССКИЙ"   # name chosen by the owner 14.11 (was "🌍 РУССКИЙ")
+    was: ["💬 РУССКИЙ"]
+    perms:
+      "@everyone": { deny: [view_channel] }
+      RU: { allow: [view_channel] }
+      "RU Community Manager":
+        allow: [view_channel, send_messages, manage_messages, manage_threads, mention_everyone, mute_members, deafen_members, move_members]
+    channels:
+      # Dividers "━━━━・…・━━━━" — empty channels just for looks: they separate info and chat inside the category
+      - name: "━━━━・инфо・━━━━"
+        topic: "Разделитель: ниже — информация от команды"
+        presets: [read_only, divider]
+      # Copies of the starter channels: texts are translations from messages, maintained by the bot (edit in this file, not by hand)
+      - name: "👋・добро-пожаловать"
+        topic: "С чего начать: как попасть в игру"
+        presets: [read_only]
+        message: welcome_ru
+      - name: "📜・правила"
+        topic: "Правила сервера (перевод; при расхождении действует английская версия)"
+        presets: [read_only]
+        message: rules_ru
+      - name: "🚀・как-играть"
+        topic: "Четыре шага до первого рейда"
+        presets: [read_only]
+        message: how_to_play_ru
+      - name: "🏛️・о-нас"
+        topic: "Кто мы и за что стоим"
+        presets: [read_only]
+        message: [about_ru, mission_ru]
+      # Announcements in Russian: the bot posts a translation of every post from 📢・announcements here; the manager can post their own
+      - name: "📢・анонсы"
+        type: announcement
+        topic: "Новости проекта на русском. Оригинал — по ссылке под каждым постом"
+        presets: [read_only]
+        perms:
+          "RU Community Manager": { allow: [send_messages, create_public_threads, send_messages_in_threads] }
+      - name: "━━━━・общение・━━━━"
+        topic: "Разделитель: ниже — общение"
+        presets: [read_only, divider]
+      - name: "💬・чат"
+        was: ["💬・chat-ru", "💬чат-русский"]   # 💬чат-русский — the live chat and system channel of production
+        topic: "Разговоры про игру. Проблема → форум помощи, мемы → таверна"
+        message: chat_ru
+      - name: "🍻・таверна"
+        was: ["🍻・tavern-ru"]
+        topic: "Флудилка: оффтоп и мемы (правила действуют и тут)"
+        message: tavern_ru
+      - name: "🤝・поиск-группы"
+        was: ["🤝・lfg-ru"]
+        topic: "Поиск группы: размер, карта, сложность, время"
+        slowmode: 30
+        message: lfg_ru
+      - name: "🍺・Таверна"
+        type: voice
+
+  - name: "🆘 HELP"
+    was: ["🆘 | HELP"]
+    channels:
+      - name: "📚・guides"
+        type: forum
+        message: guides_example
+        topic: |
+          Guides and builds. Add a class tag, a map tag if it is about a map, and a language tag.
+        require_tag: true
+        sort: activity
+        default_reaction: "👍"
+        tags:
+          - { name: "Fighter", emoji: "🛡" }
+          - { name: "Rogue", emoji: "🗡" }
+          - { name: "Priest", emoji: "✨" }
+          - { name: "Pyromancer", emoji: "🔥" }
+          - { name: "Swordmaster", emoji: "⚔" }
+          - { name: "Druid", emoji: "🌿" }
+          - { name: "Death Knight", emoji: "💀" }
+          - { name: "Cryomancer", emoji: "❄" }
+          - { name: "Sinner's End", emoji: "🕳" }
+          - { name: "Clouseau Castle", emoji: "🏰" }
+          - { name: "PvP", emoji: "🤺" }
+          - { name: "Beginner", emoji: "🌱" }
+          - { name: "EN", emoji: "🇬🇧" }
+          - { name: "RU", emoji: "🇷🇺" }
+      - name: "💰・trade"
+        type: forum
+        topic: |
+          Buy, sell and trade in-game items. Add a type, rarity, class and language tag. In-game gold only: real money = ban.
+        require_tag: true
+        sort: creation
+        slowmode: 1800
+        auto_archive: 4320
+        tags:
+          - { name: "WTB", emoji: "🛒" }
+          - { name: "WTS", emoji: "💰" }
+          - { name: "WTT", emoji: "🔄" }
+          - { name: "Price check", emoji: "❓" }
+          - { name: "Done", emoji: "✅" }
+          - { name: "Epic", emoji: "🟣" }
+          - { name: "Legendary", emoji: "🟠" }
+          - { name: "Unique", emoji: "🟡" }
+          - { name: "Fighter", emoji: "🛡" }
+          - { name: "Rogue", emoji: "🗡" }
+          - { name: "Priest", emoji: "✨" }
+          - { name: "Pyromancer", emoji: "🔥" }
+          - { name: "Swordmaster", emoji: "⚔" }
+          - { name: "Druid", emoji: "🌿" }
+          - { name: "Death Knight", emoji: "💀" }
+          - { name: "Cryomancer", emoji: "❄" }
+          - { name: "EN", emoji: "🇬🇧" }
+          - { name: "RU", emoji: "🇷🇺" }
+      - name: "🆘・support"
+        was: ["🆘・supports", "🆘・help", "🆘・player-support"]
+        type: forum
+        presets: [helpers]
+        message: support_example
+        topic: |
+          One problem — one post. Check {#❓・faq} first. Add a language tag and a topic tag.
+          Never post your password or payment details; for private matters open a ticket in {#🎫・tickets}.
+        require_tag: true
+        tags:
+          - { name: "EN", emoji: "🇬🇧" }
+          - { name: "RU", emoji: "🇷🇺" }
+          - { name: "Install", emoji: "📦" }
+          - { name: "Launcher", emoji: "🐉" }
+          - { name: "Connection", emoji: "📡" }
+          - { name: "In game", emoji: "🎮" }
+          - { name: "Account", emoji: "👤" }
+          - { name: "Solved", emoji: "✅" }
+      - name: "🎫・tickets"
+        topic: "Private help from moderators: account, ban, reports"
+        presets: [tickets]
+
+  # Chat lives in the language categories, each visible only with its own role (EN, RU); onboarding grants the roles.
+  - name: "📣 FEEDBACK"
+    channels:
+      - name: "🐛・bug-reports"
+        type: forum
+        presets: [helpers]
+        message: bug_example
+        topic: |
+          One bug — one post. Include the battle number from the ping line, steps, expected/actual, relay.log and launcher.log.
+        require_tag: true
+        tags:
+          - { name: "EN", emoji: "🇬🇧" }
+          - { name: "RU", emoji: "🇷🇺" }
+          - { name: "Crash", emoji: "💥" }
+          - { name: "Gameplay", emoji: "🎮" }
+          - { name: "Launcher", emoji: "🐉" }
+          - { name: "Critical", emoji: "🔥", moderated: true }
+          - { name: "In progress", emoji: "🛠", moderated: true }
+          - { name: "Fixed", emoji: "✅", moderated: true }
+          - { name: "Not a bug", emoji: "🚫", moderated: true }
+      - name: "💡・ideas"
+        type: forum
+        presets: [helpers]
+        message: ideas_example
+        topic: |
+          One idea per post. Add a language tag and a category. Vote with 👍. Status tags are set by the team.
+        require_tag: true
+        default_reaction: "👍"
+        sort: activity
+        tags:
+          - { name: "EN", emoji: "🇬🇧" }
+          - { name: "RU", emoji: "🇷🇺" }
+          - { name: "Gameplay", emoji: "🎮" }
+          - { name: "Balance", emoji: "📊" }
+          - { name: "Content", emoji: "🗺" }
+          - { name: "Accepted", emoji: "✅", moderated: true }
+          - { name: "Planned", emoji: "🛠", moderated: true }
+          - { name: "Rejected", emoji: "❌", moderated: true }
+      - name: "⚖️・balance"
+        was: ["⚖️・balance-showcase"]
+        type: forum
+        presets: [helpers]
+        message: balance_example
+        topic: |
+          Balance proposals: what is off, why, what to change. One topic per post.
+        require_tag: true
+        default_reaction: "👍"
+        tags:
+          - { name: "EN", emoji: "🇬🇧" }
+          - { name: "RU", emoji: "🇷🇺" }
+          - { name: "Classes", emoji: "⚔" }
+          - { name: "Items", emoji: "💎" }
+          - { name: "Maps", emoji: "🗺" }
+          - { name: "PvP", emoji: "🤺" }
+          - { name: "Accepted", emoji: "✅", moderated: true }
+          - { name: "Rejected", emoji: "❌", moderated: true }
+
+  - name: "🎥 MEDIA"
+    was: ["🎉 EVENTS & CREATORS", "🎬 CREATORS | Контент"]
+    channels:
+      - name: "🖼️・media"
+        was: ["🖼・media"]
+        topic: "Screenshots and GIFs from the game. Images only — the bot removes anything else. Videos and clips → 📺・content; talk about a picture in its thread"
+      - name: "🎙・Dev Talks"
+        type: stage
+      - name: "📺・content"
+        type: forum
+        message: content_example
+        topic: |
+          Videos, clips, streams, guides, shorts and art about the game. One post — one piece of content. Type tag + language tag.
+        require_tag: true
+        layout: gallery
+        sort: creation
+        slowmode: 21600
+        default_reaction: "🔥"
+        tags:
+          - { name: "Video", emoji: "🎥" }
+          - { name: "Clip", emoji: "🎞️" }
+          - { name: "Stream", emoji: "🔴" }
+          - { name: "Guide", emoji: "📚" }
+          - { name: "Shorts", emoji: "🩳" }
+          - { name: "Art", emoji: "🎨" }
+          - { name: "EN", emoji: "🇬🇧" }
+          - { name: "RU", emoji: "🇷🇺" }
+      - name: "🔴・live-now"
+        topic: "Our creators' streams and new videos. Pings: 🔔 Streams"
+        presets: [read_only]
+      - name: "🎬・creator-hub"
+        message: creator_hub
+        topic: "Creators × team: early news under embargo, keys, collabs"
+        perms:
+          "@everyone": { deny: [view_channel] }
+          "🎬 Creator": { allow: [view_channel] }
+      - name: "📦・press-kit"
+        message: press_kit
+        topic: "Logos, screenshots, trailers, brand rules"
+        presets: [read_only]
+        perms:
+          "@everyone": { deny: [view_channel] }
+          "🎬 Creator": { allow: [view_channel] }
+
+  - name: "🔊 VOICE"
+    channels:
+      - name: "➕・Duo"
+        was: ["➕・Create room"]
+        type: voice
+      - name: "➕・Trio"
+        type: voice
+
+  - name: "🧪 PLAYTEST"
+    perms:
+      "@everyone": { deny: [view_channel] }
+      "🧪 Tester": { allow: [view_channel] }
+    channels:
+      - name: "📣・test-announcements"
+        topic: "What we test, build, dates, how to connect"
+        presets: [read_only]
+        message: playtest
+      - name: "🐞・test-bugs"
+        type: forum
+        topic: |
+          Test server bugs and feedback. Same template as the main bug forum. What is tested stays here until release.
+        require_tag: true
+        tags:
+          - { name: "Crash", emoji: "💥" }
+          - { name: "Gameplay", emoji: "🎮" }
+          - { name: "Balance", emoji: "📊" }
+          - { name: "Launcher", emoji: "🐉" }
+          - { name: "Feedback", emoji: "💬" }
+          - { name: "EN", emoji: "🇬🇧" }
+          - { name: "RU", emoji: "🇷🇺" }
+      - name: "💬・test-chat"
+        topic: "Playtest discussion, any language"
+      - name: "🔊・Test squad"
+        type: voice
+
+  - name: "🛡️ TEAM"
+    was: ["🛡 TEAM", "🛡 STAFF"]
+    perms:
+      "@everyone": { deny: [view_channel] }
+    channels:
+      - name: "🛡️・mod-chat"
+        was: ["🛡・mod-chat"]
+      - name: "📋・mod-log"
+      - name: "🛟・helpers"
+        message: helpers
+        topic: "Helpers × moderators"
+        perms:
+          Helper: { allow: [view_channel] }
+      - name: "📘・handbook"
+        type: forum
+        topic: "Team handbook: one post per topic. Helpers read and discuss; moderators create posts."
+        sort: creation
+        # posts are created in order, newest on top — so the list is reversed; "Start here" is pinned
+        message: [hb_todo, hb_prompts_support, hb_prompts_posts, hb_config, hb_bot, hb_publish, hb_helpers, hb_mod, hb_lang, hb_roles, hb_map, hb_start, hb_prompt_base, hb_style, hb_agent, hb_announce_flow]
+        perms:
+          Helper:
+            allow: [view_channel, read_message_history, send_messages_in_threads]
+            deny: [send_messages, create_public_threads]
+        tags:
+          - { name: "Start here", emoji: "📌" }
+          - { name: "Guide", emoji: "🗺️" }
+          - { name: "Rules", emoji: "📏" }
+          - { name: "Moderation", emoji: "🛡️" }
+          - { name: "Helpers", emoji: "🛟" }
+          - { name: "Bot", emoji: "🤖" }
+          - { name: "Config", emoji: "⚙️" }
+          - { name: "AI prompts", emoji: "✨" }
+          - { name: "To do", emoji: "🧾" }
+
+  - name: "🗄️ ARCHIVE"
+    was: ["🗄 ARCHIVE"]
+    perms:
+      "@everyone": { deny: [view_channel] }
+    channels: []
+
+# Channels moved to the archive: visible to the team only, read-only. Names from another server are simply skipped.
+archive:
+  category: "🗄️ ARCHIVE"
+  channels:
+    - "🤖・bot-commands"
+    - "⭐・starboard"
+    - "🔊・Lounge EN"
+    - "🔊・Lounge RU"
+    - "📚・docs-and-faq"
+    - "💻・dev-chat-en"
+    - "💻・dev-chat-ru"
+    - "❓・framework-help"
+    - "✨・plugin-showcase"
+    - "📦・framework-releases"
+    - "🐉launcher"
+    - "mod-мод"
+    - "server-hub"
+    - "💬чат-разрабов"
+    - "🎥・creator-streams"
+    # production, 16.11 (owner): private development channels and the old voice channel — to the archive
+    - "📢информация-db"
+    - "🛠️разработка-db"
+    - "🔄patches-патчи🌍"
+    - "🔊 Jazz"
+
+# Categories left empty after archiving
+remove_channels:
+  - "🛠 FRAMEWORK"
+  - "Разработка"
+  - "🎮 GAME SERVER"
+
+# Rules on join: Discord shows them after onboarding; members can post only after "I agree".
+# One language (English) — translations are in 📜・rules. Up to 16 items, each up to 300 characters, no markdown.
+rules_screening:
+  enabled: true
+  description: "Dungeonborne Community — fan project, not affiliated with the developers or the publisher. Translations of the rules are in #📜・rules."
+  rules:
+    - "Be respectful. No harassment, hate speech or discrimination."
+    - "No spam. No flooding, ads or unsolicited DMs."
+    - "Right channel, right language. English in shared channels; in a language category, use its language. Forums take any language with a language tag."
+    - "No cheats or exploits, no account trading. Found an exploit? Report it privately in #🎫・tickets."
+    - "Launcher only from the official site, dungeonborne-community.com. No .exe files or links to \"other launchers\"."
+    - "No NSFW, illegal content, malicious links or files."
+    - "Follow the Discord Terms of Service and Community Guidelines. Moderators have the final word."
+
+# Discord AutoMod: block the message, alert in mod-log, timeout. The script tracks rules by name
+# (spam, keyword_preset, mention_spam, member_profile exist only once each — it finds them by type).
+# keyword: up to 6 rules; keywords — up to 1000, each up to 60 characters, * at the start/end = part of a word;
+# regex — up to 10 expressions (Rust syntax); allow — exceptions. Moderators are not checked (exempt_roles).
+automod:
+  alert_channel: "📋・mod-log"
+  block_message: "Blocked by AutoMod. Wrong call? Open a ticket in #🎫・tickets / Ошибка? Открой тикет."
+  exempt_roles: [Lead Moderator, Mod EN, Mod RU]
+  rules:
+    - name: "Block Mention Spam"   # the name the owner gave it in Discord
+      trigger: mention_spam
+      limit: 6
+      raid_protection: true
+      actions: [block, alert, { timeout: 600 }]
+
+    - name: "Spam"
+      trigger: spam
+      actions: [block, alert]
+
+    - name: "Slurs and sexual content"
+      trigger: keyword_preset
+      presets: [slurs, sexual_content]
+      actions: [block, alert]
+
+    - name: "Scam: free Nitro, fake Steam and Discord"
+      trigger: keyword
+      keywords:
+        - "free nitro"
+        - "nitro free"
+        - "nitro for free"
+        - "free discord nitro"
+        - "бесплатный нитро"
+        - "бесплатное нитро"
+        - "нитро бесплатно"
+        - "steam gift"
+        - "*discord-gift*"
+        - "*discordgift*"
+        - "*dlscord*"
+        - "*discorcl*"
+        - "*disocrd*"
+        - "*steamcommunlty*"
+        - "*steamcomminuty*"
+        - "*stearncommunity*"
+        - "*steamconmunity*"
+        - "*steampowered.ru*"
+      regex:
+        - '(?i)(free|бесплатн[а-я]*)[ .,:!-]{0,3}(crypto|usdt|btc|eth|скин[а-я]*|skins?)'
+      actions: [block, alert, { timeout: 3600 }]
+
+    - name: "Executables and foreign invites"
+      trigger: keyword
+      regex:
+        # links to executable files (rule 5: the launcher only from the official site)
+        - '(?i)https?://\S+\.(exe|scr|bat|cmd|msi|com|vbs|ps1|jar)(\?\S*)?(\s|$)'
+        # invites to other servers
+        - '(?i)(discord\.gg|discord(app)?\.com/invite)/[a-z0-9-]+'
+      # official server invites — add here, e.g. "discord.gg/dungeonborne"
+      allow: []
+      actions: [block, alert]
+
+    - name: "Impersonation in names"
+      trigger: member_profile
+      keywords:
+        - "*moderator*"
+        - "*admin*"
+        - "*модератор*"
+        - "*админ*"
+        - "*dungeonborne team*"
+        - "*dungeonborne official*"
+        - "*support team*"
+        - "*поддержка*"
+      actions: [block, alert]
+
+onboarding:
+  enabled: true
+  default_channels:
+    - "👋・welcome"
+    - "🏛️・about"
+    - "📜・rules"
+    - "🚀・how-to-play"
+    - "❓・faq"
+    - "📢・announcements"
+    - "🛠️・patch-notes"
+    - "🌐・server-status"
+    - "🆘・support"
+    - "🎫・tickets"
+    - "🖼️・media"
+    - "📚・guides"
+    - "💰・trade"
+    - "🐛・bug-reports"
+    - "💡・ideas"
+    - "⚖️・balance"
+    - "📺・content"
+    - "➕・Duo"
+    - "➕・Trio"
+  prompts:
+    - title: "Languages you speak"
+      single_select: false
+      required: true
+      options:
+        - title: "English"
+          emoji: "💬"
+          description: "English chat, tavern, group search and voice"
+          roles: [EN]
+          channels: ["💬・chat", "🍻・tavern", "🤝・lfg", "🍺・Tavern"]
+        - title: "Русский"
+          emoji: "🇷🇺"
+          description: "Russian chat, tavern, group search and voice"
+          roles: [RU]
+          channels: ["👋・добро-пожаловать", "📢・анонсы", "💬・чат", "🍻・таверна", "🤝・поиск-группы", "🍺・Таверна"]
+    - title: "Your class"
+      single_select: false
+      required: false
+      options:
+        - { title: "Fighter", emoji: "🛡", description: "Human", roles: [Fighter] }
+        - { title: "Rogue", emoji: "🗡", description: "Human", roles: [Rogue] }
+        - { title: "Priest", emoji: "✨", description: "Human", roles: [Priest] }
+        - { title: "Pyromancer", emoji: "🔥", description: "Human", roles: [Pyromancer] }
+        - { title: "Swordmaster", emoji: "⚔", description: "Elf", roles: [Swordmaster] }
+        - { title: "Druid", emoji: "🌿", description: "Elf", roles: [Druid] }
+        - { title: "Death Knight", emoji: "💀", description: "Undead", roles: [Death Knight] }
+        - { title: "Cryomancer", emoji: "❄", description: "Undead", roles: [Cryomancer] }
+    - title: "Notifications"
+      single_select: false
+      required: false
+      options:
+        - title: "Patch notes"
+          emoji: "🛠"
+          description: "Ping when the server updates"
+          roles: ["🔔 Patch notes"]
+        - title: "Events & Dev Talks"
+          emoji: "🎙"
+          description: "Tournaments, events, talks with the team"
+          roles: ["🔔 Events"]
+          channels: ["🎙・Dev Talks"]
+        - title: "Creators' streams"
+          emoji: "🔴"
+          description: "When our creators go live"
+          roles: ["🔔 Streams"]
+          channels: ["🔴・live-now"]
+
+# Messages are posted by the bot, once: without pin — into an empty channel; pin — if the channel has no bot pin; forum — a post with title.
+# The main text is in English. translations: {language: key} — the translation: in a channel — in a "🌍 …" thread under the message,
+# in a forum — as the next message in the post. New language: add it to languages and to translations — the script adds what is missing.
+# content — Discord markdown: # ## ### headings, -# small text, lists, [link](url); no longer than 2000 characters.
+# Link previews are off (previews: true — turn on). embeds — only the sample card in forum posts.
+# {#channel} — channel link, {@role} — role link without a ping, {server} — server name.
+messages:
+  # 🏛️・about: who we are (on behalf of the community) → the developer's mission (first person, based on the 04.11 post) → where to go
+  about:
+    translations: { ru: about_ru }
+    content: |
+      # 🏛️ About Dungeonborne Community
+      We're players who want to keep playing a good game. The official servers are gone, so we keep **Dungeonborne** alive ourselves.
+
+      ## What's here
+      - **A free community server** with its own launcher: it signs you in with Discord, installs fixes and mods, and gets you into the game
+      - **Playtests and seasons**: we test changes together, and your bug reports and ideas shape what comes next
+      - **An open framework** (in development) to run and mod your own Dungeonborne server
+      - **The community**: guides, groups, events and creators
+
+      ## What we stand for
+      - **No monetization.** Playing is free: no paid access, no pay-to-win. Donations go to the project: first the server bill, extra builds a one-month server reserve, and anything beyond that thanks the team. Support us on [Patreon](https://www.patreon.com/dungeonbornecommunity) or [Boosty](https://boosty.to/your-blog). They give nothing in the game.
+      - **Open.** The framework will be open source once the core is finished, and other community servers are welcome.
+      - **A fan project**, not affiliated with the developers or the publisher of the game.
+
+      ## How you can help
+      Play and report bugs in {#🐛・bug-reports} · share ideas in {#💡・ideas} · write guides in {#📚・guides} · make videos · help newcomers as a Helper ({#🎫・tickets}).
+  about_ru:
+    content: |
+      # 🏛️ О Dungeonborne Community
+      Мы — игроки, которые хотят и дальше играть в хорошую игру. Официальных серверов больше нет, поэтому **Dungeonborne** живёт благодаря нам.
+
+      ## Что здесь есть
+      - **Бесплатный сервер сообщества** со своим лаунчером: вход через Discord, исправления и моды ставятся сами, игра подключается к серверу
+      - **Плейтесты и сезоны**: изменения проверяем вместе, а твои баг-репорты и идеи определяют, что будет дальше
+      - **Открытый фреймворк** (в разработке), чтобы поднять и моддить свой сервер Dungeonborne
+      - **Сообщество**: гайды, поиск группы, ивенты и авторы
+
+      ## Наши принципы
+      - **Без монетизации.** Играть бесплатно: никакого платного доступа и pay-to-win. Пожертвования получает проект: сначала они оплачивают серверы, сверх этого копится резерв на месяц серверов, а всё, что больше, — благодарность команде. Поддержать: [Patreon](https://www.patreon.com/dungeonbornecommunity) или [Boosty](https://boosty.to/your-blog). В игре они ничего не дают.
+      - **Открытость.** Фреймворк станет открытым, когда будет готово ядро; другим серверам сообщества мы рады.
+      - **Фан-проект**, не связан с разработчиками и издателем игры.
+
+      ## Как помочь
+      Играй и сообщай о багах в {#🐛・bug-reports} · делись идеями в {#💡・ideas} · пиши гайды в {#📚・guides} · снимай видео · помогай новичкам как Helper ({#🎫・tickets}).
+
+  mission:
+    translations: { ru: mission_ru }
+    content: |
+      ## 🎯 Development mission
+      **1. The game works 100%.** Before touching class or weapon balance, the base game has to run stable: no bugs, no disconnects.
+      **2. The limits of modding.** We're digging into the code and assets to see how far the game can be changed.
+      **3. An AI framework for every one of you.** Instead of endless small fixes by hand, we're building an open framework with AI integration: anyone will be able to run their own server with their own rules, their own balance — even their own dragon.
+  mission_ru:
+    content: |
+      ## 🎯 Миссия разработки
+      **1. Игра работает на 100%.** Прежде чем трогать баланс классов и оружия, базовая игра должна работать стабильно: без багов и отвалов.
+      **2. Пределы моддинга.** Копаем вглубь кода и ассетов, чтобы понять, насколько сильно можно менять игру.
+      **3. AI-фреймворк для каждого из вас.** Вместо бесконечных мелких правок руками делаем открытый фреймворк с интеграцией ИИ: каждый сможет поднять свой сервер со своими правилами, балансом — да хоть со своим драконом.
+
+  welcome:
+    translations: { ru: welcome_ru }
+    content: |
+      # 👋 Welcome to {server}
+      Play **Dungeonborne** again — for free. Our launcher signs you in with Discord, installs the mods and connects you to the game.
+
+      ## Start here
+      You accepted the rules when joining — the full text with translations is in {#📜・rules}.
+      **Step 1 →** {#🚀・how-to-play} — four steps to your first raid. Each page ends with a link to the next one.
+
+      ## Where to go
+      - **Chat, memes, groups** → {#💬・chat} · {#🍻・tavern} · {#🤝・lfg}
+      - **Problems** → {#🆘・support} · private matters → {#🎫・tickets}
+      - **Bugs, ideas, balance** → {#🐛・bug-reports} · {#💡・ideas} · {#⚖️・balance}
+      - **Guides and builds** → {#📚・guides} · **trading** → {#💰・trade}
+      - **Voice with your party** → join {#➕・Duo} or {#➕・Trio}, the bot opens a room for you
+
+      ## Other languages
+      Info posts are in English. Chats are split by language: pick **English**, **Русский** or both in **Channels & Roles** at the top of the channel list. Don't see the chats above? That's the fix. Translations of info posts are in the 🌍 thread under each post.
+
+      **Who we are and what we stand for →** {#🏛️・about}
+      -# Fan project, not affiliated with the developers or the publisher of the game.
+  welcome_ru:
+    content: |
+      # 👋 Добро пожаловать на {server}
+      Играй в **Dungeonborne** снова — бесплатно. Наш лаунчер входит через Discord, ставит моды и подключает к игре.
+
+      ## С чего начать
+      Правила ты принял при входе — полный текст и переводы в {#📜・rules}.
+      **Шаг 1 →** {#🚀・how-to-play} — четыре шага до первого рейда. В конце каждой страницы — ссылка на следующую.
+
+      ## Куда идти
+      - **Русский чат, таверна, поиск группы** → категория РУССКИЙ (если её не видно — выбери «Русский» в **«Каналы и роли»**)
+      - **Проблемы** → {#🆘・support} · приватное → {#🎫・tickets}
+      - **Баги, идеи, баланс** → {#🐛・bug-reports} · {#💡・ideas} · {#⚖️・balance} — пиши на русском, ставь тег RU
+      - **Гайды и билды** → {#📚・guides} · **торговля** → {#💰・trade}
+      - **Голос с пати** → зайди в {#➕・Duo} или {#➕・Trio}, бот откроет комнату
+
+      Общий язык сервера — английский.
+
+      **Кто мы и наши принципы →** {#🏛️・about}
+      -# Фан-проект, не связан с разработчиками и издателем игры.
+
+  rules:
+    translations: { ru: rules_ru }
+    content: |
+      # 📜 Rules
+      1. **Be respectful.** No harassment, hate speech or discrimination.
+      2. **No spam.** No flooding, ads or unsolicited DMs.
+      3. **Right channel, right language.** English in shared channels; in a language category, use its language. Forums take any language with a language tag.
+      4. **No cheats or exploits**, no account trading. Found an exploit? Report it privately in {#🎫・tickets}.
+      5. **Launcher only from the [official site](https://www.dungeonborne-community.com/#start).** No .exe files or links to "other launchers".
+      6. **No NSFW**, illegal content, malicious links or files.
+      7. **Follow** the [Discord Terms of Service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines).
+
+      Moderators have the final word.
+
+      **Next →** {#🚀・how-to-play}
+      -# Fan project, not affiliated with the developers or the publisher of the game.
+  rules_ru:
+    content: |
+      # 📜 Правила
+      1. **Уважай других.** Без оскорблений, травли и дискриминации.
+      2. **Без спама.** Без флуда, рекламы и непрошенных ЛС.
+      3. **Свой канал, свой язык.** В общих каналах — английский, в языковой категории — её язык. В форумах — любой язык с тегом языка.
+      4. **Без читов и эксплойтов**, без продажи аккаунтов. Нашёл эксплойт? Сообщи приватно в {#🎫・tickets}.
+      5. **Лаунчер — только с [официального сайта](https://www.dungeonborne-community.com/?lang=ru#start).** Никаких .exe и ссылок на «другие лаунчеры».
+      6. **Без NSFW**, незаконного контента, вредоносных ссылок и файлов.
+      7. **Соблюдай** [Условия использования](https://discord.com/terms) и [Правила сообщества](https://discord.com/guidelines) Discord.
+
+      Последнее слово — за модераторами.
+
+      **Дальше →** {#🚀・how-to-play}
+      -# Это перевод: при расхождении действует английская версия. Фан-проект, не связан с разработчиками и издателем игры.
+
+  how_to_play:
+    translations: { ru: how_to_play_ru }
+    content: |
+      # 🚀 How to play
+      **You need:** Windows 10/11 64-bit · Dungeonborne installed · a Discord account on this server.
+
+      ### 1. Download the launcher
+      Download it from the site: https://www.dungeonborne-community.com/
+      One .exe, no install. Only from the official site.
+      ### 2. Point it to the game folder
+      The launcher checks that the game version matches the server.
+      ### 3. Log in with Discord
+      Your game account is your Discord account. Stay a member of this server, or login stops working.
+      ### 4. Play
+      The launcher installs the mods. Pick an instance tab, vote for party size and map, press **Start** in the game.
+
+      **Next →** something went wrong — {#❓・faq} · all good — say hi in {#💬・chat} or find a party in {#🤝・lfg}
+      -# Playtest: the database may be reset and the server may go down for maintenance. News → {#📢・announcements}, status → {#🌐・server-status}.
+  how_to_play_ru:
+    content: |
+      # 🚀 Как начать
+      **Понадобится:** Windows 10/11 64 бит · установленная Dungeonborne · аккаунт Discord на этом сервере.
+
+      ### 1. Скачай лаунчер
+      Скачай с сайта: https://www.dungeonborne-community.com/
+      Один .exe, без установки. Только с официального сайта.
+      ### 2. Укажи папку игры
+      Лаунчер проверит, что версия игры совпадает с сервером.
+      ### 3. Войди через Discord
+      Аккаунт в игре — это твой Discord. Оставайся на этом сервере, иначе вход перестанет работать.
+      ### 4. Играй
+      Лаунчер поставит моды. Выбери вкладку инстанса, проголосуй за размер группы и карту, нажми **«Старт»** в игре.
+
+      **Дальше →** что-то не так — {#❓・faq} · всё работает — поздоровайся в {#💬・чат} или найди группу в {#🤝・поиск-группы}
+      -# Идёт плейтест: базу могут сбрасывать, а сервер — уходить на техработы. Новости → {#📢・announcements}, статус → {#🌐・server-status}.
+
+  faq:
+    translations: { ru: faq_ru }
+    content: |
+      # ❓ FAQ
+      ### Is it free?
+      Yes. No paid access, no pay-to-win. Donations pay the servers first, then a server reserve, then thank the team. Nothing in the game.
+      ### Is this an official server?
+      No. It's a fan project run by the community, not affiliated with the developers or the publisher.
+      ### What do I need to play?
+      Windows 10/11, Dungeonborne installed and a Discord account on this server. Four steps → {#🚀・how-to-play}
+      ### No Dungeonborne in your Steam library?
+      **Had it before?** It's still in your Steam library: install it from there.
+      **Never had it?** Steam no longer gives it out: <https://drive.google.com/file/d/1_4sjvKpvc6LS3X2aZW5Z9QXvKKRPjevF/view?usp=sharing>.
+      Then point the launcher to the game folder.
+      ### Why do I log in with Discord?
+      Your game account is your Discord account. Leave this server and login stops working.
+      ### Will my progress be reset?
+      It's a playtest: the database may be reset. Resets are announced in {#📢・announcements}.
+      ### Where do I get the framework?
+      On GitHub: <https://github.com/dungeonborne-community/dungeonborne>. It's closed until the core is finished; we'll announce the opening.
+      ### Can I run my own server?
+      Once the framework opens, yes: your own rules, your own balance.
+      ### How do I find a party?
+      Post in {#🤝・lfg} or join {#➕・Duo} / {#➕・Trio}: the bot opens a voice room for you.
+      ### Found a bug or have an idea?
+      {#🐛・bug-reports} with the battle number · {#💡・ideas} · {#⚖️・balance}
+      ### How can I help?
+      Write guides in {#📚・guides}, make videos, help newcomers. Want to be a Helper? Open a ticket in {#🎫・tickets}.
+
+      **Something not working?** See [Help on the site](https://www.dungeonborne-community.com/#help) or ask in {#🆘・support}.
+  faq_ru:
+    content: |
+      # ❓ Частые вопросы
+      ### Это бесплатно?
+      Да. Никакого платного доступа и pay-to-win. Пожертвования сначала оплачивают серверы, сверх этого — резерв серверов, дальше — благодарность команде. В игре они ничего не дают.
+      ### Это официальный сервер?
+      Нет. Это фан-проект сообщества, он не связан с разработчиками и издателем игры.
+      ### Что нужно, чтобы играть?
+      Windows 10/11, установленная Dungeonborne и аккаунт Discord на этом сервере. Четыре шага → {#🚀・how-to-play}
+      ### Нет игры в Steam?
+      **Была раньше?** Она осталась в твоей библиотеке Steam — установи оттуда.
+      **Не было?** Steam её больше не выдаёт: <https://drive.google.com/file/d/1_4sjvKpvc6LS3X2aZW5Z9QXvKKRPjevF/view?usp=sharing>.
+      Потом укажи папку игры в лаунчере.
+      ### Зачем входить через Discord?
+      Аккаунт в игре — это твой Discord. Выйдешь с сервера — вход перестанет работать.
+      ### Прогресс сбросят?
+      Идёт плейтест: базу могут сбрасывать. О сбросах пишем в {#📢・announcements}.
+      ### Где взять фреймворк?
+      На GitHub: <https://github.com/dungeonborne-community/dungeonborne>. Репозиторий закрыт, пока не готово ядро; когда откроется — напишем в {#📢・announcements}.
+      ### Можно поднять свой сервер?
+      Да, когда откроется фреймворк: он для этого и нужен. Свои правила, свой баланс.
+      ### Как найти группу?
+      Напиши в {#🤝・поиск-группы} или зайди в {#➕・Duo} / {#➕・Trio}: бот откроет голосовую комнату.
+      ### Нашёл баг или есть идея?
+      {#🐛・bug-reports} с номером боя · {#💡・ideas} · {#⚖️・balance} — пиши на русском, ставь тег RU
+      ### Как помочь?
+      Пиши гайды в {#📚・guides}, снимай видео, помогай новичкам. Хочешь стать хелпером? Открой тикет в {#🎫・tickets}.
+
+      **Что-то не работает?** Загляни в [«Помощь» на сайте](https://www.dungeonborne-community.com/?lang=ru#help) или спроси в {#🆘・support} (тег RU).
+
+  # Chat hints — in the channel's language, no translations
+  chat_en:
+    pin: true
+    content: |
+      ## 💬 Chat
+      Talk about the game: raids, classes, the season. English here, please — other languages have their own categories. Be nice 🙂
+      - Problem → {#🆘・support} · Bug → {#🐛・bug-reports} · Idea → {#💡・ideas}
+      - Off-topic and memes → {#🍻・tavern} · Looking for a group → {#🤝・lfg}
+  chat_ru:
+    pin: true
+    content: |
+      ## 💬 Русский чат
+      Разговоры про игру: рейды, классы, сезон. Будь вежлив 🙂
+      - Проблема → {#🆘・support} · Баг → {#🐛・bug-reports} · Идея → {#💡・ideas} — с тегом RU
+      - Оффтоп и мемы → {#🍻・таверна} · Поиск группы → {#🤝・поиск-группы}
+  tavern_en:
+    pin: true
+    content: |
+      ## 🍻 Tavern
+      Off-topic, memes, anything that isn't about the game.
+      -# The rules still apply: no politics, no NSFW.
+  tavern_ru:
+    pin: true
+    content: |
+      ## 🍻 Таверна
+      Оффтоп, мемы, всё, что не про игру.
+      -# Правила действуют и тут: без политики и NSFW.
+  lfg_en:
+    pin: true
+    content: |
+      ## 🤝 How to find a group
+      Copy, fill in, post. Reply in the thread under the post.
+      ```
+      Size:  duo / trio
+      Map:   Sinner's End / Clouseau Castle
+      Mode:  Normal / Classic / Hard
+      Class: Priest
+      When:  today 21:00 CET · Voice: yes
+      ```
+      -# Found your party? Join {#➕・Duo} or {#➕・Trio} — the bot opens a room for you.
+  lfg_ru:
+    pin: true
+    content: |
+      ## 🤝 Как найти группу
+      Скопируй, заполни, отправь. Отвечай в ветке под постом.
+      ```
+      Размер:  дуо / трио
+      Карта:   Кончина грешника / Замок Клузо
+      Режим:   обычный / Classic / Hard
+      Класс:   жрец
+      Когда:   сегодня 21:00 МСК · Голос: да
+      ```
+      -# Собрал пати? Заходи в {#➕・Duo} или {#➕・Trio} — бот откроет комнату.
+
+  # Sample posts in forums: instructions as plain text, the example itself as a card (embed), the instruction translation as the next message
+  support_example:
+    pin: true
+    title: "📌 How to get help — example"
+    tags: [EN, Connection, Solved]
+    translations: { ru: support_example_ru }
+    content: |
+      **One problem — one post.** Any language — add its tag, plus a topic tag.
+      ⚠️ Never post your password or payment details; for private matters open a ticket in {#🎫・tickets}.
+
+      Example 👇
+    embeds:
+      - title: "Example: can't connect, \"CURLCode 28\""
+        color: "#E67E22"
+        description: |
+          **What happens:** the launcher shows CURLCode 28 when logging in
+          **Since when:** today, about 18:00 CET
+          **What I tried:** restarted the launcher and the router
+          **Logs:** relay.log and launcher.log attached
+
+          **✅ Solution:** Cloudflare WARP on, launcher restarted. The author adds ✅ Solved.
+  support_example_ru:
+    content: |
+      🇷🇺 **Одна проблема — один пост.** Пиши на русском, поставь тег RU и тег темы.
+      ⚠️ Никогда не пиши пароль и платёжные данные; приватное — через тикет в {#🎫・tickets}.
+  guides_example:
+    pin: true
+    title: "📌 How to post a guide — example"
+    tags: [Priest, Beginner, EN]
+    translations: { ru: guides_example_ru }
+    content: |
+      **One guide or build per post.** Add a class tag, a map tag if it is about a map, and a language tag.
+
+      Example 👇
+    embeds:
+      - title: "Example: Priest for beginners — staying alive in trio"
+        color: "#E0A84A"
+        description: |
+          **Gear:** what to take and what is not worth the risk
+          **Skills and talents:** which ones and why
+          **In the raid:** where to stand, when to heal, when to leave through the blue portal
+          **Video or screenshots:** attached
+  guides_example_ru:
+    content: |
+      🇷🇺 **Один гайд или билд — один пост.** Тег класса, карты (если про карту) и языка — RU.
+  bug_example:
+    pin: true
+    title: "📌 How to report a bug — example"
+    tags: [EN, In progress]
+    translations: { ru: bug_example_ru }
+    content: |
+      **One bug — one post.** Add a language tag. The team sets the status tag.
+
+      Example 👇
+    embeds:
+      - title: "Example: inventory is not saved after the raid"
+        color: "#ED4245"
+        description: |
+          **Battle number** (from the ping line): 48213
+          **Steps:** ① pick up an item ② exit through the blue portal ③ open the stash
+          **Expected:** the item is in the stash · **Actual:** it is gone
+          **Logs:** relay.log, launcher.log
+  bug_example_ru:
+    content: |
+      🇷🇺 **Один баг — один пост.** Тег RU; статус ставит команда. Номер боя из строки пинга, шаги, ожидалось/получилось, relay.log и launcher.log.
+  ideas_example:
+    pin: true
+    title: "📌 How to suggest an idea — example"
+    tags: [EN, Gameplay]
+    translations: { ru: ideas_example_ru }
+    content: |
+      **One idea — one post.** Add a language tag and a category. Vote for ideas you like with 👍.
+
+      Example 👇
+    embeds:
+      - title: "Example: weekly dungeon leaderboard"
+        color: "#F1C40F"
+        description: |
+          **Idea:** a weekly leaderboard for the fastest dungeon clears.
+          **Why:** gives experienced players a goal and a reason to come back every week.
+          **How:** top 10 groups get a cosmetic title; the board resets every Monday.
+  ideas_example_ru:
+    content: |
+      🇷🇺 **Одна идея — один пост.** Тег RU и тег категории. Голосуй за понравившиеся 👍.
+  balance_example:
+    pin: true
+    title: "📌 How to propose a balance change — example"
+    tags: [EN, Classes]
+    translations: { ru: balance_example_ru }
+    content: |
+      **One topic per post.** Say what is off, why you think so, and what exactly to change.
+
+      Example 👇
+    embeds:
+      - title: "Example: Cryomancer slow lasts too long in trio PvP"
+        color: "#3498DB"
+        description: |
+          **What is off:** the slow lasts 4 s and stacks with two Cryomancers
+          **Why:** a trio with two Cryomancers locks melee classes for the whole fight
+          **Proposal:** 3 s, does not stack from different Cryomancers
+  balance_example_ru:
+    content: |
+      🇷🇺 **Одна тема — один пост.** Тег RU. Что не так, почему ты так считаешь и что именно изменить.
+  content_example:
+    pin: true
+    title: "📌 How to share your content — example"
+    tags: [Video, EN]
+    translations: { ru: content_example_ru }
+    content: |
+      **One post — one video, clip, stream or guide.** Type tag + language tag. One new post per 6 hours.
+      Make content regularly? Apply via {#🎫・tickets} — creators announce their streams and videos in {#🔴・live-now}.
+
+      Example 👇
+    embeds:
+      - title: "Example: Solo dungeon run — full guide for beginners"
+        color: "#E91E63"
+        description: |
+          **What:** a 15-minute guide: route, loot, boss tips
+          **Link:** https://youtube.com/… (Discord shows the preview by itself)
+          **Language:** EN, RU subtitles
+  content_example_ru:
+    content: |
+      🇷🇺 **Один пост — одно видео, клип, стрим или гайд.** Тег типа и RU. Новый пост — раз в 6 часов.
+      Регулярно делаешь контент? Заявка через {#🎫・tickets} — авторы анонсируют стримы и видео в {#🔴・live-now}.
+
+  creator_hub:
+    pin: true
+    translations: { ru: creator_hub_ru }
+    content: |
+      ## 🎬 Creator hub
+      - Going live or posted a video? Use the buttons on the panel below — the announcement goes to {#🔴・live-now}.
+      - News may appear here **before** release. It stays under embargo until the official post in {#📢・announcements}.
+      - Materials for your videos: {#📦・press-kit}.
+  creator_hub_ru:
+    content: |
+      ## 🎬 Для авторов
+      - Начал стрим или выложил видео? Кнопки на панели ниже — анонс уйдёт в {#🔴・live-now}.
+      - Новости могут появляться здесь **до** релиза. Они под эмбарго до официального поста в {#📢・announcements}.
+      - Материалы для роликов: {#📦・press-kit}.
+  press_kit:
+    content: |
+      ## 📦 Press kit
+      - 🖼 Logos: TODO
+      - 🎞 Trailer: TODO
+      - 📸 Screenshots: TODO
+      - 📋 Brand rules: TODO
+  playtest:
+    translations: { ru: playtest_ru }
+    content: |
+      # 🧪 Playtest
+      Closed tests run on a separate game server: add it in the launcher with **Add server**. The address and the build are in each test announcement here.
+      - **Embargo:** what we test stays in this category until release. Leaks → the role is removed.
+      - **Rotation:** two tests without taking part → the role is removed, so the group stays active.
+      - **Bugs** → {#🐞・test-bugs} with the battle number and logs.
+  playtest_ru:
+    content: |
+      # 🧪 Плейтест
+      Закрытые тесты идут на отдельном сервере игры: добавь его в лаунчере кнопкой **«Добавить сервер»**. Адрес и сборка — в анонсе каждого теста здесь.
+      - **Эмбарго:** всё, что тестируем, остаётся в этой категории до релиза. Слив → роль снимается.
+      - **Ротация:** два теста без участия → роль снимается, чтобы группа оставалась живой.
+      - **Баги** → {#🐞・test-bugs} с номером боя и логами.
+  helpers:
+    pin: true
+    translations: { ru: helpers_ru }
+    content: |
+      ## 🛟 Helpers
+      - **You do:** answer in {#🆘・support}, add ✅ Solved when the author confirms, move chat questions to the forum, mark duplicate bugs, ask for the battle number and logs.
+      - **You don't:** bans, timeouts, deleting other people's messages — call {@Mod EN} / {@Mod RU}.
+      - **Tone:** short, friendly, one step at a time. Not sure? Ask here first.
+  helpers_ru:
+    content: |
+      ## 🛟 Хелперы
+      - **Ты делаешь:** отвечаешь в {#🆘・support}, ставишь ✅ Solved, когда автор подтвердил, переносишь вопросы из чатов в форум, помечаешь дубли багов, просишь номер боя и логи.
+      - **Ты не делаешь:** баны, тайм-ауты, удаление чужих сообщений — зови {@Mod EN} / {@Mod RU}.
+      - **Тон:** коротко, дружелюбно, по шагу за раз. Не уверен — сначала спроси здесь.
+
+  # ── 📘・handbook: team forum. Post = topic; English is the post, Russian is the next message in it.
+  hb_start:
+    pin: true
+    title: "📌 Start here: how this forum works"
+    tags: [Start here]
+    translations: { ru: hb_start_ru }
+    content: |
+      # 📘 Team handbook
+      Everything the team needs to run Dungeonborne Community: one post per topic, find them by tag.
+      Helpers can read and discuss in posts; new posts are made by moderators.
+
+      ## Golden rules
+      1. **The config is the source of truth.** Channels, permissions and info texts live in `server.yaml`; manual edits in Discord get rolled back.
+      2. **Test first.** Every change goes to the test server first, then plan → owner's OK → production.
+      3. **One ping per post**, a subscription role. `@everyone` only for a wipe, a long outage or a security threat.
+      4. **AI drafts, people publish.** See "Publishing" and "AI prompts".
+      5. **Private stays private**: logs, nicknames, openid, tickets and playtest news don't go to open channels.
+
+      Topics: Server map · Roles · Languages · Moderation · Helpers · Publishing · Writing style · Bot · Config · AI prompts · To do
+  hb_start_ru:
+    content: |
+      # 📘 Handbook команды
+      Всё, что нужно команде, чтобы вести Dungeonborne Community: по посту на тему, ищи по тегам.
+      Хелперы читают и обсуждают в постах; новые посты создают модераторы.
+
+      ## Главные правила
+      1. **Конфиг — источник правды.** Каналы, права и тексты инфо-каналов — в `server.yaml`; ручные правки в Discord откатятся.
+      2. **Сначала тест.** Любое изменение — на тестовом сервере, потом план → «да» владельца → боевой.
+      3. **Один пинг на пост**, роль-подписка. `@everyone` — только вайп, долгое падение или угроза безопасности.
+      4. **ИИ пишет черновик, публикует человек.** См. «Publishing» и «AI prompts».
+      5. **Приватное остаётся приватным**: логи, ники, openid, тикеты и новости плейтеста — не в открытые каналы.
+
+  hb_map:
+    title: "🗺️ Server map"
+    tags: [Guide]
+    translations: { ru: hb_map_ru }
+    content: |
+      Newcomer path: onboarding → rules screening → {#👋・welcome} → {#🚀・how-to-play} → the game.
+
+      - **📌 START** — welcome, rules, how-to-play, faq, about · everyone
+      - **📢 NEWS** — announcements, patch-notes, server-status · everyone reads, the team writes
+      - **🆘 HELP** — guides forum, support forum, tickets · everyone
+      - **ENGLISH** — chat, tavern, lfg, Tavern voice · EN role (onboarding: English)
+      - **РУССКИЙ** — чат, таверна, поиск-группы, voice · RU role
+      - **📣 FEEDBACK** — bug-reports, ideas, balance forums · everyone, language tag
+      - **🎥 MEDIA** — media (images and GIFs only), content forum, live-now, Dev Talks · everyone; creator-hub and press-kit · 🎬 Creator
+      - **🔊 VOICE** — ➕ Duo, ➕ Trio: join and the bot opens a room for 2 or 3
+      - **🧪 PLAYTEST** — closed tests under embargo · 🧪 Tester
+      - **🛡️ TEAM** — mod-chat, mod-log, helpers, this handbook · team (+ Helper where noted)
+      - **🗄️ ARCHIVE** — old channels, read-only · team
+  hb_map_ru:
+    content: |
+      Путь новичка: адаптация → правила при входе → {#👋・welcome} → {#🚀・how-to-play} → игра.
+
+      - **📌 START** — welcome, rules, how-to-play, faq, about · все
+      - **📢 NEWS** — announcements, patch-notes, server-status · читают все, пишет команда
+      - **🆘 HELP** — форум guides, форум support, tickets · все
+      - **ENGLISH** — chat, tavern, lfg, войс Tavern · роль EN (адаптация: English)
+      - **РУССКИЙ** — чат, таверна, поиск-группы, войс · роль RU
+      - **📣 FEEDBACK** — форумы bug-reports, ideas, balance · все, тег языка
+      - **🎥 MEDIA** — media (только картинки и GIF), форум content, live-now, Dev Talks · все; creator-hub и press-kit · 🎬 Creator
+      - **🔊 VOICE** — ➕ Duo, ➕ Trio: зашёл — бот создал комнату на 2 или 3
+      - **🧪 PLAYTEST** — закрытые тесты под эмбарго · 🧪 Tester
+      - **🛡️ TEAM** — mod-chat, mod-log, helpers, этот handbook · команда (+ Helper, где указано)
+      - **🗄️ ARCHIVE** — старые каналы, только чтение · команда
+
+  hb_roles:
+    title: "🎭 Roles"
+    tags: [Guide]
+    translations: { ru: hb_roles_ru }
+    content: |
+      **Team** (given by the owner)
+      - **Lead Moderator** — administrator: everything on the server
+      - **Mod EN, Mod RU** — ban, kick, timeout, delete, threads, voice, events, `/announce`
+      - **RU Community Manager** — runs the РУССКИЙ category: delete and pin messages, threads, mute and move in voice, own news in 📢・анонсы. No powers outside the category. The bot-kept copies (welcome, rules, how-to-play, about) are changed in `server.yaml` only
+      - **Helper** — forum threads (Solved, duplicates), Move to support, `/faq` in channel, {#🛟・helpers}
+
+      **Status** (on request)
+      - **🎬 Creator** — creator application in {#🎫・tickets} → `/creator add`
+      - **🧪 Tester** — given by the team; two tests without taking part → removed
+
+      **Self-chosen** (onboarding or Channels & Roles)
+      - **EN** — opens the ENGLISH category
+      - **RU** — opens the РУССКИЙ category
+      - **8 classes** — Fighter, Rogue, Priest, Pyromancer, Swordmaster, Druid, Death Knight, Cryomancer
+      - **🔔 Patch notes, 🔔 Events, 🔔 Streams** — subscriptions instead of `@everyone`
+
+      New roles are added in `server.yaml` first. On production never delete **Banned**: the backend uses it to block game login.
+  hb_roles_ru:
+    content: |
+      **Команда** (выдаёт владелец)
+      - **Lead Moderator** — администратор: всё на сервере
+      - **Mod EN, Mod RU** — бан, кик, тайм-аут, удаление, ветки, войсы, ивенты, `/announce`
+      - **RU Community Manager** — ведёт категорию РУССКИЙ: удаляет и закрепляет сообщения, ветки, мут и перенос в голосовых, свои новости в 📢・анонсы. Вне категории прав нет. Копии от бота (welcome, rules, how-to-play, about) правятся только в `server.yaml`
+      - **Helper** — ветки форумов («Решено», дубли), Move to support, `/faq` в канал, {#🛟・helpers}
+
+      **Статусы** (по заявке)
+      - **🎬 Creator** — заявка автора в {#🎫・tickets} → `/creator add`
+      - **🧪 Tester** — выдаёт команда; два теста без участия — роль снимается
+
+      **Сами** (адаптация или «Каналы и роли»)
+      - **EN** — открывает категорию ENGLISH
+      - **RU** — открывает категорию РУССКИЙ
+      - **8 классов** — Fighter, Rogue, Priest, Pyromancer, Swordmaster, Druid, Death Knight, Cryomancer
+      - **🔔 Patch notes, 🔔 Events, 🔔 Streams** — подписки вместо `@everyone`
+
+      Новые роли — сначала в `server.yaml`. На боевом сервере никогда не удалять **Banned**: по ней бэкенд не пускает в игру.
+
+  hb_lang:
+    title: "🌍 Languages and translations"
+    tags: [Guide]
+    translations: { ru: hb_lang_ru }
+    content: |
+      English is the server language; Russian is the first opt-in language, others are added the same way.
+      - **Info posts** (welcome, rules, how-to-play, faq, about, news, patch notes) are in English. Under each: a 🌍 thread with translations, a link and a language button — the bot shows the translation only to whoever clicks.
+      - **Chat**: ENGLISH for those who picked English (EN role), РУССКИЙ for those who picked Russian (RU role). Both are hidden without the role, so Discord doesn't push them as channel suggestions. In a language category, write in its language.
+      - **Language category** (РУССКИЙ) is run by its **community manager** (RU Community Manager: messages, threads, voice there). It also holds bot-kept copies of welcome, rules, how-to-play, about — change them in `server.yaml`, not by hand. 📢・анонсы gets every post from 📢・announcements in Russian, no ping; deleting the original deletes the copy. The manager may post Russian-only news there.
+      - **Polls** — a separate poll in each language channel, right under the post: English in 📢・announcements, Russian in 📢・анонсы. `/announce` doesn't make polls: post them by hand (+ → Create poll) and add up the results.
+      - **Forums** (support, bugs, ideas, balance, guides) are shared: any language with a language tag.
+      - **Any message**: right-click → Apps → Translate (DeepL, private).
+
+      **Adding a language:** add it at the end of `languages` in `server.yaml` and `bot.toml` → add translations to info messages → optionally a category with copies, a manager role (`category`, `manager`, `channels` in `languages`), `mirror` in `[announce]` and an onboarding option → run the script.
+  hb_lang_ru:
+    content: |
+      Общий язык — английский; русский — первый язык по выбору, остальные добавляются так же.
+      - **Инфо-посты** (welcome, rules, how-to-play, faq, about, новости, патчноуты) — на английском. Под каждым: ветка 🌍 с переводами, ссылка и кнопка языка — бот показывает перевод только нажавшему.
+      - **Общение**: ENGLISH — для выбравших English (роль EN), РУССКИЙ — для выбравших русский (роль RU). Без роли категорий не видно, поэтому Discord не подсовывает их в рекомендации каналов. В языковой категории пишем на её языке.
+      - **Языковую категорию** (РУССКИЙ) ведёт **комьюнити-менеджер** языка (RU Community Manager: сообщения, ветки, голосовые — там). В ней же копии welcome, rules, how-to-play, about, которые держит бот: править их — в `server.yaml`, не руками. В 📢・анонсы бот кладёт каждый пост из 📢・announcements на русском, без пинга; удалили оригинал — удалится и копия. Менеджер может писать туда и свои новости только для русских.
+      - **Опросы** — отдельный опрос в каждом языковом канале, сразу под постом: английский в 📢・announcements, русский в 📢・анонсы. `/announce` опросы не делает: их ставят руками (+ → Создать опрос), итог — сумма.
+      - **Форумы** (support, баги, идеи, баланс, гайды) — общие: любой язык с тегом языка.
+      - **Любое сообщение**: ПКМ → Приложения → Translate (DeepL, видит только нажавший).
+
+      **Новый язык:** добавить в конец `languages` в `server.yaml` и `bot.toml` → дописать переводы инфо-сообщений → по желанию категория с копиями и роль менеджера (`category`, `manager`, `channels` в `languages`), `mirror` в `[announce]` и вариант в адаптации → запустить скрипт.
+
+  hb_mod:
+    title: "🛡️ Moderation"
+    tags: [Moderation]
+    translations: { ru: hb_mod_ru }
+    content: |
+      **AutoMod** (staff are not checked; every hit goes to {#📋・mod-log})
+      - Mention spam — block, log, 10 min timeout
+      - Spam — block, log
+      - Slurs and sexual content — block, log
+      - Scam: free Nitro, fake Steam/Discord, "free crypto/skins" — block, log, 1 h timeout
+      - Executables and foreign invites — block, log
+      - Impersonation in names (admin, moderator, support…) — can't talk until the nickname changes
+
+      **{#📋・mod-log}**: deleted and edited messages, joins and leaves (with the invite used), bans, timeouts, AutoMod, ticket transcripts, Discord raid alerts.
+
+      **Tickets**: button in {#🎫・tickets} → form → private thread with the right role (EN → Mod EN, RU → Mod RU, creator and helper applications → both). One open ticket per person; the author or a mod closes it with 🔒, the transcript goes to mod-log.
+
+      **{#🖼️・media}**: the bot deletes anything that isn't an image or GIF and shows a hint for 10 s.
+
+      **Warnings**: one calm line with the rule number; arguments go to a ticket. Exploits and player reports only via tickets. A Discord ban also blocks the game launcher.
+  hb_mod_ru:
+    content: |
+      **AutoMod** (команду не проверяет; каждое срабатывание — в {#📋・mod-log})
+      - Mention spam — блок, лог, тайм-аут 10 мин
+      - Spam — блок, лог
+      - Slurs and sexual content — блок, лог
+      - Скам: free Nitro, поддельные Steam/Discord, «free crypto/скины» — блок, лог, тайм-аут 1 ч
+      - Исполняемые файлы и чужие приглашения — блок, лог
+      - Самозванцы в никах (admin, moderator, поддержка…) — не может писать, пока не сменит ник
+
+      **{#📋・mod-log}**: удалённые и изменённые сообщения, входы и выходы (с приглашением), баны, тайм-ауты, AutoMod, расшифровки тикетов, оповещения Discord о рейдах.
+
+      **Тикеты**: кнопка в {#🎫・tickets} → форма → приватная ветка с нужной ролью (EN → Mod EN, RU → Mod RU, заявки автора и хелпера → обе). Один открытый тикет на человека; закрывает автор или модератор кнопкой 🔒, расшифровка — в mod-log.
+
+      **{#🖼️・media}**: бот удаляет всё, что не картинка и не GIF, и на 10 с показывает подсказку.
+
+      **Предупреждения**: одна спокойная строка с номером правила; споры — в тикет. Эксплойты и жалобы на игроков — только тикетом. Бан в Discord закрывает и вход в игру.
+
+  hb_helpers:
+    title: "🛟 Helpers"
+    tags: [Helpers]
+    translations: { ru: hb_helpers_ru }
+    content: |
+      A helper answers questions and keeps the forums tidy so moderators can focus on violations. Punishments are not a helper's job.
+
+      - **Move to support** — right-click a chat message → Apps → Move to support: the question becomes a post in {#🆘・support} with a quote and a language tag; the author gets a link.
+      - **`/faq`** — `/faq topic:` + start of the question, `user:` to address someone; answers in the channel's language or `language:`.
+      - **Tags** — ✅ Solved in support once the author confirms; bug and idea statuses are set by the team.
+      - **Duplicates** — link the original post and close the thread.
+      - **{#🛟・helpers}** — ask when unsure, call a moderator.
+
+      A bug report always needs the battle number (from the ping line in game), steps, expected vs actual, `relay.log` and `launcher.log`. Tone: short, friendly, one step at a time.
+
+      **Becoming a helper:** "Become a Helper" form in {#🎫・tickets} → moderators decide in the thread and give the role.
+  hb_helpers_ru:
+    content: |
+      Хелпер отвечает на вопросы и держит порядок в форумах, чтобы модераторам оставались нарушения. Наказания — не его задача.
+
+      - **Move to support** — ПКМ по сообщению в чате → Приложения → Move to support: вопрос становится постом в {#🆘・support} с цитатой и тегом языка; автор получает ссылку.
+      - **`/faq`** — `/faq topic:` + начало вопроса, `user:` — кому ответить; язык — по каналу или `language:`.
+      - **Теги** — ✅ Solved в support, когда автор подтвердил; статусы багов и идей ставит команда.
+      - **Дубли** — ссылка на исходный пост и закрыть ветку.
+      - **{#🛟・helpers}** — спросить, если не уверен, позвать модератора.
+
+      В баг-репорте всегда нужны номер боя (строка пинга в игре), шаги, «ожидалось / получилось», `relay.log` и `launcher.log`. Тон: коротко, дружелюбно, по шагу за раз.
+
+      **Как стать хелпером:** анкета «Become a Helper» в {#🎫・tickets} → модераторы решают в ветке и выдают роль.
+
+  hb_publish:
+    title: "📢 Publishing: who posts what"
+    tags: [Rules]
+    translations: { ru: hb_publish_ru }
+    content: |
+      **Moderators** — events, maintenance, reminders and test posts via `/announce` only, checked by a second person. No dates or features the developer hasn't confirmed; nothing from PLAYTEST or creator-hub before release. Info channel texts are not edited by hand — ask an admin.
+
+      **Admins** — releases, wipes, plans, rule changes; `@everyone` only for a wipe, an outage over a day or a security threat. Patch notes only in `patch_notes.toml` with `[update.lang.en]`: the launcher, the site and Discord take them from there. Info texts in `server.yaml`, test server first. Approve AI drafts.
+
+      **AI** — drafts only; a person publishes via `/announce` or an admin's explicit OK on that exact text. The bot posts by itself only from fixed sources (patch notes, status, creator announcements, player bug reports). No invented facts, no pings, no moderation, no logs or personal data. AI translations of info posts are checked by a native speaker.
+
+      **Every post**: headline = what happened · time as `<t:UNIX:F>` · English + translation in the form · one subscription ping · up to ~1500 characters · fixes as an edit with `-# Upd: …`, never delete and repost · discussion → {#💬・chat}.
+  hb_publish_ru:
+    content: |
+      **Модераторы** — ивенты, техработы, напоминания и посты тестов только через `/announce`, с вычиткой вторым человеком. Без дат и функций, которые не подтвердил разработчик; ничего из PLAYTEST и creator-hub до релиза. Тексты инфо-каналов руками не правим — просим администратора.
+
+      **Администраторы** — релизы, вайпы, планы, изменения правил; `@everyone` — только вайп, падение дольше суток или угроза безопасности. Список изменений — только в `patch_notes.toml` с `[update.lang.en]`: лаунчер, сайт и Discord берут его оттуда. Инфо-тексты — в `server.yaml`, сначала тестовый сервер. Утверждают черновики ИИ.
+
+      **ИИ** — только черновики; публикует человек через `/announce` или по явному «да» администратора на этот текст. Сам бот публикует только из заданных источников (патчноуты, статус, анонсы авторов, баг-репорты игроков). Без выдуманных фактов, пингов, модерации, логов и личных данных. ИИ-перевод инфо-постов вычитывает носитель языка.
+
+      **Любой пост**: заголовок = что случилось · время меткой `<t:UNIX:F>` · английский + перевод в форме · один пинг подписки · до ~1500 символов · исправление — правкой с `-# Upd: …`, не удалять и не публиковать заново · обсуждение → {#💬・chat}.
+
+  hb_bot:
+    title: "🤖 Bot: commands and automation"
+    tags: [Bot]
+    translations: { ru: hb_bot_ru }
+    content: |
+      - `/announce` · moderators — form → preview → post with translation, ping and crossposting
+      - `/faq` · everyone (in channel: helpers and mods) — answer with a FAQ section
+      - **Move to support** (message menu) · helpers, mods — chat question → help forum post
+      - **Translate** (message menu) · everyone — private DeepL translation
+      - **Language buttons** under posts · everyone — human translation from the 🌍 thread, private
+      - `/ticketpanel`, `/rolepanel`, `/creator panel` · admins — publish button panels
+      - `/creator add · remove · list` · mods — 🎬 Creator role
+      - `/giveaway start · end · reroll` · mods — giveaways
+      - `/invites` · mods — who invited whom and who stayed
+      - `/embed` · admins — a card message from the bot
+      - **Delete later** (message menu) · mods — delete a message (and its thread) after 30m, 12h, 7d
+      - `/event create · close · list` · mods — event + temporary category from a template; archives itself
+      - `/poll` · mods — native Discord poll: question, answers one per line, hours, multiselect
+      - `/slowmode seconds [for]` · mods — slow mode; with `for` (30m, 2h) it reverts itself
+      - `/emojimode on · off [user] [for]` · mods — emoji-only channel, or one `user` everywhere
+      - `/fund add·goal·close·thank` · admins — funding sums, goals · `/supporter show·hide` · 💜 Supporter — thank-you list
+      - `/room lock · unlock · limit · name · kick · owner` · room owner, mods — manage your Duo/Trio room
+
+      **Automation**: greeting after the rules in {#💬・chat} (and {#💬・чат} for RU) · Duo/Trio voice rooms · patch notes and server status · funding bar in 🌐・server-status · media filter · mod-log · invite tracker · bug reports from the launcher and the game (enabled once the backend is deployed).
+
+      The bot runs on the same VM as the backend. Only one bot process per database: a second one won't start.
+  hb_bot_ru:
+    content: |
+      - `/announce` · модераторы — форма → предпросмотр → пост с переводом, пингом и рассылкой
+      - `/faq` · все (в канал — хелперы и модераторы) — ответ разделом FAQ
+      - **Move to support** (меню сообщения) · хелперы, модераторы — вопрос из чата → пост в help
+      - **Translate** (меню сообщения) · все — перевод DeepL только для себя
+      - **Кнопки языков** под постами · все — человеческий перевод из ветки 🌍, только для себя
+      - `/ticketpanel`, `/rolepanel`, `/creator panel` · админы — опубликовать панели с кнопками
+      - `/creator add · remove · list` · модераторы — роль 🎬 Creator
+      - `/giveaway start · end · reroll` · модераторы — розыгрыши
+      - `/invites` · модераторы — кто кого привёл и кто остался
+      - `/embed` · админы — карточка от имени бота
+      - **Delete later** (меню сообщения) · модераторы — удалить сообщение (и его ветку) через 30m, 12h, 7d
+      - `/event create · close · list` · модераторы — мероприятие Discord + временная категория по шаблону (tournament, playtest, stream); в конце сама уходит в архив
+      - `/poll` · модераторы — нативный опрос Discord: вопрос, варианты по строке (можно с эмодзи в начале), часы, несколько ответов
+      - `/slowmode seconds [for]` · модераторы — медленный режим; с `for` (30m, 2h) вернётся сам
+      - `/emojimode on · off [user] [for]` · модераторы — только эмодзи в канале (команду не трогает) или, с `user`, одному участнику везде
+      - `/fund …` · админы — сбор на серверы · `/supporter show·hide` — список благодарностей
+      - `/room lock · unlock · limit · name · kick · owner` · владелец комнаты, модераторы — управлять комнатой Duo/Trio
+
+      **Автоматика**: приветствие после правил в {#💬・chat} (и в {#💬・чат} для RU) · комнаты Duo/Trio · патчноуты и статус сервера · полоска сбора в 🌐・server-status · фильтр media · mod-log · трекер приглашений · баг-репорты из лаунчера и игры (включатся после выкладки бэкенда).
+
+      Бот работает на той же VM, что и бэкенд. На одной базе — только один процесс бота: второй не запустится.
+
+  hb_config:
+    title: "⚙️ Config and scripts (admins)"
+    tags: [Config]
+    translations: { ru: hb_config_ru }
+    content: |
+      - `server.yaml` — categories, channels, permissions, roles, onboarding, rules screening, AutoMod, server settings, info texts and translations
+      - `setup_server.py` — brings the server to `server.yaml`; without `--apply` it only shows the plan
+      - `audit.py` — read-only dump: roles, channels, permissions, activity
+      - `bot/bot.toml` — bot modules; no section = module off
+      - `server-guide.md` — Server Guide texts (set by hand)
+      - `docs/bug-report-api.md` — bug report contract: launcher → backend → bot
+
+      **Changing the server**
+      1. Edit `server.yaml`. Renames via `was:` (old name), or you get a duplicate. Old channels go to `archive:`, not deleted.
+      2. `python setup_server.py` — check the plan changes only what you meant.
+      3. `python setup_server.py --apply`. Changed texts are edited in place; translation threads and buttons stay.
+      4. After editing `bot.toml`, restart the bot.
+
+      **Production**: fresh `audit.py` and plan, then the owner's OK. Everything new is tested on the test server first.
+
+      Discord doesn't let bots do these: Server Guide, the legacy "Block Mention Spam" AutoMod rule, 2FA for moderators — by hand.
+  hb_config_ru:
+    content: |
+      - `server.yaml` — категории, каналы, права, роли, адаптация, правила при входе, AutoMod, настройки сервера, инфо-тексты и переводы
+      - `setup_server.py` — приводит сервер к `server.yaml`; без `--apply` только показывает план
+      - `audit.py` — выгрузка только для чтения: роли, каналы, права, активность
+      - `bot/bot.toml` — модули бота; нет секции — модуль выключен
+      - `server-guide.md` — тексты путеводителя (заполняется руками)
+      - `docs/bug-report-api.md` — контракт баг-репортов: лаунчер → бэкенд → бот
+
+      **Как менять сервер**
+      1. Правка в `server.yaml`. Переименование — через `was:` (старое имя), иначе появится дубль. Старые каналы — в `archive:`, не удалять.
+      2. `python setup_server.py` — проверить, что меняется только задуманное.
+      3. `python setup_server.py --apply`. Изменившиеся тексты правятся на месте, ветки и кнопки переводов сохраняются.
+      4. После правки `bot.toml` — перезапустить бота.
+
+      **Боевой сервер**: свежий `audit.py` и план, затем «да» владельца. Всё новое — сначала на тестовом сервере.
+
+      Это Discord ботам не даёт: путеводитель, старое правило AutoMod «Block Mention Spam», 2FA для модераторов — руками.
+
+  hb_prompts_posts:
+    title: "✨ AI prompts: posts"
+    tags: [AI prompts]
+    translations: { ru: hb_prompts_posts_ru }
+    content: |
+      Copy, fill in `<…>`, then run the review prompt. AI drafts, a person publishes.
+
+      **Announcement**
+      ```
+      Write an announcement for the Dungeonborne Community Discord (a fan community server). Channel: <announcements | test-announcements>.
+      Facts (add nothing else; ask if something is missing): <what, when with date, time and timezone, what players should do>.
+      Discord markdown: "# headline = what happened", 1–2 sentences, "## What it means for you", "## What to do", last line "-# Discuss → {#💬・chat}".
+      Times only as <t:UNIX:F> and <t:UNIX:R> — show how you computed UNIX. Channel links like {#🚀・how-to-play}. Up to 1500 characters, no @everyone, no pings.
+      Give two blocks: ENGLISH (the post) and RUSSIAN (natural, not word-for-word).
+      ```
+      **Patch notes entry**
+      ```
+      Write a patch_notes.toml entry for the Dungeonborne server from: <commits or release notes>. Invent nothing.
+      [[update]] with version, date (YYYY-MM-DD), title and new / fixed / balance in Russian, then [update.lang.en] with the same fields in English.
+      Plain player-facing text, no internal names, hashes or markdown. List anything not deployed or not verified separately after the entry.
+      ```
+      **Review** — see the next post.
+  hb_prompts_posts_ru:
+    content: |
+      Скопируй, заполни `<…>`, потом прогони запрос проверки. ИИ пишет черновик, публикует человек.
+
+      **Анонс** — запрос на английском выше: ИИ отдаст два блока, ENGLISH для поста и RUSSIAN для поля перевода в `/announce`.
+      **Запись списка изменений** — запрос выше; результат вставить в начало `seasons/<сезон>/patch_notes.toml`.
+      Запросы можно писать и по-русски — смысл тот же: только данные факты, метки времени, без пингов, два языка.
+
+  hb_prompts_support:
+    title: "✨ AI prompts: support, moderation, review"
+    tags: [AI prompts]
+    translations: { ru: hb_prompts_support_ru }
+    content: |
+      **Answer a player in help** (helpers)
+      ```
+      Help me answer a player in the Dungeonborne Community support forum. Question: <paste>. Reply in: <player's language>.
+      Use only this FAQ / how-to-play section: <paste>. Short, friendly, 1–3 steps. If the cause is unclear, ask for the battle number from the ping line, relay.log and launcher.log.
+      No promises or dates. Never ask for passwords or payment details; private matters go to a ticket.
+      ```
+      **Warning in chat** (moderators)
+      ```
+      Write a Discord chat warning in <channel language>. What happened: <description>. Rule #<n>: <rule text>.
+      One calm line, no judgement of the person: what's wrong, the rule number, where to post instead. No threats or sarcasm; disputes go to a ticket.
+      ```
+      **Translate an info post**
+      ```
+      Translate this Dungeonborne Community Discord text from <English> to <language>. Keep markdown (#, ##, -#, lists, bold), {#channel} and {@role} links, <t:…> timestamps, game names as in the game's localization. Natural player tone; add or drop nothing; under 2000 characters. Text: <paste>
+      ```
+      **Review a draft**
+      ```
+      Review this draft against the rules and list problems, don't rewrite: 1) facts, dates or numbers not in the source <paste>; 2) times as <t:…> with correct UNIX; 3) headline says what happened, there's a "what to do"; 4) ≤1500 characters, no @everyone, no personal data or closed-channel info; 5) English and translation say the same. Draft: <paste>
+      ```
+  hb_prompts_support_ru:
+    content: |
+      Запросы выше на английском, но их можно давать ИИ и по-русски.
+      - **Ответ игроку** — для хелперов: только по FAQ, 1–3 шага, при неясной причине просить номер боя и логи, без обещаний и сроков, без паролей.
+      - **Предупреждение** — для модераторов: одна спокойная строка, номер правила, куда писать вместо этого.
+      - **Перевод** — сохранить markdown, ссылки, метки времени и игровые названия.
+      - **Проверка черновика** — ИИ возвращает список проблем по 5 пунктам, а не новый текст.
+      Правка инфо-текстов (`server.yaml`) — в посте «Config and scripts».
+
+  hb_todo:
+    title: "🧾 To do and manual settings"
+    tags: [To do]
+    translations: { ru: hb_todo_ru }
+    content: |
+      **By hand (bots can't)**
+      - Server Guide — texts in `server-guide.md`
+      - AutoMod "Block Mention Spam": limit 6, raid protection, block, alert to mod-log, 10 min timeout
+      - 2FA for moderators — only the owner with 2FA enabled
+      - Production bot: Server Members and Message Content intents in the Developer Portal
+
+      **Needs a decision or text**
+      - "Team" and "Plans" on the site
+      - Boosty and Patreon links
+      - Who gets Lead Moderator
+
+      **Not done yet**
+      - Production server migration: audit, plan, production `bot.toml`, bot on the VM, server status fix, invites per source; give EN to current members before ENGLISH is locked
+      - Bug reports end to end: backend on the VM → enable the bot module; in-game "Support" button pack
+      - FAQ from the site's Help as the single source
+      - Discord link on the site and in the launcher; online widget on the site
+      - `/profile` and Linked Roles, the framework's own Discord
+  hb_todo_ru:
+    content: |
+      **Руками (боты не могут)**
+      - Путеводитель — тексты в `server-guide.md`
+      - AutoMod «Block Mention Spam»: лимит 6, защита от рейдов, блок, уведомление в mod-log, тайм-аут 10 мин
+      - 2FA для модераторов — только владелец с включённой 2FA
+      - Боевой бот: права Server Members и Message Content в Developer Portal
+
+      **Нужно решение или текст**
+      - «Команда» и «Планы» на сайте
+      - Ссылки на Boosty и Patreon
+      - Кто получает Lead Moderator
+
+      **Ещё не сделано**
+      - Переезд боевого сервера: аудит, план, боевой `bot.toml`, бот на VM, починка статуса, приглашения по источникам; выдать EN текущим участникам до закрытия ENGLISH
+      - Баг-репорт целиком: бэкенд на VM → включить модуль бота; пак на кнопку «Поддержка» в игре
+      - FAQ из «Помощи» сайта как единый источник
+      - Ссылка на Discord на сайте и в лаунчере; виджет онлайна на сайте
+      - `/profile` и Linked Roles, отдельный Discord фреймворка
+
+
+  hb_style:
+    title: "✍️ Writing style"
+    tags: [Rules]
+    translations: { ru: hb_style_ru }
+    content: |
+      We write as a player talking to players: short, concrete, friendly. Russian uses informal «ты», like the site.
+
+      - **Voice** — no corporate or marketing phrasing: "We are pleased to announce the release of the update" → "The update is out". English in plain words: many readers aren't native.
+      - **Order** — most important first, details after. One idea per sentence. A list when there are 3+ items.
+      - **Discord markdown** — `#` only for the headline of an info post or announcement, `##` for sections, `-#` for footnotes. **Bold** for key words, not whole sentences. One emoji in a headline, not in every line.
+      - **Time and numbers** — times as `<t:UNIX:F>`, digits instead of words, units with a space: `3 min`, `10 000 gold`.
+      - **Channels** — as links, not words. Channel names: `emoji・name`, lowercase.
+      - **We don't write** — promises without a date from the developer; "soon" without context; sarcasm about players; comparisons with the official servers or the developers.
+
+      **Glossary** — the same thing always has the same name:
+      - Fighter · Rogue · Priest · Pyromancer · Swordmaster · Druid · Death Knight · Cryomancer
+      - Sinner's End · Clouseau Castle · Normal · Classic · Hard
+      - launcher · instance · raid · season · playtest · wipe · battle number · ping line · battle bypass
+      - stash · blue portal · relic · auction · ticket · helper · creator
+
+      Russian names are in the translation below. A new term goes into the glossary first, then into the base prompt.
+  hb_style_ru:
+    content: |
+      Пишем как игрок для игроков: коротко, по делу, дружелюбно. По-русски — на «ты», как на сайте.
+
+      - **Голос** — без канцелярита и маркетинга: «Мы рады сообщить о выходе обновления» → «Вышло обновление».
+      - **Порядок** — сначала главное, потом детали. Одна мысль — одно предложение. Список — если пунктов 3 и больше.
+      - **Оформление** — `#` только заголовок инфо-поста или анонса, `##` разделы, `-#` сноски. **Жирный** — ключевые слова, не целые фразы. Эмодзи — один в заголовке, не в каждой строке.
+      - **Время и числа** — метками `<t:UNIX:F>`, цифрами, единицы через пробел: `3 мин`, `10 000 золота`.
+      - **Каналы** — ссылкой, не словами.
+      - **Не пишем** — обещания без даты от разработчика, «скоро» без контекста, сарказм в адрес игроков, сравнения с официальными серверами и разработчиками.
+
+      **Глоссарий EN = RU**
+      - Fighter = Боец · Rogue = Разбойник · Priest = Жрец · Pyromancer = Пиромант
+      - Swordmaster = Мастер меча · Druid = Друид · Death Knight = Рыцарь смерти · Cryomancer = Криомант
+      - Sinner's End = Кончина грешника · Clouseau Castle = Замок Клузо · Normal = Обычный (Classic, Hard — как есть)
+      - launcher = лаунчер · instance = инстанс · raid = рейд · season = сезон · playtest = плейтест · wipe = вайп
+      - battle number = номер боя · ping line = строка пинга · battle bypass = обход для боёв
+      - stash = тайник · blue portal = синий портал · relic = реликвия · auction = аукцион
+      - ticket = тикет · helper = хелпер · creator = автор
+
+  hb_prompt_base:
+    title: "✨ AI prompts: base prompt (always first)"
+    tags: [AI prompts]
+    translations: { ru: hb_prompt_base_ru }
+    content: |
+      Paste this before any prompt from the other AI posts, or save it as project instructions in your AI tool.
+      ```
+      You write for Dungeonborne Community — a player-run community server for the game Dungeonborne, a fan project not affiliated with the developers or the publisher. Readers are players; English is the server language, Russian is the second.
+      Voice: a player talking to players. Short, concrete, friendly. No corporate or marketing phrasing. Most important first, one idea per sentence. Plain English. Russian: informal "ты", natural, never word-for-word.
+      Discord markdown: "#" only for an info post or announcement headline, "##" sections, "-#" footnotes, bold only key words, lists for 3+ items, one emoji in a headline. Times only as <t:UNIX:F> / <t:UNIX:R>. Digits, units with a space. Channel links as {#emoji・name}.
+      Facts only from what I give you; ask if something is missing. Never invent dates, numbers, features or promises. No @everyone or role pings. No personal data, nothing from tickets, the playtest or the creator hub. No comparisons with the official servers or the developers.
+      Glossary EN = RU: Fighter = Боец, Rogue = Разбойник, Priest = Жрец, Pyromancer = Пиромант, Swordmaster = Мастер меча, Druid = Друид, Death Knight = Рыцарь смерти, Cryomancer = Криомант; Sinner's End = Кончина грешника, Clouseau Castle = Замок Клузо; Normal = Обычный; launcher = лаунчер, instance = инстанс, raid = рейд, wipe = вайп, battle number = номер боя, ping line = строка пинга, battle bypass = обход для боёв, stash = тайник, blue portal = синий портал, relic = реликвия, ticket = тикет.
+      ```
+  hb_prompt_base_ru:
+    content: |
+      Вставляй этот промпт перед любым запросом из других постов про ИИ или сохрани его как инструкцию проекта в своём ИИ-инструменте.
+      Он задаёт голос сообщества (на «ты», без канцелярита), оформление Discord, глоссарий и запреты: ничего не выдумывать, без пингов, без личных данных и закрытой информации.
+      Промпт на английском специально: так ИИ одинаково понимает его, на каком бы языке ты ни писал задачу дальше.
+
+  hb_agent:
+    title: "🤖 AI agent for announcements"
+    tags: [AI prompts]
+    translations: { ru: hb_agent_ru }
+    content: |
+      An admin says one line — "write an announcement for the weekend tournament" — and the agent gathers context, asks what's missing in one list and returns a draft for `/announce`. A person always publishes.
+
+      **Setup**
+      - **Claude Code in the Discord project folder** — nothing to do: the skill `.claude/skills/discord-announce/SKILL.md` picks up "write an announcement" by itself.
+      - **Claude in the browser or app** — a project "Dungeonborne announcements": instructions = base prompt + the agent block from the handbook doc; project files = `server.yaml` and `bot/bot.toml`.
+      - **Another AI** — base prompt + agent block as the first message.
+
+      **What the agent does**
+      1. Reads channels, roles, the channel template and the style guide — no questions.
+      2. Asks what's missing in one numbered list, with defaults: dates and timezone, format (duo or trio, map, mode), rules, prizes, sign-up. "Like in the original" is not a source: it asks for the rules or a link and never calls our event official.
+      3. Drafts by the channel template, times as `<t:…>` with the calculation shown, up to 1500 characters, no pings.
+      4. Checks itself, then returns: channel and ping role · ENGLISH block · RUSSIAN block · what to double-check.
+
+      **Then** `/announce` → paste both blocks → preview → second-person review → Post.
+  hb_agent_ru:
+    content: |
+      Администратор говорит одну фразу — «напиши анонс про турнир в выходные», — а агент сам собирает контекст, одним списком спрашивает недостающее и отдаёт черновик для `/announce`. Публикует всегда человек.
+
+      **Подключение**
+      - **Claude Code в папке проекта Discord** — ничего не нужно: скилл `.claude/skills/discord-announce/SKILL.md` подхватывается сам по фразе «напиши анонс».
+      - **Claude в браузере или приложении** — проект «Dungeonborne анонсы»: инструкции = базовый промпт + блок агента из документа handbook; файлы проекта — `server.yaml` и `bot/bot.toml`.
+      - **Другой ИИ** — базовый промпт и блок агента первым сообщением.
+
+      **Что делает агент**
+      1. Читает каналы, роли, шаблон канала и гайд по стилю — без вопросов.
+      2. Одним списком спрашивает недостающее, с вариантами по умолчанию: даты и часовой пояс, формат (дуо или трио, карта, режим), правила, призы, регистрация. «Как в оригинале» — не источник: просит правила или ссылку и не называет наш ивент официальным.
+      3. Пишет по шаблону канала, время — метками `<t:…>` с расчётом, до 1500 символов, без пингов.
+      4. Проверяет себя и отдаёт: канал и роль для пинга · блок ENGLISH · блок RUSSIAN · что перепроверить.
+
+      **Дальше** `/announce` → вставить оба блока → предпросмотр → вычитка вторым человеком → «Опубликовать».
+
+  hb_announce_flow:
+    title: "📣 How we publish an announcement"
+    tags: [Rules]
+    translations: { ru: hb_announce_flow_ru }
+    content: |
+      1. **Ask** — "write an announcement about …, RU and CN, rules as a card".
+      2. **Sources** — config, patch notes, the game client strings (`names/strings_en.tsv`, `strings.tsv` — the original modes' rules), the web. Missing facts → one list with defaults.
+      3. **Draft** — `drafts/<name>.md`: `## ENGLISH`, `## RUSSIAN`, `## 中文`, one text block each; rules after `---rules---` become a card.
+      4. **Check** — `python post_announcement.py drafts/<name>.md --channel announcements --ping Events --as-owner` (nothing is posted without `--publish`).
+      5. **Publish** — same command with `--publish`, or double-click a `.bat` like `post_announcement.bat`: check → "Publish now? (y/n)".
+      6. **Look in Discord** — author, text, card, 🌍 thread, language buttons. Fix in place with `-# Upd: …`.
+
+      **Flags:** `--as-owner` posts with the owner's name and avatar via a webhook (shows an APP tag) · `--delete-after 7d` removes the post and its thread later · `--guild` another server — production only with the owner's OK on that text.
+
+      **Delete later** for any message: right-click → Apps → Delete later → `30m`, `12h`, `7d` (`0` cancels). `/announce` has `delete_after` too.
+
+      **Never** publish with a personal Discord token (self-bot — Discord bans accounts for it).
+  hb_announce_flow_ru:
+    content: |
+      1. **Просьба** — «напиши анонс про …, нужны RU и CN, правила карточкой».
+      2. **Источники** — конфиг, патчноуты, строки клиента игры (`names/strings_en.tsv`, `strings.tsv` — правила режимов оригинала), интернет. Чего нет — один список вопросов с вариантами по умолчанию.
+      3. **Черновик** — `drafts/<имя>.md`: `## ENGLISH`, `## RUSSIAN`, `## 中文`, в каждом блок текста; правила после `---rules---` станут карточкой.
+      4. **Проверка** — `python post_announcement.py drafts/<имя>.md --channel announcements --ping Events --as-owner` (без `--publish` ничего не публикуется).
+      5. **Публикация** — та же команда с `--publish` или двойной щелчок по `.bat` вроде `post_announcement.bat`: проверка → «Publish now? (y/n)».
+      6. **Посмотреть в Discord** — автор, текст, карточка, ветка 🌍, кнопки языков. Правки — на месте, с `-# Upd: …`.
+
+      **Флаги:** `--as-owner` — от имени владельца через вебхук (рядом значок «БОТ») · `--delete-after 7d` — удалить пост с веткой через срок · `--guild` — другой сервер; боевой — только с «да» владельца на этот текст.
+
+      **Удалить позже** любое сообщение: ПКМ → Приложения → Delete later → `30m`, `12h`, `7d` (`0` — отмена). У `/announce` есть `delete_after`.
+
+      **Никогда** не публиковать через личный токен Discord (self-bot — Discord банит за это аккаунты).

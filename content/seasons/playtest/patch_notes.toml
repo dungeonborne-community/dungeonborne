@@ -1,0 +1,422 @@
+# Changelog of the season "Playtest": the "Changelog" tab in the launcher (src/auth/notes.rs).
+# Served when the backend runs with SEASON=playtest (on the VM: <launch folder>/seasons/playtest/). The server re-reads it by itself.
+#
+# New entry goes on top: [[update]] with date (YYYY-MM-DD), title and at least one item in new, fixed or balance.
+# Entry translation — subtable [update.lang.en] with the same fields; whatever is missing there, the player sees in Russian.
+# version is optional; by it (or by date) the launcher decides that an entry is new. Items are plain text for players.
+#
+# 07.11 — based on the facts of the deploy (FIX_LIST "Deploy 07.11", clarifications from the "Agent orchestrator" session):
+# - returning gear to teammates is deployed, but not checked in a live game with two players;
+# - the crash fix is deployed but not proven, hence "a frequent cause";
+# - auto-sell on extraction remains only in the Dead Money season, which is off on prod.
+
+lang = "ru"   # language of the main text
+
+# 19.11 — everything deployed after the 16.11 entry: 17.11 backend 43cae5a (no gear changes for a character in battle) and
+# ru.client-hooks 2026.1117.704 (rogue reveal); 19.11 backend 1470af7 (contributor items 4, 5, 8, 9, 10, 1; prices without
+# an upper limit for legendaries/uniques), ru.client-hooks/ru.balance 2026.1119.53, RuServer on Robot (item 7, portals).
+# Not included: the server toast (item 2, the client mod is not in the launcher yet), GM wipe (admins only).
+[[update]]
+version = "2026.11.19"
+date = "2026-11-19"
+title = "Обновление 17–19 ноября"
+new = [
+  "Невидимый разбойник-враг теперь проявляется вблизи: ближе 20 м он виден как полупрозрачный дымчатый силуэт — так же, как разбойник видит свои руки. Чем ближе, тем заметнее; дальше 20 м по-прежнему не виден.",
+  "Склад: у новых аккаунтов 3 страницы, каждая следующая покупается за 5 000 золота (до 8 страниц). У существующих аккаунтов страницы остаются как были.",
+  "Новые лоты на Buyout и аукционе живут 7 дней (было: Buyout — 1 день, аукцион — 12 часов). Заявки на покупку — по-прежнему 1 час.",
+  "Гарантированный портал на второй этаж — красный или фиолетовый с равным шансом.",
+]
+fixed = [
+  "Нельзя менять снаряжение персонажа, который сейчас в бою: закрыт дюп через меню.",
+  "Страховка: одна застрахованная вещь на каждого персонажа, а не одна на весь аккаунт. Ошибка при страховке на втором персонаже исправлена.",
+  "Покупка стрел по количеству раскладывает их по стопкам правильно, инвентарь больше не ломается.",
+  "Вещь, купленная на Buyout, сохраняет бонус комплекта; значение бонуса определяется заново при покупке.",
+  "Кнопка «Выгнать» в комнате выгоняет игрока, а не меняет его местами с хозяином.",
+]
+balance = [
+  "У легендарных и уникальных вещей на торговле нет верхнего предела цены.",
+]
+
+[update.lang.en]
+title = "November 17–19 update"
+new = [
+  "An invisible enemy rogue now shows up at close range: within 20 m it appears as a translucent smoky silhouette, the way a rogue sees their own hands. The closer, the more visible; beyond 20 m it stays invisible.",
+  "Stash: new accounts start with 3 pages; each further page costs 5,000 gold (up to 8 pages). Existing accounts keep their pages.",
+  "New Buyout and auction listings last 7 days (was: Buyout 1 day, auction 12 hours). Buy orders still last 1 hour.",
+  "The guaranteed portal to the second floor is red or purple with equal chance.",
+]
+fixed = [
+  "You can no longer change the gear of a character who is in a battle (closes a duplication exploit through the menu).",
+  "Insurance: one insured item per character instead of one per account. The error when insuring on a second character is fixed.",
+  "Buying arrows by count now splits them into stacks correctly and no longer breaks the inventory.",
+  "An item bought on Buyout keeps its set bonus; the bonus value is rolled again on purchase.",
+  "The room \"Kick\" button now removes the player instead of swapping them with the host.",
+]
+balance = [
+  "Legendary and unique items have no upper price limit on the market.",
+]
+
+# 16.11 — everything deployed after 12.11 (3), as one entry (13.11 part 2 went "without patch notes" by the user's decision;
+# on 16.11 he asked to collect it): 13.11 packages ru.rebuild-private/ru.client-hooks 2026.1112.2100, part 2 b631277 (solo,
+# timer, merchant 50%, static price, HallGuard, MobBones, second floor, elite 85d537e), 8dd35af/abf5e7e (6 tabs),
+# 2250bea + launcher 1.7.4 (mod isolation, market without old prices), launcher 1.7.5; 14.11 b976aae (Alchemist, tab shift,
+# swordmaster swords); 16.11 ee84ea0 + launcher 1.7.6 (domain). Not included: bug report (the bot on the VM does not pick it up), the
+# fundraising bar (no support.json), rogue 8700f7d (not deployed), returning items to a single player.
+[[update]]
+version = "2026.11.16"
+date = "2026-11-16"
+title = "Обновление 13–16 ноября"
+new = [
+  "Новый адрес сервера и сайта: dbserver.example.org и www.dungeonborne-community.com. Лаунчер 1.7.6 обновится сам, старый адрес пока работает.",
+  "Лобби лаунчера: всегда 6 инстансов — три соло («Простой», «Классик», «Хард», карта чередуется: Склеп и Замок, без голосования), два дуо и трио. Вкладки видны всегда, бой стартует по таймеру; мест нет — записаться нельзя.",
+  "После перезапуска сервера инстансы открываются по очереди, с разницей 10–20 минут, чтобы не уходили в бой одновременно. На закрытой вкладке написано, когда она откроется.",
+  "В лаунчере виден таймер идущего боя.",
+  "Лаунчер на время игры убирает чужие моды и паки (кроме модов сервера) и возвращает их после выхода.",
+  "Лаунчер: живой фон тем оформления и плавная смена темы.",
+]
+fixed = [
+  "Игроки без строк в hosts при входе видели сообщение о закрытии игры — исправлено.",
+  "Дюп через зал ожидания: вышедший из зала не может вернуться в бой, а отданное после выхода забирается.",
+  "Деревья друида снова попадают по скелетам.",
+  "Мечи мастера меча вне основных слотов оружия больше не мешают пройти лимит редкости карты.",
+]
+balance = [
+  "Торговец выкупает снаряжение за 50% цены Buyout Trades.",
+  "Рынки: стандартная цена предмета постоянная (из таблицы, а не средняя сделок за неделю); выставить можно от ×0,5 до ×4 этой цены. Старые сделки за 1 золото больше не влияют на «самую низкую цену» и историю цен.",
+  "С рынков убраны серые и гнилые вещи — минимум зелёные.",
+  "Элита: хотя бы одна фиолетовая вещь за убийство — 5 / 10 / 15% (обычная / Classic / Hard), раньше намного чаще.",
+  "Второй этаж — без печатей лей-линий и осколков.",
+  "Бонус комплекта «Алхимик навеселе» снова выпадает (реже остальных комплектов).",
+]
+
+[update.lang.en]
+title = "November 13–16 update"
+new = [
+  "New server and website address: dbserver.example.org and www.dungeonborne-community.com. Launcher 1.7.6 updates itself; the old address still works for now.",
+  "Launcher lobby: always 6 instances — three solo (Normal, Classic, Hard; the map alternates between Crypt and Castle, no vote), two duo and one trio. Tabs are always visible, battles start on a timer; no free slots — no sign-up.",
+  "After a server restart, instances open one by one, 10–20 minutes apart, so they don't all go into battle at once. A closed tab shows when it opens.",
+  "The launcher shows a timer for the running battle.",
+  "While you play, the launcher removes third-party mods and paks (except the server's mods) and puts them back after you exit.",
+  "Launcher: animated theme backgrounds and smooth theme switching.",
+]
+fixed = [
+  "Players without hosts lines saw the game's shutdown message at login — fixed.",
+  "Waiting hall dupe: a player who left the hall cannot return to the battle, and anything handed over after leaving is taken back.",
+  "Druid trees hit skeletons again.",
+  "Swordmaster swords outside the main weapon slots no longer block the map's rarity limit.",
+]
+balance = [
+  "The merchant buys gear for 50% of the Buyout Trades price.",
+  "Markets: the standard item price is fixed (from the table, not the week's average deal); listings are allowed from ×0.5 to ×4 of it. Old 1-gold deals no longer affect the lowest price or the price history.",
+  "Grey and rotten items are removed from the markets — green is the minimum.",
+  "Elites: at least one epic item per kill — 5 / 10 / 15% (normal / Classic / Hard), much more often before.",
+  "Second floor: no ley-line seals or shards.",
+  "The Kleptomancy set bonus drops again (rarer than the other sets).",
+]
+
+# 12.11 (third) — backend 553139a on prod since 16:27 UTC: 55d63f5 (no hosts, [relay] no_hosts = true), 3710906 (price limits;
+# trade_commodity table on the VM — bf41820, it has the limits), 553139a (repeated relic reset at 16:12 UTC, 28 players);
+# 17:06 UTC LOBBY_FILL_SECS=180. Compensation — /opt/dungeonborne/comp_20261112.sh (rule in comp_20261112.md).
+# Not included (not deployed): grey items from markets and elite 5/10/15% (85d537e), rogue stealth, druid trees.
+[[update]]
+version = "2026.11.12.3"
+date = "2026-11-12"
+title = "Обновление 12 ноября (3)"
+new = [
+  "Лаунчер больше не правит файл hosts: игра подключается к серверу через лаунчер без него. Строки Dungeonborne, добавленные в hosts раньше, можно удалить.",
+  "Лобби лаунчера: набор инстанса — 3 минуты вместо 8, потом бой начинается с теми, кто записан. Зал по-прежнему ждёт 3 минуты.",
+]
+fixed = [
+  "В 19:12 МСК сброс ресурсов и реликвий по ошибке прошёл второй раз и забрал заработанное за день у 28 игроков. Повтор исключён. Потерянное возвращаем ресурсами: столько же ресурсов, сколько было, плюс цена открытия потерянных реликвий и камней и создания предметов-реликвий.",
+]
+balance = [
+  "Рынки: цена выставления ограничена на Buyout Trades и на аукционе — не ниже и не выше пределов от средней цены предмета. Слишком дешёвый или слишком дорогой лот не выставится.",
+]
+
+[update.lang.en]
+title = "November 12 update (3)"
+new = [
+  "The launcher no longer edits the hosts file: the game connects to the server through the launcher without it. Dungeonborne lines added to hosts earlier can be removed.",
+  "Launcher lobby: an instance now gathers players for 3 minutes instead of 8, then the battle starts with everyone signed up. The hall still waits 3 minutes.",
+]
+fixed = [
+  "At 16:12 UTC the resource and relic reset ran a second time by mistake and took the day's progress from 28 players. This cannot happen again. Losses are returned as resources: the same amount of resources plus the cost of unlocking the lost relics and gems and crafting the lost relic items.",
+]
+balance = [
+  "Markets: listing price is limited on Buyout Trades and the auction — it must stay within limits around the item's average price. A listing that is too cheap or too expensive will be rejected.",
+]
+
+# 12.11 (second) — 09fefdb (lobby hall), e7a9ea4 (ingredients), e5badd6 (reset of ore, relics, recipes), 9919f23 (relic
+# limit; removal in a match by the server mod not checked on the stand — wording "goes to the bag"), 13fd25f (Buyout Trades).
+[[update]]
+version = "2026.11.12.2"
+date = "2026-11-12"
+title = "Обновление 12 ноября (2)"
+new = [
+  "Реликвии: на персонаже — не больше одной реликвии каждого вида: оружие (в обеих парах вместе, щиты тоже), одежда, бижутерия. Вторую того же вида надеть нельзя, в бою она снимается в сумку.",
+  "Buyout Trades: свойства снаряжения выпадают заново в момент покупки — вы получаете тот же предмет с новыми свойствами, а не вещь продавца.",
+]
+fixed = [
+  "Лобби лаунчера: «Старт» больше не пускает в зал за секунды до начала боя (раньше игрок попадал в бой без зала и после смерти оставался в рейде).",
+]
+balance = [
+  "Ресурсы реликвий, открытые реликвии и камни, созданные реликвии и открытые рецепты крафта сброшены у всех. Стартовых 5000 ресурсов больше нет.",
+  "Из ингредиентов в луте вместо крови и трав — мутная эссенция жизни и тысячелистник.",
+]
+
+[update.lang.en]
+title = "November 12 update (2)"
+new = [
+  "Relics: at most one relic of each kind on a character — weapon (both weapon sets together, shields included), clothing, jewelry. A second one of the same kind cannot be equipped; in a raid it is moved to your bag.",
+  "Buyout Trades: gear properties are rolled anew at the moment of purchase — you get the same item with new properties, not the seller's exact item.",
+]
+fixed = [
+  "Launcher lobby: \"Start\" no longer lets you into a hall seconds before the battle begins (players used to enter the battle without the hall and stay stuck in the raid after death).",
+]
+balance = [
+  "Relic resources, unlocked relics and gems, crafted relics and unlocked crafting recipes are reset for everyone. No more starting 5000 resources.",
+  "Ingredients from loot: murky essence of life and yarrow instead of blood and herbs.",
+]
+
+# 12.11 — deploy d009ff4 (lobby by fill, arena rules, match end on leave, DM spawn) + bf41820 (season loot,
+# property and market tables, docs/LOOT_AUDIT.md stage 3) + 7c77a80/920ec99 (arena score table, first time on Robot).
+# Not checked in a live game: set bonus from bosses by level_id, share of purples from chests (pr weights reduced).
+[[update]]
+version = "2026.11.12"
+date = "2026-11-12"
+title = "Обновление 12 ноября"
+new = [
+  "Вайп: прогресс сброшен. Войдите в лаунчер заново через Discord и создайте персонажа — 1 уровня, с серой стартовой экипировкой и 10 000 золота.",
+  "Инстансы в лаунчере по размеру группы: соло (до 3 одновременно), дуо (до 2) и трио. Минимума больше нет: инстанс стартует, когда заполнился, или через 8 минут с теми, кто записан. За карту можно голосовать всё время набора. Как только инстанс стартовал, рядом открывается следующий. Зал ждёт 3 минуты. Нужен лаунчер 1.7.1 — он обновится сам.",
+  "Лаунчер 1.7.1: новое оформление «Факел» (в Настройках можно выбрать «Факел», «Склеп» или «Кровь»), папка игры находится сама, «Обзор…» — выбрать вручную.",
+  "Лаунчер 1.7.1: описание сервера, сообщение дня и тех. работы — на языке лаунчера; переключатель обхода блокировки в Настройках → Сеть виден и до входа.",
+  "Пользовательская игра: после матча на арене открывается таблица счёта — убийства, смерти, урон и лечение каждого игрока.",
+]
+fixed = [
+  "Арены: если вся команда соперника вышла из матча, он заканчивается победой оставшихся.",
+  "Арены: игроки больше не появляются вдвоём в центре карты — каждая команда появляется на своей базе.",
+]
+balance = [
+  "Арены: в бой нельзя взять свои расходники и вещи из рюкзака — только надетое снаряжение. После боя всё остаётся у вас.",
+  "Уникальные вещи падают с Монарха и Вендиго на Classic (0,5%) и Hard (1%); с остальных источников — крайне редко.",
+  "Легендарные вещи стали заметно чаще: с Монарха и Вендиго 0,5 / 2,5 / 5% (обычная / Classic / Hard), с прочих боссов, гоблинов-воров, элиты и особых сундуков — реже.",
+  "Розовая броня комплектов: с любого босса 33 / 50 / 100%, реже — с гоблинов-воров, элиты и особых сундуков.",
+  "Фиолетовые вещи: больше с элиты, меньше с обычных сундуков и монстров.",
+  "Боссы больше не роняют синие, зелёные и серые вещи. Бочки, ящики и горшки не роняют снаряжение.",
+  "Число предметов за раз постоянное: монстр 0,5, сундук 2, мимик 2,5, гоблин-вор и элита 3, особые сундуки и алтари 3,5, босс 5.",
+  "Расходников и ингредиентов падает в 4 раза больше. Вместо золота из лута — кровь и травы (кучки золота на полу остались).",
+  "Печати: обычная — 20%, легендарная — 2%. Алтарь за легендарную печать даёт одно сокровище, в половине случаев золотое.",
+  "Бонус комплекта на фиолетовых вещах: с боссов — всегда, с элиты — примерно в каждой пятой, с остальных источников и у торговца — нет.",
+  "Ледяные посохи убраны из лута. С рынка сняты легендарные и уникальные вещи без своего эффекта.",
+]
+
+[update.lang.en]
+title = "November 12 update"
+new = [
+  "Wipe: progress is reset. Log in to the launcher again through Discord and create a character — level 1, with grey starter gear and 10,000 gold.",
+  "Launcher instances by party size: solo (up to 3 at once), duo (up to 2) and trio. No minimum any more: an instance starts once it is full, or after 8 minutes with whoever joined. You can vote for the map during the whole gathering. As soon as an instance starts, the next one opens. The hall waits 3 minutes. Requires launcher 1.7.1 — it updates itself.",
+  "Launcher 1.7.1: new \"Torch\" look (choose \"Torch\", \"Crypt\" or \"Blood\" in Settings), the game folder is found automatically, \"Browse…\" picks it by hand.",
+  "Launcher 1.7.1: server description, message of the day and maintenance notices in the launcher language; the blocking bypass switch in Settings → Network is visible before login.",
+  "Custom games: after an arena match a scoreboard opens — kills, deaths, damage and healing of every player.",
+]
+fixed = [
+  "Arenas: if the whole enemy team leaves, the match ends with a win for those who stayed.",
+  "Arenas: players no longer spawn together in the middle of the map — each team spawns at its own base.",
+]
+balance = [
+  "Arenas: you cannot bring your own consumables or backpack items — only the gear you wear. Everything stays with you after the match.",
+  "Unique items drop from the Monarch and the Wendigo on Classic (0.5%) and Hard (1%); from anything else — extremely rarely.",
+  "Legendary items are much more common: Monarch and Wendigo 0.5 / 2.5 / 5% (normal / Classic / Hard), less from other bosses, goblin thieves, elites and special chests.",
+  "Pink set armor: 33 / 50 / 100% from any boss, rarer from goblin thieves, elites and special chests.",
+  "Epic items: more from elites, fewer from regular chests and monsters.",
+  "Bosses no longer drop blue, green or grey items. Barrels, crates and pots drop no gear.",
+  "A fixed number of items per drop: monster 0.5, chest 2, mimic 2.5, goblin thief and elite 3, special chests and altars 3.5, boss 5.",
+  "Four times more consumables and ingredients. Instead of gold, loot now gives blood and herbs (gold piles on the floor stay).",
+  "Seals: regular 20%, legendary 2%. The legendary seal altar gives one treasure, golden half of the time.",
+  "Set bonus on epic items: always from bosses, about one in five from elites, never from other sources or the merchant.",
+  "Ice staffs are removed from loot. Legendary and unique items without their own effect are removed from the market.",
+]
+
+# 11.11 — deploy after deleting the database (user's decision 11.11: the 59 GB SurrealKV database filled the VM disk) and moving to
+# RocksDB (6028039, 9154f3b, 7009a10). Also included: what was deployed 09.11 (33c15ca) and 10.11 (709b147) without an entry, and what
+# awaits deploy per FIX_LIST: ascension potion 03cb58d, stones 272fbc1, ID in ping and red portal 7e5092a, damage quest
+# 231d4f4, map options by port afc1110 (Robot), packages ru.balance / ru.client-hooks (+ weapon animation, RuClient 11.11). The effect of map options with 9+ players and
+# damage to players in quests are not checked on the stand — wording without extra promises.
+[[update]]
+version = "2026.11.11"
+date = "2026-11-11"
+title = "Обновление 11 ноября"
+new = [
+  "Сезон начат заново: база данных сервера перенесена на новое хранилище, прогресс сброшен. Новый персонаж — 1 уровня, с серой стартовой экипировкой, 10 000 золота и ресурсами реликвий по 5000.",
+  "Войдите в лаунчер заново через Discord: старые входы сброшены вместе с базой.",
+  "Номер боя показывается в строке пинга — укажите его, когда сообщаете об ошибке.",
+  "Статистика персонажа: игры, выходы, смерти, убийства игроков и монстров, открытые сундуки, урон по игрокам и время в рейде.",
+  "Аукцион: можно выставить вещь без бонуса комплекта; фильтры по классу, слоту и фиксированным свойствам работают; на главной странице появились подборки по слотам и редкости.",
+  "Лобби лаунчера: для голосования достаточно 2 игроков во вкладке, зал ждёт 3 минуты.",
+]
+fixed = [
+  "Сохранения стали надёжнее: изменения персонажа больше не теряются, если сервер сохраняет их одновременно.",
+  "Зелье восхождения: дополнительный опыт начисляется только если выйти из рейда живым (раньше — и при смерти). Выпитое на первом этаже больше не пропадает при переходе на второй.",
+  "Камни воскрешения переходят с вами на второй этаж. Вынести их из рейда по-прежнему нельзя.",
+  "Гарантированный красный портал появляется в любом месте текущего круга, а не всегда в центре.",
+  "Квесты боевого пропуска на урон по игрокам снова засчитывают урон.",
+  "Замок: сервер мог взять настройки другой карты, и игроки появлялись слишком близко друг к другу.",
+  "Туннель боя («обход» в лаунчере) больше не включается сам — только переключателем.",
+  "Анимация оружия сразу после появления в бою больше не сбивается на стандартную (раньше помогала только смена оружия). Исправлена поза с двумя кинжалами.",
+]
+balance = [
+  "Рюкзак по расе, как в оригинале: 6 столбцов, у людей 7. Вещи из лишнего столбца переносятся на свободное место или на склад.",
+  "Лимит редкости карты проверяется и для рюкзака: в Замок обычной сложности нельзя взять в сумках синее и выше. Вещи не по лимиту при входе в бой уходят на склад.",
+]
+
+[update.lang.en]
+title = "November 11 update"
+new = [
+  "The season starts over: the server database moved to new storage and progress is reset. A new character is level 1 with grey starter gear, 10,000 gold and 5,000 of each relic resource.",
+  "Log in to the launcher again through Discord: old logins were reset with the database.",
+  "The battle number is shown in the ping line — include it when you report a bug.",
+  "Character statistics: games, extractions, deaths, player and monster kills, opened chests, damage to players and time in raids.",
+  "Auction: you can list an item without a set bonus; class, slot and fixed-property filters work; the main page now has picks by slot and rarity.",
+  "Launcher lobby: 2 players in a tab are enough to start the vote; the hall waits 3 minutes.",
+]
+fixed = [
+  "Saves are more reliable: character changes are no longer lost when the server saves them at the same time.",
+  "Potion of Ascension: bonus experience is granted only if you leave the raid alive (it used to count on death too). A potion drunk on the first floor no longer gets lost on the way to the second.",
+  "Resurrection stones now come with you to the second floor. You still cannot take them out of the raid.",
+  "The guaranteed red portal appears anywhere in the current circle, not always in the centre.",
+  "Battle pass quests for damage to players count damage again.",
+  "Castle: the server could take another map's settings, so players spawned too close to each other.",
+  "The battle tunnel (the launcher's bypass) no longer turns itself on — only with the toggle.",
+  "Weapon animations no longer fall back to the default ones right after you spawn (only swapping weapons used to help). The dual dagger idle pose is fixed.",
+]
+balance = [
+  "Backpack size depends on race, as in the original: 6 columns, 7 for humans. Items from the extra column move to a free spot or to the stash.",
+  "The map's rarity limit also applies to your bags: you cannot bring blue or higher in your bags to normal Castle. Items over the limit go to the stash when you enter the battle.",
+]
+
+# 08.11 evening — deploy from the morning of 08.11 (2ac8caa: level 1, grey starting gear, no +300 HP, no auction emulation) and
+# the evening (insurance, seals and Hard loot, pass quests, matchmaking as in the original, challenge mode, 8-player lobby,
+# rating, Wendigo door, second-floor gravity) + DB reset. Checked in-game on the stand: insurance (the item is not
+# lost), seals/altars, kills in quests, challenge mode solo and party search. Not checked: chests in quests,
+# the "claim" button, hall hold, Wendigo door insurance — wording without extra promises.
+[[update]]
+version = "2026.11.08"
+date = "2026-11-08"
+title = "Обновление 8 ноября"
+new = [
+  "Сезон начат заново: прогресс сброшен. Новый персонаж — 1 уровня, с серой стартовой экипировкой и 10 000 золота. Серый комплект выдаётся и после смерти.",
+  "Страховка как в оригинале: цена — от рыночной стоимости вещи и её редкости. Застраховать можно одну вещь; после смерти она остаётся у вас, а убийца получает страховую премию и может продать её торговцу.",
+  "Печати лей-линий: фрагменты падают с сундуков и монстров, целые печати — с боссов, гоблина-вора и золотых сундуков. 10 фрагментов собираются в печать; печать меняется на алтаре лей-линий на сокровище.",
+  "У сложности Classic и Hard теперь свой лут.",
+  "Квесты боевого пропуска засчитывают убийства монстров, открытые сундуки и урон по игрокам. Пропуск продлён.",
+  "Подбор как в оригинале: группа равна размеру комнаты. На Hard — режим стычки: группы любого размера в одном бою.",
+  "«Режим вызова» в окне выбора карты работает: соло и дуо идут в бой против трио. В группе режим выбирает капитан.",
+  "Лобби лаунчера: голосование начинается, когда во вкладке 8 игроков; зал ждёт 8 игроков (не дольше 5 минут сверх таймера). Правила подбора видны в лаунчере 1.5.1.",
+  "Таблица лидеров: среднее число убийств игроков за бой в подземелье.",
+]
+fixed = [
+  "Дверь сокровищницы Виндиго открывается после его убийства.",
+  "На старте второго этажа игроки больше не проваливаются под пол.",
+]
+balance = [
+  "Убрана прибавка +300 к здоровью на 20 уровне.",
+  "Системные лоты на аукционе и Buyout Trades отключены — торгуют только игроки.",
+  "На Hard всё снаряжение должно быть эпическим или выше, как в оригинале.",
+  "Материалы кузницы при входе больше не выдаются.",
+]
+
+[update.lang.en]
+title = "November 8 update"
+new = [
+  "The season starts over: progress is reset. A new character is level 1 with grey starter gear and 10,000 gold. You also get the grey set after death.",
+  "Insurance works like the original: the price depends on the item's market value and rarity. You can insure one item; it stays with you after death, and the killer gets an insurance premium to sell to the merchant.",
+  "Leyline Seals: fragments drop from chests and monsters, whole seals from bosses, the Goblin Thief and gold chests. 10 fragments make a seal; trade a seal at a Leyline Altar for a treasure.",
+  "Classic and Hard difficulties now have their own loot.",
+  "Battle pass quests count monster kills, opened chests and damage to players. The pass is extended.",
+  "Matchmaking as in the original: party size matches the room. Hard uses Skirmish Mode: parties of any size in one battle.",
+  "Challenger Mode in the map window works: solos and duos are matched against trios. In a party the captain chooses it.",
+  "Launcher lobby: the vote starts once 8 players have joined a tab; the hall waits for 8 players (up to 5 minutes past its timer). Matchmaking rules are shown in launcher 1.5.1.",
+  "Leaderboard: average player kills per dungeon battle.",
+]
+fixed = [
+  "The Wendigo treasury door opens after it is killed.",
+  "Players no longer fall through the floor at the start of the second floor.",
+]
+balance = [
+  "Removed the +300 health bonus at level 20.",
+  "System listings on the auction and Buyout Trades are off: only players trade.",
+  "On Hard all gear must be Epic or higher, as in the original.",
+  "Forge materials are no longer granted on login.",
+]
+
+# 07.11 evening — deploy 85b67c1 + c621901 and DB reset (FIX_LIST "Deploy 07.11 evening"). Resistance cap, mixed
+# rooms and inventory exchange are not yet checked on prod in a match — wording without promises beyond what was done.
+[[update]]
+version = "2026.11.07.2"
+date = "2026-11-07"
+title = "Новый старт плейтеста"
+new = [
+  "Сезон начат заново: прогресс сброшен, новый персонаж получает 10 000 000 золота.",
+  "Комнаты больше не делятся строго на соло, дуо и трио: размер, выбранный голосованием, — это наибольшая группа. В комнату трио можно войти трио, дуо или соло, в комнату дуо — дуо или соло, в соло — только соло.",
+  "Торговец обновляет товары каждый час.",
+  "На Buyout Trades и на аукционе теперь по 25 штук каждого предмета.",
+]
+fixed = [
+  "Предметы больше не ложатся друг на друга, когда меняешь их местами в инвентаре.",
+  "Отменённый заказ на покупку возвращает золото: оно ждёт в списке торговли, его можно забрать.",
+  "Аукцион открыт всегда.",
+]
+balance = [
+  "На 20 уровне базовое здоровье +300.",
+  "Крафтовые реликвии торговец покупает за 0, выставить их на торговлю нельзя.",
+]
+
+[update.lang.en]
+title = "Playtest restart"
+new = [
+  "The season starts over: progress is reset, a new character gets 10,000,000 gold.",
+  "Rooms are no longer strictly solo, duo or trio: the voted size is the largest group allowed. A trio room takes trios, duos or solos, a duo room takes duos or solos, a solo room takes only solos.",
+  "The merchant restocks every hour.",
+  "Buyout Trades and the auction now have 25 of each item.",
+]
+fixed = [
+  "Items no longer end up on top of each other when you swap them in the inventory.",
+  "A cancelled purchase order returns your gold: it waits in the trade list for you to collect.",
+  "The auction is always open.",
+]
+balance = [
+  "At level 20 base health is +300.",
+  "The merchant buys crafted relics for 0, and they cannot be listed on the trade.",
+]
+
+[[update]]
+version = "2026.11.07"
+date = "2026-11-07"
+title = "Обновление 7 ноября"
+new = [
+  "Сообщения о красных и фиолетовых порталах.",
+  "Снаряжение напарника, которое вынес другой игрок, возвращается владельцу по почте.",
+]
+fixed = [
+  "Значок напарника больше не стоит на вещах всех игроков: теперь он отмечает только снаряжение твоей команды.",
+  "Вынесенное из рейда снаряжение больше не продаётся автоматически при выходе.",
+  "Исправлена частая причина падений и отказа инвентаря при долгой игре.",
+]
+balance = [
+  "Снято ограничение «Все слоты для оборудования только…» при поиске матча.",
+]
+
+[update.lang.en]
+title = "Update of 7 November"
+new = [
+  "Messages about red and purple portals.",
+  "Gear of a teammate that another player carried out comes back to its owner by mail.",
+]
+fixed = [
+  "The teammate mark no longer sits on everyone's items: it now marks only your team's gear.",
+  "Gear carried out of a raid is no longer sold automatically on exit.",
+  "Fixed a common cause of crashes and the inventory failing during long play.",
+]
+balance = [
+  "Removed the \"All equipment slots only…\" restriction when searching for a match.",
+]

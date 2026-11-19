@@ -1,0 +1,108 @@
+{
+  "type": "tgf.config.ExcelTradeValidPrice",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 15,
+    "hash_code": "sha256:4689644b62f96d6a3d24706d265d3ce1df7bc32f8b0543be9e8dca5c8325d85f",
+    "data_source": [
+      {
+        "file": "36833179b2b5c89d1abfa3911c6242a96ae9a62d685d093e0598a3d02ccb89a0",
+        "sheet": "fadfc7f21461e7e4378381935a448eaae116fe9b82c096239f6c854fcaa192b3",
+        "count": 15
+      }
+    ]
+  },
+  "rows": [
+    {
+      "id": 1,
+      "sp_min": 3,
+      "sp_max": 100,
+      "range": 5
+    },
+    {
+      "id": 1,
+      "sp_min": 100,
+      "sp_max": 500,
+      "range": 25
+    },
+    {
+      "id": 1,
+      "sp_min": 500,
+      "sp_max": 1000,
+      "range": 50
+    },
+    {
+      "id": 1,
+      "sp_min": 1000,
+      "sp_max": 5000,
+      "range": 250
+    },
+    {
+      "id": 1,
+      "sp_min": 5000,
+      "sp_max": 10000,
+      "range": 500
+    },
+    {
+      "id": 1,
+      "sp_min": 10000,
+      "sp_max": 50000,
+      "range": 2500
+    },
+    {
+      "id": 1,
+      "sp_min": 50000,
+      "sp_max": 100000,
+      "range": 5000
+    },
+    {
+      "id": 1,
+      "sp_min": 100000,
+      "sp_max": 500000,
+      "range": 25000
+    },
+    {
+      "id": 1,
+      "sp_min": 500000,
+      "sp_max": 1000000,
+      "range": 50000
+    },
+    {
+      "id": 1,
+      "sp_min": 1000000,
+      "sp_max": 5000000,
+      "range": 250000
+    },
+    {
+      "id": 1,
+      "sp_min": 5000000,
+      "sp_max": 10000000,
+      "range": 500000
+    },
+    {
+      "id": 1,
+      "sp_min": 10000000,
+      "sp_max": 50000000,
+      "range": 2500000
+    },
+    {
+      "id": 1,
+      "sp_min": 50000000,
+      "sp_max": 100000000,
+      "range": 5000000
+    },
+    {
+      "id": 1,
+      "sp_min": 100000000,
+      "sp_max": 500000000,
+      "range": 25000000
+    },
+    {
+      "id": 1,
+      "sp_min": 500000000,
+      "sp_max": 1000000000,
+      "range": 50000000
+    }
+  ]
+}

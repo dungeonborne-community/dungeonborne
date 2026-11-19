@@ -1,0 +1,73 @@
+{
+  "type": "tgf.config.ExcelTiersShowGroup",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 11,
+    "hash_code": "sha256:32ed998f4917dfa0db62d00728665809b29188c4157512469e54b3ffb940daf3",
+    "data_source": [
+      {
+        "file": "c31b4699a2de0ea9e5d043609dbcb944b672f898568e6356dd0f70ef4679c55f",
+        "sheet": "c6d648fbd636d5c7e56813a7130d35e43b8a8da467af8463cd183052c68bd916",
+        "count": 11
+      }
+    ]
+  },
+  "rows": [
+    {
+      "type_id": 1,
+      "name": "Tiers_Battle_Summary_1",
+      "group_id": 1
+    },
+    {
+      "type_id": 2,
+      "name": "Tiers_Battle_Summary_2",
+      "group_id": 2
+    },
+    {
+      "type_id": 3,
+      "name": "Tiers_Battle_Summary_3",
+      "group_id": 3
+    },
+    {
+      "type_id": 4,
+      "name": "Tiers_Battle_Summary_4",
+      "group_id": 4
+    },
+    {
+      "type_id": 5,
+      "name": "Tiers_Battle_Summary_8",
+      "group_id": 5
+    },
+    {
+      "type_id": 6,
+      "name": "Tiers_Battle_Summary_5",
+      "group_id": 6
+    },
+    {
+      "type_id": 7,
+      "name": "Tiers_Battle_Summary_6",
+      "group_id": 7
+    },
+    {
+      "type_id": 14,
+      "name": "Tiers_Battle_Summary_7",
+      "group_id": 8
+    },
+    {
+      "type_id": 8,
+      "name": "Tiers_Battle_Summary_9",
+      "group_id": 9
+    },
+    {
+      "type_id": 9,
+      "name": "Tiers_Battle_Summary_10",
+      "group_id": 10
+    },
+    {
+      "type_id": 15,
+      "name": "Tiers_Battle_Summary_7",
+      "group_id": 8
+    }
+  ]
+}

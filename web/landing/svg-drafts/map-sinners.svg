@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 170" role="img" aria-label="Diagram of a two-floor dungeon">
+  <!-- Our own drawing (not from the game): a cross-section of the dungeon — the first floor with a red and a purple portal, the second with blue ones. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#15100b"/><stop offset="1" stop-color="#0b0907"/></linearGradient>
+    <pattern id="rock" width="22" height="14" patternUnits="userSpaceOnUse"><path d="M0 .5h22M11 7.5h11M.5 0v7M11.5 7v7" stroke="#fff" stroke-opacity=".04" fill="none"/></pattern>
+    <filter id="g" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <style>
+    .p { animation: p 3.6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+    .path { stroke-dasharray: 4 6; animation: d 1.6s linear infinite; }
+    @keyframes p { 50% { opacity: .55; transform: scale(.9); } }
+    @keyframes d { to { stroke-dashoffset: -20; } }
+    @media (prefers-reduced-motion: reduce) { .p, .path { animation: none; } }
+  </style>
+  <rect width="400" height="170" fill="url(#bg)"/>
+  <rect width="400" height="170" fill="url(#rock)"/>
+
+  <!-- floors: slabs and rooms -->
+  <g fill="#1c1813" stroke="#3b3127">
+    <path d="M24 58h352v12H24z"/>
+    <path d="M24 136h352v12H24z"/>
+  </g>
+  <g fill="none" stroke="#6b5638" stroke-opacity=".7">
+    <path d="M40 58V30h70v28M128 58V22h110v36M256 58V34h60v24M334 58V28h30v30"/>
+    <path d="M56 136v-30h90v30M164 136V96h120v40M302 136v-26h56v26"/>
+  </g>
+  <path d="M24 58.5h352M24 136.5h352" stroke="#e0a84a" stroke-opacity=".35"/>
+
+  <!-- path: the red portal leads down, the purple one — to the throne -->
+  <path class="path" d="M183 50C183 80 214 82 224 128" fill="none" stroke="#ff7a4c" stroke-width="1.5"/>
+  <path class="path" d="M286 50C300 80 300 98 330 126" fill="none" stroke="#b07cff" stroke-width="1.5"/>
+
+  <!-- portals -->
+  <g>
+    <ellipse cx="183" cy="44" rx="9" ry="12" fill="#ff5a3c" filter="url(#g)" class="p"/>
+    <ellipse cx="183" cy="44" rx="5" ry="9" fill="#ffb08c" stroke="#fff0e0" stroke-width="1"/>
+    <ellipse cx="286" cy="45" rx="8" ry="11" fill="#9a63ff" filter="url(#g)" class="p" style="animation-delay:-1.2s"/>
+    <ellipse cx="286" cy="45" rx="4.5" ry="8" fill="#cdb0ff" stroke="#f6ecff" stroke-width="1"/>
+    <ellipse cx="96" cy="123" rx="8" ry="11" fill="#3b8cff" filter="url(#g)" class="p" style="animation-delay:-2.4s"/>
+    <ellipse cx="96" cy="123" rx="4.5" ry="8" fill="#9cd2ff" stroke="#e6f6ff" stroke-width="1"/>
+    <ellipse cx="224" cy="122" rx="8" ry="11" fill="#3b8cff" filter="url(#g)" class="p" style="animation-delay:-.6s"/>
+    <ellipse cx="224" cy="122" rx="4.5" ry="8" fill="#9cd2ff" stroke="#e6f6ff" stroke-width="1"/>
+  </g>
+  <!-- throne -->
+  <path d="M322 136v-12h16v12M324 124v-12l6-5 6 5v12" fill="#27211a" stroke="#e0a84a" stroke-width="1.2" stroke-linejoin="round"/>
+  <!-- floor numbers -->
+  <g font-family="Georgia, serif" font-size="11" fill="#8c7f6e" letter-spacing="1"><text x="30" y="84">I</text><text x="30" y="162">II</text></g>
+</svg>

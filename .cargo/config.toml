@@ -1,0 +1,12 @@
+# Aliases of the root workspace. core/backend has its own .cargo/config.toml: there "cargo xtask" is the backend xtask
+# (the deeper config wins).
+[build]
+# The shared build cache in DB_HOME (home\cache\target), also for a cargo run without CARGO_TARGET_DIR (a window without
+# env.ps1): no stray target\ folders in the workspace. The path is relative to the workspace root (the parent of
+# .cargo) and fits the default layout <root>\{workspace,home}; CARGO_TARGET_DIR (env.ps1, agents) takes precedence.
+# Configs of the members (core/backend/.cargo) inherit it.
+target-dir = "../home/cache/target"
+
+[alias]
+xtask = "run --quiet --package xtask --"
+ws = "run --quiet --release --package ws --"

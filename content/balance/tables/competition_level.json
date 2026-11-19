@@ -1,0 +1,843 @@
+{
+  "type": "tgf.config.ExcelCompetitionLevel",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 59,
+    "hash_code": "sha256:a6f0819220a6e5936d30721c0983afd31e1766422e2b04c95e79f14a0ddbfa7b",
+    "data_source": [
+      {
+        "file": "478f26ce316a86c28f1837c679976727fcf12977cd96091f3ce8eb890951d859",
+        "sheet": "e9620f4c3b9309cf951d05e80d439459e370bc353b91af68cc9651e9b54e263a",
+        "count": 59
+      }
+    ]
+  },
+  "rows": [
+    {
+      "competition_level_id": 20005002,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1004,
+        "competition_rule_id": 50001,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10001
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 30008001,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20001,
+        "competition_rule_id": 70001,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 20005003,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1004,
+        "competition_rule_id": 50002,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10001
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 30008003,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20001,
+        "competition_rule_id": 70002,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 20005004,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1004,
+        "competition_rule_id": 50003,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10001
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 30008004,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20001,
+        "competition_rule_id": 70003,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 30008005,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20002,
+        "competition_rule_id": 90008,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009001,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20003,
+        "competition_rule_id": 90001,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009002,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20004,
+        "competition_rule_id": 90002,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009003,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1004,
+        "competition_rule_id": 90002,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009004,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20004,
+        "competition_rule_id": 90004,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009005,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20004,
+        "competition_rule_id": 90005,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009006,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20004,
+        "competition_rule_id": 90006,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009007,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20004,
+        "competition_rule_id": 90007,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009008,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20005,
+        "competition_rule_id": 90007,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009009,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20006,
+        "competition_rule_id": 90007,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40009010,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20007,
+        "competition_rule_id": 90007,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 20001001,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1004,
+        "competition_rule_id": 50004,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10001
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 20001002,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20023,
+        "competition_rule_id": 90009,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003001,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20008,
+        "competition_rule_id": 90009,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003002,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20009,
+        "competition_rule_id": 90010,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 20001003,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1005,
+        "competition_rule_id": 50006,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10001
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 20001004,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20010,
+        "competition_rule_id": 50007,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003003,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20011,
+        "competition_rule_id": 90011,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003004,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20012,
+        "competition_rule_id": 90012,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003009,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20013,
+        "competition_rule_id": 90012,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 20001005,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1006,
+        "competition_rule_id": 50008,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10001
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 20001006,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20014,
+        "competition_rule_id": 50009,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 20001007,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1007,
+        "competition_rule_id": 50010,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10001
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003010,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20015,
+        "competition_rule_id": 90013,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003011,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20016,
+        "competition_rule_id": 90014,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003012,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20017,
+        "competition_rule_id": 90015,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003013,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20018,
+        "competition_rule_id": 90016,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003014,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1004,
+        "competition_rule_id": 90017,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 40003015,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20029,
+        "competition_rule_id": 90020,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200022,
+      "on_product_env": true,
+      "is_allow_mithril_force": true,
+      "matching_statistics_ids": [
+        10001
+      ],
+      "battle_gear_rarity_require": {
+        "rarity": [
+          "EN_ITEM_RARITY_NONE",
+          "EN_ITEM_RARITY_ROTTED",
+          "EN_ITEM_RARITY_NORMAL",
+          "EN_ITEM_RARITY_UNCOMMON"
+        ]
+      },
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003016,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20030,
+        "competition_rule_id": 90023,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200020,
+      "on_product_env": true,
+      "is_allow_mithril_force": true,
+      "matching_statistics_ids": [
+        10001
+      ],
+      "battle_gear_rarity_require": {
+        "rarity": [
+          "EN_ITEM_RARITY_NONE",
+          "EN_ITEM_RARITY_ROTTED",
+          "EN_ITEM_RARITY_NORMAL"
+        ]
+      },
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003017,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20031,
+        "competition_rule_id": 90024,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200023,
+      "on_product_env": true,
+      "battle_gear_rarity_require": {
+        "rarity": [
+          "EN_ITEM_RARITY_ENHANCED",
+          "EN_ITEM_RARITY_EPIC",
+          "EN_ITEM_RARITY_EXCEPTIONAL",
+          "EN_ITEM_RARITY_LEGENDARY",
+          "EN_ITEM_RARITY_UNIQUE"
+        ]
+      },
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003018,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20032,
+        "competition_rule_id": 90025,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200021,
+      "on_product_env": true,
+      "battle_gear_rarity_require": {
+        "rarity": [
+          "EN_ITEM_RARITY_UNCOMMON",
+          "EN_ITEM_RARITY_ENHANCED"
+        ]
+      },
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003019,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20033,
+        "competition_rule_id": 90032,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200037,
+      "on_product_env": true,
+      "battle_gear_rarity_require": {
+        "rarity": [
+          "EN_ITEM_RARITY_EPIC",
+          "EN_ITEM_RARITY_EXCEPTIONAL",
+          "EN_ITEM_RARITY_LEGENDARY",
+          "EN_ITEM_RARITY_UNIQUE"
+        ]
+      }
+    },
+    {
+      "competition_level_id": 40003020,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20034,
+        "competition_rule_id": 90033,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200036,
+      "on_product_env": true,
+      "battle_gear_rarity_require": {
+        "rarity": [
+          "EN_ITEM_RARITY_EPIC",
+          "EN_ITEM_RARITY_EXCEPTIONAL",
+          "EN_ITEM_RARITY_LEGENDARY",
+          "EN_ITEM_RARITY_UNIQUE"
+        ]
+      }
+    },
+    {
+      "competition_level_id": 40003021,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 1004,
+        "competition_rule_id": 90027,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 50000001,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20019,
+        "competition_rule_id": 90018,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2002,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP"
+    },
+    {
+      "competition_level_id": 50000002,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20020,
+        "competition_rule_id": 90019,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2002,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP"
+    },
+    {
+      "competition_level_id": 20001008,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20020,
+        "competition_rule_id": 50011,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2002,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP"
+    },
+    {
+      "competition_level_id": 20001009,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20020,
+        "competition_rule_id": 50012,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2002,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP"
+    },
+    {
+      "competition_level_id": 50000003,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20021,
+        "competition_rule_id": 90021,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2002,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP",
+      "module_id": 1200024,
+      "on_product_env": true,
+      "pvp_mode": "EN_STATISTICS_PVP_MODE_DEATH"
+    },
+    {
+      "competition_level_id": 30008006,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20023,
+        "competition_rule_id": 90026,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE"
+    },
+    {
+      "competition_level_id": 50000004,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20019,
+        "competition_rule_id": 90028,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2002,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_BO5"
+    },
+    {
+      "competition_level_id": 50000005,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20020,
+        "competition_rule_id": 90029,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2002,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_BO5"
+    },
+    {
+      "competition_level_id": 50000006,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20027,
+        "competition_rule_id": 90030,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2002,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_BO5_TRIAL",
+      "on_product_env": true,
+      "is_only_active_open": true
+    },
+    {
+      "competition_level_id": 50000007,
+      "season_id": 1,
+      "detail": {
+        "match_making_pool_id": 20028,
+        "competition_rule_id": 90031,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2002,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVP",
+      "module_id": 1200032,
+      "on_product_env": true
+    },
+    {
+      "competition_level_id": 40003015,
+      "season_id": 1001,
+      "detail": {
+        "match_making_pool_id": 20029,
+        "competition_rule_id": 90020,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200022,
+      "on_product_env": true,
+      "is_allow_mithril_force": true,
+      "matching_statistics_ids": [
+        10001
+      ],
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003016,
+      "season_id": 1001,
+      "detail": {
+        "match_making_pool_id": 20030,
+        "competition_rule_id": 90023,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200020,
+      "on_product_env": true,
+      "is_allow_mithril_force": true,
+      "matching_statistics_ids": [
+        10001
+      ],
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003017,
+      "season_id": 1001,
+      "detail": {
+        "match_making_pool_id": 20031,
+        "competition_rule_id": 90024,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200023,
+      "on_product_env": true,
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003018,
+      "season_id": 1001,
+      "detail": {
+        "match_making_pool_id": 20032,
+        "competition_rule_id": 90025,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200021,
+      "on_product_env": true,
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003015,
+      "season_id": 1002,
+      "detail": {
+        "match_making_pool_id": 20029,
+        "competition_rule_id": 90020,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200022,
+      "on_product_env": true,
+      "is_allow_mithril_force": true,
+      "matching_statistics_ids": [
+        10001
+      ],
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003016,
+      "season_id": 1002,
+      "detail": {
+        "match_making_pool_id": 20030,
+        "competition_rule_id": 90023,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200020,
+      "on_product_env": true,
+      "is_allow_mithril_force": true,
+      "matching_statistics_ids": [
+        10001
+      ],
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003017,
+      "season_id": 1002,
+      "detail": {
+        "match_making_pool_id": 20031,
+        "competition_rule_id": 90024,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200023,
+      "on_product_env": true,
+      "is_allow_challenge_model": true
+    },
+    {
+      "competition_level_id": 40003018,
+      "season_id": 1002,
+      "detail": {
+        "match_making_pool_id": 20032,
+        "competition_rule_id": 90025,
+        "competition_ranking_id": 10001,
+        "competition_reward_id": 10004
+      },
+      "level_type": 2001,
+      "settle_interface_type": "EN_SETTLE_INTERFACE_TYPE_PVE",
+      "module_id": 1200021,
+      "on_product_env": true,
+      "is_allow_challenge_model": true
+    }
+  ]
+}

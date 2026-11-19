@@ -1,0 +1,26 @@
+[member]
+name = "backend"
+kind = "service"
+visibility = "public"
+lang = "rust"
+version = "0.1.0"
+depends_on = []
+description = "Dungeonborne server: TGCP gateway, DirServer, RPC, lobby, login, link to battle servers"
+
+[commands]
+test    = "cargo test -p dbserver-rs"
+build   = "cargo build --release -p dbserver-rs   # Windows and Linux: needs libclang (LLVM), no sccache; the Linux build for prod is done by the owner (ops/deploy)"
+xtask   = "cargo xtask <balance|season|mods|loot|names|tables>"
+
+[contents]
+# Rust workspace: dbserver-rs (src), xtask, ds-agent, crates/balance-kit.
+# Server data: ExcelConfig (built by xtask), ExcelConfigjson, assets/excel (game originals), Configure.pb, Network.pb.
+# Human-edited data is in content/, mods in game/. xtask runs from the workspace root (xtask/src/ws.rs).
+# Local run — tools/stand (Enter-Backend: cwd core/backend, SEASONS_DIR, MATCH_CHECKS_FILE).
+
+[known-absolute-paths]
+files = ["src/admin_api.rs (DB_HOST_ROOT defaults to G:; the stand sets it itself)"]
+
+[visibility]
+# data from the game files — not in the public edition (plan, section 13.3); in the public edition xtask builds it from its own game copy
+team = ["assets", "ExcelConfig", "ExcelConfigjson", "Configure.pb", "Configure_decoded.txt", "Network.pb", "schema_dump.proto"]

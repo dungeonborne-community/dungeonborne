@@ -1,0 +1,11 @@
+[member]
+name = "xtask"
+kind = "tool"
+visibility = "public"
+lang = "rust"
+version = "0.1.0"
+depends_on = ["tools/ws", "apps/devkit"]   # builds them
+description = "cargo xtask — developer kit build tasks: setup, devkit, ci (plan section 13)"
+
+[commands]
+run = "cargo xtask help"

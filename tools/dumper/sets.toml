@@ -1,0 +1,47 @@
+# What `ws dump` exports from the game reference (docs/GAME_DATA.md). A set: name, format (png | json), patterns.
+# Patterns are matched against package paths in the paks (Dungeonborne/Content/TGF/...); * matches any characters,
+# including '/'. `ws dump --set=<name>,...` exports some sets; without --set — all of them.
+# Output layout (as an FModel export): home/dumps/<build>/export/Content/TGF/... .png / .json
+
+[[set]]
+name = "icons"
+format = "png"
+about = "UI icons: items and equipment (inventory and tooltip), skills, buffs, classes, map markers"
+patterns = [
+    "*/Content/TGF/UI/Textures/Icon/*",
+    # item icons that live outside Icon/ (item_icons.py found them, 18.11): treasures, common items, quick inventory
+    "*/Content/TGF/Equipment/Treasure/*/Texture/*",
+    "*/Content/TGF/UI/Common/Item/*",
+    "*/Content/TGF/UI/Game/QuickInventory/*",
+]
+
+[[set]]
+name = "monsters"
+format = "json"
+about = "monsters and bosses: ability sets, gameplay effects (damage, buffs), ability rules, data assets, blueprints"
+patterns = [
+    "*/Content/TGF/Character/Monster/*/Ability/*",
+    "*/Content/TGF/Character/Monster/*/AbilitySet*",
+    "*/Content/TGF/Character/Monster/*/GE_*",
+    "*/Content/TGF/Character/Monster/*/GA_*",
+    "*/Content/TGF/Character/Monster/*/DA_*",
+    "*/Content/TGF/Character/Monster/*/BP_*",
+    "*/Content/TGF/Character/Monster/AbilitySet_*",
+]
+
+[[set]]
+name = "curves"
+format = "json"
+about = "curve tables and float curves (skill and effect numbers by level)"
+patterns = ["*/CurveTable*", "*/CT_*", "*Curve*"]
+
+[[set]]
+name = "heroes"
+format = "json"
+about = "classes: ability sets, gameplay abilities and effects of the playable heroes"
+patterns = [
+    "*/Content/TGF/Character/Hero/*/Ability/*",
+    "*/Content/TGF/Character/Hero/*AbilitySet*",
+    "*/Content/TGF/Character/Hero/*/GE_*",
+    "*/Content/TGF/Character/Hero/*/GA_*",
+]

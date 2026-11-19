@@ -1,0 +1,17 @@
+[member]
+name = "ws"
+kind = "tool"
+visibility = "public"
+lang = "rust"
+version = "0.1.0"
+depends_on = []
+description = "Workspace utility: ws check | doctor | bootstrap | members | game clone | runs collect. ws-core is the library (DevKit.exe uses it)"
+
+[commands]
+build = "cargo build --release -p ws   # from the workspace root; the exe goes to CARGO_TARGET_DIR/release/ws.exe"
+test  = "cargo test -p ws-core"
+check = "cargo ws check"
+
+[known-absolute-paths]
+# test examples: the paths rule (check.rs), the client and agent paths of the vault session (vault.rs)
+files = ["core/src/check.rs", "core/src/vault.rs"]

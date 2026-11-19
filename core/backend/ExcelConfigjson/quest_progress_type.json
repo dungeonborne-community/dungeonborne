@@ -1,0 +1,203 @@
+[
+  {},
+  {
+    "id": 1,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 2,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 4,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 5,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 6,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 7,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 8,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 9,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 10,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 11,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 12,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 13,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 14,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 15,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 16,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 17,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 18,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 19,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 20,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 21,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 22,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 23,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 24,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 25,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 26,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 27,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 28,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 29,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 30,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 31,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 32,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 33,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 34,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 35,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 36,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 37,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 38,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 39,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 40,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 41,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 42,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 43,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 44,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 45,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 46,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 47,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 48,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 49,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 50,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  },
+  {
+    "id": 51,
+    "value_compare_type": "EN_QUEST_PROGRESS_VALUE_COMPARE_TYPE_GREATER_OR_EQUAL"
+  }
+]

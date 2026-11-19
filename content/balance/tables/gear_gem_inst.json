@@ -1,0 +1,594 @@
+{
+  "type": "tgf.config.ExcelGearGemInst",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 144,
+    "hash_code": "sha256:ba8142d707a69e5ada84821619d9e57aeb74a01d1a54a9629c24dda34c8bbbba",
+    "data_source": [
+      {
+        "file": "999923b62aed5829e040900e94f56cb3769256decefd1c4c30bd851063956f9e",
+        "sheet": "dbca139f6a05d0b4137455b17dfbba03b1a53b59811193810629883560c057bd",
+        "count": 144
+      }
+    ]
+  },
+  "rows": [
+    {
+      "item_id": 240112000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240112001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240112002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240112003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240112004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240112005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240112006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113007,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113008,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113009,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113010,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240113011,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114007,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114008,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114009,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240114010,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    },
+    {
+      "item_id": 240122000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240122001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240122002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240122003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240122004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240122005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240122006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240123000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240123001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240123002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240123003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240124000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240124001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240124002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240124003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240124004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240124005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    },
+    {
+      "item_id": 240132000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240132001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240132002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240132003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240132004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240133000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240133001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240134000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240134001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240134002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    },
+    {
+      "item_id": 240142000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240142001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240142002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240142003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240142004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240142005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240154000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET"
+    },
+    {
+      "item_id": 240154001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET"
+    },
+    {
+      "item_id": 240154002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET"
+    },
+    {
+      "item_id": 240154003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET"
+    },
+    {
+      "item_id": 240154004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET"
+    },
+    {
+      "item_id": 240154005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET"
+    },
+    {
+      "item_id": 240154006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET"
+    },
+    {
+      "item_id": 240154007,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET"
+    },
+    {
+      "item_id": 240154008,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET"
+    },
+    {
+      "item_id": 240162000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240162001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240162002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240162003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240162004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240162005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240162006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163007,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163008,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163009,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163010,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240163011,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164007,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164008,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164009,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240164010,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    },
+    {
+      "item_id": 240172000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240172001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240172002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240172003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240172004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240172005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240172006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240173000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240173001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240173002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240173003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240174000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240174001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240174002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240174003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240174004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240174005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    },
+    {
+      "item_id": 240182000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240182001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240182002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240182003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240182004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240183000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240183001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240184000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240184001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240184002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    },
+    {
+      "item_id": 240192000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240192001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240192002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240192003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240192004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240192005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    },
+    {
+      "item_id": 240104000,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET"
+    },
+    {
+      "item_id": 240104001,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET"
+    },
+    {
+      "item_id": 240104002,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET"
+    },
+    {
+      "item_id": 240104003,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET"
+    },
+    {
+      "item_id": 240104004,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET"
+    },
+    {
+      "item_id": 240104005,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET"
+    },
+    {
+      "item_id": 240104006,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET"
+    },
+    {
+      "item_id": 240104007,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET"
+    },
+    {
+      "item_id": 240104008,
+      "shape_type": "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET"
+    }
+  ]
+}

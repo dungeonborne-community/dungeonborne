@@ -1,0 +1,148 @@
+{
+ "title": "Экраны",
+ "notes": [],
+ "fields": {
+  "attack": "Урон",
+  "crit": "Крит",
+  "strength": "Сила",
+  "fixed_value": "значение",
+  "min_value": "мин.",
+  "max_value": "макс.",
+  "durability": "прочность",
+  "rarity_range": "редкость",
+  "cost_price": "цена",
+  "count": "кол-во",
+  "role_level": "Уровень"
+ },
+ "attr_units": {
+  "attack": "очки",
+  "crit": "доля",
+  "strength": "очки"
+ },
+ "attr_ids": {
+  "1001": "strength",
+  "2001": "crit"
+ },
+ "table": [
+  {
+   "name": "affix_template",
+   "title": "Предметы",
+   "layout": "long",
+   "icon": "item_id",
+   "editable": [
+    "data.fixed_rule[*].attribute.*.fixed_value",
+    "data.fixed_rule[*].attribute.*.offset.min_value",
+    "data.fixed_rule[*].attribute.*.offset.max_value"
+   ]
+  },
+  {
+   "name": "gear_template",
+   "title": "Прочность",
+   "layout": "wide",
+   "icon": "item_id",
+   "editable": [
+    "durability"
+   ]
+  },
+  {
+   "name": "market_product_item",
+   "title": "Торговец",
+   "layout": "wide",
+   "icon": "product.reward_items[0].type_id",
+   "editable": [
+    "product.cost_options[*].cost_items[*].cost_price",
+    "product.reward_items[*].count"
+   ]
+  },
+  {
+   "name": "affix_value_template",
+   "title": "Аффиксы",
+   "layout": "wide",
+   "icon": "",
+   "editable": [
+    "data.affix_data[*].rarity_range[*].min_value",
+    "data.affix_data[*].rarity_range[*].max_value"
+   ]
+  },
+  {
+   "name": "role_level_upgrade",
+   "title": "Классы",
+   "layout": "wide",
+   "icon": "role_type_id",
+   "context": [
+    "role_level"
+   ],
+   "editable": [
+    "role_attribute.*"
+   ]
+  },
+  {
+   "name": "item_type",
+   "title": "Цена продажи",
+   "group": "economy",
+   "layout": "wide",
+   "icon": "type_id",
+   "editable": [
+    "system_repurchase_price"
+   ]
+  },
+  {
+   "name": "trade_commodity",
+   "title": "Рынок",
+   "group": "economy",
+   "layout": "wide",
+   "icon": "item_id",
+   "context": [
+    "market_id"
+   ],
+   "editable": [
+    "price_def",
+    "tax_percentage"
+   ]
+  },
+  {
+   "name": "gear_dismantle",
+   "title": "Разбор",
+   "group": "economy",
+   "layout": "wide",
+   "icon": "item_id",
+   "editable": [
+    "reward[*].count"
+   ]
+  },
+  {
+   "name": "craft_table",
+   "title": "Крафт",
+   "group": "economy",
+   "layout": "wide",
+   "icon": "product[0].type_id",
+   "editable": [
+    "item_cost[*].count",
+    "product[*].count"
+   ]
+  },
+  {
+   "name": "gear_insurance_item",
+   "title": "Страховка",
+   "group": "economy",
+   "layout": "wide",
+   "icon": "",
+   "editable": [
+    "sp_rate"
+   ]
+  },
+  {
+   "name": "map_exp",
+   "title": "Опыт",
+   "group": "progress",
+   "layout": "wide",
+   "icon": "",
+   "context": [
+    "alive_time"
+   ],
+   "editable": [
+    "exp"
+   ]
+  }
+ ]
+}

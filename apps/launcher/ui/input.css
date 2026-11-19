@@ -1,0 +1,875 @@
+@import "tailwindcss" source(none);
+@source "./index.html";
+@source "./app.js";
+
+
+/* Alegreya SC 500/700, Alegreya Sans 400/500/700: cyrillic + latin (fonts/OFL-*.txt) */
+@font-face {
+  font-family: "Alegreya SC";
+  font-weight: 500;
+  font-display: block;
+  src: url("fonts/AlegreyaSC-500-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Alegreya SC";
+  font-weight: 500;
+  font-display: block;
+  src: url("fonts/AlegreyaSC-500-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Alegreya SC";
+  font-weight: 700;
+  font-display: block;
+  src: url("fonts/AlegreyaSC-700-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Alegreya SC";
+  font-weight: 700;
+  font-display: block;
+  src: url("fonts/AlegreyaSC-700-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  font-display: block;
+  src: url("fonts/AlegreyaSans-400-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 400;
+  font-display: block;
+  src: url("fonts/AlegreyaSans-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 500;
+  font-display: block;
+  src: url("fonts/AlegreyaSans-500-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 500;
+  font-display: block;
+  src: url("fonts/AlegreyaSans-500-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 700;
+  font-display: block;
+  src: url("fonts/AlegreyaSans-700-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Alegreya Sans";
+  font-weight: 700;
+  font-display: block;
+  src: url("fonts/AlegreyaSans-700-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* The game's font (OFL, from the game pak): the composite LibreBaskerville-Regular_Font — Libre Baskerville for Latin, Noto Serif for
+   Cyrillic (fonts/OFL-librebaskerville.txt, fonts/OFL-notoserif.txt). "Libre Baskerville" is a Reserved Font Name: a subset
+   under the OFL may not use that name, so inside the DungeonborneSerifLatin-* files the name is "Dungeonborne Serif Latin". */
+@font-face {
+  font-family: "Dungeonborne Serif";
+  font-weight: 100 599;
+  font-display: block;
+  src: url("fonts/DungeonborneSerifLatin-Regular.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Dungeonborne Serif";
+  font-weight: 600 900;
+  font-display: block;
+  src: url("fonts/DungeonborneSerifLatin-Bold.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Cyrillic — the same weight ranges as Latin: otherwise the browser does not merge them into one font (one variable file) */
+@font-face {
+  font-family: "Dungeonborne Serif";
+  font-weight: 100 599;
+  font-display: block;
+  src: url("fonts/NotoSerif-var-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: "Dungeonborne Serif";
+  font-weight: 600 900;
+  font-display: block;
+  src: url("fonts/NotoSerif-var-cyrillic.woff2") format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------
+   "Torch": dark warm stone, gold, fire. The fonts Alegreya SC (headings) and Alegreya Sans (text) live in
+   fonts/ (OFL), icons are the system Segoe Fluent Icons. Nothing is downloaded: the launcher's CSP allows only its own files,
+   noise and patterns are SVG in data URLs (img-src data:).
+   The look is defined here and in index.html; app.js only sets data-state / data-tone on elements.
+   Colour names are the old ones (mica, layer, card…): the markup already knows them.
+   --------------------------------------------------------------------------------------------------------------- */
+@theme {
+  /* the game's font everywhere (user's choice 11.11, option A): Libre Baskerville + Noto Serif for Cyrillic */
+  --font-sans: "Dungeonborne Serif", Georgia, "Segoe UI", serif;
+  --font-display: "Dungeonborne Serif", Georgia, serif;
+  --font-mono: "Cascadia Mono", Consolas, monospace;
+  /* Segoe Fluent Icons (Windows 11) / Segoe MDL2 Assets (Windows 10): same code points */
+  --font-icons: "Segoe Fluent Icons", "Segoe MDL2 Assets";
+
+  /* stone: from the window background to a button */
+  --color-mica: #0b0907;
+  --color-layer: #14110d;
+  --color-card: #1c1813;
+  --color-card-hi: #27211a;
+  --color-stone: #322a21;
+  --color-line: #3b3127;
+  --color-line-hi: #6b5638;
+  /* text: parchment; fg-2/3/4 lighter, as on the site (user's decision 13.11: "make the fonts lighter") — in all themes */
+  --color-fg: #efe6d6;
+  --color-fg-2: #d4c9b6;
+  --color-fg-3: #afa392;
+  --color-fg-4: #7c7264;
+  /* gold */
+  --color-accent: #e0a84a;
+  --color-accent-strong: #9b6624;
+  --color-accent-text: #f6cd7a;
+  --color-accent-ink: #1d1206;
+  /* states: do not coincide with the accent */
+  --color-arcane: #72b8cc;
+  --color-ok: #86b66b;
+  --color-ok-bg: #1d2615;
+  --color-caution: #e7793f;
+  --color-caution-bg: #2c1910;
+  --color-critical: #e0645a;
+  --color-critical-bg: #2c1210;
+  --color-dev: #c9a2e8;
+  --color-dev-bg: #281d33;
+  /* project support (16.11): the project's gold, as on the site and in the fundraising card in Discord; the same in all themes
+     (the theme accent is light blue in "Crypt", red in "Blood", but fundraising is the project colour) */
+  --color-patron: #e0a84a;
+  --color-patron-hi: #f6cd7a;
+  --color-patron-ink: #1d1206;
+
+  --radius-ctl: 4px;
+  --radius-ovl: 6px;
+
+  /* shared with the site (backups/site/web/input.css): anything repeated is a token, brackets only for one-offs */
+  --text-label: 0.8125rem;
+  --text-label--line-height: 1.45;
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1.4;
+  --text-3xs: 0.625rem;
+  --tracking-caps: 0.15em;
+  --tracking-brand: 0.2em;
+  --shadow-glow: 0 0 12px -4px color-mix(in srgb, var(--glow-c) 80%, transparent);
+  --shadow-underline: inset 0 -2px 0 var(--color-accent);
+  --drop-shadow-ink: 0 2px 12px rgb(0 0 0 / 0.8);
+  --ease-glide: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* Fluent 2 motion (user's decision 13.11: easing on every action; base — Fluent): curves and durations
+     of the Fluent tokens — durationFaster 100 ms (hover, colour), Fast 150 (exit), Normal 200, Gentle 250 (enter).
+     All transition-* without their own duration — 100 ms, easyEase. */
+  --ease-fluent: cubic-bezier(0.33, 0, 0.67, 1); /* curveEasyEase: hover, press, colours */
+  --ease-decelerate: cubic-bezier(0.1, 0.9, 0.2, 1); /* curveDecelerateMax: enter, expand */
+  --ease-accelerate: cubic-bezier(0.9, 0.1, 1, 0.2); /* curveAccelerateMax: exit */
+  --default-transition-duration: 100ms;
+  --default-transition-timing-function: cubic-bezier(0.33, 0, 0.67, 1);
+
+  --animate-ring: spin 0.8s linear infinite;
+  --animate-ember: ember-rise 5s linear infinite;
+  @keyframes ember-rise {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    12% {
+      opacity: 0.9;
+    }
+    100% {
+      transform: translate(var(--dx, 10px), -170px);
+      opacity: 0;
+    }
+  }
+}
+
+:root {
+  /* accent glow: --glow-c — the colour for shadows and highlights (color-mix, as on the site: on a smooth theme change it blends
+     in OKLCH); --glow — the same rgb triple for the background shader (atmos.js); the background "art"; sparks */
+  --glow-c: rgb(224 168 74);
+  --glow: 224 168 74;
+  --art-a: #3a2412;
+  --art-b: #120c08;
+  --ember: #ff9a3c;
+  --noise: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.05 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* Themes (Settings → Appearance): the same names, other values. "Torch" — the @theme values above.
+   data-theme is set by app.js on <html>; these rules are outside layers and so beat the Tailwind theme's :root. */
+[data-theme="crypt"] {
+  --color-mica: #07090c;
+  --color-layer: #0d1116;
+  --color-card: #131920;
+  --color-card-hi: #1b232c;
+  --color-stone: #232d38;
+  --color-line: #2a3542;
+  --color-line-hi: #4d6276;
+  --color-fg: #e4ebf2;
+  --color-fg-2: #c1cbd6;
+  --color-fg-3: #9ba7b2;
+  --color-fg-4: #6a7580;
+  --color-accent: #8cc8dc;
+  --color-accent-strong: #3f7f96;
+  --color-accent-text: #c3ebf7;
+  --color-accent-ink: #061218;
+  --color-arcane: #b49ae6;
+  --color-ok: #7fbf86;
+  --color-ok-bg: #15241a;
+  --color-caution: #e3a54a;
+  --color-caution-bg: #2a2010;
+  --color-critical: #e0605a;
+  --color-critical-bg: #2a1212;
+  --glow-c: rgb(140 200 220);
+  --glow: 140 200 220;
+  --art-a: #10202c;
+  --art-b: #06090c;
+  --ember: #9fd8ff;
+}
+[data-theme="blood"] {
+  --color-mica: #0a0606;
+  --color-layer: #130c0c;
+  --color-card: #1b1111;
+  --color-card-hi: #251717;
+  --color-stone: #301d1d;
+  --color-line: #3d2424;
+  --color-line-hi: #7a3a35;
+  --color-fg: #f1e4dc;
+  --color-fg-2: #d9c5bc;
+  --color-fg-3: #b39f97;
+  --color-fg-4: #7f6e68;
+  --color-accent: #c9413a;
+  --color-accent-strong: #7e211d;
+  --color-accent-text: #ef7466;
+  --color-accent-ink: #fff3ee;
+  --color-arcane: #d6ad5c;
+  --color-ok: #8fb877;
+  --color-ok-bg: #1b2414;
+  --color-caution: #e59a3d;
+  --color-caution-bg: #2c1d0e;
+  --color-critical: #ff6b5e;
+  --color-critical-bg: #301010;
+  --glow-c: rgb(201 65 58);
+  --glow: 201 65 58;
+  --art-a: #3a1010;
+  --art-b: #0d0505;
+  --ember: #ff5a3c;
+}
+/* ==== theme change with easing (generated by gen_easing.py from the theme blocks above — change a theme colour there, regenerate) ====
+   As on the site: app.js sets data-from (what was) and data-to (what is) on <html> and drives --tp 0 → 1 over 0.6 s (ease-out,
+   requestAnimationFrame, not a CSS animation and not a transition). Colours, glow and the background "art" blend in OKLCH — without
+   the grey-white middle of RGB. Text on the accent button does not blend, it jumps at the midpoint. During the change
+   elements' own colour transitions are off ([data-switching]). With "reduce motion" --tp is 1 at once. */
+@property --tp {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 1;
+}
+html[data-from="torch"] {
+  --f-mica: #0b0907;
+  --f-layer: #14110d;
+  --f-card: #1c1813;
+  --f-card-hi: #27211a;
+  --f-stone: #322a21;
+  --f-line: #3b3127;
+  --f-line-hi: #6b5638;
+  --f-fg: #efe6d6;
+  --f-fg-2: #d4c9b6;
+  --f-fg-3: #afa392;
+  --f-fg-4: #7c7264;
+  --f-accent: #e0a84a;
+  --f-accent-strong: #9b6624;
+  --f-accent-text: #f6cd7a;
+  --f-accent-ink: #1d1206;
+  --f-arcane: #72b8cc;
+  --f-ok: #86b66b;
+  --f-ok-bg: #1d2615;
+  --f-caution: #e7793f;
+  --f-caution-bg: #2c1910;
+  --f-critical: #e0645a;
+  --f-critical-bg: #2c1210;
+  --f-glowc: rgb(224 168 74);
+  --f-art-a: #3a2412;
+  --f-art-b: #120c08;
+}
+html[data-from="crypt"] {
+  --f-mica: #07090c;
+  --f-layer: #0d1116;
+  --f-card: #131920;
+  --f-card-hi: #1b232c;
+  --f-stone: #232d38;
+  --f-line: #2a3542;
+  --f-line-hi: #4d6276;
+  --f-fg: #e4ebf2;
+  --f-fg-2: #c1cbd6;
+  --f-fg-3: #9ba7b2;
+  --f-fg-4: #6a7580;
+  --f-accent: #8cc8dc;
+  --f-accent-strong: #3f7f96;
+  --f-accent-text: #c3ebf7;
+  --f-accent-ink: #061218;
+  --f-arcane: #b49ae6;
+  --f-ok: #7fbf86;
+  --f-ok-bg: #15241a;
+  --f-caution: #e3a54a;
+  --f-caution-bg: #2a2010;
+  --f-critical: #e0605a;
+  --f-critical-bg: #2a1212;
+  --f-glowc: rgb(140 200 220);
+  --f-art-a: #10202c;
+  --f-art-b: #06090c;
+}
+html[data-from="blood"] {
+  --f-mica: #0a0606;
+  --f-layer: #130c0c;
+  --f-card: #1b1111;
+  --f-card-hi: #251717;
+  --f-stone: #301d1d;
+  --f-line: #3d2424;
+  --f-line-hi: #7a3a35;
+  --f-fg: #f1e4dc;
+  --f-fg-2: #d9c5bc;
+  --f-fg-3: #b39f97;
+  --f-fg-4: #7f6e68;
+  --f-accent: #c9413a;
+  --f-accent-strong: #7e211d;
+  --f-accent-text: #ef7466;
+  --f-accent-ink: #fff3ee;
+  --f-arcane: #d6ad5c;
+  --f-ok: #8fb877;
+  --f-ok-bg: #1b2414;
+  --f-caution: #e59a3d;
+  --f-caution-bg: #2c1d0e;
+  --f-critical: #ff6b5e;
+  --f-critical-bg: #301010;
+  --f-glowc: rgb(201 65 58);
+  --f-art-a: #3a1010;
+  --f-art-b: #0d0505;
+}
+html[data-to="torch"] {
+  --t-mica: #0b0907;
+  --t-layer: #14110d;
+  --t-card: #1c1813;
+  --t-card-hi: #27211a;
+  --t-stone: #322a21;
+  --t-line: #3b3127;
+  --t-line-hi: #6b5638;
+  --t-fg: #efe6d6;
+  --t-fg-2: #d4c9b6;
+  --t-fg-3: #afa392;
+  --t-fg-4: #7c7264;
+  --t-accent: #e0a84a;
+  --t-accent-strong: #9b6624;
+  --t-accent-text: #f6cd7a;
+  --t-accent-ink: #1d1206;
+  --t-arcane: #72b8cc;
+  --t-ok: #86b66b;
+  --t-ok-bg: #1d2615;
+  --t-caution: #e7793f;
+  --t-caution-bg: #2c1910;
+  --t-critical: #e0645a;
+  --t-critical-bg: #2c1210;
+  --t-glowc: rgb(224 168 74);
+  --t-art-a: #3a2412;
+  --t-art-b: #120c08;
+}
+html[data-to="crypt"] {
+  --t-mica: #07090c;
+  --t-layer: #0d1116;
+  --t-card: #131920;
+  --t-card-hi: #1b232c;
+  --t-stone: #232d38;
+  --t-line: #2a3542;
+  --t-line-hi: #4d6276;
+  --t-fg: #e4ebf2;
+  --t-fg-2: #c1cbd6;
+  --t-fg-3: #9ba7b2;
+  --t-fg-4: #6a7580;
+  --t-accent: #8cc8dc;
+  --t-accent-strong: #3f7f96;
+  --t-accent-text: #c3ebf7;
+  --t-accent-ink: #061218;
+  --t-arcane: #b49ae6;
+  --t-ok: #7fbf86;
+  --t-ok-bg: #15241a;
+  --t-caution: #e3a54a;
+  --t-caution-bg: #2a2010;
+  --t-critical: #e0605a;
+  --t-critical-bg: #2a1212;
+  --t-glowc: rgb(140 200 220);
+  --t-art-a: #10202c;
+  --t-art-b: #06090c;
+}
+html[data-to="blood"] {
+  --t-mica: #0a0606;
+  --t-layer: #130c0c;
+  --t-card: #1b1111;
+  --t-card-hi: #251717;
+  --t-stone: #301d1d;
+  --t-line: #3d2424;
+  --t-line-hi: #7a3a35;
+  --t-fg: #f1e4dc;
+  --t-fg-2: #d9c5bc;
+  --t-fg-3: #b39f97;
+  --t-fg-4: #7f6e68;
+  --t-accent: #c9413a;
+  --t-accent-strong: #7e211d;
+  --t-accent-text: #ef7466;
+  --t-accent-ink: #fff3ee;
+  --t-arcane: #d6ad5c;
+  --t-ok: #8fb877;
+  --t-ok-bg: #1b2414;
+  --t-caution: #e59a3d;
+  --t-caution-bg: #2c1d0e;
+  --t-critical: #ff6b5e;
+  --t-critical-bg: #301010;
+  --t-glowc: rgb(201 65 58);
+  --t-art-a: #3a1010;
+  --t-art-b: #0d0505;
+}
+html[data-switching] *,
+html[data-switching] *::before,
+html[data-switching] *::after {
+  transition-property: opacity, visibility, scale, translate, rotate, transform !important;
+}
+html[data-from][data-to] {
+  --color-mica: color-mix(in oklch, var(--t-mica), var(--f-mica) calc((1 - var(--tp)) * 100%));
+  --color-layer: color-mix(in oklch, var(--t-layer), var(--f-layer) calc((1 - var(--tp)) * 100%));
+  --color-card: color-mix(in oklch, var(--t-card), var(--f-card) calc((1 - var(--tp)) * 100%));
+  --color-card-hi: color-mix(in oklch, var(--t-card-hi), var(--f-card-hi) calc((1 - var(--tp)) * 100%));
+  --color-stone: color-mix(in oklch, var(--t-stone), var(--f-stone) calc((1 - var(--tp)) * 100%));
+  --color-line: color-mix(in oklch, var(--t-line), var(--f-line) calc((1 - var(--tp)) * 100%));
+  --color-line-hi: color-mix(in oklch, var(--t-line-hi), var(--f-line-hi) calc((1 - var(--tp)) * 100%));
+  --color-fg: color-mix(in oklch, var(--t-fg), var(--f-fg) calc((1 - var(--tp)) * 100%));
+  --color-fg-2: color-mix(in oklch, var(--t-fg-2), var(--f-fg-2) calc((1 - var(--tp)) * 100%));
+  --color-fg-3: color-mix(in oklch, var(--t-fg-3), var(--f-fg-3) calc((1 - var(--tp)) * 100%));
+  --color-fg-4: color-mix(in oklch, var(--t-fg-4), var(--f-fg-4) calc((1 - var(--tp)) * 100%));
+  --color-accent: color-mix(in oklch, var(--t-accent), var(--f-accent) calc((1 - var(--tp)) * 100%));
+  --color-accent-strong: color-mix(in oklch, var(--t-accent-strong), var(--f-accent-strong) calc((1 - var(--tp)) * 100%));
+  --color-accent-text: color-mix(in oklch, var(--t-accent-text), var(--f-accent-text) calc((1 - var(--tp)) * 100%));
+  --color-accent-ink: color-mix(in oklch, var(--t-accent-ink), var(--f-accent-ink) calc((1 - clamp(0, (var(--tp) - 0.5) * 1000, 1)) * 100%));
+  --color-arcane: color-mix(in oklch, var(--t-arcane), var(--f-arcane) calc((1 - var(--tp)) * 100%));
+  --color-ok: color-mix(in oklch, var(--t-ok), var(--f-ok) calc((1 - var(--tp)) * 100%));
+  --color-ok-bg: color-mix(in oklch, var(--t-ok-bg), var(--f-ok-bg) calc((1 - var(--tp)) * 100%));
+  --color-caution: color-mix(in oklch, var(--t-caution), var(--f-caution) calc((1 - var(--tp)) * 100%));
+  --color-caution-bg: color-mix(in oklch, var(--t-caution-bg), var(--f-caution-bg) calc((1 - var(--tp)) * 100%));
+  --color-critical: color-mix(in oklch, var(--t-critical), var(--f-critical) calc((1 - var(--tp)) * 100%));
+  --color-critical-bg: color-mix(in oklch, var(--t-critical-bg), var(--f-critical-bg) calc((1 - var(--tp)) * 100%));
+  --glow-c: color-mix(in oklch, var(--t-glowc), var(--f-glowc) calc((1 - var(--tp)) * 100%));
+  --art-a: color-mix(in oklch, var(--t-art-a), var(--f-art-a) calc((1 - var(--tp)) * 100%));
+  --art-b: color-mix(in oklch, var(--t-art-b), var(--f-art-b) calc((1 - var(--tp)) * 100%));
+}
+/* ==== end of the theme change block ==== */
+
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background: var(--color-mica);
+  }
+  button {
+    cursor: default;
+  }
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-stone);
+    border: 4px solid transparent;
+    border-radius: 8px;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-line-hi);
+    border-width: 3px;
+  }
+  ::selection {
+    background: color-mix(in srgb, var(--glow-c) 35%, transparent);
+  }
+}
+
+/* glyph: <span class="ico">&#xE713;</span> */
+@utility ico {
+  font-family: var(--font-icons);
+  font-size: 16px;
+  line-height: 1;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  flex: none;
+}
+
+/* ----------------------------------------------------------------------------------------------- motion (Fluent 2) */
+/* A block appears when shown (show() removes .hidden; @starting-style — no code): fades in and rises
+   by 6 px over 250 ms (Gentle, decelerate). Enter only: a block in the page flow leaves at once, otherwise neighbours jump twice.
+   With "reduce motion" — only the fade, no shift. Do not put it on what app.js rebuilds on every poll
+   (server lists, lobby tabs) — the animation would repeat. */
+@utility enter {
+  transition-property: opacity, translate;
+  transition-duration: 250ms;
+  transition-timing-function: var(--ease-decelerate);
+  @starting-style {
+    opacity: 0;
+    translate: 0 6px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    @starting-style {
+      translate: none;
+    }
+  }
+}
+/* the same from the side: pop-up notifications (on the right) */
+@utility enter-side {
+  transition-property: opacity, translate;
+  transition-duration: 250ms;
+  transition-timing-function: var(--ease-decelerate);
+  @starting-style {
+    opacity: 0;
+    translate: 16px 0;
+  }
+  &[data-leaving] {
+    opacity: 0;
+    translate: 16px 0;
+    transition-duration: 150ms;
+    transition-timing-function: var(--ease-accelerate);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    @starting-style {
+      translate: none;
+    }
+    &[data-leaving] {
+      translate: none;
+    }
+  }
+}
+/* Layer over the window (dialogs, "What's new"): fades in over 200 ms and out over 150 ms (accelerate); display waits for the end
+   of the exit (allow-discrete). The dialog window inside is .pop. */
+@utility overlay {
+  transition-property: opacity, display;
+  transition-behavior: allow-discrete;
+  transition-duration: 200ms;
+  transition-timing-function: var(--ease-decelerate);
+  @starting-style {
+    opacity: 0;
+  }
+  &.hidden {
+    opacity: 0;
+    transition-duration: 150ms;
+    transition-timing-function: var(--ease-accelerate);
+  }
+}
+/* dialog window in the layer: from 96 % (Fluent ContentDialog) over 250 ms; leaves together with the layer */
+@utility pop {
+  transition-property: opacity, scale;
+  transition-duration: 250ms;
+  transition-timing-function: var(--ease-decelerate);
+  @starting-style {
+    opacity: 0;
+    scale: 0.96;
+  }
+  :where(.hidden) > & {
+    opacity: 0;
+    scale: 0.96;
+    transition-duration: 150ms;
+    transition-timing-function: var(--ease-accelerate);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    @starting-style {
+      scale: none;
+    }
+    :where(.hidden) > & {
+      scale: none;
+    }
+  }
+}
+
+/* caption under the title in the header (as on the site): gold small caps with a glow */
+@utility brand-sub {
+  @apply font-display text-2xs font-semibold tracking-caps text-accent-text uppercase;
+  text-shadow: 0 0 12px color-mix(in srgb, var(--glow-c) 55%, transparent);
+}
+
+/* ----------------------------------------------------------------------------------------------- backgrounds */
+/* window background: warm light from above, a glow from below, noise */
+@utility scene {
+  background:
+    radial-gradient(1100px 480px at 72% -8%, var(--art-a), transparent 70%),
+    radial-gradient(900px 600px at 0% 105%, color-mix(in srgb, var(--glow-c) 7%, transparent), transparent 70%),
+    var(--noise),
+    linear-gradient(180deg, var(--art-b), var(--color-mica));
+}
+/* the server's main block: a "key art" made of gradients; the server's picture, if it appears, goes into --art */
+@utility hero-art {
+  background:
+    linear-gradient(90deg, var(--color-layer) 0%, rgb(0 0 0 / 0.55) 48%, transparent 78%),
+    linear-gradient(0deg, var(--color-layer) 0%, transparent 50%),
+    radial-gradient(480px 280px at 80% 40%, color-mix(in srgb, var(--glow-c) 30%, transparent), transparent 70%),
+    radial-gradient(260px 360px at 88% 90%, var(--art-a), transparent 70%),
+    repeating-linear-gradient(100deg, rgb(255 255 255 / 0.015) 0 2px, transparent 2px 9px),
+    var(--art, var(--art-b));
+  background-size: cover;
+  background-position: center;
+}
+
+/* ----------------------------------------------------------------------------------------------- buttons */
+@utility btn {
+  @apply inline-flex h-8 items-center justify-center gap-2 rounded-ctl px-3 text-sm whitespace-nowrap select-none
+    transition-[color,background-color,border-color,filter,box-shadow] disabled:pointer-events-none;
+}
+/* gold button: metal, bevel, glow */
+@utility btn-accent {
+  @apply btn border font-semibold;
+  color: var(--color-accent-ink);
+  background: linear-gradient(180deg, var(--color-accent-text), var(--color-accent) 50%, var(--color-accent-strong));
+  border-color: var(--color-accent-text);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.4), inset 0 -2px 0 rgb(0 0 0 / 0.22), 0 0 0 1px rgb(0 0 0 / 0.5),
+    0 0 16px -6px color-mix(in srgb, var(--glow-c) 60%, transparent);
+  &:enabled:hover {
+    filter: brightness(1.08);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.45), inset 0 -2px 0 rgb(0 0 0 / 0.22), 0 0 0 1px rgb(0 0 0 / 0.5),
+      0 0 22px -4px color-mix(in srgb, var(--glow-c) 70%, transparent);
+  }
+  &:enabled:active {
+    filter: brightness(0.92);
+  }
+  &:disabled {
+    color: var(--color-fg-4);
+    background: var(--color-card-hi);
+    border-color: var(--color-line);
+    box-shadow: none;
+  }
+}
+/* the main "Play": the same gold one, larger, small caps, sparks above it (.embers) */
+@utility btn-play {
+  @apply btn-accent font-display font-bold tracking-[0.18em] uppercase;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 rgb(255 255 255 / 0.25);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.45), inset 0 -3px 0 rgb(0 0 0 / 0.25), 0 0 0 1px rgb(0 0 0 / 0.6),
+    0 0 28px -4px color-mix(in srgb, var(--glow-c) 55%, transparent);
+  &:enabled:hover {
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5), inset 0 -3px 0 rgb(0 0 0 / 0.25), 0 0 0 1px rgb(0 0 0 / 0.6),
+      0 0 44px 0 color-mix(in srgb, var(--glow-c) 70%, transparent);
+  }
+  &:disabled {
+    text-shadow: none;
+  }
+}
+/* stone button */
+@utility btn-std {
+  @apply btn border text-fg;
+  background: linear-gradient(180deg, var(--color-stone), var(--color-card-hi));
+  border-color: var(--color-line-hi);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06);
+  &:enabled:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent-text);
+  }
+  &:enabled:active {
+    background: var(--color-card-hi);
+  }
+  &:disabled {
+    color: var(--color-fg-4);
+    border-color: var(--color-line);
+  }
+}
+/* flat panel button */
+@utility btn-flat {
+  @apply btn text-fg enabled:hover:bg-white/[0.05] enabled:hover:text-accent-text enabled:active:bg-white/[0.03]
+    disabled:text-fg-4;
+}
+
+/* ----------------------------------------------------------------------------------------------- inputs */
+/* The page is select-none (an app, not a document), and WebView2 then refuses typing and pasting into text fields that
+   inherit it: fields are always editable text */
+@layer base {
+  input:not([type="checkbox"]):not([type="radio"]),
+  textarea,
+  [contenteditable="true"] {
+    user-select: text;
+    -webkit-user-select: text;
+  }
+}
+/* input field: sunk into the stone */
+@utility field {
+  @apply h-8 w-full rounded-ctl border border-line bg-black/35 px-3 text-sm text-fg outline-none
+    transition-[border-color,box-shadow] placeholder:text-fg-4 hover:border-line-hi focus:border-accent;
+  box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.5);
+  &:focus {
+    box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.5), 0 0 0 1px color-mix(in srgb, var(--glow-c) 35%, transparent);
+  }
+}
+/* list on <select> */
+@utility combo {
+  @apply field cursor-default appearance-none bg-no-repeat pr-8;
+  background-image: linear-gradient(45deg, transparent 50%, var(--color-fg-2) 50%), linear-gradient(135deg, var(--color-fg-2) 50%, transparent 50%);
+  background-position: calc(100% - 15px) 14px, calc(100% - 11px) 14px;
+  background-size: 4px 4px;
+  & option {
+    background: var(--color-card);
+  }
+}
+/* switch on <input type="checkbox"> */
+@utility toggle {
+  @apply relative h-5 w-10 shrink-0 appearance-none rounded-full border border-line-hi bg-black/35 transition-colors
+    hover:border-accent checked:border-accent-text checked:bg-accent;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 9999px;
+    background: var(--color-fg-3);
+    transition: transform 150ms var(--ease-decelerate);
+  }
+  &:checked::before {
+    transform: translateX(20px);
+    background: var(--color-accent-ink);
+  }
+  &:checked {
+    box-shadow: 0 0 10px -2px color-mix(in srgb, var(--glow-c) 60%, transparent);
+  }
+}
+/* checkbox */
+@utility check {
+  @apply relative mt-0.5 size-5 shrink-0 appearance-none rounded-ctl border border-line-hi bg-black/35 transition-colors
+    checked:border-accent-text checked:bg-accent disabled:opacity-60;
+  &:checked::after {
+    content: "\E73E";
+    font-family: var(--font-icons);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    color: var(--color-accent-ink);
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------- surfaces */
+/* stone panel: thin border, highlight on top, noise, shadow */
+@utility card {
+  @apply rounded-ovl border border-line;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.035), transparent 40%), var(--noise), var(--color-card);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04), 0 10px 30px -14px rgb(0 0 0 / 0.85);
+}
+/* gold frame corners: main block, splash, dialogs */
+@utility framed {
+  position: relative;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+    border-color: var(--color-accent);
+    opacity: 0.85;
+  }
+  &::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-top-left-radius: 6px;
+  }
+  &::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    border-bottom-right-radius: 6px;
+  }
+}
+/* settings row: icon · title + description · control */
+@utility row {
+  @apply flex min-h-[64px] items-center gap-4 border border-line px-4 py-3 transition-colors first:rounded-t-ovl
+    last:rounded-b-ovl [&+&]:border-t-0;
+  background: linear-gradient(180deg, rgb(255 255 255 / 0.025), transparent 60%), var(--color-card);
+}
+/* banner; tone via data-tone="info|ok|caution|critical" */
+@utility bar {
+  @apply flex items-start gap-3 rounded-ovl border border-line px-4 py-3 text-sm;
+  background: linear-gradient(90deg, var(--tone, color-mix(in srgb, var(--glow-c) 10%, transparent)), transparent 65%), var(--color-card);
+  &[data-tone="ok"] {
+    --tone: color-mix(in srgb, var(--color-ok) 14%, transparent);
+    border-color: color-mix(in srgb, var(--color-ok) 40%, transparent);
+  }
+  &[data-tone="caution"] {
+    --tone: color-mix(in srgb, var(--color-caution) 16%, transparent);
+    border-color: color-mix(in srgb, var(--color-caution) 50%, transparent);
+  }
+  &[data-tone="critical"] {
+    --tone: color-mix(in srgb, var(--color-critical) 16%, transparent);
+    border-color: color-mix(in srgb, var(--color-critical) 50%, transparent);
+  }
+}
+/* label */
+@utility pill {
+  @apply inline-flex h-6 items-center gap-1.5 rounded-sm border border-line bg-black/35 px-2 text-xs whitespace-nowrap text-fg-2;
+}
+/* section heading: small caps and a gold line on the right */
+@utility title-rule {
+  @apply flex items-center gap-3 font-display text-[13px] font-medium tracking-[0.2em] text-fg-2 uppercase;
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-line-hi), transparent);
+  }
+}
+/* tab with a gold line underneath (server / change list, log) */
+@utility tab {
+  /* the selected tab's line grows from the middle (Fluent: 250 ms, decelerate), a deselected one's closes in (150 ms) */
+  @apply relative py-2.5 font-display tracking-[0.12em] text-fg-3 uppercase transition-colors hover:text-fg-2
+    data-[active]:text-accent-text after:absolute after:inset-x-0 after:-bottom-px after:h-[2px] after:scale-x-0 after:bg-accent
+    after:transition-transform after:duration-150 after:ease-accelerate data-[active]:after:scale-x-100
+    data-[active]:after:duration-250 data-[active]:after:ease-decelerate
+    data-[active]:after:shadow-[0_0_10px_color-mix(in_srgb,var(--glow-c)_80%,transparent)];
+}
+/* spinner */
+@utility spin {
+  @apply inline-block size-4 shrink-0 animate-ring rounded-full border-2 border-accent border-t-transparent;
+}
+
+/* ----------------------------------------------------------------------------------------------- embers */
+/* sparks above "Play" (as on the site): CSS only; none with "reduce motion" or on a disabled button; stopped when
+   the window is not in use (<html data-calm>: unfocused or minimised, app.js) — a CSS animation would otherwise spin the GPU */
+@utility embers {
+  @apply pointer-events-none absolute inset-0 z-1 motion-reduce:hidden;
+  &:has(+ :disabled) {
+    display: none;
+  }
+  & > i {
+    @apply absolute bottom-[55%] size-0.75 rounded-full bg-(--ember) opacity-0 shadow-[0_0_6px_1px_var(--ember)] animate-ember
+      in-data-calm:[animation-play-state:paused];
+  }
+  & > i:nth-child(1) { left: 8%; animation-delay: 0s; --dx: -10px; }
+  & > i:nth-child(2) { left: 19%; animation-delay: 1.6s; --dx: 12px; }
+  & > i:nth-child(3) { left: 31%; animation-delay: 3.1s; --dx: -14px; }
+  & > i:nth-child(4) { left: 44%; animation-delay: 0.8s; --dx: 16px; }
+  & > i:nth-child(5) { left: 56%; animation-delay: 2.4s; --dx: -8px; }
+  & > i:nth-child(6) { left: 68%; animation-delay: 4s; --dx: 18px; }
+  & > i:nth-child(7) { left: 80%; animation-delay: 1.2s; --dx: -16px; }
+  & > i:nth-child(8) { left: 91%; animation-delay: 3.5s; --dx: 10px; }
+}

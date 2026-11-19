@@ -1,0 +1,4 @@
+﻿market_id;data.market_id;data.name;data.display_order;data.market_tab_ids;data.is_on_sale;data.type
+101;101;商人;2;[1009,1010,1011,1014,1015,1016,1017,1019,4444];true;1
+102;102;商城;1;[3001,3002,3005,3004];true;2
+103;103;特殊;;[1005,1006,2000];true;4

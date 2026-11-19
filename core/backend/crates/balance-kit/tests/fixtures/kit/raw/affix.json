@@ -1,0 +1,37 @@
+{
+ "type": "t",
+ "rows": [
+  {
+   "affix_value_id": 101,
+   "attribute_type": 1001,
+   "data": {
+    "unit": 5,
+    "affix_data": [
+     {
+      "rarity_range": {
+       "1": {
+        "min_value": 5,
+        "max_value": 15
+       }
+      }
+     }
+    ]
+   }
+  },
+  {
+   "affix_value_id": 101,
+   "attribute_type": 1002,
+   "data": {
+    "affix_data": [
+     {
+      "rarity_range": {
+       "1": {
+        "max_value": 8
+       }
+      }
+     }
+    ]
+   }
+  }
+ ]
+}

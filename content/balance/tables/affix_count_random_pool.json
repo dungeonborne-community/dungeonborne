@@ -1,0 +1,117 @@
+{
+  "type": "tgf.config.ExcelAffixCountRandomPool",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 20,
+    "hash_code": "sha256:27be818b4f78bb6d22c104c7e50117d5c37c8e954f418b54b814fff94ece1840",
+    "data_source": [
+      {
+        "file": "3cfda9ac749c13ada0f24b3d340c5c2d8da7231862106ff6c1a59423427cba28",
+        "sheet": "687f07785d98916bbfd400add35f9d6e00dc616c50c69e4ad774d001a0d63307",
+        "count": 20
+      }
+    ]
+  },
+  "rows": [
+    {
+      "affix_count_pool_id": 1,
+      "count": 99,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 2,
+      "count": 99,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 3,
+      "count": 99,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 4,
+      "count": 99,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 5,
+      "count": 99,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 6,
+      "count": 99,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 7,
+      "count": 99,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 11,
+      "count": 1,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 12,
+      "count": 1,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 12,
+      "count": 2,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 13,
+      "count": 1,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 13,
+      "count": 2,
+      "random_weight": 2
+    },
+    {
+      "affix_count_pool_id": 14,
+      "count": 2,
+      "random_weight": 5
+    },
+    {
+      "affix_count_pool_id": 14,
+      "count": 3,
+      "random_weight": 3
+    },
+    {
+      "affix_count_pool_id": 15,
+      "count": 2,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 16,
+      "count": 2,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 17,
+      "count": 30,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 18,
+      "count": 1,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 19,
+      "random_weight": 1
+    },
+    {
+      "affix_count_pool_id": 101,
+      "count": 1,
+      "random_weight": 1
+    }
+  ]
+}

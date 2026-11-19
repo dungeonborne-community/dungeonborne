@@ -1,0 +1,50 @@
+{
+  "type": "tgf.config.ExcelGearBaseItem",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 8,
+    "hash_code": "sha256:f0d7cb81b202cadc021b275a49f852fd06c4f4cfbb21459a828a84309219dc1f",
+    "data_source": [
+      {
+        "file": "2c5cedf35675fc93cf6266d524769790ff5fe30916353e9a29adafa98c9c6d7f",
+        "sheet": "2dfa93b847c05b41ed3be9d7d9c7cf2fa07e23b30a8d69d344a58efb777f5735",
+        "count": 8
+      }
+    ]
+  },
+  "rows": [
+    {
+      "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_SWORD",
+      "id": 181010000
+    },
+    {
+      "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_SHIELD",
+      "id": 181030000
+    },
+    {
+      "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_LONG_SWORD",
+      "id": 181020000
+    },
+    {
+      "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_DAGGER",
+      "id": 181110000
+    },
+    {
+      "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_MACE",
+      "id": 181120000
+    },
+    {
+      "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_HEAVY_CROSSBOW",
+      "id": 181040000
+    },
+    {
+      "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_STAFF",
+      "id": 181050001
+    },
+    {
+      "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_RELIC",
+      "id": 181080000
+    }
+  ]
+}

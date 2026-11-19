@@ -1,0 +1,8 @@
+﻿chat_channel_type;max_log_count;gc_log_count;gc_expire_duration;memory_only;words_limit
+1;300;300;3d;true;
+2;300;300;1d;true;200
+3;150;150;1d;true;200
+4;300;300;12w;true;200
+5;100;100;1d;;
+6;100;100;4w;;
+7;150;150;1d;true;200

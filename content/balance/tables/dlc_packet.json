@@ -1,0 +1,141 @@
+{
+  "type": "tgf.config.ExcelDLCPacket",
+  "header": {
+    "xres_ver": "2.19.2",
+    "data_ver": "2.19.2.20241211125607",
+    "count": 15,
+    "hash_code": "sha256:2cfe2e88c4143829f6464d8c89ce29872ac030c57c15937436b83eb789d4cf86",
+    "data_source": [
+      {
+        "file": "59b7188cefd63b8eeeb5524b2e5514f7d710fe960a871aa54e6f18a157186b3f",
+        "sheet": "656349d4d04e8031224f91dadd7c6952d3bcfff4fa08917a030147b7670fca64",
+        "count": 15
+      }
+    ]
+  },
+  "rows": [
+    {
+      "app_id": 2897620,
+      "item_id": 1322001,
+      "is_recycle": true,
+      "item": {
+        "type_id": 1322001,
+        "count": 1
+      }
+    },
+    {
+      "app_id": 2897620,
+      "item_id": 1300002,
+      "is_recycle": true,
+      "item": {
+        "type_id": 1300002,
+        "count": 1
+      }
+    },
+    {
+      "app_id": 2897620,
+      "item_id": 100016,
+      "item": {
+        "type_id": 100016,
+        "count": 15
+      }
+    },
+    {
+      "app_id": 2897620,
+      "item_id": 100013,
+      "item": {
+        "type_id": 100013,
+        "count": 15
+      }
+    },
+    {
+      "app_id": 2897620,
+      "item_id": 100047,
+      "item": {
+        "type_id": 100047,
+        "count": 3
+      }
+    },
+    {
+      "app_id": 2897620,
+      "item_id": 100048,
+      "item": {
+        "type_id": 100048,
+        "count": 3
+      }
+    },
+    {
+      "app_id": 2897620,
+      "item_id": 100049,
+      "item": {
+        "type_id": 100049,
+        "count": 3
+      }
+    },
+    {
+      "app_id": 2897620,
+      "item_id": 100050,
+      "item": {
+        "type_id": 100050,
+        "count": 3
+      }
+    },
+    {
+      "app_id": 3153730,
+      "item_id": 1321000,
+      "is_recycle": true,
+      "item": {
+        "type_id": 1321000,
+        "count": 1
+      }
+    },
+    {
+      "app_id": 3153730,
+      "item_id": 100016,
+      "item": {
+        "type_id": 100016,
+        "count": 15
+      }
+    },
+    {
+      "app_id": 3153730,
+      "item_id": 100013,
+      "item": {
+        "type_id": 100013,
+        "count": 15
+      }
+    },
+    {
+      "app_id": 3153730,
+      "item_id": 100047,
+      "item": {
+        "type_id": 100047,
+        "count": 3
+      }
+    },
+    {
+      "app_id": 3153730,
+      "item_id": 100048,
+      "item": {
+        "type_id": 100048,
+        "count": 3
+      }
+    },
+    {
+      "app_id": 3153730,
+      "item_id": 100049,
+      "item": {
+        "type_id": 100049,
+        "count": 3
+      }
+    },
+    {
+      "app_id": 3153730,
+      "item_id": 100050,
+      "item": {
+        "type_id": 100050,
+        "count": 3
+      }
+    }
+  ]
+}

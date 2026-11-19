@@ -1,0 +1,11 @@
+{ 
+  "ds_config_url": "https://localhost/ds_shipping.json",
+  "marquee_config_url": "https://localhost/marquee_shipping.json",
+  "banner_config_url": "https://localhost/banner_shipping.json",
+  "http_report_url": "https://localhost/api/v1/logproxy",
+  "smartlink_report_url": "https://localhost",
+  "maple_url": "dir.228918463-2-1.example.org",
+  "maple_tree_id": 4,
+  "tdm_url": "https://localhost/tdm/v1/route",
+  "pay_sandbox" : false
+}

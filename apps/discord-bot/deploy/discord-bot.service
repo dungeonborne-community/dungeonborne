@@ -1,0 +1,25 @@
+# Example systemd unit for the bot on a Linux VM (apps/discord-bot/README.md, "Deploying on a server").
+# Install: cp discord-bot.service /etc/systemd/system/ && systemctl daemon-reload && systemctl enable --now discord-bot
+[Unit]
+Description=Dungeonborne community Discord bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=discord-bot
+Group=discord-bot
+# .env (DISCORD_TOKEN and the other keys) is looked up in the working folder; data/ (the database) is relative to it
+WorkingDirectory=/opt/discord-bot
+ExecStart=/opt/discord-bot/discord-bot /opt/discord-bot/bot.toml
+Restart=on-failure
+RestartSec=10
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+# the database, and the folder the website serves support.json from ("-": fine if it does not exist)
+ReadWritePaths=/opt/discord-bot/data -/var/www/status
+
+[Install]
+WantedBy=multi-user.target

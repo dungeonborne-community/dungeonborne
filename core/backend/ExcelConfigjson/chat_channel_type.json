@@ -1,0 +1,53 @@
+[
+  {
+    "chat_channel_type": 1,
+    "gc_expire_duration": "3d",
+    "gc_log_count": 300,
+    "max_log_count": 300,
+    "memory_only": true
+  },
+  {
+    "chat_channel_type": 2,
+    "gc_expire_duration": "1d",
+    "gc_log_count": 300,
+    "max_log_count": 300,
+    "memory_only": true,
+    "words_limit": 200
+  },
+  {
+    "chat_channel_type": 3,
+    "gc_expire_duration": "1d",
+    "gc_log_count": 150,
+    "max_log_count": 150,
+    "memory_only": true,
+    "words_limit": 200
+  },
+  {
+    "chat_channel_type": 4,
+    "gc_expire_duration": "12w",
+    "gc_log_count": 300,
+    "max_log_count": 300,
+    "memory_only": true,
+    "words_limit": 200
+  },
+  {
+    "chat_channel_type": 5,
+    "gc_expire_duration": "1d",
+    "gc_log_count": 100,
+    "max_log_count": 100
+  },
+  {
+    "chat_channel_type": 6,
+    "gc_expire_duration": "4w",
+    "gc_log_count": 100,
+    "max_log_count": 100
+  },
+  {
+    "chat_channel_type": 7,
+    "gc_expire_duration": "1d",
+    "gc_log_count": 150,
+    "max_log_count": 150,
+    "memory_only": true,
+    "words_limit": 200
+  }
+]

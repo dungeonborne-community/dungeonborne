@@ -1,0 +1,7010 @@
+[
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21011010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Sword_220110120.UI_icon_Heirloom_Sword_220110120'",
+    "id": 210110120,
+    "inst_id": 220110120,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 101,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21011010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Sword_220110130.UI_icon_Heirloom_Sword_220110130'",
+    "id": 210110130,
+    "inst_id": 220110130,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 101,
+    "type_id": 1,
+    "unlock_condition": [
+      210110120
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Sword_220110140.UI_icon_Heirloom_Sword_220110140'",
+    "id": 210110140,
+    "inst_id": 220110140,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 101,
+    "type_id": 1,
+    "unlock_condition": [
+      210110130
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Sword_220110140.UI_icon_Heirloom_Sword_220110140'",
+    "id": 210110180,
+    "inst_id": 220110180,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 101,
+    "type_id": 1,
+    "unlock_condition": [
+      210110140
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21011020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_LongSword_220110220.UI_icon_Heirloom_LongSword_220110220'",
+    "id": 210110220,
+    "inst_id": 220110220,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 102,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21011020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_LongSword_220110230.UI_icon_Heirloom_LongSword_220110230'",
+    "id": 210110230,
+    "inst_id": 220110230,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 102,
+    "type_id": 1,
+    "unlock_condition": [
+      210110220
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21011020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_LongSword_220110240.UI_icon_Heirloom_LongSword_220110240'",
+    "id": 210110240,
+    "inst_id": 220110240,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 102,
+    "type_id": 1,
+    "unlock_condition": [
+      210110230
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21011020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_LongSword_220110240.UI_icon_Heirloom_LongSword_220110240'",
+    "id": 210110280,
+    "inst_id": 220110280,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 102,
+    "type_id": 1,
+    "unlock_condition": [
+      210110240
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21011110,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Dagger_220111120.UI_icon_Heirloom_Dagger_220111120'",
+    "id": 210111120,
+    "inst_id": 220111120,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 103,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21011110,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Dagger_220111130.UI_icon_Heirloom_Dagger_220111130'",
+    "id": 210111130,
+    "inst_id": 220111130,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 103,
+    "type_id": 1,
+    "unlock_condition": [
+      210111120
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011110,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Dagger_220111140.UI_icon_Heirloom_Dagger_220111140'",
+    "id": 210111140,
+    "inst_id": 220111140,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 103,
+    "type_id": 1,
+    "unlock_condition": [
+      210111130
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011110,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Dagger_220111140.UI_icon_Heirloom_Dagger_220111140'",
+    "id": 210111180,
+    "inst_id": 220111180,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 103,
+    "type_id": 1,
+    "unlock_condition": [
+      210111140
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21011050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Staff_220110520.UI_icon_Heirloom_Staff_220110520'",
+    "id": 210110520,
+    "inst_id": 220110520,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 104,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21011050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Staff_220110530.UI_icon_Heirloom_Staff_220110530'",
+    "id": 210110530,
+    "inst_id": 220110530,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 104,
+    "type_id": 1,
+    "unlock_condition": [
+      210110520
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21011050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Staff_220110540.UI_icon_Heirloom_Staff_220110540'",
+    "id": 210110540,
+    "inst_id": 220110540,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 104,
+    "type_id": 1,
+    "unlock_condition": [
+      210110530
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21011050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Staff_220110540.UI_icon_Heirloom_Staff_220110540'",
+    "id": 210110580,
+    "inst_id": 220110580,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 104,
+    "type_id": 1,
+    "unlock_condition": [
+      210110540
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21011051,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Staff_220110521.UI_icon_Heirloom_Staff_220110521'",
+    "id": 210110521,
+    "inst_id": 220110521,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 105,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21011051,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Staff_220110531.UI_icon_Heirloom_Staff_220110531'",
+    "id": 210110531,
+    "inst_id": 220110531,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 105,
+    "type_id": 1,
+    "unlock_condition": [
+      210110521
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21011051,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Staff_220110541.UI_icon_Heirloom_Staff_220110541'",
+    "id": 210110541,
+    "inst_id": 220110541,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 105,
+    "type_id": 1,
+    "unlock_condition": [
+      210110531
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21011051,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Staff_220110541.UI_icon_Heirloom_Staff_220110541'",
+    "id": 210110581,
+    "inst_id": 220110581,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 105,
+    "type_id": 1,
+    "unlock_condition": [
+      210110541
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21011120,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Mace_220111220.UI_icon_Heirloom_Mace_220111220'",
+    "id": 210111220,
+    "inst_id": 220111220,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 106,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21011120,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Mace_220111230.UI_icon_Heirloom_Mace_220111230'",
+    "id": 210111230,
+    "inst_id": 220111230,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 106,
+    "type_id": 1,
+    "unlock_condition": [
+      210111220
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011120,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Mace_220111240.UI_icon_Heirloom_Mace_220111240'",
+    "id": 210111240,
+    "inst_id": 220111240,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 106,
+    "type_id": 1,
+    "unlock_condition": [
+      210111230
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011120,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Mace_220111240.UI_icon_Heirloom_Mace_220111240'",
+    "id": 210111280,
+    "inst_id": 220111280,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 106,
+    "type_id": 1,
+    "unlock_condition": [
+      210111240
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21011030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Shield_220110320.UI_icon_Heirloom_Shield_220110320'",
+    "id": 210110320,
+    "inst_id": 220110320,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 107,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21011030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Shield_220110330.UI_icon_Heirloom_Shield_220110330'",
+    "id": 210110330,
+    "inst_id": 220110330,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 107,
+    "type_id": 1,
+    "unlock_condition": [
+      210110320
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Shield_220110340.UI_icon_Heirloom_Shield_220110340'",
+    "id": 210110340,
+    "inst_id": 220110340,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 107,
+    "type_id": 1,
+    "unlock_condition": [
+      210110330
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Shield_220110340.UI_icon_Heirloom_Shield_220110340'",
+    "id": 210110380,
+    "inst_id": 220110380,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 107,
+    "type_id": 1,
+    "unlock_condition": [
+      210110340
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21011080,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Relic_220110820.UI_icon_Heirloom_Relic_220110820'",
+    "id": 210110820,
+    "inst_id": 220110820,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 108,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21011080,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Relic_220110830.UI_icon_Heirloom_Relic_220110830'",
+    "id": 210110830,
+    "inst_id": 220110830,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 108,
+    "type_id": 1,
+    "unlock_condition": [
+      210110820
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011080,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Relic_220110840.UI_icon_Heirloom_Relic_220110840'",
+    "id": 210110840,
+    "inst_id": 220110840,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 108,
+    "type_id": 1,
+    "unlock_condition": [
+      210110830
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_FUNCTION"
+    ],
+    "group_id": 21011080,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Relic_220110840.UI_icon_Heirloom_Relic_220110840'",
+    "id": 210110880,
+    "inst_id": 220110880,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 108,
+    "type_id": 1,
+    "unlock_condition": [
+      210110840
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21011040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_HeavyCrossbow_220110420.UI_icon_Heirloom_HeavyCrossbow_220110420'",
+    "id": 210110420,
+    "inst_id": 220110420,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 109,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21011040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_HeavyCrossbow_220110430.UI_icon_Heirloom_HeavyCrossbow_220110430'",
+    "id": 210110430,
+    "inst_id": 220110430,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 109,
+    "type_id": 1,
+    "unlock_condition": [
+      210110420
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21011040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_HeavyCrossbow_220110440.UI_icon_Heirloom_HeavyCrossbow_220110440'",
+    "id": 210110440,
+    "inst_id": 220110440,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 109,
+    "type_id": 1,
+    "unlock_condition": [
+      210110430
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21011040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_HeavyCrossbow_220110440.UI_icon_Heirloom_HeavyCrossbow_220110440'",
+    "id": 210110480,
+    "inst_id": 220110480,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 109,
+    "type_id": 1,
+    "unlock_condition": [
+      210110440
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_GEAR_SET",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 2101101199,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ex_Sword_220110151.UI_icon_Heirloom_Ex_Sword_220110151'",
+    "id": 210110151,
+    "inst_id": 220110151,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 110,
+    "type_id": 1,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 189010004
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21014010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Helmet_220140120.UI_icon_Heirloom_Plate_Helmet_220140120'",
+    "id": 210140120,
+    "inst_id": 220140120,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 201,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21014010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Helmet_220140130.UI_icon_Heirloom_Plate_Helmet_220140130'",
+    "id": 210140130,
+    "inst_id": 220140130,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 201,
+    "type_id": 2,
+    "unlock_condition": [
+      210140120
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Helmet_220140140.UI_icon_Heirloom_Plate_Helmet_220140140'",
+    "id": 210140140,
+    "inst_id": 220140140,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 201,
+    "type_id": 2,
+    "unlock_condition": [
+      210140130
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Helmet_220140140.UI_icon_Heirloom_Plate_Helmet_220140140'",
+    "id": 210140180,
+    "inst_id": 220140180,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 201,
+    "type_id": 2,
+    "unlock_condition": [
+      210140140
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21014020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Breastplate_220140220.UI_icon_Heirloom_Plate_Breastplate_220140220'",
+    "id": 210140220,
+    "inst_id": 220140220,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 202,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21014020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Breastplate_220140230.UI_icon_Heirloom_Plate_Breastplate_220140230'",
+    "id": 210140230,
+    "inst_id": 220140230,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 202,
+    "type_id": 2,
+    "unlock_condition": [
+      210140220
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Breastplate_220140240.UI_icon_Heirloom_Plate_Breastplate_220140240'",
+    "id": 210140240,
+    "inst_id": 220140240,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 202,
+    "type_id": 2,
+    "unlock_condition": [
+      210140230
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Breastplate_220140240.UI_icon_Heirloom_Plate_Breastplate_220140240'",
+    "id": 210140280,
+    "inst_id": 220140280,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 202,
+    "type_id": 2,
+    "unlock_condition": [
+      210140240
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21014030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Gloves_220140320.UI_icon_Heirloom_Plate_Gloves_220140320'",
+    "id": 210140320,
+    "inst_id": 220140320,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 203,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21014030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Gloves_220140330.UI_icon_Heirloom_Plate_Gloves_220140330'",
+    "id": 210140330,
+    "inst_id": 220140330,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 203,
+    "type_id": 2,
+    "unlock_condition": [
+      210140320
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Gloves_220140340.UI_icon_Heirloom_Plate_Gloves_220140340'",
+    "id": 210140340,
+    "inst_id": 220140340,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 203,
+    "type_id": 2,
+    "unlock_condition": [
+      210140330
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Gloves_220140340.UI_icon_Heirloom_Plate_Gloves_220140340'",
+    "id": 210140380,
+    "inst_id": 220140380,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 203,
+    "type_id": 2,
+    "unlock_condition": [
+      210140340
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21014040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Trousers_220140420.UI_icon_Heirloom_Plate_Trousers_220140420'",
+    "id": 210140420,
+    "inst_id": 220140420,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 204,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21014040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Trousers_220140430.UI_icon_Heirloom_Plate_Trousers_220140430'",
+    "id": 210140430,
+    "inst_id": 220140430,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 204,
+    "type_id": 2,
+    "unlock_condition": [
+      210140420
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Trousers_220140440.UI_icon_Heirloom_Plate_Trousers_220140440'",
+    "id": 210140440,
+    "inst_id": 220140440,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 204,
+    "type_id": 2,
+    "unlock_condition": [
+      210140430
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Trousers_220140440.UI_icon_Heirloom_Plate_Trousers_220140440'",
+    "id": 210140480,
+    "inst_id": 220140480,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 204,
+    "type_id": 2,
+    "unlock_condition": [
+      210140440
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21014050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Shoes_220140520.UI_icon_Heirloom_Plate_Shoes_220140520'",
+    "id": 210140520,
+    "inst_id": 220140520,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 205,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21014050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Shoes_220140530.UI_icon_Heirloom_Plate_Shoes_220140530'",
+    "id": 210140530,
+    "inst_id": 220140530,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 205,
+    "type_id": 2,
+    "unlock_condition": [
+      210140520
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Shoes_220140540.UI_icon_Heirloom_Plate_Shoes_220140540'",
+    "id": 210140540,
+    "inst_id": 220140540,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 205,
+    "type_id": 2,
+    "unlock_condition": [
+      210140530
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21014050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Shoes_220140540.UI_icon_Heirloom_Plate_Shoes_220140540'",
+    "id": 210140580,
+    "inst_id": 220140580,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 205,
+    "type_id": 2,
+    "unlock_condition": [
+      210140540
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21013010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Helmet_220130120.UI_icon_Heirloom_Leather_Helmet_220130120'",
+    "id": 210130120,
+    "inst_id": 220130120,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 206,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21013010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Helmet_220130130.UI_icon_Heirloom_Leather_Helmet_220130130'",
+    "id": 210130130,
+    "inst_id": 220130130,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 206,
+    "type_id": 2,
+    "unlock_condition": [
+      210130120
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Helmet_220130140.UI_icon_Heirloom_Leather_Helmet_220130140'",
+    "id": 210130140,
+    "inst_id": 220130140,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 206,
+    "type_id": 2,
+    "unlock_condition": [
+      210130130
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Helmet_220130140.UI_icon_Heirloom_Leather_Helmet_220130140'",
+    "id": 210130180,
+    "inst_id": 220130180,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 206,
+    "type_id": 2,
+    "unlock_condition": [
+      210130140
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21013020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Breastplate_220130220.UI_icon_Heirloom_Leather_Breastplate_220130220'",
+    "id": 210130220,
+    "inst_id": 220130220,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 207,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21013020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Breastplate_220130230.UI_icon_Heirloom_Leather_Breastplate_220130230'",
+    "id": 210130230,
+    "inst_id": 220130230,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 207,
+    "type_id": 2,
+    "unlock_condition": [
+      210130220
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Breastplate_220130240.UI_icon_Heirloom_Leather_Breastplate_220130240'",
+    "id": 210130240,
+    "inst_id": 220130240,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 207,
+    "type_id": 2,
+    "unlock_condition": [
+      210130230
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Breastplate_220130240.UI_icon_Heirloom_Leather_Breastplate_220130240'",
+    "id": 210130280,
+    "inst_id": 220130280,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 207,
+    "type_id": 2,
+    "unlock_condition": [
+      210130240
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21013030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Gloves_220130320.UI_icon_Heirloom_Leather_Gloves_220130320'",
+    "id": 210130320,
+    "inst_id": 220130320,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 208,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21013030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Gloves_220130330.UI_icon_Heirloom_Leather_Gloves_220130330'",
+    "id": 210130330,
+    "inst_id": 220130330,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 208,
+    "type_id": 2,
+    "unlock_condition": [
+      210130320
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Gloves_220130340.UI_icon_Heirloom_Leather_Gloves_220130340'",
+    "id": 210130340,
+    "inst_id": 220130340,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 208,
+    "type_id": 2,
+    "unlock_condition": [
+      210130330
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Gloves_220130340.UI_icon_Heirloom_Leather_Gloves_220130340'",
+    "id": 210130380,
+    "inst_id": 220130380,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 208,
+    "type_id": 2,
+    "unlock_condition": [
+      210130340
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21013040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Trousers_220130420.UI_icon_Heirloom_Leather_Trousers_220130420'",
+    "id": 210130420,
+    "inst_id": 220130420,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 209,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21013040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Trousers_220130430.UI_icon_Heirloom_Leather_Trousers_220130430'",
+    "id": 210130430,
+    "inst_id": 220130430,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 209,
+    "type_id": 2,
+    "unlock_condition": [
+      210130420
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Trousers_220130440.UI_icon_Heirloom_Leather_Trousers_220130440'",
+    "id": 210130440,
+    "inst_id": 220130440,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 209,
+    "type_id": 2,
+    "unlock_condition": [
+      210130430
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Trousers_220130440.UI_icon_Heirloom_Leather_Trousers_220130440'",
+    "id": 210130480,
+    "inst_id": 220130480,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 209,
+    "type_id": 2,
+    "unlock_condition": [
+      210130440
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21013050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Shoes_220130520.UI_icon_Heirloom_Leather_Shoes_220130520'",
+    "id": 210130520,
+    "inst_id": 220130520,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 210,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21013050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Shoes_220130530.UI_icon_Heirloom_Leather_Shoes_220130530'",
+    "id": 210130530,
+    "inst_id": 220130530,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 210,
+    "type_id": 2,
+    "unlock_condition": [
+      210130520
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Shoes_220130540.UI_icon_Heirloom_Leather_Shoes_220130540'",
+    "id": 210130540,
+    "inst_id": 220130540,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 210,
+    "type_id": 2,
+    "unlock_condition": [
+      210130530
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21013050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Leather_Shoes_220130540.UI_icon_Heirloom_Leather_Shoes_220130540'",
+    "id": 210130580,
+    "inst_id": 220130580,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 210,
+    "type_id": 2,
+    "unlock_condition": [
+      210130540
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21012010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Helmet_220120120.UI_icon_Heirloom_Cloth_Helmet_220120120'",
+    "id": 210120120,
+    "inst_id": 220120120,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 211,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21012010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Helmet_220120130.UI_icon_Heirloom_Cloth_Helmet_220120130'",
+    "id": 210120130,
+    "inst_id": 220120130,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 211,
+    "type_id": 2,
+    "unlock_condition": [
+      210120120
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Helmet_220120140.UI_icon_Heirloom_Cloth_Helmet_220120140'",
+    "id": 210120140,
+    "inst_id": 220120140,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 211,
+    "type_id": 2,
+    "unlock_condition": [
+      210120130
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Helmet_220120140.UI_icon_Heirloom_Cloth_Helmet_220120140'",
+    "id": 210120180,
+    "inst_id": 220120180,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 211,
+    "type_id": 2,
+    "unlock_condition": [
+      210120140
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21012020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Breastplate_220120220.UI_icon_Heirloom_Cloth_Breastplate_220120220'",
+    "id": 210120220,
+    "inst_id": 220120220,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 212,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21012020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Breastplate_220120230.UI_icon_Heirloom_Cloth_Breastplate_220120230'",
+    "id": 210120230,
+    "inst_id": 220120230,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 212,
+    "type_id": 2,
+    "unlock_condition": [
+      210120220
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Breastplate_220120240.UI_icon_Heirloom_Cloth_Breastplate_220120240'",
+    "id": 210120240,
+    "inst_id": 220120240,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 212,
+    "type_id": 2,
+    "unlock_condition": [
+      210120230
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Breastplate_220120240.UI_icon_Heirloom_Cloth_Breastplate_220120240'",
+    "id": 210120280,
+    "inst_id": 220120280,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 212,
+    "type_id": 2,
+    "unlock_condition": [
+      210120240
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21012030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Gloves_220120320.UI_icon_Heirloom_Cloth_Gloves_220120320'",
+    "id": 210120320,
+    "inst_id": 220120320,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 213,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21012030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Gloves_220120330.UI_icon_Heirloom_Cloth_Gloves_220120330'",
+    "id": 210120330,
+    "inst_id": 220120330,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 213,
+    "type_id": 2,
+    "unlock_condition": [
+      210120320
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Gloves_220120340.UI_icon_Heirloom_Cloth_Gloves_220120340'",
+    "id": 210120340,
+    "inst_id": 220120340,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 213,
+    "type_id": 2,
+    "unlock_condition": [
+      210120330
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012030,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Gloves_220120340.UI_icon_Heirloom_Cloth_Gloves_220120340'",
+    "id": 210120380,
+    "inst_id": 220120380,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 213,
+    "type_id": 2,
+    "unlock_condition": [
+      210120340
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21012040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Trousers_220120420.UI_icon_Heirloom_Cloth_Trousers_220120420'",
+    "id": 210120420,
+    "inst_id": 220120420,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 214,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21012040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Trousers_220120430.UI_icon_Heirloom_Cloth_Trousers_220120430'",
+    "id": 210120430,
+    "inst_id": 220120430,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 214,
+    "type_id": 2,
+    "unlock_condition": [
+      210120420
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Trousers_220120440.UI_icon_Heirloom_Cloth_Trousers_220120440'",
+    "id": 210120440,
+    "inst_id": 220120440,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 214,
+    "type_id": 2,
+    "unlock_condition": [
+      210120430
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012040,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Trousers_220120440.UI_icon_Heirloom_Cloth_Trousers_220120440'",
+    "id": 210120480,
+    "inst_id": 220120480,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 214,
+    "type_id": 2,
+    "unlock_condition": [
+      210120440
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21012050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Shoes_220120520.UI_icon_Heirloom_Cloth_Shoes_220120520'",
+    "id": 210120520,
+    "inst_id": 220120520,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 215,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21012050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Shoes_220120530.UI_icon_Heirloom_Cloth_Shoes_220120530'",
+    "id": 210120530,
+    "inst_id": 220120530,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 215,
+    "type_id": 2,
+    "unlock_condition": [
+      210120520
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Shoes_220120540.UI_icon_Heirloom_Cloth_Shoes_220120540'",
+    "id": 210120540,
+    "inst_id": 220120540,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 215,
+    "type_id": 2,
+    "unlock_condition": [
+      210120530
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FUNCTION"
+    ],
+    "group_id": 21012050,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Cloth_Shoes_220120540.UI_icon_Heirloom_Cloth_Shoes_220120540'",
+    "id": 210120580,
+    "inst_id": 220120580,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 215,
+    "type_id": 2,
+    "unlock_condition": [
+      210120540
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 2101901199,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Plate_Helmet_220190151.UI_icon_Heirloom_Plate_Helmet_220190151'",
+    "id": 210190151,
+    "inst_id": 220190151,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 216,
+    "type_id": 2,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 189010006
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    ],
+    "group_id": 21015010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150120.UI_icon_Heirloom_Ring_220150120'",
+    "id": 210150120,
+    "inst_id": 220150120,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 301,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21015010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150130.UI_icon_Heirloom_Ring_220150130'",
+    "id": 210150130,
+    "inst_id": 220150130,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 301,
+    "type_id": 3,
+    "unlock_condition": [
+      210150120
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150140.UI_icon_Heirloom_Ring_220150140'",
+    "id": 210150140,
+    "inst_id": 220150140,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 301,
+    "type_id": 3,
+    "unlock_condition": [
+      210150130
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015010,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150140.UI_icon_Heirloom_Ring_220150140'",
+    "id": 210150180,
+    "inst_id": 220150180,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 301,
+    "type_id": 3,
+    "unlock_condition": [
+      210150140
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    ],
+    "group_id": 21015011,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150121.UI_icon_Heirloom_Ring_220150121'",
+    "id": 210150121,
+    "inst_id": 220150121,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 302,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21015011,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150131.UI_icon_Heirloom_Ring_220150131'",
+    "id": 210150131,
+    "inst_id": 220150131,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 302,
+    "type_id": 3,
+    "unlock_condition": [
+      210150121
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015011,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150141.UI_icon_Heirloom_Ring_220150141'",
+    "id": 210150141,
+    "inst_id": 220150141,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 302,
+    "type_id": 3,
+    "unlock_condition": [
+      210150131
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015011,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150141.UI_icon_Heirloom_Ring_220150141'",
+    "id": 210150181,
+    "inst_id": 220150181,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 302,
+    "type_id": 3,
+    "unlock_condition": [
+      210150141
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    ],
+    "group_id": 21015012,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150122.UI_icon_Heirloom_Ring_220150122'",
+    "id": 210150122,
+    "inst_id": 220150122,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 303,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21015012,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150132.UI_icon_Heirloom_Ring_220150132'",
+    "id": 210150132,
+    "inst_id": 220150132,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 303,
+    "type_id": 3,
+    "unlock_condition": [
+      210150122
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015012,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150142.UI_icon_Heirloom_Ring_220150142'",
+    "id": 210150142,
+    "inst_id": 220150142,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 303,
+    "type_id": 3,
+    "unlock_condition": [
+      210150132
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015012,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150142.UI_icon_Heirloom_Ring_220150142'",
+    "id": 210150182,
+    "inst_id": 220150182,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 303,
+    "type_id": 3,
+    "unlock_condition": [
+      210150142
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    ],
+    "group_id": 21015013,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150123.UI_icon_Heirloom_Ring_220150123'",
+    "id": 210150123,
+    "inst_id": 220150123,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 304,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21015013,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150133.UI_icon_Heirloom_Ring_220150133'",
+    "id": 210150133,
+    "inst_id": 220150133,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 304,
+    "type_id": 3,
+    "unlock_condition": [
+      210150123
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015013,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150143.UI_icon_Heirloom_Ring_220150143'",
+    "id": 210150143,
+    "inst_id": 220150143,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 304,
+    "type_id": 3,
+    "unlock_condition": [
+      210150133
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015013,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150143.UI_icon_Heirloom_Ring_220150143'",
+    "id": 210150183,
+    "inst_id": 220150183,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 304,
+    "type_id": 3,
+    "unlock_condition": [
+      210150143
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    ],
+    "group_id": 21015014,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150124.UI_icon_Heirloom_Ring_220150124'",
+    "id": 210150124,
+    "inst_id": 220150124,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 305,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21015014,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150134.UI_icon_Heirloom_Ring_220150134'",
+    "id": 210150134,
+    "inst_id": 220150134,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 305,
+    "type_id": 3,
+    "unlock_condition": [
+      210150124
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015014,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150144.UI_icon_Heirloom_Ring_220150144'",
+    "id": 210150144,
+    "inst_id": 220150144,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 305,
+    "type_id": 3,
+    "unlock_condition": [
+      210150134
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015014,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150144.UI_icon_Heirloom_Ring_220150144'",
+    "id": 210150184,
+    "inst_id": 220150184,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 305,
+    "type_id": 3,
+    "unlock_condition": [
+      210150144
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL"
+    ],
+    "group_id": 21015015,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150125.UI_icon_Heirloom_Ring_220150125'",
+    "id": 210150125,
+    "inst_id": 220150125,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 306,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 50,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK"
+    ],
+    "group_id": 21015015,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150135.UI_icon_Heirloom_Ring_220150135'",
+    "id": 210150135,
+    "inst_id": 220150135,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 306,
+    "type_id": 3,
+    "unlock_condition": [
+      210150125
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015015,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150145.UI_icon_Heirloom_Ring_220150145'",
+    "id": 210150145,
+    "inst_id": 220150145,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 306,
+    "type_id": 3,
+    "unlock_condition": [
+      210150135
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 200,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_DEFEND"
+    ],
+    "group_id": 21015015,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Ring_220150145.UI_icon_Heirloom_Ring_220150145'",
+    "id": 210150185,
+    "inst_id": 220150185,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 306,
+    "type_id": 3,
+    "unlock_condition": [
+      210150145
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21015020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150220.UI_icon_Heirloom_Necklace_220150220'",
+    "id": 210150220,
+    "inst_id": 220150220,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 310,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21015020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150230.UI_icon_Heirloom_Necklace_220150230'",
+    "id": 210150230,
+    "inst_id": 220150230,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 310,
+    "type_id": 3,
+    "unlock_condition": [
+      210150220
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150240.UI_icon_Heirloom_Necklace_220150240'",
+    "id": 210150240,
+    "inst_id": 220150240,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 310,
+    "type_id": 3,
+    "unlock_condition": [
+      210150230
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015020,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150240.UI_icon_Heirloom_Necklace_220150240'",
+    "id": 210150280,
+    "inst_id": 220150280,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 310,
+    "type_id": 3,
+    "unlock_condition": [
+      210150240
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21015021,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150221.UI_icon_Heirloom_Necklace_220150221'",
+    "id": 210150221,
+    "inst_id": 220150221,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 311,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21015021,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150231.UI_icon_Heirloom_Necklace_220150231'",
+    "id": 210150231,
+    "inst_id": 220150231,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 311,
+    "type_id": 3,
+    "unlock_condition": [
+      210150221
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015021,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150241.UI_icon_Heirloom_Necklace_220150241'",
+    "id": 210150241,
+    "inst_id": 220150241,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 311,
+    "type_id": 3,
+    "unlock_condition": [
+      210150231
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015021,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150241.UI_icon_Heirloom_Necklace_220150241'",
+    "id": 210150281,
+    "inst_id": 220150281,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 311,
+    "type_id": 3,
+    "unlock_condition": [
+      210150241
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21015022,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150222.UI_icon_Heirloom_Necklace_220150222'",
+    "id": 210150222,
+    "inst_id": 220150222,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 312,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21015022,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150232.UI_icon_Heirloom_Necklace_220150232'",
+    "id": 210150232,
+    "inst_id": 220150232,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 312,
+    "type_id": 3,
+    "unlock_condition": [
+      210150222
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015022,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150242.UI_icon_Heirloom_Necklace_220150242'",
+    "id": 210150242,
+    "inst_id": 220150242,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 312,
+    "type_id": 3,
+    "unlock_condition": [
+      210150232
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015022,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150242.UI_icon_Heirloom_Necklace_220150242'",
+    "id": 210150282,
+    "inst_id": 220150282,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 312,
+    "type_id": 3,
+    "unlock_condition": [
+      210150242
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21015023,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150223.UI_icon_Heirloom_Necklace_220150223'",
+    "id": 210150223,
+    "inst_id": 220150223,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 313,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21015023,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150233.UI_icon_Heirloom_Necklace_220150233'",
+    "id": 210150233,
+    "inst_id": 220150233,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 313,
+    "type_id": 3,
+    "unlock_condition": [
+      210150223
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015023,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150243.UI_icon_Heirloom_Necklace_220150243'",
+    "id": 210150243,
+    "inst_id": 220150243,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 313,
+    "type_id": 3,
+    "unlock_condition": [
+      210150233
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015023,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150243.UI_icon_Heirloom_Necklace_220150243'",
+    "id": 210150283,
+    "inst_id": 220150283,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 313,
+    "type_id": 3,
+    "unlock_condition": [
+      210150243
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21015024,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150224.UI_icon_Heirloom_Necklace_220150224'",
+    "id": 210150224,
+    "inst_id": 220150224,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 314,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21015024,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150234.UI_icon_Heirloom_Necklace_220150234'",
+    "id": 210150234,
+    "inst_id": 220150234,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 314,
+    "type_id": 3,
+    "unlock_condition": [
+      210150224
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015024,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150244.UI_icon_Heirloom_Necklace_220150244'",
+    "id": 210150244,
+    "inst_id": 220150244,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 314,
+    "type_id": 3,
+    "unlock_condition": [
+      210150234
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015024,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150244.UI_icon_Heirloom_Necklace_220150244'",
+    "id": 210150284,
+    "inst_id": 220150284,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 314,
+    "type_id": 3,
+    "unlock_condition": [
+      210150244
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL"
+    ],
+    "group_id": 21015025,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150225.UI_icon_Heirloom_Necklace_220150225'",
+    "id": 210150225,
+    "inst_id": 220150225,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1037
+          }
+        ]
+      }
+    ],
+    "sort_priority": 315,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1052
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 75,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 21015025,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150235.UI_icon_Heirloom_Necklace_220150235'",
+    "id": 210150235,
+    "inst_id": 220150235,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 2,
+            "type_id": 1038
+          }
+        ]
+      }
+    ],
+    "sort_priority": 315,
+    "type_id": 3,
+    "unlock_condition": [
+      210150225
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1037
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015025,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150245.UI_icon_Heirloom_Necklace_220150245'",
+    "id": 210150245,
+    "inst_id": 220150245,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 315,
+    "type_id": 3,
+    "unlock_condition": [
+      210150235
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 300,
+            "type_id": 1038
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_FIRST_LEVEL",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK"
+    ],
+    "group_id": 21015025,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150245.UI_icon_Heirloom_Necklace_220150245'",
+    "id": 210150285,
+    "inst_id": 220150285,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 5,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 315,
+    "type_id": 3,
+    "unlock_condition": [
+      210150245
+    ],
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 500,
+            "type_id": 1039
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "display_slot": [
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_ATTACK",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_GEAR_SET",
+      "EN_GEAR_INLAID_SHAPE_TYPE_2_DEFEND"
+    ],
+    "group_id": 2101502199,
+    "icon_path": "/Script/Engine.Texture2D'/Game/TGF/UI/Textures/Icon/Heirloom/HeirloomUIicon/UI_icon_Heirloom_Necklace_220150251.UI_icon_Heirloom_Necklace_220150251'",
+    "id": 210150251,
+    "inst_id": 220150251,
+    "instantiation_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 1053
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "items": [
+          {
+            "count": 4,
+            "type_id": 1039
+          }
+        ]
+      }
+    ],
+    "sort_priority": 307,
+    "type_id": 3,
+    "unlock_costs": [
+      {
+        "index": 1,
+        "items": [
+          {
+            "count": 1,
+            "type_id": 189010003
+          }
+        ]
+      }
+    ]
+  }
+]

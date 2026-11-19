@@ -1,0 +1,128 @@
+[
+  {
+    "cnt": 1,
+    "item_id": 184020000,
+    "level": 1,
+    "random_id": "100001",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 184040000,
+    "level": 1,
+    "random_id": "100002",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 184030000,
+    "level": 1,
+    "random_id": "100003",
+    "rate": 10000
+  },
+  {
+    "cnt": 1,
+    "item_id": 184050000,
+    "level": 1,
+    "random_id": "100003",
+    "rate": 10000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100016,
+    "level": 1,
+    "random_id": "100003",
+    "rate": 10000
+  },
+  {
+    "cnt": 1,
+    "item_id": 184050000,
+    "level": 1,
+    "random_id": "100004",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100013,
+    "level": 1,
+    "random_id": "100005",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 184030000,
+    "level": 1,
+    "random_id": "100006",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 181011000,
+    "level": 1,
+    "random_id": "100007",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 181021000,
+    "level": 1,
+    "random_id": "100008",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100016,
+    "level": 1,
+    "random_id": "100009",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100013,
+    "level": 1,
+    "random_id": "100010",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100009,
+    "level": 1,
+    "random_id": "100011",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100060,
+    "level": 1,
+    "random_id": "100012",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100080,
+    "level": 1,
+    "random_id": "100013",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100081,
+    "level": 4,
+    "random_id": "100014",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100082,
+    "level": 3,
+    "random_id": "100015",
+    "rate": 30000
+  },
+  {
+    "cnt": 1,
+    "item_id": 100051,
+    "level": 3,
+    "random_id": "100016",
+    "rate": 30000
+  }
+]

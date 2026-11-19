@@ -1,0 +1,74 @@
+[
+  {
+    "count": 1
+  },
+  {
+    "count": 2
+  },
+  {
+    "count": 3
+  },
+  {
+    "cost_item": [
+      {
+        "count": 1,
+        "type_id": 100023
+      }
+    ],
+    "count": 4
+  },
+  {
+    "cost_item": [
+      {
+        "count": 1,
+        "type_id": 100023
+      }
+    ],
+    "count": 5
+  },
+  {
+    "cost_item": [
+      {
+        "count": 2,
+        "type_id": 100023
+      }
+    ],
+    "count": 6
+  },
+  {
+    "cost_item": [
+      {
+        "count": 2,
+        "type_id": 100023
+      }
+    ],
+    "count": 7
+  },
+  {
+    "cost_item": [
+      {
+        "count": 2,
+        "type_id": 100023
+      }
+    ],
+    "count": 8
+  },
+  {
+    "cost_item": [
+      {
+        "count": 3,
+        "type_id": 100023
+      }
+    ],
+    "count": 9
+  },
+  {
+    "cost_item": [
+      {
+        "count": 3,
+        "type_id": 100023
+      }
+    ],
+    "count": 10
+  }
+]

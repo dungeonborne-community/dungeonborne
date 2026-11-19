@@ -1,0 +1,37 @@
+CHEAT SHEET FOR KEY STRUCTURES (tgf::*)
+
+struct DUserRole {
+    pub basic: Message,
+    pub last_use_timepoint: i64,
+    pub lazy_delete_timepoint: i64,
+    pub force_show_defult_name: bool,
+    pub is_save_on_ea_close_for_recover: bool,
+    pub is_clear_error_rank_dk_statistics_data: bool,
+    pub deploy_role: Message,
+    pub statistics: Message,
+}
+
+struct DItem {
+    pub basic: Message,
+    pub data: Message,
+    pub create_info: Message,
+}
+
+struct DItemBasic {
+    pub type_id: i32,
+    pub count: i32,
+    pub guid: i64,
+    pub expire_timepoint: i64,
+    pub position: Message,
+}
+
+struct DItemData {
+    pub affix_data: Vec<Message>,
+    pub loss_durability: i32,
+    pub gem_data: Message,
+    pub corruption_id: i32,
+    pub ammo_count: i32,
+    pub sale_price: i32,
+    pub insurance: Message,
+}
+

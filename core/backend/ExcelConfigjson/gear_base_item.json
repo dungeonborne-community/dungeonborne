@@ -1,0 +1,34 @@
+[
+  {
+    "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_SWORD",
+    "id": 181010000
+  },
+  {
+    "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_SHIELD",
+    "id": 181030000
+  },
+  {
+    "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_LONG_SWORD",
+    "id": 181020000
+  },
+  {
+    "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_DAGGER",
+    "id": 181110000
+  },
+  {
+    "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_MACE",
+    "id": 181120000
+  },
+  {
+    "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_HEAVY_CROSSBOW",
+    "id": 181040000
+  },
+  {
+    "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_STAFF",
+    "id": 181050001
+  },
+  {
+    "gear_sub_type": "EN_GEAR_EQUIP_SUBTYPE_RELIC",
+    "id": 181080000
+  }
+]

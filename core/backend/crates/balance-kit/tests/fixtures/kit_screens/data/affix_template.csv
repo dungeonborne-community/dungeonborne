@@ -1,0 +1,10 @@
+﻿row,key,title,path,value,name
+0,100,Меч,item_id,100,Меч
+0,100,Меч,data.affix_value_id,101,
+0,100,Меч,data.fixed_rule[0].attribute.attack.offset.min_value,10,
+0,100,Меч,data.fixed_rule[0].attribute.attack.offset.max_value,14,
+0,100,Меч,data.fixed_rule[0].attribute.attack.offset.unit,2,
+0,100,Меч,data.fixed_rule[0].attribute.crit.fixed_value,0.05,
+1,200,Щит,item_id,200,Щит
+1,200,Щит,data.affix_value_id,101,
+1,200,Щит,data.fixed_rule[0].attribute.crit.fixed_value,0,

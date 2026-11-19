@@ -1,0 +1,66 @@
+; Forgejo: только локально, доступ через SSH-туннель (ops/forgejo/README.md).
+; @…@ подставляет install.sh (секреты генерирует сам Forgejo на сервере).
+APP_NAME = Dungeonborne
+RUN_USER = git
+WORK_PATH = /var/lib/forgejo
+RUN_MODE = prod
+
+[server]
+PROTOCOL = http
+HTTP_ADDR = 127.0.0.1
+HTTP_PORT = 3000
+DOMAIN = localhost
+; адрес в браузере у разработчика: туннель ssh -L 3300:127.0.0.1:3000
+ROOT_URL = http://localhost:3300/
+DISABLE_SSH = false
+START_SSH_SERVER = true
+SSH_LISTEN_HOST = 127.0.0.1
+SSH_LISTEN_PORT = 2222
+SSH_DOMAIN = localhost
+SSH_PORT = 2222
+LFS_START_SERVER = false
+OFFLINE_MODE = true
+
+[database]
+DB_TYPE = sqlite3
+PATH = /var/lib/forgejo/data/forgejo.db
+
+[repository]
+ROOT = /var/lib/forgejo/data/repositories
+DEFAULT_PRIVATE = private
+DEFAULT_BRANCH = main
+
+[security]
+INSTALL_LOCK = true
+SECRET_KEY = @SECRET_KEY@
+INTERNAL_TOKEN = @INTERNAL_TOKEN@
+PASSWORD_HASH_ALGO = argon2
+
+[oauth2]
+JWT_SECRET = @JWT_SECRET@
+
+[service]
+DISABLE_REGISTRATION = true
+REQUIRE_SIGNIN_VIEW = true
+DEFAULT_KEEP_EMAIL_PRIVATE = true
+DEFAULT_ALLOW_CREATE_ORGANIZATION = false
+
+[mailer]
+ENABLED = false
+
+[session]
+PROVIDER = file
+
+[log]
+MODE = file
+LEVEL = Info
+ROOT_PATH = /var/lib/forgejo/log
+
+[actions]
+ENABLED = true
+
+[packages]
+ENABLED = true
+
+[cron.update_checker]
+ENABLED = false

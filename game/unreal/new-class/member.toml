@@ -1,0 +1,12 @@
+[member]
+name = "new-class"
+kind = "mod"
+visibility = "team"
+lang = "lua+unreal"
+version = "0"
+depends_on = ["core/backend"]
+description = "A new class. In git — description, lua, tables, icons; build, server, ue, research — in home/unreal/new-class (copy of legacy:new_class)"
+
+[known-absolute-paths]
+# the Lua log is written by the game (UnLua does not read local.toml); start_game.ps1 takes paths from local.toml [unreal] since 17.11
+files = ["lua/WBP_CreateRoleInfoUi.lua"]
